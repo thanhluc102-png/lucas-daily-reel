@@ -2,8 +2,12 @@ name: Daily reel
 
 on:
   schedule:
-    # 01:00 UTC = 08:00 giờ VN. GitHub cron chỉ chạy theo UTC.
-    - cron: '0 1 * * *'
+    # GitHub chỉ chạy cron theo UTC, và hay bỏ nhịp lúc giờ tròn vì quá tải.
+    # Đặt phút lẻ, ba lần trong buổi sáng. Bước "Đã đăng hôm nay chưa" bảo đảm
+    # chỉ đúng một lần thật sự đăng.
+    - cron: '17 1 * * *'   # 08:17 giờ VN
+    - cron: '23 2 * * *'   # 09:23 giờ VN — dự phòng
+    - cron: '41 4 * * *'   # 11:41 giờ VN — dự phòng cuối
   workflow_dispatch:
     inputs:
       product_id:
@@ -13,6 +17,10 @@ on:
         description: 'true = chỉ render, không đăng'
         required: false
         default: 'true'
+      force:
+        description: 'true = bỏ qua chốt chặn, đăng dù hôm nay đã đăng'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -34,10 +42,21 @@ jobs:
           node-version: 22
           cache: npm
 
+      # Chặn ngay đây, trước khi tốn 3 phút cài Chrome và FFmpeg.
+      - name: Đã đăng hôm nay chưa
+        id: guard
+        run: node lib/already-posted.mjs
+
+      - name: Bỏ qua
+        if: steps.guard.outputs.skip == 'true' && inputs.force != 'true'
+        run: echo "::notice::Hôm nay đã đăng rồi. Nhịp cron này nghỉ."
+
       - name: Cài dependency
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: npm ci || npm install
 
       - name: Cài FFmpeg và chrome-headless-shell
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
@@ -48,34 +67,43 @@ jobs:
           if [ -x "$BIN" ]; then echo "HYPERFRAMES_BROWSER_PATH=$BIN" >> "$GITHUB_ENV"; fi
 
       - name: Kiểm tra môi trường render
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: npx --yes hyperframes@0.7.42 doctor
 
       - name: Chọn sản phẩm
         id: pick
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: node lib/pick-daily.mjs ${{ inputs.product_id }}
 
       - name: Kéo dữ liệu từ Store API
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: node lib/fetch-product.mjs ${{ steps.pick.outputs.id }} build
 
       - name: Ghép template
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: node lib/build.mjs build
 
       - name: Lint composition
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: npx --yes hyperframes@0.7.42 lint build
 
       - name: Validate trong headless Chrome
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: npx --yes hyperframes@0.7.42 validate build
 
       - name: Render MP4
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: |
           mkdir -p renders
           npx --yes hyperframes@0.7.42 render build \
             -o renders/reel.mp4 -f 30 -q high --strict --quiet
 
       - name: Xuất ảnh bìa
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: npx --yes hyperframes@0.7.42 snapshot build || echo "snapshot lỗi, bỏ qua"
 
       - name: Kiểm tra file xuất ra
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: |
           test -f renders/reel.mp4 || { echo "Không có MP4"; exit 1; }
           SIZE=$(stat -c%s renders/reel.mp4)
@@ -83,7 +111,6 @@ jobs:
           [ "$SIZE" -gt 200000 ] || { echo "MP4 nhỏ bất thường, nghi render hỏng"; exit 1; }
           echo "luồng trong file:"
           ffprobe -v error -show_entries stream=codec_type -of csv=p=0 renders/reel.mp4 | sort -u
-          # Nhạc ngắn hơn video -> đoạn cuối câm. Cảnh báo chứ không chặn.
           if [ -f assets/bgm.mp4 ]; then
             V=$(ffprobe -v error -show_entries format=duration -of csv=p=0 renders/reel.mp4)
             A=$(ffprobe -v error -show_entries format=duration -of csv=p=0 assets/bgm.mp4)
@@ -92,6 +119,7 @@ jobs:
           fi
 
       - name: Lưu artifact để xem trước
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: reel-${{ steps.pick.outputs.id }}
@@ -102,17 +130,24 @@ jobs:
           retention-days: 14
 
       - name: Đăng lên fanpage + comment link mua
+        if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
         run: node lib/post-reel.mjs renders/reel.mp4
 
+      # Chỉ ghi sổ khi đã đăng thật. Hỏng giữa chừng thì hôm nay vẫn trống,
+      # nhịp cron sau được phép chạy lại.
       - name: Ghi lại sản phẩm đã quay
-        if: github.event_name == 'schedule'
+        if: |
+          (steps.guard.outputs.skip != 'true' || inputs.force == 'true') &&
+          (inputs.dry_run || vars.DRY_RUN || 'true') != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add history.json
-          git diff --staged --quiet || git commit -m "chore: đã quay reel hôm nay"
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: đã quay reel $(date -u +%F)"
+          git pull --rebase
           git push
