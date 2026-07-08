@@ -36,6 +36,16 @@ jobs:
       - name: Cài dependency (kéo cả Chrome cho renderer)
         run: npm ci || npm install
 
+      - name: Cài FFmpeg và chrome-headless-shell
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version | head -1
+          OUT=$(npx --yes @puppeteer/browsers install chrome-headless-shell@stable)
+          echo "$OUT"
+          BIN=$(echo "$OUT" | awk '{print $2}')
+          if [ -x "$BIN" ]; then echo "HYPERFRAMES_BROWSER_PATH=$BIN" >> "$GITHUB_ENV"; fi
+
       - name: Kiểm tra môi trường render
         run: npx --yes hyperframes@0.7.42 doctor
 
