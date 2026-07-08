@@ -31,8 +31,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 22
 
       - name: Cài dependency (kéo cả Chrome cho renderer)
         run: npm ci || npm install
