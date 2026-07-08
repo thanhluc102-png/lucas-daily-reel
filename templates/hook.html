@@ -63,18 +63,18 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-fps="30" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="14.769" data-fps="30" data-width="1080" data-height="1920">
       <div id="grid"></div>
       <div id="glow-top" class="glow"></div>
       <div id="glow-bottom" class="glow"></div>
 
-      <div class="clip" id="scene-hook" data-start="0" data-duration="3.4" data-track-index="0">
+      <div class="clip" id="scene-hook" data-start="0.0" data-duration="3.692" data-track-index="0">
         <div class="pill" id="s1-pill"><span class="dot"></span>{{PILL}}</div>
         <div id="s1-hl">{{HEADLINE}} <span class="pain">{{PAIN}}<span id="strike"></span></span></div>
         <div id="s1-punch">{{PUNCH}}</div>
       </div>
 
-      <div class="clip" id="scene-product" data-start="3.4" data-duration="3.0" data-track-index="0">
+      <div class="clip" id="scene-product" data-start="3.692" data-duration="2.462" data-track-index="0">
         <div class="tile"><img id="s2-img" src="{{IMAGE1}}" alt="" /></div>
         <div id="stats">
           <div class="s"><div class="stat">{{SPEC1_V}}</div><div class="slab">{{SPEC1_K}}</div></div>
@@ -82,17 +82,17 @@
         </div>
       </div>
 
-      <div class="clip" id="scene-angle-2" data-start="6.4" data-duration="2.5" data-track-index="0">
+      <div class="clip" id="scene-angle-2" data-start="6.154" data-duration="2.461" data-track-index="0">
         <div class="tile"><img id="s3-img" src="{{IMAGE2}}" alt="" /></div>
         <div class="pill" id="s3-chip" style="margin-top:80px"><span class="dot"></span>{{SPEC3_K}} · {{SPEC3_V}}</div>
       </div>
 
-      <div class="clip" id="scene-angle-3" data-start="8.9" data-duration="2.5" data-track-index="0">
+      <div class="clip" id="scene-angle-3" data-start="8.615" data-duration="2.462" data-track-index="0">
         <div class="tile"><img id="s4-img" src="{{IMAGE3}}" alt="" /></div>
         <div class="pill" id="s4-chip" style="margin-top:80px"><span class="dot"></span>{{SPEC4_K}} · {{SPEC4_V}}</div>
       </div>
 
-      <div class="clip" id="scene-offer" data-start="11.4" data-duration="3.6" data-track-index="0">
+      <div class="clip" id="scene-offer" data-start="11.077" data-duration="3.692" data-track-index="0">
         <div class="pill" id="s5-pill" style="background:#1b1024;border-color:rgba(244,63,94,0.35);color:#fb7185">
           <span class="dot" style="background:#fb7185"></span>Nhập {{COUPON}}
         </div>
@@ -108,29 +108,29 @@
         const tl = gsap.timeline({ paused: true });
 
         // Cảnh 1 — hook. Gạch ngang là nhịp trống, vẽ ở giây 1.5.
-        tl.from('#s1-pill',  { opacity: 0, y: 40, duration: 0.45 }, 0.1);
-        tl.from('#s1-hl',    { opacity: 0, y: 48, duration: 0.55 }, 0.4);
-        tl.fromTo('#strike', { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: 'power2.out' }, 1.5);
-        tl.from('#s1-punch', { opacity: 0, y: 56, scale: 0.92, duration: 0.5, ease: 'back.out(1.6)' }, 2.15);
+        tl.from('#s1-pill',  { opacity: 0, y: 40, duration: 0.45 }, 0.154);
+        tl.from('#s1-hl',    { opacity: 0, y: 48, duration: 0.55 }, 0.615);
+        tl.fromTo('#strike', { scaleX: 0 }, { scaleX: 1, duration: 0.615, ease: 'power2.out' }, 1.231);
+        tl.from('#s1-punch', { opacity: 0, y: 56, scale: 0.92, duration: 0.5, ease: 'back.out(1.6)' }, 2.462);
 
         // Cảnh 2 — ảnh chính, đẩy nhẹ suốt cảnh.
-        tl.from('#s2-img', { opacity: 0, scale: 0.9, duration: 0.5, ease: 'power2.out' }, 3.5);
-        tl.to('#s2-img',   { scale: 1.05, duration: 2.4, ease: 'none' }, 3.9);
-        tl.from('#stats .s', { opacity: 0, y: 36, duration: 0.4, stagger: 0.12 }, 4.2);
+        tl.from('#s2-img', { opacity: 0, scale: 0.9, duration: 0.5, ease: 'power2.out' }, 3.752);
+        tl.to('#s2-img',   { scale: 1.05, duration: 2.462, ease: 'none' }, 3.752);
+        tl.from('#stats .s', { opacity: 0, y: 36, duration: 0.4, stagger: 0.308 }, 4.308);
 
         // Cảnh 3 và 4 — hai góc chụp khác, trượt ngang ngược chiều nhau.
-        tl.from('#s3-img',  { opacity: 0, x: 90, duration: 0.5, ease: 'power2.out' }, 6.5);
-        tl.from('#s3-chip', { opacity: 0, y: 30, duration: 0.4 }, 6.9);
+        tl.from('#s3-img',  { opacity: 0, x: 90, duration: 0.5, ease: 'power2.out' }, 6.214);
+        tl.from('#s3-chip', { opacity: 0, y: 30, duration: 0.4 }, 6.462);
 
-        tl.from('#s4-img',  { opacity: 0, x: -90, duration: 0.5, ease: 'power2.out' }, 9.0);
-        tl.from('#s4-chip', { opacity: 0, y: 30, duration: 0.4 }, 9.4);
+        tl.from('#s4-img',  { opacity: 0, x: -90, duration: 0.5, ease: 'power2.out' }, 8.675);
+        tl.from('#s4-chip', { opacity: 0, y: 30, duration: 0.4 }, 8.923);
 
         // Cảnh 5 — giá.
-        tl.from('#s5-pill', { opacity: 0, y: 32, duration: 0.4 }, 11.5);
-        tl.from('#was',     { opacity: 0, duration: 0.3 }, 11.8);
-        tl.from('#now',     { opacity: 0, scale: 0.9, duration: 0.45, ease: 'back.out(1.5)' }, 12.0);
-        tl.from('#cta',     { opacity: 0, y: 32, duration: 0.4 }, 12.5);
-        tl.from('#s5-name', { opacity: 0, duration: 0.35 }, 12.9);
+        tl.from('#s5-pill', { opacity: 0, y: 32, duration: 0.4 }, 11.137);
+        tl.from('#was',     { opacity: 0, duration: 0.3 }, 11.385);
+        tl.from('#now',     { opacity: 0, scale: 0.9, duration: 0.45, ease: 'back.out(1.5)' }, 11.692);
+        tl.from('#cta',     { opacity: 0, y: 32, duration: 0.4 }, 12.308);
+        tl.from('#s5-name', { opacity: 0, duration: 0.35 }, 12.615);
 
         window.__timelines = window.__timelines || {};
         window.__timelines.main = tl;
