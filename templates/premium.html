@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #efede8; }
+      body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+
+      /* Vũng sáng trắng tinh giữa khung. Ảnh PNG nền trắng đặt đúng tâm -> mép tan. */
+      #pool {
+        position: absolute; left: 50%; top: 47%; width: 1510px; height: 1510px;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle at center, #ffffff 0%, #ffffff 34%, #efede8 72%);
+      }
+
+      .clip {
+        position: absolute; inset: 0;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 122px 122px 346px;
+        text-align: center;
+      }
+
+      .kick { color: #8e8b84; font-size: 36px; letter-spacing: 18px; font-weight: 400; }
+      #s1-num { color: #16161a; font-size: 274px; font-weight: 200; letter-spacing: -7px; margin: 65px 0 36px; }
+      #s1-rule { width: 122px; height: 3px; background: #8a6a2f; margin-bottom: 50px; }
+      #s1-sub { color: #6e6e73; font-size: 43px; font-weight: 300; letter-spacing: 3px; }
+
+      #s2-img { width: 760px; height: 760px; object-fit: contain; }
+      #s2-cap { color: #8e8b84; font-size: 40px; letter-spacing: 7px; margin-top: 65px; }
+
+      #rows { width: 100%; margin-top: 72px; }
+      .row {
+        display: flex; justify-content: space-between; align-items: baseline;
+        width: 100%; padding: 43px 0; border-bottom: 2px solid #d8d5ce;
+      }
+      .row:last-child { border-bottom: 0; }
+      .rk { color: #8e8b84; font-size: 40px; letter-spacing: 3px; }
+      .rv { color: #16161a; font-size: 47px; font-weight: 300; }
+
+      #s4-price { color: #16161a; font-size: 151px; font-weight: 200; letter-spacing: -4px; margin: 50px 0; }
+      #s4-coupon { color: #8a6a2f; font-size: 43px; font-weight: 400; letter-spacing: 3px; }
+      #s4-rule { width: 432px; height: 2px; background: #d8d5ce; margin: 108px 0 58px; }
+      #s4-cta { color: #16161a; font-size: 61px; font-weight: 300; letter-spacing: 11px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="9" data-fps="30" data-width="1080" data-height="1920">
+      <div id="pool"></div>
+
+      <div class="clip" id="scene-title" data-start="0" data-duration="2.4" data-track-index="0">
+        <div class="kick" id="s1-kick">{{PILL}}</div>
+        <div id="s1-num">{{SPEC1_V}}</div>
+        <div id="s1-rule"></div>
+        <div id="s1-sub">{{PUNCH}}</div>
+      </div>
+
+      <div class="clip" id="scene-product" data-start="2.4" data-duration="2.8" data-track-index="0">
+        <img id="s2-img" src="{{IMAGE}}" alt="" />
+        <div id="s2-cap">{{HEADLINE}}</div>
+      </div>
+
+      <div class="clip" id="scene-specs" data-start="5.2" data-duration="2" data-track-index="0">
+        <div class="kick">THÔNG SỐ</div>
+        <div id="rows">
+          <div class="row"><span class="rk">{{SPEC1_K}}</span><span class="rv">{{SPEC1_V}}</span></div>
+          <div class="row"><span class="rk">{{SPEC2_K}}</span><span class="rv">{{SPEC2_V}}</span></div>
+          <div class="row"><span class="rk">{{SPEC3_K}}</span><span class="rv">{{SPEC3_V}}</span></div>
+          <div class="row"><span class="rk">{{SPEC4_K}}</span><span class="rv">{{SPEC4_V}}</span></div>
+        </div>
+      </div>
+
+      <div class="clip" id="scene-price" data-start="7.2" data-duration="1.8" data-track-index="0">
+        <div class="kick">GIÁ CHÍNH HÃNG</div>
+        <div id="s4-price">{{PRICE}}</div>
+        <div id="s4-coupon">{{COUPON}}</div>
+        <div id="s4-rule"></div>
+        <div id="s4-cta">LUCAS.VN</div>
+      </div>
+
+      <!--AUDIO-->
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+        const slow = 'power2.out';
+
+        tl.from('#s1-kick', { opacity: 0, duration: 0.6 }, 0.1);
+        tl.from('#s1-num',  { opacity: 0, y: 30, duration: 0.9, ease: slow }, 0.3);
+        tl.fromTo('#s1-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: slow }, 0.9);
+        tl.from('#s1-sub',  { opacity: 0, duration: 0.7 }, 1.0);
+
+        // Đẩy máy vào rất chậm. Cảm giác đắt tiền phần lớn nằm ở tốc độ.
+        tl.fromTo('#s2-img', { opacity: 0, scale: 1.0 }, { opacity: 1, duration: 0.7, ease: slow }, 2.5);
+        tl.to('#s2-img',     { scale: 1.06, duration: 2.7, ease: 'none' }, 2.5);
+        tl.from('#s2-cap',   { opacity: 0, y: 20, duration: 0.7 }, 3.1);
+
+        tl.from('.row', { opacity: 0, y: 24, duration: 0.5, stagger: 0.14, ease: slow }, 5.35);
+
+        tl.from('#s4-price',  { opacity: 0, y: 22, duration: 0.7, ease: slow }, 7.35);
+        tl.from('#s4-coupon', { opacity: 0, duration: 0.6 }, 7.6);
+        tl.fromTo('#s4-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: slow }, 7.8);
+        tl.from('#s4-cta',    { opacity: 0, duration: 0.6 }, 8.0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines.main = tl;
+      </script>
+    </div>
+  </body>
+</html>

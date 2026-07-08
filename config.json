@@ -1,0 +1,8 @@
+{
+  "pageId": "PUT_YOUR_PAGE_ID_HERE",
+  "graphVersion": "v25.0",
+  "premiumThreshold": 1500000,
+  "defaultCoupon": "LUCAS50K",
+  "storeBase": "https://lucas.vn/wp-json/wc/store/v1",
+  "hashtags": "#LucasComboPlus #phukienapple #chinhhang"
+}

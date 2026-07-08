@@ -1,0 +1,16 @@
+{
+  "name": "lucas-daily-reel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node lib/fetch-product.mjs",
+    "build": "node lib/build.mjs build",
+    "lint": "npx --yes hyperframes@0.7.42 lint build",
+    "validate": "npx --yes hyperframes@0.7.42 validate build",
+    "render": "npx --yes hyperframes@0.7.42 render build -o renders/reel.mp4 -f 30 -q high --strict",
+    "cover": "npx --yes hyperframes@0.7.42 snapshot build",
+    "preview": "npx --yes hyperframes@0.7.42 preview build",
+    "post": "node lib/post-reel.mjs"
+  },
+  "devDependencies": { "hyperframes": "0.7.42" }
+}

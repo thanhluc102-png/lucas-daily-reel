@@ -1,0 +1,113 @@
+name: Daily reel
+
+on:
+  schedule:
+    # 01:00 UTC = 08:00 giờ VN. GitHub cron chỉ chạy theo UTC.
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'Ép quay 1 sản phẩm cụ thể (bỏ trống = lấy đầu queue)'
+        required: false
+      dry_run:
+        description: 'true = chỉ render, không đăng'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write   # cần để commit lại queue.json sau khi xoay vòng
+
+concurrency:
+  group: daily-reel
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Cài dependency (kéo cả Chrome cho renderer)
+        run: npm ci || npm install
+
+      - name: Kiểm tra môi trường render
+        run: npx --yes hyperframes@0.7.42 doctor
+
+      - name: Chọn sản phẩm
+        id: pick
+        run: |
+          if [ -n "${{ inputs.product_id }}" ]; then
+            ID="${{ inputs.product_id }}"
+          else
+            ID=$(node -e "console.log(JSON.parse(require('fs').readFileSync('queue.json')).items[0].id)")
+          fi
+          echo "id=$ID" >> "$GITHUB_OUTPUT"
+          echo "Hôm nay quay product $ID"
+
+      - name: Kéo dữ liệu từ Store API
+        run: node lib/fetch-product.mjs ${{ steps.pick.outputs.id }} build
+
+      - name: Ghép template
+        run: node lib/build.mjs build
+
+      - name: Lint composition
+        run: npx --yes hyperframes@0.7.42 lint build
+
+      - name: Validate trong headless Chrome
+        run: npx --yes hyperframes@0.7.42 validate build
+
+      - name: Render MP4
+        run: |
+          mkdir -p renders
+          npx --yes hyperframes@0.7.42 render build \
+            -o renders/reel.mp4 -f 30 -q high --strict --quiet
+
+      - name: Xuất ảnh bìa
+        run: npx --yes hyperframes@0.7.42 snapshot build || echo "snapshot lỗi, bỏ qua"
+
+      - name: Kiểm tra file xuất ra
+        run: |
+          test -f renders/reel.mp4 || { echo "Không có MP4"; exit 1; }
+          SIZE=$(stat -c%s renders/reel.mp4)
+          echo "MP4 $((SIZE/1024)) KB"
+          [ "$SIZE" -gt 200000 ] || { echo "MP4 nhỏ bất thường, nghi render hỏng"; exit 1; }
+
+      - name: Lưu artifact để xem trước
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ steps.pick.outputs.id }}
+          path: |
+            renders/
+            snapshots/
+            build/index.html
+          retention-days: 14
+
+      - name: Đăng lên fanpage
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          # Mặc định true. Gạt sang false trong repo variables khi anh đã yên tâm.
+          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
+        run: node lib/post-reel.mjs renders/reel.mp4
+
+      - name: Xoay vòng hàng đợi
+        if: github.event_name == 'schedule'
+        run: |
+          node -e "
+            const fs = require('fs');
+            const q = JSON.parse(fs.readFileSync('queue.json'));
+            q.items.push(q.items.shift());
+            fs.writeFileSync('queue.json', JSON.stringify(q, null, 2) + '\n');
+          "
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add queue.json
+          git diff --staged --quiet || git commit -m "chore: xoay hàng đợi reel"
+          git push

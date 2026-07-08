@@ -1,0 +1,20 @@
+{
+  "_comment": "Workflow lấy items[0] mỗi ngày, quay xong đẩy xuống cuối. Sửa file này trên GitHub từ điện thoại là đổi được lịch.",
+  "items": [
+    {
+      "id": 57586,
+      "template": "auto",
+      "copy": {
+        "pill": "Nỗi khổ dân chạy xe",
+        "headline": "Còn cắm",
+        "pain": "tẩu 20W",
+        "punch": "THÔI, ĐỔI 170W ĐI!",
+        "spec1": ["TỔNG", "170W"],
+        "spec2": ["CỔNG", "3"],
+        "spec3": ["Chuẩn sạc", "PD 3.1 · 140W"],
+        "spec4": ["Bảo hành", "12 tháng"],
+        "coupon": "LUCAS50K"
+      }
+    }
+  ]
+}
