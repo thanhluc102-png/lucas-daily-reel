@@ -82,6 +82,13 @@ jobs:
           [ "$SIZE" -gt 200000 ] || { echo "MP4 nhỏ bất thường, nghi render hỏng"; exit 1; }
           echo "luồng trong file:"
           ffprobe -v error -show_entries stream=codec_type -of csv=p=0 renders/reel.mp4 | sort -u
+          # Nhạc ngắn hơn video -> đoạn cuối câm. Cảnh báo chứ không chặn.
+          if [ -f assets/bgm.mp4 ]; then
+            V=$(ffprobe -v error -show_entries format=duration -of csv=p=0 renders/reel.mp4)
+            A=$(ffprobe -v error -show_entries format=duration -of csv=p=0 assets/bgm.mp4)
+            echo "video ${V}s | nhạc ${A}s"
+            awk -v v="$V" -v a="$A" 'BEGIN{ if (a+0 < v+0-0.2) print "::warning::Nhạc ngắn hơn video, đoạn cuối sẽ câm" }'
+          fi
 
       - name: Lưu artifact để xem trước
         uses: actions/upload-artifact@v4
@@ -101,12 +108,10 @@ jobs:
         run: node lib/post-reel.mjs renders/reel.mp4
 
       - name: Ghi lại sản phẩm đã quay
-        if: ${{ (inputs.dry_run || vars.DRY_RUN || 'true') != 'true' }}
+        if: github.event_name == 'schedule'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add history.json
-          git diff --staged --quiet && exit 0
-          git commit -m "chore: đã quay reel hôm nay"
-          git pull --rebase
+          git diff --staged --quiet || git commit -m "chore: đã quay reel hôm nay"
           git push

@@ -45,11 +45,11 @@
       }
       #s1-punch { color: #48a8f0; font-size: 119px; font-weight: 800; line-height: 1.05; letter-spacing: -2px; margin-top: 94px; }
 
-      #tile {
-        width: 660px; height: 660px; border-radius: 56px; background: #ffffff;
+      .tile {
+        width: 620px; height: 620px; border-radius: 56px; background: #ffffff;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
       }
-      #tile img { width: 100%; height: 100%; object-fit: contain; }
+      .tile img { width: 100%; height: 100%; object-fit: contain; }
 
       #stats { display: flex; gap: 80px; margin-top: 94px; }
       .stat { color: #f5f5f7; font-size: 144px; font-weight: 800; letter-spacing: -4px; line-height: 1; }
@@ -59,37 +59,47 @@
       #was { color: #8b8ba7; font-size: 68px; font-weight: 500; text-decoration: line-through; margin-top: 94px; }
       #now { color: #f5f5f7; font-size: 173px; font-weight: 800; letter-spacing: -5px; margin: 8px 0 80px; }
       #cta { background: #48a8f0; color: #062033; font-size: 54px; font-weight: 700; padding: 47px 94px; border-radius: 43px; }
-      #s3-name { color: #6b7280; font-size: 38px; font-weight: 400; margin-top: 40px; max-width: 800px; line-height: 1.4; }
+      #s5-name { color: #6b7280; font-size: 38px; font-weight: 400; margin-top: 40px; max-width: 800px; line-height: 1.4; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="8" data-fps="30" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-fps="30" data-width="1080" data-height="1920">
       <div id="grid"></div>
       <div id="glow-top" class="glow"></div>
       <div id="glow-bottom" class="glow"></div>
 
-      <div class="clip" id="scene-hook"  data-start="0" data-duration="3.4" data-track-index="0">
+      <div class="clip" id="scene-hook" data-start="0" data-duration="3.4" data-track-index="0">
         <div class="pill" id="s1-pill"><span class="dot"></span>{{PILL}}</div>
         <div id="s1-hl">{{HEADLINE}} <span class="pain">{{PAIN}}<span id="strike"></span></span></div>
         <div id="s1-punch">{{PUNCH}}</div>
       </div>
 
-      <div class="clip" id="scene-product" data-start="3.4" data-duration="2.4" data-track-index="0">
-        <div id="tile"><img id="s2-img" src="{{IMAGE}}" alt="" /></div>
+      <div class="clip" id="scene-product" data-start="3.4" data-duration="3.0" data-track-index="0">
+        <div class="tile"><img id="s2-img" src="{{IMAGE1}}" alt="" /></div>
         <div id="stats">
           <div class="s"><div class="stat">{{SPEC1_V}}</div><div class="slab">{{SPEC1_K}}</div></div>
           <div class="s"><div class="stat" style="color:#48a8f0">{{SPEC2_V}}</div><div class="slab">{{SPEC2_K}}</div></div>
         </div>
       </div>
 
-      <div class="clip" id="scene-offer" data-start="5.8" data-duration="2.2" data-track-index="0">
-        <div class="pill" id="s3-pill" style="background:#1b1024;border-color:rgba(244,63,94,0.35);color:#fb7185">
+      <div class="clip" id="scene-angle-2" data-start="6.4" data-duration="2.5" data-track-index="0">
+        <div class="tile"><img id="s3-img" src="{{IMAGE2}}" alt="" /></div>
+        <div class="pill" id="s3-chip" style="margin-top:80px"><span class="dot"></span>{{SPEC3_K}} · {{SPEC3_V}}</div>
+      </div>
+
+      <div class="clip" id="scene-angle-3" data-start="8.9" data-duration="2.5" data-track-index="0">
+        <div class="tile"><img id="s4-img" src="{{IMAGE3}}" alt="" /></div>
+        <div class="pill" id="s4-chip" style="margin-top:80px"><span class="dot"></span>{{SPEC4_K}} · {{SPEC4_V}}</div>
+      </div>
+
+      <div class="clip" id="scene-offer" data-start="11.4" data-duration="3.6" data-track-index="0">
+        <div class="pill" id="s5-pill" style="background:#1b1024;border-color:rgba(244,63,94,0.35);color:#fb7185">
           <span class="dot" style="background:#fb7185"></span>Nhập {{COUPON}}
         </div>
         <div id="was">{{REGULAR_PRICE}}</div>
         <div id="now">{{PRICE}}</div>
         <div id="cta">Mua tại lucas.vn</div>
-        <div id="s3-name">{{NAME}}</div>
+        <div id="s5-name">{{NAME}}</div>
       </div>
 
       <!--AUDIO-->
@@ -97,20 +107,30 @@
       <script>
         const tl = gsap.timeline({ paused: true });
 
+        // Cảnh 1 — hook. Gạch ngang là nhịp trống, vẽ ở giây 1.5.
         tl.from('#s1-pill',  { opacity: 0, y: 40, duration: 0.45 }, 0.1);
         tl.from('#s1-hl',    { opacity: 0, y: 48, duration: 0.55 }, 0.4);
-        // Nhịp trống của cả reel: gạch ngang được VẼ ra, không có sẵn.
         tl.fromTo('#strike', { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: 'power2.out' }, 1.5);
         tl.from('#s1-punch', { opacity: 0, y: 56, scale: 0.92, duration: 0.5, ease: 'back.out(1.6)' }, 2.15);
 
-        tl.from('#tile',  { opacity: 0, scale: 0.9, duration: 0.55, ease: 'power2.out' }, 3.5);
-        tl.from('#stats .s', { opacity: 0, y: 36, duration: 0.4, stagger: 0.12 }, 4.15);
+        // Cảnh 2 — ảnh chính, đẩy nhẹ suốt cảnh.
+        tl.from('#s2-img', { opacity: 0, scale: 0.9, duration: 0.5, ease: 'power2.out' }, 3.5);
+        tl.to('#s2-img',   { scale: 1.05, duration: 2.4, ease: 'none' }, 3.9);
+        tl.from('#stats .s', { opacity: 0, y: 36, duration: 0.4, stagger: 0.12 }, 4.2);
 
-        tl.from('#s3-pill', { opacity: 0, y: 32, duration: 0.4 }, 5.9);
-        tl.from('#was',     { opacity: 0, duration: 0.3 }, 6.15);
-        tl.from('#now',     { opacity: 0, scale: 0.9, duration: 0.45, ease: 'back.out(1.5)' }, 6.3);
-        tl.from('#cta',     { opacity: 0, y: 32, duration: 0.4 }, 6.7);
-        tl.from('#s3-name', { opacity: 0, duration: 0.35 }, 6.95);
+        // Cảnh 3 và 4 — hai góc chụp khác, trượt ngang ngược chiều nhau.
+        tl.from('#s3-img',  { opacity: 0, x: 90, duration: 0.5, ease: 'power2.out' }, 6.5);
+        tl.from('#s3-chip', { opacity: 0, y: 30, duration: 0.4 }, 6.9);
+
+        tl.from('#s4-img',  { opacity: 0, x: -90, duration: 0.5, ease: 'power2.out' }, 9.0);
+        tl.from('#s4-chip', { opacity: 0, y: 30, duration: 0.4 }, 9.4);
+
+        // Cảnh 5 — giá.
+        tl.from('#s5-pill', { opacity: 0, y: 32, duration: 0.4 }, 11.5);
+        tl.from('#was',     { opacity: 0, duration: 0.3 }, 11.8);
+        tl.from('#now',     { opacity: 0, scale: 0.9, duration: 0.45, ease: 'back.out(1.5)' }, 12.0);
+        tl.from('#cta',     { opacity: 0, y: 32, duration: 0.4 }, 12.5);
+        tl.from('#s5-name', { opacity: 0, duration: 0.35 }, 12.9);
 
         window.__timelines = window.__timelines || {};
         window.__timelines.main = tl;

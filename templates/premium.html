@@ -29,7 +29,8 @@
       #s1-rule { width: 122px; height: 3px; background: #8a6a2f; margin-bottom: 50px; }
       #s1-sub { color: #6e6e73; font-size: 43px; font-weight: 300; letter-spacing: 3px; }
 
-      #s2-img { width: 760px; height: 760px; object-fit: contain; }
+      .shot { width: 760px; height: 760px; object-fit: contain; }
+      .cap { color: #8e8b84; font-size: 38px; letter-spacing: 5px; margin-top: 58px; }
       #s2-cap { color: #8e8b84; font-size: 40px; letter-spacing: 7px; margin-top: 65px; }
 
       #rows { width: 100%; margin-top: 72px; }
@@ -48,22 +49,32 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="9" data-fps="30" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="16" data-fps="30" data-width="1080" data-height="1920">
       <div id="pool"></div>
 
-      <div class="clip" id="scene-title" data-start="0" data-duration="2.4" data-track-index="0">
+      <div class="clip" id="scene-title" data-start="0" data-duration="2.8" data-track-index="0">
         <div class="kick" id="s1-kick">{{PILL}}</div>
         <div id="s1-num">{{HERO}}</div>
         <div id="s1-rule"></div>
         <div id="s1-sub">{{PUNCH}}</div>
       </div>
 
-      <div class="clip" id="scene-product" data-start="2.4" data-duration="2.8" data-track-index="0">
-        <img id="s2-img" src="{{IMAGE}}" alt="" />
+      <div class="clip" id="scene-product" data-start="2.8" data-duration="3.4" data-track-index="0">
+        <img id="s2-img" class="shot" src="{{IMAGE1}}" alt="" />
         <div id="s2-cap">{{TAGLINE}}</div>
       </div>
 
-      <div class="clip" id="scene-specs" data-start="5.2" data-duration="2" data-track-index="0">
+      <div class="clip" id="scene-angle-2" data-start="6.2" data-duration="2.4" data-track-index="0">
+        <img id="s3-img" class="shot" src="{{IMAGE2}}" alt="" />
+        <div class="cap">{{SPEC3_K}} — {{SPEC3_V}}</div>
+      </div>
+
+      <div class="clip" id="scene-angle-3" data-start="8.6" data-duration="2.4" data-track-index="0">
+        <img id="s4-img" class="shot" src="{{IMAGE3}}" alt="" />
+        <div class="cap">{{SPEC4_K}} — {{SPEC4_V}}</div>
+      </div>
+
+      <div class="clip" id="scene-specs" data-start="11.0" data-duration="2.4" data-track-index="0">
         <div class="kick">THÔNG SỐ</div>
         <div id="rows">
           <div class="row"><span class="rk">{{SPEC1_K}}</span><span class="rv">{{SPEC1_V}}</span></div>
@@ -73,7 +84,7 @@
         </div>
       </div>
 
-      <div class="clip" id="scene-price" data-start="7.2" data-duration="1.8" data-track-index="0">
+      <div class="clip" id="scene-price" data-start="13.4" data-duration="2.6" data-track-index="0">
         <div class="kick">GIÁ CHÍNH HÃNG</div>
         <div id="s4-price">{{PRICE}}</div>
         <div id="s4-coupon">{{COUPON}}</div>
@@ -93,16 +104,22 @@
         tl.from('#s1-sub',  { opacity: 0, duration: 0.7 }, 1.0);
 
         // Đẩy máy vào rất chậm. Cảm giác đắt tiền phần lớn nằm ở tốc độ.
-        tl.fromTo('#s2-img', { opacity: 0, scale: 1.0 }, { opacity: 1, duration: 0.7, ease: slow }, 2.5);
-        tl.to('#s2-img',     { scale: 1.06, duration: 2.7, ease: 'none' }, 2.5);
-        tl.from('#s2-cap',   { opacity: 0, y: 20, duration: 0.7 }, 3.1);
+        tl.fromTo('#s2-img', { opacity: 0, scale: 1.0 }, { opacity: 1, duration: 0.7, ease: slow }, 2.9);
+        tl.to('#s2-img',     { scale: 1.07, duration: 3.2, ease: 'none' }, 2.9);
+        tl.from('#s2-cap',   { opacity: 0, y: 20, duration: 0.7 }, 3.5);
 
-        tl.from('.row', { opacity: 0, y: 24, duration: 0.5, stagger: 0.14, ease: slow }, 5.35);
+        tl.fromTo('#s3-img', { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1.0, duration: 0.8, ease: slow }, 6.3);
+        tl.from('#scene-angle-2 .cap', { opacity: 0, duration: 0.6 }, 6.8);
 
-        tl.from('#s4-price',  { opacity: 0, y: 22, duration: 0.7, ease: slow }, 7.35);
-        tl.from('#s4-coupon', { opacity: 0, duration: 0.6 }, 7.6);
-        tl.fromTo('#s4-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: slow }, 7.8);
-        tl.from('#s4-cta',    { opacity: 0, duration: 0.6 }, 8.0);
+        tl.fromTo('#s4-img', { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1.0, duration: 0.8, ease: slow }, 8.7);
+        tl.from('#scene-angle-3 .cap', { opacity: 0, duration: 0.6 }, 9.2);
+
+        tl.from('.row', { opacity: 0, y: 24, duration: 0.5, stagger: 0.14, ease: slow }, 11.15);
+
+        tl.from('#s4-price',  { opacity: 0, y: 22, duration: 0.7, ease: slow }, 13.55);
+        tl.from('#s4-coupon', { opacity: 0, duration: 0.6 }, 13.8);
+        tl.fromTo('#s4-rule', { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: slow }, 14.1);
+        tl.from('#s4-cta',    { opacity: 0, duration: 0.6 }, 14.4);
 
         window.__timelines = window.__timelines || {};
         window.__timelines.main = tl;
