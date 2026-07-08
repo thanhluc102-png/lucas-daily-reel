@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       product_id:
-        description: 'Ép quay 1 sản phẩm cụ thể (bỏ trống = lấy đầu queue)'
+        description: 'Ép quay 1 sản phẩm cụ thể (bỏ trống = script tự chọn)'
         required: false
       dry_run:
         description: 'true = chỉ render, không đăng'
@@ -15,7 +15,7 @@ on:
         default: 'true'
 
 permissions:
-  contents: write   # cần để commit lại queue.json sau khi xoay vòng
+  contents: write
 
 concurrency:
   group: daily-reel
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Cài dependency (kéo cả Chrome cho renderer)
+      - name: Cài dependency
         run: npm ci || npm install
 
       - name: Cài FFmpeg và chrome-headless-shell
@@ -51,14 +51,7 @@ jobs:
 
       - name: Chọn sản phẩm
         id: pick
-        run: |
-          if [ -n "${{ inputs.product_id }}" ]; then
-            ID="${{ inputs.product_id }}"
-          else
-            ID=$(node -e "console.log(JSON.parse(require('fs').readFileSync('queue.json')).items[0].id)")
-          fi
-          echo "id=$ID" >> "$GITHUB_OUTPUT"
-          echo "Hôm nay quay product $ID"
+        run: node lib/pick-daily.mjs ${{ inputs.product_id }}
 
       - name: Kéo dữ liệu từ Store API
         run: node lib/fetch-product.mjs ${{ steps.pick.outputs.id }} build
@@ -87,6 +80,8 @@ jobs:
           SIZE=$(stat -c%s renders/reel.mp4)
           echo "MP4 $((SIZE/1024)) KB"
           [ "$SIZE" -gt 200000 ] || { echo "MP4 nhỏ bất thường, nghi render hỏng"; exit 1; }
+          echo "luồng trong file:"
+          ffprobe -v error -show_entries stream=codec_type -of csv=p=0 renders/reel.mp4 | sort -u
 
       - name: Lưu artifact để xem trước
         uses: actions/upload-artifact@v4
@@ -98,25 +93,19 @@ jobs:
             build/index.html
           retention-days: 14
 
-      - name: Đăng lên fanpage
+      - name: Đăng lên fanpage + comment link mua
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          # Mặc định true. Gạt sang false trong repo variables khi anh đã yên tâm.
           DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
         run: node lib/post-reel.mjs renders/reel.mp4
 
-      - name: Xoay vòng hàng đợi
-        if: github.event_name == 'schedule'
+      - name: Ghi lại sản phẩm đã quay
+        if: ${{ (inputs.dry_run || vars.DRY_RUN || 'true') != 'true' }}
         run: |
-          node -e "
-            const fs = require('fs');
-            const q = JSON.parse(fs.readFileSync('queue.json'));
-            q.items.push(q.items.shift());
-            fs.writeFileSync('queue.json', JSON.stringify(q, null, 2) + '\n');
-          "
+          git pull --rebase
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add queue.json
-          git diff --staged --quiet || git commit -m "chore: xoay hàng đợi reel"
+          git add history.json
+          git diff --staged --quiet || git commit -m "chore: đã quay reel hôm nay"
           git push

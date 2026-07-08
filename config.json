@@ -4,5 +4,12 @@
   "premiumThreshold": 1500000,
   "defaultCoupon": "LUCAS50K",
   "storeBase": "https://lucas.vn/wp-json/wc/store/v1",
-  "hashtags": "#LucasComboPlus #phukienapple #chinhhang"
+  "hashtags": "#LucasComboPlus #phukienapple #chinhhang",
+  "strategy": "onsale",
+  "historyDays": 21,
+  "excludeIds": [
+    57195
+  ],
+  "hotline": "0902 391 348",
+  "address": "29/7 Hoàng Diệu, P.10, Phú Nhuận, TP.HCM"
 }
