@@ -52,7 +52,7 @@ trộn 2 track ngay trong composition, không cần ffmpeg mux riêng.
 - **An toàn:** thiếu `ELEVENLABS_API_KEY` / lỗi → render KHÔNG giọng (vẫn còn nhạc nền). Bot không vỡ.
 - **Điều khiển:**
   - Secret `ELEVENLABS_API_KEY` — bắt buộc để bật giọng.
-  - Variable `ELEVEN_VOICE_ID` (mặc định `ZsjEJaLQy3sgvwxicmDx`), `ELEVEN_MODEL` (mặc định `eleven_turbo_v2_5`).
+  - Variable `ELEVEN_VOICE_ID` (mặc định `ZsjEJaLQy3sgvwxicmDx` — giọng Quang Toàn), `ELEVEN_MODEL` (mặc định `eleven_v3` — đọc tiếng Việt chuẩn dấu; `eleven_turbo_v2_5` nhanh hơn nhưng hay sai thanh điệu).
   - Variable `VOICE=false` — tắt giọng, chỉ còn nhạc nền.
 - Lời đọc dài ~10-12s (AI giới hạn ≤45 từ) để vừa khung video. Ghim tay được qua `copy.voiceover` trong `queue.json`.
 
