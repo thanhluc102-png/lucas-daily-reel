@@ -79,12 +79,16 @@ jobs:
         if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         run: node lib/fetch-product.mjs ${{ steps.pick.outputs.id }} build
 
-      - name: Ghép template (+ AI viết nội dung & màu riêng)
+      - name: Ghép template (+ AI viết nội dung, màu & giọng đọc)
         if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AI_COPY: ${{ vars.AI_COPY || 'true' }}
           AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVEN_VOICE_ID: ${{ vars.ELEVEN_VOICE_ID || 'ZsjEJaLQy3sgvwxicmDx' }}
+          ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_turbo_v2_5' }}
+          VOICE: ${{ vars.VOICE || 'true' }}
         run: node lib/build.mjs build
 
       - name: Lint composition
