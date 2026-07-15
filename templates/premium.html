@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
+      :root{ --accent: {{ACCENT}}; --accent-soft: {{ACCENT_SOFT}}; --accent-ink: {{ACCENT_INK}}; }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1080px; height: 1920px; overflow: hidden; background: #070B16; }
       body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
@@ -29,7 +30,7 @@
 
       #prog { position: absolute; top: 40px; left: 60px; right: 60px; display: flex; gap: 12px; z-index: 6; }
       #prog .seg { flex: 1; height: 7px; border-radius: 7px; background: rgba(255,255,255,0.14); overflow: hidden; }
-      #prog .seg .f { width: 0%; height: 100%; background: #FBBF24; border-radius: 7px; }
+      #prog .seg .f { width: 0%; height: 100%; background: var(--accent); border-radius: 7px; }
       #brand {
         position: absolute; top: 72px; left: 62px; z-index: 6;
         color: #34D399; font-size: 40px; font-weight: 700; letter-spacing: 1px;
@@ -45,12 +46,12 @@
       }
 
       /* ---- cảnh mở: con số anh hùng ---- */
-      .kick { color: #FDE68A; font-size: 40px; letter-spacing: 14px; font-weight: 600; }
+      .kick { color: var(--accent-soft); font-size: 40px; letter-spacing: 14px; font-weight: 600; }
       #s1-num {
-        color: #FBBF24; font-size: 300px; font-weight: 800; letter-spacing: -8px;
-        margin: 44px 0 32px; line-height: 1; text-shadow: 0 0 60px rgba(251,191,36,0.4);
+        color: var(--accent); font-size: 300px; font-weight: 800; letter-spacing: -8px;
+        margin: 44px 0 32px; line-height: 1; text-shadow: 0 0 60px rgb(from var(--accent) r g b / 0.4);
       }
-      #s1-rule { width: 130px; height: 6px; background: #FBBF24; border-radius: 6px; margin-bottom: 44px; }
+      #s1-rule { width: 130px; height: 6px; background: var(--accent); border-radius: 6px; margin-bottom: 44px; }
       #s1-sub { color: #C7D2EC; font-size: 52px; font-weight: 500; letter-spacing: 2px; }
 
       /* ---- ảnh sản phẩm ---- */
@@ -61,14 +62,14 @@
         box-shadow: 0 46px 100px -34px rgba(0,0,0,0.72), inset 0 2px 0 rgba(255,255,255,0.85);
       }
       .card img { width: 90%; height: 90%; object-fit: contain; }
-      #s2-cap { color: #FDE68A; font-size: 44px; letter-spacing: 8px; font-weight: 600; margin-top: 66px; }
+      #s2-cap { color: var(--accent-soft); font-size: 44px; letter-spacing: 8px; font-weight: 600; margin-top: 66px; }
       .cap { color: #C7D2EC; font-size: 42px; letter-spacing: 4px; font-weight: 500; margin-top: 60px; }
 
       /* ---- bảng thông số ---- */
       #rows { width: 100%; }
       .row {
         display: flex; justify-content: space-between; align-items: baseline;
-        width: 100%; padding: 42px 8px; border-bottom: 3px solid rgba(251,191,36,0.18);
+        width: 100%; padding: 42px 8px; border-bottom: 3px solid rgb(from var(--accent) r g b / 0.18);
       }
       .row:last-child { border-bottom: 0; }
       .rk { color: #93A0BE; font-size: 42px; font-weight: 500; letter-spacing: 2px; }
@@ -78,13 +79,13 @@
       #s4-price { color: #EAF0FF; font-size: 168px; font-weight: 800; letter-spacing: -5px; margin: 40px 0; text-shadow: 0 0 50px rgba(234,240,255,0.18); }
       #s4-coupon {
         display: inline-flex; align-items: center; gap: 18px;
-        background-color: #FBBF24;
-        background-image: linear-gradient(180deg, #FDE68A, #FBBF24); color: #1a1204;
+        background-color: var(--accent);
+        background-image: linear-gradient(180deg, var(--accent-soft), var(--accent)); color: var(--accent-ink);
         font-size: 44px; font-weight: 700; padding: 22px 48px; border-radius: 80px;
-        box-shadow: 0 16px 40px -14px rgba(251,191,36,0.7);
+        box-shadow: 0 16px 40px -14px rgb(from var(--accent) r g b / 0.7);
       }
-      #s4-rule { width: 460px; height: 3px; background: rgba(251,191,36,0.35); margin: 96px 0 54px; }
-      #s4-cta { color: #FBBF24; font-size: 64px; font-weight: 800; letter-spacing: 10px; }
+      #s4-rule { width: 460px; height: 3px; background: rgb(from var(--accent) r g b / 0.35); margin: 96px 0 54px; }
+      #s4-cta { color: var(--accent); font-size: 64px; font-weight: 800; letter-spacing: 10px; }
     </style>
   </head>
   <body>
