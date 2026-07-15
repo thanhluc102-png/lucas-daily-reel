@@ -42,6 +42,20 @@ Nhờ vậy mỗi reel một giọng, một màu — nhưng bộ khung render v�
 Màu accent áp qua biến CSS `--accent` trong template (kể cả viền/glow nhờ relative-color);
 đỏ khuyến mãi và xanh thương hiệu `>lucas.vn` giữ nguyên.
 
+## Giọng đọc (ElevenLabs)
+
+Claude viết luôn một câu **lời đọc** (`voiceover`) hợp từng sản phẩm; `lib/voice.mjs`
+gọi ElevenLabs sinh `assets/voice.mp3` tiếng Việt. `build.mjs` chèn giọng thành **track
+audio thứ 2** và tự **hạ nhỏ nhạc nền** (ducking 0.35 → 0.14) để nghe rõ lời. HyperFrames
+trộn 2 track ngay trong composition, không cần ffmpeg mux riêng.
+
+- **An toàn:** thiếu `ELEVENLABS_API_KEY` / lỗi → render KHÔNG giọng (vẫn còn nhạc nền). Bot không vỡ.
+- **Điều khiển:**
+  - Secret `ELEVENLABS_API_KEY` — bắt buộc để bật giọng.
+  - Variable `ELEVEN_VOICE_ID` (mặc định `ZsjEJaLQy3sgvwxicmDx`), `ELEVEN_MODEL` (mặc định `eleven_turbo_v2_5`).
+  - Variable `VOICE=false` — tắt giọng, chỉ còn nhạc nền.
+- Lời đọc dài ~10-12s (AI giới hạn ≤45 từ) để vừa khung video. Ghim tay được qua `copy.voiceover` trong `queue.json`.
+
 ## Hàng đợi
 
 `queue.json` chứa danh sách sản phẩm. Workflow lấy phần tử đầu, quay xong đẩy xuống cuối
