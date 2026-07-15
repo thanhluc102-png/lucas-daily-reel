@@ -21,7 +21,26 @@ npm run render                           # xuất renders/reel.mp4
 | `templates/premium.html` | Giá ≥ `premiumThreshold` | 9s |
 
 Thứ tự ưu tiên khi chọn: `template` trong `queue.json` → tag `reel-premium` / `reel-hook`
-trên WooCommerce → ngưỡng giá trong `config.json` (mặc định 1.500.000₫).
+trên WooCommerce → **AI chọn** → ngưỡng giá trong `config.json` (mặc định 1.500.000₫).
+
+## Nội dung & màu do AI viết riêng cho từng sản phẩm
+
+`lib/ai-copy.mjs` gửi ảnh + dữ liệu sản phẩm cho Claude (vision) và nhận về nội dung
+riêng (headline, punch, thông số, tagline…) cùng **màu accent lấy từ chính màu sản phẩm**.
+Nhờ vậy mỗi reel một giọng, một màu — nhưng bộ khung render vẫn cố định nên không bao giờ vỡ.
+
+- **Bật/tắt an toàn:** cần secret `ANTHROPIC_API_KEY`. Thiếu key / lỗi mạng / model từ chối →
+  tự rơi về nội dung mặc định (suy từ tên + màu amber). Bot không bao giờ dừng vì AI.
+- **Thứ tự nội dung:** copy viết tay trong `queue.json` **luôn thắng** AI; AI thắng mặc định.
+  Muốn ghim tay sản phẩm nào thì thêm block `copy` như cũ.
+- **Điều khiển bằng repo variables/secrets (Settings → Secrets and variables → Actions):**
+  - Secret `ANTHROPIC_API_KEY` — bắt buộc để bật AI.
+  - Variable `AI_COPY=false` — tắt AI, quay về logic mặc định.
+  - Variable `AI_MODEL` — đổi model (mặc định `claude-opus-4-8`; đặt `claude-haiku-4-5` cho rẻ hơn).
+- **Đổi màu thủ công khi test:** `FORCE_ACCENT=#22C55E node lib/build.mjs build`.
+
+Màu accent áp qua biến CSS `--accent` trong template (kể cả viền/glow nhờ relative-color);
+đỏ khuyến mãi và xanh thương hiệu `>lucas.vn` giữ nguyên.
 
 ## Hàng đợi
 
