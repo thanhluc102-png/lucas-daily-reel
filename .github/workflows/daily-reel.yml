@@ -2,12 +2,11 @@ name: Daily reel
 
 on:
   schedule:
-    # Đăng cách nhau 6 tiếng, 4 lần/ngày (cron theo UTC; VN = UTC+7).
-    # Guard "đủ giãn cách chưa" (>= 5.5h) chống double-post nếu GitHub bắn trùng nhịp.
+    # Đăng cách nhau 6 tiếng, 3 lần/ngày trong giờ đẹp — KHÔNG đăng khung khuya
+    # (cron theo UTC; VN = UTC+7). Guard giãn cách >= 5.5h chống double-post.
     - cron: '17 1 * * *'    # 08:17 giờ VN
     - cron: '17 7 * * *'    # 14:17 giờ VN
     - cron: '17 13 * * *'   # 20:17 giờ VN
-    - cron: '17 19 * * *'   # 02:17 giờ VN
   workflow_dispatch:
     inputs:
       product_id:
