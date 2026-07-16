@@ -3,6 +3,14 @@
   "graphVersion": "v25.0",
   "premiumThreshold": 1500000,
   "defaultCoupon": "LUCAS50K",
+  "voices": [
+    { "id": "ZsjEJaLQy3sgvwxicmDx", "name": "Quang Toàn (nam)" },
+    { "id": "JYT6xPLD3LGl0ui3YXNq", "name": "Khanh (nam, Nam bộ)" },
+    { "id": "UsgbMVmY3U59ijwK5mdh", "name": "Triệu Dương (nam, Nam bộ)" },
+    { "id": "BlZK9tHPU6XXjwOSIiYA", "name": "Trang (nữ)" },
+    { "id": "d5HVupAWCwe4e6GvMCAL", "name": "Mai (nữ)" },
+    { "id": "A5w1fw5x0uXded1LDvZp", "name": "Như (nữ)" }
+  ],
   "storeBase": "https://lucas.vn/wp-json/wc/store/v1",
   "hashtags": "#LucasComboPlus #phukienapple #chinhhang",
   "strategy": "onsale",

@@ -49,11 +49,15 @@ gọi ElevenLabs sinh `assets/voice.mp3` tiếng Việt. `build.mjs` chèn giọ
 audio thứ 2** và tự **hạ nhỏ nhạc nền** (ducking 0.35 → 0.14) để nghe rõ lời. HyperFrames
 trộn 2 track ngay trong composition, không cần ffmpeg mux riêng.
 
+- **Random giọng:** mỗi lần build **bốc ngẫu nhiên** 1 giọng trong pool `voices` ở `config.json`
+  (7 giọng Việt nam/nữ, Bắc + Nam). Sửa danh sách này để thêm/bớt giọng.
 - **An toàn:** thiếu `ELEVENLABS_API_KEY` / lỗi → render KHÔNG giọng (vẫn còn nhạc nền). Bot không vỡ.
 - **Điều khiển:**
   - Secret `ELEVENLABS_API_KEY` — bắt buộc để bật giọng.
-  - Variable `ELEVEN_VOICE_ID` (mặc định `ZsjEJaLQy3sgvwxicmDx`), `ELEVEN_MODEL` (mặc định `eleven_turbo_v2_5`).
+  - Variable `ELEVEN_VOICE_ID` — **để trống = random pool**; đặt 1 ID để **ghim cố định** 1 giọng.
+  - Variable `ELEVEN_MODEL` (mặc định `eleven_v3` — đọc tiếng Việt chuẩn dấu; `eleven_turbo_v2_5` nhanh hơn nhưng hay sai thanh điệu như "sạc" → "sác").
   - Variable `VOICE=false` — tắt giọng, chỉ còn nhạc nền.
+  - Ghim giọng theo sản phẩm: thêm `copy.voiceId` trong `queue.json`.
 - Lời đọc dài ~10-12s (AI giới hạn ≤45 từ) để vừa khung video. Ghim tay được qua `copy.voiceover` trong `queue.json`.
 
 ## Hàng đợi
