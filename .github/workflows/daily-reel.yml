@@ -2,12 +2,12 @@ name: Daily reel
 
 on:
   schedule:
-    # GitHub chỉ chạy cron theo UTC, và hay bỏ nhịp lúc giờ tròn vì quá tải.
-    # Đặt phút lẻ, ba lần trong buổi sáng. Bước "Đã đăng hôm nay chưa" bảo đảm
-    # chỉ đúng một lần thật sự đăng.
-    - cron: '17 1 * * *'   # 08:17 giờ VN
-    - cron: '23 2 * * *'   # 09:23 giờ VN — dự phòng
-    - cron: '41 4 * * *'   # 11:41 giờ VN — dự phòng cuối
+    # Đăng cách nhau 6 tiếng, 4 lần/ngày (cron theo UTC; VN = UTC+7).
+    # Guard "đủ giãn cách chưa" (>= 5.5h) chống double-post nếu GitHub bắn trùng nhịp.
+    - cron: '17 1 * * *'    # 08:17 giờ VN
+    - cron: '17 7 * * *'    # 14:17 giờ VN
+    - cron: '17 13 * * *'   # 20:17 giờ VN
+    - cron: '17 19 * * *'   # 02:17 giờ VN
   workflow_dispatch:
     inputs:
       product_id:
@@ -43,13 +43,13 @@ jobs:
           cache: npm
 
       # Chặn ngay đây, trước khi tốn 3 phút cài Chrome và FFmpeg.
-      - name: Đã đăng hôm nay chưa
+      - name: Đủ giãn cách chưa (>= 5.5h)
         id: guard
         run: node lib/already-posted.mjs
 
       - name: Bỏ qua
         if: steps.guard.outputs.skip == 'true' && inputs.force != 'true'
-        run: echo "::notice::Hôm nay đã đăng rồi. Nhịp cron này nghỉ."
+        run: echo "::notice::Chưa đủ giãn cách từ lần đăng trước. Nhịp cron này nghỉ."
 
       - name: Cài dependency
         if: steps.guard.outputs.skip != 'true' || inputs.force == 'true'
