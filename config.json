@@ -14,6 +14,7 @@
   "storeBase": "https://lucas.vn/wp-json/wc/store/v1",
   "hashtags": "#LucasComboPlus #phukienapple #chinhhang",
   "strategy": "mix",
+  "mixTiers": ["newest", "category:4678", "onsale"],
   "historyDays": 21,
   "excludeIds": [
     57195
