@@ -2,11 +2,11 @@ name: Daily reel
 
 on:
   schedule:
-    # Đăng cách nhau 6 tiếng, 3 lần/ngày trong giờ đẹp — KHÔNG đăng khung khuya
-    # (cron theo UTC; VN = UTC+7). Guard giãn cách >= 5.5h chống double-post.
-    - cron: '17 1 * * *'    # 08:17 giờ VN
-    - cron: '17 7 * * *'    # 14:17 giờ VN
-    - cron: '17 13 * * *'   # 20:17 giờ VN
+    # 3 lần/ngày vào khung tương tác cao nhất (cron theo UTC; VN = UTC+7).
+    # Guard giãn cách >= 3.5h chống double-post (khung gần nhất cách 4h).
+    - cron: '15 1 * * *'    # 08:15 VN — sáng
+    - cron: '15 5 * * *'    # 12:15 VN — trưa (nghỉ trưa, tương tác cao)
+    - cron: '15 13 * * *'   # 20:15 VN — tối (cao điểm nhất)
   workflow_dispatch:
     inputs:
       product_id:
