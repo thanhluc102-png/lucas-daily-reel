@@ -3,3 +3,6 @@ build/
 renders/
 snapshots/
 .debug/
+.env
+jobs/
+runs/

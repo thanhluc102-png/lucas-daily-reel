@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "job_id": "2026-07-22_k3m9p",
+  "title": "Tomtoc balo chống sốc - giảm giá",
+  "format": "hook",
+  "aspect": "9:16",
+  "brand": { "bg": "#0B1B2E", "accent": "#C9A227" },
+  "audio": {
+    "voice_provider": "elevenlabs",
+    "gender": "nu",
+    "region": "mien_nam",
+    "speed": 1.05,
+    "bgm": "auto",
+    "bpm": 195
+  },
+  "subtitle": { "style": "karaoke" },
+
+  "products": [
+    {
+      "sku": "TOMTOC-A73",
+      "name": "Balo Tomtoc Navigator-T73 cho MacBook 16 inch",
+      "price_vnd": 890000,
+      "regular_vnd": 1290000,
+      "discount_pct": 31,
+      "price_is_from": true,
+      "url": "https://lucas.vn/balo-tomtoc-navigator-t73/",
+      "image": "https://lucas.vn/wp-content/uploads/tomtoc-t73.jpg"
+    }
+  ],
+
+  "scenes": [
+    {
+      "idx": 0,
+      "role": "hook",
+      "text": "Laptop bốn mươi triệu mà nhét balo vải mỏng dính.",
+      "duration_sec": 3.1,
+      "sku_ref": "TOMTOC-A73",
+      "asset": { "type": "product_image", "focus": "center" }
+    },
+    {
+      "idx": 1,
+      "role": "body",
+      "text": "Balo thường không có ngăn laptop độc lập, va một cái là xước.",
+      "duration_sec": 4.3,
+      "asset": { "type": "product_image", "focus": "center" }
+    },
+    {
+      "idx": 2,
+      "role": "body",
+      "text": "Tomtoc T73 có khoang đệm riêng, đáy nâng cao ba phân.",
+      "duration_sec": 4,
+      "sku_ref": "TOMTOC-A73",
+      "asset": { "type": "product_image", "focus": "center" }
+    },
+    {
+      "idx": 3,
+      "role": "proof",
+      "text": "Vải chống nước, mưa Sài Gòn đi thẳng không cần áo mưa balo.",
+      "duration_sec": 4.4,
+      "asset": { "type": "product_image", "focus": "bottom" }
+    },
+    {
+      "idx": 4,
+      "role": "price",
+      "text": "Đang giảm ba mươi mốt phần trăm, chỉ từ 890K.",
+      "duration_sec": 3.6,
+      "sku_ref": "TOMTOC-A73",
+      "asset": { "type": "product_image", "focus": "center" },
+      "overlay": { "price_badge": true, "label": "GIẢM 31%" }
+    },
+    {
+      "idx": 5,
+      "role": "cta",
+      "text": "Lucas.vn, chính hãng, bảo hành đầy đủ.",
+      "duration_sec": 2.8,
+      "asset": { "type": "product_image", "focus": "center" }
+    }
+  ],
+
+  "cta": {
+    "text": "Lucas.vn — chính hãng, bảo hành đầy đủ",
+    "url": "https://lucas.vn/balo-tomtoc-navigator-t73/"
+  }
+}
