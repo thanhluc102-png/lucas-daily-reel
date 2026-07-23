@@ -29,6 +29,18 @@ const BANNED_WORDS = [
 
 const FROM_MARKERS = ['chỉ từ', 'chỉ  từ', 'giá từ', ' từ '];
 
+// Thương hiệu thật — AI vẽ logo ra là hàng nhái, cấm nhắc trong prompt
+const BRAND_WORDS = [
+  'apple', 'macbook', 'iphone', 'ipad', 'airpods', 'tomtoc', 'pitaka',
+  'anker', 'jcpal', 'innostyle', 'satechi', 'wiwu', 'samsung', 'xiaomi',
+];
+
+// Danh từ sản phẩm — cảnh báo, vì có thể vẫn hợp lệ (ẩn dụ, nền)
+const PRODUCT_NOUNS = [
+  'backpack', 'phone case', 'laptop case', 'charger', 'power bank',
+  'cable', 'screen protector', 'keyboard', 'mouse', 'hub', 'dock',
+];
+
 // ---------------------------------------------------------------------------
 
 class Report {
@@ -113,6 +125,29 @@ function validate(job, file) {
     if (!ROLES.includes(s.role)) r.err(at, `role không hợp lệ: ${s.role}`);
     if (!ASSET_TYPES.includes(s.asset?.type)) r.err(at, 'asset.type không hợp lệ');
     if (s.asset?.type === 'ai_image' && !s.asset.prompt) r.err(at, 'ai_image thiếu prompt');
+
+    // ---- ảnh AI không được vẽ sản phẩm ------------------------------------
+    if (s.asset?.type === 'ai_image') {
+      const p = norm(s.asset.prompt || '');
+
+      if (s.sku_ref)
+        r.err(at, 'cảnh ai_image không được gắn sku_ref — ảnh sản phẩm phải là product_image, xem rules/imagery.md');
+
+      if (s.overlay?.price_badge)
+        r.err(at, 'không đặt badge giá lên ảnh AI — dễ hiểu nhầm đó là ảnh sản phẩm thật');
+
+      for (const b of BRAND_WORDS)
+        if (p.includes(b)) r.err(at, `prompt nhắc thương hiệu "${b}" — AI vẽ logo ra là nhãn hiệu nhái, xem rules/imagery.md`);
+
+      for (const b of PRODUCT_NOUNS)
+        if (p.includes(b))
+          r.warn(at, `prompt có "${b}" — nếu khung hình có món đang bán thì phải đổi sang product_image`);
+
+      for (const need of ['no text', 'no logo']) {
+        if (!p.includes(need))
+          r.err(at, `prompt thiếu "${need}" — bắt buộc theo rules/imagery.md`);
+      }
+    }
     if (s.asset?.src && !/^https?:\/\//.test(s.asset.src) && !fs.existsSync(s.asset.src))
       r.err(at, `không tìm thấy file: ${s.asset.src}`);
 
