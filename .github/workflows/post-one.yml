@@ -1,0 +1,51 @@
+name: Post one reel
+
+# Đăng MỘT video đã render sẵn (trong post-queue/<slug>/) lên fanpage,
+# kèm caption + comment tự soạn. Bấm tay qua "Run workflow".
+# Khác daily-reel: không tự dựng lại video, chỉ upload đúng file đã duyệt.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dir:
+        description: 'Thư mục chứa final.mp4 + caption.txt + comment.txt'
+        required: true
+        default: 'post-queue/bom-xe-hoi-cp10'
+      dry_run:
+        description: 'true = chỉ in caption, KHÔNG đăng. false = đăng thật.'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: post-one
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra đủ file
+        run: |
+          for f in final.mp4 caption.txt comment.txt; do
+            test -f "${{ inputs.dir }}/$f" || { echo "Thiếu ${{ inputs.dir }}/$f"; exit 1; }
+          done
+          ls -la "${{ inputs.dir }}"
+
+      - name: Đăng reel + comment link mua
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          CAPTION_FILE: ${{ inputs.dir }}/caption.txt
+          COMMENT_FILE: ${{ inputs.dir }}/comment.txt
+        run: node lib/post-reel.mjs "${{ inputs.dir }}/final.mp4"
