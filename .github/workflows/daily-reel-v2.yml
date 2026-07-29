@@ -89,6 +89,17 @@ jobs:
           python scripts/whisper_words.py "jobs/$JOB/voice.mp3" "jobs/$JOB/words.json" --model large-v3
           node scripts/align.mjs "${{ steps.gen.outputs.file }}"
 
+      - name: (debug) Lưu job + voice + words để soi
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-${{ steps.gen.outputs.job }}
+          path: |
+            ${{ steps.gen.outputs.file }}
+            jobs/${{ steps.gen.outputs.job }}/words.json
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Render MP4
         run: node scripts/render.mjs ${{ steps.gen.outputs.file }}
 
