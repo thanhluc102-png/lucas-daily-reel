@@ -18,7 +18,7 @@ const CSS = `
 .lcs-sub {
   position: absolute;
   left: 0; right: 0;
-  bottom: 670px;              /* y ~1250 trên khung 1920, theo rules/visual.md */
+  bottom: 500px;              /* y ~1420 — hạ xuống dưới ảnh sản phẩm, vẫn trên vùng nút TikTok */
   display: flex;
   flex-direction: column;
   align-items: center;
