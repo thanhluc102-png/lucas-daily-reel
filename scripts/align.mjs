@@ -72,25 +72,37 @@ job.scenes.forEach((s, si) => {
   }
 });
 
-// Duyệt tham lam, cho phép nhảy tối đa 3 chữ để tự bắt nhịp lại
-const LOOKAHEAD = 3;
-let j = 0;
-let matched = 0;
+// Căn chuỗi bằng LCS (quy hoạch động hai chiều) thay vì duyệt tham lam.
+// Giọng đọc hay CHÈN thêm chữ ở tên riêng (WIWU Salem → "ui u say lầm",
+// YKK → "ít", da PU → "gia tu"). Con trỏ tham lam chỉ tiến khi khớp nên kẹt
+// cứng ở cụm méo rồi trượt hết phần sau — dù các cảnh sau đọc đúng.
+// LCS bỏ qua được chữ thừa/thiếu ở CẢ HAI phía rồi tự bắt nhịp lại.
+const H = heard.map((h) => norm(h.w));
+const n = expected.length;
+const m = H.length;
 
-for (const exp of expected) {
-  let hit = -1;
-  for (let k = j; k < Math.min(j + 1 + LOOKAHEAD, heard.length); k++) {
-    if (similar(exp.n, norm(heard[k].w))) {
-      hit = k;
-      break;
-    }
+const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+for (let i = n - 1; i >= 0; i--) {
+  for (let k = m - 1; k >= 0; k--) {
+    dp[i][k] = similar(expected[i].n, H[k])
+      ? dp[i + 1][k + 1] + 1
+      : Math.max(dp[i + 1][k], dp[i][k + 1]);
   }
-  if (hit >= 0) {
-    exp.start = heard[hit].start;
-    exp.end = heard[hit].end;
-    exp.p = heard[hit].p;
-    j = hit + 1;
+}
+
+let matched = 0;
+for (let i = 0, k = 0; i < n && k < m; ) {
+  if (similar(expected[i].n, H[k])) {
+    expected[i].start = heard[k].start;
+    expected[i].end = heard[k].end;
+    expected[i].p = heard[k].p;
     matched++;
+    i++;
+    k++;
+  } else if (dp[i + 1][k] >= dp[i][k + 1]) {
+    i++;
+  } else {
+    k++;
   }
 }
 
@@ -101,6 +113,35 @@ if (rate < 0.6) {
   );
   console.error('  Kiểm tra voice.mp3 có phải của job này không, rồi chạy lại.');
   process.exit(1);
+}
+
+// --- nội suy mốc cho chữ không khớp ----------------------------------------
+// Tên riêng méo (WIWU, Salem, YKK, PU, lucas.vn) không khớp được nên thiếu mốc.
+// Nếu chỉ dựng cue từ chữ khớp thì phụ đề RỚT nguyên các chữ đó — đọc sai chính tả.
+// Ở đây điền mốc bằng nội suy tuyến tính giữa hai chữ khớp gần nhất; CHỮ giữ
+// nguyên spelling kịch bản (exp.raw), chỉ thời điểm là ước lượng.
+for (let i = 0; i < expected.length; i++) {
+  if (expected[i].start !== undefined) continue;
+  let runEnd = i;
+  while (runEnd + 1 < expected.length && expected[runEnd + 1].start === undefined) runEnd++;
+  const count = runEnd - i + 1;
+
+  let a = i - 1;
+  while (a >= 0 && expected[a].end === undefined) a--;
+  let b = runEnd + 1;
+  while (b < expected.length && expected[b].start === undefined) b++;
+
+  const left = a >= 0 ? expected[a].end : (b < expected.length ? expected[b].start - 0.25 * count : 0);
+  const right = b < expected.length ? expected[b].start : left + 0.25 * count;
+  const step = (right - left) / (count + 1);
+
+  for (let r = 0; r < count; r++) {
+    const s = left + step * (r + 1);
+    expected[i + r].start = Number(s.toFixed(3));
+    expected[i + r].end = Number((s + Math.max(0.12, step * 0.9)).toFixed(3));
+    expected[i + r].p = 0; // 0 = mốc nội suy, không phải nghe được
+  }
+  i = runEnd;
 }
 
 // --- đo lại thời lượng từng cảnh -------------------------------------------
@@ -142,7 +183,9 @@ job.scenes.forEach((s, si) => {
   // Chia đều thành N cue thay vì cắt tham lam.
   // Cắt tham lam hay để lại một chữ lẻ ở cue cuối, nhấp nháy 0.3s trông rất tệ.
   const totalChars = own.reduce((a, w) => a + w.raw.length + 1, 0) - 1;
-  const perCue = MAX_LINE_CHARS * MAX_LINES_PER_CUE;
+  // Chừa ~6 ký tự dư so với trần 2×22: nhắm sát 44 thì biên từ hay không cho
+  // cắt được cả hai dòng ≤22 (vd "…phần trăm, giờ còn 450K thôi." kẹt ở 19|24).
+  const perCue = MAX_LINE_CHARS * MAX_LINES_PER_CUE - 6;
   const nCues = Math.max(1, Math.ceil(totalChars / perCue));
   const target = totalChars / nCues;
 
@@ -171,18 +214,19 @@ job.scenes.forEach((s, si) => {
     if (chars <= MAX_LINE_CHARS) {
       lines.push(flat);
     } else {
-      const half = chars / 2;
-      let acc = 0;
-      let cut = 1;
-      for (let i = 0; i < flat.length - 1; i++) {
-        acc += flat[i].raw.length + (i ? 1 : 0);
-        if (acc >= half) {
-          cut = i + 1;
-          break;
-        }
-        cut = i + 2;
+      // Chọn điểm ngắt 2 dòng: ưu tiên KHÔNG dòng nào vượt MAX_LINE_CHARS
+      // (rules/visual.md), sau đó mới cân cho hai dòng đều nhau.
+      // Cắt theo "điểm giữa" như trước hay để lại dòng 25 ký tự, tràn khung.
+      const lineLen = (arr) => arr.reduce((a, w, i) => a + w.raw.length + (i ? 1 : 0), 0);
+      let best = null;
+      for (let cut = 1; cut < flat.length; cut++) {
+        const l1 = lineLen(flat.slice(0, cut));
+        const l2 = lineLen(flat.slice(cut));
+        const over = Math.max(0, l1 - MAX_LINE_CHARS) + Math.max(0, l2 - MAX_LINE_CHARS);
+        const score = over * 100 + Math.abs(l1 - l2); // phạt nặng tràn, rồi tới lệch
+        if (!best || score < best.score) best = { cut, score };
       }
-      lines.push(flat.slice(0, cut), flat.slice(cut));
+      lines.push(flat.slice(0, best.cut), flat.slice(best.cut));
     }
 
     cues.push({
