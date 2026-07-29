@@ -1,7 +1,8 @@
-- Dữ liệu quá ít (2 mẫu, score 3-4) và đều rất thấp → mọi kết luận chỉ là giả định, cần thêm mẫu để chắc chắn.
-- Tránh hook chung chung kiểu "hàng chính hãng có sẵn", "đang giảm giá" → không tạo cảm xúc, không có lý do dừng xem, share = 0.
-- Hook nên nêu vấn đề/nỗi đau cụ thể người dùng gặp (dây sạc rối, balo đau vai, sạc chậm) rồi mới đưa sản phẩm là giải pháp.
-- Thêm con số gây sốc hoặc bằng chứng cụ thể (100W sạc đầy trong X phút, balo chống trộm, chống nước) thay vì nói "giảm giá".
-- Chèn yếu tố kích share: mẹo hữu ích, so sánh trước/sau, "tag đứa bạn hay làm mất sạc" để đẩy Comments và Shares.
-- Ưu tiên sản phẩm giá trị cao/độc đáo (balo du lịch) kể câu chuyện trải nghiệm; phụ kiện nhỏ (cáp sạc) nên đóng gói thành tip đời sống.
-- Kết bằng CTA cụ thể có tương tác ("bình luận X để nhận tư vấn") thay vì chỉ "có sẵn tại Lucas".
+- Ưu tiên hook dạng câu hỏi chạm nỗi đau cụ thể ("văng khỏi kẹp khi qua ổ gà?") — cho Score cao nhất (5).
+- Nêu tình huống bực bội đời thường mà khách gặp hằng ngày, để họ tự nhận ra mình.
+- Tránh hook chung chung kiểu "hàng chính hãng", "đang giảm giá" — chỉ đạt Score thấp, không tạo cảm xúc.
+- Tránh mở đầu bằng "muốn..." trừu tượng ("muốn sạc xịn gọn gàng?") — yếu, Score thấp (3).
+- Tập trung sản phẩm nhỏ giải quyết vấn đề rõ ràng (kẹp điện thoại, ví mỏng) hơn là hàng cao cấp mô tả suông (balo).
+- Mở bằng vấn đề trước, sản phẩm sau — đừng khoe tên/giá ngay đầu.
+- Dùng emoji chốt cảm xúc nhẹ (📱) nhưng đừng lạm dụng.
+- Viết ngắn, một ý đau duy nhất mỗi hook, kích thích bình luận "đúng tôi luôn".
