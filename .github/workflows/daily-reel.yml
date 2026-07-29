@@ -144,6 +144,21 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
         run: node lib/post-reel.mjs renders/reel.mp4
 
+      # VÒNG TỰ HỌC: kéo tương tác các reel đã đăng -> Claude rút bài học ->
+      # learnings.txt (được lib/ai-copy.mjs nhồi lại vào prompt lần sau).
+      - name: Đồng bộ tương tác + rút bài học
+        if: |
+          (steps.guard.outputs.skip != 'true' || inputs.force == 'true') &&
+          (inputs.dry_run || vars.DRY_RUN || 'true') != 'true'
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+        run: |
+          node scripts/sync-insights.mjs
+          node scripts/optimize.mjs
+
       # Chỉ ghi sổ khi đã đăng thật. Hỏng giữa chừng thì hôm nay vẫn trống,
       # nhịp cron sau được phép chạy lại.
       - name: Ghi lại sản phẩm đã quay
@@ -153,8 +168,8 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add history.json
+          git add history.json reels_history.json learnings.txt 2>/dev/null || true
           git diff --staged --quiet && exit 0
-          git commit -m "chore: đã quay reel $(date -u +%F)"
+          git commit -m "chore: đã quay reel + cập nhật bài học $(date -u +%F)"
           git pull --rebase
           git push
