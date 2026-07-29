@@ -137,6 +137,8 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'false' }}
+          CAPTION_FILE: jobs/${{ steps.gen.outputs.job }}/caption.txt
+          COMMENT_FILE: jobs/${{ steps.gen.outputs.job }}/comment.txt
         run: node lib/post-reel.mjs "jobs/${{ steps.gen.outputs.job }}/final.mp4"
 
       - name: Đồng bộ tương tác + rút bài học

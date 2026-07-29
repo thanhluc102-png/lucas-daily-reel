@@ -24,12 +24,11 @@ const id = process.argv[2];
 if (!id) { console.error('Dùng: node scripts/gen-scenes.mjs <product_id>'); process.exit(2); }
 if (!KEY) { console.error('Thiếu ANTHROPIC_API_KEY'); process.exit(2); }
 
+let CONFIG = {};
+try { CONFIG = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8')); } catch { /* không có config cũng không sao */ }
 // Chọn sẵn giọng nữ ElevenLabs từ config.json để voice.mjs không cần EL_VOICE_SOUTH.
-let voiceId = process.env.ELEVEN_VOICE_ID || null;
-try {
-  const cfg = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
-  if (!voiceId) voiceId = ((cfg.voices || []).find((v) => /n[ữu]/i.test(v.name)) || cfg.voices?.[0])?.id || null;
-} catch { /* không có config cũng không sao */ }
+let voiceId = process.env.ELEVEN_VOICE_ID
+  || ((CONFIG.voices || []).find((v) => /n[ữu]/i.test(v.name)) || CONFIG.voices?.[0])?.id || null;
 
 // --- lấy sản phẩm thật -------------------------------------------------------
 const res = await fetch(`${STORE}/products/${id}`, { headers: { 'User-Agent': 'lucas-daily-reel/1.0' } });
@@ -76,10 +75,11 @@ fs.writeFileSync(path.join(root, 'build', 'data.json'), JSON.stringify({
 // --- schema cho phần sáng tạo Claude trả về ---------------------------------
 const SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['title', 'format', 'scenes', 'price_scene_index', 'hook'],
+  required: ['title', 'format', 'scenes', 'price_scene_index', 'hook', 'caption'],
   properties: {
     title: { type: 'string' },
     format: { enum: ['hook', 'premium', 'unbox', 'threads'] },
+    caption: { type: 'string' },
     scenes: {
       type: 'array',
       items: {
@@ -127,6 +127,13 @@ RÀNG BUỘC KỸ THUẬT (validator chặn cứng, sai là hỏng):
 - Câu ở cảnh price PHẢI chứa đúng chuỗi giá "${priceStr}"${onSale ? ` và có thể nhắc "${discount}%"` : ''}${priceIsFrom ? ' và PHẢI có cụm "chỉ từ"' : ''}. KHÔNG viết số giá khác.
 - price_label: ${onSale ? `"GIẢM ${discount}%"` : '"CHÍNH HÃNG"'}.
 - Không dùng từ cấm (cực kỳ, siêu phẩm, đỉnh cao, số lượng có hạn, nhanh tay kẻo hết...). Không mở hook bằng "Xin chào", "Bạn có biết".
+
+CAPTION FACEBOOK (field "caption") — GIẬT TÍT, đừng hiền:
+- Mở bằng câu hook/gây tò mò mạnh (có thể chính là câu hook, thêm 1 emoji hợp cảm xúc).
+- 2–4 dòng ngắn: nỗi lo + giải pháp + điểm mạnh thật + giá (${priceStr}${onSale ? `, giảm ${discount}%` : ''}).
+- TUYỆT ĐỐI KHÔNG để link trong caption (Facebook bóp reach). Kết bằng: "Link đặt hàng ở bình luận đầu tiên 👇".
+- Thêm 4–6 hashtag cuối (gồm #LucasComboPlus #chinhhang + vài hashtag hợp sản phẩm).
+- Giọng Lucas: thẳng, hiểu chuyện, không nổ, không "cực kỳ/siêu phẩm".
 
 SỰ THẬT — TUYỆT ĐỐI KHÔNG BỊA:
 - Chỉ dùng con số/thông số CÓ TRONG tên hoặc mô tả sản phẩm ở trên. KHÔNG tự chế số cổng, số watt, độ dài, dung lượng, số thiết bị... nếu dữ liệu không nói rõ.
@@ -200,6 +207,20 @@ for (let attempt = 1; attempt <= 3; attempt++) {
   try {
     execFileSync('node', [path.join(root, 'scripts', 'validate.mjs'), file], { stdio: 'pipe', encoding: 'utf8' });
     console.log(`[gen] ✔ hợp lệ: ${path.relative(root, file)}`);
+
+    // Caption GIẬT TÍT (Claude viết) + comment link mua (lắp từ config — không để Claude bịa liên hệ).
+    // post-reel.mjs sẽ dùng CAPTION_FILE/COMMENT_FILE này thay caption template hiền.
+    const jobDir = path.join(root, 'jobs', job.job_id);
+    fs.mkdirSync(jobDir, { recursive: true });
+    const commentLines = [`Đặt hàng: ${product.url}`, ''];
+    commentLines.push(onSale
+      ? `Giá hiện tại ${priceStr}, giá gốc ${regularStr} (giảm ${discount}%).`
+      : `Giá ${(priceIsFrom ? 'chỉ từ ' : '') + priceStr}, chính hãng.`);
+    if (CONFIG.hotline) commentLines.push(`Hotline / Zalo: ${CONFIG.hotline}`);
+    if (CONFIG.address) commentLines.push(CONFIG.address);
+    fs.writeFileSync(path.join(jobDir, 'caption.txt'), (creative.caption || product.name).trim() + '\n');
+    fs.writeFileSync(path.join(jobDir, 'comment.txt'), commentLines.join('\n') + '\n');
+
     console.log(job.job_id);
     if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `job=${job.job_id}\nfile=jobs/${job.job_id}.json\n`);
     process.exit(0);
