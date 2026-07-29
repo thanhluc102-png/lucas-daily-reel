@@ -81,7 +81,7 @@ const SCHEMA = {
     title: { type: 'string' },
     format: { enum: ['hook', 'premium', 'unbox', 'threads'] },
     scenes: {
-      type: 'array', minItems: 5, maxItems: 7,
+      type: 'array',
       items: {
         type: 'object', additionalProperties: false,
         required: ['role', 'text', 'duration_sec'],
