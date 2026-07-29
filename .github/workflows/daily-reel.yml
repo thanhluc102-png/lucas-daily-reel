@@ -1,12 +1,12 @@
 name: Daily reel
 
 on:
-  schedule:
-    # 3 lần/ngày vào khung tương tác cao nhất (cron theo UTC; VN = UTC+7).
-    # Guard giãn cách >= 3.5h chống double-post (khung gần nhất cách 4h).
-    - cron: '15 1 * * *'    # 08:15 VN — sáng
-    - cron: '15 5 * * *'    # 12:15 VN — trưa (nghỉ trưa, tương tác cao)
-    - cron: '15 13 * * *'   # 20:15 VN — tối (cao điểm nhất)
+  # CRON ĐÃ TẮT — đã chuyển tự đăng sang daily-reel-v2.yml (pipeline scenes.json,
+  # render đẹp hơn). Giữ lại workflow_dispatch để chạy tay dự phòng khi cần.
+  # schedule:
+  #   - cron: '15 1 * * *'    # 08:15 VN
+  #   - cron: '15 5 * * *'    # 12:15 VN
+  #   - cron: '15 13 * * *'   # 20:15 VN
   workflow_dispatch:
     inputs:
       product_id:

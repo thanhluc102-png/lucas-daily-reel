@@ -1,11 +1,15 @@
 name: Daily reel v2 (pipeline scenes.json)
 
-# Pipeline MỚI: gen-scenes (AI viết scenes.json) -> voice -> whisper -> align
-# -> render.mjs (nền động, Ken Burns, badge đếm, kinetic hook, SFX) -> qc -> post.
-# Chạy TAY để test; dry_run mặc định = true (không đăng). Chưa có cron —
-# workflow cũ daily-reel.yml vẫn tự đăng bình thường cho tới khi chốt chuyển.
+# Pipeline MỚI tự đăng: gen-scenes (AI viết scenes.json) -> voice (eleven_v3)
+# -> whisper -> align -> render.mjs (nền động, Ken Burns, badge, kinetic hook, SFX)
+# -> qc -> post -> học. 3 khung giờ vàng/ngày, có guard chống double-post.
+# Chạy tay: dry_run mặc định true (không đăng). Lịch cron: đăng thật.
 
 on:
+  schedule:
+    - cron: '15 1 * * *'    # 08:15 VN — sáng
+    - cron: '15 5 * * *'    # 12:15 VN — trưa
+    - cron: '15 13 * * *'   # 20:15 VN — tối
   workflow_dispatch:
     inputs:
       product_id:
@@ -21,11 +25,26 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-reel-v2
+  group: daily-reel
   cancel-in-progress: false
 
 jobs:
+  # Chặn sớm để khỏi tốn công cài Chrome/whisper nếu chưa đủ giãn cách.
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.g.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: g
+        run: node lib/already-posted.mjs
+
   reel:
+    needs: guard
+    # Lịch cron: chỉ chạy khi đủ giãn cách. Bấm tay: luôn chạy.
+    if: needs.guard.outputs.skip != 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -46,7 +65,6 @@ jobs:
       - name: Cài Chrome cho puppeteer-core
         run: |
           OUT=$(npx --yes @puppeteer/browsers install chrome@stable)
-          echo "$OUT"
           BIN=$(echo "$OUT" | awk '{print $2}')
           test -x "$BIN"
           echo "PUPPETEER_EXECUTABLE_PATH=$BIN" >> "$GITHUB_ENV"
@@ -63,7 +81,6 @@ jobs:
       - name: Cài dependency Node
         run: npm ci || npm install
 
-      # --- pipeline -----------------------------------------------------------
       - name: Chọn sản phẩm
         id: pick
         run: node lib/pick-daily.mjs ${{ inputs.product_id }}
@@ -89,7 +106,7 @@ jobs:
           python scripts/whisper_words.py "jobs/$JOB/voice.mp3" "jobs/$JOB/words.json" --model large-v3
           node scripts/align.mjs "${{ steps.gen.outputs.file }}"
 
-      - name: (debug) Lưu job + voice + words để soi
+      - name: (debug) Lưu job + words để soi
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -104,9 +121,7 @@ jobs:
         run: node scripts/render.mjs ${{ steps.gen.outputs.file }}
 
       - name: QC
-        run: |
-          JOB="${{ steps.gen.outputs.job }}"
-          node scripts/qc.mjs "jobs/$JOB/final.mp4" "${{ steps.gen.outputs.file }}"
+        run: node scripts/qc.mjs "jobs/${{ steps.gen.outputs.job }}/final.mp4" "${{ steps.gen.outputs.file }}"
 
       - name: Lưu artifact xem trước
         uses: actions/upload-artifact@v4
@@ -121,13 +136,11 @@ jobs:
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          DRY_RUN: ${{ inputs.dry_run }}
-        run: |
-          JOB="${{ steps.gen.outputs.job }}"
-          node lib/post-reel.mjs "jobs/$JOB/final.mp4"
+          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'false' }}
+        run: node lib/post-reel.mjs "jobs/${{ steps.gen.outputs.job }}/final.mp4"
 
       - name: Đồng bộ tương tác + rút bài học
-        if: inputs.dry_run != 'true'
+        if: ${{ (inputs.dry_run || vars.DRY_RUN || 'false') != 'true' }}
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
@@ -137,7 +150,7 @@ jobs:
           node scripts/optimize.mjs
 
       - name: Ghi sổ (chỉ khi đăng thật)
-        if: inputs.dry_run != 'true'
+        if: ${{ (inputs.dry_run || vars.DRY_RUN || 'false') != 'true' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

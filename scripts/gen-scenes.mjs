@@ -128,6 +128,11 @@ RÀNG BUỘC KỸ THUẬT (validator chặn cứng, sai là hỏng):
 - price_label: ${onSale ? `"GIẢM ${discount}%"` : '"CHÍNH HÃNG"'}.
 - Không dùng từ cấm (cực kỳ, siêu phẩm, đỉnh cao, số lượng có hạn, nhanh tay kẻo hết...). Không mở hook bằng "Xin chào", "Bạn có biết".
 
+SỰ THẬT — TUYỆT ĐỐI KHÔNG BỊA:
+- Chỉ dùng con số/thông số CÓ TRONG tên hoặc mô tả sản phẩm ở trên. KHÔNG tự chế số cổng, số watt, độ dài, dung lượng, số thiết bị... nếu dữ liệu không nói rõ.
+- Nếu không chắc con số, mô tả định tính ("nhiều cổng", "sạc nhanh") thay vì bịa số cụ thể.
+- Không "làm tròn cho oách" (vd ghi "6 cổng" khi chỉ có 3). Sai một con số là quảng cáo sai.
+
 KINETIC HOOK — chọn "style" hợp câu hook:
 - "slam": hook có CON SỐ/thông số mạnh -> đặt hero = con số đó (vd "170W"), pre = 1 dòng trước, post = 1 dòng sau.
 - "highlight": hook nêu nỗi lo -> lines = 2-3 dòng ngắn tách ra, hlPhrase = cụm cần tô (phải nằm nguyên trong 1 dòng).
