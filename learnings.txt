@@ -1,7 +1,7 @@
-- Tránh hook chung chung kiểu "hàng chính hãng, có sẵn" — không tạo cảm xúc, tương tác cực thấp (Score=3).
-- Mở đầu bằng vấn đề/nhu cầu thật của người dùng (đau lưng, hết chỗ đựng, đi công tác) thay vì chỉ khoe kho hàng.
-- Nêu bật 1-2 lợi ích cụ thể, đo lường được (26L chứa được gì, chống nước, ngăn laptop) thay vì nói tên sản phẩm suông.
-- Chèn câu hỏi hoặc kêu gọi bình luận (comment dễ đạt hơn share) để đẩy Score qua tương tác rẻ nhất.
-- Tạo yếu tố khan hiếm/thời điểm (sắp du lịch, số lượng có hạn) để kích share.
-- Dùng ngôn ngữ đời thường, có nhân vật/tình huống cụ thể thay vì giọng thông báo cửa hàng.
-- Ưu tiên sản phẩm gắn với trải nghiệm (du lịch, đi làm) và kể câu chuyện dùng thực tế.
+- Dữ liệu quá ít (2 mẫu, score 3-4) và đều rất thấp → mọi kết luận chỉ là giả định, cần thêm mẫu để chắc chắn.
+- Tránh hook chung chung kiểu "hàng chính hãng có sẵn", "đang giảm giá" → không tạo cảm xúc, không có lý do dừng xem, share = 0.
+- Hook nên nêu vấn đề/nỗi đau cụ thể người dùng gặp (dây sạc rối, balo đau vai, sạc chậm) rồi mới đưa sản phẩm là giải pháp.
+- Thêm con số gây sốc hoặc bằng chứng cụ thể (100W sạc đầy trong X phút, balo chống trộm, chống nước) thay vì nói "giảm giá".
+- Chèn yếu tố kích share: mẹo hữu ích, so sánh trước/sau, "tag đứa bạn hay làm mất sạc" để đẩy Comments và Shares.
+- Ưu tiên sản phẩm giá trị cao/độc đáo (balo du lịch) kể câu chuyện trải nghiệm; phụ kiện nhỏ (cáp sạc) nên đóng gói thành tip đời sống.
+- Kết bằng CTA cụ thể có tương tác ("bình luận X để nhận tư vấn") thay vì chỉ "có sẵn tại Lucas".
