@@ -1,0 +1,137 @@
+name: Daily reel v2 (pipeline scenes.json)
+
+# Pipeline MỚI: gen-scenes (AI viết scenes.json) -> voice -> whisper -> align
+# -> render.mjs (nền động, Ken Burns, badge đếm, kinetic hook, SFX) -> qc -> post.
+# Chạy TAY để test; dry_run mặc định = true (không đăng). Chưa có cron —
+# workflow cũ daily-reel.yml vẫn tự đăng bình thường cho tới khi chốt chuyển.
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_id:
+        description: 'Ép 1 sản phẩm cụ thể (trống = tự chọn qua pick-daily)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'true = render + xem trước, KHÔNG đăng'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-reel-v2
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cài FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg && ffmpeg -version | head -1
+
+      - name: Cài Chrome cho puppeteer-core
+        run: |
+          OUT=$(npx --yes @puppeteer/browsers install chrome@stable)
+          echo "$OUT"
+          BIN=$(echo "$OUT" | awk '{print $2}')
+          test -x "$BIN"
+          echo "PUPPETEER_EXECUTABLE_PATH=$BIN" >> "$GITHUB_ENV"
+
+      - name: Cache model whisper
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-medium-v1
+
+      - name: Cài faster-whisper
+        run: pip install faster-whisper
+
+      - name: Cài dependency Node
+        run: npm ci || npm install
+
+      # --- pipeline -----------------------------------------------------------
+      - name: Chọn sản phẩm
+        id: pick
+        run: node lib/pick-daily.mjs ${{ inputs.product_id }}
+
+      - name: AI viết scenes.json
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+          ELEVEN_VOICE_ID: ${{ vars.ELEVEN_VOICE_ID }}
+        run: node scripts/gen-scenes.mjs ${{ steps.pick.outputs.id }}
+
+      - name: Giọng đọc (ElevenLabs)
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          EL_VOICE_SOUTH: ${{ vars.EL_VOICE_SOUTH }}
+          EL_VOICE_NORTH: ${{ vars.EL_VOICE_NORTH }}
+        run: node scripts/voice.mjs ${{ steps.gen.outputs.file }}
+
+      - name: Căn chữ (whisper) + align
+        run: |
+          JOB="${{ steps.gen.outputs.job }}"
+          python scripts/whisper_words.py "jobs/$JOB/voice.mp3" "jobs/$JOB/words.json" --model medium
+          node scripts/align.mjs "${{ steps.gen.outputs.file }}"
+
+      - name: Render MP4
+        run: node scripts/render.mjs ${{ steps.gen.outputs.file }}
+
+      - name: QC
+        run: |
+          JOB="${{ steps.gen.outputs.job }}"
+          node scripts/qc.mjs "jobs/$JOB/final.mp4" "${{ steps.gen.outputs.file }}"
+
+      - name: Lưu artifact xem trước
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-v2-${{ steps.pick.outputs.id }}
+          path: |
+            jobs/${{ steps.gen.outputs.job }}/final.mp4
+            ${{ steps.gen.outputs.file }}
+          retention-days: 14
+
+      - name: Đăng lên fanpage + comment link
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          JOB="${{ steps.gen.outputs.job }}"
+          node lib/post-reel.mjs "jobs/$JOB/final.mp4"
+
+      - name: Đồng bộ tương tác + rút bài học
+        if: inputs.dry_run != 'true'
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node scripts/sync-insights.mjs
+          node scripts/optimize.mjs
+
+      - name: Ghi sổ (chỉ khi đăng thật)
+        if: inputs.dry_run != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in history.json reels_history.json learnings.txt; do [ -f "$f" ] && git add "$f"; done
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: reel v2 $(date -u +%F) [skip ci]"
+          git pull --rebase --autostash
+          git push
