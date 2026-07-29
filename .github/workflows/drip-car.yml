@@ -1,0 +1,71 @@
+name: Drip post car reels
+
+# Đăng rải hàng đợi video trong post-queue/car/ — mỗi lần chạy đăng ĐÚNG 1 video
+# kế tiếp (thư mục chưa có file .posted), rồi đánh dấu đã đăng và commit.
+# Hết hàng thì không làm gì. 3 khung giờ vàng/ngày, lệch giờ với daily-reel.
+
+on:
+  schedule:
+    - cron: '15 3 * * *'    # 10:15 VN
+    - cron: '15 7 * * *'    # 14:15 VN
+    - cron: '15 11 * * *'   # 18:15 VN
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true = chỉ in caption, KHÔNG đăng'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drip-car
+  cancel-in-progress: false
+
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tìm video kế tiếp trong hàng đợi
+        id: pick
+        run: |
+          NEXT=""
+          for d in post-queue/car/*/; do
+            [ -f "${d}.posted" ] || { NEXT="${d%/}"; break; }
+          done
+          if [ -z "$NEXT" ]; then
+            echo "::notice::Hết hàng đợi — không còn video để đăng."
+            echo "dir=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Sẽ đăng: $NEXT"
+            echo "dir=$NEXT" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Đăng reel + comment link mua
+        if: steps.pick.outputs.dir != ''
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          CAPTION_FILE: ${{ steps.pick.outputs.dir }}/caption.txt
+          COMMENT_FILE: ${{ steps.pick.outputs.dir }}/comment.txt
+        run: node lib/post-reel.mjs "${{ steps.pick.outputs.dir }}/final.mp4"
+
+      - name: Đánh dấu đã đăng
+        if: steps.pick.outputs.dir != '' && (inputs.dry_run || 'false') != 'true'
+        run: |
+          touch "${{ steps.pick.outputs.dir }}/.posted"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.pick.outputs.dir }}/.posted"
+          git commit -m "chore: đã đăng $(basename '${{ steps.pick.outputs.dir }}') [skip ci]"
+          git pull --rebase
+          git push
