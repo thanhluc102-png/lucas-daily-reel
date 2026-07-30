@@ -75,18 +75,48 @@
     "post_id": "1055608974097939",
     "product_name": "",
     "hook": "Xe có CarPlay dây, ước gì bỏ được sợi dây đó?",
-    "publish_time": "2026-07-30T05:59:27.785Z"
+    "publish_time": "2026-07-30T05:59:27.785Z",
+    "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
   },
   {
     "post_id": "1020675763903919",
     "product_name": "",
     "hook": "Ghét nhất là quên mang cáp sạc lên xe?",
-    "publish_time": "2026-07-30T09:41:25.128Z"
+    "publish_time": "2026-07-30T09:41:25.128Z",
+    "performance": {
+      "reactions": 2,
+      "comments": 1,
+      "shares": 0,
+      "score": 5
+    }
   },
   {
     "post_id": "968157855682998",
     "product_name": "",
     "hook": "Kẹp điện thoại rẻ tiền làm xước cả viền máy?",
-    "publish_time": "2026-07-30T12:55:55.154Z"
+    "publish_time": "2026-07-30T12:55:55.154Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
+  },
+  {
+    "post_id": "1540998751405220",
+    "product_name": "",
+    "hook": "Túi bạn đang cõng cả cục sạc lẫn viên pin dự phòng? 🔌",
+    "publish_time": "2026-07-30T15:31:22.188Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]
