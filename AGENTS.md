@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Repo sản xuất video ngắn cho **Lucas Combo Plus** (lucas.vn) — shop phụ kiện Apple, TP.HCM.
+Repo sản xuất video ngắn cho **Lucas Combo** (lucas.vn) — shop phụ kiện Apple, TP.HCM.
 
 Đọc file này trước khi làm bất cứ việc gì trong repo.
 
@@ -47,7 +47,7 @@ runs/                  log agent, để debug
 
 ## Thương hiệu
 
-- Tên: Lucas Combo Plus, gọi tắt "Lucas". Website lucas.vn.
+- Tên: Lucas Combo, gọi tắt "Lucas". Website lucas.vn.
 - Màu: navy `#0B1B2E`, gold `#C9A227`.
 - Từ 2017, hơn 500.000 khách, ~21 thương hiệu (Tomtoc, PITAKA, Anker, JCPAL, Innostyle, SATECHI, WiWU...).
 - Giọng thương hiệu: thẳng, hiểu chuyện, không nổ. Không dùng "cực kỳ", "siêu phẩm", "đỉnh cao".

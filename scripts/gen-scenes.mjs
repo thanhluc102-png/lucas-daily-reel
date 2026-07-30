@@ -108,7 +108,7 @@ const SCHEMA = {
 };
 
 function buildPrompt(extraFix) {
-  return `Bạn là copywriter reel quảng cáo của lucas.vn (phụ kiện Apple/công nghệ chính hãng, thương hiệu "Lucas Combo Plus", giọng thẳng, hiểu chuyện, KHÔNG nổ).
+  return `Bạn là copywriter reel quảng cáo của lucas.vn (phụ kiện Apple/công nghệ chính hãng, thương hiệu "Lucas Combo", giọng thẳng, hiểu chuyện, KHÔNG nổ).
 
 QUY TẮC BIÊN TẬP (tuân thủ tuyệt đối):
 ${editorial}
@@ -132,7 +132,7 @@ CAPTION FACEBOOK (field "caption") — GIẬT TÍT, đừng hiền:
 - Mở bằng câu hook/gây tò mò mạnh (có thể chính là câu hook, thêm 1 emoji hợp cảm xúc).
 - 2–4 dòng ngắn: nỗi lo + giải pháp + điểm mạnh thật + giá (${priceStr}${onSale ? `, giảm ${discount}%` : ''}).
 - TUYỆT ĐỐI KHÔNG để link trong caption (Facebook bóp reach). Kết bằng: "Link đặt hàng ở bình luận đầu tiên 👇".
-- Thêm 4–6 hashtag cuối (gồm #LucasComboPlus #chinhhang + vài hashtag hợp sản phẩm).
+- Thêm 4–6 hashtag cuối (gồm #LucasCombo #chinhhang + vài hashtag hợp sản phẩm).
 - Giọng Lucas: thẳng, hiểu chuyện, không nổ, không "cực kỳ/siêu phẩm".
 
 SỰ THẬT — TUYỆT ĐỐI KHÔNG BỊA:

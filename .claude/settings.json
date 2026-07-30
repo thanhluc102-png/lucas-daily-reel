@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ln -sfn /Users/luctran/lucas-daily-reel/node_modules /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/b695cf81-0053-46b4-ab4b-2e70bc939723/scratchpad/node_modules)",
+      "Bash(node -c /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/b695cf81-0053-46b4-ab4b-2e70bc939723/scratchpad/render-v2.mjs)",
+      "Bash(node __TRACKED_VAR__/render-v2.mjs /Users/luctran/lucas-daily-reel/jobs/2026-07-28_cp10a.json)",
+      "Bash(ffmpeg -y -loglevel error -ss 6 -i jobs/2026-07-28_cp10a/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/v2-body.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 20 -i jobs/2026-07-28_cp10a/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/v2-price.png)",
+      "Bash(awk '{print \"  \"$5\" B  \"$NF}')",
+      "Bash(open jobs/2026-07-28_cp10a/final-v2.mp4)",
+      "Bash(python3 -c ' *)",
+      "Bash(open jobs/2026-07-28_cp10a/final-v2-sfx.mp4)",
+      "Bash(node -c __TRACKED_VAR__/render-v2.mjs)",
+      "Bash(exit 1)",
+      "Bash(ffmpeg -y -loglevel error -ss 1.4 -i jobs/2026-07-28_cp10a/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/kh-14.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 2.5 -i jobs/2026-07-28_cp10a/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/kh-25.png)",
+      "Bash(open jobs/2026-07-28_cp10a/final-v2-full.mp4)",
+      "Bash(HOOK_SPEC='{\"style\":\"flash\",\"text\":\"Xịt lốp giữa cao tốc lúc nửa đêm thì tính sao?\",\"hl\":[\"nửa đêm\"]}' node __TRACKED_VAR__/render-v2.mjs jobs/2026-07-28_cp10a.json)",
+      "Bash(ffmpeg -y -loglevel error -ss 1.5 -i jobs/2026-07-28_cp10a/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/p-flash.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 1.3 -i jobs/2026-07-29_taual_57586/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/p-slam.png)",
+      "Bash(ffmpeg -y -loglevel error -ss 2.0 -i jobs/2026-07-29_giaad_57516/final-v2.mp4 -frames:v 1 __TRACKED_VAR__/p-highlight.png)",
+      "Bash(open jobs/2026-07-29_taual_57586/final-v2.mp4)",
+      "Bash(open jobs/2026-07-29_giaad_57516/final-v2.mp4)",
+      "Bash(node -c scripts/render.mjs)",
+      "Bash(ffmpeg -y -loglevel error -ss 2.2 -i jobs/2026-07-28_cp10a/final.mp4 -frames:v 1 __TRACKED_VAR__/auto-hook.png)",
+      "Bash(node -c scripts/gen-scenes.mjs)",
+      "Bash(open v2out/reel-v2-45011/2026-07-29_jq4pt/final.mp4)"
+    ]
+  }
+}

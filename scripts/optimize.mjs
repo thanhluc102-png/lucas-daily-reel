@@ -36,7 +36,7 @@ async function main() {
     return `Sản phẩm: ${r.product_name || '(?)'}\nHook: ${r.hook || '(?)'}\nTương tác: Reactions=${p.reactions}, Comments=${p.comments}, Shares=${p.shares} (Score=${p.score})`;
   }).join('\n\n');
 
-  const prompt = `Dưới đây là thống kê tương tác THỰC TẾ từ fanpage Lucas Combo Plus cho các video reel quảng cáo phụ kiện.
+  const prompt = `Dưới đây là thống kê tương tác THỰC TẾ từ fanpage Lucas Combo cho các video reel quảng cáo phụ kiện.
 Score = Reactions*1 + Comments*3 + Shares*5 (Share nặng nhất vì khó đạt nhất).
 
 DỮ LIỆU:
