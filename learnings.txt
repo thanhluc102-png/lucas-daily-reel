@@ -1,8 +1,8 @@
-- Mở bằng câu hỏi chạm nỗi đau cụ thể (ổ gà, quên cáp) cho tương tác cao nhất; tránh hook chung chung kiểu "hàng chính hãng", "đang giảm giá".
-- Ưu tiên phụ kiện xe/di động (kẹp điện thoại, sạc xe, CarPlay) — nhóm này hút reactions tốt nhất.
-- Nêu tình huống bực bội hằng ngày kèm hình ảnh sinh động ("văng khỏi kẹp", "cõng cả cục sạc") để tăng cảm xúc.
-- Tránh hook toàn tính năng khô khan hoặc chỉ khoe khuyến mãi; chúng cho score thấp nhất (3-4).
-- Chèn 1 emoji gợi vấn đề (😬🔌📱) nhưng đừng lạm dụng; đặt cuối câu hook.
-- Nhắm đúng nỗi đau người dùng thật (máy trầy, laptop chịu sốc, ví dày cộm) thay vì mô tả sản phẩm.
-- Giữ hook ngắn 1 câu, dạng nghi vấn "?" để kích bình luận.
-- Sản phẩm cồng kềnh giá cao (balo) tương tác kém hơn phụ kiện nhỏ; nếu quảng cáo balo phải nhấn mạnh nỗi đau bảo vệ máy thật mạnh.
+- Mở bằng câu hỏi chạm nỗi đau cụ thể ("văng khỏi kẹp khi qua ổ gà", "quên mang cáp lên xe") → Score cao nhất (6); ưu tiên kiểu hook này.
+- Tập trung sản phẩm phụ kiện ô tô/xe (kẹp điện thoại, cáp sạc trên xe) vì nhóm này kéo Reactions tốt nhất.
+- Tránh hook kiểu thông báo khô khan ("Hàng chính hãng", "Đang giảm giá tại Lucas") → chỉ đạt Score thấp, vô cảm.
+- Tránh hook mô tả vấn đề dài dòng, nhiều chi tiết kỹ thuật ("ngăn chống sốc lỏng lẻo", "tẩu chia đôi dòng điện") → Score thấp nhất (3).
+- Ưu tiên hook ngắn, một vấn đề rõ ràng, đọc hết trong 1 nhịp; càng dài càng kém.
+- Nhắm vào tình huống thường ngày ai cũng gặp (quên đồ, đồ rẻ làm xước máy) thay vì tính năng cao cấp (MagSafe, CarPlay) → gần gũi thì tương tác nhỉnh hơn.
+- Chèn 1 emoji gợi hình đúng ngữ cảnh (🚗🔌📱) nhưng đừng lạm dụng.
+- Kết hook bằng dấu hỏi tạo tò mò/đồng cảm thay vì câu khẳng định bán hàng.
