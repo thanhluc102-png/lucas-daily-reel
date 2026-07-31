@@ -135,18 +135,48 @@
     "post_id": "1675433793556214",
     "product_name": "",
     "hook": "Lên xe là phải mò dây sạc, phiền chưa?",
-    "publish_time": "2026-07-31T06:24:04.635Z"
+    "publish_time": "2026-07-31T06:24:04.635Z",
+    "performance": {
+      "reactions": 2,
+      "comments": 1,
+      "shares": 0,
+      "score": 5
+    }
   },
   {
     "post_id": "2528215174363741",
     "product_name": "",
     "hook": "Mỗi người trên xe một kiểu cổng sạc khác nhau?",
-    "publish_time": "2026-07-31T09:52:30.503Z"
+    "publish_time": "2026-07-31T09:52:30.503Z",
+    "performance": {
+      "reactions": 3,
+      "comments": 1,
+      "shares": 0,
+      "score": 6
+    }
   },
   {
     "post_id": "1785458209004350",
     "product_name": "",
     "hook": "Trẻ ngồi sau đòi xem phim, iPad biết để đâu?",
-    "publish_time": "2026-07-31T13:06:48.576Z"
+    "publish_time": "2026-07-31T13:06:48.576Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
+  },
+  {
+    "post_id": "1385854673522922",
+    "product_name": "",
+    "hook": "Cái ngăn laptop mỏng dính đang khiến máy bạn ăn sốc mỗi ngày 🎒",
+    "publish_time": "2026-07-31T15:38:42.495Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]
