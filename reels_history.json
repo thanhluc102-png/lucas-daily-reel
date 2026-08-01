@@ -195,18 +195,48 @@
     "post_id": "1923440998579482",
     "product_name": "",
     "hook": "Vừa chỉ đường vừa tụt pin, tới nơi máy sắp tắt?",
-    "publish_time": "2026-08-01T06:11:59.851Z"
+    "publish_time": "2026-08-01T06:11:59.851Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   },
   {
     "post_id": "1564117345441662",
     "product_name": "",
     "hook": "Đi xa mà điện thoại lẫn laptop đều cạn pin?",
-    "publish_time": "2026-08-01T09:20:20.311Z"
+    "publish_time": "2026-08-01T09:20:20.311Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   },
   {
     "post_id": "952503314527901",
     "product_name": "",
     "hook": "Dây sạc xe cứ rối tung khắp táp-lô?",
-    "publish_time": "2026-08-01T12:13:41.177Z"
+    "publish_time": "2026-08-01T12:13:41.177Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
+  },
+  {
+    "post_id": "2257829001649218",
+    "product_name": "",
+    "hook": "Cáp sạc nào cũng như nhau? Xài cáp thường sạc MacBook lâu hết cả buổi 😤",
+    "publish_time": "2026-08-01T14:49:29.098Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]

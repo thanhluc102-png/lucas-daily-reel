@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi chạm nỗi đau cụ thể ("văng khỏi kẹp khi qua ổ gà", "quên mang cáp lên xe") cho tương tác cao nhất (Score 6).
-- Ưu tiên chủ đề phụ kiện ô tô/xe: kẹp điện thoại, cáp sạc trên xe, cổng sạc chung — nhóm này ăn Reactions tốt nhất.
-- Nêu tình huống nhiều người/gia đình ("mỗi người một cổng sạc", "trẻ đòi xem phim") để tăng đồng cảm, đẩy Score lên 6.
-- Tránh hook kiểu tuyên bố khô khan về hàng hóa ("hàng chính hãng", "đang giảm giá") — chỉ đạt Score 4, không gợi cảm xúc.
-- Tránh mở đầu quá dài, nhiều thuật ngữ kỹ thuật ("MagSafe", "chia đôi dòng điện", "16 inch chống sốc") — làm rớt Reactions về 0, Score chỉ 3.
-- Nhóm balo/laptop cho tương tác thấp nhất — nếu viết phải bám nỗi sợ hư máy nhưng ngắn, tránh chi tiết thông số.
-- Dùng 1 emoji gợi hình đặt cuối hook, không nhồi emoji giữa câu thông số kỹ thuật.
-- Câu hook lý tưởng: ngắn, dạng câu hỏi, đúng 1 nỗi đau đời thường, ưu tiên bối cảnh trên xe hơi.
+- Mở đầu bằng câu hỏi "nỗi đau" cụ thể, đời thường (ổ gà, quên cáp, mỗi người một cổng sạc) → điểm cao nhất (5-6).
+- Ưu tiên sản phẩm phụ kiện xe hơi/ô tô (kẹp điện thoại, sạc xe, cáp) — nhóm này tương tác nổi trội hơn balo/ví.
+- Dùng hook chạm tình huống nhiều người liên quan, gợi cảnh cụ thể; tránh hook chung chung kiểu "muốn sạc xịn mà gọn?".
+- Tránh mở đầu quảng cáo trực tiếp ("hàng chính hãng", "đang giảm giá tại Lucas") → luôn Score thấp (3-4).
+- Tránh nỗi đau về balo/laptop chống sốc và cáp sạc MacBook — nhóm này đều Score 3, kém nhất.
+- Hạn chế emoji cuối câu; các hook điểm cao hầu như không dùng emoji, câu ngắn gọn dứt khoát.
+- Đặt câu hỏi khiến người đọc gật đầu ("phiền chưa?", "ước gì bỏ được?") tạo phản ứng cảm xúc, tăng reactions.
+- Không nhồi thông số/tên sản phẩm dài vào hook; giữ hook thuần nỗi đau, để lộ sản phẩm ở phần sau.
