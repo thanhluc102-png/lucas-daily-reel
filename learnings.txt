@@ -1,8 +1,8 @@
-- Mở bằng câu hỏi chạm nỗi đau cụ thể ("văng khỏi kẹp", "quên mang cáp", "mỗi người một cổng sạc") → Score cao nhất (6); ưu tiên kiểu này.
-- Tránh hook mô tả suông kiểu "hàng chính hãng", "đang giảm giá", "có sẵn tại Lucas" → chỉ đạt Score 4, không tạo cảm xúc.
-- Sản phẩm phụ kiện xe hơi (kẹp điện thoại, cáp/sạc trên xe, CarPlay không dây) hút tương tác tốt nhất; đẩy mạnh nhóm này.
-- Nhóm balo/ngăn laptop cho Score thấp nhất (3); nếu viết phải đào nỗi đau mạnh hơn ("máy ăn sốc mỗi ngày") thay vì tả thông số.
-- Dùng tình huống đời thực hàng ngày ("lên xe là phải mò dây", "trẻ đòi xem phim") để người đọc tự soi mình vào.
-- Chèn 1 emoji gợi hình đúng ngữ cảnh (🚗🔌📱) nhưng không lạm dụng.
-- Câu ngắn, kết bằng dấu hỏi để kích comment; nhấn hậu quả tiêu cực đang diễn ra ("mỗi ngày", "từ nay dẹp đi").
-- Hiện chưa hook nào tạo được Share; thử thêm yếu tố "mẹo hay/giải pháp đáng chia sẻ" để nâng chỉ số nặng ký nhất.
+- Mở hook bằng câu hỏi chạm nỗi đau cụ thể ("văng khỏi kẹp khi qua ổ gà", "quên mang cáp lên xe") cho tương tác cao nhất (Score 6).
+- Ưu tiên chủ đề phụ kiện ô tô/xe: kẹp điện thoại, cáp sạc trên xe, cổng sạc chung — nhóm này ăn Reactions tốt nhất.
+- Nêu tình huống nhiều người/gia đình ("mỗi người một cổng sạc", "trẻ đòi xem phim") để tăng đồng cảm, đẩy Score lên 6.
+- Tránh hook kiểu tuyên bố khô khan về hàng hóa ("hàng chính hãng", "đang giảm giá") — chỉ đạt Score 4, không gợi cảm xúc.
+- Tránh mở đầu quá dài, nhiều thuật ngữ kỹ thuật ("MagSafe", "chia đôi dòng điện", "16 inch chống sốc") — làm rớt Reactions về 0, Score chỉ 3.
+- Nhóm balo/laptop cho tương tác thấp nhất — nếu viết phải bám nỗi sợ hư máy nhưng ngắn, tránh chi tiết thông số.
+- Dùng 1 emoji gợi hình đặt cuối hook, không nhồi emoji giữa câu thông số kỹ thuật.
+- Câu hook lý tưởng: ngắn, dạng câu hỏi, đúng 1 nỗi đau đời thường, ưu tiên bối cảnh trên xe hơi.
