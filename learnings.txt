@@ -1,8 +1,8 @@
-- Mở đầu bằng câu hỏi "nỗi đau" cụ thể, đời thường (ổ gà, quên cáp, mỗi người một cổng sạc) → điểm cao nhất (5-6).
-- Ưu tiên sản phẩm phụ kiện xe hơi/ô tô (kẹp điện thoại, sạc xe, cáp) — nhóm này tương tác nổi trội hơn balo/ví.
-- Dùng hook chạm tình huống nhiều người liên quan, gợi cảnh cụ thể; tránh hook chung chung kiểu "muốn sạc xịn mà gọn?".
-- Tránh mở đầu quảng cáo trực tiếp ("hàng chính hãng", "đang giảm giá tại Lucas") → luôn Score thấp (3-4).
-- Tránh nỗi đau về balo/laptop chống sốc và cáp sạc MacBook — nhóm này đều Score 3, kém nhất.
-- Hạn chế emoji cuối câu; các hook điểm cao hầu như không dùng emoji, câu ngắn gọn dứt khoát.
-- Đặt câu hỏi khiến người đọc gật đầu ("phiền chưa?", "ước gì bỏ được?") tạo phản ứng cảm xúc, tăng reactions.
-- Không nhồi thông số/tên sản phẩm dài vào hook; giữ hook thuần nỗi đau, để lộ sản phẩm ở phần sau.
+- Hook nêu "nỗi đau" cụ thể, có hình ảnh trực quan (văng khỏi kẹp, ổ gà, mỗi người một cổng sạc) đạt Score cao nhất (5-6): ưu tiên kiểu này.
+- Sản phẩm phụ kiện ô tô/xe (kẹp điện thoại, cáp sạc trên xe, sạc chung nhiều cổng) hút tương tác tốt nhất: đẩy mạnh nhóm này.
+- Hook dạng câu hỏi gợi tình huống hằng ngày ("Lên xe là phải mò dây?", "Ghét nhất là quên cáp?") kích Reactions mạnh hơn hook mô tả dài.
+- Tránh hook dài, nhiều mệnh đề, thiên kỹ thuật (laptop chống sốc, sạc MacBook, CarPlay) — chỉ đạt Score 3, tương tác kém.
+- Tránh hook chung chung, thiếu cảm xúc kiểu "Đang giảm giá tại Lucas" — không tạo được nỗi đau, Score thấp.
+- Giữ hook ngắn 1 câu, đặt đúng 1 nỗi đau rõ ràng + thêm 1 emoji liên quan để tăng chú ý.
+- Ưu tiên chủ đề "trên xe hơi" và "sạc/cáp gọn gàng" vì lặp lại nhiều lần ở nhóm điểm cao.
+- Mọi hook nên khơi sự bực bội quen thuộc rồi bỏ lửng, khiến người xem gật đầu và muốn bình luận.
