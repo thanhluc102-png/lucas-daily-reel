@@ -233,10 +233,10 @@
     "hook": "Cáp sạc nào cũng như nhau? Xài cáp thường sạc MacBook lâu hết cả buổi 😤",
     "publish_time": "2026-08-01T14:49:29.098Z",
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 1,
       "shares": 0,
-      "score": 3
+      "score": 4
     }
   },
   {
@@ -245,6 +245,18 @@
     "hook": "Sáng đi làm cần balo, chiều họp lại muốn cặp xách? 🎒",
     "publish_time": "2026-08-02T04:50:33.780Z",
     "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
+  },
+  {
+    "post_id": "1319845803242832",
+    "product_name": "",
+    "hook": "Cả nhà lên xe, hai loại điện thoại, sạc sao đây?",
+    "publish_time": "2026-08-02T06:12:04.030Z",
+    "performance": {
       "reactions": 0,
       "comments": 1,
       "shares": 0,
@@ -252,27 +264,51 @@
     }
   },
   {
-    "post_id": "1319845803242832",
-    "product_name": "",
-    "hook": "Cả nhà lên xe, hai loại điện thoại, sạc sao đây?",
-    "publish_time": "2026-08-02T06:12:04.030Z"
-  },
-  {
     "post_id": "1759711921706194",
     "product_name": "",
     "hook": "Hai người trên xe, một cổng sạc, ai nhường ai?",
-    "publish_time": "2026-08-02T09:20:45.759Z"
+    "publish_time": "2026-08-02T09:20:45.759Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   },
   {
     "post_id": "1044817134601761",
     "product_name": "",
     "hook": "Tẩu sạc mà nghe được cả nhạc trên xe, tin không?",
-    "publish_time": "2026-08-02T12:16:25.587Z"
+    "publish_time": "2026-08-02T12:16:25.587Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   },
   {
     "post_id": "1022100910691611",
     "product_name": "",
     "hook": "Sạc trên xe cả tiếng mà pin nhích từng chút?",
-    "publish_time": "2026-08-03T06:34:51.013Z"
+    "publish_time": "2026-08-03T06:34:51.013Z",
+    "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
+  },
+  {
+    "post_id": "2984912205235376",
+    "product_name": "",
+    "hook": "Ốp dày cộp làm iPhone Air hết mỏng còn gì? 😮‍💨",
+    "publish_time": "2026-08-03T08:52:33.652Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]

@@ -1,8 +1,8 @@
-- Hook nêu "nỗi đau" cụ thể, có hình ảnh trực quan (văng khỏi kẹp, ổ gà, mỗi người một cổng sạc) đạt Score cao nhất (5-6): ưu tiên kiểu này.
-- Sản phẩm phụ kiện ô tô/xe (kẹp điện thoại, cáp sạc trên xe, sạc chung nhiều cổng) hút tương tác tốt nhất: đẩy mạnh nhóm này.
-- Hook dạng câu hỏi gợi tình huống hằng ngày ("Lên xe là phải mò dây?", "Ghét nhất là quên cáp?") kích Reactions mạnh hơn hook mô tả dài.
-- Tránh hook dài, nhiều mệnh đề, thiên kỹ thuật (laptop chống sốc, sạc MacBook, CarPlay) — chỉ đạt Score 3, tương tác kém.
-- Tránh hook chung chung, thiếu cảm xúc kiểu "Đang giảm giá tại Lucas" — không tạo được nỗi đau, Score thấp.
-- Giữ hook ngắn 1 câu, đặt đúng 1 nỗi đau rõ ràng + thêm 1 emoji liên quan để tăng chú ý.
-- Ưu tiên chủ đề "trên xe hơi" và "sạc/cáp gọn gàng" vì lặp lại nhiều lần ở nhóm điểm cao.
-- Mọi hook nên khơi sự bực bội quen thuộc rồi bỏ lửng, khiến người xem gật đầu và muốn bình luận.
+- Hook chạm nỗi đau "quên/thiếu đồ" (quên cáp, mỗi người một cổng sạc) cho Score cao nhất (6) — ưu tiên khai thác tình huống bực bội quen thuộc, dễ gật đầu.
+- Hook gợi cảnh thực tế hằng ngày ("lên xe phải mò dây sạc") tốt hơn hook mơ hồ hay hỏi khó tin — Score 5-6, nên tả tình huống cụ thể.
+- Tránh hook quá kỹ thuật, trừu tượng hoặc "khoe tính năng lạ" (tẩu sạc nghe nhạc, chia đôi dòng điện) — Score chỉ 3, người xem không thấy mình trong đó.
+- Tránh hook về sản phẩm ngách/ít người dùng (iPhone Air mỏng, ngăn laptop, iPad cho trẻ) — Score 3-4, tệp quá hẹp.
+- Sản phẩm sạc/cáp đa cổng cho nhiều người dùng chung kéo tương tác tốt nhất — nhấn "giải quyết mâu thuẫn nhiều người".
+- Dùng câu hỏi ngắn, kết bằng dấu "?" tạo đồng cảm tức thì — hiệu quả hơn câu khẳng định dài.
+- Toàn bộ Shares=0: chưa hook nào đủ "đáng chia sẻ" — thử thêm yếu tố bất ngờ/mẹo hay/tiết kiệm để kích share, không chỉ than phiền.
+- Emoji không giúp tăng Score — dùng tiết chế, tập trung vào nội dung nỗi đau.
