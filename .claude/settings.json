@@ -24,7 +24,32 @@
       "Bash(node -c scripts/render.mjs)",
       "Bash(ffmpeg -y -loglevel error -ss 2.2 -i jobs/2026-07-28_cp10a/final.mp4 -frames:v 1 __TRACKED_VAR__/auto-hook.png)",
       "Bash(node -c scripts/gen-scenes.mjs)",
-      "Bash(open v2out/reel-v2-45011/2026-07-29_jq4pt/final.mp4)"
+      "Bash(open v2out/reel-v2-45011/2026-07-29_jq4pt/final.mp4)",
+      "Bash(grep -n -i \"youtube\" /Users/luctran/lucas-daily-reel/README.md; echo \"=== auto-youtube ===\"; ls -la /Users/luctran/auto-youtube 2>&1 | head -40; echo \"=== podcast ===\"; ls -la /Users/luctran/lucas-podcast 2>&1 | head -40)",
+      "Read(//Users/luctran/auto-youtube/**)",
+      "Bash(cd /Users/luctran/auto-youtube && echo \"=== SIZE ===\" && wc -l cron_log.txt && echo \"=== TAIL 120 ===\" && tail -120 cron_log.txt)",
+      "Bash(awk '{$1=\"\";print}')",
+      "Bash(python3 -c \"import json;d=json.load\\(open\\('client_secret.json'\\)\\);print\\(list\\(d.keys\\(\\)\\)\\);k=list\\(d.keys\\(\\)\\)[0];print\\({x:\\('...' if 'secret' in x or 'id' in x else v\\) for x,v in d[k].items\\(\\)}\\)\")",
+      "Bash(ant auth *)",
+      "Read(//Users/luctran/.config/**)",
+      "Read(//Users/luctran/.config/anthropic/**)",
+      "Bash(/Users/luctran/auto-youtube/venv/bin/pip list *)",
+      "Bash(venv/bin/python -c ' *)",
+      "Bash(venv/bin/python -)",
+      "Bash(venv/bin/python -m py_compile main.py)",
+      "Bash(venv/bin/python /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/6dc78a36-bc92-44aa-b3b4-d7b93552e638/scratchpad/check_sheet.py)",
+      "Bash(venv/bin/python /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/6dc78a36-bc92-44aa-b3b4-d7b93552e638/scratchpad/check_published.py)",
+      "Bash(venv/bin/python /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/6dc78a36-bc92-44aa-b3b4-d7b93552e638/scratchpad/check_gaps.py)",
+      "Bash(venv/bin/python /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/6dc78a36-bc92-44aa-b3b4-d7b93552e638/scratchpad/check_wait_context.py)",
+      "Bash(venv/bin/python -u -)",
+      "Bash(/Users/luctran/auto-youtube/venv/bin/python -u /private/tmp/claude-501/-Users-luctran-lucas-daily-reel/6dc78a36-bc92-44aa-b3b4-d7b93552e638/scratchpad/fix_old_waits.py)",
+      "Bash(cd /Users/luctran/auto-youtube && echo \"=== bây giờ ===\" && date && echo && echo \"=== cron_log sửa lần cuối ===\" && ls -l cron_log.txt && echo && echo \"=== 60 dòng cuối cron_log ===\" && tail -60 cron_log.txt)",
+      "Bash(cd /Users/luctran/auto-youtube && echo \"=== crontab ===\" && crontab -l 2>&1 | grep -i youtube; echo; echo \"=== số lần chạy gần đây \\(mốc bắt đầu\\) ===\" && grep -c \"AUTO YOUTUBE BẮT ĐẦU\" cron_log.txt; echo; echo \"=== lỗi trong 400 dòng cuối ===\" && tail -400 cron_log.txt | grep -E \"❌|⚠️|🚫|Traceback|Error\" | sort | uniq -c | sort -rn | head -10 || echo \"\\(không có lỗi nào\\)\"; echo; echo \"=== 3 lần chạy gần nhất, dòng tổng kết ===\" && grep -E \"📊 Lượt này|📊 Soạn nháp\" cron_log.txt | tail -8)",
+      "Bash(/Users/luctran/auto-youtube/venv/bin/python -)"
+    ],
+    "additionalDirectories": [
+      "/Users/luctran/lucas-daily-reel",
+      "/Users/luctran/auto-youtube"
     ]
   }
 }
