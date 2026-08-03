@@ -77,7 +77,8 @@ function extractPrices(text) {
 }
 
 function extractPercents(text) {
-  return [...text.matchAll(/(\d{1,2})\s*%/g)].map((m) => Number(m[1]));
+  // Chỉ rút con số % khi có từ chỉ giảm giá đứng trước (vd: giảm 6%, off 10%)
+  return [...text.matchAll(/(?:giảm|giam|off|chiết khấu|chiet khau|ưu đãi|uu dai)\s*(\d{1,2})\s*%/gi)].map((m) => Number(m[1]));
 }
 
 // ---------------------------------------------------------------------------
