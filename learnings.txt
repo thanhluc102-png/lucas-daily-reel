@@ -1,8 +1,8 @@
-- Hook chạm nỗi đau "quên/thiếu đồ" (quên cáp, mỗi người một cổng sạc) cho Score cao nhất (6) — ưu tiên khai thác tình huống bực bội quen thuộc, dễ gật đầu.
-- Hook gợi cảnh thực tế hằng ngày ("lên xe phải mò dây sạc") tốt hơn hook mơ hồ hay hỏi khó tin — Score 5-6, nên tả tình huống cụ thể.
-- Tránh hook quá kỹ thuật, trừu tượng hoặc "khoe tính năng lạ" (tẩu sạc nghe nhạc, chia đôi dòng điện) — Score chỉ 3, người xem không thấy mình trong đó.
-- Tránh hook về sản phẩm ngách/ít người dùng (iPhone Air mỏng, ngăn laptop, iPad cho trẻ) — Score 3-4, tệp quá hẹp.
-- Sản phẩm sạc/cáp đa cổng cho nhiều người dùng chung kéo tương tác tốt nhất — nhấn "giải quyết mâu thuẫn nhiều người".
-- Dùng câu hỏi ngắn, kết bằng dấu "?" tạo đồng cảm tức thì — hiệu quả hơn câu khẳng định dài.
-- Toàn bộ Shares=0: chưa hook nào đủ "đáng chia sẻ" — thử thêm yếu tố bất ngờ/mẹo hay/tiết kiệm để kích share, không chỉ than phiền.
-- Emoji không giúp tăng Score — dùng tiết chế, tập trung vào nội dung nỗi đau.
+- Ưu tiên hook về **sạc trên ô tô** (quên cáp, nhiều cổng, nhiều người tranh cổng): nhóm điểm cao nhất (Score 5-6).
+- Hook đánh vào **nỗi đau chung nhiều người** ("mỗi người một cổng", "cả nhà lên xe") kéo tương tác tốt hơn nỗi đau cá nhân đơn lẻ.
+- Hook dạng **câu hỏi ngắn, tình huống quen thuộc hằng ngày** ("Lên xe là phải mò dây sạc, phiền chưa?") hiệu quả; câu càng dài, càng kỹ thuật càng kém.
+- Tránh hook **thị trường ngách hẹp** (iPad cho trẻ, iPhone Air mỏng, túi gặp mưa, balo/cặp 2-in-1): đều Score thấp 3-4.
+- Tránh hook mở đầu bằng **liệt kê nhiều món/thông số** ("cõng cả cục sạc lẫn pin", "cáp thường sạc MacBook"): dài dòng, tương tác yếu.
+- Hook nhắm **cáp/sạc dự phòng đa năng chung chung** cho điểm thấp; cụ thể hoá bối cảnh "trên xe" giúp tăng điểm.
+- Giữ hook **1 câu, dưới 12 chữ, có emoji vừa phải**, kết bằng dấu hỏi tạo tò mò.
+- Không hook nào đạt Share; cần thêm **yếu tố bất ngờ/mẹo hay** ("Tẩu sạc mà nghe được cả nhạc, tin không?") để kích chia sẻ ở lần tới.
