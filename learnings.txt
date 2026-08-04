@@ -1,8 +1,15 @@
-- Ưu tiên hook về **phụ kiện sạc trên ô tô đa cổng/đa người dùng** ("mỗi người một cổng sạc", "lên xe mò dây") — cho Score cao nhất (5-6).
-- Đánh vào **tình huống nhiều người, xung đột chia sẻ** ("ai nhường ai", "cả nhà lên xe") tạo tò mò, kéo reaction tốt hơn.
-- Hook nêu **nỗi lo hư hỏng tài sản đắt tiền** (xước viền máy, MacBook, túi gặp mưa) đạt Score 5 — cảm giác mất mát mạnh.
-- Viết hook dạng **câu hỏi cụ thể + tình huống đời thường** ("cần balo sáng, cặp xách chiều") tốt hơn hook chung chung.
-- Thêm **emoji gợi bối cảnh** (🚗🌧️🎒🔌) giúp tăng nhẹ tương tác, nên giữ 1 emoji cuối hook.
-- Tránh hook về **pin dự phòng/cáp sạc chuyên dụng đơn lẻ** ("cáp rối trong túi", "sạc laptop lẫn điện thoại") — Score thấp nhất (3), quá phổ biến, nhàm.
-- Tránh hook **quá kỹ thuật/mơ hồ** ("tẩu chia đôi dòng điện", "tẩu nghe được nhạc") — không chạm nỗi đau rõ ràng.
-- Chốt: **tình huống nhiều người + tài sản giá trị + câu hỏi kịch tính** = công thức thắng; né mô tả tính năng đơn thuần.
+- **Chốt cao nhất (Score 5-6):** hook chạm nỗi đau cụ thể + có "con số/chuẩn so sánh" (200K, 2mm, quân sự) hoặc cảnh sinh hoạt rõ nét (mưa ướt túi, nhường cổng sạc).
+
+- **Ưu tiên dạng câu hỏi + tình huống thường ngày:** "Mỗi người một kiểu cổng sạc?", "Túi đẹp gặp mưa?" — dễ được Reactions vì người xem tự thấy mình trong đó.
+
+- **Chèn chi tiết định lượng gây sốc:** balo 200K, ốp 2mm, cáp thường sạc "lâu cả buổi" — tạo tương phản rõ, kéo tương tác lên 5-6.
+
+- **Emoji đúng ngữ cảnh sản phẩm** (🎒🌧️🛡️😤) hỗ trợ tốt; hook hay nhất đều có 1 emoji gợi cảm xúc/vật thể.
+
+- **Nên tránh hook chung chung, chỉ nêu vấn đề mờ:** "Đi xa mà cả hai đều cạn pin?", "Vừa chỉ đường vừa tụt pin?" — Score chỉ 3, không tạo được hình ảnh cụ thể.
+
+- **Tránh nhồi quá nhiều kỹ thuật/ẩn dụ khó hình dung:** "tẩu chia đôi dòng điện", "tẩu sạc nghe được nhạc" — người xem không thấy ngay lợi ích, tương tác thấp.
+
+- **Sản phẩm dễ viral hơn:** túi/balo và ốp lưng (chạm thẩm mỹ + sợ hư hỏng); nhóm sạc xe/cáp bị bão hòa hook, cần góc mới lạ hơn.
+
+- **Công thức đề xuất:** [Nỗi đau cụ thể + con số/so sánh gây sốc] → [câu hỏi khiến người xem gật đầu] + 1 emoji, giữ 1 dòng ngắn.
