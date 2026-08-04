@@ -1,8 +1,8 @@
-- Ưu tiên hook về **sạc trên ô tô** (quên cáp, nhiều cổng, nhiều người tranh cổng): nhóm điểm cao nhất (Score 5-6).
-- Hook đánh vào **nỗi đau chung nhiều người** ("mỗi người một cổng", "cả nhà lên xe") kéo tương tác tốt hơn nỗi đau cá nhân đơn lẻ.
-- Hook dạng **câu hỏi ngắn, tình huống quen thuộc hằng ngày** ("Lên xe là phải mò dây sạc, phiền chưa?") hiệu quả; câu càng dài, càng kỹ thuật càng kém.
-- Tránh hook **thị trường ngách hẹp** (iPad cho trẻ, iPhone Air mỏng, túi gặp mưa, balo/cặp 2-in-1): đều Score thấp 3-4.
-- Tránh hook mở đầu bằng **liệt kê nhiều món/thông số** ("cõng cả cục sạc lẫn pin", "cáp thường sạc MacBook"): dài dòng, tương tác yếu.
-- Hook nhắm **cáp/sạc dự phòng đa năng chung chung** cho điểm thấp; cụ thể hoá bối cảnh "trên xe" giúp tăng điểm.
-- Giữ hook **1 câu, dưới 12 chữ, có emoji vừa phải**, kết bằng dấu hỏi tạo tò mò.
-- Không hook nào đạt Share; cần thêm **yếu tố bất ngờ/mẹo hay** ("Tẩu sạc mà nghe được cả nhạc, tin không?") để kích chia sẻ ở lần tới.
+- Ưu tiên hook về **phụ kiện sạc trên ô tô đa cổng/đa người dùng** ("mỗi người một cổng sạc", "lên xe mò dây") — cho Score cao nhất (5-6).
+- Đánh vào **tình huống nhiều người, xung đột chia sẻ** ("ai nhường ai", "cả nhà lên xe") tạo tò mò, kéo reaction tốt hơn.
+- Hook nêu **nỗi lo hư hỏng tài sản đắt tiền** (xước viền máy, MacBook, túi gặp mưa) đạt Score 5 — cảm giác mất mát mạnh.
+- Viết hook dạng **câu hỏi cụ thể + tình huống đời thường** ("cần balo sáng, cặp xách chiều") tốt hơn hook chung chung.
+- Thêm **emoji gợi bối cảnh** (🚗🌧️🎒🔌) giúp tăng nhẹ tương tác, nên giữ 1 emoji cuối hook.
+- Tránh hook về **pin dự phòng/cáp sạc chuyên dụng đơn lẻ** ("cáp rối trong túi", "sạc laptop lẫn điện thoại") — Score thấp nhất (3), quá phổ biến, nhàm.
+- Tránh hook **quá kỹ thuật/mơ hồ** ("tẩu chia đôi dòng điện", "tẩu nghe được nhạc") — không chạm nỗi đau rõ ràng.
+- Chốt: **tình huống nhiều người + tài sản giá trị + câu hỏi kịch tính** = công thức thắng; né mô tả tính năng đơn thuần.
