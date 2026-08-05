@@ -1,15 +1,13 @@
-- **Chốt cao nhất (Score 5-6):** hook chạm nỗi đau cụ thể + có "con số/chuẩn so sánh" (200K, 2mm, quân sự) hoặc cảnh sinh hoạt rõ nét (mưa ướt túi, nhường cổng sạc).
+- Score dao động rất thấp (3–6), Shares=0 toàn bộ, Comments=1 gần như mặc định → khác biệt thật nằm ở Reactions; đừng kỳ vọng share, hãy tối ưu để kéo reaction.
 
-- **Ưu tiên dạng câu hỏi + tình huống thường ngày:** "Mỗi người một kiểu cổng sạc?", "Túi đẹp gặp mưa?" — dễ được Reactions vì người xem tự thấy mình trong đó.
+- Hook cao nhất (Score 5–6) đánh vào nỗi đau đời thường, cụ thể, dễ đồng cảm: "mỗi người một cổng sạc", "túi đẹp gặp mưa", "mò dây sạc mỗi lần lên xe", "balo 200K không ngăn laptop" → ưu tiên tình huống quen thuộc, hình ảnh rõ ràng.
 
-- **Chèn chi tiết định lượng gây sốc:** balo 200K, ốp 2mm, cáp thường sạc "lâu cả buổi" — tạo tương phản rõ, kéo tương tác lên 5-6.
+- Hook chạm cảm xúc lo lắng/tiếc của (sợ hỏng đồ đẹp, sợ máy hư, tiếc tiền) hiệu quả hơn hook thuần thông số kỹ thuật ("ốp mỏng 2mm chuẩn quân sự", "tẩu nghe được nhạc") vốn chỉ đạt Score 3.
 
-- **Emoji đúng ngữ cảnh sản phẩm** (🎒🌧️🛡️😤) hỗ trợ tốt; hook hay nhất đều có 1 emoji gợi cảm xúc/vật thể.
+- Nêu con số/chi tiết đắt giá tăng độ tin và tương tác: "balo 200K", "MacBook lâu hết cả buổi", "iPhone Air hết mỏng" → chèn số liệu hoặc tên sản phẩm cụ thể.
 
-- **Nên tránh hook chung chung, chỉ nêu vấn đề mờ:** "Đi xa mà cả hai đều cạn pin?", "Vừa chỉ đường vừa tụt pin?" — Score chỉ 3, không tạo được hình ảnh cụ thể.
+- Tránh hook chung chung, lặp mô-típ "sạc xe chậm/rối dây" (đã bị bão hòa, Score toàn 3): nhóm phụ kiện sạc ô tô cho tương tác kém nhất, cần góc mới lạ hoặc giảm tần suất.
 
-- **Tránh nhồi quá nhiều kỹ thuật/ẩn dụ khó hình dung:** "tẩu chia đôi dòng điện", "tẩu sạc nghe được nhạc" — người xem không thấy ngay lợi ích, tương tác thấp.
+- Nhóm sản phẩm túi/balo/ốp bảo vệ (nỗi sợ hỏng đồ giá trị) cho Reactions cao hơn nhóm cáp/sạc → tăng tỉ trọng hook bảo vệ tài sản.
 
-- **Sản phẩm dễ viral hơn:** túi/balo và ốp lưng (chạm thẩm mỹ + sợ hư hỏng); nhóm sạc xe/cáp bị bão hòa hook, cần góc mới lạ hơn.
-
-- **Công thức đề xuất:** [Nỗi đau cụ thể + con số/so sánh gây sốc] → [câu hỏi khiến người xem gật đầu] + 1 emoji, giữ 1 dòng ngắn.
+- Công thức thắng: [Tình huống đời thường cụ thể] + [nỗi đau nhìn thấy được] + [1 chi tiết số/tên sản phẩm] + emoji cảm xúc 1 cái, câu ngắn dạng câu hỏi xoáy.
