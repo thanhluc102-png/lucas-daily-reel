@@ -1,8 +1,8 @@
-- Ưu tiên hook chạm "nỗi đau làm hư đồ đắt tiền" (xước, mòn cạnh, đập đáy laptop/MacBook) — nhóm này cho Score cao nhất (7, 5, 5).
-- Dùng hình ảnh cụ thể + con số + hậu quả rõ ("Túi vải rẻ đang bào mòn cạnh laptop", "Balo 200K không ngăn treo, máy đập đáy") thay vì câu hỏi chung chung.
-- Đánh vào lo lắng cảm xúc mạnh (mưa làm hỏng túi đẹp, tim đập thình thịch) hiệu quả — kết hợp emoji gợi cảnh (🌧️🎒😬).
-- Tránh hook về phụ kiện sạc ô tô (dây rối, cổng sạc, tẩu sạc, chia cổng) — gần như toàn Score 3, tương tác thấp nhất.
-- Tránh câu hỏi mở mơ hồ chỉ nêu tình huống mà không gợi mất mát cụ thể ("ai nhường ai?", "sạc sao đây?").
-- Nhấn tương phản giá trị: đồ rẻ/sai cách đang phá hỏng thiết bị xịn (MacBook, iPhone Air) — tạo tiếc nuối, kích phản ứng.
-- Thêm chi tiết định lượng gây shock ("mỏng 2mm", "200K", "ăn sốc mỗi ngày") để tăng độ tin và giật.
-- Comment luôn có (=1) nhưng Share=0 toàn bộ; muốn tăng Score nên thiết kế hook đáng chia sẻ: mẹo bảo vệ đồ, cảnh báo lỗi nhiều người mắc.
+- Hook nhóm túi/balo/ốp bảo vệ (chống xước, chống sốc laptop/MacBook) cho điểm cao nhất (5-7): ưu tiên chủ đề bảo vệ thiết bị đắt tiền.
+- Công thức thắng: "vật rẻ/mỏng đang ÂM THẦM phá thiết bị của bạn" (bào mòn, ăn sốc, làm xước) — khơi nỗi sợ mất mát tài sản giá trị.
+- Thêm con số/chi tiết cụ thể (200K, 2mm, cạnh laptop) làm hook đáng tin và giật hơn.
+- Hook nhóm sạc/cáp/tẩu xe cho điểm thấp nhất (đa số 3): tránh dạng "cổng sạc, dây rối, pin tụt" vì quá quen, không tạo cảm xúc.
+- Tránh hook hỏi trung tính, nhẹ đô ("iPad để đâu?", "ai nhường ai?", "tin không?") — chỉ gợi tò mò yếu, không có nỗi đau rõ.
+- Emoji nên gắn với mối nguy (😬🌧️🛡️) thay vì mô tả sản phẩm (🔌🎒) để tăng cảm xúc.
+- Đánh vào tài sản người dùng trân trọng (MacBook, iPhone, túi đẹp) hiệu quả hơn tình huống tiện lợi chung chung.
+- Điểm yếu toàn bộ: Shares=0, Comments≈1 — cần thêm CTA kích share/bình luận (gắn thẻ người cần, hỏi ý kiến) vào cuối reel.
