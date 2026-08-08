@@ -1,8 +1,8 @@
-- Hook nhóm túi/balo/ốp bảo vệ (chống xước, chống sốc laptop/MacBook) cho điểm cao nhất (5-7): ưu tiên chủ đề bảo vệ thiết bị đắt tiền.
-- Công thức thắng: "vật rẻ/mỏng đang ÂM THẦM phá thiết bị của bạn" (bào mòn, ăn sốc, làm xước) — khơi nỗi sợ mất mát tài sản giá trị.
-- Thêm con số/chi tiết cụ thể (200K, 2mm, cạnh laptop) làm hook đáng tin và giật hơn.
-- Hook nhóm sạc/cáp/tẩu xe cho điểm thấp nhất (đa số 3): tránh dạng "cổng sạc, dây rối, pin tụt" vì quá quen, không tạo cảm xúc.
-- Tránh hook hỏi trung tính, nhẹ đô ("iPad để đâu?", "ai nhường ai?", "tin không?") — chỉ gợi tò mò yếu, không có nỗi đau rõ.
-- Emoji nên gắn với mối nguy (😬🌧️🛡️) thay vì mô tả sản phẩm (🔌🎒) để tăng cảm xúc.
-- Đánh vào tài sản người dùng trân trọng (MacBook, iPhone, túi đẹp) hiệu quả hơn tình huống tiện lợi chung chung.
-- Điểm yếu toàn bộ: Shares=0, Comments≈1 — cần thêm CTA kích share/bình luận (gắn thẻ người cần, hỏi ý kiến) vào cuối reel.
+- Ưu tiên hook "nỗi đau tài sản đắt tiền bị hủy hoại" (túi/balo/vải rẻ làm xước, bào mòn MacBook) → Score cao nhất (6-7); mở đầu bằng vật rẻ/ẩu đang âm thầm phá món đồ giá trị.
+- Nhấn cảm giác "tiếc của, xót ruột" cụ thể (xước cạnh, đập đáy, gặp mưa) thay vì tiện ích chung chung → tăng reactions rõ rệt.
+- Dùng con số/chi tiết gây sốc ("balo 200K", "ốp 2mm", "sạc lâu cả buổi") để tạo tương phản rẻ-tiền/mỏng-khỏe.
+- Hook so sánh phũ, giọng thách thức ("thà không dùng", "hết mỏng còn gì", "xài cáp thường sạc lâu") kéo tương tác tốt hơn câu hỏi nhẹ nhàng.
+- Tránh hook về sạc xe/tẩu sạc/đa cổng (một cổng ai nhường ai, chỉ đường tụt pin) → Score thấp nhất (đều 3), quá quen thuộc, ít cảm xúc.
+- Tránh câu hỏi tiện ích thuần túy ("iPad để đâu", "vừa balo vừa cặp") không chạm nỗi sợ mất mát → tương tác yếu.
+- Thêm 1 emoji cảm xúc mạnh cuối hook (😬 🌧️ 😤) để khuếch đại sự lo lắng/khó chịu.
+- Công thức thắng: [vật rẻ/thói quen ẩu] + đang [phá hoại] + [món đồ đắt/quan trọng] + emoji xót ruột.
