@@ -1,8 +1,8 @@
-- Ưu tiên hook "nỗi đau tài sản đắt tiền bị hủy hoại" (túi/balo/vải rẻ làm xước, bào mòn MacBook) → Score cao nhất (6-7); mở đầu bằng vật rẻ/ẩu đang âm thầm phá món đồ giá trị.
-- Nhấn cảm giác "tiếc của, xót ruột" cụ thể (xước cạnh, đập đáy, gặp mưa) thay vì tiện ích chung chung → tăng reactions rõ rệt.
-- Dùng con số/chi tiết gây sốc ("balo 200K", "ốp 2mm", "sạc lâu cả buổi") để tạo tương phản rẻ-tiền/mỏng-khỏe.
-- Hook so sánh phũ, giọng thách thức ("thà không dùng", "hết mỏng còn gì", "xài cáp thường sạc lâu") kéo tương tác tốt hơn câu hỏi nhẹ nhàng.
-- Tránh hook về sạc xe/tẩu sạc/đa cổng (một cổng ai nhường ai, chỉ đường tụt pin) → Score thấp nhất (đều 3), quá quen thuộc, ít cảm xúc.
-- Tránh câu hỏi tiện ích thuần túy ("iPad để đâu", "vừa balo vừa cặp") không chạm nỗi sợ mất mát → tương tác yếu.
-- Thêm 1 emoji cảm xúc mạnh cuối hook (😬 🌧️ 😤) để khuếch đại sự lo lắng/khó chịu.
-- Công thức thắng: [vật rẻ/thói quen ẩu] + đang [phá hoại] + [món đồ đắt/quan trọng] + emoji xót ruột.
+- Hook về **túi/balo/ốp làm hỏng thiết bị đắt tiền** (MacBook, laptop) cho tương tác cao nhất — khai thác nỗi sợ mất mát tài sản: "bào mòn cạnh laptop", "làm xước MacBook", "đập đáy".
+- Ưu tiên **từ ngữ gây xót ruột cụ thể**: "bào mòn", "đập đáy", "cạnh lãnh đủ", "ăn sốc mỗi ngày" — mạnh hơn mô tả tính năng chung chung.
+- Hook về **thời tiết/rủi ro bất ngờ** ("gặp mưa là tim đập thình thịch") hiệu quả — chạm cảm xúc lo lắng thật.
+- Chèn **con số/mốc giá cụ thể** ("balo 200K", "túi vải rẻ", "ốp 2mm") tăng độ tin và tương tác.
+- Nhóm **phụ kiện sạc trên xe/cáp/sạc dự phòng** tương tác thấp nhất (Score 3) — nội dung nhàm, nỗi đau nhẹ, nên tránh hoặc viết lại sắc hơn.
+- Tránh **hook dạng câu hỏi tình huống nhẹ nhàng** ("ai nhường ai?", "sạc sao đây?") — không tạo được cảm xúc mạnh.
+- Công thức thắng: **[món rẻ/thường] đang âm thầm phá [món đắt của bạn]** + emoji lo lắng 😬🌧️.
+- Đặt **thiết bị giá trị cao (MacBook/laptop) làm nạn nhân** trong hook để kích phản ứng bảo vệ tài sản.
