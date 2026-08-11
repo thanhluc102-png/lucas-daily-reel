@@ -1,8 +1,8 @@
-- Ưu tiên hook "nỗi đau mất mát tài sản": nhấn nguy cơ làm xước/hỏng MacBook, laptop, túi đẹp — nhóm này cho điểm cao nhất (Score 5-7).
-- Chèn con số cụ thể gây sốc ("Balo 200K", "Ốp mỏng 2mm", "túi vải rẻ") để tăng độ tin và tương tác.
-- Đánh vào cảm xúc lo sợ tức thì (mưa làm hỏng túi, ném balo hỏng cạnh máy) mạnh hơn hook tiện ích chung chung.
-- Sản phẩm bảo vệ đồ giá trị (túi/balo laptop, ốp chống sốc) hiệu quả hơn nhóm sạc/cáp/tẩu — nhóm sạc gần như chỉ đạt sàn (Score 3).
-- Tránh hook dạng câu hỏi tiện ích mờ nhạt về sạc dự phòng, tẩu sạc, cổng sạc — tương tác thấp nhất, dễ chìm.
-- Dùng emoji cảm xúc căng thẳng (😬🌧️) thay vì emoji trung tính (🔌🎒) để khơi phản ứng.
-- Mở đầu bằng tình huống "đồ rẻ đang âm thầm phá đồ đắt" — công thức tạo reaction cao nhất trong dữ liệu.
-- Tất cả hook đều thiếu Share/Comment sâu: thêm CTA hỏi trực tiếp hoặc mời tag người cần, để phá trần Score.
+- Hook nói về **nguy cơ làm hỏng/xước đồ đắt tiền** (laptop, MacBook) cho tương tác cao nhất (Score 5–7): "Túi vải rẻ đang bào mòn cạnh laptop", "Balo 200K không có ngăn laptop treo".
+- Kết hợp **con số cụ thể + hậu quả trực quan** ("200K", "2mm", "đập đáy", "bào mòn cạnh") kích reaction mạnh hơn hook chung chung.
+- Hook về **nỗi sợ mất mát/hư hại** (mưa làm hỏng túi, xước MacBook, ổ cắm không đủ) ăn đứt hook chỉ nêu bất tiện nhẹ.
+- Sản phẩm **balo/túi chống sốc & sạc đa cổng** đang hút tương tác nhất; nên khai thác sâu nhóm này.
+- Hook về **sạc trên xe ô tô** (tẩu sạc, 2 cổng, chỉ đường tụt pin) đều Score thấp (3) — tránh lặp mô-típ này hoặc phải làm mới góc nhìn.
+- Hook **trừu tượng/nhẹ nhàng** ("đeo ốp như không đeo", "vừa chỉ đường vừa tụt pin") kém hiệu quả — cần tăng độ đau và tính cụ thể.
+- Công thức thắng: **[Vật rẻ/sai lầm] đang âm thầm phá [món đồ đắt của bạn]** + emoji 😬🌧️ + 1 chi tiết số liệu.
+- Luôn cài **1 câu hỏi hoặc chốt gây tò mò** cuối hook để giữ comment (comment đều = 1, nhưng reaction mới tạo khác biệt Score).
