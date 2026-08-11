@@ -121,7 +121,9 @@ SẢN PHẨM (dữ liệu THẬT — không bịa thêm thông số):
 
 RÀNG BUỘC KỸ THUẬT (validator chặn cứng, sai là hỏng):
 - 5–7 cảnh. Cảnh ĐẦU role "hook", cảnh CUỐI role "cta". ĐÚNG 1 hook và ĐÚNG 1 cta. Có ĐÚNG 1 cảnh "price".
-- Mỗi cảnh: text 4–16 TỪ. Hook TỐI ĐA 12 từ và duration_sec ≤ 3.5.
+- Mỗi cảnh: text 4–16 TỪ. Hook TỐI ĐA 9 từ và duration_sec ≤ 3.5.
+  (9 từ là trần thật: 9/3.2 + 0.5 = 3.31s, vừa khít 3.5s. Hook 10 từ trở lên là
+   KHÔNG THỂ vừa đủ thời gian đọc vừa dưới 3.5s — đừng viết dài hơn.)
 - duration_sec mỗi cảnh: đủ để đọc = (số từ / 3.2) + 0.5 trở lên, và trong khoảng 2.0–5.0. Tổng 18–32 giây.
 - Cảnh "price" đặt ở khoảng 60–70% (gần cuối, trước cta). price_scene_index = chỉ số (0-based) của cảnh price.
 - Câu ở cảnh price PHẢI chứa đúng chuỗi giá "${priceStr}"${onSale ? ` và có thể nhắc "${discount}%"` : ''}${priceIsFrom ? ' và PHẢI có cụm "chỉ từ"' : ''}. KHÔNG viết số giá khác.
@@ -149,9 +151,28 @@ ${extraFix ? `\nSỬA LỖI validator lần trước:\n${extraFix}\n` : ''}
 Chỉ trả JSON đúng schema, không thêm gì khác.`;
 }
 
+// Schema JSON không giới hạn được số phần tử mảng (structured outputs không hỗ
+// trợ maxItems), nên chặn kiểu "sinh loạn" ở đây — đã từng gặp hook.lines bị
+// nhồi hàng trăm phần tử " " làm tràn max_tokens và cắt đứt JSON.
+function sanitizeCreative(c) {
+  // Bỏ luôn phần tử chỉ có dấu câu (đã gặp "," lọt vào lines) — lên hình sẽ
+  // thành một dấu phẩy lơ lửng.
+  const clean = (arr, max) => arr
+    .map((s) => String(s ?? '').trim())
+    .filter((s) => /[\p{L}\p{N}]/u.test(s))
+    .slice(0, max);
+  if (Array.isArray(c?.hook?.lines)) {
+    const n = c.hook.lines.length;
+    c.hook.lines = clean(c.hook.lines, 4);
+    if (n > c.hook.lines.length) console.warn(`[gen] hook.lines có ${n} dòng -> lọc còn ${c.hook.lines.length}`);
+  }
+  if (Array.isArray(c?.hook?.hl)) c.hook.hl = clean(c.hook.hl, 3);
+  return c;
+}
+
 async function askClaude(extraFix) {
   const body = {
-    model: MODEL, max_tokens: 1500,
+    model: MODEL, max_tokens: 8000,
     output_config: { format: { type: 'json_schema', schema: SCHEMA } },
     messages: [{ role: 'user', content: buildPrompt(extraFix) }],
   };
@@ -162,9 +183,13 @@ async function askClaude(extraFix) {
   });
   if (!r.ok) throw new Error(`Anthropic HTTP ${r.status}: ${(await r.text()).slice(0, 300)}`);
   const j = await r.json();
+  // Phân biệt "bị cắt vì hết token" với "JSON hỏng thật" — trước đây cả hai đều
+  // rơi vào JSON.parse và báo cùng một SyntaxError khó hiểu.
+  if (j.stop_reason === 'max_tokens') throw new Error('phản hồi bị cắt do chạm max_tokens, JSON không trọn vẹn');
+  if (j.stop_reason === 'refusal') throw new Error(`Claude từ chối (${j.stop_details?.category || 'không rõ lý do'})`);
   const text = j.content?.find((b) => b.type === 'text')?.text;
   if (!text) throw new Error('không có text trong phản hồi');
-  return JSON.parse(text);
+  return sanitizeCreative(JSON.parse(text));
 }
 
 // --- lắp job hoàn chỉnh ------------------------------------------------------
@@ -200,11 +225,14 @@ fs.mkdirSync(path.join(root, 'jobs'), { recursive: true });
 let fix = '';
 for (let attempt = 1; attempt <= 3; attempt++) {
   console.log(`[gen] lần ${attempt}: hỏi Claude…`);
-  const creative = await askClaude(fix);
-  const job = assemble(creative);
-  const file = path.join(root, 'jobs', `${job.job_id}.json`);
-  fs.writeFileSync(file, JSON.stringify(job, null, 2));
+  let file = null;
   try {
+    // askClaude PHẢI nằm trong try: JSON hỏng / bị cắt / API lỗi chỉ tính là
+    // một lần thử hỏng, không được giết cả process khi vẫn còn lượt thử.
+    const creative = await askClaude(fix);
+    const job = assemble(creative);
+    file = path.join(root, 'jobs', `${job.job_id}.json`);
+    fs.writeFileSync(file, JSON.stringify(job, null, 2));
     execFileSync('node', [path.join(root, 'scripts', 'validate.mjs'), file], { stdio: 'pipe', encoding: 'utf8' });
     console.log(`[gen] ✔ hợp lệ: ${path.relative(root, file)}`);
 
@@ -225,10 +253,19 @@ for (let attempt = 1; attempt <= 3; attempt++) {
     if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `job=${job.job_id}\nfile=jobs/${job.job_id}.json\n`);
     process.exit(0);
   } catch (e) {
+    if (file) fs.rmSync(file, { force: true });
     const out = (e.stdout || '') + (e.stderr || '');
-    fix = out.split('\n').filter((l) => /LỖI|ERROR/.test(l)).join('\n') || out.slice(0, 500);
-    console.warn(`[gen] validator báo lỗi, thử lại:\n${fix}`);
-    fs.rmSync(file, { force: true });
+    if (out.trim()) {
+      // Lỗi từ validate.mjs — đưa nguyên văn lỗi cho Claude sửa.
+      fix = out.split('\n').filter((l) => /LỖI|ERROR/.test(l)).join('\n') || out.slice(0, 500);
+      console.warn(`[gen] validator báo lỗi, thử lại:\n${fix}`);
+    } else {
+      // Lỗi khi gọi/parse Claude — vẫn phải nhắc lại yêu cầu, nếu không lần
+      // thử sau sẽ chạy với fix rỗng và dễ lặp lại đúng lỗi cũ.
+      fix = `Phản hồi lần trước không dùng được (${e.message}). Trả về JSON hợp lệ, gọn, đúng schema. `
+          + `"hook.lines" tối đa 4 dòng, không có dòng rỗng hay dòng chỉ chứa khoảng trắng.`;
+      console.warn(`[gen] lỗi khi lấy nội dung từ Claude, thử lại: ${e.message}`);
+    }
   }
 }
 console.error('[gen] Không tạo được scenes.json hợp lệ sau 3 lần.');

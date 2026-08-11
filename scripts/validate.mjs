@@ -56,22 +56,35 @@ class Report {
 
 const norm = (s) => s.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim();
 
-/** Rút mọi con số tiền xuất hiện trong câu, trả về đơn vị đồng. */
+// Đơn vị đi ngay sau con số mà KHÔNG phải tiền. Mô tả sản phẩm đầy những câu
+// như "giám sát nhiệt 3 triệu lần/ngày" hay "pin 20.000mAh" — trước đây bị bắt
+// nhầm thành lời rao giá và chặn cứng cả 3 lần thử.
+const NOT_MONEY_UNIT = /^\s*(lần|lượt|mah|wh|whr|w|kw|v|a|hz|khz|ghz|kg|g|gram|mg|mm|cm|m|km|inch|in|nit|bit|byte|kb|mb|gb|tb|px|core|nhân|tuần|tháng|ngày|đêm|năm|giờ|phút|giây|người|máy|chiếc|cái|thiết bị|sản phẩm|đơn)\b/i;
+
+/** Rút mọi con số tiền xuất hiện trong câu, trả về đơn vị đồng.
+ *  Chỉ tính khi con số THỰC SỰ là giá: hoặc có ký hiệu tiền đi kèm, hoặc phía
+ *  sau không phải đơn vị đo khác. Vẫn bắt đủ mọi cách viết giá sai. */
 function extractPrices(text) {
   const out = [];
   const t = text.replace(/\u00a0/g, ' ');
 
-  // 590K / 590k / 590 K
+  const isMoney = (m) => {
+    if (/đ|vnđ|vnd|đồng/i.test(m[0])) return true;               // có ký hiệu tiền -> chắc chắn là giá
+    return !NOT_MONEY_UNIT.test(t.slice(m.index + m[0].length)); // sau nó là đơn vị khác -> không phải giá
+  };
+
+  // 590K / 590k / 590 K — ngưỡng >=10 để bỏ qua 2K/4K/8K (độ phân giải)
   for (const m of t.matchAll(/(\d{1,4})\s*[kK](?![a-zA-Z])/g)) {
-    out.push(Number(m[1]) * 1000);
+    if (Number(m[1]) >= 10 && isMoney(m)) out.push(Number(m[1]) * 1000);
   }
-  // 1tr290 / 1 triệu 290
-  for (const m of t.matchAll(/(\d{1,2})\s*(?:tr|triệu)\s*(\d{1,3})?/gi)) {
-    out.push(Number(m[1]) * 1_000_000 + (m[2] ? Number(m[2]) * 1000 : 0));
+  // 1tr290 / 1 triệu 290 — 'triệu' PHẢI đứng trước 'tr', nếu không regex
+  // chỉ ăn 2 chữ 'tr' của 'triệu' và đọc '1 triệu 290' thành 1.000.000đ.
+  for (const m of t.matchAll(/(\d{1,2})\s*(?:triệu|tr)\s*(\d{1,3})?/gi)) {
+    if (isMoney(m)) out.push(Number(m[1]) * 1_000_000 + (m[2] ? Number(m[2]) * 1000 : 0));
   }
   // 590.000đ / 590,000 vnd / 1.290.000
   for (const m of t.matchAll(/(\d{1,3}(?:[.,]\d{3})+)\s*(?:đ|d|vnđ|vnd)?/gi)) {
-    out.push(Number(m[1].replace(/[.,]/g, '')));
+    if (isMoney(m)) out.push(Number(m[1].replace(/[.,]/g, '')));
   }
   return [...new Set(out)];
 }
