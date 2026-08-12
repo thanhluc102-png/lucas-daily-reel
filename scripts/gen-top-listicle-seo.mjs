@@ -274,7 +274,7 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
   // 2. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
   const voucherBanner = `
 <div style="background: linear-gradient(135deg, #0B1B2E 0%, #152A45 100%); color: #FFFFFF; padding: 24px; border-radius: 16px; margin: 36px 0; border: 2px solid #C9A227; text-align: center; box-shadow: 0 8px 24px rgba(11,27,46,0.15);">
-  <h3 style="color: #C9A227; margin: 0 0 10px 0; font-size: 20px;">🎁 ƯU ĐÃI ĐẶC BIỆT DÀNH CHO BẠN ĐỌC BLOG LUCAS COMBO</h3>
+  <div style="color: #C9A227; margin: 0 0 10px 0; font-size: 20px; font-weight: 800; text-transform: uppercase;">🎁 ƯU ĐÃI ĐẶC BIỆT DÀNH CHO BẠN ĐỌC BLOG LUCAS COMBO</div>
   <p style="margin: 0 0 16px 0; font-size: 15px; color: #E2E8F0; line-height: 1.6;">Nhập mã <strong style="background: #C9A227; color: #0B1B2E; padding: 4px 10px; border-radius: 6px; font-size: 16px; font-weight: 800;">LUCAS50K</strong> khi thanh toán tại lucas.vn để được <strong>Giảm Ngay 50.000đ</strong> cho đơn hàng phụ kiện trên 500k!</p>
   <a href="https://lucas.vn" style="background: #C9A227; color: #0B1B2E; padding: 12px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 15px;">Khám Phá Phụ Kiện Chính Hãng Ngay ›</a>
 </div>`;
@@ -282,7 +282,7 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
   // 3. Khung Gợi Ý Xem Thêm (Internal Linking Matrix)
   const internalLinkBox = `
 <div style="background: #F8FAFC; border-left: 4px solid #0B1B2E; padding: 18px 20px; border-radius: 8px; margin: 30px 0;">
-  <h4 style="margin: 0 0 10px 0; color: #0B1B2E; font-size: 16px;">📌 Gợi Ý Xem Thêm Tại Lucas Combo:</h4>
+  <div style="margin: 0 0 10px 0; color: #0B1B2E; font-size: 16px; font-weight: 700;">📌 Gợi Ý Xem Thêm Tại Lucas Combo:</div>
   <ul style="margin: 0; padding-left: 20px; color: #475569; font-size: 14px; line-height: 1.8;">
     <li><a href="https://lucas.vn/danh-muc/tui-chong-soc-macbook" style="color: #0B1B2E; font-weight: 600; text-decoration: underline;">Xem toàn bộ Phụ Kiện Túi Chống Sốc & Balo MacBook Chính Hãng</a></li>
     <li><a href="https://lucas.vn/danh-muc/dan-macbook" style="color: #0B1B2E; font-weight: 600; text-decoration: underline;">Bộ Dán Màn Hình & Vỏ Máy Bảo Vệ Apple</a></li>
@@ -291,7 +291,6 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
 </div>`;
 
   return enriched + voucherBanner + internalLinkBox;
-}
 }
 
 // Helper: Tự động chia sẻ bài viết lên Facebook Fanpage Lucas Combo
