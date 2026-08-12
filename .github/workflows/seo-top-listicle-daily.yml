@@ -1,0 +1,52 @@
+name: Daily Top Listicle SEO Writer - Tự động đăng bài Top 7h27 sáng
+
+on:
+  schedule:
+    - cron: '27 0 * * *'   # 7:27 SA giờ Việt Nam (UTC+7 = 00:27 UTC)
+  workflow_dispatch:        # Nút bấm chạy tay bất kỳ lúc nào từ GitHub Actions
+
+permissions:
+  contents: write
+
+jobs:
+  auto-publish-top-seo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Pillow & Fonts (Thiết kế Thumbnail 1200x630)
+        run: |
+          pip install pillow
+          sudo apt-get update -qq && sudo apt-get install -y fonts-dejavu-core fonts-liberation 2>/dev/null || true
+
+      - name: Sinh & Đăng bài Top Listicle SEO tự động theo danh mục + Chia sẻ Facebook
+        env:
+          WP_SITE_URL: https://lucas.vn
+          WP_USERNAME: luucat
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          WC_CONSUMER_KEY: ${{ secrets.WC_CONSUMER_KEY }}
+          WC_CONSUMER_SECRET: ${{ secrets.WC_CONSUMER_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: node scripts/gen-top-listicle-seo.mjs --auto-daily --status publish
+
+      - name: Lưu lại lịch sử danh mục đã xoay vòng
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seo_top_category_index.json
+          git diff --staged --quiet || git commit -m "chore: xoay vòng danh mục SEO Top Listicle [skip ci]"
+          git push
