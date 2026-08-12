@@ -19,6 +19,11 @@ const REPLACEMENTS = [
   { from: /xịn xò/gi, to: 'chất lượng' }
 ];
 
+const getHeaders = () => ({
+  'Authorization': `Basic ${auth}`,
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+});
+
 async function updateTopPosts() {
   console.log('===============================================================');
   console.log('🚀 CẬP NHẬT TẤT CẢ CÁC BÀI VIẾT TOP LISTICLE CŨ TRÊN LUCAS.VN');
@@ -29,7 +34,7 @@ async function updateTopPosts() {
 
   while (true) {
     const res = await fetch(`${STORE_URL}/wp-json/wp/v2/posts?search=Top&per_page=100&page=${page}`, {
-      headers: { 'Authorization': `Basic ${auth}` }
+      headers: getHeaders()
     });
     if (!res.ok) break;
     const posts = await res.json();
@@ -108,7 +113,7 @@ async function updateTopPosts() {
       const updateRes = await fetch(`${STORE_URL}/wp-json/wp/v2/posts/${p.id}`, {
         method: 'POST',
         headers: {
-          'Authorization': `Basic ${auth}`,
+          ...getHeaders(),
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
