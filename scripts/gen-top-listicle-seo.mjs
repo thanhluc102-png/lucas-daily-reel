@@ -263,33 +263,14 @@ Viết toàn bộ nội dung HTML tại đây
   return data;
 }
 
-// Helper: Tăng cường SEO (Schema JSON-LD, Voucher Banner, Internal Links, Image Lazy Loading)
+// Helper: Tăng cường SEO (Voucher Banner, Internal Links, Image Lazy Loading)
 function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKeyword) {
   let enriched = html;
 
   // 1. Tối ưu ảnh: Thêm loading="lazy" cho Google Images & PageSpeed
   enriched = enriched.replace(/<img\s+/gi, '<img loading="lazy" ');
 
-  // 2. Sinh Schema.org JSON-LD ItemList cho Google Rich Snippets
-  const schemaItems = selectedProducts.map((p, idx) => ({
-    "@type": "ListItem",
-    "position": idx + 1,
-    "name": p.name,
-    "url": p.url,
-    "image": p.image
-  }));
-
-  const schemaJson = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": `Top ${selectedProducts.length} ${categoryName} Đáng Mua 2026 - Lucas Combo`,
-    "description": `Danh sách tổng hợp ${selectedProducts.length} sản phẩm ${categoryName} chính hãng chất lượng tại Lucas Combo.`,
-    "itemListElement": schemaItems
-  };
-
-  const schemaScript = `\n<!-- wp:html -->\n<script type="application/ld+json">\n${JSON.stringify(schemaJson)}\n</script>\n<!-- /wp:html -->\n`;
-
-  // 3. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
+  // 2. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
   const voucherBanner = `
 <div style="background: linear-gradient(135deg, #0B1B2E 0%, #152A45 100%); color: #FFFFFF; padding: 24px; border-radius: 16px; margin: 36px 0; border: 2px solid #C9A227; text-align: center; box-shadow: 0 8px 24px rgba(11,27,46,0.15);">
   <h3 style="color: #C9A227; margin: 0 0 10px 0; font-size: 20px;">🎁 ƯU ĐÃI ĐẶC BIỆT DÀNH CHO BẠN ĐỌC BLOG LUCAS COMBO</h3>
@@ -297,7 +278,7 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
   <a href="https://lucas.vn" style="background: #C9A227; color: #0B1B2E; padding: 12px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 15px;">Khám Phá Phụ Kiện Chính Hãng Ngay ›</a>
 </div>`;
 
-  // 4. Khung Gợi Ý Xem Thêm (Internal Linking Matrix)
+  // 3. Khung Gợi Ý Xem Thêm (Internal Linking Matrix)
   const internalLinkBox = `
 <div style="background: #F8FAFC; border-left: 4px solid #0B1B2E; padding: 18px 20px; border-radius: 8px; margin: 30px 0;">
   <h4 style="margin: 0 0 10px 0; color: #0B1B2E; font-size: 16px;">📌 Gợi Ý Xem Thêm Tại Lucas Combo:</h4>
@@ -308,7 +289,8 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
   </ul>
 </div>`;
 
-  return enriched + voucherBanner + internalLinkBox + schemaScript;
+  return enriched + voucherBanner + internalLinkBox;
+}
 }
 
 // Helper: Tự động chia sẻ bài viết lên Facebook Fanpage Lucas Combo
