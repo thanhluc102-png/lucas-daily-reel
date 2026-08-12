@@ -180,7 +180,7 @@ YÊU CẦU ĐỊNH DẠNG VÀ CẤU TRÚC BÀI VIẾT:
    - Mở đầu bằng <h2>: Nhu cầu chọn mua ${categoryName} chuẩn, những tiêu chí quan trọng.
    - <h2>Đánh Giá Chi Tiết Top ${topCount} ${categoryName} ${angle} ${currentYear}</h2>
    - Với mỗi sản phẩm (1 đến ${topCount}):
-     + Dùng <h3>: tên sản phẩm
+     + Dùng <h3>: Tên sản phẩm (BẮT BUỘC KHÔNG THÊM số thứ tự 1., 2., 3. ở đầu thẻ h3 vì plugin Mục Lục của WordPress đã tự động đánh số 2.1, 2.2...)
      + Chèn thẻ <img> CĂN GIỮA NẰM TRONG KHỐI DIV (bắt buộc căn giữa):
        <div style="text-align: center; margin: 20px 0;"><img src="[URL_ANH]" alt="[Ten_SP]" width="600" style="max-width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" /></div>
      + Thẻ <p><strong>Giá tham khảo:</strong> [Giá sản phẩm]</p>
@@ -267,8 +267,9 @@ Viết toàn bộ nội dung HTML tại đây
 function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKeyword) {
   let enriched = html;
 
-  // 1. Tối ưu ảnh: Thêm loading="lazy" cho Google Images & PageSpeed
+  // 1. Tối ưu ảnh & Mục Lục: Thêm loading="lazy" và xóa số dư ở đầu thẻ <h3>
   enriched = enriched.replace(/<img\s+/gi, '<img loading="lazy" ');
+  enriched = enriched.replace(/<h3([^>]*)>\s*\d+[\.\)]\s*/gi, '<h3$1>');
 
   // 2. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
   const voucherBanner = `
