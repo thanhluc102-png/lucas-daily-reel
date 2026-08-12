@@ -287,7 +287,7 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
     "itemListElement": schemaItems
   };
 
-  const schemaScript = `\n<script type="application/ld+json">\n${JSON.stringify(schemaJson, null, 2)}\n</script>\n`;
+  const schemaScript = `\n<!-- wp:html -->\n<script type="application/ld+json">\n${JSON.stringify(schemaJson)}\n</script>\n<!-- /wp:html -->\n`;
 
   // 3. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
   const voucherBanner = `
@@ -308,7 +308,7 @@ function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKe
   </ul>
 </div>`;
 
-  return schemaScript + enriched + voucherBanner + internalLinkBox;
+  return enriched + voucherBanner + internalLinkBox + schemaScript;
 }
 
 // Helper: Tự động chia sẻ bài viết lên Facebook Fanpage Lucas Combo
