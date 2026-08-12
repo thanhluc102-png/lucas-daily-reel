@@ -250,14 +250,65 @@ Viết toàn bộ nội dung HTML tại đây
     content_html: contentHtml
   };
 
-  // Làm sạch các từ cấm nếu còn sót
+  // Làm sạch các từ cấm nếu còn sót (Luật Quảng cáo VN & thương hiệu)
   FORBIDDEN_WORDS.forEach(regex => {
     data.seo_title = data.seo_title.replace(regex, 'Cao Cấp');
     data.meta_description = data.meta_description.replace(regex, 'chất lượng');
     data.content_html = data.content_html.replace(regex, 'chất lượng cao');
   });
 
+  // Tăng cường SEO & Tỷ lệ chuyển đổi mua hàng
+  data.content_html = enrichHtmlWithSeoFeatures(data.content_html, categoryName, selectedProducts, focusKeyword);
+
   return data;
+}
+
+// Helper: Tăng cường SEO (Schema JSON-LD, Voucher Banner, Internal Links, Image Lazy Loading)
+function enrichHtmlWithSeoFeatures(html, categoryName, selectedProducts, focusKeyword) {
+  let enriched = html;
+
+  // 1. Tối ưu ảnh: Thêm loading="lazy" cho Google Images & PageSpeed
+  enriched = enriched.replace(/<img\s+/gi, '<img loading="lazy" ');
+
+  // 2. Sinh Schema.org JSON-LD ItemList cho Google Rich Snippets
+  const schemaItems = selectedProducts.map((p, idx) => ({
+    "@type": "ListItem",
+    "position": idx + 1,
+    "name": p.name,
+    "url": p.url,
+    "image": p.image
+  }));
+
+  const schemaJson = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Top ${selectedProducts.length} ${categoryName} Đáng Mua 2026 - Lucas Combo`,
+    "description": `Danh sách tổng hợp ${selectedProducts.length} sản phẩm ${categoryName} chính hãng chất lượng tại Lucas Combo.`,
+    "itemListElement": schemaItems
+  };
+
+  const schemaScript = `\n<script type="application/ld+json">\n${JSON.stringify(schemaJson, null, 2)}\n</script>\n`;
+
+  // 3. Khung Voucher LUCAS50K thúc đẩy chuyển đổi mua hàng
+  const voucherBanner = `
+<div style="background: linear-gradient(135deg, #0B1B2E 0%, #152A45 100%); color: #FFFFFF; padding: 24px; border-radius: 16px; margin: 36px 0; border: 2px solid #C9A227; text-align: center; box-shadow: 0 8px 24px rgba(11,27,46,0.15);">
+  <h3 style="color: #C9A227; margin: 0 0 10px 0; font-size: 20px;">🎁 ƯU ĐÃI ĐẶC BIỆT DÀNH CHO BẠN ĐỌC BLOG LUCAS COMBO</h3>
+  <p style="margin: 0 0 16px 0; font-size: 15px; color: #E2E8F0; line-height: 1.6;">Nhập mã <strong style="background: #C9A227; color: #0B1B2E; padding: 4px 10px; border-radius: 6px; font-size: 16px; font-weight: 800;">LUCAS50K</strong> khi thanh toán tại lucas.vn để được <strong>Giảm Ngay 50.000đ</strong> cho đơn hàng phụ kiện trên 500k!</p>
+  <a href="https://lucas.vn" style="background: #C9A227; color: #0B1B2E; padding: 12px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 15px;">Khám Phá Phụ Kiện Chính Hãng Ngay ›</a>
+</div>`;
+
+  // 4. Khung Gợi Ý Xem Thêm (Internal Linking Matrix)
+  const internalLinkBox = `
+<div style="background: #F8FAFC; border-left: 4px solid #0B1B2E; padding: 18px 20px; border-radius: 8px; margin: 30px 0;">
+  <h4 style="margin: 0 0 10px 0; color: #0B1B2E; font-size: 16px;">📌 Gợi Ý Xem Thêm Tại Lucas Combo:</h4>
+  <ul style="margin: 0; padding-left: 20px; color: #475569; font-size: 14px; line-height: 1.8;">
+    <li><a href="https://lucas.vn/danh-muc/tui-chong-soc-macbook" style="color: #0B1B2E; font-weight: 600; text-decoration: underline;">Xem toàn bộ Phụ Kiện Túi Chống Sốc & Balo MacBook Chính Hãng</a></li>
+    <li><a href="https://lucas.vn/danh-muc/dan-macbook" style="color: #0B1B2E; font-weight: 600; text-decoration: underline;">Bộ Dán Màn Hình & Vỏ Máy Bảo Vệ Apple</a></li>
+    <li><a href="https://lucas.vn/danh-muc/hub-chuyen-doi" style="color: #0B1B2E; font-weight: 600; text-decoration: underline;">Hub Chuyển Đổi Type-C Đa Năng Cho iPad & Laptop</a></li>
+  </ul>
+</div>`;
+
+  return schemaScript + enriched + voucherBanner + internalLinkBox;
 }
 
 // Helper: Tự động chia sẻ bài viết lên Facebook Fanpage Lucas Combo
