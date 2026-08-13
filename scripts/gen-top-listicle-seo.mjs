@@ -17,8 +17,8 @@ const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 
 // Credentials & Cấu hình
 const STORE_URL = process.env.WP_SITE_URL || 'https://lucas.vn';
-const CK = process.env.WC_CONSUMER_KEY || 'ck_884a3bb8a8d41cb221a4259cb44fef1553a7b228';
-const CS = process.env.WC_CONSUMER_SECRET || 'cs_fa0f23475c8a2dc56351057443b4745dd7898fd5';
+const CK = process.env.WC_CONSUMER_KEY;
+const CS = process.env.WC_CONSUMER_SECRET;
 const WP_USER = process.env.WP_USERNAME || 'luucat';
 const WP_PASS = process.env.WP_APP_PASSWORD || 'FVLL lVs8 c21w 8RO5 kbzf OYk4';
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
@@ -328,16 +328,73 @@ async function shareToFacebook(postLink, postTitle, metaDesc) {
   }
 }
 
+// Helper: Tự động tìm/tạo WordPress Post Tags theo danh mục & thương hiệu sản phẩm
+async function getOrCreateTag(name) {
+  if (!name || name.trim().length < 2) return null;
+  const cleanName = name.trim();
+  try {
+    const searchRes = await fetch(`${STORE_URL}/wp-json/wp/v2/tags?search=${encodeURIComponent(cleanName)}`, {
+      headers: getWpAuthHeaders()
+    });
+    if (searchRes.ok) {
+      const tags = await searchRes.json();
+      const exact = Array.isArray(tags) ? tags.find(t => t.name.toLowerCase() === cleanName.toLowerCase()) : null;
+      if (exact) return exact.id;
+    }
+
+    const createRes = await fetch(`${STORE_URL}/wp-json/wp/v2/tags`, {
+      method: 'POST',
+      headers: {
+        ...getWpAuthHeaders(),
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name: cleanName })
+    });
+    if (createRes.ok) {
+      const created = await createRes.json();
+      return created.id;
+    }
+  } catch (e) {
+    console.warn(`⚠️ Lỗi lấy/tạo tag "${cleanName}": ${e.message}`);
+  }
+  return null;
+}
+
+async function extractAndResolveTags(categoryName, products = []) {
+  const KNOWN_BRANDS = ['Anker', 'LISEN', 'WiWU', 'Tomtoc', 'HyperWork', 'UNIQ', 'Satechi', 'AULUMU', 'Ulanzi', 'Innostyle', 'JCPAL', 'Apple'];
+  const tagNamesSet = new Set(['Lucas Combo', 'Phụ Kiện Apple']);
+
+  if (categoryName) {
+    tagNamesSet.add(categoryName);
+  }
+
+  // Quét thương hiệu có trong tên sản phẩm
+  products.forEach(p => {
+    KNOWN_BRANDS.forEach(brand => {
+      if (p.name && new RegExp(`\\b${brand}\\b`, 'i').test(p.name)) {
+        tagNamesSet.add(brand);
+      }
+    });
+  });
+
+  const tagNames = Array.from(tagNamesSet);
+  console.log(`🏷️  Tự động phân tích & gắn thẻ/tags: ${tagNames.join(', ')}`);
+  const tagIds = (await Promise.all(tagNames.map(getOrCreateTag))).filter(Boolean);
+  return tagIds;
+}
+
 // 4. Đăng bài viết lên WordPress REST API
-async function publishToWordPress(articleData, categoryObj, featureImageSrc) {
+async function publishToWordPress(articleData, categoryObj, featureImageSrc, products = []) {
   console.log(`\n📤 Đang gửi bài viết lên WordPress (${STORE_URL})...`);
   
   const featuredMediaId = await uploadFeaturedImage(featureImageSrc, articleData.seo_title, categoryObj?.name);
+  const tagIds = await extractAndResolveTags(categoryObj?.name, products);
 
   const wpPostData = {
     title: articleData.seo_title,
     content: articleData.content_html,
     status: postStatus, // 'publish' hoặc 'draft'
+    ...(tagIds.length ? { tags: tagIds } : {}),
     ...(featuredMediaId ? { featured_media: featuredMediaId } : {}),
     meta: {
       _yoast_wpseo_title: articleData.seo_title,
@@ -352,7 +409,9 @@ async function publishToWordPress(articleData, categoryObj, featureImageSrc) {
       ...getWpAuthHeaders(),
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(wpPostData)
+    body: JSON.stringify({
+      ...wpPostData
+    })
   });
 
   if (!res.ok) {
@@ -447,7 +506,7 @@ async function main() {
       console.log(`💾 Đã lưu bản xem trước tại: ${outFile}`);
     } else {
       const topImages = products.slice(0, 3).map(p => p.image).filter(Boolean).join(',');
-      const createdPost = await publishToWordPress(article, cat, topImages);
+      const createdPost = await publishToWordPress(article, cat, topImages, products);
       console.log(`\n✅ ĐÃ ĐĂNG BÀI THÀNH CÔNG!`);
       console.log(`🆔 Post ID   : ${createdPost.id}`);
       console.log(`🔗 Link bài  : ${createdPost.link}`);
