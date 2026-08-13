@@ -1,8 +1,8 @@
-- Hook chạm nỗi sợ "hư/xước/hỏng đồ đắt tiền" (laptop, MacBook) cho tương tác cao nhất (Score 5-7) → luôn gắn thiệt hại cụ thể vào tài sản giá trị.
-- Nhóm túi/balo/ốp bảo vệ thiết bị thắng nhóm sạc/cáp/tẩu ô tô rõ rệt → ưu tiên sản phẩm chống sốc, chống mưa, chống xước.
-- Đòn "so sánh đồ rẻ đang phá đồ xịn" (túi vải rẻ bào mòn cạnh, balo 200K đập đáy máy) rất mạnh → dùng công thức "đồ giá rẻ + đang âm thầm hủy hoại".
-- Chi tiết định lượng gây sốc (mỏng 2mm, chuẩn quân sự, 200K, bào mòn) tăng chú ý → chèn số liệu/tiêu chuẩn cụ thể.
-- Hook có mưa/nước đe dọa laptop (🌧️) ăn điểm → khai thác tình huống thời tiết + hậu quả hữu hình.
-- Hook về sạc ô tô, tẩu, chia cổng sạc gần như luôn Score 3 → hạn chế; nếu dùng phải thêm nỗi đau tài sản hoặc an toàn.
-- Kết cấu thắng: "tình huống đời thường quen thuộc + hậu quả cho món đồ đắt + emoji cảm xúc 😬" → giữ khuôn này.
-- Tránh hook trung tính/tiện ích chung chung (nhiều loại điện thoại, cổng sạc, nghe nhạc) vì thiếu nỗi đau mất mát → luôn đẩy về rủi ro tiền bạc.
+- Hook chạm nỗi sợ hư/xước đồ đắt tiền (laptop, MacBook) cho tương tác cao nhất (Score 5-7): dùng động từ mạnh "bào mòn", "đập đáy", "lãnh đủ".
+- Sản phẩm bảo vệ/túi-balo laptop và giải pháp gộp nhiều thiết bị (sạc đa cổng) hiệu quả hơn phụ kiện xe hơi.
+- Nêu con số cụ thể gây sốc ("200K", "2mm", "4 reactions") tăng độ tin và tương tác.
+- Hook so sánh "rẻ vs hậu quả đắt" (túi vải rẻ, balo 200K) kích phản ứng mạnh.
+- Chèn 1 emoji cảm xúc lo lắng (😬🌧️) đúng chỗ giúp tăng reactions, tránh lạm dụng.
+- Hook phụ kiện sạc xe hơi chung chung (tẩu sạc, sạc chậm, chia cổng) cho tương tác thấp nhất (Score 3) — nên tránh hoặc làm sắc hơn.
+- Tránh hook hỏi mơ hồ, không gắn hậu quả rõ ràng ("sạc sao đây?", "ai nhường ai?").
+- Công thức mạnh: [Tình huống quen thuộc] + [hậu quả cho đồ giá trị] + [con số/emoji] → chốt bằng nỗi đau cụ thể.
