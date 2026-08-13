@@ -1,8 +1,8 @@
-- Hook nói về **nguy cơ làm hỏng/xước đồ đắt tiền** (laptop, MacBook) cho tương tác cao nhất (Score 5–7): "Túi vải rẻ đang bào mòn cạnh laptop", "Balo 200K không có ngăn laptop treo".
-- Kết hợp **con số cụ thể + hậu quả trực quan** ("200K", "2mm", "đập đáy", "bào mòn cạnh") kích reaction mạnh hơn hook chung chung.
-- Hook về **nỗi sợ mất mát/hư hại** (mưa làm hỏng túi, xước MacBook, ổ cắm không đủ) ăn đứt hook chỉ nêu bất tiện nhẹ.
-- Sản phẩm **balo/túi chống sốc & sạc đa cổng** đang hút tương tác nhất; nên khai thác sâu nhóm này.
-- Hook về **sạc trên xe ô tô** (tẩu sạc, 2 cổng, chỉ đường tụt pin) đều Score thấp (3) — tránh lặp mô-típ này hoặc phải làm mới góc nhìn.
-- Hook **trừu tượng/nhẹ nhàng** ("đeo ốp như không đeo", "vừa chỉ đường vừa tụt pin") kém hiệu quả — cần tăng độ đau và tính cụ thể.
-- Công thức thắng: **[Vật rẻ/sai lầm] đang âm thầm phá [món đồ đắt của bạn]** + emoji 😬🌧️ + 1 chi tiết số liệu.
-- Luôn cài **1 câu hỏi hoặc chốt gây tò mò** cuối hook để giữ comment (comment đều = 1, nhưng reaction mới tạo khác biệt Score).
+- Hook chạm nỗi sợ "hư/xước/hỏng đồ đắt tiền" (laptop, MacBook) cho tương tác cao nhất (Score 5-7) → luôn gắn thiệt hại cụ thể vào tài sản giá trị.
+- Nhóm túi/balo/ốp bảo vệ thiết bị thắng nhóm sạc/cáp/tẩu ô tô rõ rệt → ưu tiên sản phẩm chống sốc, chống mưa, chống xước.
+- Đòn "so sánh đồ rẻ đang phá đồ xịn" (túi vải rẻ bào mòn cạnh, balo 200K đập đáy máy) rất mạnh → dùng công thức "đồ giá rẻ + đang âm thầm hủy hoại".
+- Chi tiết định lượng gây sốc (mỏng 2mm, chuẩn quân sự, 200K, bào mòn) tăng chú ý → chèn số liệu/tiêu chuẩn cụ thể.
+- Hook có mưa/nước đe dọa laptop (🌧️) ăn điểm → khai thác tình huống thời tiết + hậu quả hữu hình.
+- Hook về sạc ô tô, tẩu, chia cổng sạc gần như luôn Score 3 → hạn chế; nếu dùng phải thêm nỗi đau tài sản hoặc an toàn.
+- Kết cấu thắng: "tình huống đời thường quen thuộc + hậu quả cho món đồ đắt + emoji cảm xúc 😬" → giữ khuôn này.
+- Tránh hook trung tính/tiện ích chung chung (nhiều loại điện thoại, cổng sạc, nghe nhạc) vì thiếu nỗi đau mất mát → luôn đẩy về rủi ro tiền bạc.
