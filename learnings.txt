@@ -1,8 +1,8 @@
-- **Ưu tiên hook "tố cáo" món đồ rẻ đang âm thầm phá hoại tài sản đắt tiền** (túi vải bào mòn laptop, sạc riêng thiếu ổ) — nhóm Score cao nhất 6-7.
-- **Nhấn nỗi đau cụ thể + thiệt hại thấy được**: xước MacBook, laptop đập đáy, ướt máy — cho tương tác gấp đôi hook chung chung.
-- **Đẩy mạnh sản phẩm bảo vệ đồ giá trị**: túi/balo có ngăn laptop, sạc đa cổng — đây là dòng ăn khách nhất.
-- **Dùng emoji cảm xúc tiêu cực** (😬🌧️) hiệu quả hơn emoji trung tính, tăng phản ứng Reactions.
-- **Tránh hook dạng câu hỏi mơ hồ về sạc xe hơi** (một cổng ai nhường ai, tẩu sạc nghe nhạc) — Score thấp nhất 3, người xem không thấy liên quan mình.
-- **Tránh hook nghe như "mẹo hay ho" thiếu nỗi đau** (tin không?, sạc sao đây?) — kém hút reaction.
-- **Chốt bằng con số/tình huống thật** ("balo 200K không ngăn treo", "ốp 2mm") để tạo hình dung — nhóm này Score ổn định 5+.
-- **Công thức thắng: [Món rẻ] + [đang hại] + [món đắt của bạn] + emoji đau** → lặp lại mô-típ này cho reel tiếp theo.
+- Hook mở đầu bằng "cảnh báo hư hỏng đồ giá trị" (laptop/MacBook bị xước, bào mòn, đập đáy) cho điểm cao nhất (5-7) → ưu tiên tuyệt đối.
+- Hook chỉ ra "nỗi đau chi phí/rắc rối" cụ thể (sạc riêng từng củ hết ổ cắm, túi rẻ hại máy) đạt Score 7 → dùng con số + hậu quả rõ ràng.
+- Thêm yếu tố "mưa/nước" đe dọa đồ đắt tiền (túi gặp mưa, balo không áo mưa) kéo Reactions tăng mạnh.
+- Emoji 😬 (lo lắng) và 🌧️ đi kèm hook cảnh báo giúp tăng cảm xúc, nên giữ 1 emoji cuối câu.
+- Sản phẩm balo/túi bảo vệ laptop và sạc đa cổng tương tác tốt nhất → viết nhiều hook cho nhóm này.
+- Tránh hook về tẩu sạc/tốc độ sạc và ốp lưng mỏng (Score toàn 3) → nhóm này yếu, giảm tần suất.
+- Tránh hook "tiện ích chung chung" không đau (balo 40L xách máy bay, sáng balo chiều cặp) → thiếu nỗi đau nên tương tác thấp.
+- Công thức mạnh: [Hành vi quen thuộc] + [Hậu quả hư hại đồ đắt] + emoji lo lắng, câu ngắn dạng câu hỏi hoặc khẳng định gây giật mình.
