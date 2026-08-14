@@ -64,11 +64,17 @@ function getWpAuthHeaders() {
   return { 'Authorization': `Basic ${token}` };
 }
 
-// 1. Kéo danh mục sản phẩm từ WooCommerce
+// 1. Kéo danh mục sản phẩm từ WooCommerce (sử dụng Store API công khai + fallback REST v3)
 async function fetchCategories() {
-  const res = await fetch(`${STORE_URL}/wp-json/wc/v3/products/categories?per_page=100`, {
-    headers: getAuthHeaders()
+  const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36';
+  let res = await fetch(`${STORE_URL}/wp-json/wc/store/v1/products/categories?per_page=100`, {
+    headers: { 'User-Agent': ua }
   });
+  if (!res.ok) {
+    res = await fetch(`${STORE_URL}/wp-json/wc/v3/products/categories?per_page=100`, {
+      headers: { ...getAuthHeaders(), 'User-Agent': ua }
+    });
+  }
   if (!res.ok) throw new Error(`Lỗi fetch categories: ${res.status}`);
   const categories = await res.json();
   return categories.filter(c => c.count >= 2);
@@ -76,22 +82,40 @@ async function fetchCategories() {
 
 // 2. Kéo danh sách sản phẩm thuộc 1 danh mục
 async function fetchProductsForCategory(catId) {
-  const res = await fetch(`${STORE_URL}/wp-json/wc/v3/products?category=${catId}&status=publish&per_page=15&orderby=popularity`, {
-    headers: getAuthHeaders()
+  const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36';
+  let res = await fetch(`${STORE_URL}/wp-json/wc/store/v1/products?category=${catId}&per_page=15&orderby=popularity`, {
+    headers: { 'User-Agent': ua }
   });
+  if (!res.ok) {
+    res = await fetch(`${STORE_URL}/wp-json/wc/v3/products?category=${catId}&status=publish&per_page=15&orderby=popularity`, {
+      headers: { ...getAuthHeaders(), 'User-Agent': ua }
+    });
+  }
   if (!res.ok) throw new Error(`Lỗi fetch products cho cat ${catId}: ${res.status}`);
   const products = await res.json();
   return products.map(p => {
-    const priceStr = formatVnd(p.price);
-    const regularStr = p.regular_price ? formatVnd(p.regular_price) : '';
-    const desc = stripHtml(p.short_description || p.description || '').slice(0, 300);
+    let priceNum = p.price;
+    let regularNum = p.regular_price;
+    let isOnSale = !!p.on_sale;
+
+    if (p.prices) {
+      const div = 10 ** Number(p.prices.currency_minor_unit || 2);
+      priceNum = Math.round(Number(p.prices.price) / div);
+      regularNum = p.prices.regular_price ? Math.round(Number(p.prices.regular_price) / div) : null;
+      if (p.prices.on_sale !== undefined) isOnSale = !!p.prices.on_sale;
+    }
+
+    const priceStr = formatVnd(priceNum);
+    const regularStr = regularNum && regularNum > priceNum ? formatVnd(regularNum) : '';
+    const desc = stripHtml(p.short_description || p.description || p.summary || '').slice(0, 300);
+
     return {
       id: p.id,
       name: p.name,
       slug: p.slug,
       priceStr,
       regularStr,
-      onSale: !!p.on_sale,
+      onSale: isOnSale,
       url: p.permalink,
       image: p.images?.[0]?.src || '',
       desc
