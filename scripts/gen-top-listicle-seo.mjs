@@ -408,12 +408,38 @@ async function extractAndResolveTags(categoryName, products = []) {
   return tagIds;
 }
 
-// 4. Đăng bài viết lên WordPress REST API
+async function findExistingPost(categorySlug, categoryName = '') {
+  try {
+    const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36';
+    const res = await fetch(`${STORE_URL}/wp-json/wp/v2/posts?search=${encodeURIComponent(categorySlug)}&per_page=5`, {
+      headers: { ...getWpAuthHeaders(), 'User-Agent': ua }
+    });
+    if (!res.ok) return null;
+    const posts = await res.json();
+    if (!Array.isArray(posts) || !posts.length) return null;
+
+    const match = posts.find(p => 
+      (p.slug && p.slug.includes(categorySlug)) || 
+      (p.title?.rendered && p.title.rendered.toLowerCase().includes(categoryName.toLowerCase()))
+    );
+    return match ? match.id : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+// 4. Đăng hoặc cập nhật bài viết lên WordPress REST API
 async function publishToWordPress(articleData, categoryObj, featureImageSrc, products = []) {
-  console.log(`\n📤 Đang gửi bài viết lên WordPress (${STORE_URL})...`);
-  
   const featuredMediaId = await uploadFeaturedImage(featureImageSrc, articleData.seo_title, categoryObj?.name);
   const tagIds = await extractAndResolveTags(categoryObj?.name, products);
+
+  const existingPostId = await findExistingPost(categoryObj?.slug, categoryObj?.name);
+
+  if (existingPostId) {
+    console.log(`\n🔄 Phát hiện bài viết cũ ID ${existingPostId} cho danh mục "${categoryObj?.name}". Đang CẬP NHẬT TRỰC TIẾP bài viết này...`);
+  } else {
+    console.log(`\n📤 Đang tạo bài viết MỚI trên WordPress (${STORE_URL})...`);
+  }
 
   const wpPostData = {
     title: articleData.seo_title,
@@ -428,15 +454,16 @@ async function publishToWordPress(articleData, categoryObj, featureImageSrc, pro
     }
   };
 
-  const res = await fetch(`${STORE_URL}/wp-json/wp/v2/posts`, {
+  const endpoint = existingPostId ? `${STORE_URL}/wp-json/wp/v2/posts/${existingPostId}` : `${STORE_URL}/wp-json/wp/v2/posts`;
+
+  const res = await fetch(endpoint, {
     method: 'POST',
     headers: {
       ...getWpAuthHeaders(),
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
     },
-    body: JSON.stringify({
-      ...wpPostData
-    })
+    body: JSON.stringify(wpPostData)
   });
 
   if (!res.ok) {
@@ -444,14 +471,14 @@ async function publishToWordPress(articleData, categoryObj, featureImageSrc, pro
     throw new Error(`WordPress Post API Error ${res.status}: ${errText.slice(0, 300)}`);
   }
 
-  const createdPost = await res.json();
+  const updatedPost = await res.json();
 
-  // Nếu là bài đăng thật (publish), tự động chia sẻ lên Facebook Fanpage
-  if (postStatus === 'publish') {
-    await shareToFacebook(createdPost.link, articleData.seo_title, articleData.meta_description);
+  // Chỉ tự động chia sẻ lên Facebook nếu là bài viết mới hoặc được yêu cầu
+  if (postStatus === 'publish' && !existingPostId) {
+    await shareToFacebook(updatedPost.link, articleData.seo_title, articleData.meta_description);
   }
 
-  return createdPost;
+  return updatedPost;
 }
 
 // MAIN FUNCTION
