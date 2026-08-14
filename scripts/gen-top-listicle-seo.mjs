@@ -99,7 +99,8 @@ async function fetchProductsForCategory(catId) {
     let isOnSale = !!p.on_sale;
 
     if (p.prices) {
-      const div = 10 ** Number(p.prices.currency_minor_unit || 2);
+      const minorUnit = p.prices.currency_minor_unit !== undefined ? Number(p.prices.currency_minor_unit) : 0;
+      const div = 10 ** minorUnit;
       priceNum = Math.round(Number(p.prices.price) / div);
       regularNum = p.prices.regular_price ? Math.round(Number(p.prices.regular_price) / div) : null;
       if (p.prices.on_sale !== undefined) isOnSale = !!p.prices.on_sale;
