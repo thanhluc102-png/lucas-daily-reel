@@ -152,6 +152,7 @@ async function uploadFeaturedImage(imageUrl, title, categoryName = '') {
       method: 'POST',
       headers: {
         ...getWpAuthHeaders(),
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
         'Content-Type': 'image/jpeg',
         'Content-Disposition': `attachment; filename="${filename}"`
       },
