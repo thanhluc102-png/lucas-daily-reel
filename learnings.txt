@@ -1,8 +1,8 @@
-- Hook mở đầu bằng "cảnh báo hư hỏng đồ giá trị" (laptop/MacBook bị xước, bào mòn, đập đáy) cho điểm cao nhất (5-7) → ưu tiên tuyệt đối.
-- Hook chỉ ra "nỗi đau chi phí/rắc rối" cụ thể (sạc riêng từng củ hết ổ cắm, túi rẻ hại máy) đạt Score 7 → dùng con số + hậu quả rõ ràng.
-- Thêm yếu tố "mưa/nước" đe dọa đồ đắt tiền (túi gặp mưa, balo không áo mưa) kéo Reactions tăng mạnh.
-- Emoji 😬 (lo lắng) và 🌧️ đi kèm hook cảnh báo giúp tăng cảm xúc, nên giữ 1 emoji cuối câu.
-- Sản phẩm balo/túi bảo vệ laptop và sạc đa cổng tương tác tốt nhất → viết nhiều hook cho nhóm này.
-- Tránh hook về tẩu sạc/tốc độ sạc và ốp lưng mỏng (Score toàn 3) → nhóm này yếu, giảm tần suất.
-- Tránh hook "tiện ích chung chung" không đau (balo 40L xách máy bay, sáng balo chiều cặp) → thiếu nỗi đau nên tương tác thấp.
-- Công thức mạnh: [Hành vi quen thuộc] + [Hậu quả hư hại đồ đắt] + emoji lo lắng, câu ngắn dạng câu hỏi hoặc khẳng định gây giật mình.
+- Hook "nỗi đau tài sản đắt tiền bị hủy hoại" (túi/balo làm xước, bào mòn MacBook/laptop) cho tương tác cao nhất — luôn nhấn "món đồ giá trị đang bị phá hỏng".
+- Chủ đề balo/túi laptop và sạc đa cổng (nhiều thiết bị, thiếu ổ/cổng) hiệu quả nhất; đẩy mạnh nhóm này.
+- Dùng con số cụ thể gây sốc ("200K", "40L", "2mm", "rẻ") để tăng độ tin và phản ứng.
+- Emoji cảm xúc lo lắng 😬🌧️ kèm cảnh mưa/va đập giúp tăng reactions; giữ 1 emoji cuối câu.
+- Tránh hook sạc ô tô/tẩu sạc chung chung ("hai người một cổng", "nghe nhạc trên xe") — điểm thấp nhất, thiếu nỗi đau rõ ràng.
+- Tránh hook mơ hồ/khó tin ("ốp mỏng 2mm chống rơi quân sự", "đeo ốp như không đeo") — nghe quảng cáo, không chạm nỗi đau thật.
+- Công thức thắng: [Tình huống quen thuộc] + [tài sản đắt tiền bị đe dọa] + [số liệu cụ thể] + [emoji lo âu].
+- Viết theo góc "hậu quả xấu sắp xảy ra với đồ của bạn" thay vì khoe tính năng sản phẩm.
