@@ -1,8 +1,8 @@
-- Ưu tiên nhóm sản phẩm túi/balo/ốp bảo vệ đồ đắt tiền (MacBook, laptop) — Score cao nhất (5-7); tránh dồn quá nhiều vào tẩu sạc/cổng sạc lẻ (Score chỉ 3).
-- Hook mạnh nhất: chạm nỗi đau "món đồ đắt bị hỏng/xước/hư" cụ thể ("túi vải rẻ đang bào mòn cạnh laptop", "balo làm xước MacBook") — kích Reactions cao.
-- Nêu con số/định lượng gây tò mò ("Balo 200K", "40L xách tay lên máy bay", "sạc riêng từng cục củ") — tăng tương tác rõ.
-- Dùng emoji cảm xúc lo lắng/tiếc của (😬 🌧️ 😤) đúng ngữ cảnh nỗi đau, tránh emoji trung tính.
-- Viết dạng câu hỏi hoặc cảnh báo hậu quả trực tiếp lên tài sản người dùng, không mô tả tính năng khô khan.
-- Tránh hook trừu tượng/khó hình dung ("đeo ốp như không đeo ốp", "một cổng sạc ai nhường ai") — Score thấp (3-4).
-- Tránh hook về pin/sạc chậm chung chung ("sạc pin lẻ tốn cả buổi") — không tạo được Reactions.
-- Công thức thắng: [Món đồ đắt] + [tình huống hỏng hóc cụ thể] + [con số/emoji lo lắng].
+- Hook nêu "nỗi đau tài sản đắt tiền bị hủy hoại" (laptop/MacBook trầy, túi rẻ bào mòn cạnh máy) cho điểm cao nhất (6–7) — ưu tiên tối đa.
+- Hook "gộp nhiều thành một / giải quyết sự lộn xộn" (nhiều củ sạc, một ổ cắm) cũng đạt 7 — khai thác cảnh bực bội đời thường.
+- Dùng chi tiết cụ thể + con số ("túi vải rẻ", "4 củ sạc", "200K") tăng độ đồng cảm và tương tác.
+- Emoji cảm xúc tiêu cực (😬🌧️😤) đặt cuối hook giúp khơi nỗi sợ, tăng reactions.
+- Tránh hook "khoe tính năng nghịch lý" chung chung (mỏng mà chống rơi, đeo như không đeo, sạc nghe nhạc) — điểm thấp (3–4), thiếu nỗi đau rõ ràng.
+- Tránh hook mô tả tiện ích trung tính, không có xung đột ("một balo đi làm lẫn du lịch", "40L xách tay") — điểm thấp nhất (3).
+- Công thức mạnh nhất: [Tài sản giá trị] + [đang bị phá/mất an toàn] + [emoji lo lắng] → khơi sợ mất mát cụ thể.
+- Shares gần như bằng 0 toàn bộ: cần thêm yếu tố "gửi cảnh báo cho người thân" hoặc mẹo hữu ích đáng chia sẻ để nâng Score.
