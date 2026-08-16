@@ -1,8 +1,8 @@
-- Hook nêu "nỗi đau tài sản đắt tiền bị hủy hoại" (laptop/MacBook trầy, túi rẻ bào mòn cạnh máy) cho điểm cao nhất (6–7) — ưu tiên tối đa.
-- Hook "gộp nhiều thành một / giải quyết sự lộn xộn" (nhiều củ sạc, một ổ cắm) cũng đạt 7 — khai thác cảnh bực bội đời thường.
-- Dùng chi tiết cụ thể + con số ("túi vải rẻ", "4 củ sạc", "200K") tăng độ đồng cảm và tương tác.
-- Emoji cảm xúc tiêu cực (😬🌧️😤) đặt cuối hook giúp khơi nỗi sợ, tăng reactions.
-- Tránh hook "khoe tính năng nghịch lý" chung chung (mỏng mà chống rơi, đeo như không đeo, sạc nghe nhạc) — điểm thấp (3–4), thiếu nỗi đau rõ ràng.
-- Tránh hook mô tả tiện ích trung tính, không có xung đột ("một balo đi làm lẫn du lịch", "40L xách tay") — điểm thấp nhất (3).
-- Công thức mạnh nhất: [Tài sản giá trị] + [đang bị phá/mất an toàn] + [emoji lo lắng] → khơi sợ mất mát cụ thể.
-- Shares gần như bằng 0 toàn bộ: cần thêm yếu tố "gửi cảnh báo cho người thân" hoặc mẹo hữu ích đáng chia sẻ để nâng Score.
+- Hook nêu **nỗi đau vật lý cụ thể + hậu quả rõ** (mài mòn, xước cạnh laptop, sạc rối cả buổi) cho điểm cao nhất (6-7) → ưu tiên kiểu này.
+- Sản phẩm **túi/balo bảo vệ laptop** và **sạc/hub đa cổng** tương tác tốt nhất → khai thác nhiều.
+- Chèn **con số cụ thể** (200K, 2mm, 40L, cả buổi) tăng độ tin và tương tác → luôn thêm số/định lượng.
+- Hook **so sánh "rẻ mà hại"** hoặc **"đang âm thầm phá đồ của bạn"** kích phản ứng mạnh → dùng góc phản diện.
+- Tránh hook **quá trừu tượng/mơ hồ** (đeo ốp như không đeo, hộ chiếu rơi) và **khoe tính năng suông** (mỏng mà chống rơi) → điểm thấp (3-4).
+- Emoji **😬🌧️😮‍💨** gắn với cảnh nguy/hỏng đồ hiệu quả hơn emoji trung tính 🪶🎒 → chọn emoji gợi lo lắng.
+- Mọi hook nên **mở bằng câu hỏi hoặc cảnh tai nạn đời thường** người xem dễ tự nhận ra mình.
+- Share = 0 toàn bộ → cần thêm **yếu tố đáng chia sẻ** (mẹo hữu ích, cảnh báo bạn bè) để nâng Score.
