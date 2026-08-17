@@ -1,8 +1,15 @@
-- Hook nêu **nỗi đau vật lý cụ thể + hậu quả rõ** (mài mòn, xước cạnh laptop, sạc rối cả buổi) cho điểm cao nhất (6-7) → ưu tiên kiểu này.
-- Sản phẩm **túi/balo bảo vệ laptop** và **sạc/hub đa cổng** tương tác tốt nhất → khai thác nhiều.
-- Chèn **con số cụ thể** (200K, 2mm, 40L, cả buổi) tăng độ tin và tương tác → luôn thêm số/định lượng.
-- Hook **so sánh "rẻ mà hại"** hoặc **"đang âm thầm phá đồ của bạn"** kích phản ứng mạnh → dùng góc phản diện.
-- Tránh hook **quá trừu tượng/mơ hồ** (đeo ốp như không đeo, hộ chiếu rơi) và **khoe tính năng suông** (mỏng mà chống rơi) → điểm thấp (3-4).
-- Emoji **😬🌧️😮‍💨** gắn với cảnh nguy/hỏng đồ hiệu quả hơn emoji trung tính 🪶🎒 → chọn emoji gợi lo lắng.
-- Mọi hook nên **mở bằng câu hỏi hoặc cảnh tai nạn đời thường** người xem dễ tự nhận ra mình.
-- Share = 0 toàn bộ → cần thêm **yếu tố đáng chia sẻ** (mẹo hữu ích, cảnh báo bạn bè) để nâng Score.
+- **Hook nêu "nỗi đau + hậu quả cụ thể" cho thắng đậm nhất**: laptop bị đập/xước, túi vải bào mòn cạnh máy, sạc rối ổ cắm → Score 6-7. Luôn gắn thiệt hại rõ ràng cho món đồ giá trị.
+
+- **Sản phẩm phụ kiện laptop/balo bảo vệ + hub sạc đa cổng cho tương tác cao nhất**; ốp lưng iPhone và phụ kiện xe máy cho tương tác thấp nhất (Score 3-4).
+
+- **Chèn con số cụ thể tăng sức thuyết phục**: "200K", "40L", "2mm", "cả buổi chờ" — hook có số liệu thường ăn điểm hơn hook chung chung.
+
+- **Tránh hook khoe tính năng thuần** ("Ốp mỏng 2mm chống rơi", "Đeo ốp như không đeo") — dạng khen sản phẩm cho Score thấp; ưu tiên khơi nỗi sợ trước.
+
+- **Nỗi đau tài chính/mất mát đắt tiền hiệu quả hơn nỗi đau an toàn giao thông**: hook "cầm điện thoại lái xe" lặp lại nhiều nhưng đều lẹt đẹt Score 3-4 → giảm tần suất, đừng lặp motif này.
+
+- **Emoji 😬🌧️ (lo lắng/thiệt hại) đi kèm hook nỗi đau vật chất cho kết quả tốt**; 😮‍💨 (thở dài) gắn nhiều với hook yếu → ưu tiên emoji gợi rủi ro cụ thể.
+
+- **Mở bằng câu hỏi xoáy thẳng vào tình huống thực tế người dùng đang gặp** ("Trời mưa mà balo không áo mưa?") thay vì câu hỏi mơ hồ về sản phẩm.
+
+- **Comments gần như luôn = 1, Shares = 0**: đòn bẩy điểm nằm ở Reactions → viết hook chạm cảm xúc mạnh để tăng react, cân nhắc thêm CTA kêu gọi chia sẻ vì Share đang là điểm chết.
