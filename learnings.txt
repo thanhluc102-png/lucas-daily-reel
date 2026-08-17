@@ -1,15 +1,8 @@
-- **Hook nêu "nỗi đau + hậu quả cụ thể" cho thắng đậm nhất**: laptop bị đập/xước, túi vải bào mòn cạnh máy, sạc rối ổ cắm → Score 6-7. Luôn gắn thiệt hại rõ ràng cho món đồ giá trị.
-
-- **Sản phẩm phụ kiện laptop/balo bảo vệ + hub sạc đa cổng cho tương tác cao nhất**; ốp lưng iPhone và phụ kiện xe máy cho tương tác thấp nhất (Score 3-4).
-
-- **Chèn con số cụ thể tăng sức thuyết phục**: "200K", "40L", "2mm", "cả buổi chờ" — hook có số liệu thường ăn điểm hơn hook chung chung.
-
-- **Tránh hook khoe tính năng thuần** ("Ốp mỏng 2mm chống rơi", "Đeo ốp như không đeo") — dạng khen sản phẩm cho Score thấp; ưu tiên khơi nỗi sợ trước.
-
-- **Nỗi đau tài chính/mất mát đắt tiền hiệu quả hơn nỗi đau an toàn giao thông**: hook "cầm điện thoại lái xe" lặp lại nhiều nhưng đều lẹt đẹt Score 3-4 → giảm tần suất, đừng lặp motif này.
-
-- **Emoji 😬🌧️ (lo lắng/thiệt hại) đi kèm hook nỗi đau vật chất cho kết quả tốt**; 😮‍💨 (thở dài) gắn nhiều với hook yếu → ưu tiên emoji gợi rủi ro cụ thể.
-
-- **Mở bằng câu hỏi xoáy thẳng vào tình huống thực tế người dùng đang gặp** ("Trời mưa mà balo không áo mưa?") thay vì câu hỏi mơ hồ về sản phẩm.
-
-- **Comments gần như luôn = 1, Shares = 0**: đòn bẩy điểm nằm ở Reactions → viết hook chạm cảm xúc mạnh để tăng react, cân nhắc thêm CTA kêu gọi chia sẻ vì Share đang là điểm chết.
+- Hook nêu **nỗi đau cụ thể + hình ảnh hư hại** ("bào mòn cạnh laptop", "sạc riêng từng cục củ ổ nào đủ") cho score cao nhất (7). Ưu tiên kiểu này.
+- Chủ đề **túi/balo bảo vệ laptop** và **sạc/hub gọn gàng** kéo tương tác tốt nhất — đẩy mạnh 2 nhóm này.
+- Mở bằng **câu hỏi cứa đúng tình huống thực tế hằng ngày** ("gặp mưa là tim đập thình thịch?") tạo phản ứng tốt hơn câu khẳng định khô.
+- Chèn **con số/thông số cụ thể** ("Balo 200K không ngăn treo", "40L vẫn xách tay lên máy bay") giúp tăng reactions.
+- Tránh hook chỉ nêu **tính năng chung chung, không có nỗi đau** ("Balo 26L bảo vệ laptop 17 inch", "Sạc pin lẻ tốn cả buổi") — score thấp nhất (3).
+- Hạn chế lạm dụng chủ đề **an toàn lái xe/điện thoại** ("vừa lái vừa cầm điện thoại") — lặp lại nhiều, score chỉ 4, đang bão hòa.
+- Dùng **emoji cảm xúc mạnh** (😬🌧️😰) đúng ngữ cảnh nỗi đau, tránh emoji trung tính (🎒🔋) đứng một mình.
+- Mọi hook đều thiếu **kêu gọi chia sẻ** (Shares=0) — thử thêm yếu tố "gửi cho đứa hay làm xước máy" để phá mốc share.
