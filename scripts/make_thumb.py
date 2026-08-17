@@ -44,8 +44,11 @@ def _find_font(bold: bool, size: int):
                 continue
     return ImageFont.load_default()
 
+import urllib.parse
+
 def _http_image(url: str):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
+    clean_url = urllib.parse.quote(url, safe=":/%?&=#")
+    req = urllib.request.Request(clean_url, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"})
     with urllib.request.urlopen(req, timeout=20) as resp:
         return Image.open(io.BytesIO(resp.read())).convert("RGBA")
 
