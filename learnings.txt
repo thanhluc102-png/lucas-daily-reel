@@ -1,8 +1,15 @@
-- **Hook "vấn đề cụ thể + con số"** cho điểm cao nhất (túi vải bào mòn cạnh, sạc riêng từng cục = Score 7). Ưu tiên nêu nỗi đau rõ ràng, dễ hình dung.
-- **Sản phẩm phụ trợ đời thường** (hub sạc, túi chống sốc, balo laptop) hút reaction hơn phụ kiện an toàn xe máy (giá đỡ điện thoại đều chỉ Score 4).
-- **Mở bằng cảnh "phá hỏng đồ đắt tiền"** (làm xước MacBook, laptop đập đáy) kéo reaction tốt hơn mô tả tính năng khô khan.
-- **Tránh hook chỉ khoe thông số** ("Balo 26L", "Ốp mỏng 2mm", "Sạc pin lẻ") — Score chỉ 3, thiếu cảm xúc và nỗi đau.
-- **Emoji 😬 😰 (báo động/lo lắng)** đi kèm nỗi đau hiệu quả hơn 🎒🔌 (biểu tượng sản phẩm trung tính).
-- **Câu ngắn, đánh thẳng hậu quả tiêu cực** ("thà không dùng", "lãnh đủ") gây tương tác hơn câu hỏi chung chung ("cho cả đi làm lẫn du lịch?").
-- **Hạn chế lặp mô-típ an toàn giao thông** (4 hook về cầm điện thoại lái xe đều Score 4) — bão hòa, không nổi bật.
-- **Dùng con số gây sốc về giá/kích thước** ("Balo 200K", "40L xách tay lên máy bay") để tạo tò mò tức thì.
+- Hook nêu "vấn đề đau" cụ thể + hậu quả rõ ràng cho tài sản giá trị (laptop bị mòn cạnh, xước MacBook, mất ví/hộ chiếu) cho tương tác cao nhất (Score 6-7).
+
+- Hook về pain point sạc/ổ cắm quá tải ("ổ cắm nào cho đủ") hiệu quả cao (Score 7) — nhấn sự bất tiện hằng ngày ai cũng gặp.
+
+- Ưu tiên sản phẩm: túi/balo bảo vệ laptop, củ sạc đa cổng, phụ kiện chống mất đồ — nhóm này kéo reactions tốt nhất.
+
+- Dùng emoji cảm xúc tiêu cực (😬😰) đúng chỗ để khơi nỗi sợ mất mát/hư hỏng, tăng đồng cảm.
+
+- Hook nêu thông số ấn tượng + lợi ích (dung tích lớn vẫn xách tay, ngăn treo bảo vệ 17 inch) cho Score khá (5), nên kết hợp số liệu với lợi ích.
+
+- Tránh hook trừu tượng, cường điệu, không chạm tài sản cụ thể ("mỏng 2mm chống rơi quân sự", "đeo như không đeo") — Score thấp (3-4).
+
+- Tránh pain point nhẹ, ít khẩn cấp (kê điện thoại bằng cốc, sạc pin lâu) — không đủ mạnh để kéo reactions.
+
+- Hook chủ đề an toàn khi lái xe lặp lại nhiều nhưng đều yếu (Score 4) — cần bớt trùng lặp, tăng cụ thể hóa hậu quả tài chính/tài sản.
