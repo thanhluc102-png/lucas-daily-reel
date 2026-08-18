@@ -1,8 +1,8 @@
-- Hook nêu **nỗi đau cụ thể + hình ảnh hư hại** ("bào mòn cạnh laptop", "sạc riêng từng cục củ ổ nào đủ") cho score cao nhất (7). Ưu tiên kiểu này.
-- Chủ đề **túi/balo bảo vệ laptop** và **sạc/hub gọn gàng** kéo tương tác tốt nhất — đẩy mạnh 2 nhóm này.
-- Mở bằng **câu hỏi cứa đúng tình huống thực tế hằng ngày** ("gặp mưa là tim đập thình thịch?") tạo phản ứng tốt hơn câu khẳng định khô.
-- Chèn **con số/thông số cụ thể** ("Balo 200K không ngăn treo", "40L vẫn xách tay lên máy bay") giúp tăng reactions.
-- Tránh hook chỉ nêu **tính năng chung chung, không có nỗi đau** ("Balo 26L bảo vệ laptop 17 inch", "Sạc pin lẻ tốn cả buổi") — score thấp nhất (3).
-- Hạn chế lạm dụng chủ đề **an toàn lái xe/điện thoại** ("vừa lái vừa cầm điện thoại") — lặp lại nhiều, score chỉ 4, đang bão hòa.
-- Dùng **emoji cảm xúc mạnh** (😬🌧️😰) đúng ngữ cảnh nỗi đau, tránh emoji trung tính (🎒🔋) đứng một mình.
-- Mọi hook đều thiếu **kêu gọi chia sẻ** (Shares=0) — thử thêm yếu tố "gửi cho đứa hay làm xước máy" để phá mốc share.
+- **Hook "vấn đề cụ thể + con số"** cho điểm cao nhất (túi vải bào mòn cạnh, sạc riêng từng cục = Score 7). Ưu tiên nêu nỗi đau rõ ràng, dễ hình dung.
+- **Sản phẩm phụ trợ đời thường** (hub sạc, túi chống sốc, balo laptop) hút reaction hơn phụ kiện an toàn xe máy (giá đỡ điện thoại đều chỉ Score 4).
+- **Mở bằng cảnh "phá hỏng đồ đắt tiền"** (làm xước MacBook, laptop đập đáy) kéo reaction tốt hơn mô tả tính năng khô khan.
+- **Tránh hook chỉ khoe thông số** ("Balo 26L", "Ốp mỏng 2mm", "Sạc pin lẻ") — Score chỉ 3, thiếu cảm xúc và nỗi đau.
+- **Emoji 😬 😰 (báo động/lo lắng)** đi kèm nỗi đau hiệu quả hơn 🎒🔌 (biểu tượng sản phẩm trung tính).
+- **Câu ngắn, đánh thẳng hậu quả tiêu cực** ("thà không dùng", "lãnh đủ") gây tương tác hơn câu hỏi chung chung ("cho cả đi làm lẫn du lịch?").
+- **Hạn chế lặp mô-típ an toàn giao thông** (4 hook về cầm điện thoại lái xe đều Score 4) — bão hòa, không nổi bật.
+- **Dùng con số gây sốc về giá/kích thước** ("Balo 200K", "40L xách tay lên máy bay") để tạo tò mò tức thì.
