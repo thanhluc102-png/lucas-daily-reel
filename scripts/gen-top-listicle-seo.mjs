@@ -455,9 +455,9 @@ async function publishToWordPress(articleData, categoryObj, featureImageSrc, pro
     }
   };
 
-  const endpoint = existingPostId ? `${STORE_URL}/wp-json/wp/v2/posts/${existingPostId}` : `${STORE_URL}/wp-json/wp/v2/posts`;
+  let endpoint = existingPostId ? `${STORE_URL}/wp-json/wp/v2/posts/${existingPostId}` : `${STORE_URL}/wp-json/wp/v2/posts`;
 
-  const res = await fetch(endpoint, {
+  let res = await fetch(endpoint, {
     method: 'POST',
     headers: {
       ...getWpAuthHeaders(),
@@ -466,6 +466,20 @@ async function publishToWordPress(articleData, categoryObj, featureImageSrc, pro
     },
     body: JSON.stringify(wpPostData)
   });
+
+  // Fallback: Nếu bài viết cũ thuộc tác giả khác và bị 403 (rest_cannot_edit), tự động chuyển sang tạo bài MỚI
+  if (!res.ok && existingPostId && res.status === 403) {
+    console.warn(`⚠️ Bài viết cũ ID ${existingPostId} bị hạn chế quyền tác giả (403). Đang tự động chuyển sang TẠO BÀI MỚI...`);
+    res = await fetch(`${STORE_URL}/wp-json/wp/v2/posts`, {
+      method: 'POST',
+      headers: {
+        ...getWpAuthHeaders(),
+        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
+      },
+      body: JSON.stringify(wpPostData)
+    });
+  }
 
   if (!res.ok) {
     const errText = await res.text();
