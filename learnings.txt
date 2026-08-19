@@ -1,15 +1,8 @@
-- Hook nêu "vấn đề đau" cụ thể + hậu quả rõ ràng cho tài sản giá trị (laptop bị mòn cạnh, xước MacBook, mất ví/hộ chiếu) cho tương tác cao nhất (Score 6-7).
-
-- Hook về pain point sạc/ổ cắm quá tải ("ổ cắm nào cho đủ") hiệu quả cao (Score 7) — nhấn sự bất tiện hằng ngày ai cũng gặp.
-
-- Ưu tiên sản phẩm: túi/balo bảo vệ laptop, củ sạc đa cổng, phụ kiện chống mất đồ — nhóm này kéo reactions tốt nhất.
-
-- Dùng emoji cảm xúc tiêu cực (😬😰) đúng chỗ để khơi nỗi sợ mất mát/hư hỏng, tăng đồng cảm.
-
-- Hook nêu thông số ấn tượng + lợi ích (dung tích lớn vẫn xách tay, ngăn treo bảo vệ 17 inch) cho Score khá (5), nên kết hợp số liệu với lợi ích.
-
-- Tránh hook trừu tượng, cường điệu, không chạm tài sản cụ thể ("mỏng 2mm chống rơi quân sự", "đeo như không đeo") — Score thấp (3-4).
-
-- Tránh pain point nhẹ, ít khẩn cấp (kê điện thoại bằng cốc, sạc pin lâu) — không đủ mạnh để kéo reactions.
-
-- Hook chủ đề an toàn khi lái xe lặp lại nhiều nhưng đều yếu (Score 4) — cần bớt trùng lặp, tăng cụ thể hóa hậu quả tài chính/tài sản.
+- Hook nêu "mất mát lớn/thiệt hại tài sản đắt tiền" (mất ví-vali, xước MacBook) đạt Score cao nhất (7) → ưu tiên đánh vào nỗi sợ mất tiền cụ thể.
+- Hook chạm "bài toán nhiều thiết bị/sạc lộn xộn" (ổ cắm nào đủ, sạc từng cục) cho tương tác tốt (7) → khai thác cảnh lộn xộn quen thuộc hằng ngày.
+- Mở đầu bằng hình ảnh tình huống nguy hiểm/khó chịu cụ thể + emoji 😬🔌 hiệu quả hơn câu hỏi trừu tượng.
+- Tránh hook chung chung, mơ hồ hoặc chỉ nêu thông số ("40L xách tay", "26L ngăn treo") → tương tác thấp (3-5).
+- Tránh hook về nỗi sợ nhẹ, ít cấp bách (kê điện thoại bằng cốc, kéo vali 2 ngày) → Score chỉ 3.
+- Nên nêu hậu quả tức thì, dễ hình dung ("laptop lãnh đủ", "sớm muộn có chuyện") thay vì lợi ích tiện lợi mơ hồ.
+- Comment luôn = 1 (yếu) → cần thêm CTA đặt câu hỏi/kêu gọi bình luận để tăng chỉ số nặng ký.
+- Chưa video nào có Share → thử hook "cảnh báo/mẹo cứu đồ đắt tiền" để kích người xem chia sẻ cho bạn bè.
