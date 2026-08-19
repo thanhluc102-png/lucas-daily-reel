@@ -1,8 +1,8 @@
-- Hook nêu "mất mát lớn/thiệt hại tài sản đắt tiền" (mất ví-vali, xước MacBook) đạt Score cao nhất (7) → ưu tiên đánh vào nỗi sợ mất tiền cụ thể.
-- Hook chạm "bài toán nhiều thiết bị/sạc lộn xộn" (ổ cắm nào đủ, sạc từng cục) cho tương tác tốt (7) → khai thác cảnh lộn xộn quen thuộc hằng ngày.
-- Mở đầu bằng hình ảnh tình huống nguy hiểm/khó chịu cụ thể + emoji 😬🔌 hiệu quả hơn câu hỏi trừu tượng.
-- Tránh hook chung chung, mơ hồ hoặc chỉ nêu thông số ("40L xách tay", "26L ngăn treo") → tương tác thấp (3-5).
-- Tránh hook về nỗi sợ nhẹ, ít cấp bách (kê điện thoại bằng cốc, kéo vali 2 ngày) → Score chỉ 3.
-- Nên nêu hậu quả tức thì, dễ hình dung ("laptop lãnh đủ", "sớm muộn có chuyện") thay vì lợi ích tiện lợi mơ hồ.
-- Comment luôn = 1 (yếu) → cần thêm CTA đặt câu hỏi/kêu gọi bình luận để tăng chỉ số nặng ký.
-- Chưa video nào có Share → thử hook "cảnh báo/mẹo cứu đồ đắt tiền" để kích người xem chia sẻ cho bạn bè.
+- Hook nêu "vấn đề số nhiều / nhiều thiết bị" cho điểm cao nhất (sạc nhiều củ, mất ví-vali, sạc 2 máy): dùng công thức "nhiều thứ rối → 1 giải pháp gọn".
+- Hook chạm nỗi đau mất mát/rủi ro cụ thể (mất ví, mất vali, mất cả ngày làm việc) đạt Score 7: nhấn hậu quả thực tế, đắt giá.
+- Hook có con số cụ thể (balo 40L, 26L, laptop 17 inch) tăng tương tác nhẹ: luôn chèn số liệu gây tò mò.
+- Hook "cảnh báo nguy hiểm khi lái xe" bị lặp 3-4 lần, điểm thấp (Score 4): tránh trùng mô-típ, mỗi góc nguy hiểm chỉ dùng 1 lần.
+- Hook chỉ mô tả tính năng nhẹ nhàng/trừu tượng (đeo ốp như không đeo, nghe nhạc Bluetooth, sạc lẻ tốn buổi) cho điểm thấp nhất (Score 3-4): tránh lời mơ hồ, thiếu hậu quả rõ.
+- Toàn bộ Shares=0 và Comments dính trần 1: thêm CTA hỏi trực tiếp ("Bạn từng gặp chưa?") và câu dễ tag/chia sẻ để phá trần comment-share.
+- Ưu tiên nhóm sản phẩm sạc đa cổng và chống-mất-đồ (định vị/ví thông minh) vì kéo Reactions cao nhất.
+- Công thức thắng: [Tình huống rối nhiều thứ hoặc rủi ro mất mát] + [số liệu cụ thể] + [hậu quả đắt giá] + [câu hỏi khơi tương tác].
