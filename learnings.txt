@@ -1,8 +1,8 @@
-- Hook nêu "vấn đề số nhiều / nhiều thiết bị" cho điểm cao nhất (sạc nhiều củ, mất ví-vali, sạc 2 máy): dùng công thức "nhiều thứ rối → 1 giải pháp gọn".
-- Hook chạm nỗi đau mất mát/rủi ro cụ thể (mất ví, mất vali, mất cả ngày làm việc) đạt Score 7: nhấn hậu quả thực tế, đắt giá.
-- Hook có con số cụ thể (balo 40L, 26L, laptop 17 inch) tăng tương tác nhẹ: luôn chèn số liệu gây tò mò.
-- Hook "cảnh báo nguy hiểm khi lái xe" bị lặp 3-4 lần, điểm thấp (Score 4): tránh trùng mô-típ, mỗi góc nguy hiểm chỉ dùng 1 lần.
-- Hook chỉ mô tả tính năng nhẹ nhàng/trừu tượng (đeo ốp như không đeo, nghe nhạc Bluetooth, sạc lẻ tốn buổi) cho điểm thấp nhất (Score 3-4): tránh lời mơ hồ, thiếu hậu quả rõ.
-- Toàn bộ Shares=0 và Comments dính trần 1: thêm CTA hỏi trực tiếp ("Bạn từng gặp chưa?") và câu dễ tag/chia sẻ để phá trần comment-share.
-- Ưu tiên nhóm sản phẩm sạc đa cổng và chống-mất-đồ (định vị/ví thông minh) vì kéo Reactions cao nhất.
-- Công thức thắng: [Tình huống rối nhiều thứ hoặc rủi ro mất mát] + [số liệu cụ thể] + [hậu quả đắt giá] + [câu hỏi khơi tương tác].
+- Hook có yếu tố "combo/đa năng" (vừa nghe nhạc vừa sạc 2 máy) đạt Score cao nhất (9, có Share) → ưu tiên nhấn nhiều lợi ích trong một sản phẩm.
+- Hook gợi nỗi đau mất mát cụ thể, thiệt hại lớn ("mất ví mất vali = mất cả ngày làm việc", "sạc riêng từng cục củ") cho Score 7 → dùng tình huống thiệt hại rõ ràng, tổn thất tiền/thời gian.
+- Hook về số liệu ấn tượng, nghịch lý ("40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch") đạt Score 5 → chèn con số cụ thể tạo tò mò.
+- Hook nỗi đau mơ hồ, chung chung ("mồ hôi tay ăn mòn nhôm", "sạc pin lẻ tốn cả buổi", "đánh rơi hộ chiếu") Score thấp 3 → tránh nỗi đau xa vời, ít người gặp.
+- Hook cảnh báo an toàn giao thông bị lặp lại nhiều lần ("vừa lái vừa cầm điện thoại") chỉ Score 4 → tránh nhàm, đừng dùng cùng một mô típ lặp đi lặp lại.
+- Ưu tiên sản phẩm sạc/hub đa cổng và balo dung tích lớn có điểm nhấn số liệu → nhóm sản phẩm này tương tác ổn định hơn ốp lưng, giá đỡ.
+- Viết hook mở bằng câu hỏi tu từ chạm trúng tình huống hằng ngày + emoji khắc họa cảm xúc → tăng khả năng có Comment/Share.
+- Chốt hook bằng lợi ích kép hoặc kết quả bất ngờ (không chỉ nêu vấn đề) → yếu tố tạo Share hiếm hoi, cần khai thác mạnh.
