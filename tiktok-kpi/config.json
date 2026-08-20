@@ -1,0 +1,11 @@
+{
+  "channels": {
+    "lucasdanmacbook": {
+      "displayName": "Lucas Dán MacBook",
+      "postsRequired": 12,
+      "baseSalary": 2000000,
+      "targetBonus": 1000000,
+      "violationThisPeriod": false
+    }
+  }
+}
