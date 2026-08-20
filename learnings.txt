@@ -1,8 +1,8 @@
-- Hook có yếu tố "combo/đa năng" (vừa nghe nhạc vừa sạc 2 máy) đạt Score cao nhất (9, có Share) → ưu tiên nhấn nhiều lợi ích trong một sản phẩm.
-- Hook gợi nỗi đau mất mát cụ thể, thiệt hại lớn ("mất ví mất vali = mất cả ngày làm việc", "sạc riêng từng cục củ") cho Score 7 → dùng tình huống thiệt hại rõ ràng, tổn thất tiền/thời gian.
-- Hook về số liệu ấn tượng, nghịch lý ("40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch") đạt Score 5 → chèn con số cụ thể tạo tò mò.
-- Hook nỗi đau mơ hồ, chung chung ("mồ hôi tay ăn mòn nhôm", "sạc pin lẻ tốn cả buổi", "đánh rơi hộ chiếu") Score thấp 3 → tránh nỗi đau xa vời, ít người gặp.
-- Hook cảnh báo an toàn giao thông bị lặp lại nhiều lần ("vừa lái vừa cầm điện thoại") chỉ Score 4 → tránh nhàm, đừng dùng cùng một mô típ lặp đi lặp lại.
-- Ưu tiên sản phẩm sạc/hub đa cổng và balo dung tích lớn có điểm nhấn số liệu → nhóm sản phẩm này tương tác ổn định hơn ốp lưng, giá đỡ.
-- Viết hook mở bằng câu hỏi tu từ chạm trúng tình huống hằng ngày + emoji khắc họa cảm xúc → tăng khả năng có Comment/Share.
-- Chốt hook bằng lợi ích kép hoặc kết quả bất ngờ (không chỉ nêu vấn đề) → yếu tố tạo Share hiếm hoi, cần khai thác mạnh.
+- Hook nêu **lợi ích cụ thể + tính năng lạ** (sạc 2 máy, nghe nhạc, chống mất đồ) đạt Score cao nhất (7–9), luôn ưu tiên.
+- Hook chạm **nỗi sợ mất mát tài sản/tiền bạc** (mất ví-vali, mất cả ngày làm việc) kéo Reactions mạnh — nên khai thác.
+- Hook về **sạc/phụ kiện điện tử đa năng** (nhiều cổng, sạc nhanh, kết hợp nhiều chức năng) là nhóm ăn điểm nhất.
+- Tránh hook **răn đe mơ hồ / dọa nhẹ về hư hỏng** ("mồ hôi tay ăn mòn", "laptop lãnh đủ") — Score thấp (3–4), nhàm.
+- Tránh **lặp mô-típ "vừa lái xe vừa cầm điện thoại"** lặp 3 lần đều Score=4, gây bão hòa, đổi góc.
+- Hook balo chỉ nên dùng khi có **con số/tính năng gây sốc** (40L xách tay lên máy bay, mở phẳng 180°); balo chung chung Score thấp.
+- Ưu tiên cấu trúc **"tình huống thật + kết quả bất ngờ/giải pháp"** thay vì chỉ đặt câu hỏi than vãn.
+- Chèn **yếu tố khiến người xem muốn share** (mẹo hay, sản phẩm hiếm, lợi ích kép) vì Share nặng điểm nhất.
