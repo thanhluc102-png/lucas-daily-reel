@@ -7,5 +7,28 @@
     "score": null,
     "payout": null,
     "note": "Mốc khởi tạo — lấy thật từ trang công khai TikTok, chưa có kỳ trước để so sánh nên chưa chấm điểm."
+  },
+  {
+    "date": "2026-08-20",
+    "follower": 4804,
+    "heart": 183800,
+    "videoCount": 315,
+    "score": 39.2,
+    "payout": 2392407,
+    "note": null,
+    "detail": {
+      "growthPct": -0.23,
+      "videosThis": 1,
+      "heartsThis": 0,
+      "baselineHearts": 0,
+      "score1": 48.9,
+      "score2": 8.3,
+      "score3": 50,
+      "totalScore": 39.2,
+      "violation": false,
+      "base": 2000000,
+      "bonus": 392407,
+      "payout": 2392407
+    }
   }
 ]
