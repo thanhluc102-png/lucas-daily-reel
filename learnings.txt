@@ -1,8 +1,8 @@
-- Hook nêu **lợi ích cụ thể + tính năng lạ** (sạc 2 máy, nghe nhạc, chống mất đồ) đạt Score cao nhất (7–9), luôn ưu tiên.
-- Hook chạm **nỗi sợ mất mát tài sản/tiền bạc** (mất ví-vali, mất cả ngày làm việc) kéo Reactions mạnh — nên khai thác.
-- Hook về **sạc/phụ kiện điện tử đa năng** (nhiều cổng, sạc nhanh, kết hợp nhiều chức năng) là nhóm ăn điểm nhất.
-- Tránh hook **răn đe mơ hồ / dọa nhẹ về hư hỏng** ("mồ hôi tay ăn mòn", "laptop lãnh đủ") — Score thấp (3–4), nhàm.
-- Tránh **lặp mô-típ "vừa lái xe vừa cầm điện thoại"** lặp 3 lần đều Score=4, gây bão hòa, đổi góc.
-- Hook balo chỉ nên dùng khi có **con số/tính năng gây sốc** (40L xách tay lên máy bay, mở phẳng 180°); balo chung chung Score thấp.
-- Ưu tiên cấu trúc **"tình huống thật + kết quả bất ngờ/giải pháp"** thay vì chỉ đặt câu hỏi than vãn.
-- Chèn **yếu tố khiến người xem muốn share** (mẹo hay, sản phẩm hiếm, lợi ích kép) vì Share nặng điểm nhất.
+- **Nhồi nhiều lợi ích vào 1 hook ("vừa... vẫn...")**: hook đa giá trị như "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy" đạt share duy nhất (Score cao nhất 9) — ưu tiên gộp 2-3 công dụng.
+- **Đánh vào nỗi sợ mất mát tài sản/công việc**: "mất ví mất vali là mất cả ngày làm việc", "mất ví mất vali" cho Score 7 — dùng hậu quả nghiêm trọng, cụ thể, có thật.
+- **Nêu thông số/tính năng gây bất ngờ**: "balo 40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch" (Score 5) tốt hơn hook cảm xúc chung chung.
+- **Ưu tiên nhóm sản phẩm sạc/hub/phụ kiện xe** (củ sạc, ổ cắm, sạc xe hơi): kéo Reactions và Share tốt nhất trong tập.
+- **Tránh hook chỉ tả nỗi đau nhỏ nhặt, mơ hồ**: "sạc pin lẻ tốn cả buổi", "mồ hôi tay ăn mòn MacBook", "mang 2 món cho 1 việc" đều Score 3 — trừu tượng, khó đồng cảm.
+- **Tránh lặp lại motif "vừa lái xe vừa cầm điện thoại"**: 3 hook gần giống nhau đều chỉ Score 4 — trùng ý gây nhàm, không tạo đột phá.
+- **Dùng con số cụ thể + hình ảnh so sánh** ("phẳng 180° như vali", "40L", "17 inch") thay vì câu hỏi tu từ suông.
+- **Kết hợp emoji đúng ngữ cảnh sản phẩm** (🔌🚗🎒) và mở bằng tình huống thực tế người đọc dễ thấy mình trong đó.
