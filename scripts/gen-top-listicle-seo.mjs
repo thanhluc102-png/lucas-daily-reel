@@ -94,16 +94,28 @@ async function fetchProductsForCategory(catId) {
   if (!res.ok) throw new Error(`Lỗi fetch products cho cat ${catId}: ${res.status}`);
   const products = await res.json();
   return products.map(p => {
-    let priceNum = p.price;
-    let regularNum = p.regular_price;
+    let priceNum = 0;
+    let regularNum = 0;
     let isOnSale = !!p.on_sale;
 
     if (p.prices) {
       const minorUnit = p.prices.currency_minor_unit !== undefined ? Number(p.prices.currency_minor_unit) : 0;
       const div = 10 ** minorUnit;
-      priceNum = Math.round(Number(p.prices.price) / div);
-      regularNum = p.prices.regular_price ? Math.round(Number(p.prices.regular_price) / div) : null;
+
+      const pVal = Number(p.prices.price || 0);
+      const minVal = Number(p.prices.price_range?.min_amount || 0);
+      const regVal = Number(p.prices.regular_price || 0);
+      const saleVal = Number(p.prices.sale_price || 0);
+
+      const rawPrice = pVal > 0 ? pVal : (minVal > 0 ? minVal : (saleVal > 0 ? saleVal : regVal));
+      const rawRegular = regVal > 0 ? regVal : (p.prices.price_range?.max_amount ? Number(p.prices.price_range.max_amount) : 0);
+
+      priceNum = Math.round(rawPrice / div);
+      regularNum = Math.round(rawRegular / div);
       if (p.prices.on_sale !== undefined) isOnSale = !!p.prices.on_sale;
+    } else {
+      priceNum = Number(p.price || p.sale_price || p.regular_price || 0);
+      regularNum = Number(p.regular_price || 0);
     }
 
     const priceStr = formatVnd(priceNum);
@@ -114,6 +126,7 @@ async function fetchProductsForCategory(catId) {
       id: p.id,
       name: p.name,
       slug: p.slug,
+      priceNum,
       priceStr,
       regularStr,
       onSale: isOnSale,
@@ -121,7 +134,7 @@ async function fetchProductsForCategory(catId) {
       image: p.images?.[0]?.src || '',
       desc
     };
-  }).filter(p => p.image);
+  }).filter(p => p.image && p.priceNum > 0 && p.priceStr);
 }
 
 // Helper: Thiết kế & Upload Thumbnail 1200x630 chuẩn SEO có chữ & thương hiệu
