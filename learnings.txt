@@ -1,8 +1,8 @@
-- **Nhồi nhiều lợi ích vào 1 hook ("vừa... vẫn...")**: hook đa giá trị như "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy" đạt share duy nhất (Score cao nhất 9) — ưu tiên gộp 2-3 công dụng.
-- **Đánh vào nỗi sợ mất mát tài sản/công việc**: "mất ví mất vali là mất cả ngày làm việc", "mất ví mất vali" cho Score 7 — dùng hậu quả nghiêm trọng, cụ thể, có thật.
-- **Nêu thông số/tính năng gây bất ngờ**: "balo 40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch" (Score 5) tốt hơn hook cảm xúc chung chung.
-- **Ưu tiên nhóm sản phẩm sạc/hub/phụ kiện xe** (củ sạc, ổ cắm, sạc xe hơi): kéo Reactions và Share tốt nhất trong tập.
-- **Tránh hook chỉ tả nỗi đau nhỏ nhặt, mơ hồ**: "sạc pin lẻ tốn cả buổi", "mồ hôi tay ăn mòn MacBook", "mang 2 món cho 1 việc" đều Score 3 — trừu tượng, khó đồng cảm.
-- **Tránh lặp lại motif "vừa lái xe vừa cầm điện thoại"**: 3 hook gần giống nhau đều chỉ Score 4 — trùng ý gây nhàm, không tạo đột phá.
-- **Dùng con số cụ thể + hình ảnh so sánh** ("phẳng 180° như vali", "40L", "17 inch") thay vì câu hỏi tu từ suông.
-- **Kết hợp emoji đúng ngữ cảnh sản phẩm** (🔌🚗🎒) và mở bằng tình huống thực tế người đọc dễ thấy mình trong đó.
+- Ưu tiên hook nêu **lợi ích kép/bất ngờ cụ thể** ("nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy") — kiểu này đạt share, cho score cao nhất.
+- Hook gợi **mất mát đau/thiệt hại lớn** ("mất ví mất vali là mất cả ngày làm việc", "sạc riêng từng cục củ ổ cắm nào cho đủ") kéo reactions tốt hơn hẳn.
+- Thêm **con số/thông số ấn tượng** ("balo 40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch") giúp tăng reactions.
+- Nhóm sản phẩm **sạc/hub đa năng và balo** cho tương tác nhỉnh hơn nhóm giá đỡ điện thoại và phụ kiện bảo vệ MacBook.
+- Tránh hook **cảnh báo mơ hồ, nhẹ đô** ("mồ hôi tay ăn mòn nhôm MacBook", "kê tay bị ố") — score thấp nhất (=3).
+- Tránh **lặp motif trùng lặp** (nhiều hook "vừa lái vừa cầm điện thoại" na ná nhau) — gây nhàm, tương tác thấp đều.
+- Viết hook **ngắn, 1 câu, kết bằng câu hỏi hoặc emoji cảm xúc** đúng ngữ cảnh; ưu tiên tình huống người đọc tự thấy mình trong đó.
+- Đặt **quyền lợi/giải pháp bất ngờ ngay trong hook** thay vì chỉ nêu nỗi đau — đây là đòn bẩy tạo share.
