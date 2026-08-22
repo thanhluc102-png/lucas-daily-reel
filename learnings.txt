@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **lợi ích kép/bất ngờ cụ thể** ("nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy") — kiểu này đạt share, cho score cao nhất.
-- Hook gợi **mất mát đau/thiệt hại lớn** ("mất ví mất vali là mất cả ngày làm việc", "sạc riêng từng cục củ ổ cắm nào cho đủ") kéo reactions tốt hơn hẳn.
-- Thêm **con số/thông số ấn tượng** ("balo 40L vẫn xách tay lên máy bay", "26L bảo vệ laptop 17 inch") giúp tăng reactions.
-- Nhóm sản phẩm **sạc/hub đa năng và balo** cho tương tác nhỉnh hơn nhóm giá đỡ điện thoại và phụ kiện bảo vệ MacBook.
-- Tránh hook **cảnh báo mơ hồ, nhẹ đô** ("mồ hôi tay ăn mòn nhôm MacBook", "kê tay bị ố") — score thấp nhất (=3).
-- Tránh **lặp motif trùng lặp** (nhiều hook "vừa lái vừa cầm điện thoại" na ná nhau) — gây nhàm, tương tác thấp đều.
-- Viết hook **ngắn, 1 câu, kết bằng câu hỏi hoặc emoji cảm xúc** đúng ngữ cảnh; ưu tiên tình huống người đọc tự thấy mình trong đó.
-- Đặt **quyền lợi/giải pháp bất ngờ ngay trong hook** thay vì chỉ nêu nỗi đau — đây là đòn bẩy tạo share.
+- Ưu tiên hook nêu **lợi ích kép cụ thể + con số** (VD: "sạc đầy 2 máy vẫn nghe Bluetooth", "26L bảo vệ laptop 17 inch") — đây là nhóm Score cao nhất, dễ tạo Share/Reaction.
+- Sản phẩm **giải quyết nỗi đau tài chính lớn** (mất ví/vali, hỏng laptop giá trị cao) cho tương tác vượt trội (Score 7) — khai thác mạnh mảng bảo vệ tài sản đắt tiền.
+- Balo có **thông số/tính năng độc đáo** (mở phẳng 180°, ngăn treo laptop, 40L xách tay lên máy bay) luôn ăn hơn balo nói chung chung → luôn gắn số liệu, tránh mô tả mơ hồ.
+- Tránh hook **cảnh báo sợ hãi mơ hồ, không có giải pháp rõ** ("mồ hôi ăn mòn nhôm", "kê tay bị ố", "sạc lẻ tốn buổi") — nhóm Score thấp nhất (3), thiếu sức chia sẻ.
+- Tránh **lặp mô-típ "vừa lái xe vừa cầm điện thoại"** — đã bão hòa, chỉ đạt Score 4 dù ra nhiều biến thể; đổi góc tiếp cận mới.
+- Hook hay nên **vẽ ra khoảnh khắc "được lợi" cụ thể** thay vì chỉ dọa hậu quả — trạng thái tích cực + tiện ích thúc đẩy Share tốt hơn nỗi sợ suông.
+- Câu ngắn, một ý sắc, kèm 1 emoji đúng ngữ cảnh; nhồi **số cụ thể** (dung tích, số thiết bị, inch) vào ngay câu đầu để tăng độ tin.
+- Ưu tiên sản phẩm **combo/đa năng thay thế nhiều món** ("1 balo cho cả đi làm lẫn du lịch") nhưng phải diễn đạt bằng lợi ích đo đếm được, tránh khẩu hiệu suông.
