@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **lợi ích kép cụ thể + con số** (VD: "sạc đầy 2 máy vẫn nghe Bluetooth", "26L bảo vệ laptop 17 inch") — đây là nhóm Score cao nhất, dễ tạo Share/Reaction.
-- Sản phẩm **giải quyết nỗi đau tài chính lớn** (mất ví/vali, hỏng laptop giá trị cao) cho tương tác vượt trội (Score 7) — khai thác mạnh mảng bảo vệ tài sản đắt tiền.
-- Balo có **thông số/tính năng độc đáo** (mở phẳng 180°, ngăn treo laptop, 40L xách tay lên máy bay) luôn ăn hơn balo nói chung chung → luôn gắn số liệu, tránh mô tả mơ hồ.
-- Tránh hook **cảnh báo sợ hãi mơ hồ, không có giải pháp rõ** ("mồ hôi ăn mòn nhôm", "kê tay bị ố", "sạc lẻ tốn buổi") — nhóm Score thấp nhất (3), thiếu sức chia sẻ.
-- Tránh **lặp mô-típ "vừa lái xe vừa cầm điện thoại"** — đã bão hòa, chỉ đạt Score 4 dù ra nhiều biến thể; đổi góc tiếp cận mới.
-- Hook hay nên **vẽ ra khoảnh khắc "được lợi" cụ thể** thay vì chỉ dọa hậu quả — trạng thái tích cực + tiện ích thúc đẩy Share tốt hơn nỗi sợ suông.
-- Câu ngắn, một ý sắc, kèm 1 emoji đúng ngữ cảnh; nhồi **số cụ thể** (dung tích, số thiết bị, inch) vào ngay câu đầu để tăng độ tin.
-- Ưu tiên sản phẩm **combo/đa năng thay thế nhiều món** ("1 balo cho cả đi làm lẫn du lịch") nhưng phải diễn đạt bằng lợi ích đo đếm được, tránh khẩu hiệu suông.
+- Hook nêu **lợi ích kép/tính năng bất ngờ cụ thể** (vd: "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy") cho tương tác cao nhất — có cả share. Ưu tiên kiểu này.
+- Sản phẩm **sạc/phụ kiện xe tích hợp nhiều chức năng** và **chống mất đồ (định vị ví/vali)** kéo Score cao nhất (7–9). Đẩy mạnh nhóm này.
+- Hook dạng **con số/thông số gây ấn tượng** ("balo 40L xách tay lên máy bay", "26L đựng laptop 17 inch") giữ tương tác khá — nên dùng số liệu cụ thể.
+- Hook **nỗi đau + giải pháp có mất mát lớn** ("mất ví = mất cả ngày làm việc") hiệu quả hơn nỗi đau nhỏ, vụn vặt.
+- **Tránh** hook than phiền chung chung, mơ hồ, chỉ mô tả vấn đề nhỏ ("dây sạc lằng nhằng", "sạc lẻ tốn buổi chờ", "mồ hôi tay ăn mòn MacBook") — Score thấp nhất (3).
+- **Tránh lặp mô-típ** nhàm ("vừa lái vừa cầm điện thoại" xuất hiện nhiều lần, tương tác chỉ trung bình) — mỗi hook cần góc mới.
+- Ưu tiên **emoji gợi cảnh (🚗🎒✈️🔌)** thay emoji thở dài 😮‍💨/😰 vốn gắn với các hook Score thấp.
+- Công thức thắng: **[tình huống thật] + [con số/tính năng bất ngờ] + [lợi ích kép]**, tránh chỉ nêu vấn đề mà không hé lộ giải pháp hấp dẫn.
