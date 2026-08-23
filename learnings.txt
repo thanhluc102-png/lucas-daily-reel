@@ -1,15 +1,8 @@
-- **Ưu tiên hook có yếu tố "2-trong-1" hoặc lợi ích kép** (vừa nghe nhạc vừa sạc 2 máy — Score 9, share duy nhất): nhấn mạnh một thiết bị giải quyết nhiều việc cùng lúc.
-
-- **Dùng hook "mất mát/thiệt hại cụ thể" gây sợ**: "Mất ví, mất vali là mất luôn cả ngày làm việc" (Score 7) hiệu quả hơn nhiều hook cảnh báo chung chung.
-
-- **Balo có thông số/tính năng độc đáo cho tương tác tốt** (40L xách tay lên máy bay, 26L bảo vệ laptop 17 inch, mở phẳng 180° — đều Score 5): luôn gắn con số + lợi ích bất ngờ.
-
-- **Tránh hook mô tả tính năng khô khan, không có nỗi đau rõ** (sạc pin lẻ tốn buổi, dây sạc lằng nhằng, bọc kín vẫn thấy màu máy — toàn Score 3): loại kém nhất.
-
-- **Nhóm phụ kiện MacBook (film chống mồ hôi/ố tay) tương tác thấp nhất** (Score 3): nếu dùng phải nâng cấp thành nỗi sợ hư hỏng tốn tiền, không chỉ "ố bóng".
-
-- **Hook lái xe + điện thoại bị bão hòa** (3 biến thể đều Score 4): tránh lặp motif, mỗi chủ đề chỉ nên một góc mạnh nhất.
-
-- **Câu hỏi tu từ đơn thuần ("...chưa?", "...làm gì?") kéo tương tác xuống**: thay bằng khẳng định gây sốc hoặc con số cụ thể.
-
-- **Công thức thắng: [nỗi đau tiền bạc/thời gian cụ thể] hoặc [1 món làm 2 việc] + số liệu + emoji** → nhắm tạo share, không chỉ reaction.
+- Ưu tiên hook nêu **mất mát/hậu quả cụ thể** ("mất ví, mất vali là mất luôn cả ngày làm việc" → Score 7): tổn thất hữu hình > cảnh báo chung chung.
+- Hook **đa lợi ích trong một câu** kéo tương tác cao nhất ("nghe nhạc Bluetooth mà vẫn sạc đầy hai máy" → Score 9, có Share): gộp 2-3 công năng bất ngờ vào cùng một tình huống.
+- Nêu **thông số ấn tượng, phản trực giác** ("balo 40L xách tay lên máy bay", "26L bảo vệ laptop 17 inch bằng ngăn treo" → Score 5): con số cụ thể tạo tò mò.
+- Tránh hook **chỉ mô tả nỗi đau mơ hồ, tiêu cực đơn thuần** ("mồ hôi tay ăn mòn nhôm", "dây sạc lằng nhằng", "ngăn laptop mỏng dính" → toàn Score 3): quá quen, không có giải pháp hấp dẫn.
+- Tránh **lặp lại motif đã nhàm** (nhóm "vừa lái vừa cầm điện thoại", "trượt táp-lô" chỉ Score 4): pain point sáo mòn, ai cũng nói.
+- Kết hợp **tình huống đời thực + kết quả tích cực rõ ràng** (mở phẳng 180° hết bới túi, kê xem phim đỡ mỏi tay → Score 5) thay vì chỉ dọa nạt.
+- Dùng emoji **gợi bối cảnh** (🚗✈️🎒) hiệu quả hơn emoji cảm xúc tiêu cực (😰😬😮‍💨 hay đi kèm Score 3).
+- Công thức mạnh nhất: **[nghịch lý/gộp lợi ích] + [con số cụ thể] + [emoji bối cảnh]**, đặt câu hỏi khơi tò mò thay vì than vãn.
