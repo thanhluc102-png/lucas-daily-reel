@@ -1,8 +1,15 @@
-- Hook nêu **lợi ích kép/tính năng bất ngờ cụ thể** (vd: "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy") cho tương tác cao nhất — có cả share. Ưu tiên kiểu này.
-- Sản phẩm **sạc/phụ kiện xe tích hợp nhiều chức năng** và **chống mất đồ (định vị ví/vali)** kéo Score cao nhất (7–9). Đẩy mạnh nhóm này.
-- Hook dạng **con số/thông số gây ấn tượng** ("balo 40L xách tay lên máy bay", "26L đựng laptop 17 inch") giữ tương tác khá — nên dùng số liệu cụ thể.
-- Hook **nỗi đau + giải pháp có mất mát lớn** ("mất ví = mất cả ngày làm việc") hiệu quả hơn nỗi đau nhỏ, vụn vặt.
-- **Tránh** hook than phiền chung chung, mơ hồ, chỉ mô tả vấn đề nhỏ ("dây sạc lằng nhằng", "sạc lẻ tốn buổi chờ", "mồ hôi tay ăn mòn MacBook") — Score thấp nhất (3).
-- **Tránh lặp mô-típ** nhàm ("vừa lái vừa cầm điện thoại" xuất hiện nhiều lần, tương tác chỉ trung bình) — mỗi hook cần góc mới.
-- Ưu tiên **emoji gợi cảnh (🚗🎒✈️🔌)** thay emoji thở dài 😮‍💨/😰 vốn gắn với các hook Score thấp.
-- Công thức thắng: **[tình huống thật] + [con số/tính năng bất ngờ] + [lợi ích kép]**, tránh chỉ nêu vấn đề mà không hé lộ giải pháp hấp dẫn.
+- **Ưu tiên hook có yếu tố "2-trong-1" hoặc lợi ích kép** (vừa nghe nhạc vừa sạc 2 máy — Score 9, share duy nhất): nhấn mạnh một thiết bị giải quyết nhiều việc cùng lúc.
+
+- **Dùng hook "mất mát/thiệt hại cụ thể" gây sợ**: "Mất ví, mất vali là mất luôn cả ngày làm việc" (Score 7) hiệu quả hơn nhiều hook cảnh báo chung chung.
+
+- **Balo có thông số/tính năng độc đáo cho tương tác tốt** (40L xách tay lên máy bay, 26L bảo vệ laptop 17 inch, mở phẳng 180° — đều Score 5): luôn gắn con số + lợi ích bất ngờ.
+
+- **Tránh hook mô tả tính năng khô khan, không có nỗi đau rõ** (sạc pin lẻ tốn buổi, dây sạc lằng nhằng, bọc kín vẫn thấy màu máy — toàn Score 3): loại kém nhất.
+
+- **Nhóm phụ kiện MacBook (film chống mồ hôi/ố tay) tương tác thấp nhất** (Score 3): nếu dùng phải nâng cấp thành nỗi sợ hư hỏng tốn tiền, không chỉ "ố bóng".
+
+- **Hook lái xe + điện thoại bị bão hòa** (3 biến thể đều Score 4): tránh lặp motif, mỗi chủ đề chỉ nên một góc mạnh nhất.
+
+- **Câu hỏi tu từ đơn thuần ("...chưa?", "...làm gì?") kéo tương tác xuống**: thay bằng khẳng định gây sốc hoặc con số cụ thể.
+
+- **Công thức thắng: [nỗi đau tiền bạc/thời gian cụ thể] hoặc [1 món làm 2 việc] + số liệu + emoji** → nhắm tạo share, không chỉ reaction.
