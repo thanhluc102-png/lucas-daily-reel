@@ -1,8 +1,8 @@
-- Ưu tiên hook tạo được **share** (yếu tố ăn điểm nặng nhất): mô tả trải nghiệm đa năng bất ngờ, cụ thể như "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy" (Score 9 cao nhất) — nhấn combo tính năng "một món làm được nhiều việc".
-- Đánh vào **nỗi đau mất mát/thiệt hại lớn** ("mất ví, mất vali là mất luôn cả ngày làm việc" — Score 7): dùng hậu quả nghiêm trọng, dễ đồng cảm để kéo reactions.
-- Với balo: hook nêu **thông số + lợi ích chống được nghi ngờ** (40L xách tay lên máy bay, 26L bảo vệ laptop 17 inch bằng ngăn treo, mở phẳng 180°) cho Score 5 — luôn gắn con số cụ thể + giải quyết lo lắng thực tế.
-- Sản phẩm điện thoại/xe hơi (giá đỡ, chống trượt táp-lô, xem phim mỏi tay) ổn định Score 4-5 — mô tả tình huống khó chịu hằng ngày rất trực quan.
-- **Tránh** hook chung chung, chỉ nêu vấn đề mà thiếu con số/hình ảnh cụ thể ("dây sạc lằng nhằng", "sạc lẻ tốn cả buổi") — toàn Score 3, không kéo nổi reaction.
-- **Tránh** hook về phụ kiện MacBook (mồ hôi tay ăn mòn nhôm, kê tay bị ố, bọc kín vẫn thấy màu máy) — liên tục Score 3, nỗi đau quá ngách/nhẹ, ít người thấy liên quan.
-- Công thức thắng: **[Con số/tình huống cực cụ thể] + [nỗi đau lớn hoặc combo tính năng bất ngờ] + [emoji]** → ưu tiên khơi gợi "đáng chia sẻ" hơn là chỉ than vãn vấn đề.
-- Mỗi hook nên gợi được câu trả lời "wow, tiện thế" hoặc "đúng ám ảnh của tôi" — càng khiến người xem muốn tag/chia sẻ, điểm càng cao.
+- Hook nêu **giá trị kép/"2-trong-1"** (vừa sạc vừa phát Bluetooth, sạc đầy 2 máy cùng lúc) đạt Score cao nhất — luôn nhấn mạnh một thiết bị giải quyết nhiều việc.
+- Hook chạm **nỗi đau mất mát cụ thể, thiệt hại lớn** (mất ví/vali = mất cả ngày làm việc) cho tương tác mạnh (Score 7) — dùng hậu quả nghiêm trọng, hữu hình.
+- Hook có **thông số kỹ thuật cụ thể** (26L, laptop 17 inch, mở phẳng 180°) tốt hơn hook chung chung — luôn chèn số liệu, tính năng đặc thù.
+- Sản phẩm **phụ kiện xe hơi + sạc** (giữ điện thoại, sạc trên xe) và **balo laptop** là nhóm hiệu quả nhất — ưu tiên khai thác.
+- Hook về **vỏ/bảo vệ MacBook** (chống mồ hôi, chống xước, giữ nguyên màu) đều Score thấp (3) — tránh hoặc phải viết lại theo hướng lợi ích kép/số liệu.
+- Hook **than phiền chung chung, mơ hồ** (dây sạc lằng nhằng, sạc pin lẻ tốn buổi chờ) tương tác kém — bỏ kiểu nêu vấn đề nhạt, không cụ thể.
+- Kích **Share** bằng nội dung "mẹo hay/tiện ích bất ngờ" (yếu tố khiến người xem muốn chia sẻ) vì Share nặng điểm nhất và hiếm đạt.
+- Mở đầu bằng **câu hỏi tình huống thực tế người dùng đang gặp** (?, 🚗, ⚡) hiệu quả hơn câu khẳng định bi quan.
