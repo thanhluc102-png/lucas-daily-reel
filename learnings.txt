@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **mất mát/hậu quả cụ thể** ("mất ví, mất vali là mất luôn cả ngày làm việc" → Score 7): tổn thất hữu hình > cảnh báo chung chung.
-- Hook **đa lợi ích trong một câu** kéo tương tác cao nhất ("nghe nhạc Bluetooth mà vẫn sạc đầy hai máy" → Score 9, có Share): gộp 2-3 công năng bất ngờ vào cùng một tình huống.
-- Nêu **thông số ấn tượng, phản trực giác** ("balo 40L xách tay lên máy bay", "26L bảo vệ laptop 17 inch bằng ngăn treo" → Score 5): con số cụ thể tạo tò mò.
-- Tránh hook **chỉ mô tả nỗi đau mơ hồ, tiêu cực đơn thuần** ("mồ hôi tay ăn mòn nhôm", "dây sạc lằng nhằng", "ngăn laptop mỏng dính" → toàn Score 3): quá quen, không có giải pháp hấp dẫn.
-- Tránh **lặp lại motif đã nhàm** (nhóm "vừa lái vừa cầm điện thoại", "trượt táp-lô" chỉ Score 4): pain point sáo mòn, ai cũng nói.
-- Kết hợp **tình huống đời thực + kết quả tích cực rõ ràng** (mở phẳng 180° hết bới túi, kê xem phim đỡ mỏi tay → Score 5) thay vì chỉ dọa nạt.
-- Dùng emoji **gợi bối cảnh** (🚗✈️🎒) hiệu quả hơn emoji cảm xúc tiêu cực (😰😬😮‍💨 hay đi kèm Score 3).
-- Công thức mạnh nhất: **[nghịch lý/gộp lợi ích] + [con số cụ thể] + [emoji bối cảnh]**, đặt câu hỏi khơi tò mò thay vì than vãn.
+- Ưu tiên hook tạo được **share** (yếu tố ăn điểm nặng nhất): mô tả trải nghiệm đa năng bất ngờ, cụ thể như "nghe nhạc Bluetooth mà vẫn sạc đầy 2 máy" (Score 9 cao nhất) — nhấn combo tính năng "một món làm được nhiều việc".
+- Đánh vào **nỗi đau mất mát/thiệt hại lớn** ("mất ví, mất vali là mất luôn cả ngày làm việc" — Score 7): dùng hậu quả nghiêm trọng, dễ đồng cảm để kéo reactions.
+- Với balo: hook nêu **thông số + lợi ích chống được nghi ngờ** (40L xách tay lên máy bay, 26L bảo vệ laptop 17 inch bằng ngăn treo, mở phẳng 180°) cho Score 5 — luôn gắn con số cụ thể + giải quyết lo lắng thực tế.
+- Sản phẩm điện thoại/xe hơi (giá đỡ, chống trượt táp-lô, xem phim mỏi tay) ổn định Score 4-5 — mô tả tình huống khó chịu hằng ngày rất trực quan.
+- **Tránh** hook chung chung, chỉ nêu vấn đề mà thiếu con số/hình ảnh cụ thể ("dây sạc lằng nhằng", "sạc lẻ tốn cả buổi") — toàn Score 3, không kéo nổi reaction.
+- **Tránh** hook về phụ kiện MacBook (mồ hôi tay ăn mòn nhôm, kê tay bị ố, bọc kín vẫn thấy màu máy) — liên tục Score 3, nỗi đau quá ngách/nhẹ, ít người thấy liên quan.
+- Công thức thắng: **[Con số/tình huống cực cụ thể] + [nỗi đau lớn hoặc combo tính năng bất ngờ] + [emoji]** → ưu tiên khơi gợi "đáng chia sẻ" hơn là chỉ than vãn vấn đề.
+- Mỗi hook nên gợi được câu trả lời "wow, tiện thế" hoặc "đúng ám ảnh của tôi" — càng khiến người xem muốn tag/chia sẻ, điểm càng cao.
