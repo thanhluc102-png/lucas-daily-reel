@@ -1,8 +1,8 @@
-- Hook nêu **giá trị kép/"2-trong-1"** (vừa sạc vừa phát Bluetooth, sạc đầy 2 máy cùng lúc) đạt Score cao nhất — luôn nhấn mạnh một thiết bị giải quyết nhiều việc.
-- Hook chạm **nỗi đau mất mát cụ thể, thiệt hại lớn** (mất ví/vali = mất cả ngày làm việc) cho tương tác mạnh (Score 7) — dùng hậu quả nghiêm trọng, hữu hình.
-- Hook có **thông số kỹ thuật cụ thể** (26L, laptop 17 inch, mở phẳng 180°) tốt hơn hook chung chung — luôn chèn số liệu, tính năng đặc thù.
-- Sản phẩm **phụ kiện xe hơi + sạc** (giữ điện thoại, sạc trên xe) và **balo laptop** là nhóm hiệu quả nhất — ưu tiên khai thác.
-- Hook về **vỏ/bảo vệ MacBook** (chống mồ hôi, chống xước, giữ nguyên màu) đều Score thấp (3) — tránh hoặc phải viết lại theo hướng lợi ích kép/số liệu.
-- Hook **than phiền chung chung, mơ hồ** (dây sạc lằng nhằng, sạc pin lẻ tốn buổi chờ) tương tác kém — bỏ kiểu nêu vấn đề nhạt, không cụ thể.
-- Kích **Share** bằng nội dung "mẹo hay/tiện ích bất ngờ" (yếu tố khiến người xem muốn chia sẻ) vì Share nặng điểm nhất và hiếm đạt.
-- Mở đầu bằng **câu hỏi tình huống thực tế người dùng đang gặp** (?, 🚗, ⚡) hiệu quả hơn câu khẳng định bi quan.
+- **Ưu tiên hook về sạc/kết nối nhiều thiết bị cùng lúc trong xe hơi** (Score 9 cao nhất, có Share): nhấn "vừa X vừa Y" — giải quyết 2 nhu cầu trong 1 sản phẩm.
+- **Đánh vào nỗi sợ mất mát tài sản/tiền bạc cụ thể** ("mất ví, mất vali là mất luôn cả ngày làm việc" — Score 7): gắn thiệt hại tài chính/thời gian rõ ràng, không mơ hồ.
+- **Nêu thông số kỹ thuật đối lập/gây tò mò** ("balo 26L bảo vệ laptop 17 inch bằng ngăn treo" — Score 5): con số cụ thể + cơ chế lạ tạo tin tưởng.
+- **Khung "vấn đề bất tiện hằng ngày + hình ảnh chế tạm"** ("kê điện thoại bằng cốc", "đi công tác 2 ngày phải kéo vali" — Score 5): mô tả cảnh khổ quen thuộc dễ đồng cảm.
+- **Tránh hook về bảo vệ/vỏ MacBook (mồ hôi, xước, ố, bọc)**: hàng loạt Score 3, tương tác thấp nhất — chủ đề ngách, ít người thấy liên quan.
+- **Tránh hook balo mở đầu bằng câu hỏi tu từ hoặc mô tả tính năng đơn thuần** ("balo hay cặp xách?", "mở phẳng 180°" — Score 3-5): kém sức nặng cảm xúc.
+- **Ưu tiên chủ đề ô tô/di chuyển và giải pháp gộp thiết bị**: nhóm cho Share và Reactions cao nhất; nên khai thác tiếp.
+- **Công thức mạnh nhất: [nỗi đau tiền bạc/an toàn cụ thể] + [gộp nhiều lợi ích] + emoji xe/điện]** — né [chỉ nêu tính năng] và [chủ đề vỏ bọc laptop].
