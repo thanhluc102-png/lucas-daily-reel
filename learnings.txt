@@ -1,8 +1,8 @@
-- **Ưu tiên hook về sạc/kết nối nhiều thiết bị cùng lúc trong xe hơi** (Score 9 cao nhất, có Share): nhấn "vừa X vừa Y" — giải quyết 2 nhu cầu trong 1 sản phẩm.
-- **Đánh vào nỗi sợ mất mát tài sản/tiền bạc cụ thể** ("mất ví, mất vali là mất luôn cả ngày làm việc" — Score 7): gắn thiệt hại tài chính/thời gian rõ ràng, không mơ hồ.
-- **Nêu thông số kỹ thuật đối lập/gây tò mò** ("balo 26L bảo vệ laptop 17 inch bằng ngăn treo" — Score 5): con số cụ thể + cơ chế lạ tạo tin tưởng.
-- **Khung "vấn đề bất tiện hằng ngày + hình ảnh chế tạm"** ("kê điện thoại bằng cốc", "đi công tác 2 ngày phải kéo vali" — Score 5): mô tả cảnh khổ quen thuộc dễ đồng cảm.
-- **Tránh hook về bảo vệ/vỏ MacBook (mồ hôi, xước, ố, bọc)**: hàng loạt Score 3, tương tác thấp nhất — chủ đề ngách, ít người thấy liên quan.
-- **Tránh hook balo mở đầu bằng câu hỏi tu từ hoặc mô tả tính năng đơn thuần** ("balo hay cặp xách?", "mở phẳng 180°" — Score 3-5): kém sức nặng cảm xúc.
-- **Ưu tiên chủ đề ô tô/di chuyển và giải pháp gộp thiết bị**: nhóm cho Share và Reactions cao nhất; nên khai thác tiếp.
-- **Công thức mạnh nhất: [nỗi đau tiền bạc/an toàn cụ thể] + [gộp nhiều lợi ích] + emoji xe/điện]** — né [chỉ nêu tính năng] và [chủ đề vỏ bọc laptop].
+- **Ưu tiên hook chạm nỗi đau mất mát/rủi ro cụ thể** ("mất ví mất vali", "đánh rơi hộ chiếu") — nhóm score cao nhất (7-9).
+- **Nhấn tính năng "một món thay nhiều món"** (sạc Bluetooth vẫn sạc 2 máy, củ sạc kiêm pin dự phòng) — kích shares, món duy nhất đạt Share=1.
+- **Với balo: nêu thông số + lợi ích chống sốc laptop rõ ràng** ("26L, ngăn treo laptop 17 inch") thắng hook balo chung chung ("balo hay cặp xách", "cả đi làm lẫn du lịch").
+- **Dùng câu hỏi khơi cảnh bất tiện đời thường** ("vừa lái xe vừa chỉnh điện thoại?", "kê điện thoại bằng cốc?") — ổn định score 4-5.
+- **Tránh hook về ốp/vỏ MacBook & iPhone** (mồ hôi ăn mòn nhôm, xước vỏ Neo, ốp dày mất dáng) — đều đội sổ score 3, quá ngách/ít cảm xúc.
+- **Tránh hook trừu tượng, thiếu con số hoặc rủi ro mơ hồ** ("dây sạc lằng nhằng", "bọc kín vẫn thấy màu máy") — tương tác thấp nhất.
+- **Chèn emoji khớp ngữ cảnh + 1 con số/thông số** để tăng độ tin và tỉ lệ react.
+- **Công thức thắng: [Nỗi đau tốn tiền/mất đồ] + [giải pháp gộp nhiều công dụng] + [số liệu cụ thể].**
