@@ -1,8 +1,7 @@
-- **Ưu tiên hook chạm nỗi đau mất mát/rủi ro cụ thể** ("mất ví mất vali", "đánh rơi hộ chiếu") — nhóm score cao nhất (7-9).
-- **Nhấn tính năng "một món thay nhiều món"** (sạc Bluetooth vẫn sạc 2 máy, củ sạc kiêm pin dự phòng) — kích shares, món duy nhất đạt Share=1.
-- **Với balo: nêu thông số + lợi ích chống sốc laptop rõ ràng** ("26L, ngăn treo laptop 17 inch") thắng hook balo chung chung ("balo hay cặp xách", "cả đi làm lẫn du lịch").
-- **Dùng câu hỏi khơi cảnh bất tiện đời thường** ("vừa lái xe vừa chỉnh điện thoại?", "kê điện thoại bằng cốc?") — ổn định score 4-5.
-- **Tránh hook về ốp/vỏ MacBook & iPhone** (mồ hôi ăn mòn nhôm, xước vỏ Neo, ốp dày mất dáng) — đều đội sổ score 3, quá ngách/ít cảm xúc.
-- **Tránh hook trừu tượng, thiếu con số hoặc rủi ro mơ hồ** ("dây sạc lằng nhằng", "bọc kín vẫn thấy màu máy") — tương tác thấp nhất.
-- **Chèn emoji khớp ngữ cảnh + 1 con số/thông số** để tăng độ tin và tỉ lệ react.
-- **Công thức thắng: [Nỗi đau tốn tiền/mất đồ] + [giải pháp gộp nhiều công dụng] + [số liệu cụ thể].**
+- **Hook có lợi ích cụ thể + con số bán được share (cao nhất):** "sạc đầy 2 máy vừa nghe nhạc Bluetooth" đạt Score=9 nhờ 1 share — ưu tiên mô tả giải quyết nhiều nhu cầu cùng lúc, có số liệu rõ.
+- **Nỗi đau mất mát tài sản/thời gian kéo tương tác tốt:** "Mất ví, mất vali là mất luôn cả ngày làm việc" (Score=7) — dùng nỗi sợ hậu quả nghiêm trọng, cụ thể, đời thường.
+- **Sản phẩm sạc/hub/pin dự phòng và balo laptop có lợi ích rõ ràng dễ ăn tương tác** hơn phụ kiện bảo vệ MacBook.
+- **Tránh hook "sợ trầy xước/ố mồ hôi MacBook" (loạt Score=3):** quá ngách, cảm xúc yếu, không ai share — hạn chế nhóm vỏ/ốp/dán màn.
+- **Nêu thông số kỹ thuật ấn tượng giúp tăng reactions:** "laptop 17 inch ngăn treo không đè đáy", "mở phẳng 180°" (Score=5) tốt hơn hook chung chung.
+- **Hook chung chung, mơ hồ, không lợi ích cụ thể cho Score thấp:** "Balo hay cặp xách? Cái này là cả hai", "Dây sạc lằng nhằng" (Score=3) — luôn gắn kết quả đo lường được.
+- **Công thức thắng: [Nỗi đau tốn kém/nguy hiểm] + [giải pháp đa năng] + [con số cụ thể] + emoji** → nhắm tới share, không chỉ react.
