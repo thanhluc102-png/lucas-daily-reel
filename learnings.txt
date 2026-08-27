@@ -1,8 +1,8 @@
-- Hook có yếu tố "2-trong-1" hoặc giải quyết đồng thời nhiều nhu cầu (sạc + nghe nhạc + đầy pin) cho Score cao nhất (9) — ưu tiên khai thác đa lợi ích trong 1 câu.
-- Sản phẩm phụ kiện sạc/pin/hub cho tương tác tốt hơn hẳn ốp lưng, dán màn, balo — tập trung nhóm điện tử tiện ích.
-- Hook khơi "nỗi đau mất mát lớn" (mất ví/vali = mất cả ngày làm việc) đạt Score 7 — dùng cường điệu hậu quả nghiêm trọng.
-- Hook dạng câu hỏi gợi tình huống bực bội quen thuộc ("kê điện thoại bằng cốc", "kéo vali đi 2 ngày") kéo được reaction — nên mở bằng câu hỏi cụ thể.
-- Tránh hook về ốp lưng/dán màn MacBook chống trầy: mòn mỏi, lặp lại, Score đều thấp (3) — nhóm này bão hòa, nên giảm tần suất.
-- Tránh hook chê bai chung chung ("mua làm gì", "bỏ được chưa") — chỉ đạt 3-4, thiếu lợi ích cụ thể để người xem muốn chia sẻ.
-- Muốn tăng Share (yếu tố nặng nhất): nhấn tính năng "wow" độc đáo, hữu ích để người xem gửi cho bạn bè, thay vì chỉ mô tả nỗi lo.
-- Giữ hook ngắn, 1 câu, có emoji cuối, nêu rõ con số/thông số cụ thể (26L, 180°, 2mm) để tăng độ tin và tò mò.
+- Ưu tiên hook về **sạc/pin/kết nối đa thiết bị** (Score 9, 4) — chạm nhu cầu tiện lợi hằng ngày, dễ được share nhất.
+- Viết hook dạng **câu hỏi cụ thể có bối cảnh thật** ("nghe nhạc trong xe mà vẫn sạc đầy 2 máy?") thay vì than vãn chung chung.
+- Nhấn **giải pháp 2-trong-1 / gộp nhiều món** ("2 món cho 1 việc", "balo hay cặp — cả hai") để tạo tò mò, thúc đẩy comment.
+- Dùng **con số + nghịch lý gây sốc** ("mỏng 2mm mà chống rơi quân đội", "balo 5 triệu mà…") — kéo comment tốt (Score 6).
+- Hạn chế loạt hook **bảo vệ MacBook/vỏ/màn/ốp** — trùng lặp, bão hòa, Score thấp đều (3-4), khán giả chai lì.
+- Tránh hook **chỉ mô tả nỗi đau mơ hồ về ngoại hình máy** ("mồ hôi ăn mòn nhôm", "kê tay bị ố") — cảm xúc yếu, Reactions=0.
+- Mỗi hook nên có **1 emoji đắt gắn đúng ngữ cảnh** (🚗⚡✈️) thay vì lạm dụng 😮‍💨/😩 lặp lại gây nhàm.
+- Đa dạng hóa sản phẩm mỗi ngày, **giãn nhóm balo/ốp/vỏ**, tăng tần suất **phụ kiện sạc & gadget di chuyển** để giữ Score cao.
