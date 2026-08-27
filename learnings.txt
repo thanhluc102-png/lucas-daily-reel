@@ -1,8 +1,8 @@
-- **Hook có yếu tố "trong xe/ô tô" (sạc, Bluetooth, giá đỡ điện thoại lái xe) cho tương tác cao nhất — đặc biệt đạt được share (Score 9). Ưu tiên khai thác ngữ cảnh dùng trong xe hơi.**
-- **Sản phẩm sạc/pin đa năng (sạc kèm Bluetooth, sạc nhiều máy cùng lúc) hiệu quả nhất; nhấn "một món làm nhiều việc", "khỏi mang 2 món" để tạo giá trị chia sẻ.**
-- **Hook nêu nỗi đau mất mát cụ thể, chi phí cao ("mất ví, mất vali là mất cả ngày làm việc") kéo Reactions tốt (Score 7). Dùng hậu quả nghiêm trọng, thiệt hại lớn.**
-- **Balo mô tả tính năng độc đáo, con số cụ thể (26L, laptop 17 inch, mở phẳng 180°, ngăn treo) nhỉnh hơn balo nói chung chung — luôn kèm thông số và cơ chế bảo vệ.**
-- **Hook về case/dán/vỏ MacBook, chống trầy, mồ hôi tay, giữ màu máy cho tương tác kém nhất (Score 3) — hạn chế hoặc gộp lại, tránh làm chủ đề chính.**
-- **Hook chỉ than phiền chung, kết bằng dấu 😮‍💨/😩 mà không có con số hay giải pháp rõ đều yếu — thay bằng lợi ích cụ thể, đo lường được.**
-- **Câu hỏi mở đúng ngữ cảnh đời thực ("nghe nhạc trong xe mà vẫn sạc đầy 2 máy?") gợi được share; ưu tiên hook dạng câu hỏi có tình huống dùng hằng ngày.**
-- **Emoji nên gắn với ngữ cảnh tích cực (🚗⚡🔌) thay vì cảm xúc tiêu cực lặp lại (😩😬😮‍💨) vốn gắn với các hook điểm thấp.**
+- Hook có yếu tố "2-trong-1" hoặc giải quyết đồng thời nhiều nhu cầu (sạc + nghe nhạc + đầy pin) cho Score cao nhất (9) — ưu tiên khai thác đa lợi ích trong 1 câu.
+- Sản phẩm phụ kiện sạc/pin/hub cho tương tác tốt hơn hẳn ốp lưng, dán màn, balo — tập trung nhóm điện tử tiện ích.
+- Hook khơi "nỗi đau mất mát lớn" (mất ví/vali = mất cả ngày làm việc) đạt Score 7 — dùng cường điệu hậu quả nghiêm trọng.
+- Hook dạng câu hỏi gợi tình huống bực bội quen thuộc ("kê điện thoại bằng cốc", "kéo vali đi 2 ngày") kéo được reaction — nên mở bằng câu hỏi cụ thể.
+- Tránh hook về ốp lưng/dán màn MacBook chống trầy: mòn mỏi, lặp lại, Score đều thấp (3) — nhóm này bão hòa, nên giảm tần suất.
+- Tránh hook chê bai chung chung ("mua làm gì", "bỏ được chưa") — chỉ đạt 3-4, thiếu lợi ích cụ thể để người xem muốn chia sẻ.
+- Muốn tăng Share (yếu tố nặng nhất): nhấn tính năng "wow" độc đáo, hữu ích để người xem gửi cho bạn bè, thay vì chỉ mô tả nỗi lo.
+- Giữ hook ngắn, 1 câu, có emoji cuối, nêu rõ con số/thông số cụ thể (26L, 180°, 2mm) để tăng độ tin và tò mò.
