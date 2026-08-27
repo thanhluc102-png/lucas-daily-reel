@@ -1,8 +1,15 @@
-- Ưu tiên hook về **sạc/pin/kết nối đa thiết bị** (Score 9, 4) — chạm nhu cầu tiện lợi hằng ngày, dễ được share nhất.
-- Viết hook dạng **câu hỏi cụ thể có bối cảnh thật** ("nghe nhạc trong xe mà vẫn sạc đầy 2 máy?") thay vì than vãn chung chung.
-- Nhấn **giải pháp 2-trong-1 / gộp nhiều món** ("2 món cho 1 việc", "balo hay cặp — cả hai") để tạo tò mò, thúc đẩy comment.
-- Dùng **con số + nghịch lý gây sốc** ("mỏng 2mm mà chống rơi quân đội", "balo 5 triệu mà…") — kéo comment tốt (Score 6).
-- Hạn chế loạt hook **bảo vệ MacBook/vỏ/màn/ốp** — trùng lặp, bão hòa, Score thấp đều (3-4), khán giả chai lì.
-- Tránh hook **chỉ mô tả nỗi đau mơ hồ về ngoại hình máy** ("mồ hôi ăn mòn nhôm", "kê tay bị ố") — cảm xúc yếu, Reactions=0.
-- Mỗi hook nên có **1 emoji đắt gắn đúng ngữ cảnh** (🚗⚡✈️) thay vì lạm dụng 😮‍💨/😩 lặp lại gây nhàm.
-- Đa dạng hóa sản phẩm mỗi ngày, **giãn nhóm balo/ốp/vỏ**, tăng tần suất **phụ kiện sạc & gadget di chuyển** để giữ Score cao.
+- **Hook có yếu tố "share được"** (mẹo hay, tình huống bất ngờ, con số gây sốc như "sạc đầy 2 máy khi nghe nhạc") cho Score cao nhất — ưu tiên viết hook khiến người xem muốn gửi cho người khác.
+
+- **Sản phẩm sạc/hub đa năng** (giải quyết nhiều việc cùng lúc, gọn nhẹ khi đi lại) tương tác tốt nhất — đẩy mạnh nhóm này.
+
+- **Hook chỉ ra sự lãng phí/mâu thuẫn** ("mang 2 món cho 1 việc", "balo 5 triệu mà đặt sát đáy") tạo phản ứng tốt — dùng nghịch lý về tiền/công dụng.
+
+- **Tránh hook dạng vấn đề chung chung, quá quen thuộc** ("dây sạc lằng nhằng", "màn trầy một vệt") — Score thấp vì ai cũng biết, không có gì mới.
+
+- **Nhóm ốp/dán MacBook & iPhone bị bão hòa** — chỉ dùng khi có góc lạ (số liệu "mỏng 2mm chống rơi chuẩn quân đội" gây tò mò và ra comment).
+
+- **Đưa con số cụ thể/tương phản** (180°, 2mm, quân đội) kích comment tốt hơn câu than phiền cảm xúc suông.
+
+- **Nhóm balo dễ rơi vào lối mòn cảnh báo tiêu cực** ("rơi là lo", "ướt theo") — chỉ hiệu quả khi thêm chi tiết gây tranh luận về giá tiền.
+
+- **Ưu tiên hook mở ra giải pháp tiện lợi bất ngờ** hơn hook chỉ khơi nỗi đau — hook giải pháp kéo share, hook nỗi đau chỉ kéo 1 comment.
