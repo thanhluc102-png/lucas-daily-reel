@@ -1,15 +1,15 @@
-- **Hook có yếu tố "share được"** (mẹo hay, tình huống bất ngờ, con số gây sốc như "sạc đầy 2 máy khi nghe nhạc") cho Score cao nhất — ưu tiên viết hook khiến người xem muốn gửi cho người khác.
+- **Hook có yếu tố tiện ích "2-trong-1" cho tương tác cao nhất** (sạc+Bluetooth trong xe Score=9, củ sạc kiêm pin, ốp mỏng vẫn chống rơi) — ưu tiên concept giải quyết nhiều nhu cầu bằng 1 món.
 
-- **Sản phẩm sạc/hub đa năng** (giải quyết nhiều việc cùng lúc, gọn nhẹ khi đi lại) tương tác tốt nhất — đẩy mạnh nhóm này.
+- **Sản phẩm sạc/pin/hub có shares cao nhất** (chỉ có 1 share duy nhất, thuộc nhóm sạc) — nhấn tính "hữu ích để lưu/gửi cho người khác".
 
-- **Hook chỉ ra sự lãng phí/mâu thuẫn** ("mang 2 món cho 1 việc", "balo 5 triệu mà đặt sát đáy") tạo phản ứng tốt — dùng nghịch lý về tiền/công dụng.
+- **Hook dạng câu hỏi nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội?") kéo comment tốt** — dùng cấu trúc "vừa X vừa Y?" tạo mâu thuẫn khiến người xem muốn hỏi.
 
-- **Tránh hook dạng vấn đề chung chung, quá quen thuộc** ("dây sạc lằng nhằng", "màn trầy một vệt") — Score thấp vì ai cũng biết, không có gì mới.
+- **Hook "chê đồ đắt tiền" (balo 5-8 triệu mà vẫn lỗi) gợi tranh luận, giữ comment ổn định** — nêu điểm yếu bất ngờ của sản phẩm cao cấp.
 
-- **Nhóm ốp/dán MacBook & iPhone bị bão hòa** — chỉ dùng khi có góc lạ (số liệu "mỏng 2mm chống rơi chuẩn quân đội" gây tò mò và ra comment).
+- **Tránh hook mô tả tính năng phẳng, thiếu cảm xúc** ("bọc kín vẫn thấy màu máy", "balo hay cặp xách") — Score thấp nhất (=3), không tạo phản ứng.
 
-- **Đưa con số cụ thể/tương phản** (180°, 2mm, quân đội) kích comment tốt hơn câu than phiền cảm xúc suông.
+- **Hạn chế chủ đề "sợ trầy/xước MacBook" lặp lại quá nhiều** (mồ hôi, bóng ố, trầy màn) — bão hòa, tương tác đều mức đáy 3-4.
 
-- **Nhóm balo dễ rơi vào lối mòn cảnh báo tiêu cực** ("rơi là lo", "ướt theo") — chỉ hiệu quả khi thêm chi tiết gây tranh luận về giá tiền.
+- **Mở đầu bằng nỗi đau cụ thể + emoji cảm xúc mạnh (😰😩😬) tốt hơn emoji trung tính** (🎒🔌🤍) — tăng khả năng có reaction.
 
-- **Ưu tiên hook mở ra giải pháp tiện lợi bất ngờ** hơn hook chỉ khơi nỗi đau — hook giải pháp kéo share, hook nỗi đau chỉ kéo 1 comment.
+- **Ưu tiên sản phẩm phụ kiện sạc/kết nối hơn balo & ốp lưng** — nhóm balo/ốp chiếm đa số nhưng Score gần như luôn thấp (3-4), dễ chìm.
