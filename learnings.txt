@@ -1,15 +1,8 @@
-- **Hook đạt Share (score cao nhất) đều nói lợi ích "gộp nhiều thành một"**: sạc nhiều máy cùng lúc, thay thế 2 món bằng 1 → ưu tiên góc "một món giải quyết nhiều việc".
-
-- **Câu hỏi gợi tò mò kèm con số/lợi ích bất ngờ ăn đứt câu than vãn**: "sạc đầy 2 máy?", "mỏng 2mm mà chống rơi chuẩn quân đội?" cho score 9 và 6 — dùng nghịch lý + số liệu cụ thể.
-
-- **Hook dạng cảnh báo nỗi đau chung chung cho score thấp nhất (3)**: "mồ hôi ăn mòn nhôm", "trầy màn xót cả tháng", "màn hình bị người bên cạnh đọc" — tránh dọa dẫm mơ hồ, không có giải pháp rõ.
-
-- **Nhóm phụ kiện MacBook (dán, ốp, kê tay) tương tác kém đều đặn**: viết lại theo hướng lợi ích tích cực ("bọc kín vẫn thấy nguyên màu máy" nhỉnh hơn) thay vì chỉ nêu nguy cơ trầy xước.
-
-- **Nhóm sạc/hub/pin có tiềm năng cao nhất**: hook "cắm hết cùng lúc không rớt tốc độ", "gộp củ sạc + pin" — nhấn tiện lợi đa thiết bị, tốc độ, gọn gàng.
-
-- **Balo bị lặp mô-típ "ngăn laptop mỏng/không bảo vệ" quá nhiều → bão hòa, score toàn 3-4**: đổi góc sang tính năng độc đáo ("mở phẳng 180° như vali" được 2 reactions) thay vì chê balo đắt tiền.
-
-- **Tránh hook khích bác giá tiền ("balo 5/8 triệu mà...")**: gây phản cảm, không tạo share.
-
-- **Công thức nên nhân bản**: [nghịch lý/lợi ích gộp] + [con số cụ thể] + [câu hỏi mở] + emoji đơn → tối ưu cho Share, yếu tố nặng điểm nhất.
+- Câu hỏi mở/thách thức người đọc ("...mua làm gì?", "bỏ được chưa?", "mấy cục sạc lằng nhằng?") kéo comment tốt hơn câu khẳng định — ưu tiên kết hook bằng dấu hỏi.
+- Chốt bằng nghịch lý/con số gây sốc ("mỏng 2mm mà chống rơi chuẩn quân đội", "balo 5-8 triệu mà...") cho tương tác cao nhất — luôn cài một điểm "tưởng không thể mà lại có thể".
+- Đánh vào nỗi sợ mất tiền cụ thể (giá balo, máy trầy "xót cả tháng") hiệu quả hơn nỗi sợ mơ hồ ("mồ hôi ăn mòn nhôm") — gắn thiệt hại vào tài sản đắt tiền.
+- Sản phẩm balo/ốp chống sốc và giải pháp gọn dây sạc phản hồi nhỉnh nhất; nên khai thác nhóm này nhiều hơn.
+- Hook mô tả tình huống hằng ngày, dễ hình dung ("quăng đại lên bàn vẫn an toàn", "người ngồi cạnh đọc được màn hình") dễ tạo phản ứng hơn hook kỹ thuật khô khan.
+- Tránh hook thuần cảnh báo tiêu cực chung chung, không có con số hay giải pháp rõ ("bọc kín vẫn thấy màu máy", "kê tay bị ố") — nhóm này Score thấp đều.
+- Mỗi hook 1 emoji đúng ngữ cảnh, câu ngắn dưới 20 từ, một ý duy nhất; nhồi nhiều ý làm loãng phản ứng.
+- Shares gần như bằng 0 toàn bộ: thử thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tip cứu đồ đắt tiền) thay vì chỉ bán hàng để nâng Score.
