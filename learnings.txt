@@ -1,15 +1,15 @@
-- **Hook có yếu tố tiện ích "2-trong-1" cho tương tác cao nhất** (sạc+Bluetooth trong xe Score=9, củ sạc kiêm pin, ốp mỏng vẫn chống rơi) — ưu tiên concept giải quyết nhiều nhu cầu bằng 1 món.
+- **Hook đạt Share (score cao nhất) đều nói lợi ích "gộp nhiều thành một"**: sạc nhiều máy cùng lúc, thay thế 2 món bằng 1 → ưu tiên góc "một món giải quyết nhiều việc".
 
-- **Sản phẩm sạc/pin/hub có shares cao nhất** (chỉ có 1 share duy nhất, thuộc nhóm sạc) — nhấn tính "hữu ích để lưu/gửi cho người khác".
+- **Câu hỏi gợi tò mò kèm con số/lợi ích bất ngờ ăn đứt câu than vãn**: "sạc đầy 2 máy?", "mỏng 2mm mà chống rơi chuẩn quân đội?" cho score 9 và 6 — dùng nghịch lý + số liệu cụ thể.
 
-- **Hook dạng câu hỏi nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội?") kéo comment tốt** — dùng cấu trúc "vừa X vừa Y?" tạo mâu thuẫn khiến người xem muốn hỏi.
+- **Hook dạng cảnh báo nỗi đau chung chung cho score thấp nhất (3)**: "mồ hôi ăn mòn nhôm", "trầy màn xót cả tháng", "màn hình bị người bên cạnh đọc" — tránh dọa dẫm mơ hồ, không có giải pháp rõ.
 
-- **Hook "chê đồ đắt tiền" (balo 5-8 triệu mà vẫn lỗi) gợi tranh luận, giữ comment ổn định** — nêu điểm yếu bất ngờ của sản phẩm cao cấp.
+- **Nhóm phụ kiện MacBook (dán, ốp, kê tay) tương tác kém đều đặn**: viết lại theo hướng lợi ích tích cực ("bọc kín vẫn thấy nguyên màu máy" nhỉnh hơn) thay vì chỉ nêu nguy cơ trầy xước.
 
-- **Tránh hook mô tả tính năng phẳng, thiếu cảm xúc** ("bọc kín vẫn thấy màu máy", "balo hay cặp xách") — Score thấp nhất (=3), không tạo phản ứng.
+- **Nhóm sạc/hub/pin có tiềm năng cao nhất**: hook "cắm hết cùng lúc không rớt tốc độ", "gộp củ sạc + pin" — nhấn tiện lợi đa thiết bị, tốc độ, gọn gàng.
 
-- **Hạn chế chủ đề "sợ trầy/xước MacBook" lặp lại quá nhiều** (mồ hôi, bóng ố, trầy màn) — bão hòa, tương tác đều mức đáy 3-4.
+- **Balo bị lặp mô-típ "ngăn laptop mỏng/không bảo vệ" quá nhiều → bão hòa, score toàn 3-4**: đổi góc sang tính năng độc đáo ("mở phẳng 180° như vali" được 2 reactions) thay vì chê balo đắt tiền.
 
-- **Mở đầu bằng nỗi đau cụ thể + emoji cảm xúc mạnh (😰😩😬) tốt hơn emoji trung tính** (🎒🔌🤍) — tăng khả năng có reaction.
+- **Tránh hook khích bác giá tiền ("balo 5/8 triệu mà...")**: gây phản cảm, không tạo share.
 
-- **Ưu tiên sản phẩm phụ kiện sạc/kết nối hơn balo & ốp lưng** — nhóm balo/ốp chiếm đa số nhưng Score gần như luôn thấp (3-4), dễ chìm.
+- **Công thức nên nhân bản**: [nghịch lý/lợi ích gộp] + [con số cụ thể] + [câu hỏi mở] + emoji đơn → tối ưu cho Share, yếu tố nặng điểm nhất.
