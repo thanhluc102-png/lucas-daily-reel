@@ -1,8 +1,8 @@
-- Câu hỏi mở/thách thức người đọc ("...mua làm gì?", "bỏ được chưa?", "mấy cục sạc lằng nhằng?") kéo comment tốt hơn câu khẳng định — ưu tiên kết hook bằng dấu hỏi.
-- Chốt bằng nghịch lý/con số gây sốc ("mỏng 2mm mà chống rơi chuẩn quân đội", "balo 5-8 triệu mà...") cho tương tác cao nhất — luôn cài một điểm "tưởng không thể mà lại có thể".
-- Đánh vào nỗi sợ mất tiền cụ thể (giá balo, máy trầy "xót cả tháng") hiệu quả hơn nỗi sợ mơ hồ ("mồ hôi ăn mòn nhôm") — gắn thiệt hại vào tài sản đắt tiền.
-- Sản phẩm balo/ốp chống sốc và giải pháp gọn dây sạc phản hồi nhỉnh nhất; nên khai thác nhóm này nhiều hơn.
-- Hook mô tả tình huống hằng ngày, dễ hình dung ("quăng đại lên bàn vẫn an toàn", "người ngồi cạnh đọc được màn hình") dễ tạo phản ứng hơn hook kỹ thuật khô khan.
-- Tránh hook thuần cảnh báo tiêu cực chung chung, không có con số hay giải pháp rõ ("bọc kín vẫn thấy màu máy", "kê tay bị ố") — nhóm này Score thấp đều.
-- Mỗi hook 1 emoji đúng ngữ cảnh, câu ngắn dưới 20 từ, một ý duy nhất; nhồi nhiều ý làm loãng phản ứng.
-- Shares gần như bằng 0 toàn bộ: thử thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tip cứu đồ đắt tiền) thay vì chỉ bán hàng để nâng Score.
+- **Hook thắng nhất: "quăng đại/xóc mạnh mà laptop vẫn an toàn"** — kịch bản hành động mạnh + kết quả yên tâm (Score 8) là công thức cần lặp lại.
+- **Balo bảo vệ laptop là dòng sản phẩm mạnh nhất**: cứ đánh vào nỗi sợ máy hỏng do va đập, rơi, ướt → tương tác đều cao.
+- **Nghịch lý gây tò mò kéo comment**: "mỏng 2mm mà chống rơi quân đội", "dày cộp mà máy không đẹp hơn" → tương phản số liệu/kỳ vọng ăn Score 6.
+- **Chạm nỗi sợ riêng tư/xấu hổ đời thực** ("người bên cạnh đọc hết màn hình bạn") kéo reactions tốt — khai thác thêm tình huống mất mặt nơi công cộng.
+- **Nên dùng con số cụ thể gây sốc** ("balo 5 triệu/8 triệu mà...") để tạo phản biện, nhưng phải kèm hậu quả rõ ràng mới ăn.
+- **Tránh hook mô tả tính năng phẳng, thiếu xung đột** ("bọc kín vẫn thấy màu máy", "balo hay cặp — cả hai") → Score thấp 3, không có kịch tính.
+- **Tránh dòng sạc/cáp/kê tay đơn thuần**: nỗi đau nhẹ, khó gây sợ → tương tác lẹt đẹt (Score 3-4).
+- **Công thức chuẩn: [hành động mạnh/số tiền lớn] + [nỗi sợ hỏng đồ đắt tiền] + [emoji cảm xúc 😬😩]**, ưu tiên câu hỏi phản biện để kích comment.
