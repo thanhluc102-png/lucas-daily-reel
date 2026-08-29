@@ -1,8 +1,8 @@
-- **Hook thắng nhất: "quăng đại/xóc mạnh mà laptop vẫn an toàn"** — kịch bản hành động mạnh + kết quả yên tâm (Score 8) là công thức cần lặp lại.
-- **Balo bảo vệ laptop là dòng sản phẩm mạnh nhất**: cứ đánh vào nỗi sợ máy hỏng do va đập, rơi, ướt → tương tác đều cao.
-- **Nghịch lý gây tò mò kéo comment**: "mỏng 2mm mà chống rơi quân đội", "dày cộp mà máy không đẹp hơn" → tương phản số liệu/kỳ vọng ăn Score 6.
-- **Chạm nỗi sợ riêng tư/xấu hổ đời thực** ("người bên cạnh đọc hết màn hình bạn") kéo reactions tốt — khai thác thêm tình huống mất mặt nơi công cộng.
-- **Nên dùng con số cụ thể gây sốc** ("balo 5 triệu/8 triệu mà...") để tạo phản biện, nhưng phải kèm hậu quả rõ ràng mới ăn.
-- **Tránh hook mô tả tính năng phẳng, thiếu xung đột** ("bọc kín vẫn thấy màu máy", "balo hay cặp — cả hai") → Score thấp 3, không có kịch tính.
-- **Tránh dòng sạc/cáp/kê tay đơn thuần**: nỗi đau nhẹ, khó gây sợ → tương tác lẹt đẹt (Score 3-4).
-- **Công thức chuẩn: [hành động mạnh/số tiền lớn] + [nỗi sợ hỏng đồ đắt tiền] + [emoji cảm xúc 😬😩]**, ưu tiên câu hỏi phản biện để kích comment.
+- Hook mạnh nhất là câu hỏi phản biện gây tò mò về nghịch lý sản phẩm ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" — Score 6): nêu mâu thuẫn mỏng/nhẹ vs bảo vệ để kích comment.
+- Hook chạm nỗi lo riêng tư/tình huống đời thực cụ thể ("Người ngồi cạnh đọc được hết màn hình bạn" — Score 5) cho reaction cao: vẽ cảnh xấu hổ, dễ hình dung.
+- Nhóm balo chống sốc mạnh ("quăng đại lên bàn vẫn an toàn" — Score 5) hiệu quả khi mô tả hành động phũ + kết quả máy an toàn, thay vì chỉ chê balo khác.
+- Ưu tiên sản phẩm: ốp lưng, phụ kiện bảo vệ MacBook, filter chống nhìn trộm, balo chống sốc — nhóm chạm cảm xúc "sợ hỏng đồ đắt tiền".
+- Công thức thắng: nghịch lý ("mỏng mà khỏe") HOẶC nỗi đau cụ thể + emoji cảm xúc (😩😬👀), luôn kết bằng dấu hỏi để mồi comment.
+- Nên tránh: hook chê bai chung chung, dạy đời ("mua làm gì?", "bỏ được chưa?") và hook so sánh giá tiền khô khan ("Balo 8 triệu mà...") — đa số chỉ Score 3.
+- Tránh hook mô tả tính năng phẳng, không mâu thuẫn/không nỗi đau ("Bọc kín vẫn thấy nguyên màu máy") — tương tác thấp nhất.
+- Mỗi hook nên nhắm 1 nỗi lo duy nhất, câu ngắn, ngôi "bạn", chốt bằng câu hỏi hoặc con số gây sốc để tối đa comment (yếu tố dễ đạt nhất, chiếm phần lớn Score).
