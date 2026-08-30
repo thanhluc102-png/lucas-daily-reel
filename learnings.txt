@@ -1,8 +1,8 @@
-- Câu hỏi tu từ chạm nỗi sợ mất mát ("xước một phát là tiếc", "rơi nhẹ là máy lãnh đủ") cho score cao nhất — ưu tiên khơi nỗi đau cụ thể.
-- Nhấn nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội", "ốp dày mà máy vẫn không đẹp") kéo comment mạnh nhất — dùng cấu trúc "X mà vẫn Y".
-- Chủ đề bảo vệ/riêng tư đời thường ("người ngồi cạnh đọc hết màn hình") hiệu quả — chọn tình huống ai cũng từng gặp.
-- Chê thẳng sản phẩm đắt tiền kém chất lượng ("balo 5 triệu", "balo 8 triệu") tạo tương tác tốt — dùng con số giá gây sốc.
-- Hook chung chung, mô tả tính năng phẳng ("ngăn laptop dạng treo", "đem 3 cục sạc cho vui") score thấp — tránh câu thiếu cảm xúc/xung đột.
-- Mở đầu bằng câu hỏi trực diện + emoji cảm xúc (😩😬😮‍💨) hiệu quả hơn emoji trung tính (🎒🔌).
-- Nhóm ốp lưng/vỏ máy nhỉnh hơn nhóm balo và sạc về tương tác — khai thác mạnh chủ đề bảo vệ thiết bị đắt tiền.
-- Không hook nào đạt share — thêm yếu tố "gửi ngay cho đứa hay làm hỏng máy" hoặc mẹo hữu ích để kích chia sẻ.
+- Hook dạng "vấn đề cụ thể + hậu quả tức thì" (đọc lén màn hình, quăng balo máy vẫn an toàn, ốp dày mà máy không đẹp) cho Score cao nhất (5-6) — luôn chạm nỗi đau thực tế.
+- Chèn con số/nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội", "balo 5-8 triệu mà…") kéo comment mạnh nhất — ưu tiên dùng.
+- Sản phẩm ốp/dán màn/túi chống sốc (bảo vệ thiết bị đắt tiền) tương tác tốt hơn hẳn nhóm sạc/hub.
+- Nhóm hook về "sạc lằng nhằng, nhiều cục sạc" đều Score thấp nhất (3) — nhàm, đại trà, nên hạn chế hoặc làm mới góc nhìn.
+- Hook chỉ mô tả tính năng phẳng ("bọc kín vẫn thấy màu máy", "ngăn laptop dạng treo") kém tương tác — tránh câu kể, thay bằng câu hỏi/thách thức.
+- Cảm xúc tiếc nuối, sợ mất tiền ("xước là tiếc cả ngày", "rơi nhẹ máy lãnh đủ") kích reaction — nên khai thác nỗi sợ hư hỏng đồ đắt.
+- Ưu tiên hook dạng câu hỏi phản biện hoặc tình huống "ai cũng từng gặp" hơn là khẳng định ưu điểm.
+- Emoji giữ 1 cái đúng ngữ cảnh (🛡️👀😬) tăng nhấn; tránh emoji trung tính (🔌) gắn với nhóm kém tương tác.
