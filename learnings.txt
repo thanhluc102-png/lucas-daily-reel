@@ -1,8 +1,8 @@
-- Hook mạnh nhất là **câu hỏi + con số cụ thể gây tò mò/sốc** ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" Score=6) → luôn nhét thông số nghịch lý vào hook.
-- Hook chạm **nỗi sợ riêng tư/an toàn cụ thể** ("Người ngồi cạnh đọc hết màn hình bạn" Score=5) cho tương tác cao hơn hook chung chung.
-- Kết cấu "sản phẩm đắt tiền mà vẫn lỗi" ("Balo 5 triệu/8 triệu mà…", "quăng/ném mà vẫn an toàn") kéo reaction tốt → dùng phản đề giá tiền + hành động mạnh.
-- Sản phẩm **ốp lưng & phụ kiện chống sốc** ăn tương tác nhất; balo mức trung bình; **miếng kê tay và dây sạc** yếu nhất (Score=3) → hạn chế hook về sạc/kê tay hoặc phải làm mới góc nhìn.
-- Tránh hook mô tả phẳng, không có mâu thuẫn ("Ngăn laptop dạng treo…", "Bọc kín vẫn thấy màu máy") → luôn cần yếu tố xung đột hoặc "trước–sau".
-- Emoji 1 cái đặt cuối hook là đủ; dùng emoji cảm xúc (😬😩⚡🛡️) khớp nỗi đau, không lạm dụng.
-- Ưu tiên **câu hỏi tu từ** hoặc **tuyên bố nghịch lý** thay vì kể tính năng; hook càng cụ thể (số đo, giá, tình huống) càng thắng.
-- Toàn bộ share=0 → thêm CTA kích chia sẻ hoặc nội dung "đáng lưu/gửi cho hội bạn" để nâng Score.
+- Câu hỏi tu từ chạm nỗi sợ mất mát ("xước một phát là tiếc", "rơi nhẹ là máy lãnh đủ") cho score cao nhất — ưu tiên khơi nỗi đau cụ thể.
+- Nhấn nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội", "ốp dày mà máy vẫn không đẹp") kéo comment mạnh nhất — dùng cấu trúc "X mà vẫn Y".
+- Chủ đề bảo vệ/riêng tư đời thường ("người ngồi cạnh đọc hết màn hình") hiệu quả — chọn tình huống ai cũng từng gặp.
+- Chê thẳng sản phẩm đắt tiền kém chất lượng ("balo 5 triệu", "balo 8 triệu") tạo tương tác tốt — dùng con số giá gây sốc.
+- Hook chung chung, mô tả tính năng phẳng ("ngăn laptop dạng treo", "đem 3 cục sạc cho vui") score thấp — tránh câu thiếu cảm xúc/xung đột.
+- Mở đầu bằng câu hỏi trực diện + emoji cảm xúc (😩😬😮‍💨) hiệu quả hơn emoji trung tính (🎒🔌).
+- Nhóm ốp lưng/vỏ máy nhỉnh hơn nhóm balo và sạc về tương tác — khai thác mạnh chủ đề bảo vệ thiết bị đắt tiền.
+- Không hook nào đạt share — thêm yếu tố "gửi ngay cho đứa hay làm hỏng máy" hoặc mẹo hữu ích để kích chia sẻ.
