@@ -1,8 +1,8 @@
-- Hook dạng "vấn đề cụ thể + hậu quả tức thì" (đọc lén màn hình, quăng balo máy vẫn an toàn, ốp dày mà máy không đẹp) cho Score cao nhất (5-6) — luôn chạm nỗi đau thực tế.
-- Chèn con số/nghịch lý gây tò mò ("mỏng 2mm mà chống rơi chuẩn quân đội", "balo 5-8 triệu mà…") kéo comment mạnh nhất — ưu tiên dùng.
-- Sản phẩm ốp/dán màn/túi chống sốc (bảo vệ thiết bị đắt tiền) tương tác tốt hơn hẳn nhóm sạc/hub.
-- Nhóm hook về "sạc lằng nhằng, nhiều cục sạc" đều Score thấp nhất (3) — nhàm, đại trà, nên hạn chế hoặc làm mới góc nhìn.
-- Hook chỉ mô tả tính năng phẳng ("bọc kín vẫn thấy màu máy", "ngăn laptop dạng treo") kém tương tác — tránh câu kể, thay bằng câu hỏi/thách thức.
-- Cảm xúc tiếc nuối, sợ mất tiền ("xước là tiếc cả ngày", "rơi nhẹ máy lãnh đủ") kích reaction — nên khai thác nỗi sợ hư hỏng đồ đắt.
-- Ưu tiên hook dạng câu hỏi phản biện hoặc tình huống "ai cũng từng gặp" hơn là khẳng định ưu điểm.
-- Emoji giữ 1 cái đúng ngữ cảnh (🛡️👀😬) tăng nhấn; tránh emoji trung tính (🔌) gắn với nhóm kém tương tác.
+- Ưu tiên hook dạng câu hỏi/nghịch lý gây sốc: "mỏng 2mm mà chống rơi quân đội?", "ốp dày mà máy vẫn không đẹp?" — cho Score cao nhất (5-6) vì kích thích bình luận phản biện.
+- Đánh vào nỗi sợ riêng tư/xấu hổ nơi công cộng ("người ngồi cạnh đọc hết màn hình") — kéo Reactions cao (Score 5).
+- Nhấn hành động mạnh + kết quả an toàn ("ném/quăng đại balo mà máy vẫn nguyên") — hiệu quả hơn mô tả tính năng khô khan.
+- Dùng con số cụ thể tạo tương phản ("balo 5-8 triệu mà ngăn laptop dở") — tốt hơn hook chung chung.
+- Tránh hook mô tả tính năng đơn thuần, phẳng lặng ("bọc kín vẫn thấy màu máy", "mở phẳng như vali", "ngăn treo") — Score thấp nhất (3).
+- Tránh hook về sạc/hub kể lể ("đem 3 cục sạc", "dây lòng thòng") — tương tác kém đều (3).
+- Công thức thắng: [Nghịch lý/câu hỏi] + [nỗi đau cụ thể] + [emoji cảm xúc] — ưu tiên chọc tức hoặc gây tò mò thay vì khoe ưu điểm.
+- Sản phẩm ốp lưng và balo chống sốc "ăn" hơn phụ kiện sạc; nên tăng tỉ trọng hai nhóm này.
