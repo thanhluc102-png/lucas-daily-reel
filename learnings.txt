@@ -1,8 +1,8 @@
-- Hook mạnh nhất: nêu **con số cụ thể + phản đề bất ngờ** (mỏng 2mm mà chống rơi chuẩn quân đội, sạc 4 thiết bị 140W) → Score cao nhất (6).
-- Hook chạm **nỗi sợ riêng tư/xã hội** (người bên cạnh đọc lén màn hình) hoặc **hành động phá cách gây tò mò** (quăng/ném balo mà máy vẫn nguyên) kéo Reactions lên 2 → Score 5.
-- Ưu tiên nhóm sản phẩm: **ốp mỏng chống sốc, phụ kiện chống nhìn trộm, balo chống va đập kiểu "quăng/ném"** — nhóm này ăn tương tác tốt nhất.
-- Dùng **dấu hỏi (?) thách thức** đặt ở cuối hook để kích comment, mạnh hơn câu khẳng định phẳng.
-- Tránh hook chỉ **mô tả tính năng chung chung, không con số, không kịch tính** (mở phẳng như vali, ngăn treo, cắm hết một lúc) → Score thấp 3-4.
-- Tránh **lặp mô típ "balo X triệu mà..."** quá nhiều lần — hiệu ứng nhàm, tương tác tụt về 3.
-- Ưu tiên **hình ảnh hành động cực đoan + emoji khiên/tia sét** (🛡️⚡) hơn emoji thở dài (😩😮‍💨) vốn gắn với các hook điểm thấp.
-- Công thức đề xuất: **[Con số/tình huống cực đoan] + [phản đề "mà vẫn..."] + [dấu ? hoặc tò mò]** để tối ưu Reactions lẫn Comments.
+- Mở hook bằng câu hỏi gây tò mò/nghi vấn ("...mà vẫn...?", "...à?") cho tương tác cao nhất — kích comment mạnh.
+- Chèn nghịch lý gây sốc (mỏng 2mm mà chống rơi quân đội, ném balo mà máy nguyên) → Score cao nhất (6), luôn ưu tiên.
+- Đánh vào nỗi sợ riêng tư/mất mát cụ thể ("người bên cạnh đọc hết màn hình", "trầy xước tiếc cả ngày") → kéo Reactions tốt.
+- Nêu con số gây bực (balo 5-8 triệu mà thiếu tính năng) để tạo phản ứng, nhưng đừng lạm dụng vì hiệu quả trung bình.
+- Tránh hook mô tả tính năng phẳng, kể lể ("mở phẳng như vali", "sạc 140W", "cắm hết không rớt tốc độ") → Score thấp, thiếu cảm xúc.
+- Tránh hook nêu vấn đề chung chung, không kịch tính ("gập cổ đau vai gáy", "ngăn laptop dạng treo") → Score đáy (3).
+- Luôn thêm 1 emoji đúng ngữ cảnh + chốt bằng dấu ? hoặc cảm thán để đẩy comment (yếu tố nặng ×3).
+- Ưu tiên nhóm ốp lưng & balo chống sốc dạng nghịch lý; nhóm sạc/hub cần viết sắc hơn vì đang đều đều kém nổi.
