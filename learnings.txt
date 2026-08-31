@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi gây tò mò/nghi vấn ("...mà vẫn...?", "...à?") cho tương tác cao nhất — kích comment mạnh.
-- Chèn nghịch lý gây sốc (mỏng 2mm mà chống rơi quân đội, ném balo mà máy nguyên) → Score cao nhất (6), luôn ưu tiên.
-- Đánh vào nỗi sợ riêng tư/mất mát cụ thể ("người bên cạnh đọc hết màn hình", "trầy xước tiếc cả ngày") → kéo Reactions tốt.
-- Nêu con số gây bực (balo 5-8 triệu mà thiếu tính năng) để tạo phản ứng, nhưng đừng lạm dụng vì hiệu quả trung bình.
-- Tránh hook mô tả tính năng phẳng, kể lể ("mở phẳng như vali", "sạc 140W", "cắm hết không rớt tốc độ") → Score thấp, thiếu cảm xúc.
-- Tránh hook nêu vấn đề chung chung, không kịch tính ("gập cổ đau vai gáy", "ngăn laptop dạng treo") → Score đáy (3).
-- Luôn thêm 1 emoji đúng ngữ cảnh + chốt bằng dấu ? hoặc cảm thán để đẩy comment (yếu tố nặng ×3).
-- Ưu tiên nhóm ốp lưng & balo chống sốc dạng nghịch lý; nhóm sạc/hub cần viết sắc hơn vì đang đều đều kém nổi.
+- Mở hook bằng **câu hỏi + con số/nghịch lý** ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?", "Sạc 4 thiết bị mà vẫn 140W?") — kéo comment cao nhất (Score 5-6).
+- Đánh vào **nỗi đau riêng tư/bất ngờ** ("Người ngồi cạnh đọc hết màn hình bạn 👀") hiệu quả hơn nỗi đau chung chung về trầy xước.
+- Ưu tiên nhóm **ốp lưng & phụ kiện sạc**: tỷ lệ tương tác ổn định, dễ tạo tò mò bằng thông số.
+- Dùng **tương phản "đắt tiền mà vẫn lỗi"** ("Balo 5 triệu mà laptop đặt sát đáy?") tạo giật mình, giữ Score khá.
+- Tránh hook **than vãn một chiều, không có câu hỏi** ("Màn trầy một vệt xót cả tháng", "Gập cổ cả ngày") — Score thấp nhất (3).
+- Tránh mô tả **tính năng phẳng, kể lể** ("Balo mở phẳng như vali", "có ngăn đệm chưa?") — thiếu kịch tính, tương tác kém.
+- Chèn **emoji đúng ngữ cảnh sản phẩm** (🛡️🔌👀) tăng nhấn mạnh; hạn chế emoji thở dài (😩😮‍💨) vì gắn với hook yếu.
+- Công thức thắng: **[Câu hỏi/nghịch lý] + [con số cụ thể] + [lợi ích chống chịu/bảo vệ]** — nhắm phản xạ "thật không?" để đẩy comment.
