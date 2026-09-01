@@ -1,8 +1,15 @@
-- Mở hook bằng **câu hỏi + con số/nghịch lý** ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?", "Sạc 4 thiết bị mà vẫn 140W?") — kéo comment cao nhất (Score 5-6).
-- Đánh vào **nỗi đau riêng tư/bất ngờ** ("Người ngồi cạnh đọc hết màn hình bạn 👀") hiệu quả hơn nỗi đau chung chung về trầy xước.
-- Ưu tiên nhóm **ốp lưng & phụ kiện sạc**: tỷ lệ tương tác ổn định, dễ tạo tò mò bằng thông số.
-- Dùng **tương phản "đắt tiền mà vẫn lỗi"** ("Balo 5 triệu mà laptop đặt sát đáy?") tạo giật mình, giữ Score khá.
-- Tránh hook **than vãn một chiều, không có câu hỏi** ("Màn trầy một vệt xót cả tháng", "Gập cổ cả ngày") — Score thấp nhất (3).
-- Tránh mô tả **tính năng phẳng, kể lể** ("Balo mở phẳng như vali", "có ngăn đệm chưa?") — thiếu kịch tính, tương tác kém.
-- Chèn **emoji đúng ngữ cảnh sản phẩm** (🛡️🔌👀) tăng nhấn mạnh; hạn chế emoji thở dài (😩😮‍💨) vì gắn với hook yếu.
-- Công thức thắng: **[Câu hỏi/nghịch lý] + [con số cụ thể] + [lợi ích chống chịu/bảo vệ]** — nhắm phản xạ "thật không?" để đẩy comment.
+- Ưu tiên hook dạng **câu hỏi tò mò + nghịch lý** ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" – Score 6 cao nhất): nêu một điều tưởng bất khả rồi khẳng định làm được.
+
+- Dùng **hook chạm nỗi sợ/khó chịu đời thường cụ thể** ("Người ngồi cạnh đọc hết màn hình bạn", "Màn MacBook trầy một vệt xót cả tháng") – dễ khơi bình luận và reactions.
+
+- Chỉ đích danh **con số cụ thể** (2mm, 140W, 12L, "balo 5 triệu/8 triệu") để tăng độ tin và gây tranh luận giá trị.
+
+- Sản phẩm **ốp lưng chống sốc** và **phụ kiện chống nhìn trộm màn hình** kéo tương tác tốt nhất; hãy khai thác mạnh nhóm này.
+
+- Tránh hook **mô tả tính năng phẳng, thiếu xung đột** ("Balo mở phẳng như vali", "Ngăn laptop dạng treo") – chỉ đạt Score 3, không có cảm xúc.
+
+- Tránh hook **sạc/ổ cắm chung chung** ("Ổ cắm nhà bạn bị chiếm chỗ?") – nhóm sạc tương tác trung bình-thấp, cần thêm nghịch lý hoặc con số để cứu.
+
+- Mỗi hook giữ **1 emoji duy nhất, cuối câu**, độ dài ngắn 1–2 dòng, kết bằng dấu hỏi hoặc mặt tiếc nuối (😬😩) để đẩy comment.
+
+- Công thức thắng: **[Vật quen thuộc + giá/thông số] + [rủi ro hoặc nghịch lý] + [dấu hỏi]** → cấu trúc này lặp lại ở mọi hook Score cao.
