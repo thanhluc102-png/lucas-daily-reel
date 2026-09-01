@@ -1,15 +1,15 @@
-- Ưu tiên hook dạng **câu hỏi tò mò + nghịch lý** ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" – Score 6 cao nhất): nêu một điều tưởng bất khả rồi khẳng định làm được.
+- **Hook mạnh nhất = câu hỏi tò mò + con số nghịch lý**: "Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" (Score 6) — gây bất ngờ, ép người xem phản hồi.
 
-- Dùng **hook chạm nỗi sợ/khó chịu đời thường cụ thể** ("Người ngồi cạnh đọc hết màn hình bạn", "Màn MacBook trầy một vệt xót cả tháng") – dễ khơi bình luận và reactions.
+- **Ưu tiên chủ đề phụ kiện ốp lưng & bảo mật màn hình**: các hook về ốp chống rơi, kính chống nhìn trộm ("người ngồi cạnh đọc hết màn hình bạn") đạt Score 5-6, cao đều.
 
-- Chỉ đích danh **con số cụ thể** (2mm, 140W, 12L, "balo 5 triệu/8 triệu") để tăng độ tin và gây tranh luận giá trị.
+- **Dùng nỗi sợ cụ thể, tình huống đời thường**: "màn MacBook trầy một vệt xót cả tháng", "người bên cạnh đọc hết màn hình" — chạm đúng pain point dễ hình dung, tăng comment.
 
-- Sản phẩm **ốp lưng chống sốc** và **phụ kiện chống nhìn trộm màn hình** kéo tương tác tốt nhất; hãy khai thác mạnh nhóm này.
+- **Chèn con số + nghịch lý giá tiền/thông số**: "Balo 5 triệu mà ngăn laptop sát đáy?", "Sạc 4 thiết bị 140W?" — số liệu tạo tin cậy và kích thích tranh luận.
 
-- Tránh hook **mô tả tính năng phẳng, thiếu xung đột** ("Balo mở phẳng như vali", "Ngăn laptop dạng treo") – chỉ đạt Score 3, không có cảm xúc.
+- **Tránh hook balo chung chung, mô tả tính năng phẳng**: "Ngăn laptop dạng treo", "Balo mở phẳng như vali", "Balo 12L có ngăn đệm chưa?" chỉ đạt Score 3-4 — thiếu cảm xúc, không gây tò mò.
 
-- Tránh hook **sạc/ổ cắm chung chung** ("Ổ cắm nhà bạn bị chiếm chỗ?") – nhóm sạc tương tác trung bình-thấp, cần thêm nghịch lý hoặc con số để cứu.
+- **Tránh hook sạc/ổ cắm kể lể lằng nhằng**: "Ổ cắm nhà bạn bị đống củ sạc chiếm chỗ?" (Score 3) — vấn đề nhạt, không đủ đau để tương tác.
 
-- Mỗi hook giữ **1 emoji duy nhất, cuối câu**, độ dài ngắn 1–2 dòng, kết bằng dấu hỏi hoặc mặt tiếc nuối (😬😩) để đẩy comment.
+- **Ưu tiên emoji khiên 🛡️ / mắt 👀 nhấn mạnh bảo vệ & riêng tư**, tránh lạm dụng 🎒 gắn với các hook balo yếu.
 
-- Công thức thắng: **[Vật quen thuộc + giá/thông số] + [rủi ro hoặc nghịch lý] + [dấu hỏi]** → cấu trúc này lặp lại ở mọi hook Score cao.
+- **Công thức nên nhân bản**: [Nghịch lý/số liệu bất ngờ] + [pain point cụ thể] + [câu hỏi bỏ lửng] → đẩy comment, tối ưu Score.
