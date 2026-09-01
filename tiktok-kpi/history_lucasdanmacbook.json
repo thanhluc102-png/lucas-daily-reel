@@ -7,5 +7,28 @@
     "score": null,
     "payout": null,
     "note": "Mốc khởi tạo — lấy thật từ trang công khai TikTok. Mốc chạy thử trước đó trong cùng ngày đã gộp lại vào đây để không tính điểm nhầm trên khoảng cách vài tiếng. Kỳ tiếp theo (chạy tự động ngày 1 hàng tháng) sẽ so với mốc này."
+  },
+  {
+    "date": "2026-09-01",
+    "follower": 4898,
+    "heart": 189400,
+    "videoCount": 326,
+    "score": 63.4,
+    "payout": 2633517,
+    "note": null,
+    "detail": {
+      "growthPct": 1.96,
+      "videosThis": 11,
+      "heartsThis": 5600,
+      "baselineHearts": 5600,
+      "score1": 59.8,
+      "score2": 91.7,
+      "score3": 50,
+      "totalScore": 63.4,
+      "violation": false,
+      "base": 2000000,
+      "bonus": 633517,
+      "payout": 2633517
+    }
   }
 ]
