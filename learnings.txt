@@ -1,15 +1,8 @@
-- **Hook mạnh nhất = câu hỏi "vạch trần" nỗi đau cụ thể + con số** (Ốp 2mm chống rơi quân đội = Score 6; "người ngồi cạnh đọc hết màn hình" = 5). Ưu tiên nghịch lý mỏng-nhẹ-nhưng-khỏe và tình huống riêng tư bị lộ.
-
-- **Sản phẩm ăn khách: ốp lưng/phụ kiện bảo vệ và tấm chống nhìn trộm** cho tương tác cao nhất. Balo laptop tầm trung, không có gì mới lạ.
-
-- **Dùng phép nghịch lý gây tò mò** ("mỏng 2mm mà chống rơi chuẩn quân đội", "quăng đại lên bàn máy vẫn an toàn") kéo Reactions cao hơn hook than thở đơn thuần.
-
-- **Chèn con số/giá tiền tạo cú sốc** ("balo 5 triệu mà…", "balo 8 triệu mà…", "sạc 140W") — nhưng chỉ hiệu quả khi kèm hậu quả cụ thể cho người dùng.
-
-- **Tránh hook than vãn một chiều, không có twist** ("màn trầy xót cả tháng", "balo 200K để laptop chịu trận", "ngăn treo không đập sàn") — toàn Score 3, thấp nhất.
-
-- **Tránh lạm dụng chủ đề balo/sạc kể lể tính năng khô** ("sạc 4 thiết bị", "đem 3 cục sạc", "mở phẳng như vali") — chỉ quanh Score 3-4, bão hòa.
-
-- **Viết ngắn, 1 câu, kết bằng emoji đúng ngữ cảnh + dấu hỏi** để kích comment; giữ giọng đời thường, chạm thẳng cảnh dùng thật (quán cà phê, vào cua, công tác).
-
-- **Toàn bộ Shares = 0**: chưa hook nào đáng chia sẻ. Thử thêm yếu tố "mẹo hay/bí kíp bất ngờ" hoặc "test thử thách" để tạo lý do share.
+- Hook mở bằng câu hỏi trực diện chạm nỗi đau cụ thể (bảo mật màn hình, laptop rơi, ốp quá dày) đạt score cao nhất (5-6); ưu tiên kiểu này.
+- Kịch tính hóa rủi ro tài sản đắt tiền ("Balo 5 triệu", "MacBook", "kính điện thoại gặp nguy") kích comment tốt — nêu rõ giá trị món đồ đang bị đe dọa.
+- Nghịch lý gây tò mò ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội", "Ốp dày cả cm mà máy vẫn không đẹp hơn") tạo tranh luận, giữ lại.
+- Hook nêu tình huống đời thường ai cũng gặp (người bên cạnh đọc màn hình, cổ vai gáy, dây sạc lòng thòng khi lái xe) dễ đồng cảm, nên duy trì.
+- Hook chỉ mô tả tính năng khô khan hoặc hỏi nhạt ("Balo 12L có ngăn đệm chưa?", "Ổ cắm bị chiếm chỗ?") cho score thấp (3) — tránh liệt kê thông số thuần.
+- Nhóm sạc/hub và balo mô tả công năng đơn thuần tương tác kém hơn nhóm chạm cảm xúc/an toàn; nếu viết sạc, phải gắn nỗi đau (rối, nặng, nguy hiểm khi lái xe).
+- Emoji 1 cái cuối câu (😬 👀 🛡️) hỗ trợ tốt; giữ ngắn, 1 câu, kết bằng dấu hỏi hoặc chấm lửng gây hụt hẫng.
+- Toàn bộ share = 0: cần thêm yếu tố "đáng chia sẻ" (mẹo bất ngờ, con số sốc, tip bảo vệ đồ) để nâng score qua ngưỡng share.
