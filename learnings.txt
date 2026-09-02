@@ -1,15 +1,15 @@
-- **Hook mạnh nhất = câu hỏi tò mò + con số nghịch lý**: "Ốp mỏng 2mm mà chống rơi chuẩn quân đội?" (Score 6) — gây bất ngờ, ép người xem phản hồi.
+- **Hook mạnh nhất = câu hỏi "vạch trần" nỗi đau cụ thể + con số** (Ốp 2mm chống rơi quân đội = Score 6; "người ngồi cạnh đọc hết màn hình" = 5). Ưu tiên nghịch lý mỏng-nhẹ-nhưng-khỏe và tình huống riêng tư bị lộ.
 
-- **Ưu tiên chủ đề phụ kiện ốp lưng & bảo mật màn hình**: các hook về ốp chống rơi, kính chống nhìn trộm ("người ngồi cạnh đọc hết màn hình bạn") đạt Score 5-6, cao đều.
+- **Sản phẩm ăn khách: ốp lưng/phụ kiện bảo vệ và tấm chống nhìn trộm** cho tương tác cao nhất. Balo laptop tầm trung, không có gì mới lạ.
 
-- **Dùng nỗi sợ cụ thể, tình huống đời thường**: "màn MacBook trầy một vệt xót cả tháng", "người bên cạnh đọc hết màn hình" — chạm đúng pain point dễ hình dung, tăng comment.
+- **Dùng phép nghịch lý gây tò mò** ("mỏng 2mm mà chống rơi chuẩn quân đội", "quăng đại lên bàn máy vẫn an toàn") kéo Reactions cao hơn hook than thở đơn thuần.
 
-- **Chèn con số + nghịch lý giá tiền/thông số**: "Balo 5 triệu mà ngăn laptop sát đáy?", "Sạc 4 thiết bị 140W?" — số liệu tạo tin cậy và kích thích tranh luận.
+- **Chèn con số/giá tiền tạo cú sốc** ("balo 5 triệu mà…", "balo 8 triệu mà…", "sạc 140W") — nhưng chỉ hiệu quả khi kèm hậu quả cụ thể cho người dùng.
 
-- **Tránh hook balo chung chung, mô tả tính năng phẳng**: "Ngăn laptop dạng treo", "Balo mở phẳng như vali", "Balo 12L có ngăn đệm chưa?" chỉ đạt Score 3-4 — thiếu cảm xúc, không gây tò mò.
+- **Tránh hook than vãn một chiều, không có twist** ("màn trầy xót cả tháng", "balo 200K để laptop chịu trận", "ngăn treo không đập sàn") — toàn Score 3, thấp nhất.
 
-- **Tránh hook sạc/ổ cắm kể lể lằng nhằng**: "Ổ cắm nhà bạn bị đống củ sạc chiếm chỗ?" (Score 3) — vấn đề nhạt, không đủ đau để tương tác.
+- **Tránh lạm dụng chủ đề balo/sạc kể lể tính năng khô** ("sạc 4 thiết bị", "đem 3 cục sạc", "mở phẳng như vali") — chỉ quanh Score 3-4, bão hòa.
 
-- **Ưu tiên emoji khiên 🛡️ / mắt 👀 nhấn mạnh bảo vệ & riêng tư**, tránh lạm dụng 🎒 gắn với các hook balo yếu.
+- **Viết ngắn, 1 câu, kết bằng emoji đúng ngữ cảnh + dấu hỏi** để kích comment; giữ giọng đời thường, chạm thẳng cảnh dùng thật (quán cà phê, vào cua, công tác).
 
-- **Công thức nên nhân bản**: [Nghịch lý/số liệu bất ngờ] + [pain point cụ thể] + [câu hỏi bỏ lửng] → đẩy comment, tối ưu Score.
+- **Toàn bộ Shares = 0**: chưa hook nào đáng chia sẻ. Thử thêm yếu tố "mẹo hay/bí kíp bất ngờ" hoặc "test thử thách" để tạo lý do share.
