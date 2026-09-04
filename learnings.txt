@@ -1,15 +1,8 @@
-- **Hook số liệu gây sốc dẫn đầu**: "chống rơi chuẩn quân đội", "sạc 4 thiết bị 140W", "2mm", "8 triệu" — con số cụ thể + tuyên bố nghịch lý cho Score cao nhất (5-6).
-
-- **Ưu tiên nhóm phụ kiện ốp lưng & sạc/hub**: đây là hai dòng kéo tương tác tốt nhất (Score 5-6); balo chỉ đạt trung bình (3-4).
-
-- **Đặt câu hỏi "chọc nỗi đau riêng tư/an toàn"**: "người bên cạnh đọc được màn hình", "vừa lái vừa cắm dây" — chạm sự bất an cá nhân → Reactions nhích lên.
-
-- **Nêu nghịch lý phản trực giác**: "ốp mỏng mà chống rơi", "ốp dày mà máy không đẹp hơn" — tạo tò mò, giữ Score ≥5.
-
-- **Tránh hook mô tả tính năng phẳng, thiếu số/nghịch lý**: "ngăn laptop dạng treo", "mở phẳng như vali", "có ngăn đệm chưa" → Score thấp (3-4), quá kỹ thuật, không gợi cảm xúc.
-
-- **Tránh hook balo lặp mô-típ "ném/quăng vẫn an toàn"**: đã bão hòa, Score chỉ 3, nên đổi góc hoặc thêm số tiền/sốc.
-
-- **Công thức nên dùng**: [Con số/giá gây sốc] + [nghịch lý hoặc nỗi đau] + [emoji hợp ngữ cảnh 1 cái] — độ dài 1 câu.
-
-- **Ghi chú thực tế**: Shares = 0 toàn bộ, đòn bẩy chính là Comments; nên kết hook bằng câu hỏi mở kích người xem bình luận.
+- Hook mạnh nhất (Score 5) đều dùng cảnh cụ thể + nỗi đau tức thì: "quăng đại balo laptop vẫn an toàn", "người bên cạnh đọc màn hình", "3 cục sạc rối tung" — ưu tiên hình ảnh trực quan, tình huống đời thường.
+- Chủ đề bảo vệ laptop (chống va đập, ngăn treo) và quản lý sạc/dây rối cho tương tác ổn định cao nhất; nên khai thác nhiều.
+- Nhóm phụ kiện ô tô (giữ điện thoại, sạc trên xe) và màn hình chống nhìn trộm cũng đạt điểm khá — nên duy trì góc "an toàn khi lái" và "riêng tư".
+- Hook chống nước/mưa (Score 3) yếu nhất, dễ trùng lặp và mông lung — hạn chế hoặc phải gắn tình huống cụ thể hơn.
+- Câu hỏi trống chung chung ("có ngăn đệm chưa?", "ổ cắm bị chiếm chỗ?") kém hiệu quả; nên thay bằng khẳng định gây sốc hoặc con số cụ thể (140W, 8 triệu, 200K).
+- Dùng emoji đơn, đúng chủ đề (🎒🔌🚗👀) đặt cuối hook; tránh emoji thở dài 😮‍💨 lặp lại quá nhiều.
+- Mở đầu bằng nghịch lý/tương phản ("ốp dày cả cm mà máy không đẹp hơn", "balo 8 triệu mà không ngăn chống va") kích phản ứng tốt.
+- Shares luôn = 0: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, cảnh báo nguy hiểm thật) thay vì chỉ quảng cáo sản phẩm.
