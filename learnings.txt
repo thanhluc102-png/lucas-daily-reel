@@ -1,8 +1,15 @@
-- Hook mạnh nhất (Score 5) đều dùng cảnh cụ thể + nỗi đau tức thì: "quăng đại balo laptop vẫn an toàn", "người bên cạnh đọc màn hình", "3 cục sạc rối tung" — ưu tiên hình ảnh trực quan, tình huống đời thường.
-- Chủ đề bảo vệ laptop (chống va đập, ngăn treo) và quản lý sạc/dây rối cho tương tác ổn định cao nhất; nên khai thác nhiều.
-- Nhóm phụ kiện ô tô (giữ điện thoại, sạc trên xe) và màn hình chống nhìn trộm cũng đạt điểm khá — nên duy trì góc "an toàn khi lái" và "riêng tư".
-- Hook chống nước/mưa (Score 3) yếu nhất, dễ trùng lặp và mông lung — hạn chế hoặc phải gắn tình huống cụ thể hơn.
-- Câu hỏi trống chung chung ("có ngăn đệm chưa?", "ổ cắm bị chiếm chỗ?") kém hiệu quả; nên thay bằng khẳng định gây sốc hoặc con số cụ thể (140W, 8 triệu, 200K).
-- Dùng emoji đơn, đúng chủ đề (🎒🔌🚗👀) đặt cuối hook; tránh emoji thở dài 😮‍💨 lặp lại quá nhiều.
-- Mở đầu bằng nghịch lý/tương phản ("ốp dày cả cm mà máy không đẹp hơn", "balo 8 triệu mà không ngăn chống va") kích phản ứng tốt.
-- Shares luôn = 0: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, cảnh báo nguy hiểm thật) thay vì chỉ quảng cáo sản phẩm.
+- **Cảnh báo riêng tư / an toàn cụ thể** cho điểm cao nhất (Score 5): "người ngồi cạnh đọc được màn hình", "vừa lái vừa với tay chỉnh điện thoại". Ưu tiên tình huống nguy cơ đời thường, dễ hình dung.
+
+- **Nỗi đau dây sạc rối / nhiều củ sạc** ổn định 4-5 điểm ("3 cục sạc 3 sợi dây rối tung"). Dùng con số cụ thể (3 cục, 4 thiết bị, 140W) để tăng lực.
+
+- **Chống va đập laptop kiểu khẳng định** ("quăng đại lên bàn laptop vẫn an toàn") ăn hơn kiểu **hỏi/dọa** ("laptop chịu trận mỗi cú va", "có ướt không") — nhóm dọa nạt thường chỉ 3 điểm.
+
+- **Tránh hook mở đầu bằng câu hỏi trừu tượng / trách móc** ("Balo 8 triệu mà không có ngăn...", "Balo 200K đang để laptop chịu trận") → toàn Score 3, kém nhất.
+
+- **Tránh sản phẩm lạc tông** (bơm lốp xe) và tình huống hiếm gặp (mưa, bể lốp) → tương tác thấp nhất.
+
+- **Viết theo hướng khẳng định lợi ích + hình ảnh động** ("mở phẳng như vali", "sạc 4 thiết bị 140W") tốt hơn câu hỏi tiêu cực.
+
+- **Emoji 1 cái, đặt cuối câu**, giữ hook 1 dòng ngắn — mọi hook đều làm vậy, giữ nguyên format.
+
+- **Không kỳ vọng Share/Comment lớn**: toàn bộ Share=0, Comment≈1 → điểm quyết định bởi Reactions, nên hook phải gây "gật đầu đồng cảm" ngay, đừng cầu kỳ.
