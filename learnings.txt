@@ -1,8 +1,15 @@
-- Hook mở bằng câu hỏi trực diện chạm nỗi đau cụ thể (bảo mật màn hình, laptop rơi, ốp quá dày) đạt score cao nhất (5-6); ưu tiên kiểu này.
-- Kịch tính hóa rủi ro tài sản đắt tiền ("Balo 5 triệu", "MacBook", "kính điện thoại gặp nguy") kích comment tốt — nêu rõ giá trị món đồ đang bị đe dọa.
-- Nghịch lý gây tò mò ("Ốp mỏng 2mm mà chống rơi chuẩn quân đội", "Ốp dày cả cm mà máy vẫn không đẹp hơn") tạo tranh luận, giữ lại.
-- Hook nêu tình huống đời thường ai cũng gặp (người bên cạnh đọc màn hình, cổ vai gáy, dây sạc lòng thòng khi lái xe) dễ đồng cảm, nên duy trì.
-- Hook chỉ mô tả tính năng khô khan hoặc hỏi nhạt ("Balo 12L có ngăn đệm chưa?", "Ổ cắm bị chiếm chỗ?") cho score thấp (3) — tránh liệt kê thông số thuần.
-- Nhóm sạc/hub và balo mô tả công năng đơn thuần tương tác kém hơn nhóm chạm cảm xúc/an toàn; nếu viết sạc, phải gắn nỗi đau (rối, nặng, nguy hiểm khi lái xe).
-- Emoji 1 cái cuối câu (😬 👀 🛡️) hỗ trợ tốt; giữ ngắn, 1 câu, kết bằng dấu hỏi hoặc chấm lửng gây hụt hẫng.
-- Toàn bộ share = 0: cần thêm yếu tố "đáng chia sẻ" (mẹo bất ngờ, con số sốc, tip bảo vệ đồ) để nâng score qua ngưỡng share.
+- **Hook số liệu gây sốc dẫn đầu**: "chống rơi chuẩn quân đội", "sạc 4 thiết bị 140W", "2mm", "8 triệu" — con số cụ thể + tuyên bố nghịch lý cho Score cao nhất (5-6).
+
+- **Ưu tiên nhóm phụ kiện ốp lưng & sạc/hub**: đây là hai dòng kéo tương tác tốt nhất (Score 5-6); balo chỉ đạt trung bình (3-4).
+
+- **Đặt câu hỏi "chọc nỗi đau riêng tư/an toàn"**: "người bên cạnh đọc được màn hình", "vừa lái vừa cắm dây" — chạm sự bất an cá nhân → Reactions nhích lên.
+
+- **Nêu nghịch lý phản trực giác**: "ốp mỏng mà chống rơi", "ốp dày mà máy không đẹp hơn" — tạo tò mò, giữ Score ≥5.
+
+- **Tránh hook mô tả tính năng phẳng, thiếu số/nghịch lý**: "ngăn laptop dạng treo", "mở phẳng như vali", "có ngăn đệm chưa" → Score thấp (3-4), quá kỹ thuật, không gợi cảm xúc.
+
+- **Tránh hook balo lặp mô-típ "ném/quăng vẫn an toàn"**: đã bão hòa, Score chỉ 3, nên đổi góc hoặc thêm số tiền/sốc.
+
+- **Công thức nên dùng**: [Con số/giá gây sốc] + [nghịch lý hoặc nỗi đau] + [emoji hợp ngữ cảnh 1 cái] — độ dài 1 câu.
+
+- **Ghi chú thực tế**: Shares = 0 toàn bộ, đòn bẩy chính là Comments; nên kết hook bằng câu hỏi mở kích người xem bình luận.
