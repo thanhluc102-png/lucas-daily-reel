@@ -1,15 +1,15 @@
-- **Cảnh báo riêng tư / an toàn cụ thể** cho điểm cao nhất (Score 5): "người ngồi cạnh đọc được màn hình", "vừa lái vừa với tay chỉnh điện thoại". Ưu tiên tình huống nguy cơ đời thường, dễ hình dung.
+- **Cảnh báo hậu quả cụ thể ăn điểm nhất**: hook vẽ ra tình huống nguy hiểm/khó chịu có thật (xe bể lốp giữa đường, người lạ đọc màn hình, vừa lái vừa chỉnh điện thoại) đạt Score 5 — luôn mở bằng nỗi đau đời thực.
 
-- **Nỗi đau dây sạc rối / nhiều củ sạc** ổn định 4-5 điểm ("3 cục sạc 3 sợi dây rối tung"). Dùng con số cụ thể (3 cục, 4 thiết bị, 140W) để tăng lực.
+- **Chủ đề "rối dây sạc" bền vững**: bàn làm việc nhiều cục sạc, dây lằng nhằng cho Score 4-5 ổn định — ưu tiên khai thác, nhưng gắn con số cụ thể (3 cục, 3 sợi) để tăng lực.
 
-- **Chống va đập laptop kiểu khẳng định** ("quăng đại lên bàn laptop vẫn an toàn") ăn hơn kiểu **hỏi/dọa** ("laptop chịu trận mỗi cú va", "có ướt không") — nhóm dọa nạt thường chỉ 3 điểm.
+- **Chủ đề an toàn khi lái xe** kéo tương tác tốt: nhấn khoảnh khắc "dễ gặp chuyện nhất" thay vì chỉ mô tả sản phẩm.
 
-- **Tránh hook mở đầu bằng câu hỏi trừu tượng / trách móc** ("Balo 8 triệu mà không có ngăn...", "Balo 200K đang để laptop chịu trận") → toàn Score 3, kém nhất.
+- **Tránh hook mô tả tính năng khô khan**: kiểu "ngăn laptop dạng treo", "balo mở phẳng như vali", "sạc 140W 4 thiết bị" chỉ đạt Score 3-4 — thiếu cảm xúc, đọc như spec.
 
-- **Tránh sản phẩm lạc tông** (bơm lốp xe) và tình huống hiếm gặp (mưa, bể lốp) → tương tác thấp nhất.
+- **Tránh câu hỏi phủ định yếu / giả định quá riêng**: "balo 12L có ngăn đệm chưa?", "balo 200K để laptop chịu trận" cho điểm thấp vì khó đồng cảm rộng.
 
-- **Viết theo hướng khẳng định lợi ích + hình ảnh động** ("mở phẳng như vali", "sạc 4 thiết bị 140W") tốt hơn câu hỏi tiêu cực.
+- **Ưu tiên đặt câu hỏi khiến người xem giật mình soi lại chính mình** (người bên cạnh đọc hết màn hình bạn) hơn là khoe điểm mạnh sản phẩm.
 
-- **Emoji 1 cái, đặt cuối câu**, giữ hook 1 dòng ngắn — mọi hook đều làm vậy, giữ nguyên format.
+- **Số cụ thể + hình ảnh mạnh trong hook** (3 cục, cả centimet, giữa đường) làm hook nổi hơn mô tả chung chung.
 
-- **Không kỳ vọng Share/Comment lớn**: toàn bộ Share=0, Comment≈1 → điểm quyết định bởi Reactions, nên hook phải gây "gật đầu đồng cảm" ngay, đừng cầu kỳ.
+- **Emoji chọn theo cảm xúc đau/khó chịu** (😮‍💨 😤 👀 🌧️) hợp hook cảnh báo; giữ 1 emoji cuối câu, không lạm dụng.
