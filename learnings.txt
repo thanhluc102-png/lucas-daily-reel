@@ -1,8 +1,8 @@
-- **Score cao nhất (5) tập trung vào 3 nhóm:** an toàn khi lái xe (chống trượt điện thoại, khỏi với tay), tình huống khẩn cấp (bể lốp cần bơm), và dẹp rối dây sạc trên bàn — ưu tiên viết hook cho các chủ đề này.
-- **Dùng "nỗi đau + tình huống nguy hiểm/bực bội cụ thể"** ("vừa lái vừa với tay là lúc dễ gặp chuyện", "xe bể lốp giữa đường kẹt cứng") cho tương tác tốt hơn hook mô tả tính năng suông.
-- **Hook kể khổ thường ngày, ai cũng thấy mình trong đó** ("3 cục sạc 3 dây rối tung", "người ngồi cạnh đọc hết màn hình") kéo Reactions cao — nên khai thác cảnh quen thuộc.
-- **Tránh hook mở đầu bằng "Balo..." dạng liệt kê tính năng** ("Balo 12L có ngăn đệm chưa", "Balo mở phẳng như vali", "Balo 7 triệu giấu tiền ở đâu") — nhóm này Score thấp (3–4), phụ kiện balo/laptop bag tương tác kém nhất.
-- **Tránh hook chỉ hỏi trống rỗng hoặc nêu tính năng kỹ thuật** ("laptop trong balo có ướt không", "sạc 4 thiết bị 140W") — thiếu cảm xúc, Score 3.
-- **Chèn con số/tình huống mạnh + emoji cảm xúc** (😤😮‍💨) thay vì emoji vật thể (🎒🔌) — emoji cảm xúc đi kèm Score cao hơn.
-- **Ưu tiên sản phẩm: giá đỡ điện thoại ô tô, bơm lốp mini, dock/củ sạc gọn dây, sạc dự phòng** — đây là các nhóm cho Score 5 ổn định; hạn chế reel về balo/túi chống sốc.
-- **Không có Share nào đạt được** → thêm yếu tố "gửi cho người thân/đồng nghiệp cần" hoặc mẹo hữu ích đáng chia sẻ để phá ngưỡng Share.
+- Hook mở bằng tình huống nguy hiểm/rủi ro thực tế (bể lốp, vừa lái vừa với tay, ném balo) đạt Score cao nhất (5) — ưu tiên kịch bản "hậu quả đáng sợ".
+- Nhóm sản phẩm xe hơi/giá đỡ điện thoại và bơm lốp cho tương tác tốt nhất — nên đẩy mạnh chủ đề phụ kiện ô tô, an toàn khi lái.
+- Hook dạng "vấn đề rối/lộn xộn" cụ thể có con số (3 cục sạc, 3 sợi dây) chạm điểm đau rõ ràng, Score 5 — dùng số liệu cụ thể thay vì nói chung chung.
+- Tránh hook thiên về tính năng khô khan (ốp dày centimet, ngăn treo, mở phẳng như vali) và hook mang tính hỏi han nhẹ nhàng — chỉ đạt Score 3-4.
+- Hook chê sản phẩm đối thủ/châm biếm nhẹ ("balo 200K chịu trận", "ốp dày mà máy không đẹp hơn") hiệu quả trung bình — dùng vừa phải, kèm giải pháp.
+- Chủ đề hộ chiếu/du lịch/chống nước cho Score thấp nhất (3) — hạn chế, hoặc gắn với cảm xúc mạnh hơn ("ác mộng có thật").
+- Emoji cảm xúc căng thẳng (😮‍💨😤😰) đi kèm tình huống rủi ro tăng sức hút hơn emoji mô tả vật (🎒🔌).
+- Toàn bộ video gần như không có Share — cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo an toàn cho người thân) để nâng Score.
