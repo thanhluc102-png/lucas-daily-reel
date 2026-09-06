@@ -1,15 +1,8 @@
-- **Cảnh báo hậu quả cụ thể ăn điểm nhất**: hook vẽ ra tình huống nguy hiểm/khó chịu có thật (xe bể lốp giữa đường, người lạ đọc màn hình, vừa lái vừa chỉnh điện thoại) đạt Score 5 — luôn mở bằng nỗi đau đời thực.
-
-- **Chủ đề "rối dây sạc" bền vững**: bàn làm việc nhiều cục sạc, dây lằng nhằng cho Score 4-5 ổn định — ưu tiên khai thác, nhưng gắn con số cụ thể (3 cục, 3 sợi) để tăng lực.
-
-- **Chủ đề an toàn khi lái xe** kéo tương tác tốt: nhấn khoảnh khắc "dễ gặp chuyện nhất" thay vì chỉ mô tả sản phẩm.
-
-- **Tránh hook mô tả tính năng khô khan**: kiểu "ngăn laptop dạng treo", "balo mở phẳng như vali", "sạc 140W 4 thiết bị" chỉ đạt Score 3-4 — thiếu cảm xúc, đọc như spec.
-
-- **Tránh câu hỏi phủ định yếu / giả định quá riêng**: "balo 12L có ngăn đệm chưa?", "balo 200K để laptop chịu trận" cho điểm thấp vì khó đồng cảm rộng.
-
-- **Ưu tiên đặt câu hỏi khiến người xem giật mình soi lại chính mình** (người bên cạnh đọc hết màn hình bạn) hơn là khoe điểm mạnh sản phẩm.
-
-- **Số cụ thể + hình ảnh mạnh trong hook** (3 cục, cả centimet, giữa đường) làm hook nổi hơn mô tả chung chung.
-
-- **Emoji chọn theo cảm xúc đau/khó chịu** (😮‍💨 😤 👀 🌧️) hợp hook cảnh báo; giữ 1 emoji cuối câu, không lạm dụng.
+- **Score cao nhất (5) tập trung vào 3 nhóm:** an toàn khi lái xe (chống trượt điện thoại, khỏi với tay), tình huống khẩn cấp (bể lốp cần bơm), và dẹp rối dây sạc trên bàn — ưu tiên viết hook cho các chủ đề này.
+- **Dùng "nỗi đau + tình huống nguy hiểm/bực bội cụ thể"** ("vừa lái vừa với tay là lúc dễ gặp chuyện", "xe bể lốp giữa đường kẹt cứng") cho tương tác tốt hơn hook mô tả tính năng suông.
+- **Hook kể khổ thường ngày, ai cũng thấy mình trong đó** ("3 cục sạc 3 dây rối tung", "người ngồi cạnh đọc hết màn hình") kéo Reactions cao — nên khai thác cảnh quen thuộc.
+- **Tránh hook mở đầu bằng "Balo..." dạng liệt kê tính năng** ("Balo 12L có ngăn đệm chưa", "Balo mở phẳng như vali", "Balo 7 triệu giấu tiền ở đâu") — nhóm này Score thấp (3–4), phụ kiện balo/laptop bag tương tác kém nhất.
+- **Tránh hook chỉ hỏi trống rỗng hoặc nêu tính năng kỹ thuật** ("laptop trong balo có ướt không", "sạc 4 thiết bị 140W") — thiếu cảm xúc, Score 3.
+- **Chèn con số/tình huống mạnh + emoji cảm xúc** (😤😮‍💨) thay vì emoji vật thể (🎒🔌) — emoji cảm xúc đi kèm Score cao hơn.
+- **Ưu tiên sản phẩm: giá đỡ điện thoại ô tô, bơm lốp mini, dock/củ sạc gọn dây, sạc dự phòng** — đây là các nhóm cho Score 5 ổn định; hạn chế reel về balo/túi chống sốc.
+- **Không có Share nào đạt được** → thêm yếu tố "gửi cho người thân/đồng nghiệp cần" hoặc mẹo hữu ích đáng chia sẻ để phá ngưỡng Share.
