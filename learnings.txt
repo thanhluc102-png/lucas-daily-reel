@@ -1,7 +1,8 @@
-- **Hook thắng nhất (Score 5-6): mô tả nỗi đau NGUY HIỂM/rủi ro cụ thể khi lái xe** — "vừa lái vừa chống điện thoại tuột khỏi tay", "với tay chỉnh điện thoại dễ gặp chuyện", "xe bể lốp giữa đường". Nhấn tình huống kẹt/mất an toàn.
-- **Phụ kiện ô tô + sạc gọn bàn làm việc cho điểm cao ổn định**: giá đỡ điện thoại, bơm lốp, sạc đa cổng dẹp dây. Ưu tiên các chủ đề này.
-- **Mở bằng câu hỏi "nỗi đau đời thường" + emoji cảm xúc bực/ngán (😤😮‍💨) kéo Reactions tốt** hơn câu hỏi trung tính.
-- **Hook về balo/laptop cho điểm thấp nhất (Score 3)**: "ngăn treo laptop", "chống mưa", "giấu hộ chiếu". Tránh hoặc viết lại theo góc rủi ro-mất-tiền rõ hơn.
-- **Hook thiên tính năng/thông số ("mở phẳng như vali", "140W", "12L") kém**: người xem không thấy nỗi đau của mình → viết cảnh đau trước, thông số sau.
-- **Công thức thắng: [Tình huống rủi ro/khó chịu cụ thể] + [emoji cảm xúc mạnh] + [ẩn ý mất tiền/nguy hiểm]**, dài ~10-15 chữ.
-- **Không hook nào đạt Comment>1 hay Share>0**: thêm CTA kích chia sẻ/tag bạn ("gửi ngay cho đứa hay quên", "tag hội mê phượt") để nâng Score.
+- Hook đặt câu hỏi về tình huống nguy hiểm khi lái xe (điện thoại tuột/trượt) cho điểm cao nhất (5-6) — ưu tiên dùng.
+- Nhóm phụ kiện xe hơi (giá đỡ điện thoại) + đồ khẩn cấp (bơm lốp) hút tương tác tốt nhất — đẩy mạnh.
+- Đánh vào nỗi sợ mất mát/tai nạn cụ thể ("dễ gặp chuyện nhất", "kẹt cứng giữa đường") mạnh hơn mô tả tính năng.
+- Hook nêu con số/nỗi đau đời thường ("3 cục sạc rối tung", "140W") đạt mức khá (4-5) — dùng được.
+- Tránh hook mô tả tính năng balo phẳng lì, kể chuyện xa (hộ chiếu, sân bay, laptop dính mưa) — điểm thấp nhất (3).
+- Tránh mở đầu bằng thông số kỹ thuật hoặc câu hỏi trừu tượng thiếu hình ảnh nguy cấp.
+- Công thức mạnh: [Tình huống nguy hiểm/bực bội cụ thể] + [câu hỏi "có phải bạn?"] + emoji cảm xúc 😤😮‍💨.
+- Mọi hook chỉ đạt 1 comment, 0 share — cần thêm CTA kích share/tag bạn để phá trần tương tác.
