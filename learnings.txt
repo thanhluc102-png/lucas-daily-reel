@@ -1,8 +1,15 @@
-- Hook mở bằng tình huống nguy hiểm/rủi ro thực tế (bể lốp, vừa lái vừa với tay, ném balo) đạt Score cao nhất (5) — ưu tiên kịch bản "hậu quả đáng sợ".
-- Nhóm sản phẩm xe hơi/giá đỡ điện thoại và bơm lốp cho tương tác tốt nhất — nên đẩy mạnh chủ đề phụ kiện ô tô, an toàn khi lái.
-- Hook dạng "vấn đề rối/lộn xộn" cụ thể có con số (3 cục sạc, 3 sợi dây) chạm điểm đau rõ ràng, Score 5 — dùng số liệu cụ thể thay vì nói chung chung.
-- Tránh hook thiên về tính năng khô khan (ốp dày centimet, ngăn treo, mở phẳng như vali) và hook mang tính hỏi han nhẹ nhàng — chỉ đạt Score 3-4.
-- Hook chê sản phẩm đối thủ/châm biếm nhẹ ("balo 200K chịu trận", "ốp dày mà máy không đẹp hơn") hiệu quả trung bình — dùng vừa phải, kèm giải pháp.
-- Chủ đề hộ chiếu/du lịch/chống nước cho Score thấp nhất (3) — hạn chế, hoặc gắn với cảm xúc mạnh hơn ("ác mộng có thật").
-- Emoji cảm xúc căng thẳng (😮‍💨😤😰) đi kèm tình huống rủi ro tăng sức hút hơn emoji mô tả vật (🎒🔌).
-- Toàn bộ video gần như không có Share — cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo an toàn cho người thân) để nâng Score.
+- **Hook "tình huống nguy hiểm/sự cố cụ thể" cho score cao nhất** (Score=5): bể lốp giữa đường, trượt giá đỡ khi chỉ đường, với tay chỉnh điện thoại dễ gặp chuyện — dùng cảnh nguy cơ thật để kích cảm xúc.
+
+- **Ưu tiên sản phẩm phụ kiện xe hơi (giá đỡ, bơm lốp)** và **hub/sạc chống rối** — nhóm này gom nhiều Score=5, dễ tương tác nhất.
+
+- **Mở bằng câu hỏi cà khịa "món đồ đắt tiền nhưng vẫn khổ"** hiệu quả (Bàn làm việc 3 cục sạc, ốp dày nặng tay) — chọc đúng nỗi đau người đã chi tiền.
+
+- **Tránh hook chỉ mô tả tính năng phẳng lì** (balo mở phẳng, ngăn đệm 12L, ngăn treo laptop): chỉ đạt Score=3-4, thiếu kịch tính.
+
+- **Tránh hook về hộ chiếu/an toàn du lịch** (giấu tiền, rơi hộ chiếu sân bay): score thấp nhất (=3), chủ đề xa và ít người liên quan.
+
+- **Cần thêm con số + emoji nỗi đau** (😮‍💨😤😰) ở đầu để tăng Reactions — các hook Score=5 đều có emoji cảm xúc mạnh.
+
+- **Comments luôn = 1, Shares luôn = 0**: đòn bẩy còn lại là Reactions → viết hook gây bức xúc/đồng cảm để người ta bấm cảm xúc, đừng chỉ hỏi cho có.
+
+- **Công thức thắng: [Tình huống sự cố cụ thể] + [thiệt hại/nguy hiểm] + [emoji cảm xúc mạnh]**, tránh kiểu liệt kê thông số kỹ thuật.
