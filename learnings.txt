@@ -1,15 +1,7 @@
-- **Hook "tình huống nguy hiểm/sự cố cụ thể" cho score cao nhất** (Score=5): bể lốp giữa đường, trượt giá đỡ khi chỉ đường, với tay chỉnh điện thoại dễ gặp chuyện — dùng cảnh nguy cơ thật để kích cảm xúc.
-
-- **Ưu tiên sản phẩm phụ kiện xe hơi (giá đỡ, bơm lốp)** và **hub/sạc chống rối** — nhóm này gom nhiều Score=5, dễ tương tác nhất.
-
-- **Mở bằng câu hỏi cà khịa "món đồ đắt tiền nhưng vẫn khổ"** hiệu quả (Bàn làm việc 3 cục sạc, ốp dày nặng tay) — chọc đúng nỗi đau người đã chi tiền.
-
-- **Tránh hook chỉ mô tả tính năng phẳng lì** (balo mở phẳng, ngăn đệm 12L, ngăn treo laptop): chỉ đạt Score=3-4, thiếu kịch tính.
-
-- **Tránh hook về hộ chiếu/an toàn du lịch** (giấu tiền, rơi hộ chiếu sân bay): score thấp nhất (=3), chủ đề xa và ít người liên quan.
-
-- **Cần thêm con số + emoji nỗi đau** (😮‍💨😤😰) ở đầu để tăng Reactions — các hook Score=5 đều có emoji cảm xúc mạnh.
-
-- **Comments luôn = 1, Shares luôn = 0**: đòn bẩy còn lại là Reactions → viết hook gây bức xúc/đồng cảm để người ta bấm cảm xúc, đừng chỉ hỏi cho có.
-
-- **Công thức thắng: [Tình huống sự cố cụ thể] + [thiệt hại/nguy hiểm] + [emoji cảm xúc mạnh]**, tránh kiểu liệt kê thông số kỹ thuật.
+- **Hook thắng nhất (Score 5-6): mô tả nỗi đau NGUY HIỂM/rủi ro cụ thể khi lái xe** — "vừa lái vừa chống điện thoại tuột khỏi tay", "với tay chỉnh điện thoại dễ gặp chuyện", "xe bể lốp giữa đường". Nhấn tình huống kẹt/mất an toàn.
+- **Phụ kiện ô tô + sạc gọn bàn làm việc cho điểm cao ổn định**: giá đỡ điện thoại, bơm lốp, sạc đa cổng dẹp dây. Ưu tiên các chủ đề này.
+- **Mở bằng câu hỏi "nỗi đau đời thường" + emoji cảm xúc bực/ngán (😤😮‍💨) kéo Reactions tốt** hơn câu hỏi trung tính.
+- **Hook về balo/laptop cho điểm thấp nhất (Score 3)**: "ngăn treo laptop", "chống mưa", "giấu hộ chiếu". Tránh hoặc viết lại theo góc rủi ro-mất-tiền rõ hơn.
+- **Hook thiên tính năng/thông số ("mở phẳng như vali", "140W", "12L") kém**: người xem không thấy nỗi đau của mình → viết cảnh đau trước, thông số sau.
+- **Công thức thắng: [Tình huống rủi ro/khó chịu cụ thể] + [emoji cảm xúc mạnh] + [ẩn ý mất tiền/nguy hiểm]**, dài ~10-15 chữ.
+- **Không hook nào đạt Comment>1 hay Share>0**: thêm CTA kích chia sẻ/tag bạn ("gửi ngay cho đứa hay quên", "tag hội mê phượt") để nâng Score.
