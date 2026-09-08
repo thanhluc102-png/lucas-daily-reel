@@ -1,8 +1,8 @@
-- Hook đặt câu hỏi về tình huống nguy hiểm khi lái xe (điện thoại tuột/trượt) cho điểm cao nhất (5-6) — ưu tiên dùng.
-- Nhóm phụ kiện xe hơi (giá đỡ điện thoại) + đồ khẩn cấp (bơm lốp) hút tương tác tốt nhất — đẩy mạnh.
-- Đánh vào nỗi sợ mất mát/tai nạn cụ thể ("dễ gặp chuyện nhất", "kẹt cứng giữa đường") mạnh hơn mô tả tính năng.
-- Hook nêu con số/nỗi đau đời thường ("3 cục sạc rối tung", "140W") đạt mức khá (4-5) — dùng được.
-- Tránh hook mô tả tính năng balo phẳng lì, kể chuyện xa (hộ chiếu, sân bay, laptop dính mưa) — điểm thấp nhất (3).
-- Tránh mở đầu bằng thông số kỹ thuật hoặc câu hỏi trừu tượng thiếu hình ảnh nguy cấp.
-- Công thức mạnh: [Tình huống nguy hiểm/bực bội cụ thể] + [câu hỏi "có phải bạn?"] + emoji cảm xúc 😤😮‍💨.
-- Mọi hook chỉ đạt 1 comment, 0 share — cần thêm CTA kích share/tag bạn để phá trần tương tác.
+- Hook cảnh báo rủi ro khi lái xe (điện thoại tuột/trượt/rớt giá đỡ) cho điểm cao nhất (5-6) — ưu tiên nhóm phụ kiện xe hơi/giá đỡ điện thoại.
+- Dùng tình huống "tai nạn cụ thể giữa đường" (bể lốp, tuột tay, vào cua) tạo cảm giác nguy hiểm thực tế → kéo reactions mạnh.
+- Hook nêu cảnh lộn xộn quen thuộc tại bàn/nhà (3 cục sạc, dây rối) hiệu quả tốt (5) — giữ chi tiết số lượng cụ thể.
+- Tránh hook về balo cao cấp/giấu hộ chiếu và sạc dự phòng hiển thị pin — toàn bộ đạt điểm thấp nhất (3), khán giả ít đồng cảm.
+- Tránh hook thiên về tính năng khoe thông số (140W, mở phẳng, ngăn laptop) — chỉ đạt 3-4, thiếu cảm xúc.
+- Công thức thắng: câu hỏi "bạn có đang gặp cảnh khổ này?" + tình huống nguy hiểm/bực bội + emoji 😤😮‍💨🚗.
+- Không hook nào đạt Share (điểm nặng nhất) — cần thêm yếu tố hữu ích/đáng chia sẻ (mẹo, cứu nguy) thay vì chỉ mô tả vấn đề.
+- Mở đầu bằng nỗi đau cụ thể + động từ mạnh (trượt, rớt, tuột, kẹt) hiệu quả hơn câu hỏi chung chung về sản phẩm.
