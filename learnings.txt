@@ -1,8 +1,8 @@
-- Hook cảnh báo rủi ro khi lái xe (điện thoại tuột/trượt/rớt giá đỡ) cho điểm cao nhất (5-6) — ưu tiên nhóm phụ kiện xe hơi/giá đỡ điện thoại.
-- Dùng tình huống "tai nạn cụ thể giữa đường" (bể lốp, tuột tay, vào cua) tạo cảm giác nguy hiểm thực tế → kéo reactions mạnh.
-- Hook nêu cảnh lộn xộn quen thuộc tại bàn/nhà (3 cục sạc, dây rối) hiệu quả tốt (5) — giữ chi tiết số lượng cụ thể.
-- Tránh hook về balo cao cấp/giấu hộ chiếu và sạc dự phòng hiển thị pin — toàn bộ đạt điểm thấp nhất (3), khán giả ít đồng cảm.
-- Tránh hook thiên về tính năng khoe thông số (140W, mở phẳng, ngăn laptop) — chỉ đạt 3-4, thiếu cảm xúc.
-- Công thức thắng: câu hỏi "bạn có đang gặp cảnh khổ này?" + tình huống nguy hiểm/bực bội + emoji 😤😮‍💨🚗.
-- Không hook nào đạt Share (điểm nặng nhất) — cần thêm yếu tố hữu ích/đáng chia sẻ (mẹo, cứu nguy) thay vì chỉ mô tả vấn đề.
-- Mở đầu bằng nỗi đau cụ thể + động từ mạnh (trượt, rớt, tuột, kẹt) hiệu quả hơn câu hỏi chung chung về sản phẩm.
+- Ưu tiên hook về **giá đỡ điện thoại/phụ kiện ô tô** gắn với tình huống nguy hiểm khi lái xe (rớt máy, tuột tay, vào cua) — nhóm này Score cao nhất (5-6).
+- Đánh vào **nỗi sợ mất an toàn/thiệt hại tức thì** (dễ gặp chuyện, kẹt cứng giữa đường, cổ vai gáy kêu cứu) mạnh hơn mô tả tính năng đơn thuần.
+- Chèn **con số cụ thể gây shock** (140W, 4 thiết bị, 3 cục sạc 3 dây rối) giúp tăng reactions.
+- Hook dạng **cảnh khó chịu đời thường có hình ảnh rõ** (dây sạc lòng thòng, ổ cắm bị chiếm chỗ, bàn rối tung) tương tác khá ổn (4-5).
+- Tránh hook **balo/hộ chiếu/an toàn du lịch** và **sạc dự phòng xem pin** — liên tục Score thấp nhất (3), reactions gần như 0.
+- Tránh hook **chỉ nêu thông số/ngăn chứa laptop** khô khan (ngăn đệm riêng, mở phẳng như vali) — ít cảm xúc, tương tác yếu.
+- Viết câu **hỏi trực diện "bạn có… chưa?"** kèm emoji cảm xúc (😤😮‍💨) đúng tình huống để kích comment.
+- Không hook nào tạo được Share — cần thử thêm **yếu tố hữu ích để lưu/gửi bạn bè** (mẹo, cảnh báo an toàn) nếu muốn phá trần Score.
