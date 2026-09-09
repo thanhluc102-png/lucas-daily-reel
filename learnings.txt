@@ -1,8 +1,8 @@
-- Hook về **giá đỡ điện thoại trên xe** cho tương tác cao nhất (Score 5–6): nhấn tình huống nguy hiểm khi lái xe, điện thoại trượt/rớt.
-- Dùng **tình huống rủi ro cụ thể + cảm xúc lo lắng** ("dễ gặp chuyện nhất", "kẹt cứng", "chịu trận") kéo reactions tốt hơn câu mô tả tính năng khô khan.
-- Hook **sạc/hub gọn gàng bàn làm việc** (dây rối, ổ cắm chật) đạt Score 5 — khai thác nỗi bực hàng ngày, dễ đồng cảm.
-- Nhóm **phụ kiện bơm/cứu hộ xe** ("bể lốp giữa đường") tương tác khá — tình huống khẩn cấp gây chú ý.
-- Câu mở đầu bằng **câu hỏi có emoji cảm xúc mạnh** (😤😮‍💨😰) và **con số cụ thể** (140W, 12L, 200K, 7 triệu) tăng độ hấp dẫn.
-- Tránh hook **về hộ chiếu/chống mất cắp/chống trộm balo du lịch** — tương tác thấp nhất (Score 3), niche hẹp ít người liên quan.
-- Tránh hook **thiên mô tả kỹ thuật đơn thuần** (mở phẳng như vali, báo % pin, ngăn đệm laptop) — thiếu cảm xúc, reactions gần 0.
-- Ưu tiên **sản phẩm dùng khi lái xe + giải pháp gọn gàng đời thường**, hạn chế sản phẩm cao cấp/du lịch chuyên biệt.
+- Ưu tiên hook về **giá đỡ điện thoại trên xe** (chống trượt/rớt khi lái, kẹt xe, vào cua) — nhóm điểm cao nhất (5–6), luôn thắng.
+- Dùng công thức **"tình huống nguy hiểm/bực bội cụ thể khi đang lái xe"** kèm emoji 😤😮‍💨🚗 để kích reaction mạnh nhất.
+- Hook nêu **hậu quả tức thì, dễ hình dung** (rớt khỏi tay, trượt taplo, kẹt cứng) hiệu quả hơn hook mô tả tính năng.
+- Sản phẩm **hub sạc/quản lý dây trên bàn** (gom cục sạc, hết rối dây) đạt mức khá (5) — nên khai thác tiếp.
+- Tránh hook về **balo/chống nước/ngăn laptop** và **bảo mật hộ chiếu-ví**: đều điểm thấp (3), reaction gần như 0.
+- Tránh hook **thiên thông số kỹ thuật** (140W, 12L, dung lượng pin) — người xem không phản ứng.
+- Mở đầu bằng **câu hỏi chạm nỗi đau người dùng đang trải qua**, không mở bằng thông số hay lời khoe sản phẩm.
+- Chưa hook nào tạo được **Share**; thử thêm yếu tố "gửi cho người hay quên/hay đi xe" để đẩy chỉ số nặng nhất.
