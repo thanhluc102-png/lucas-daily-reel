@@ -1,8 +1,8 @@
-- Ưu tiên hook về **giá đỡ điện thoại/phụ kiện ô tô** gắn với tình huống nguy hiểm khi lái xe (rớt máy, tuột tay, vào cua) — nhóm này Score cao nhất (5-6).
-- Đánh vào **nỗi sợ mất an toàn/thiệt hại tức thì** (dễ gặp chuyện, kẹt cứng giữa đường, cổ vai gáy kêu cứu) mạnh hơn mô tả tính năng đơn thuần.
-- Chèn **con số cụ thể gây shock** (140W, 4 thiết bị, 3 cục sạc 3 dây rối) giúp tăng reactions.
-- Hook dạng **cảnh khó chịu đời thường có hình ảnh rõ** (dây sạc lòng thòng, ổ cắm bị chiếm chỗ, bàn rối tung) tương tác khá ổn (4-5).
-- Tránh hook **balo/hộ chiếu/an toàn du lịch** và **sạc dự phòng xem pin** — liên tục Score thấp nhất (3), reactions gần như 0.
-- Tránh hook **chỉ nêu thông số/ngăn chứa laptop** khô khan (ngăn đệm riêng, mở phẳng như vali) — ít cảm xúc, tương tác yếu.
-- Viết câu **hỏi trực diện "bạn có… chưa?"** kèm emoji cảm xúc (😤😮‍💨) đúng tình huống để kích comment.
-- Không hook nào tạo được Share — cần thử thêm **yếu tố hữu ích để lưu/gửi bạn bè** (mẹo, cảnh báo an toàn) nếu muốn phá trần Score.
+- Hook về **giá đỡ điện thoại trên xe** cho tương tác cao nhất (Score 5–6): nhấn tình huống nguy hiểm khi lái xe, điện thoại trượt/rớt.
+- Dùng **tình huống rủi ro cụ thể + cảm xúc lo lắng** ("dễ gặp chuyện nhất", "kẹt cứng", "chịu trận") kéo reactions tốt hơn câu mô tả tính năng khô khan.
+- Hook **sạc/hub gọn gàng bàn làm việc** (dây rối, ổ cắm chật) đạt Score 5 — khai thác nỗi bực hàng ngày, dễ đồng cảm.
+- Nhóm **phụ kiện bơm/cứu hộ xe** ("bể lốp giữa đường") tương tác khá — tình huống khẩn cấp gây chú ý.
+- Câu mở đầu bằng **câu hỏi có emoji cảm xúc mạnh** (😤😮‍💨😰) và **con số cụ thể** (140W, 12L, 200K, 7 triệu) tăng độ hấp dẫn.
+- Tránh hook **về hộ chiếu/chống mất cắp/chống trộm balo du lịch** — tương tác thấp nhất (Score 3), niche hẹp ít người liên quan.
+- Tránh hook **thiên mô tả kỹ thuật đơn thuần** (mở phẳng như vali, báo % pin, ngăn đệm laptop) — thiếu cảm xúc, reactions gần 0.
+- Ưu tiên **sản phẩm dùng khi lái xe + giải pháp gọn gàng đời thường**, hạn chế sản phẩm cao cấp/du lịch chuyên biệt.
