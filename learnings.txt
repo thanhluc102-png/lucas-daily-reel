@@ -1,8 +1,15 @@
-- Ưu tiên hook về **giá đỡ điện thoại trên xe** (chống trượt/rớt khi lái, kẹt xe, vào cua) — nhóm điểm cao nhất (5–6), luôn thắng.
-- Dùng công thức **"tình huống nguy hiểm/bực bội cụ thể khi đang lái xe"** kèm emoji 😤😮‍💨🚗 để kích reaction mạnh nhất.
-- Hook nêu **hậu quả tức thì, dễ hình dung** (rớt khỏi tay, trượt taplo, kẹt cứng) hiệu quả hơn hook mô tả tính năng.
-- Sản phẩm **hub sạc/quản lý dây trên bàn** (gom cục sạc, hết rối dây) đạt mức khá (5) — nên khai thác tiếp.
-- Tránh hook về **balo/chống nước/ngăn laptop** và **bảo mật hộ chiếu-ví**: đều điểm thấp (3), reaction gần như 0.
-- Tránh hook **thiên thông số kỹ thuật** (140W, 12L, dung lượng pin) — người xem không phản ứng.
-- Mở đầu bằng **câu hỏi chạm nỗi đau người dùng đang trải qua**, không mở bằng thông số hay lời khoe sản phẩm.
-- Chưa hook nào tạo được **Share**; thử thêm yếu tố "gửi cho người hay quên/hay đi xe" để đẩy chỉ số nặng nhất.
+- **Hook thắng nhất = nỗi sợ mất an toàn khi lái xe** (điện thoại tuột/rớt khỏi giá đỡ, với tay chỉnh máy): Score 5-6, top toàn bảng. Ưu tiên sản phẩm giá đỡ điện thoại xe hơi/xe máy.
+
+- **Hook "sự cố kẹt cứng giữa đường"** (xe bể lốp không có bơm) cũng đạt Score 5. Khai thác mạch tình huống khẩn cấp + hậu quả tức thì.
+
+- **Hook chỉ ra sự lộn xộn/rối dây cụ thể** ("bàn 3 cục sạc, 3 sợi dây rối tung") ăn điểm hơn hook hỏi chung chung ("ổ cắm bị chiếm chỗ"): cùng dòng sạc nhưng hình ảnh càng cụ thể càng cao.
+
+- **Công thức mạnh: nêu con số/vật cụ thể + hành động + hậu quả tức thì** ("Vừa lái xe vừa với tay chỉnh… là lúc dễ gặp chuyện nhất"). Càng "thấy được cảnh đó" càng nhiều reactions.
+
+- **Nhóm hook về balo/laptop yếu đều** (Score 3-4): dù đổi góc (chống nước, chống sốc, ngăn đệm, đa năng) vẫn thấp. Giảm tần suất chủ đề balo hoặc đổi cách tiếp cận triệt để.
+
+- **Tránh hook "sợ mất mát trừu tượng"** (mất ví mất hết, đánh rơi hộ chiếu, giấu tiền ở đâu): Score 3, chạm nhưng không tạo phản ứng — nỗi sợ quá xa, thiếu hành động quen thuộc hằng ngày.
+
+- **Tránh hook trạng thái tĩnh/nhẹ đô** ("điện thoại nằm dài trên bàn", "sạc dự phòng không biết còn bao pin"): thiếu kịch tính, Score đáy.
+
+- **Toàn bộ Shares = 0 → chưa hook nào đủ "đáng chia sẻ".** Thử thêm yếu tố mẹo hữu ích/cảnh báo an toàn để người xem muốn gửi cho người thân, không chỉ mô tả nỗi đau.
