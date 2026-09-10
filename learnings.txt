@@ -1,15 +1,8 @@
-- **Hook mạnh nhất: mô tả sự cố nguy hiểm/khó chịu khi đang lái xe** (điện thoại tuột tay, trượt giá đỡ, kẹt xe) — nhóm này đạt Score cao nhất (5–6). Ưu tiên sản phẩm giá đỡ điện thoại xe hơi.
-
-- **Chọn tình huống "đang xảy ra" cụ thể, có rủi ro tức thì** (bể lốp giữa đường, với tay chỉnh điện thoại lúc lái) thay vì mô tả trạng thái tĩnh chung chung — kịch tính tạo tương tác gấp đôi.
-
-- **Dùng câu hỏi trực diện "bạn có/đang..." + emoji cảm xúc bực bội** 😤😮‍💨 hiệu quả hơn emoji trung tính 🔌🔋📱.
-
-- **Tránh hook về sản phẩm sạc/hub/pin dự phòng** (ổ cắm, 3 dây sạc, xem % pin, thông số W) — toàn bộ chỉ đạt Score 3, khô khan và thiên về thông số kỹ thuật.
-
-- **Tránh mở đầu bằng thông số hoặc con số giá tiền đơn thuần** (65W, 25W, balo 7 triệu, balo 200K) — không khơi được nỗi đau, tương tác thấp.
-
-- **Chèn "nỗi sợ mất mát/thiệt hại tài sản đắt" có thể giúp nhẹ** (laptop va đập, hộ chiếu rơi) nhưng vẫn yếu (Score 3–4) — cần thêm chi tiết khoảnh khắc, đừng chỉ nêu hậu quả trừu tượng.
-
-- **Công thức thắng: [tình huống lái xe/di chuyển] + [rủi ro tức thì] + [câu hỏi] + emoji bực bội** → đây là mẫu nhân bản.
-
-- **Toàn bộ video đều 0 Share — cần thêm yếu tố "đáng chia sẻ"**: mẹo bất ngờ, tình huống ai cũng gặp, hoặc lời khuyên an toàn để đẩy Share (đòn bẩy Score mạnh nhất).
+- Hook nêu **thông số cụ thể** (65W, MagSafe 25W) cho tương tác cao nhất (Score=7) → ưu tiên số liệu ấn tượng, tính năng "2 trong 1".
+- Hook **an toàn khi lái xe** (điện thoại tuột tay, giá đỡ, bơm dự phòng) đạt Score 5–6 → khai thác mạnh nỗi lo tai nạn/tình huống nguy hiểm khi di chuyển.
+- Hook chống lộn xộn dây sạc trên bàn (Score=5) tốt → dùng hình ảnh "3 dây rối tung" cụ thể, dễ hình dung.
+- Hook về **balo/laptop** (ướt mưa, va đập, ngăn sát đáy) đều Score=3 → kém nhất, nên tránh hoặc phải thêm chi tiết gây sốc/số liệu.
+- Hook **hộ chiếu, ví, mất đồ khi du lịch** đều Score=3 → chủ đề chống mất cắp yếu tương tác, hạ ưu tiên.
+- Câu hỏi tu từ chung chung ("nằm dài trên bàn?", "mấy cái túi?") kém → thay bằng tình huống kịch tính + con số + hậu quả rõ.
+- Emoji 😤🚗🔋 (nguy hiểm/công nghệ) hiệu quả hơn 🎒🌧️😩 (buồn/lo mơ hồ) → chọn emoji tạo căng thẳng hoặc phấn khích.
+- Công thức thắng: **tình huống nguy hiểm khi lái xe HOẶC thông số công nghệ mạnh + chi tiết cụ thể + emoji kịch tính**; tránh chủ đề balo/mất đồ chung chung.
