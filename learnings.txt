@@ -1,15 +1,15 @@
-- **Hook tình huống nguy hiểm/mất mát khi lái xe cho điểm cao nhất** (Score 5-6): "vừa lái vừa chống điện thoại tuột tay", "với tay chỉnh điện thoại dễ gặp chuyện" — đánh vào nỗi sợ an toàn, hành động cụ thể.
+- **Hook mạnh nhất: mô tả sự cố nguy hiểm/khó chịu khi đang lái xe** (điện thoại tuột tay, trượt giá đỡ, kẹt xe) — nhóm này đạt Score cao nhất (5–6). Ưu tiên sản phẩm giá đỡ điện thoại xe hơi.
 
-- **Sản phẩm giá đỡ điện thoại xe hơi và phụ kiện chống rủi ro (bơm lốp) hút reaction mạnh nhất** — ưu tiên khai thác nhóm này.
+- **Chọn tình huống "đang xảy ra" cụ thể, có rủi ro tức thì** (bể lốp giữa đường, với tay chỉnh điện thoại lúc lái) thay vì mô tả trạng thái tĩnh chung chung — kịch tính tạo tương tác gấp đôi.
 
-- **Hook có động từ mạnh + rủi ro tức thì ("trượt", "rớt", "bể lốp", "kẹt cứng") kéo reaction cao hơn** hook mô tả bất tiện chung chung.
+- **Dùng câu hỏi trực diện "bạn có/đang..." + emoji cảm xúc bực bội** 😤😮‍💨 hiệu quả hơn emoji trung tính 🔌🔋📱.
 
-- **Chèn con số cụ thể gây tò mò tăng nhẹ tương tác** ("Bàn 3 cục sạc 3 dây rối", "công tác 2 ngày mấy cái túi"): Score 4-5.
+- **Tránh hook về sản phẩm sạc/hub/pin dự phòng** (ổ cắm, 3 dây sạc, xem % pin, thông số W) — toàn bộ chỉ đạt Score 3, khô khan và thiên về thông số kỹ thuật.
 
-- **Hook dạng câu hỏi chất vấn trực tiếp "bạn" hiệu quả** — buộc người xem tự soi mình, dễ bung reaction.
+- **Tránh mở đầu bằng thông số hoặc con số giá tiền đơn thuần** (65W, 25W, balo 7 triệu, balo 200K) — không khơi được nỗi đau, tương tác thấp.
 
-- **Tránh hook kể nỗi đau trừu tượng/xa vời** ("đánh rơi hộ chiếu sân bay", "mất ví mất tất cả", "sạc nhìn hoài không biết pin"): đều Score 3, chết reaction.
+- **Chèn "nỗi sợ mất mát/thiệt hại tài sản đắt" có thể giúp nhẹ** (laptop va đập, hộ chiếu rơi) nhưng vẫn yếu (Score 3–4) — cần thêm chi tiết khoảnh khắc, đừng chỉ nêu hậu quả trừu tượng.
 
-- **Tránh hook về ngăn laptop/chống sốc balo** — lặp nhiều nhưng tương tác thấp nhất (đa số Score 3), chủ đề bão hòa, thiếu kịch tính.
+- **Công thức thắng: [tình huống lái xe/di chuyển] + [rủi ro tức thì] + [câu hỏi] + emoji bực bội** → đây là mẫu nhân bản.
 
-- **Ưu tiên emoji cảm xúc căng thẳng (😤😮‍💨😬) + tình huống "giữa đường/vào cua/kẹt xe"** thay vì emoji trung tính (🎒🔌📱).
+- **Toàn bộ video đều 0 Share — cần thêm yếu tố "đáng chia sẻ"**: mẹo bất ngờ, tình huống ai cũng gặp, hoặc lời khuyên an toàn để đẩy Share (đòn bẩy Score mạnh nhất).
