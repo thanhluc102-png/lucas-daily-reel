@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **thông số/lợi ích cụ thể** (65W, MagSafe 25W, 3-trong-1): Score cao nhất (7) vì gợi tò mò và giá trị rõ ràng.
-- Hook mô tả **tình huống nguy hiểm/thiệt hại khi lái xe** (rớt điện thoại, tuột tay) hút Reactions tốt (Score 5–6); giữ yếu tố rủi ro + động từ mạnh.
-- Gộp nhiều thiết bị thành một món (sạc + pin, hết dây rối) là góc bán chạy — nhấn "gọn – bớt rối".
-- Emoji cảm xúc mạnh 😮‍💨😤 hợp hook rủi ro; emoji thông số 🔋🔌 hợp hook lợi ích — dùng đúng ngữ cảnh.
-- Tránh hook về **balo/hộ chiếu/chống mất cắp/laptop ướt**: Score toàn 3, tương tác thấp nhất — chủ đề ít chạm.
-- Tránh hook chung chung, mô tả nỗi đau mơ hồ (rơi hộ chiếu, mất ví, xem phim) — không tạo Reactions.
-- Sản phẩm sạc/pin/phụ kiện điện thoại xe hơi thắng balo/túi rõ rệt — tập trung nhóm này.
-- Công thức thắng: **tình huống rủi ro cụ thể HOẶC thông số ấn tượng + 1 emoji đúng tông + câu hỏi/khẳng định ngắn**.
+- Hook nêu **thông số/lợi ích cụ thể** ("65W, MagSafe 25W", "2-in-1 sạc + pin") cho điểm cao nhất (Score 7) — ưu tiên số liệu rõ ràng.
+- Hook về **giá đỡ điện thoại khi lái xe** ổn định top đầu (Score 5-6) — khai thác tình huống nguy hiểm khi lái xe.
+- Hook chạm **nỗi sợ hỏng/mất tài sản đắt tiền** (cáp rẻ giết pin, laptop rơi) kéo reactions tốt (Score 6) — nhấn thiệt hại tiền bạc.
+- Sản phẩm **sạc/pin/cáp và giá đỡ xe** tương tác cao hơn hẳn balo và phụ kiện chống mất đồ.
+- Hook dạng **câu hỏi chung chung, cảnh báo mơ hồ** (mất ví, rớt hộ chiếu, balo lấn cấn) chỉ đạt Score 3 — nên tránh kiểu trừu tượng, ít cụ thể.
+- Toàn bộ video **Shares=0, Comments=1**: nội dung chưa đủ giá trị để chia sẻ — cần thêm mẹo hữu ích/bất ngờ để kích share.
+- Công thức thắng: **tình huống nguy hiểm/thiệt hại cụ thể + con số + giải pháp gọn** ("2 món gộp 1", "30 giây").
+- Emoji giữ nguyên nhưng đặt sau lợi ích rõ ràng, không thay thế nội dung cụ thể.
