@@ -1,8 +1,15 @@
-- Hook nêu **thông số cụ thể** (65W, MagSafe 25W) cho tương tác cao nhất (Score=7) → ưu tiên số liệu ấn tượng, tính năng "2 trong 1".
-- Hook **an toàn khi lái xe** (điện thoại tuột tay, giá đỡ, bơm dự phòng) đạt Score 5–6 → khai thác mạnh nỗi lo tai nạn/tình huống nguy hiểm khi di chuyển.
-- Hook chống lộn xộn dây sạc trên bàn (Score=5) tốt → dùng hình ảnh "3 dây rối tung" cụ thể, dễ hình dung.
-- Hook về **balo/laptop** (ướt mưa, va đập, ngăn sát đáy) đều Score=3 → kém nhất, nên tránh hoặc phải thêm chi tiết gây sốc/số liệu.
-- Hook **hộ chiếu, ví, mất đồ khi du lịch** đều Score=3 → chủ đề chống mất cắp yếu tương tác, hạ ưu tiên.
-- Câu hỏi tu từ chung chung ("nằm dài trên bàn?", "mấy cái túi?") kém → thay bằng tình huống kịch tính + con số + hậu quả rõ.
-- Emoji 😤🚗🔋 (nguy hiểm/công nghệ) hiệu quả hơn 🎒🌧️😩 (buồn/lo mơ hồ) → chọn emoji tạo căng thẳng hoặc phấn khích.
-- Công thức thắng: **tình huống nguy hiểm khi lái xe HOẶC thông số công nghệ mạnh + chi tiết cụ thể + emoji kịch tính**; tránh chủ đề balo/mất đồ chung chung.
+- **Hook nêu THÔNG SỐ cụ thể thắng lớn**: "65W + MagSafe 25W trong 1 viên pin" (Score 7), "3 cục sạc 3 dây" (Score 5) → số liệu + lợi ích gộp nhiều thiết bị hút tương tác nhất.
+
+- **Chủ đề GIÁ ĐỠ ĐIỆN THOẠI khi lái xe luôn top**: 3 hook về "điện thoại tuột/rớt khi lái xe, kẹt xe" đạt Score 5-6 → tình huống nguy hiểm + quen thuộc hằng ngày dễ chạm.
+
+- **Ưu tiên sản phẩm PIN/SẠC & PHỤ KIỆN XE**: nhóm gộp nhiều chức năng (sạc + pin, bơm xe cứu hộ) cho Reactions cao; đây là ngách nên khai thác tiếp.
+
+- **Hook dạng nỗi sợ về BALO/LAPTOP/HỘ CHIẾU đều kém** (Score 3): "laptop chịu trận", "mất hộ chiếu", "balo 7 triệu" → cảnh báo tiêu cực chung chung, thiếu con số, dễ chán, nên tránh hoặc thêm giải pháp cụ thể.
+
+- **Tránh hook chỉ mô tả VẤN ĐỀ mơ hồ, thiếu điểm nhấn số** ("sạc dự phòng không biết còn bao nhiêu pin", "điện thoại nằm dài trên bàn") → toàn Score 3, không kích được Reaction.
+
+- **Công thức thắng = Tình huống nguy hiểm/khó chịu HẰNG NGÀY + thông số ấn tượng + gộp nhiều lợi ích vào 1 món** → viết theo mẫu này để tối đa Reactions.
+
+- **Dùng emoji hành động/nguy hiểm (😤🚗🔋) hiệu quả hơn emoji buồn bã (😩😰😬)** vốn dính toàn Score thấp.
+
+- **Không có hook nào tạo được Share/Comment thật** → thử thêm câu hỏi chốt kêu gọi bình luận (chọn A hay B, "bạn dùng mấy dây?") để phá trần Score.
