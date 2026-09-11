@@ -1,15 +1,8 @@
-- **Hook nêu THÔNG SỐ cụ thể thắng lớn**: "65W + MagSafe 25W trong 1 viên pin" (Score 7), "3 cục sạc 3 dây" (Score 5) → số liệu + lợi ích gộp nhiều thiết bị hút tương tác nhất.
-
-- **Chủ đề GIÁ ĐỠ ĐIỆN THOẠI khi lái xe luôn top**: 3 hook về "điện thoại tuột/rớt khi lái xe, kẹt xe" đạt Score 5-6 → tình huống nguy hiểm + quen thuộc hằng ngày dễ chạm.
-
-- **Ưu tiên sản phẩm PIN/SẠC & PHỤ KIỆN XE**: nhóm gộp nhiều chức năng (sạc + pin, bơm xe cứu hộ) cho Reactions cao; đây là ngách nên khai thác tiếp.
-
-- **Hook dạng nỗi sợ về BALO/LAPTOP/HỘ CHIẾU đều kém** (Score 3): "laptop chịu trận", "mất hộ chiếu", "balo 7 triệu" → cảnh báo tiêu cực chung chung, thiếu con số, dễ chán, nên tránh hoặc thêm giải pháp cụ thể.
-
-- **Tránh hook chỉ mô tả VẤN ĐỀ mơ hồ, thiếu điểm nhấn số** ("sạc dự phòng không biết còn bao nhiêu pin", "điện thoại nằm dài trên bàn") → toàn Score 3, không kích được Reaction.
-
-- **Công thức thắng = Tình huống nguy hiểm/khó chịu HẰNG NGÀY + thông số ấn tượng + gộp nhiều lợi ích vào 1 món** → viết theo mẫu này để tối đa Reactions.
-
-- **Dùng emoji hành động/nguy hiểm (😤🚗🔋) hiệu quả hơn emoji buồn bã (😩😰😬)** vốn dính toàn Score thấp.
-
-- **Không có hook nào tạo được Share/Comment thật** → thử thêm câu hỏi chốt kêu gọi bình luận (chọn A hay B, "bạn dùng mấy dây?") để phá trần Score.
+- Ưu tiên hook nêu **thông số/lợi ích cụ thể** (65W, MagSafe 25W, 3-trong-1): Score cao nhất (7) vì gợi tò mò và giá trị rõ ràng.
+- Hook mô tả **tình huống nguy hiểm/thiệt hại khi lái xe** (rớt điện thoại, tuột tay) hút Reactions tốt (Score 5–6); giữ yếu tố rủi ro + động từ mạnh.
+- Gộp nhiều thiết bị thành một món (sạc + pin, hết dây rối) là góc bán chạy — nhấn "gọn – bớt rối".
+- Emoji cảm xúc mạnh 😮‍💨😤 hợp hook rủi ro; emoji thông số 🔋🔌 hợp hook lợi ích — dùng đúng ngữ cảnh.
+- Tránh hook về **balo/hộ chiếu/chống mất cắp/laptop ướt**: Score toàn 3, tương tác thấp nhất — chủ đề ít chạm.
+- Tránh hook chung chung, mô tả nỗi đau mơ hồ (rơi hộ chiếu, mất ví, xem phim) — không tạo Reactions.
+- Sản phẩm sạc/pin/phụ kiện điện thoại xe hơi thắng balo/túi rõ rệt — tập trung nhóm này.
+- Công thức thắng: **tình huống rủi ro cụ thể HOẶC thông số ấn tượng + 1 emoji đúng tông + câu hỏi/khẳng định ngắn**.
