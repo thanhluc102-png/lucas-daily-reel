@@ -1,8 +1,8 @@
-- **Hook nêu THÔNG SỐ cụ thể (65W, MagSafe 25W, 180°, mở trong 30 giây) cho score cao nhất** — luôn nhét con số/tính năng thật vào hook.
-- **Sản phẩm sạc/pin dự phòng và giá đỡ điện thoại kéo tương tác tốt nhất** — ưu tiên nhóm phụ kiện công nghệ nhỏ, đau điểm hằng ngày.
-- **Hook "tình huống hoảng loạn khi lái xe" (điện thoại tuột tay, rớt giá đỡ khi kẹt xe) đạt score 6** — dùng cảnh giao thông quen thuộc, ai cũng từng gặp.
-- **Chỉ ra CÁI HẠI cụ thể ("cáp rẻ tiền giết pin nhanh nhất") gây tranh cãi nhẹ, score 6** — công kích thói quen sai của người dùng để kích phản ứng.
-- **Hook về balo/túi/hộ chiếu chỉ đạt score 3-4, tương tác thấp** — hạn chế, hoặc phải gắn thông số nổi bật mới cứu được.
-- **Hook chỉ hỏi chung chung, đầy lo sợ mơ hồ ("mất ví mất tất cả", "ác mộng có thật") đều score 3** — tránh doạ dẫm sáo rỗng không có giải pháp cụ thể.
-- **Emoji phù hợp tình huống (🔋🔌🚗) đi kèm số liệu tạo hiệu quả cao hơn emoji cảm xúc lo lắng (😰😩😬)** — chọn emoji sản phẩm thay vì emoji sợ hãi.
-- **Mọi hook đều chỉ đạt 1 comment, 0 share** — cần thêm CTA rõ ("bình luận X", "tag người cần") và yếu tố đáng chia sẻ (mẹo, con số bất ngờ) để phá trần tương tác.
+- Ưu tiên hook nêu **thông số cụ thể** (65W, MagSafe 25W, 180°) — cho điểm cao nhất (Score 7); con số tạo độ tin và gây tò mò.
+- Hook dạng **cảnh báo/nỗi đau đời thường** kèm hành động sai (vừa lái xe vừa chống điện thoại, cáp rẻ giết pin) hút reaction tốt (Score 6).
+- Sản phẩm **sạc/pin/cáp và giá đỡ điện thoại** tương tác nhỉnh hơn hẳn balo; nên đẩy mạnh nhóm phụ kiện công nghệ.
+- Tránh hook **chung chung, mơ hồ, bi kịch xa vời** (mất ví mất tất cả, rơi hộ chiếu sân bay) — chỉ đạt Score 3, không ai thấy liên quan.
+- Nhóm **balo** hook yếu đều đều (Score 3-4); nếu viết balo phải gắn tình huống rất cụ thể (mở 180° như vali, laptop sát đáy) mới nhích lên.
+- Kết hook bằng **câu hỏi gãi đúng thói quen xấu** của người dùng (“giá đỡ có rung mỗi lần chạm không?”) tốt hơn câu than thở tuyệt vọng.
+- Nhấn **giải pháp gộp nhiều thành một** (một cục sạc lo cả bàn, cục sạc + pin còn một món) là góc bán hàng ăn điểm.
+- Không share nào đạt được: cần thêm yếu tố **hữu ích/đáng lưu lại** (mẹo, so sánh thông số) thay vì chỉ hù dọa để kéo Share.
