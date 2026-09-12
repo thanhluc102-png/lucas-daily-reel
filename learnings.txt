@@ -1,8 +1,8 @@
-- Hook nêu **thông số/lợi ích cụ thể** ("65W, MagSafe 25W", "2-in-1 sạc + pin") cho điểm cao nhất (Score 7) — ưu tiên số liệu rõ ràng.
-- Hook về **giá đỡ điện thoại khi lái xe** ổn định top đầu (Score 5-6) — khai thác tình huống nguy hiểm khi lái xe.
-- Hook chạm **nỗi sợ hỏng/mất tài sản đắt tiền** (cáp rẻ giết pin, laptop rơi) kéo reactions tốt (Score 6) — nhấn thiệt hại tiền bạc.
-- Sản phẩm **sạc/pin/cáp và giá đỡ xe** tương tác cao hơn hẳn balo và phụ kiện chống mất đồ.
-- Hook dạng **câu hỏi chung chung, cảnh báo mơ hồ** (mất ví, rớt hộ chiếu, balo lấn cấn) chỉ đạt Score 3 — nên tránh kiểu trừu tượng, ít cụ thể.
-- Toàn bộ video **Shares=0, Comments=1**: nội dung chưa đủ giá trị để chia sẻ — cần thêm mẹo hữu ích/bất ngờ để kích share.
-- Công thức thắng: **tình huống nguy hiểm/thiệt hại cụ thể + con số + giải pháp gọn** ("2 món gộp 1", "30 giây").
-- Emoji giữ nguyên nhưng đặt sau lợi ích rõ ràng, không thay thế nội dung cụ thể.
+- **Hook nêu THÔNG SỐ cụ thể (65W, MagSafe 25W, 180°, mở trong 30 giây) cho score cao nhất** — luôn nhét con số/tính năng thật vào hook.
+- **Sản phẩm sạc/pin dự phòng và giá đỡ điện thoại kéo tương tác tốt nhất** — ưu tiên nhóm phụ kiện công nghệ nhỏ, đau điểm hằng ngày.
+- **Hook "tình huống hoảng loạn khi lái xe" (điện thoại tuột tay, rớt giá đỡ khi kẹt xe) đạt score 6** — dùng cảnh giao thông quen thuộc, ai cũng từng gặp.
+- **Chỉ ra CÁI HẠI cụ thể ("cáp rẻ tiền giết pin nhanh nhất") gây tranh cãi nhẹ, score 6** — công kích thói quen sai của người dùng để kích phản ứng.
+- **Hook về balo/túi/hộ chiếu chỉ đạt score 3-4, tương tác thấp** — hạn chế, hoặc phải gắn thông số nổi bật mới cứu được.
+- **Hook chỉ hỏi chung chung, đầy lo sợ mơ hồ ("mất ví mất tất cả", "ác mộng có thật") đều score 3** — tránh doạ dẫm sáo rỗng không có giải pháp cụ thể.
+- **Emoji phù hợp tình huống (🔋🔌🚗) đi kèm số liệu tạo hiệu quả cao hơn emoji cảm xúc lo lắng (😰😩😬)** — chọn emoji sản phẩm thay vì emoji sợ hãi.
+- **Mọi hook đều chỉ đạt 1 comment, 0 share** — cần thêm CTA rõ ("bình luận X", "tag người cần") và yếu tố đáng chia sẻ (mẹo, con số bất ngờ) để phá trần tương tác.
