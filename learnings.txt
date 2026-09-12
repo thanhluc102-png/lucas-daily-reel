@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **thông số cụ thể** (65W, MagSafe 25W, 180°) — cho điểm cao nhất (Score 7); con số tạo độ tin và gây tò mò.
-- Hook dạng **cảnh báo/nỗi đau đời thường** kèm hành động sai (vừa lái xe vừa chống điện thoại, cáp rẻ giết pin) hút reaction tốt (Score 6).
-- Sản phẩm **sạc/pin/cáp và giá đỡ điện thoại** tương tác nhỉnh hơn hẳn balo; nên đẩy mạnh nhóm phụ kiện công nghệ.
-- Tránh hook **chung chung, mơ hồ, bi kịch xa vời** (mất ví mất tất cả, rơi hộ chiếu sân bay) — chỉ đạt Score 3, không ai thấy liên quan.
-- Nhóm **balo** hook yếu đều đều (Score 3-4); nếu viết balo phải gắn tình huống rất cụ thể (mở 180° như vali, laptop sát đáy) mới nhích lên.
-- Kết hook bằng **câu hỏi gãi đúng thói quen xấu** của người dùng (“giá đỡ có rung mỗi lần chạm không?”) tốt hơn câu than thở tuyệt vọng.
-- Nhấn **giải pháp gộp nhiều thành một** (một cục sạc lo cả bàn, cục sạc + pin còn một món) là góc bán hàng ăn điểm.
-- Không share nào đạt được: cần thêm yếu tố **hữu ích/đáng lưu lại** (mẹo, so sánh thông số) thay vì chỉ hù dọa để kéo Share.
+- **Ưu tiên hook nêu THÔNG SỐ cụ thể** (65W, MagSafe 25W, 180°, 16 inch): Score cao nhất (7, 6) vì gợi tò mò và niềm tin sản phẩm.
+- **Nhóm sản phẩm mạnh nhất: phụ kiện điện thoại (giá đỡ, sạc, cáp) và pin/sạc đa năng** — kéo Reactions cao (3–4). Ưu tiên viết cho nhóm này.
+- **Hook "nỗi đau + tình huống đời thực"** (đang lái xe, kẹt xe, xem phim) ăn điểm hơn hook chung chung; càng cụ thể khoảnh khắc càng tốt.
+- **Chèn con số/mức độ gây sốc** ("Cáp rẻ tiền giết pin nhanh nhất", "7 triệu") tăng Reactions rõ rệt.
+- **Nhóm balo/túi cho tương tác trung bình–thấp** (Score 3–4); nếu viết balo phải kèm thông số chống sốc/dung tích cụ thể, tránh mô tả cảm tính.
+- **Tránh hook sợ hãi mơ hồ, dài dòng** ("ác mộng có thật", "mất luôn tất cả") — Score thấp (3), thiếu chi tiết níu người xem.
+- **Mở đầu bằng câu hỏi trực diện có emoji đúng ngữ cảnh** (🚗🔋🔌) giúp giữ nhịp; giữ hook 1 câu, dưới 15 từ.
+- **Không có Share nào đạt được** — thêm yếu tố "đáng chia sẻ": mẹo hữu ích, so sánh gộp nhiều thiết bị thành một, hoặc thông tin gây bất ngờ để đẩy Shares.
