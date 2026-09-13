@@ -1,8 +1,8 @@
-- Ưu tiên hook nêu **thông số cụ thể, gây "wow"** (65W, MagSafe 25W, 180°): cho điểm cao nhất — dùng số liệu thật, ấn tượng.
-- Hook **gộp nhiều thiết bị/vấn đề vào 1 giải pháp** (sạc dự phòng thay cục sạc, 1 cục lo cả bàn) tương tác tốt: nhấn "gộp nhiều thành một".
-- Hook **chỉ ra nỗi đau quen thuộc + hậu quả rõ** (cáp rẻ giết pin, điện thoại tuột tay khi lái xe) hiệu quả: nêu tình huống + thiệt hại thật.
-- Sản phẩm **sạc/pin/cáp** kéo tương tác cao hơn balo và giá đỡ: viết đậm nhóm phụ kiện công nghệ.
-- Tránh hook **gieo sợ hãi mơ hồ, thảm họa xa vời** (mất hộ chiếu, mất ví mất tất cả): điểm thấp, quá tiêu cực và chung chung.
-- Tránh hook **balo dài dòng, chỉ mô tả tính năng an toàn** (ngăn laptop, chống sốc): kém hút, cần thêm số liệu hoặc lợi ích bất ngờ.
-- Tránh **câu hỏi tu từ nhạt** không kèm con số hay giải pháp cụ thể: dễ rơi về mức điểm sàn.
-- Công thức nên dùng: **[nỗi đau cụ thể] + [thông số/giải pháp gây wow] + emoji đúng ngữ cảnh**, câu ngắn, đánh trúng dân công nghệ.
+- Hook nêu **thông số cụ thể** (65W, MagSafe 25W, 16 inch) hoặc **sự thật gây sốc** ("cáp rẻ giết pin", "giá đỡ rung") cho Score cao nhất (6–7) → ưu tiên số liệu + tuyên bố thẳng.
+- Nhóm sản phẩm **sạc/pin/cáp/công nghệ** kéo tương tác tốt hơn hẳn nhóm **balo** → tập trung khai thác dòng phụ kiện điện tử.
+- Hook dạng **câu hỏi "nỗi đau" chung chung** (mất ví, laptop sát đáy, xem phim) chỉ đạt Score 3 → tránh mô tả đau mơ hồ, không con số.
+- Chèn **con số/tình huống đo đếm được** (2 ngày mấy túi, 3 dây 3 thiết bị, 30 giây, 180°) tăng phản hồi rõ rệt.
+- Hook về **balo mô tả tính năng đóng/mở** (khóa hông, full 180°) yếu → nếu viết balo, gắn kèm rủi ro cụ thể + số inch máy.
+- Dùng **emoji đúng ngữ cảnh sản phẩm** (🔋🔌 cho sạc, 🚗 cho lái xe) nhưng đừng lạm dụng emoji thở dài (😮‍💨😩) vì đi kèm Score thấp.
+- Ưu tiên hook **khẳng định lợi ích gộp** ("một món thay hai", "một cục lo cả bàn") hơn hook chỉ hỏi lại nỗi đau.
+- Toàn bộ mẫu **Shares=0, Comments≈1** → cần thêm CTA kích chia sẻ/bình luận (tag bạn, hỏi ý kiến) để phá trần tương tác.
