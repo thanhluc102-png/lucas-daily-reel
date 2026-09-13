@@ -1,8 +1,8 @@
-- **Nêu thông số/tính năng cụ thể (65W, MagSafe 25W, 2-trong-1) cho Score cao nhất (7) — ưu tiên hook có con số kỹ thuật ấn tượng.**
-- **Chạm nỗi đau vật lý dễ hình dung (điện thoại tuột tay khi lái xe, cáp rẻ giết pin) đạt Score 6 — dùng tình huống đời thường gây bực bội.**
-- **Sản phẩm sạc/pin/phụ kiện công nghệ hút reactions hơn hẳn balo — ưu tiên chủ đề sạc, giá đỡ, cáp.**
-- **Tránh hook dọa/bi kịch chung chung (mất hộ chiếu, mất ví, ác mộng sân bay) — chỉ đạt Score 3, cảm xúc sợ hãi không tạo tương tác.**
-- **Tránh hook balo mơ hồ về chống sốc/laptop — đa số Score 3-4, kém hiệu quả trừ khi thêm chi tiết đắt giá (mở 180°, gói 30 giây).**
-- **Ưu tiên giải pháp gộp nhiều món thành một (1 cục sạc lo cả bàn, cáp+pin còn 1 món) — dễ đạt Score 5-6.**
-- **Đặt câu hỏi cụ thể về trải nghiệm người dùng (giá đỡ có rung khi chạm không?) tốt hơn câu cảnh báo trừu tượng.**
-- **Luôn kèm emoji đúng ngữ cảnh + con số/lợi ích rõ ràng ngay trong hook thay vì chỉ khơi gợi lo lắng.**
+- Ưu tiên hook nêu **thông số cụ thể, gây "wow"** (65W, MagSafe 25W, 180°): cho điểm cao nhất — dùng số liệu thật, ấn tượng.
+- Hook **gộp nhiều thiết bị/vấn đề vào 1 giải pháp** (sạc dự phòng thay cục sạc, 1 cục lo cả bàn) tương tác tốt: nhấn "gộp nhiều thành một".
+- Hook **chỉ ra nỗi đau quen thuộc + hậu quả rõ** (cáp rẻ giết pin, điện thoại tuột tay khi lái xe) hiệu quả: nêu tình huống + thiệt hại thật.
+- Sản phẩm **sạc/pin/cáp** kéo tương tác cao hơn balo và giá đỡ: viết đậm nhóm phụ kiện công nghệ.
+- Tránh hook **gieo sợ hãi mơ hồ, thảm họa xa vời** (mất hộ chiếu, mất ví mất tất cả): điểm thấp, quá tiêu cực và chung chung.
+- Tránh hook **balo dài dòng, chỉ mô tả tính năng an toàn** (ngăn laptop, chống sốc): kém hút, cần thêm số liệu hoặc lợi ích bất ngờ.
+- Tránh **câu hỏi tu từ nhạt** không kèm con số hay giải pháp cụ thể: dễ rơi về mức điểm sàn.
+- Công thức nên dùng: **[nỗi đau cụ thể] + [thông số/giải pháp gây wow] + emoji đúng ngữ cảnh**, câu ngắn, đánh trúng dân công nghệ.
