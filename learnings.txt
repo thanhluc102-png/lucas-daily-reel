@@ -1,8 +1,8 @@
-- Nêu thông số kỹ thuật cụ thể (65W, MagSafe 25W, 180°) — hook có số liệu thật cho Score cao nhất (7, 6, 5).
-- Chạm nỗi đau tiêu cực hoặc so sánh "rẻ tiền giết pin", "sạc lần lượt cả nhà đợi" — gây phản ứng mạnh hơn hook mô tả nhẹ nhàng.
-- Ưu tiên sản phẩm sạc/pin/cáp: nhóm này gom nhiều Score cao (7, 6, 5, 4); phụ kiện tính năng gộp (all-in-one) hút tương tác tốt.
-- Nhấn lợi ích gộp nhiều thành một: "một cục lo cả bàn", "cục sạc + pin còn một món" — ý tưởng tiết kiệm/tối giản kéo reactions.
-- Tránh hook chỉ đặt câu hỏi chung chung, mơ hồ ("xách theo mấy túi?", "sạc lần lượt?") — chỉ đạt Score 3, không có số liệu neo.
-- Tránh mô tả thao tác quá chi tiết mà thiếu con số ấn tượng ("mở khóa hông 2 giây", "lấy laptop") — tương tác thấp.
-- Đặt con số/tính năng gây "wow" ngay đầu câu, kèm 1 emoji đúng chủ đề (🔋🔌🎒) — tăng khả năng dừng xem.
-- Toàn bộ hook đều 0 share: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, deal sốc, tình huống ai cũng gặp) để phá trần Score.
+- Hook nêu **thông số cụ thể** (65W, MagSafe 25W, 180°, 16 inch) cho tương tác cao nhất — luôn nhồi số liệu thật vào câu mở.
+- Hook chỉ ra **giải pháp gộp nhiều thành một** ("cục sạc + pin còn một món", "một cục sạc lo cả bàn") kéo reactions tốt — nhấn tính đa năng.
+- Sản phẩm **sạc/pin/cáp** (nhóm tech điện) đạt score cao hơn hẳn nhóm balo/giá đỡ — ưu tiên xoáy vào phụ kiện sạc.
+- Hook chạm **nỗi đau tiền bạc/hỏng thiết bị** ("cáp rẻ giết pin", "sạc lần lượt cả nhà đợi") gây comment/reaction — dùng cảnh báo mất mát.
+- Hook **pain-point mơ hồ, cảm thán suông** ("rối thật", "mệt rồi", "nằm dài trên bàn") chỉ đạt score đáy — tránh than vãn chung chung không có con số.
+- Hook về **balo** gần như luôn thấp trừ khi có thông số ấn tượng (180°) — nếu viết balo phải kèm chi tiết kỹ thuật gây sốc.
+- Shares = 0 toàn bộ; muốn tăng score phải thêm **yếu tố đáng chia sẻ**: mẹo hay, so sánh giá trị, tình huống ai cũng gặp.
+- Công thức thắng: **Số liệu cụ thể + gộp nhiều-trong-một + nỗi đau thiết bị hỏng/tốn tiền**, giữ câu ngắn, 1 emoji cuối.
