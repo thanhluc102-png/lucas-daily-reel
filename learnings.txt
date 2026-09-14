@@ -1,8 +1,8 @@
-- Hook nêu **thông số cụ thể** (65W, MagSafe 25W, 16 inch) hoặc **sự thật gây sốc** ("cáp rẻ giết pin", "giá đỡ rung") cho Score cao nhất (6–7) → ưu tiên số liệu + tuyên bố thẳng.
-- Nhóm sản phẩm **sạc/pin/cáp/công nghệ** kéo tương tác tốt hơn hẳn nhóm **balo** → tập trung khai thác dòng phụ kiện điện tử.
-- Hook dạng **câu hỏi "nỗi đau" chung chung** (mất ví, laptop sát đáy, xem phim) chỉ đạt Score 3 → tránh mô tả đau mơ hồ, không con số.
-- Chèn **con số/tình huống đo đếm được** (2 ngày mấy túi, 3 dây 3 thiết bị, 30 giây, 180°) tăng phản hồi rõ rệt.
-- Hook về **balo mô tả tính năng đóng/mở** (khóa hông, full 180°) yếu → nếu viết balo, gắn kèm rủi ro cụ thể + số inch máy.
-- Dùng **emoji đúng ngữ cảnh sản phẩm** (🔋🔌 cho sạc, 🚗 cho lái xe) nhưng đừng lạm dụng emoji thở dài (😮‍💨😩) vì đi kèm Score thấp.
-- Ưu tiên hook **khẳng định lợi ích gộp** ("một món thay hai", "một cục lo cả bàn") hơn hook chỉ hỏi lại nỗi đau.
-- Toàn bộ mẫu **Shares=0, Comments≈1** → cần thêm CTA kích chia sẻ/bình luận (tag bạn, hỏi ý kiến) để phá trần tương tác.
+- Nêu thông số kỹ thuật cụ thể (65W, MagSafe 25W, 180°) — hook có số liệu thật cho Score cao nhất (7, 6, 5).
+- Chạm nỗi đau tiêu cực hoặc so sánh "rẻ tiền giết pin", "sạc lần lượt cả nhà đợi" — gây phản ứng mạnh hơn hook mô tả nhẹ nhàng.
+- Ưu tiên sản phẩm sạc/pin/cáp: nhóm này gom nhiều Score cao (7, 6, 5, 4); phụ kiện tính năng gộp (all-in-one) hút tương tác tốt.
+- Nhấn lợi ích gộp nhiều thành một: "một cục lo cả bàn", "cục sạc + pin còn một món" — ý tưởng tiết kiệm/tối giản kéo reactions.
+- Tránh hook chỉ đặt câu hỏi chung chung, mơ hồ ("xách theo mấy túi?", "sạc lần lượt?") — chỉ đạt Score 3, không có số liệu neo.
+- Tránh mô tả thao tác quá chi tiết mà thiếu con số ấn tượng ("mở khóa hông 2 giây", "lấy laptop") — tương tác thấp.
+- Đặt con số/tính năng gây "wow" ngay đầu câu, kèm 1 emoji đúng chủ đề (🔋🔌🎒) — tăng khả năng dừng xem.
+- Toàn bộ hook đều 0 share: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, deal sốc, tình huống ai cũng gặp) để phá trần Score.
