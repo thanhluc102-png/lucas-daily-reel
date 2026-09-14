@@ -1,8 +1,8 @@
-- Hook nêu **thông số cụ thể** (65W, MagSafe 25W, 180°, 16 inch) cho tương tác cao nhất — luôn nhồi số liệu thật vào câu mở.
-- Hook chỉ ra **giải pháp gộp nhiều thành một** ("cục sạc + pin còn một món", "một cục sạc lo cả bàn") kéo reactions tốt — nhấn tính đa năng.
-- Sản phẩm **sạc/pin/cáp** (nhóm tech điện) đạt score cao hơn hẳn nhóm balo/giá đỡ — ưu tiên xoáy vào phụ kiện sạc.
-- Hook chạm **nỗi đau tiền bạc/hỏng thiết bị** ("cáp rẻ giết pin", "sạc lần lượt cả nhà đợi") gây comment/reaction — dùng cảnh báo mất mát.
-- Hook **pain-point mơ hồ, cảm thán suông** ("rối thật", "mệt rồi", "nằm dài trên bàn") chỉ đạt score đáy — tránh than vãn chung chung không có con số.
-- Hook về **balo** gần như luôn thấp trừ khi có thông số ấn tượng (180°) — nếu viết balo phải kèm chi tiết kỹ thuật gây sốc.
-- Shares = 0 toàn bộ; muốn tăng score phải thêm **yếu tố đáng chia sẻ**: mẹo hay, so sánh giá trị, tình huống ai cũng gặp.
-- Công thức thắng: **Số liệu cụ thể + gộp nhiều-trong-một + nỗi đau thiết bị hỏng/tốn tiền**, giữ câu ngắn, 1 emoji cuối.
+- Nêu **thông số kỹ thuật cụ thể** (65W, MagSafe 25W, 180°) → Score cao nhất (7), vì tạo sự tin tưởng và ấn tượng mạnh; ưu tiên chèn số liệu vào hook.
+- Đánh vào **nỗi đau tốn kém/hỏng đồ** ("cáp rẻ giết pin", "cục sạc lo cả bàn") → Score 5-6; nhấn hậu quả tài chính hoặc mất mát cụ thể.
+- Chủ đề **sạc/pin/hub gộp nhiều thiết bị** cho tương tác tốt nhất → tập trung sản phẩm sạc đa năng, pin dự phòng tích hợp.
+- **Balo & giá đỡ** tương tác trung bình-thấp (Score 3-4) → cần thêm tính năng độc đáo/số liệu, tránh hook chung chung ("balo đẹp mà...").
+- Hook chỉ hỏi mơ hồ về tình huống ("xem phim", "kẹt xe", "công tác mấy túi") → Score thấp nhất (3), nên tránh câu hỏi tu từ nhạt.
+- Ưu tiên **giải pháp "gộp nhiều thành một"** ("3 dây còn 1", "pin + sạc còn 1 món") → dễ gây phản ứng tích cực.
+- Không hook nào đạt Share/Comment lan tỏa → cần thêm **yếu tố gây tranh luận hoặc lời kêu gọi tag bạn bè** để đẩy Comments/Shares.
+- Emoji hợp ngữ cảnh (🔋🔌🧳) ổn, nhưng emoji không cứu được hook yếu → nội dung số liệu + nỗi đau tiền bạc mới là đòn bẩy chính.
