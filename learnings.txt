@@ -1,7 +1,15 @@
-- Hook nêu **thông số cụ thể** (65W, 25W, 16 inch, 180°, 30 giây) cho điểm cao nhất — luôn nhồi số liệu ấn tượng vào câu mở.
-- Sản phẩm **sạc/pin/cáp** (đa năng, nhiều thiết bị) hút tương tác mạnh nhất; ưu tiên đề tài "gộp nhiều món thành một".
-- Hook chỉ ra **cái giá phải trả / nỗi đau ngầm** ("cáp rẻ giết pin", "cổ tay mài mòn nhôm") ăn reactions hơn hook cảnh báo chung chung.
-- Tránh hook **mất mát mơ hồ, cảm xúc suông** ("mất ví là mất tất cả", "điện thoại nằm dài") — điểm thấp nhất, không có gì cụ thể để hình dung.
-- Hook mảng **balo/túi** tương tác trung bình; muốn tăng thì thêm chi tiết kỹ thuật (chống sốc, mở khóa hông 2 giây) thay vì khen "đẹp".
-- Dùng **câu hỏi khơi bực bội thường ngày** ("3 dây sạc trên bàn?", "cả nhà đợi máy lên pin?") để đẩy comment tăng.
-- Mỗi hook chỉ **một icon liên quan**, đặt cuối câu; câu ngắn, cụ thể, có con số hoặc tình huống nhìn thấy được.
+- **Mở hook bằng thông số cụ thể, con số ấn tượng** (65W, MagSafe 25W, 180°) → điểm cao nhất (Score 6-7). Ưu tiên nêu tính năng đo đếm được ngay câu đầu.
+
+- **Sản phẩm sạc/pin đa năng "gộp nhiều thành một"** (sạc + pin, sạc nhiều thiết bị cùng lúc) hút reaction mạnh nhất → khai thác nhiều.
+
+- **Chạm nỗi đau vật lý gây "rùng mình"** (cáp rẻ giết pin, cổ tay mài mòn MacBook) tạo phản ứng tốt hơn nỗi đau chung chung.
+
+- **Tránh hook mơ hồ, câu hỏi nhạt** ("Balo hay cặp xách?", "vẫn nằm dài trên bàn", "đẹp mà quăng laptop") → Score đáy (3).
+
+- **Nhóm balo/túi công tác đang yếu đều** → cần gắn thêm số liệu cụ thể (giây, độ, inch) thay vì mô tả cảm tính chung.
+
+- **Ưu tiên câu khẳng định giải pháp gọn** ("giờ chỉ còn một món", "lo hết cả bàn") hơn câu hỏi tu từ dài dòng.
+
+- **Emoji nên khớp sản phẩm & đặt cuối** (🔋🔌 cho sạc cho điểm cao); tránh emoji thở dài 😮‍💨😬 mở màn vì gắn với Score thấp.
+
+- **Công thức thắng: [Thông số/lợi ích số hóa] + [gộp nhiều thành một] + [nỗi đau cụ thể]**; loại bỏ hook chỉ hỏi suông không có giải pháp.
