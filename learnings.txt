@@ -1,8 +1,7 @@
-- Nêu **thông số kỹ thuật cụ thể** (65W, MagSafe 25W, 180°) → Score cao nhất (7), vì tạo sự tin tưởng và ấn tượng mạnh; ưu tiên chèn số liệu vào hook.
-- Đánh vào **nỗi đau tốn kém/hỏng đồ** ("cáp rẻ giết pin", "cục sạc lo cả bàn") → Score 5-6; nhấn hậu quả tài chính hoặc mất mát cụ thể.
-- Chủ đề **sạc/pin/hub gộp nhiều thiết bị** cho tương tác tốt nhất → tập trung sản phẩm sạc đa năng, pin dự phòng tích hợp.
-- **Balo & giá đỡ** tương tác trung bình-thấp (Score 3-4) → cần thêm tính năng độc đáo/số liệu, tránh hook chung chung ("balo đẹp mà...").
-- Hook chỉ hỏi mơ hồ về tình huống ("xem phim", "kẹt xe", "công tác mấy túi") → Score thấp nhất (3), nên tránh câu hỏi tu từ nhạt.
-- Ưu tiên **giải pháp "gộp nhiều thành một"** ("3 dây còn 1", "pin + sạc còn 1 món") → dễ gây phản ứng tích cực.
-- Không hook nào đạt Share/Comment lan tỏa → cần thêm **yếu tố gây tranh luận hoặc lời kêu gọi tag bạn bè** để đẩy Comments/Shares.
-- Emoji hợp ngữ cảnh (🔋🔌🧳) ổn, nhưng emoji không cứu được hook yếu → nội dung số liệu + nỗi đau tiền bạc mới là đòn bẩy chính.
+- Hook nêu **thông số kỹ thuật cụ thể + con số** (65W, MagSafe 25W, gộp 2 thành 1) cho điểm cao nhất (Score 7) → luôn nhét số liệu định lượng vào hook.
+- Sản phẩm **sạc/pin/cáp** kéo tương tác tốt hơn hẳn balo và phụ kiện lặt vặt → ưu tiên xoay quanh giải pháp sạc đa năng, gộp nhiều món.
+- Hook chỉ ra **nỗi đau tốn kém/hại thiết bị** ("cáp rẻ giết pin nhanh nhất", Score 6) hiệu quả cao → dùng cảnh báo hậu quả thẳng, mạnh.
+- Hook **câu hỏi chung chung, mơ hồ** ("xách mấy cái túi?", "có bị rung không?") chỉ đạt Score 3-4 → tránh câu hỏi nhạt, thiếu điểm nhấn cụ thể.
+- Hook về **balo** (chống sốc, mở 180°, khóa hông) đều èo uột Score 3-4 → hạ ưu tiên, nếu viết phải gắn số liệu hoặc hậu quả rõ.
+- Reel gần như **không có Share nào** → chèn yếu tố "gửi cho người cần", tình huống dễ tag bạn bè để đẩy Share (đòn nặng nhất).
+- Cấu trúc thắng: **[Vấn đề tốn kém/kỹ thuật] + [con số ấn tượng] + [gộp/giải quyết gọn]** → lặp lại công thức này.
