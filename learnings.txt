@@ -1,7 +1,7 @@
-- Hook nêu **thông số kỹ thuật cụ thể + con số** (65W, MagSafe 25W, gộp 2 thành 1) cho điểm cao nhất (Score 7) → luôn nhét số liệu định lượng vào hook.
-- Sản phẩm **sạc/pin/cáp** kéo tương tác tốt hơn hẳn balo và phụ kiện lặt vặt → ưu tiên xoay quanh giải pháp sạc đa năng, gộp nhiều món.
-- Hook chỉ ra **nỗi đau tốn kém/hại thiết bị** ("cáp rẻ giết pin nhanh nhất", Score 6) hiệu quả cao → dùng cảnh báo hậu quả thẳng, mạnh.
-- Hook **câu hỏi chung chung, mơ hồ** ("xách mấy cái túi?", "có bị rung không?") chỉ đạt Score 3-4 → tránh câu hỏi nhạt, thiếu điểm nhấn cụ thể.
-- Hook về **balo** (chống sốc, mở 180°, khóa hông) đều èo uột Score 3-4 → hạ ưu tiên, nếu viết phải gắn số liệu hoặc hậu quả rõ.
-- Reel gần như **không có Share nào** → chèn yếu tố "gửi cho người cần", tình huống dễ tag bạn bè để đẩy Share (đòn nặng nhất).
-- Cấu trúc thắng: **[Vấn đề tốn kém/kỹ thuật] + [con số ấn tượng] + [gộp/giải quyết gọn]** → lặp lại công thức này.
+- Hook nêu **thông số cụ thể** (65W, 25W, 16 inch, 180°, 30 giây) cho điểm cao nhất — luôn nhồi số liệu ấn tượng vào câu mở.
+- Sản phẩm **sạc/pin/cáp** (đa năng, nhiều thiết bị) hút tương tác mạnh nhất; ưu tiên đề tài "gộp nhiều món thành một".
+- Hook chỉ ra **cái giá phải trả / nỗi đau ngầm** ("cáp rẻ giết pin", "cổ tay mài mòn nhôm") ăn reactions hơn hook cảnh báo chung chung.
+- Tránh hook **mất mát mơ hồ, cảm xúc suông** ("mất ví là mất tất cả", "điện thoại nằm dài") — điểm thấp nhất, không có gì cụ thể để hình dung.
+- Hook mảng **balo/túi** tương tác trung bình; muốn tăng thì thêm chi tiết kỹ thuật (chống sốc, mở khóa hông 2 giây) thay vì khen "đẹp".
+- Dùng **câu hỏi khơi bực bội thường ngày** ("3 dây sạc trên bàn?", "cả nhà đợi máy lên pin?") để đẩy comment tăng.
+- Mỗi hook chỉ **một icon liên quan**, đặt cuối câu; câu ngắn, cụ thể, có con số hoặc tình huống nhìn thấy được.
