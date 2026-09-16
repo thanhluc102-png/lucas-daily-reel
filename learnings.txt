@@ -1,15 +1,15 @@
-- **Hook nêu THÔNG SỐ cụ thể thắng lớn**: "65W + MagSafe 25W" (Score 7), "cáp rẻ giết pin" (Score 6) — con số/hậu quả rõ ràng gây tò mò mạnh nhất.
+- **Hook nêu thông số/lợi ích cụ thể thắng lớn**: "Sạc dây 65W, không dây MagSafe 25W trong một viên pin" đạt Score cao nhất (7). Luôn nhét số liệu thật (W, inch, giây, độ) vào hook.
 
-- **Ưu tiên nhóm sản phẩm SẠC/PIN/CÁP**: chiếm hầu hết các hook điểm cao (7, 6, 6, 5); đây là chủ đề "đau" dễ tương tác nhất.
+- **Sản phẩm sạc/pin đa năng ("gộp nhiều thành một") cho tương tác tốt nhất**: sạc gộp, cáp bền, pin liền cục sạc. Ưu tiên khai thác nhóm sản phẩm này.
 
-- **Hook "gộp nhiều món thành một" hiệu quả**: giải quyết nỗi đau rối dây / nhiều thiết bị ("một cục sạc lo cả bàn" Score 5) — nhấn tiết kiệm & gọn.
+- **Hook chạm nỗi đau + hù dọa hậu quả cụ thể hiệu quả** ("Cáp rẻ tiền giết pin nhanh nhất" =6): dùng công thức "món rẻ/sai đang phá hỏng thiết bị đắt tiền của bạn".
 
-- **Câu hỏi gợi nỗi đau đời thường + hứa giải pháp** kéo comment tốt ("cả nhà đợi máy lên pin" Score 6): đánh vào tình huống chờ đợi/bực bội quen thuộc.
+- **Hook kêu gọi phản hồi/gợi tranh luận kéo comment** ("cả nhà đợi máy lên pin?" =6 nhờ 2 comments): đặt câu hỏi khiến người xem muốn kể trải nghiệm của họ.
 
-- **Tránh hook chung chung, mơ hồ về BALO/PHỤ KIỆN VĂN PHÒNG**: phần lớn chỉ Score 3-4 ("balo hay cặp xách", "balo mở 180°") — thiếu con số, thiếu cú sốc.
+- **Tránh hook chung chung, mô tả tính năng khô khan không có nỗi đau** ("Balo hay cặp xách? Cả hai", "Bàn phím cơ mỏng nhẹ nhất"): chỉ đạt Score 3-4, ít cảm xúc.
 
-- **Tránh hook chỉ tả tính năng phẳng lặng** ("bàn phím mỏng nhẹ nhất", "ốp làm hết mỏng"): không tạo tò mò, tương tác thấp.
+- **Nhóm balo/phụ kiện bàn làm việc (giá đỡ, kê tay, dán màn) tương tác yếu** (đa số Score 3-4): nếu viết phải gắn thông số + nỗi đau mạnh, đừng chỉ tả đẹp.
 
-- **Công thức nên dùng**: [Con số/thông số gây sốc] + [nỗi đau cụ thể] + [emoji cảm xúc], càng định lượng càng mạnh.
+- **Emoji 😮‍💨😬😤 (bực bội/nỗi đau) + câu hỏi trực diện** kéo tương tác tốt hơn emoji trung tính; giữ hook 1 câu, dưới 15 từ.
 
-- **Mọi hook đều 0 Share** → cần thêm yếu tố "đáng lưu/đáng khoe" (mẹo bất ngờ, so sánh trước-sau) để đẩy Share, đòn bẩy điểm cao nhất.
+- **Không có share nào — thiếu yếu tố "đáng chia sẻ"**: thêm góc bất ngờ/mẹo hữu ích/con số gây sốc để kích share, đòn nặng điểm nhất.
