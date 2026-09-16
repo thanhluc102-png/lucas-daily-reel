@@ -1,15 +1,8 @@
-- **Hook nêu thông số/lợi ích cụ thể thắng lớn**: "Sạc dây 65W, không dây MagSafe 25W trong một viên pin" đạt Score cao nhất (7). Luôn nhét số liệu thật (W, inch, giây, độ) vào hook.
-
-- **Sản phẩm sạc/pin đa năng ("gộp nhiều thành một") cho tương tác tốt nhất**: sạc gộp, cáp bền, pin liền cục sạc. Ưu tiên khai thác nhóm sản phẩm này.
-
-- **Hook chạm nỗi đau + hù dọa hậu quả cụ thể hiệu quả** ("Cáp rẻ tiền giết pin nhanh nhất" =6): dùng công thức "món rẻ/sai đang phá hỏng thiết bị đắt tiền của bạn".
-
-- **Hook kêu gọi phản hồi/gợi tranh luận kéo comment** ("cả nhà đợi máy lên pin?" =6 nhờ 2 comments): đặt câu hỏi khiến người xem muốn kể trải nghiệm của họ.
-
-- **Tránh hook chung chung, mô tả tính năng khô khan không có nỗi đau** ("Balo hay cặp xách? Cả hai", "Bàn phím cơ mỏng nhẹ nhất"): chỉ đạt Score 3-4, ít cảm xúc.
-
-- **Nhóm balo/phụ kiện bàn làm việc (giá đỡ, kê tay, dán màn) tương tác yếu** (đa số Score 3-4): nếu viết phải gắn thông số + nỗi đau mạnh, đừng chỉ tả đẹp.
-
-- **Emoji 😮‍💨😬😤 (bực bội/nỗi đau) + câu hỏi trực diện** kéo tương tác tốt hơn emoji trung tính; giữ hook 1 câu, dưới 15 từ.
-
-- **Không có share nào — thiếu yếu tố "đáng chia sẻ"**: thêm góc bất ngờ/mẹo hữu ích/con số gây sốc để kích share, đòn nặng điểm nhất.
+- Ưu tiên hook nêu **thông số/tính năng cụ thể** (65W, 25W, 180°, 30 giây) — nhóm này Score cao nhất (7, 6).
+- Đánh vào **nỗi đau đời thực có hình ảnh** (màn lóa như gương, cáp rẻ giết pin, cả nhà đợi sạc) cho tương tác tốt (6).
+- Sản phẩm **sạc/pin và phụ kiện công nghệ** kéo Score cao hơn hẳn nhóm **balo/túi** (balo hầu hết chỉ 3–4).
+- Hook dạng **khẳng định gây sốc** ("Cáp sạc rẻ tiền là thứ giết pin nhanh nhất") mạnh hơn câu hỏi chung chung.
+- Thêm **con số + emoji thiết bị** (🔋🔌) giúp hút reaction; tránh emoji cảm xúc mờ nhạt (😬😑) đứng một mình.
+- Tránh hook **câu hỏi tu từ dài, chung chung** ("Balo hay cặp xách?", "Ốp dày làm hết mỏng") — toàn Score 3, kém nhất.
+- Tránh mô tả **rủi ro balo/laptop lặp lại** (chống sốc, rơi máy) — bão hòa, tương tác đáy.
+- Mở đầu bằng **lợi ích gộp nhiều món thành một** ("2 món giờ còn 1", "một cục lo cả bàn") tạo tò mò, Score khá (5–6).
