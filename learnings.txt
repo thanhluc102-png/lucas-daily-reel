@@ -1,8 +1,8 @@
-- Hook nêu **nỗi đau cụ thể + tần suất hằng ngày** ("giết pin nhanh nhất", "màn hình lóa như gương") cho Score cao nhất (6); ưu tiên kiểu này.
-- **Sản phẩm sạc/cáp/pin dự phòng và dán chống lóa** kéo tương tác tốt nhất; đẩy mạnh nhóm phụ kiện điện.
-- **Balo/cặp chỉ dừng ở Score 3-4**, chủ đề bão hòa và ít cảm xúc; giảm tần suất hoặc đổi góc mạnh hơn.
-- Câu hỏi tu từ chạm trúng trải nghiệm ("có bị rung mỗi lần chạm không?") tạo comment; giữ dạng câu hỏi khơi phản hồi.
-- Hook mô tả tính năng đơn thuần, chung chung ("balo hay cặp xách", "bàn phím mỏng nhẹ") tương tác kém; tránh chỉ khoe đặc điểm.
-- Dùng **con số cụ thể + hình ảnh gộp gọn** ("3 cục sạc 3 sợi cáp", "một món lo hết") để tạo tương phản rối/gọn; hiệu quả cao.
-- **Không hook nào đạt Share**; cần thêm yếu tố hữu ích/đáng lưu ("mẹo bảo vệ pin", "checklist đồ công tác") để kích chia sẻ.
-- Emoji đặt cuối đúng chủ đề (🔋🔌😬) ổn; giữ 1 emoji, tập trung câu chữ vào nỗi đau thay vì trang trí.
+- Ưu tiên hook chỉ đúng "nỗi đau công nghệ" cụ thể, dễ hình dung: pin chai, màn lóa nắng, ố vàng, đọng mồ hôi — nhóm này đạt Score 5-6 cao nhất.
+- Mở đầu bằng câu khẳng định sốc ("...là thứ giết pin nhanh nhất", "đang mài mòn lớp nhôm mỗi ngày") kéo reaction mạnh hơn câu hỏi chung chung.
+- Chèn tình huống đông người / cả nhà cùng chờ (sạc lần lượt cả nhà đợi) khơi được nhiều comment — khai thác bối cảnh chia sẻ.
+- Sản phẩm sạc/cáp và phụ kiện màn hình, ốp lưng cho tương tác tốt nhất; nên đẩy mạnh nhóm này.
+- Nhóm balo đều Score 3-4, kém nhất; nếu viết balo phải cắm nỗi đau cực gắt (mưa ướt máy, rơi trúng đáy) thay vì khen đẹp/đa năng.
+- Tránh hook mô tả tính năng chung chung ("balo hay cặp xách", "bàn phím mỏng nhẹ") — thiếu nỗi đau nên trôi.
+- Dùng emoji cảm xúc (😬😤😑) hợp hơn emoji vật phẩm (🎒🔌) để tăng đồng cảm và reaction.
+- Câu ngắn, xoáy trực diện vào thiệt hại người dùng đang chịu; càng cụ thể con số/chi tiết (16 inch, iPhone Air, 3 cục sạc) càng dễ chạm đúng đối tượng.
