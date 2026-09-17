@@ -1,8 +1,13 @@
-- Ưu tiên hook nêu **thông số/tính năng cụ thể** (65W, 25W, 180°, 30 giây) — nhóm này Score cao nhất (7, 6).
-- Đánh vào **nỗi đau đời thực có hình ảnh** (màn lóa như gương, cáp rẻ giết pin, cả nhà đợi sạc) cho tương tác tốt (6).
-- Sản phẩm **sạc/pin và phụ kiện công nghệ** kéo Score cao hơn hẳn nhóm **balo/túi** (balo hầu hết chỉ 3–4).
-- Hook dạng **khẳng định gây sốc** ("Cáp sạc rẻ tiền là thứ giết pin nhanh nhất") mạnh hơn câu hỏi chung chung.
-- Thêm **con số + emoji thiết bị** (🔋🔌) giúp hút reaction; tránh emoji cảm xúc mờ nhạt (😬😑) đứng một mình.
-- Tránh hook **câu hỏi tu từ dài, chung chung** ("Balo hay cặp xách?", "Ốp dày làm hết mỏng") — toàn Score 3, kém nhất.
-- Tránh mô tả **rủi ro balo/laptop lặp lại** (chống sốc, rơi máy) — bão hòa, tương tác đáy.
-- Mở đầu bằng **lợi ích gộp nhiều món thành một** ("2 món giờ còn 1", "một cục lo cả bàn") tạo tò mò, Score khá (5–6).
+- **Hook cho số cụ thể + hành động tức thì thắng lớn**: "mở full 180°", "trong 30 giây", "trong 2 giây" — chi tiết đo lường được tạo tò mò, ưu tiên nhồi con số vào câu đầu.
+
+- **Nỗi đau vật lý trực quan cho điểm cao nhất** (Score 6): "màn hình lóa như gương", "cáp rẻ giết pin nhanh nhất", "cả nhà đợi máy lên pin" — chọn cảnh khó chịu mà ai cũng từng gặp, mô tả sinh động.
+
+- **Câu hỏi "gộp nhiều món thành một" hiệu quả**: "một cục sạc lo cả bàn", "3 sạc 3 cáp mệt rồi" — nhấn giải phóng sự lộn xộn, đánh vào người dùng nhiều thiết bị Apple.
+
+- **Tránh hook mô tả tính năng suông, thiếu xung đột** (Score 3): "balo hay cặp xách", "bàn phím mỏng nhẹ", "Mac Mini cắm ra sau lưng" — nêu đặc điểm mà không gợi hậu quả nên tương tác thấp nhất.
+
+- **Đe dọa hư hỏng tài sản đắt tiền nên đi kèm cảnh cụ thể**, không chung chung: "cổ tay mài mòn nhôm MacBook", "ngăn laptop sát đáy rơi lãnh trọn" vẫn yếu — cần thêm số liệu hoặc giải pháp gây sốc để nâng điểm.
+
+- **Ưu tiên chủ đề sạc/pin và màn hình chống lóa** — nhóm cho điểm cao ổn định; hạn chế lạm dụng chủ đề balo chung chung vì đa số rơi vào Score 3-4.
+
+- **Toàn bộ mẫu Shares=0**: chưa hook nào đủ "đáng chia sẻ" — thêm yếu tố bất ngờ, mẹo hữu ích hoặc lợi ích tiết kiệm rõ rệt để kích Share (đòn bẩy điểm mạnh nhất).
