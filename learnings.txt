@@ -1,13 +1,8 @@
-- **Hook cho số cụ thể + hành động tức thì thắng lớn**: "mở full 180°", "trong 30 giây", "trong 2 giây" — chi tiết đo lường được tạo tò mò, ưu tiên nhồi con số vào câu đầu.
-
-- **Nỗi đau vật lý trực quan cho điểm cao nhất** (Score 6): "màn hình lóa như gương", "cáp rẻ giết pin nhanh nhất", "cả nhà đợi máy lên pin" — chọn cảnh khó chịu mà ai cũng từng gặp, mô tả sinh động.
-
-- **Câu hỏi "gộp nhiều món thành một" hiệu quả**: "một cục sạc lo cả bàn", "3 sạc 3 cáp mệt rồi" — nhấn giải phóng sự lộn xộn, đánh vào người dùng nhiều thiết bị Apple.
-
-- **Tránh hook mô tả tính năng suông, thiếu xung đột** (Score 3): "balo hay cặp xách", "bàn phím mỏng nhẹ", "Mac Mini cắm ra sau lưng" — nêu đặc điểm mà không gợi hậu quả nên tương tác thấp nhất.
-
-- **Đe dọa hư hỏng tài sản đắt tiền nên đi kèm cảnh cụ thể**, không chung chung: "cổ tay mài mòn nhôm MacBook", "ngăn laptop sát đáy rơi lãnh trọn" vẫn yếu — cần thêm số liệu hoặc giải pháp gây sốc để nâng điểm.
-
-- **Ưu tiên chủ đề sạc/pin và màn hình chống lóa** — nhóm cho điểm cao ổn định; hạn chế lạm dụng chủ đề balo chung chung vì đa số rơi vào Score 3-4.
-
-- **Toàn bộ mẫu Shares=0**: chưa hook nào đủ "đáng chia sẻ" — thêm yếu tố bất ngờ, mẹo hữu ích hoặc lợi ích tiết kiệm rõ rệt để kích Share (đòn bẩy điểm mạnh nhất).
+- Hook nêu **nỗi đau cụ thể + tần suất hằng ngày** ("giết pin nhanh nhất", "màn hình lóa như gương") cho Score cao nhất (6); ưu tiên kiểu này.
+- **Sản phẩm sạc/cáp/pin dự phòng và dán chống lóa** kéo tương tác tốt nhất; đẩy mạnh nhóm phụ kiện điện.
+- **Balo/cặp chỉ dừng ở Score 3-4**, chủ đề bão hòa và ít cảm xúc; giảm tần suất hoặc đổi góc mạnh hơn.
+- Câu hỏi tu từ chạm trúng trải nghiệm ("có bị rung mỗi lần chạm không?") tạo comment; giữ dạng câu hỏi khơi phản hồi.
+- Hook mô tả tính năng đơn thuần, chung chung ("balo hay cặp xách", "bàn phím mỏng nhẹ") tương tác kém; tránh chỉ khoe đặc điểm.
+- Dùng **con số cụ thể + hình ảnh gộp gọn** ("3 cục sạc 3 sợi cáp", "một món lo hết") để tạo tương phản rối/gọn; hiệu quả cao.
+- **Không hook nào đạt Share**; cần thêm yếu tố hữu ích/đáng lưu ("mẹo bảo vệ pin", "checklist đồ công tác") để kích chia sẻ.
+- Emoji đặt cuối đúng chủ đề (🔋🔌😬) ổn; giữ 1 emoji, tập trung câu chữ vào nỗi đau thay vì trang trí.
