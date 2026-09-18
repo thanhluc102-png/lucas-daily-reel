@@ -1,8 +1,8 @@
-- Ưu tiên hook chỉ đúng "nỗi đau công nghệ" cụ thể, dễ hình dung: pin chai, màn lóa nắng, ố vàng, đọng mồ hôi — nhóm này đạt Score 5-6 cao nhất.
-- Mở đầu bằng câu khẳng định sốc ("...là thứ giết pin nhanh nhất", "đang mài mòn lớp nhôm mỗi ngày") kéo reaction mạnh hơn câu hỏi chung chung.
-- Chèn tình huống đông người / cả nhà cùng chờ (sạc lần lượt cả nhà đợi) khơi được nhiều comment — khai thác bối cảnh chia sẻ.
-- Sản phẩm sạc/cáp và phụ kiện màn hình, ốp lưng cho tương tác tốt nhất; nên đẩy mạnh nhóm này.
-- Nhóm balo đều Score 3-4, kém nhất; nếu viết balo phải cắm nỗi đau cực gắt (mưa ướt máy, rơi trúng đáy) thay vì khen đẹp/đa năng.
-- Tránh hook mô tả tính năng chung chung ("balo hay cặp xách", "bàn phím mỏng nhẹ") — thiếu nỗi đau nên trôi.
-- Dùng emoji cảm xúc (😬😤😑) hợp hơn emoji vật phẩm (🎒🔌) để tăng đồng cảm và reaction.
-- Câu ngắn, xoáy trực diện vào thiệt hại người dùng đang chịu; càng cụ thể con số/chi tiết (16 inch, iPhone Air, 3 cục sạc) càng dễ chạm đúng đối tượng.
+- Hook nêu **tình huống khó chịu cụ thể + hình ảnh trực quan** cho điểm cao nhất (màn hình lóa như gương, cả nhà đợi máy lên pin) — ưu tiên vẽ ra cảnh bực bội hằng ngày.
+- Dùng **câu hỏi xoáy vào nỗi đau chung ai cũng dính** (ố vàng, sạc lần lượt, dây rối) kéo được reaction + comment; tránh câu khẳng định phẳng chỉ mô tả tính năng.
+- Chủ đề **sạc/hub và bảo vệ màn hình** hút tương tác tốt nhất; **ốp lưng và balo mô tả suông** (mỏng nhẹ, chống rơi, 2-in-1) cho điểm thấp — cần thêm tình huống thật.
+- Hook mở bằng **con số/nghịch lý gây tò mò** (mỏng 2mm chịu rơi quân sự, 3 cục sạc 3 dây) tạo hiệu ứng, nhưng phải kèm nỗi đau rõ mới ăn.
+- **Emoji cảm xúc bực bội** (😤😩😬😮‍💨) hợp hơn emoji vật phẩm trung tính (🎒🔌🛡️) — chọn emoji thể hiện tâm trạng người dùng.
+- Tránh hook **quá chung chung hoặc chỉ khoe đẹp** ("Balo đẹp mà...", "Balo hay cặp xách") — đẹp không đủ, phải chạm vào rủi ro mất mát (hỏng máy, ướt, trầy).
+- Ưu tiên **"bạn" + hiện tại tiếp diễn** đánh vào thói quen đang gây hại ("cổ tay đang mài mòn", "ra nắng là lóa") — tạo cảm giác đang bị ảnh hưởng ngay.
+- Không hook nào đạt share: cần thêm **yếu tố đáng chia sẻ** (mẹo bất ngờ, tiết kiệm, giải pháp gọn) chứ đừng chỉ dừng ở than phiền.
