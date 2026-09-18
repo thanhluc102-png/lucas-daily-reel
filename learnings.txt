@@ -1,8 +1,8 @@
-- Hook mô tả nỗi đau cụ thể + hình ảnh trực quan ("màn hình lóa như gương", "cả nhà đợi máy lên pin") cho Score cao nhất (6); luôn vẽ ra cảnh khổ người xem đang gặp.
-- Sản phẩm sạc đa cổng/sạc nhanh và phụ kiện chống lóa hút tương tác tốt nhất — ưu tiên chủ đề "sạc lần lượt mệt mỏi" và "chống chói ngoài nắng".
-- Câu hỏi tu từ đánh trúng thói quen hằng ngày ("Củ sạc một cổng đang giữ chân bạn mỗi sáng?") kích comment; luôn kết bằng dấu ? hoặc icon cảm xúc mệt mỏi 😤😮‍💨😬.
-- Dùng con số gây sốc/nghịch lý ("Ốp mỏng 2mm mà chịu chuẩn rơi quân sự", "3 cục sạc 3 sợi cáp") để tạo tò mò — số càng cụ thể càng tốt.
-- Tránh hook chung chung về balo (túi/cặp) — nhóm này Score thấp nhất (3), gần như không ai react; nếu viết balo phải gắn nỗi sợ mất mát ("rơi cái là máy lãnh trọn").
-- Tránh hook chỉ khoe tính năng phẳng lặng ("Bàn phím cơ mỏng nhẹ nhất") — thiếu nỗi đau nên tương tác kém; phải chuyển thành tình huống bực bội.
-- Chưa reel nào đạt Share — thêm yếu tố "đáng khoe/đáng cứu bạn bè" (mẹo hay, giải pháp bất ngờ) để đẩy chỉ số Share nặng điểm.
-- Công thức thắng: [Nỗi đau cụ thể hằng ngày] + [con số/nghịch lý] + [icon cảm xúc tiêu cực] + [câu hỏi chốt].
+- **Hook "nỗi đau tập thể" cho tương tác cao nhất**: cảnh cả nhà đợi sạc (Score 6), màn hình lóa nắng (Score 6) — chọn tình huống ai cũng gặp, gợi bực bội chung.
+- **Ưu tiên sản phẩm sạc đa cổng và phụ kiện màn hình/ốp lưng**: nhóm này kéo Reactions cao hơn hẳn balo và kê tay.
+- **Hook gợi trải nghiệm xấu quen thuộc → hiệu quả**: "ố vàng" (Score 5), "lóa như gương" — dùng chi tiết hư hỏng cụ thể người dùng từng dính.
+- **Thêm câu hỏi kéo bình luận "ai từng dính chưa?"**: các hook có lời mời chia sẻ đạt Comments cao hơn.
+- **Tránh hook mô tả tính năng khô khan**: "mở khóa hông 2 giây", "balo hay cặp xách", "ngăn đệm riêng" đều Score 3 — thiếu cảm xúc, không gợi đau.
+- **Tránh dòng sản phẩm balo/túi**: gần như toàn bộ Score 3, tương tác thấp nhất trong data.
+- **Mở đầu bằng nỗi đau, không bằng ưu điểm**: "Ốp dày làm iPhone hết mỏng" yếu hơn "Ốp trong suốt xài vài tháng là ố vàng".
+- **Dùng emoji cảm xúc bực/khó chịu (😤😑😮‍💨) thay emoji mô tả (🎒🔌)**: nhóm emoji cảm xúc gắn với Score cao hơn.
