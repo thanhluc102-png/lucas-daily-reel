@@ -1,8 +1,8 @@
-- Hook nêu **tình huống khó chịu cụ thể + hình ảnh trực quan** cho điểm cao nhất (màn hình lóa như gương, cả nhà đợi máy lên pin) — ưu tiên vẽ ra cảnh bực bội hằng ngày.
-- Dùng **câu hỏi xoáy vào nỗi đau chung ai cũng dính** (ố vàng, sạc lần lượt, dây rối) kéo được reaction + comment; tránh câu khẳng định phẳng chỉ mô tả tính năng.
-- Chủ đề **sạc/hub và bảo vệ màn hình** hút tương tác tốt nhất; **ốp lưng và balo mô tả suông** (mỏng nhẹ, chống rơi, 2-in-1) cho điểm thấp — cần thêm tình huống thật.
-- Hook mở bằng **con số/nghịch lý gây tò mò** (mỏng 2mm chịu rơi quân sự, 3 cục sạc 3 dây) tạo hiệu ứng, nhưng phải kèm nỗi đau rõ mới ăn.
-- **Emoji cảm xúc bực bội** (😤😩😬😮‍💨) hợp hơn emoji vật phẩm trung tính (🎒🔌🛡️) — chọn emoji thể hiện tâm trạng người dùng.
-- Tránh hook **quá chung chung hoặc chỉ khoe đẹp** ("Balo đẹp mà...", "Balo hay cặp xách") — đẹp không đủ, phải chạm vào rủi ro mất mát (hỏng máy, ướt, trầy).
-- Ưu tiên **"bạn" + hiện tại tiếp diễn** đánh vào thói quen đang gây hại ("cổ tay đang mài mòn", "ra nắng là lóa") — tạo cảm giác đang bị ảnh hưởng ngay.
-- Không hook nào đạt share: cần thêm **yếu tố đáng chia sẻ** (mẹo bất ngờ, tiết kiệm, giải pháp gọn) chứ đừng chỉ dừng ở than phiền.
+- Hook mô tả nỗi đau cụ thể + hình ảnh trực quan ("màn hình lóa như gương", "cả nhà đợi máy lên pin") cho Score cao nhất (6); luôn vẽ ra cảnh khổ người xem đang gặp.
+- Sản phẩm sạc đa cổng/sạc nhanh và phụ kiện chống lóa hút tương tác tốt nhất — ưu tiên chủ đề "sạc lần lượt mệt mỏi" và "chống chói ngoài nắng".
+- Câu hỏi tu từ đánh trúng thói quen hằng ngày ("Củ sạc một cổng đang giữ chân bạn mỗi sáng?") kích comment; luôn kết bằng dấu ? hoặc icon cảm xúc mệt mỏi 😤😮‍💨😬.
+- Dùng con số gây sốc/nghịch lý ("Ốp mỏng 2mm mà chịu chuẩn rơi quân sự", "3 cục sạc 3 sợi cáp") để tạo tò mò — số càng cụ thể càng tốt.
+- Tránh hook chung chung về balo (túi/cặp) — nhóm này Score thấp nhất (3), gần như không ai react; nếu viết balo phải gắn nỗi sợ mất mát ("rơi cái là máy lãnh trọn").
+- Tránh hook chỉ khoe tính năng phẳng lặng ("Bàn phím cơ mỏng nhẹ nhất") — thiếu nỗi đau nên tương tác kém; phải chuyển thành tình huống bực bội.
+- Chưa reel nào đạt Share — thêm yếu tố "đáng khoe/đáng cứu bạn bè" (mẹo hay, giải pháp bất ngờ) để đẩy chỉ số Share nặng điểm.
+- Công thức thắng: [Nỗi đau cụ thể hằng ngày] + [con số/nghịch lý] + [icon cảm xúc tiêu cực] + [câu hỏi chốt].
