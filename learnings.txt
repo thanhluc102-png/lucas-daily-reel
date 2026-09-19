@@ -1,8 +1,15 @@
-- **Hook "nỗi đau tập thể" cho tương tác cao nhất**: cảnh cả nhà đợi sạc (Score 6), màn hình lóa nắng (Score 6) — chọn tình huống ai cũng gặp, gợi bực bội chung.
-- **Ưu tiên sản phẩm sạc đa cổng và phụ kiện màn hình/ốp lưng**: nhóm này kéo Reactions cao hơn hẳn balo và kê tay.
-- **Hook gợi trải nghiệm xấu quen thuộc → hiệu quả**: "ố vàng" (Score 5), "lóa như gương" — dùng chi tiết hư hỏng cụ thể người dùng từng dính.
-- **Thêm câu hỏi kéo bình luận "ai từng dính chưa?"**: các hook có lời mời chia sẻ đạt Comments cao hơn.
-- **Tránh hook mô tả tính năng khô khan**: "mở khóa hông 2 giây", "balo hay cặp xách", "ngăn đệm riêng" đều Score 3 — thiếu cảm xúc, không gợi đau.
-- **Tránh dòng sản phẩm balo/túi**: gần như toàn bộ Score 3, tương tác thấp nhất trong data.
-- **Mở đầu bằng nỗi đau, không bằng ưu điểm**: "Ốp dày làm iPhone hết mỏng" yếu hơn "Ốp trong suốt xài vài tháng là ố vàng".
-- **Dùng emoji cảm xúc bực/khó chịu (😤😑😮‍💨) thay emoji mô tả (🎒🔌)**: nhóm emoji cảm xúc gắn với Score cao hơn.
+- **Hook "nỗi đau chung + số cụ thể" thắng lớn**: cảnh cả nhà chờ sạc (Score=6), màn hình lóa nắng như gương (Score=6) — mô tả tình huống ai cũng gặp, gây bực dọc tập thể.
+
+- **Ưu tiên nhóm sạc/phụ kiện điện** (sạc đa cổng, chống lóa, ố vàng ốp): cho tương tác cao nhất vì đánh trúng cơn khó chịu hằng ngày, dễ khơi bình luận.
+
+- **Dùng câu hỏi tu từ mở** ("ai từng dính chưa?", "tin nổi không?") kéo comment tốt hơn câu khẳng định khô khan.
+
+- **Chèn con số/nghịch lý gây tò mò** ("mỏng 2mm chuẩn rơi quân sự", "ố vàng vài tháng") tăng reaction so với mô tả tính năng chung chung.
+
+- **Nhóm balo/túi cho tương tác thấp nhất (đa số Score=3)**: hook tả tính năng đơn thuần ("mở khóa hông", "vừa balo vừa cặp") thiếu cảm xúc — cần thêm nỗi sợ mất mát (rơi máy, ướt máy) để cứu.
+
+- **Tránh hook trung tính/khoe tính năng** ("bàn phím mỏng nhẹ nhất") — không gây bức xúc nên không ai comment.
+
+- **Công thức nên nhân bản**: [Tình huống bực bội quen thuộc] + [chi tiết hình ảnh cụ thể] + [câu hỏi gợi đồng cảm] + emoji cảm xúc (😤😑😩).
+
+- **Toàn bộ share = 0** → cần thêm yếu tố "đáng khoe/mẹo hữu ích" (tip gọn gàng, giải pháp bất ngờ) để kích share, đừng chỉ dừng ở than vãn.
