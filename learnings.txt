@@ -1,15 +1,8 @@
-- **Hook "nỗi đau chung + số cụ thể" thắng lớn**: cảnh cả nhà chờ sạc (Score=6), màn hình lóa nắng như gương (Score=6) — mô tả tình huống ai cũng gặp, gây bực dọc tập thể.
-
-- **Ưu tiên nhóm sạc/phụ kiện điện** (sạc đa cổng, chống lóa, ố vàng ốp): cho tương tác cao nhất vì đánh trúng cơn khó chịu hằng ngày, dễ khơi bình luận.
-
-- **Dùng câu hỏi tu từ mở** ("ai từng dính chưa?", "tin nổi không?") kéo comment tốt hơn câu khẳng định khô khan.
-
-- **Chèn con số/nghịch lý gây tò mò** ("mỏng 2mm chuẩn rơi quân sự", "ố vàng vài tháng") tăng reaction so với mô tả tính năng chung chung.
-
-- **Nhóm balo/túi cho tương tác thấp nhất (đa số Score=3)**: hook tả tính năng đơn thuần ("mở khóa hông", "vừa balo vừa cặp") thiếu cảm xúc — cần thêm nỗi sợ mất mát (rơi máy, ướt máy) để cứu.
-
-- **Tránh hook trung tính/khoe tính năng** ("bàn phím mỏng nhẹ nhất") — không gây bức xúc nên không ai comment.
-
-- **Công thức nên nhân bản**: [Tình huống bực bội quen thuộc] + [chi tiết hình ảnh cụ thể] + [câu hỏi gợi đồng cảm] + emoji cảm xúc (😤😑😩).
-
-- **Toàn bộ share = 0** → cần thêm yếu tố "đáng khoe/mẹo hữu ích" (tip gọn gàng, giải pháp bất ngờ) để kích share, đừng chỉ dừng ở than vãn.
+- Hook mô tả nỗi đau cụ thể lặp đi lặp lại hằng ngày ("sạc lần lượt cả nhà đợi", "màn hình lóa như gương ra nắng") cho Score cao nhất (6) — ưu tiên khắc họa cảnh khó chịu quen thuộc.
+- Chèn câu hỏi khơi trải nghiệm chung + rủ đồng cảm ("ai từng dính chưa?", "tin nổi không?") kéo Reactions/Comments tốt hơn hook mô tả suông.
+- Sản phẩm giải quyết vấn đề tần suất cao (sạc đa cổng, chống lóa, ố vàng) hút tương tác hơn phụ kiện ngách (kê tay, ốp mỏng, bàn phím).
+- Nêu con số/nghịch lý gây tò mò ("mỏng 2mm chuẩn rơi quân sự", "3 ngày không cần vali") tăng nhẹ Reactions — nên dùng làm điểm nhấn.
+- Tránh hook chỉ khoe tính năng phẳng lặng ("nhám chống vân tay", "balo hay cặp") — toàn bộ chỉ đạt Score 3, thiếu cảm xúc.
+- Tránh lặp motif balo/laptop mô tả chung chung; nhóm này đồng loạt tương tác thấp vì thiếu nỗi đau sắc bén.
+- Mỗi hook cần 1 emoji hợp ngữ cảnh + giọng đời thường, kết bằng câu hỏi hoặc cú twist để kích comment (đòn bẩy Score mạnh thứ 2 sau share).
+- Chưa reel nào đạt Share — thử thêm yếu tố "khoe/mách bạn bè" (mẹo hay, giá hời, giải pháp bất ngờ) để chạm nhóm điểm nặng nhất.
