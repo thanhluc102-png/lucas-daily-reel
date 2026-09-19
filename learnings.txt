@@ -1,8 +1,8 @@
-- Hook mô tả nỗi đau cụ thể lặp đi lặp lại hằng ngày ("sạc lần lượt cả nhà đợi", "màn hình lóa như gương ra nắng") cho Score cao nhất (6) — ưu tiên khắc họa cảnh khó chịu quen thuộc.
-- Chèn câu hỏi khơi trải nghiệm chung + rủ đồng cảm ("ai từng dính chưa?", "tin nổi không?") kéo Reactions/Comments tốt hơn hook mô tả suông.
-- Sản phẩm giải quyết vấn đề tần suất cao (sạc đa cổng, chống lóa, ố vàng) hút tương tác hơn phụ kiện ngách (kê tay, ốp mỏng, bàn phím).
-- Nêu con số/nghịch lý gây tò mò ("mỏng 2mm chuẩn rơi quân sự", "3 ngày không cần vali") tăng nhẹ Reactions — nên dùng làm điểm nhấn.
-- Tránh hook chỉ khoe tính năng phẳng lặng ("nhám chống vân tay", "balo hay cặp") — toàn bộ chỉ đạt Score 3, thiếu cảm xúc.
-- Tránh lặp motif balo/laptop mô tả chung chung; nhóm này đồng loạt tương tác thấp vì thiếu nỗi đau sắc bén.
-- Mỗi hook cần 1 emoji hợp ngữ cảnh + giọng đời thường, kết bằng câu hỏi hoặc cú twist để kích comment (đòn bẩy Score mạnh thứ 2 sau share).
-- Chưa reel nào đạt Share — thử thêm yếu tố "khoe/mách bạn bè" (mẹo hay, giá hời, giải pháp bất ngờ) để chạm nhóm điểm nặng nhất.
+- Hook mở bằng câu hỏi "nỗi đau" cụ thể (sạc lần lượt cả nhà đợi, lóa nắng nhìn không thấy) cho Score cao nhất (6) → ưu tiên đặt câu hỏi khoét đúng tình huống bực bội hằng ngày.
+- Chủ đề sạc/hub đa cổng và chống lóa màn hình tương tác tốt nhất → khai thác mạnh nhóm phụ kiện "giải quyết rối dây" và "trải nghiệm hằng ngày rõ rệt".
+- Ốp lưng gây tranh luận (ố vàng, chống rơi, hết mỏng) kéo Reactions cao (Score 4-5) → dùng chi tiết gây tò mò/nghi ngờ "tin nổi không?", "ai từng dính chưa?" để mời bình luận.
+- Nhóm balo/túi tương tác kém nhất (đa số Score 3) → tránh hook mô tả tính năng phẳng, nên đổi sang tình huống thiệt hại cụ thể (mưa ướt máy, laptop rơi lãnh trọn).
+- Chèn con số/chi tiết gây sốc (mỏng 2mm chuẩn quân sự, lấy laptop trong 2 giây) tăng độ tin và tò mò → luôn nhét 1 số liệu bất ngờ.
+- Kết hook bằng dấu "?" + emoji cảm xúc (😮‍💨😬😤) hiệu quả hơn câu khẳng định trơn → luôn để lửng, mời người xem tự nhận ra vấn đề của mình.
+- Tránh hook trung tính khen sản phẩm ("balo hay cặp, cái này cả hai") vì Score thấp → phải gắn lợi ích vào nỗi đau người dùng, không tự khen.
+- Tất cả video đều 0 Share → thêm yếu tố "đáng khoe/đáng gửi cho hội cùng cảnh" (mẹo, so sánh trước-sau) để kích Share, biến điểm số bứt phá.
