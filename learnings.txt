@@ -1,8 +1,8 @@
-- Hook mở bằng câu hỏi "nỗi đau" cụ thể (sạc lần lượt cả nhà đợi, lóa nắng nhìn không thấy) cho Score cao nhất (6) → ưu tiên đặt câu hỏi khoét đúng tình huống bực bội hằng ngày.
-- Chủ đề sạc/hub đa cổng và chống lóa màn hình tương tác tốt nhất → khai thác mạnh nhóm phụ kiện "giải quyết rối dây" và "trải nghiệm hằng ngày rõ rệt".
-- Ốp lưng gây tranh luận (ố vàng, chống rơi, hết mỏng) kéo Reactions cao (Score 4-5) → dùng chi tiết gây tò mò/nghi ngờ "tin nổi không?", "ai từng dính chưa?" để mời bình luận.
-- Nhóm balo/túi tương tác kém nhất (đa số Score 3) → tránh hook mô tả tính năng phẳng, nên đổi sang tình huống thiệt hại cụ thể (mưa ướt máy, laptop rơi lãnh trọn).
-- Chèn con số/chi tiết gây sốc (mỏng 2mm chuẩn quân sự, lấy laptop trong 2 giây) tăng độ tin và tò mò → luôn nhét 1 số liệu bất ngờ.
-- Kết hook bằng dấu "?" + emoji cảm xúc (😮‍💨😬😤) hiệu quả hơn câu khẳng định trơn → luôn để lửng, mời người xem tự nhận ra vấn đề của mình.
-- Tránh hook trung tính khen sản phẩm ("balo hay cặp, cái này cả hai") vì Score thấp → phải gắn lợi ích vào nỗi đau người dùng, không tự khen.
-- Tất cả video đều 0 Share → thêm yếu tố "đáng khoe/đáng gửi cho hội cùng cảnh" (mẹo, so sánh trước-sau) để kích Share, biến điểm số bứt phá.
+- Mở hook bằng **nỗi đau cụ thể + câu hỏi** ("Ra nắng màn hình lóa?", "Sạc lần lượt cả nhà đợi?") — cho score cao nhất (5-6).
+- Ưu tiên sản phẩm giải quyết **bức xúc hằng ngày lặp lại**: chống lóa, ố vàng ốp, sạc đa cổng — kéo reactions tốt hơn nhóm balo.
+- Dùng **con số + phản trực giác** ("mỏng 2mm chịu rơi quân sự", "nặng thêm cả trăm gram") để tạo tò mò, giữ score khá (4-5).
+- Chèn **cảm xúc bực bội** (😤😬😩) đúng chỗ đau; nhóm hook này comment/reaction nhỉnh hơn hook trung tính.
+- Tránh hook **mô tả tính năng phẳng, không có nỗi đau** ("Balo ướt mưa laptop khô", "Ốp nhám chống vân tay") — chỉ chạm đáy score 3.
+- Hạn chế lạm dụng chủ đề **balo**: hầu hết chỉ đạt score 3, thị trường bão hòa/ít gây phản ứng.
+- Kết hook bằng **câu hỏi lôi kéo trải nghiệm** ("ai từng dính chưa?") để đẩy comment — đòn bẩy score mạnh nhất (Comments*3).
+- Không có hook nào tạo **Share** — thử thêm yếu tố hữu ích/đáng khoe (mẹo, so sánh trước-sau) để phá trần score.
