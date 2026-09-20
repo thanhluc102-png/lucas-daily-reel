@@ -1,8 +1,8 @@
-- Mở hook bằng **nỗi đau cụ thể + câu hỏi** ("Ra nắng màn hình lóa?", "Sạc lần lượt cả nhà đợi?") — cho score cao nhất (5-6).
-- Ưu tiên sản phẩm giải quyết **bức xúc hằng ngày lặp lại**: chống lóa, ố vàng ốp, sạc đa cổng — kéo reactions tốt hơn nhóm balo.
-- Dùng **con số + phản trực giác** ("mỏng 2mm chịu rơi quân sự", "nặng thêm cả trăm gram") để tạo tò mò, giữ score khá (4-5).
-- Chèn **cảm xúc bực bội** (😤😬😩) đúng chỗ đau; nhóm hook này comment/reaction nhỉnh hơn hook trung tính.
-- Tránh hook **mô tả tính năng phẳng, không có nỗi đau** ("Balo ướt mưa laptop khô", "Ốp nhám chống vân tay") — chỉ chạm đáy score 3.
-- Hạn chế lạm dụng chủ đề **balo**: hầu hết chỉ đạt score 3, thị trường bão hòa/ít gây phản ứng.
-- Kết hook bằng **câu hỏi lôi kéo trải nghiệm** ("ai từng dính chưa?") để đẩy comment — đòn bẩy score mạnh nhất (Comments*3).
-- Không có hook nào tạo **Share** — thử thêm yếu tố hữu ích/đáng khoe (mẹo, so sánh trước-sau) để phá trần score.
+- Ưu tiên hook chạm "nỗi đau vật lý" cụ thể, thấy ngay: màn hình lóa nắng, ố vàng, mài mòn nhôm — Score cao nhất (5-6).
+- Dùng câu hỏi khơi trải nghiệm chung ("ai từng dính chưa?", "tin nổi không?") để kéo reactions và comment.
+- Thêm con số/nghịch lý gây tò mò: "mỏng 2mm mà chuẩn rơi quân sự", "sạc lần lượt cả nhà đợi" — tăng tương tác.
+- Sản phẩm ăn tương tác: ốp lưng (ố vàng, nhám, mỏng), phụ kiện chống lóa/bảo vệ, sạc đa cổng.
+- Tránh hook mô tả tính năng phẳng, tự khen ("ốp xoay 360", "balo vẫn khô", "bàn phím mỏng nhẹ") — chỉ đạt Score 3, không có reactions.
+- Tránh hook chung chung không gợi cảm xúc mạnh ("balo hay cặp?", "ngăn laptop sát đáy") — dễ chìm.
+- Công thức mạnh: [Nỗi đau đời thường] + [emoji khó chịu 😬😤] + [câu hỏi mở "ai từng..."].
+- Gắn nỗi đau vào thiết bị đắt tiền (MacBook, iPhone) để tăng mức độ đồng cảm và lo lắng.
