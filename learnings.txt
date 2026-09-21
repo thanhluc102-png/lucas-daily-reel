@@ -1,8 +1,8 @@
-- Ưu tiên hook đánh vào "nỗi đau thị giác/trải nghiệm hằng ngày" (lóa nắng, ố vàng, bám vân tay) — nhóm này Score cao nhất (5-6).
-- Mở đầu bằng câu hỏi tu từ + emoji cảm xúc tiêu cực (😑😤😬) kéo tương tác tốt hơn câu khẳng định phẳng.
-- Đánh trúng "cái ai cũng từng dính" (ố vàng, mưa ướt laptop) và thêm lời rủ tương tác "ai từng dính chưa?" để kích comment.
-- Phụ kiện iPhone (ốp lưng) và giải pháp màn hình chống lóa là nhóm ăn khách nhất — nên khai thác nhiều.
-- Balo chỉ nổi khi có chi tiết bất ngờ cụ thể ("mở phẳng như vali", Score=5); balo chung chung "đẹp mà mưa ướt" thì kém (Score=3) — cần nêu tính năng lạ, không nói chung chung.
-- Tránh hook mô tả tính năng khô khan, không có nỗi đau (bàn phím mỏng, ốp xoay 360, củ sạc nhiều cổng) — đều Score thấp (3-4).
-- Tránh hook khẳng định tính năng đã giải quyết xong ("laptop vẫn khô ráo") vì không tạo tò mò; nên để câu hỏi mở gợi vấn đề chưa giải quyết.
-- Cho con số/chi tiết gây sốc gắn nỗi đau ("mài mòn nhôm MacBook", "ố vàng vài tháng") để tăng độ giật; nhưng vẫn phải kèm cảm xúc, tránh chỉ nêu thông số kỹ thuật.
+- Hook nêu "nỗi đau trực quan, cụ thể" (màn hình lóa ngoài nắng, ốp ố vàng) cho score cao nhất — ưu tiên mô tả tình huống bực bội người dùng gặp hằng ngày.
+- Kết hook bằng câu hỏi kéo comment ("ai từng dính chưa?", "tin nổi không?") đẩy tương tác — luôn chèn 1 câu hỏi gợi trải nghiệm cá nhân.
+- Sản phẩm ốp lưng & tấm dán màn hình hút reaction tốt nhất; khai thác mạnh nhóm phụ kiện bảo vệ máy.
+- Balo score chỉ nhích lên khi mô tả tính năng bất ngờ ("mở phẳng như vali"), còn hook chung chung ("balo đẹp mà mưa") thì đuối — cần chi tiết lạ, tránh mô tả mờ nhạt.
+- Hook về sạc/hub/dock (củ sạc 1 cổng, dây lằng nhằng) đều tương tác thấp — cần thêm cảm xúc mạnh hoặc con số gây sốc thay vì chỉ nêu bất tiện.
+- Chèn cảm xúc mạnh + emoji (😤😬👀) và yếu tố "gây sốc/khó tin" (chuẩn rơi quân sự, mỏng nhất) để tăng reaction.
+- Tránh hook liệt kê tính năng khô khan ("ống kính trầy", "ngăn laptop có đệm") không gắn nỗi đau đủ đau — luôn quy về hậu quả tệ mà người xem sợ.
+- Chưa reel nào có share: thử thêm yếu tố "đáng tag bạn bè / mẹo hữu ích để lưu lại" nhằm phá ngưỡng share.
