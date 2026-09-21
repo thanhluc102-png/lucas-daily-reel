@@ -1,8 +1,8 @@
-- Ưu tiên hook chạm "nỗi đau vật lý" cụ thể, thấy ngay: màn hình lóa nắng, ố vàng, mài mòn nhôm — Score cao nhất (5-6).
-- Dùng câu hỏi khơi trải nghiệm chung ("ai từng dính chưa?", "tin nổi không?") để kéo reactions và comment.
-- Thêm con số/nghịch lý gây tò mò: "mỏng 2mm mà chuẩn rơi quân sự", "sạc lần lượt cả nhà đợi" — tăng tương tác.
-- Sản phẩm ăn tương tác: ốp lưng (ố vàng, nhám, mỏng), phụ kiện chống lóa/bảo vệ, sạc đa cổng.
-- Tránh hook mô tả tính năng phẳng, tự khen ("ốp xoay 360", "balo vẫn khô", "bàn phím mỏng nhẹ") — chỉ đạt Score 3, không có reactions.
-- Tránh hook chung chung không gợi cảm xúc mạnh ("balo hay cặp?", "ngăn laptop sát đáy") — dễ chìm.
-- Công thức mạnh: [Nỗi đau đời thường] + [emoji khó chịu 😬😤] + [câu hỏi mở "ai từng..."].
-- Gắn nỗi đau vào thiết bị đắt tiền (MacBook, iPhone) để tăng mức độ đồng cảm và lo lắng.
+- Hook nêu "nỗi đau thị giác/trải nghiệm tức thì" (màn hình lóa ngoài nắng, ố vàng) cho score cao nhất (6, 5) — ưu tiên vấn đề ai cũng thấy ngay mắt.
+- Hook có câu hỏi trực tiếp + rủ tương tác ("ai từng dính chưa?", "tin nổi không?") kéo reactions tốt hơn hẳn.
+- Sản phẩm ốp lưng iPhone là chủ đề an toàn, dễ ăn tương tác nếu gắn với đau cụ thể (ố vàng, lóa, vân tay); tránh ốp nói chung chung.
+- Hook về balo/túi gần như luôn chạm đáy (score 3) — chủ đề này kém, cần góc lạ hoặc bỏ bớt.
+- Hook "kê tay MacBook mồ hôi/mài nhôm" lặp lại 2 lần đều score 3 — nỗi đau quá nhẹ, không gây đồng cảm, nên tránh.
+- Tránh hook chỉ khoe tính năng ("mỏng nhẹ nhất", "xoay 360", "mở phẳng như vali") — nghe quảng cáo, tương tác thấp.
+- Dùng emoji cảm xúc mạnh (😬😤😑) kèm con số/tuyên bố gây sốc để tăng reactions.
+- Công thức mạnh nhất: nỗi đau trực quan + câu hỏi khơi trải nghiệm chung + rủ bình luận.
