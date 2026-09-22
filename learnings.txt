@@ -1,8 +1,15 @@
-- **Hook "nỗi đau cụ thể + thực tế đời thường" thắng lớn**: màn hình lóa nắng (Score 6), ố vàng ốp (5), balo mở phẳng như vali (5) — nêu tình huống ai cũng gặp, có cảm xúc bực bội rõ ràng.
-- **Ưu tiên nhóm sản phẩm dán màn hình chống lóa, ốp chống ố vàng, balo tiện dụng đa năng** — đây là các chủ đề kéo Reactions cao nhất.
-- **Mở đầu bằng câu hỏi khơi bực dọc + emoji cảm xúc (😑😤😩)** hiệu quả hơn câu khẳng định phẳng lặng.
-- **Thêm chi tiết số liệu/so sánh gây sốc** ("Balo 3 triệu mà...", "ố vàng vài tháng") tăng tương tác so với mô tả chung chung.
-- **Tránh hook khen tính năng một chiều, thiếu nỗi đau**: "Ốp xoay 360 độ", "Balo ướt mưa laptop vẫn khô", "Balo hay cặp xách" — đều Score 3, chạm đáy.
-- **Tránh lặp mô-típ củ sạc/cáp**: cả loạt hook sạc chỉ đạt Score 3-4, chủ đề bão hòa, ít cảm xúc.
-- **Đặt câu hỏi tương tác trực tiếp** ("ai từng dính chưa?") giúp kéo comment và reaction tốt hơn tuyên bố suông.
-- **Toàn bộ Shares = 0**: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, kết quả bất ngờ, giá trị lan truyền) chứ không chỉ nêu vấn đề.
+- **Ưu tiên hook "nỗi đau cụ thể + hậu quả sợ hãi"**: màn hình lóa ngoài nắng (Score 6), balo mở phẳng gấp gọn (5), ốp trong ố vàng (5) — vấn đề ai cũng gặp, dễ gật đầu.
+
+- **Gộp 2 lợi ích/tương phản trong 1 câu cho điểm cao**: "đẹp mà mưa xuống ướt", "gọn nhưng cắm gì cũng với ra sau" — tạo mâu thuẫn khiến người xem dừng lại.
+
+- **Dùng câu hỏi kéo bình luận + con số/kịch bản đời thực**: "ai từng dính chưa?", "balo 3 triệu mà...", "trầy một vệt mờ cả đời máy" — kích phản ứng tự nhiên.
+
+- **Nhóm sản phẩm mạnh nhất**: dán màn/chống nhìn trộm, balo chống sốc-chống nước, ốp chống ố — vì đánh trúng lo lắng bảo vệ tài sản đắt tiền.
+
+- **Tránh hook khoe tính năng khô khan**: "ốp xoay 360 độ", "ốp nhám chống vân tay", "củ sạc một cổng" — chỉ mô tả, không gợi nỗi đau nên tương tác đáy (Score 3-4).
+
+- **Tránh hook mơ hồ/không rõ hậu quả**: "một cục sạc lo cả bàn", "xách 3 củ sạc" — thiếu cảm xúc mạnh, người xem lướt qua.
+
+- **Mở đầu bằng cảnh tượng người dùng tự thấy mình trong đó** thay vì bằng tên/thông số sản phẩm, kèm emoji cảm xúc (😤😬👀) hơn emoji vật thể (🔌⚡).
+
+- **Ưu tiên nỗi sợ mất mát cụ thể** (rơi vỡ, trầy, ướt, ố, lộ thông tin) hơn tiện lợi chung chung — nỗi sợ tạo tương tác cao gấp 1.5-2 lần.
