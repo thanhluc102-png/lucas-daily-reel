@@ -1,8 +1,8 @@
-- Hook nêu "nỗi đau" cụ thể, trực quan (màn lóa như gương, ố vàng, cắm phải với ra sau lưng) cho Score cao nhất (5-6) — ưu tiên kiểu này.
-- Dùng câu hỏi gợi trải nghiệm chung ("ai từng dính chưa?", "tin nổi không?") để kéo reactions và comment.
-- Sản phẩm phụ kiện chống lóa/dán màn, ốp chống ố, hub Mac Mini, balo mở phẳng cho tương tác tốt hơn — khai thác thêm.
-- Nhấn con số/chi tiết gây sốc ("2mm chịu rơi quân sự", "balo 3 triệu vẫn nứt máy") để tạo bất ngờ, tăng phản ứng.
-- Tránh hook chung chung, mô tả tính năng phẳng ("balo ướt laptop vẫn khô", "ốp nhám sờ mê") — chỉ đạt Score 3.
-- Tránh lạm dụng chủ đề balo lặp lại nhiều lần cùng ý (ngăn laptop sát đáy) — gây nhàm, tương tác thấp.
-- Mỗi hook chèn 1 emoji cảm xúc mạnh (😬😤😑) hợp nỗi đau, không dùng emoji trung tính (🎒🔌).
-- Mở đầu bằng tình huống "trước–sau" hoặc hậu quả xấu cụ thể thay vì lời khen sản phẩm.
+- **Hook "nỗi đau cụ thể + thực tế đời thường" thắng lớn**: màn hình lóa nắng (Score 6), ố vàng ốp (5), balo mở phẳng như vali (5) — nêu tình huống ai cũng gặp, có cảm xúc bực bội rõ ràng.
+- **Ưu tiên nhóm sản phẩm dán màn hình chống lóa, ốp chống ố vàng, balo tiện dụng đa năng** — đây là các chủ đề kéo Reactions cao nhất.
+- **Mở đầu bằng câu hỏi khơi bực dọc + emoji cảm xúc (😑😤😩)** hiệu quả hơn câu khẳng định phẳng lặng.
+- **Thêm chi tiết số liệu/so sánh gây sốc** ("Balo 3 triệu mà...", "ố vàng vài tháng") tăng tương tác so với mô tả chung chung.
+- **Tránh hook khen tính năng một chiều, thiếu nỗi đau**: "Ốp xoay 360 độ", "Balo ướt mưa laptop vẫn khô", "Balo hay cặp xách" — đều Score 3, chạm đáy.
+- **Tránh lặp mô-típ củ sạc/cáp**: cả loạt hook sạc chỉ đạt Score 3-4, chủ đề bão hòa, ít cảm xúc.
+- **Đặt câu hỏi tương tác trực tiếp** ("ai từng dính chưa?") giúp kéo comment và reaction tốt hơn tuyên bố suông.
+- **Toàn bộ Shares = 0**: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, kết quả bất ngờ, giá trị lan truyền) chứ không chỉ nêu vấn đề.
