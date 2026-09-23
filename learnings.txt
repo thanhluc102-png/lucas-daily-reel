@@ -1,8 +1,8 @@
-- Mở hook bằng **nỗi đau cụ thể + hình ảnh hậu quả** (lóa như gương, rơi lãnh trọn, đọc lén màn hình): cho Score cao nhất (5-6).
-- Dùng **câu hỏi khơi tò mò/thách thức** ("tin nổi không?", "ai từng dính chưa?", "đọc lén màn hình bạn đấy") để kéo reaction, hiệu quả hơn câu mô tả tính năng.
-- Nhóm sản phẩm mạnh: **dán chống nhìn trộm/chống lóa, ốp lưng, balo mở phẳng** — dễ tạo tương tác nhờ liên hệ trải nghiệm hằng ngày.
-- Tránh hook chỉ **liệt kê tính năng khô khan** (ốp xoay 360, ngăn có đệm riêng, một cục sạc lo cả bàn): toàn Score đáy 3.
-- Tránh nhóm **củ sạc/ổ cắm/dây sạc**: hook trùng lặp, cảm xúc yếu, tương tác thấp nhất.
-- Ưu tiên **tình huống "đời thực + mất mát tiền bạc"** (balo 3 triệu nứt máy, trầy camera mờ cả đời máy) để chạm điểm sợ tốn tiền.
-- Chèn **emoji cảm xúc mạnh** (😑😬😤👀) thay vì emoji vật phẩm trung tính (🎒🔌⚡) để tăng phản ứng.
-- Công thức nên lặp: **[vấn đề đau] + [hậu quả đắt giá/bất ngờ] + [câu hỏi cà khịa người đọc]**.
+- Hook chỉ ra "vấn đề cụ thể + hậu quả trực quan" (ố vàng, đọc lén màn hình, mở phẳng như vali) cho Score cao nhất (5); ưu tiên chi tiết đời thường dễ hình dung.
+- Nhóm ốp lưng & phụ kiện bảo vệ (chống nhìn trộm, chống ố, mở phẳng) hút reaction tốt hơn hẳn nhóm củ sạc/ổ cắm — dồn lực cho phụ kiện có "cảm giác chạm/nhìn thấy được".
+- Tránh hook chung chung về sạc đa cổng ("một cục sạc lo trọn...") — lặp lại nhiều, toàn Score=3, gần như không ai react.
+- Chèn câu hỏi kích tương tác hoặc "cà khịa" trực tiếp người đọc ("ai từng dính chưa?", "đang đọc lén màn hình bạn đấy") để đẩy reaction/comment.
+- Dùng con số/định lượng gây sốc (2mm chuẩn quân sự, balo 3 triệu vẫn nứt máy) để tạo tò mò, hiệu quả hơn mô tả tính năng phẳng lì.
+- Hạn chế lặp lại cùng một góc "balo ngăn laptop sát đáy" — đã ra nhiều bản, tương tác bão hòa ở mức thấp.
+- Không có video nào đạt Share — cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng gặp, hoặc kết quả bất ngờ để nâng Score.
+- Emoji giữ 1 cái cuối câu, chọn loại biểu cảm mạnh (😬😤👀) thay vì icon sản phẩm trung tính (🔌⚡) để tăng chạm cảm xúc.
