@@ -1,8 +1,8 @@
-- Hook chỉ ra "vấn đề cụ thể + hậu quả trực quan" (ố vàng, đọc lén màn hình, mở phẳng như vali) cho Score cao nhất (5); ưu tiên chi tiết đời thường dễ hình dung.
-- Nhóm ốp lưng & phụ kiện bảo vệ (chống nhìn trộm, chống ố, mở phẳng) hút reaction tốt hơn hẳn nhóm củ sạc/ổ cắm — dồn lực cho phụ kiện có "cảm giác chạm/nhìn thấy được".
-- Tránh hook chung chung về sạc đa cổng ("một cục sạc lo trọn...") — lặp lại nhiều, toàn Score=3, gần như không ai react.
-- Chèn câu hỏi kích tương tác hoặc "cà khịa" trực tiếp người đọc ("ai từng dính chưa?", "đang đọc lén màn hình bạn đấy") để đẩy reaction/comment.
-- Dùng con số/định lượng gây sốc (2mm chuẩn quân sự, balo 3 triệu vẫn nứt máy) để tạo tò mò, hiệu quả hơn mô tả tính năng phẳng lì.
-- Hạn chế lặp lại cùng một góc "balo ngăn laptop sát đáy" — đã ra nhiều bản, tương tác bão hòa ở mức thấp.
-- Không có video nào đạt Share — cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng gặp, hoặc kết quả bất ngờ để nâng Score.
-- Emoji giữ 1 cái cuối câu, chọn loại biểu cảm mạnh (😬😤👀) thay vì icon sản phẩm trung tính (🔌⚡) để tăng chạm cảm xúc.
+- Hook mạnh nhất khi chạm nỗi đau riêng tư/bảo mật ("người bên cạnh đọc lén màn hình" — Score 5) hoặc lợi ích bất ngờ, cụ thể ("balo mở phẳng như vali", "ố vàng ai từng dính chưa" — Score 5); ưu tiên hướng này.
+- Sản phẩm cho tương tác cao: ốp lưng (ố vàng, nhám, chống nhìn trộm) và balo có công năng lạ (mở phẳng 2 mặt) — khai thác sâu nhóm này.
+- Kết hook bằng câu hỏi khơi trải nghiệm cá nhân ("ai từng dính chưa?", "tin nổi không?") kéo comment tốt hơn câu khẳng định suông.
+- Nêu con số/chi tiết gây sốc ("rơi 4 mét", "mỏng 2mm chuẩn quân sự", "nặng thêm cả trăm gram") để tăng độ tin và tương tác.
+- Tránh hook về củ sạc/hub và balo chống nước lặp motif — đều Score 3, gần như chỉ được comment mồi, không tạo reaction.
+- Tránh viết mô tả tính năng phẳng lì, không cảm xúc ("có ngăn đệm riêng cho laptop không") — kém hút, dễ trôi.
+- Đừng lặp lại cùng một góc nhìn cho một sản phẩm (balo bị lặp 5 lần, giảm dần hiệu quả) — mỗi reel một góc mới.
+- Chưa reel nào có Share; cần thêm yếu tố "đáng chia sẻ": tip hữu ích, cảnh báo thiệt hại tiền bạc, hoặc khoảnh khắc wow để đẩy Score.
