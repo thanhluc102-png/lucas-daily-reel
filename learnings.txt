@@ -1,15 +1,8 @@
-- **Ưu tiên hook "nỗi đau cụ thể + hậu quả sợ hãi"**: màn hình lóa ngoài nắng (Score 6), balo mở phẳng gấp gọn (5), ốp trong ố vàng (5) — vấn đề ai cũng gặp, dễ gật đầu.
-
-- **Gộp 2 lợi ích/tương phản trong 1 câu cho điểm cao**: "đẹp mà mưa xuống ướt", "gọn nhưng cắm gì cũng với ra sau" — tạo mâu thuẫn khiến người xem dừng lại.
-
-- **Dùng câu hỏi kéo bình luận + con số/kịch bản đời thực**: "ai từng dính chưa?", "balo 3 triệu mà...", "trầy một vệt mờ cả đời máy" — kích phản ứng tự nhiên.
-
-- **Nhóm sản phẩm mạnh nhất**: dán màn/chống nhìn trộm, balo chống sốc-chống nước, ốp chống ố — vì đánh trúng lo lắng bảo vệ tài sản đắt tiền.
-
-- **Tránh hook khoe tính năng khô khan**: "ốp xoay 360 độ", "ốp nhám chống vân tay", "củ sạc một cổng" — chỉ mô tả, không gợi nỗi đau nên tương tác đáy (Score 3-4).
-
-- **Tránh hook mơ hồ/không rõ hậu quả**: "một cục sạc lo cả bàn", "xách 3 củ sạc" — thiếu cảm xúc mạnh, người xem lướt qua.
-
-- **Mở đầu bằng cảnh tượng người dùng tự thấy mình trong đó** thay vì bằng tên/thông số sản phẩm, kèm emoji cảm xúc (😤😬👀) hơn emoji vật thể (🔌⚡).
-
-- **Ưu tiên nỗi sợ mất mát cụ thể** (rơi vỡ, trầy, ướt, ố, lộ thông tin) hơn tiện lợi chung chung — nỗi sợ tạo tương tác cao gấp 1.5-2 lần.
+- Mở hook bằng **nỗi đau cụ thể + hình ảnh hậu quả** (lóa như gương, rơi lãnh trọn, đọc lén màn hình): cho Score cao nhất (5-6).
+- Dùng **câu hỏi khơi tò mò/thách thức** ("tin nổi không?", "ai từng dính chưa?", "đọc lén màn hình bạn đấy") để kéo reaction, hiệu quả hơn câu mô tả tính năng.
+- Nhóm sản phẩm mạnh: **dán chống nhìn trộm/chống lóa, ốp lưng, balo mở phẳng** — dễ tạo tương tác nhờ liên hệ trải nghiệm hằng ngày.
+- Tránh hook chỉ **liệt kê tính năng khô khan** (ốp xoay 360, ngăn có đệm riêng, một cục sạc lo cả bàn): toàn Score đáy 3.
+- Tránh nhóm **củ sạc/ổ cắm/dây sạc**: hook trùng lặp, cảm xúc yếu, tương tác thấp nhất.
+- Ưu tiên **tình huống "đời thực + mất mát tiền bạc"** (balo 3 triệu nứt máy, trầy camera mờ cả đời máy) để chạm điểm sợ tốn tiền.
+- Chèn **emoji cảm xúc mạnh** (😑😬😤👀) thay vì emoji vật phẩm trung tính (🎒🔌⚡) để tăng phản ứng.
+- Công thức nên lặp: **[vấn đề đau] + [hậu quả đắt giá/bất ngờ] + [câu hỏi cà khịa người đọc]**.
