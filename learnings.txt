@@ -1,8 +1,8 @@
-- Hook có yếu tố "phản diện xã hội" hoặc gây tò mò cá nhân (bị đọc lén màn hình 👀) đạt điểm cao nhất (Score=5) — ưu tiên khai thác nỗi sợ bị xâm phạm riêng tư.
-- Hook mô tả trải nghiệm "đã tay/wow" cụ thể (balo mở phẳng như vali, đóng gói nhẹ tênh) cho tương tác tốt — dùng hình ảnh so sánh vật lý dễ hình dung.
-- Hook dạng câu hỏi cà khịa/thách thức nhẹ ("tin nổi không?", "đọc lén màn hình bạn đấy") kích comment hơn hook khẳng định phẳng.
-- Sản phẩm ốp lưng & phụ kiện chống nhìn trộm nhỉnh hơn balo và củ sạc về reactions — nên đẩy mạnh nhóm ốp/bảo mật màn hình.
-- Tránh hook liệt kê thông số khô ("Ốp mỏng 2mm", "củ sạc một cổng") — điểm thấp, thiếu cảm xúc.
-- Tránh lặp lại motif balo-mưa-ướt-laptop quá nhiều (nhiều biến thể đều Score=3) — đã bão hòa, gây nhàm.
-- Chèn con số gây sốc + phản ứng cảm xúc ("rơi 4 mét", "nứt máy như chơi") nhưng phải kèm góc lạ, tránh dạng liệt kê tính năng đơn thuần.
-- Mọi hook nên nhắm tạo comment (điểm nhân 3) bằng câu hỏi trực tiếp về tình huống của người xem, thay vì chỉ khoe sản phẩm.
+- Ưu tiên hook khơi gợi tâm lý/nỗi sợ ngầm ("người bên cạnh đọc lén màn hình", "quăng laptop vô là hết đẹp") — nhóm này đạt Score cao nhất (5).
+- Balo là sản phẩm hút tương tác tốt nhất, đặc biệt khi nhấn tính năng bất ngờ ("mở phẳng như vali", "ướt mưa vẫn khô") — luôn đạt Score 4-5.
+- Chèn con số cụ thể gây tò mò ("mỏng 2mm", "rơi 4 mét", "balo 3 triệu", "nặng trăm gram") giúp tăng phản ứng hơn hook chung chung.
+- Dùng câu hỏi phản tư đánh trúng tình huống người dùng ("đồ dễ vỡ để đâu?", "ổ cắm nào cũng đầy?") giữ được comment ổn định.
+- Tránh hook mô tả tính năng khô khan, thiếu kịch tính ("củ sạc một cổng", "ốp xoay 360 độ", "một củ sạc lo 4 thiết bị") — chỉ đạt Score 3, gần như không có reaction.
+- Nhóm củ sạc/phụ kiện sạc tương tác kém đều, nên viết theo góc nỗi đau ("xách 3 củ sạc chỉ để đủ dùng?") thay vì khoe thông số.
+- Mỗi hook giữ 1 emoji đúng ngữ cảnh, câu ngắn gọn, tạo tương phản "vấn đề vs giải pháp" để kích phản ứng cảm xúc.
+- Shares luôn = 0: cần thêm yếu tố đáng chia sẻ (mẹo hữu ích, tình huống "ai cũng gặp") thay vì chỉ quảng cáo sản phẩm.
