@@ -1,8 +1,8 @@
-- Hook mạnh nhất khi chạm nỗi đau riêng tư/bảo mật ("người bên cạnh đọc lén màn hình" — Score 5) hoặc lợi ích bất ngờ, cụ thể ("balo mở phẳng như vali", "ố vàng ai từng dính chưa" — Score 5); ưu tiên hướng này.
-- Sản phẩm cho tương tác cao: ốp lưng (ố vàng, nhám, chống nhìn trộm) và balo có công năng lạ (mở phẳng 2 mặt) — khai thác sâu nhóm này.
-- Kết hook bằng câu hỏi khơi trải nghiệm cá nhân ("ai từng dính chưa?", "tin nổi không?") kéo comment tốt hơn câu khẳng định suông.
-- Nêu con số/chi tiết gây sốc ("rơi 4 mét", "mỏng 2mm chuẩn quân sự", "nặng thêm cả trăm gram") để tăng độ tin và tương tác.
-- Tránh hook về củ sạc/hub và balo chống nước lặp motif — đều Score 3, gần như chỉ được comment mồi, không tạo reaction.
-- Tránh viết mô tả tính năng phẳng lì, không cảm xúc ("có ngăn đệm riêng cho laptop không") — kém hút, dễ trôi.
-- Đừng lặp lại cùng một góc nhìn cho một sản phẩm (balo bị lặp 5 lần, giảm dần hiệu quả) — mỗi reel một góc mới.
-- Chưa reel nào có Share; cần thêm yếu tố "đáng chia sẻ": tip hữu ích, cảnh báo thiệt hại tiền bạc, hoặc khoảnh khắc wow để đẩy Score.
+- Hook chạm nỗi đau cá nhân ("ai từng dính chưa?", "đọc lén màn hình bạn") cho Score cao nhất (5) — ưu tiên khơi cảm xúc, đánh vào trải nghiệm thật của người dùng.
+- Hook gây tò mò/sốc bằng con số cụ thể ("mỏng 2mm chuẩn quân sự", "rơi 4 mét", "balo 3 triệu nằm sát đáy") kéo Reactions tốt hơn hook mô tả tính năng khô khan.
+- Nhóm ốp lưng và balo cho tương tác nhỉnh hơn củ sạc — ưu tiên viết cho ốp/balo, hạn chế xoay quanh sạc.
+- Tránh hook mô tả tính năng phẳng lì, không có xung đột ("ống một cổng", "xoay 360 độ", "một cục sạc lo cả bàn") — chỉ đạt Score đáy (3).
+- Mở bằng câu hỏi tu từ hoặc tình huống "đau" trước, rồi mới gợi giải pháp — dạng "vấn đề → giật mình" hiệu quả hơn dạng khoe tính năng.
+- Dùng emoji cảm xúc mạnh (😤😳👀😬) thay vì emoji vật phẩm trung tính (🔌⚡) để tăng phản ứng.
+- Toàn bộ hook đều 0 Share — thêm yếu tố "đáng chia sẻ": mẹo cảnh báo, sự thật bất ngờ, hoặc điều khiến người xem muốn tag bạn bè.
+- Giữ hook 1 câu ngắn, có phản đề ("đẹp mà...", "3 triệu mà...") để tạo tương phản gây chú ý.
