@@ -1,8 +1,8 @@
-- Hook chạm nỗi đau cá nhân ("ai từng dính chưa?", "đọc lén màn hình bạn") cho Score cao nhất (5) — ưu tiên khơi cảm xúc, đánh vào trải nghiệm thật của người dùng.
-- Hook gây tò mò/sốc bằng con số cụ thể ("mỏng 2mm chuẩn quân sự", "rơi 4 mét", "balo 3 triệu nằm sát đáy") kéo Reactions tốt hơn hook mô tả tính năng khô khan.
-- Nhóm ốp lưng và balo cho tương tác nhỉnh hơn củ sạc — ưu tiên viết cho ốp/balo, hạn chế xoay quanh sạc.
-- Tránh hook mô tả tính năng phẳng lì, không có xung đột ("ống một cổng", "xoay 360 độ", "một cục sạc lo cả bàn") — chỉ đạt Score đáy (3).
-- Mở bằng câu hỏi tu từ hoặc tình huống "đau" trước, rồi mới gợi giải pháp — dạng "vấn đề → giật mình" hiệu quả hơn dạng khoe tính năng.
-- Dùng emoji cảm xúc mạnh (😤😳👀😬) thay vì emoji vật phẩm trung tính (🔌⚡) để tăng phản ứng.
-- Toàn bộ hook đều 0 Share — thêm yếu tố "đáng chia sẻ": mẹo cảnh báo, sự thật bất ngờ, hoặc điều khiến người xem muốn tag bạn bè.
-- Giữ hook 1 câu ngắn, có phản đề ("đẹp mà...", "3 triệu mà...") để tạo tương phản gây chú ý.
+- Hook có yếu tố "phản diện xã hội" hoặc gây tò mò cá nhân (bị đọc lén màn hình 👀) đạt điểm cao nhất (Score=5) — ưu tiên khai thác nỗi sợ bị xâm phạm riêng tư.
+- Hook mô tả trải nghiệm "đã tay/wow" cụ thể (balo mở phẳng như vali, đóng gói nhẹ tênh) cho tương tác tốt — dùng hình ảnh so sánh vật lý dễ hình dung.
+- Hook dạng câu hỏi cà khịa/thách thức nhẹ ("tin nổi không?", "đọc lén màn hình bạn đấy") kích comment hơn hook khẳng định phẳng.
+- Sản phẩm ốp lưng & phụ kiện chống nhìn trộm nhỉnh hơn balo và củ sạc về reactions — nên đẩy mạnh nhóm ốp/bảo mật màn hình.
+- Tránh hook liệt kê thông số khô ("Ốp mỏng 2mm", "củ sạc một cổng") — điểm thấp, thiếu cảm xúc.
+- Tránh lặp lại motif balo-mưa-ướt-laptop quá nhiều (nhiều biến thể đều Score=3) — đã bão hòa, gây nhàm.
+- Chèn con số gây sốc + phản ứng cảm xúc ("rơi 4 mét", "nứt máy như chơi") nhưng phải kèm góc lạ, tránh dạng liệt kê tính năng đơn thuần.
+- Mọi hook nên nhắm tạo comment (điểm nhân 3) bằng câu hỏi trực tiếp về tình huống của người xem, thay vì chỉ khoe sản phẩm.
