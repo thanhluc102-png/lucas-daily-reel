@@ -1,7 +1,7 @@
-- Ưu tiên hook chạm nỗi đau ngầm/tâm lý ("Người bên cạnh đang đọc lén màn hình bạn đấy", "Balo mở phẳng như vali") — nhóm Score cao nhất (5).
-- Balo là sản phẩm mạnh nhất: nhấn tình huống cụ thể (mưa ướt, laptop sát đáy, mở phẳng như vali) thay vì mô tả tính năng chung chung.
-- Dùng câu khẳng định gây tò mò/bất ngờ ("rơi 4 mét vẫn không sao", "sờ vào là mê") tốt hơn câu hỏi khô ("có ngăn đệm không?", "có lót chống sốc chưa?") — nhóm câu hỏi rập khuôn chỉ đạt Score 3.
-- Tránh hook về củ sạc mô tả tính năng đơn thuần (đa cổng, 4 thiết bị, một cục lo cả bàn) — đều Score 3, tương tác yếu nhất.
-- Vẽ ra hình ảnh hậu quả sống động ("nứt máy như chơi", "mờ cả đời máy", "nặng thêm cả trăm gram") để tăng reaction.
-- Chèn yếu tố so sánh giá/kỳ vọng gây sốc ("Balo 3 triệu mà...", "Balo 1 triệu của bạn...") để kích cảm xúc.
-- Mỗi hook 1 emoji đúng ngữ cảnh, câu ngắn, đánh trực diện vào 1 nỗi đau duy nhất — tránh liệt kê nhiều lợi ích.
+- Ưu tiên hook chạm nỗi lo riêng tư/xã hội ("người bên cạnh đọc lén màn hình") — nhóm cho tương tác cao nhất (Score 5).
+- Nhấn tính năng bất ngờ, trực quan dễ hình dung (balo mở phẳng như vali, ốp xoay 360) — kích reactions tốt hơn.
+- Dùng công thức "sản phẩm quen + tình huống thất bại cụ thể" (balo 3 triệu mà laptop nằm sát đáy → nứt máy) — tạo tò mò, Score nhỉnh hơn.
+- Chèn con số/kịch bản gây sốc (rơi 4 mét, nứt góc, 5-6 dây sạc) để tăng độ đáng nhớ.
+- Tránh hook dạng câu hỏi chung chung, quá an toàn (balo có lót chống sốc chưa?) — chỉ đạt Score đáy.
+- Tránh mô tả tính năng đơn thuần thiếu cảm xúc/xung đột (một củ sạc lo 4 thiết bị) — tương tác thấp.
+- Mỗi hook nên có 1 xung đột hoặc 1 lợi ích độc nhất, không liệt kê dàn trải; thêm 1 emoji đúng ngữ cảnh.
