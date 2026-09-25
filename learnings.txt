@@ -1,7 +1,8 @@
-- Ưu tiên hook chạm nỗi lo riêng tư/xã hội ("người bên cạnh đọc lén màn hình") — nhóm cho tương tác cao nhất (Score 5).
-- Nhấn tính năng bất ngờ, trực quan dễ hình dung (balo mở phẳng như vali, ốp xoay 360) — kích reactions tốt hơn.
-- Dùng công thức "sản phẩm quen + tình huống thất bại cụ thể" (balo 3 triệu mà laptop nằm sát đáy → nứt máy) — tạo tò mò, Score nhỉnh hơn.
-- Chèn con số/kịch bản gây sốc (rơi 4 mét, nứt góc, 5-6 dây sạc) để tăng độ đáng nhớ.
-- Tránh hook dạng câu hỏi chung chung, quá an toàn (balo có lót chống sốc chưa?) — chỉ đạt Score đáy.
-- Tránh mô tả tính năng đơn thuần thiếu cảm xúc/xung đột (một củ sạc lo 4 thiết bị) — tương tác thấp.
-- Mỗi hook nên có 1 xung đột hoặc 1 lợi ích độc nhất, không liệt kê dàn trải; thêm 1 emoji đúng ngữ cảnh.
+- Điểm số toàn sàn rất thấp (3–5), khác biệt nhỏ, nên coi mọi kết luận là xu hướng yếu chứ không tuyệt đối.
+- Hook cho tương tác nhỉnh hơn (Score=5) là kiểu chạm nỗi lo bảo mật/riêng tư ("Người bên cạnh đọc lén màn hình") và tính năng độc đáo cụ thể ("balo mở phẳng như vali").
+- Ưu tiên hook mô tả lợi ích/tính năng ĐẶC BIỆT, gây tò mò trực quan hơn là câu hỏi chung chung.
+- Hook dạng câu hỏi "bạn có... chưa?" (ngăn đệm laptop, lót chống sốc) chỉ đạt trung bình 3–4, dùng vừa phải.
+- Nhóm sạc/ổ cắm ("một củ sạc lo trọn", "xách 3 củ sạc") đều Score=3, đề tài này kém hút, tránh lặp mô-típ.
+- Tránh hook nêu vấn đề tiêu cực chung chung ("ốp rơi nứt góc", "balo quăng laptop hết đẹp") vì đều chạm đáy Score=3.
+- Nên thêm con số/kịch bản gây sốc cụ thể ("rơi 4 mét", "balo 3 triệu nằm sát đáy") để tăng độ giật, kết hợp lợi ích rõ.
+- Đề tài kính cường lực/dán màn hình chống nhìn trộm đáng khai thác sâu vì tạo phản ứng tốt nhất trong tập dữ liệu.
