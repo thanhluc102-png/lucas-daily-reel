@@ -1,8 +1,8 @@
-- Hook chạm nỗi lo riêng tư ("người bên cạnh đọc trộm màn hình") đạt Score cao nhất (5) — nên ưu tiên tình huống bị nhìn lén, mất bảo mật.
-- Hook mô tả lợi ích cụ thể, hình ảnh hóa ("mở phẳng như vali, đóng đồ hai mặt") kéo Reactions cao — nên tả trực quan tính năng thay vì nói chung chung.
-- Hook đánh vào nỗi đau/sợ hỏng hóc ("balo 3 triệu nứt máy", "ốp rơi nứt góc") đạt Score 4 — nên dùng công thức "giá tiền cao + rủi ro hỏng đồ đắt".
-- Sản phẩm ốp lưng & balo cho tương tác nhỉnh hơn; sạc/pin dự phòng đều dừng ở Score 3 — nên giảm tần suất hook sạc hoặc đổi góc tiếp cận mới.
-- Tránh hook nêu tính năng khô khan, chung chung ("một củ sạc lo 4 thiết bị", "chống bám vân tay") vì chỉ đạt Score thấp, thiếu cảm xúc.
-- Ưu tiên mở bằng câu hỏi khịa/thách thức người xem ("balo bạn có lót chống sốc chưa?") để kích comment, dù Reactions thấp vẫn giữ Score ổn.
-- Chưa có hook nào tạo Share — nên thử thêm yếu tố "mẹo hữu ích đáng lưu/gửi cho bạn" để đẩy chỉ số Share (trọng số nặng nhất).
-- Công thức thắng: nỗi lo cá nhân (riêng tư/hỏng đồ đắt) + hình ảnh cụ thể + emoji cảm xúc 😳👀😬, tránh liệt kê thông số đơn thuần.
+- Hook chạm nỗi sợ riêng tư ("người bên cạnh đọc trộm màn hình") cho tương tác cao nhất (Score=5) — lặp lại motif "bị nhìn lén" khi hợp sản phẩm.
+- Hook nêu lợi ích cụ thể, khác biệt rõ ("balo mở phẳng như vali") hiệu quả hơn hook chung chung.
+- Sản phẩm balo laptop nhỉnh hơn mặt bằng chung; dùng con số + hậu quả đau ("balo 3 triệu mà nứt máy", "có lót chống sốc chưa?") để tăng điểm.
+- Câu hỏi trực tiếp thách thức người xem ("balo bạn có... chưa?") kích comment/reaction tốt hơn câu khẳng định phẳng.
+- Tránh hook mô tả tính năng khô khan, không cảm xúc ("một củ sạc lo 4 thiết bị", "ốp xoay 360 độ") — chỉ đạt Score=3 sàn.
+- Tránh lặp hook về sạc/pin và ốp chống rơi kiểu liệt kê thông số — nhóm này tương tác kém nhất, cần thêm góc cảm xúc hoặc tình huống.
+- Ưu tiên tạo cảm giác nguy cơ tức thì + mất mát cá nhân (trộm nhìn, nứt máy, mất dữ liệu) hơn là khoe ưu điểm sản phẩm.
+- Chưa hook nào tạo Share; thử thêm yếu tố "mẹo hữu ích đáng lưu/gửi bạn" để đẩy chỉ số Share (trọng số cao nhất).
