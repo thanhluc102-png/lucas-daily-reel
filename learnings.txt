@@ -1,8 +1,8 @@
-- Điểm số toàn sàn rất thấp (3–5), khác biệt nhỏ, nên coi mọi kết luận là xu hướng yếu chứ không tuyệt đối.
-- Hook cho tương tác nhỉnh hơn (Score=5) là kiểu chạm nỗi lo bảo mật/riêng tư ("Người bên cạnh đọc lén màn hình") và tính năng độc đáo cụ thể ("balo mở phẳng như vali").
-- Ưu tiên hook mô tả lợi ích/tính năng ĐẶC BIỆT, gây tò mò trực quan hơn là câu hỏi chung chung.
-- Hook dạng câu hỏi "bạn có... chưa?" (ngăn đệm laptop, lót chống sốc) chỉ đạt trung bình 3–4, dùng vừa phải.
-- Nhóm sạc/ổ cắm ("một củ sạc lo trọn", "xách 3 củ sạc") đều Score=3, đề tài này kém hút, tránh lặp mô-típ.
-- Tránh hook nêu vấn đề tiêu cực chung chung ("ốp rơi nứt góc", "balo quăng laptop hết đẹp") vì đều chạm đáy Score=3.
-- Nên thêm con số/kịch bản gây sốc cụ thể ("rơi 4 mét", "balo 3 triệu nằm sát đáy") để tăng độ giật, kết hợp lợi ích rõ.
-- Đề tài kính cường lực/dán màn hình chống nhìn trộm đáng khai thác sâu vì tạo phản ứng tốt nhất trong tập dữ liệu.
+- Hook chạm nỗi lo riêng tư ("người bên cạnh đọc trộm màn hình") đạt Score cao nhất (5) — nên ưu tiên tình huống bị nhìn lén, mất bảo mật.
+- Hook mô tả lợi ích cụ thể, hình ảnh hóa ("mở phẳng như vali, đóng đồ hai mặt") kéo Reactions cao — nên tả trực quan tính năng thay vì nói chung chung.
+- Hook đánh vào nỗi đau/sợ hỏng hóc ("balo 3 triệu nứt máy", "ốp rơi nứt góc") đạt Score 4 — nên dùng công thức "giá tiền cao + rủi ro hỏng đồ đắt".
+- Sản phẩm ốp lưng & balo cho tương tác nhỉnh hơn; sạc/pin dự phòng đều dừng ở Score 3 — nên giảm tần suất hook sạc hoặc đổi góc tiếp cận mới.
+- Tránh hook nêu tính năng khô khan, chung chung ("một củ sạc lo 4 thiết bị", "chống bám vân tay") vì chỉ đạt Score thấp, thiếu cảm xúc.
+- Ưu tiên mở bằng câu hỏi khịa/thách thức người xem ("balo bạn có lót chống sốc chưa?") để kích comment, dù Reactions thấp vẫn giữ Score ổn.
+- Chưa có hook nào tạo Share — nên thử thêm yếu tố "mẹo hữu ích đáng lưu/gửi cho bạn" để đẩy chỉ số Share (trọng số nặng nhất).
+- Công thức thắng: nỗi lo cá nhân (riêng tư/hỏng đồ đắt) + hình ảnh cụ thể + emoji cảm xúc 😳👀😬, tránh liệt kê thông số đơn thuần.
