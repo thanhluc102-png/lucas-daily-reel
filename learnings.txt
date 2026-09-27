@@ -1,8 +1,8 @@
-- Hook "người khác đọc lén màn hình" (dòng chống nhìn trộm) đạt Score cao nhất (5) và lặp lại ổn định → ưu tiên khai thác nỗi lo riêng tư.
-- Hook về balo/túi laptop có "chi tiết cụ thể" (mở phẳng như vali, chống sốc, ngăn đệm riêng) cho tương tác nhỉnh hơn (Score 4-5) → luôn nêu tính năng cụ thể thay vì nói chung.
-- Dùng con số/định lượng gây sốc (rơi 4 mét, 3 triệu, nặng cả trăm gram) tạo tò mò tốt hơn hook mô tả suông.
-- Hook dạng câu hỏi chạm nỗi đau trực tiếp ("laptop nằm sát đáy nứt máy như chơi", "trời mưa laptop ẩm hết") hiệu quả hơn hook khoe tính năng đơn thuần.
-- Tránh hook về sạc/pin đa thiết bị ("một củ lo 4 thiết bị", "sáng dậy đều đầy pin") → toàn Score 3, quá quen thuộc, thiếu cảm xúc.
-- Tránh hook chung chung không có nỗi đau rõ (ốp xoay 360, pin hiện thông số) → tính năng khô khan, ít chạm.
-- Công thức thắng: [nỗi lo riêng tư/hư hỏng đắt tiền] + [số liệu cụ thể] + [emoji cảm xúc 😳😬👀] đặt ở cuối.
-- Ưu tiên sản phẩm: dán chống nhìn trộm > balo/túi chống sốc > ốp chống sốc; hạ ưu tiên: sạc/pin dự phòng.
+- Hook "người bên cạnh đọc lén màn hình" (kính cường lực chống nhìn trộm) cho Score cao nhất và ổn định (5) — ưu tiên khai thác nỗi lo riêng tư.
+- Hook nêu nỗi đau cụ thể + con số/tình huống thật (balo 3 triệu nứt máy, ốp rơi 4 mét, balo có lót chống sốc) đạt Score 4–5 — dùng số liệu và kịch bản đời thực.
+- Balo là dòng sản phẩm dễ tương tác nhất khi gắn với rủi ro hỏng laptop/mất đồ — nên đẩy mạnh nhóm này.
+- Hook dạng câu hỏi khơi nỗi sợ ("có ngăn đệm riêng không?", "có lót chống sốc chưa?") kéo Reactions tốt hơn câu khẳng định chung chung.
+- Tránh hook mô tả tính năng khô khan (ốp xoay 360, balo mở phẳng, ngăn ẩn 40L) — chỉ đạt Score 3, thiếu cảm xúc.
+- Tránh nhóm sạc/pin dự phòng kiểu "một củ sạc lo 4 thiết bị" — lặp lại nhiều, tương tác đều thấp (3), cần góc mới lạ hơn.
+- Mở đầu bằng tình huống "mất mặt/thiệt hại" gây giật mình (emoji 😬😳👀) hiệu quả hơn khoe ưu điểm sản phẩm.
+- Chưa hook nào đạt Share — cần thêm yếu tố bất ngờ/hữu ích đáng chia sẻ (mẹo, cảnh báo thiệt hại lớn) để nâng Score.
