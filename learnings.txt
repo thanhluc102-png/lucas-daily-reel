@@ -1,7 +1,8 @@
-- Hook "người bên cạnh đọc lén màn hình" (kính cường lực chống nhìn trộm) đạt Score cao nhất (5) — ưu tiên khai thác nỗi lo riêng tư, cảm giác bị theo dõi.
-- Hook chạm nỗi sợ mất mát cụ thể (nứt máy, ảnh mờ cả đời, laptop ẩm) tạo tương tác nhỉnh hơn (Score 4-5) — dùng hậu quả rõ ràng, dễ hình dung.
-- Mọi hook đều có 1 comment nhưng gần như không share — cần thêm yếu tố "đáng chia sẻ" (mẹo hay, số liệu sốc, tình huống ai cũng gặp) để tăng Score.
-- Reactions chỉ tăng khi hook đánh vào cảm xúc mạnh/bất ngờ ("rơi 4m không sao", "đọc lén màn hình") — mở đầu bằng tình huống gây giật mình.
-- Hook dạng câu hỏi thông số khô khan ("có ngăn đệm không?", "xem thông số sạc?") cho Score thấp (3) — tránh liệt kê tính năng đơn thuần.
-- Sản phẩm sạc đa cổ, ốp lưng, balo chung chung tương tác kém — cần góc lạ hoặc chi tiết độc (ngăn ẩn, ngăn tinh dầu) thay vì công năng phổ biến.
-- Công thức mạnh: nỗi sợ/tình huống đời thường bất ngờ + hậu quả đắt giá + emoji cảm xúc, kết bằng câu khơi gợi chia sẻ.
+- Hook thắng: chạm nỗi lo riêng tư/an ninh cá nhân ("Người bên cạnh đang đọc lén màn hình bạn" → Score 5) — dùng ngôi "bạn", tạo cảm giác bị theo dõi/xâm phạm.
+- Sản phẩm cho tương tác nhỉnh: phụ kiện bảo vệ tài sản đắt tiền (miếng dán chống nhìn trộm, lót chống sốc balo laptop) — gắn với thiệt hại tài chính cụ thể ("Balo 3 triệu", "nứt máy").
+- Công thức mạnh: nêu con số/giá trị cụ thể + hậu quả tồi tệ ("rơi 6 mét", "3 triệu mà nằm sát đáy") — cụ thể hóa rủi ro tăng phản ứng.
+- Nên dùng câu hỏi xoáy vào thiếu sót của đồ người dùng đang dùng ("Balo bạn có lót chống sốc chưa?") thay vì chỉ khoe tính năng.
+- Kém hiệu quả (Score 3): hook khoe tính năng sạc đa thiết bị, pin dự phòng, ốp chống rơi chung chung — bão hòa, không tạo cảm xúc, nên giảm tần suất.
+- Tránh mô tả tính năng "lạ mà vô dụng cảm xúc" (ốp giấu tinh dầu, ngăn ẩn hộ chiếu) — không chạm nhu cầu thật, tương tác thấp.
+- Toàn bộ đạt Share=0: cần thêm yếu tố đáng chia sẻ — mẹo hữu ích, cảnh báo giật mình, hoặc "gửi ngay cho người hay làm rơi máy".
+- Ưu tiên emoji cảm xúc lo lắng/bất ngờ (😳👀😬) hơn emoji trung tính (🔌⚡🔋) để tăng reaction.
