@@ -1,8 +1,7 @@
-- Hook "người bên cạnh đọc lén màn hình" (kính cường lực chống nhìn trộm) cho Score cao nhất và ổn định (5) — ưu tiên khai thác nỗi lo riêng tư.
-- Hook nêu nỗi đau cụ thể + con số/tình huống thật (balo 3 triệu nứt máy, ốp rơi 4 mét, balo có lót chống sốc) đạt Score 4–5 — dùng số liệu và kịch bản đời thực.
-- Balo là dòng sản phẩm dễ tương tác nhất khi gắn với rủi ro hỏng laptop/mất đồ — nên đẩy mạnh nhóm này.
-- Hook dạng câu hỏi khơi nỗi sợ ("có ngăn đệm riêng không?", "có lót chống sốc chưa?") kéo Reactions tốt hơn câu khẳng định chung chung.
-- Tránh hook mô tả tính năng khô khan (ốp xoay 360, balo mở phẳng, ngăn ẩn 40L) — chỉ đạt Score 3, thiếu cảm xúc.
-- Tránh nhóm sạc/pin dự phòng kiểu "một củ sạc lo 4 thiết bị" — lặp lại nhiều, tương tác đều thấp (3), cần góc mới lạ hơn.
-- Mở đầu bằng tình huống "mất mặt/thiệt hại" gây giật mình (emoji 😬😳👀) hiệu quả hơn khoe ưu điểm sản phẩm.
-- Chưa hook nào đạt Share — cần thêm yếu tố bất ngờ/hữu ích đáng chia sẻ (mẹo, cảnh báo thiệt hại lớn) để nâng Score.
+- Hook "người bên cạnh đọc lén màn hình" (kính cường lực chống nhìn trộm) đạt Score cao nhất (5) — ưu tiên khai thác nỗi lo riêng tư, cảm giác bị theo dõi.
+- Hook chạm nỗi sợ mất mát cụ thể (nứt máy, ảnh mờ cả đời, laptop ẩm) tạo tương tác nhỉnh hơn (Score 4-5) — dùng hậu quả rõ ràng, dễ hình dung.
+- Mọi hook đều có 1 comment nhưng gần như không share — cần thêm yếu tố "đáng chia sẻ" (mẹo hay, số liệu sốc, tình huống ai cũng gặp) để tăng Score.
+- Reactions chỉ tăng khi hook đánh vào cảm xúc mạnh/bất ngờ ("rơi 4m không sao", "đọc lén màn hình") — mở đầu bằng tình huống gây giật mình.
+- Hook dạng câu hỏi thông số khô khan ("có ngăn đệm không?", "xem thông số sạc?") cho Score thấp (3) — tránh liệt kê tính năng đơn thuần.
+- Sản phẩm sạc đa cổ, ốp lưng, balo chung chung tương tác kém — cần góc lạ hoặc chi tiết độc (ngăn ẩn, ngăn tinh dầu) thay vì công năng phổ biến.
+- Công thức mạnh: nỗi sợ/tình huống đời thường bất ngờ + hậu quả đắt giá + emoji cảm xúc, kết bằng câu khơi gợi chia sẻ.
