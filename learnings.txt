@@ -1,8 +1,8 @@
-- Hook "riêng tư/bảo mật" (kiểu "người bên cạnh đang đọc lén màn hình bạn" — sản phẩm dán chống nhìn trộm) cho Score cao nhất (5), lặp lại 3 lần đều ăn Reactions → ưu tiên khai thác nỗi sợ bị lộ thông tin.
-- Hook chạm nỗi đau tài chính cụ thể ("balo 1-3 triệu mà hại laptop") kéo thêm Reactions (Score 4) → nêu rõ giá tiền + hậu quả để tăng tương tác.
-- Toàn bộ data chỉ dừng ở Comments=1, Shares=0 → chưa có hook nào đủ mạnh tạo chia sẻ; cần thêm yếu tố "gửi cho người cần" hoặc lợi ích tặng quà để đẩy Share.
-- Hook dạng câu hỏi trực diện ("balo bạn có ngăn chống sốc chưa?") nhỉnh hơn hook khẳng định khô khan → ưu tiên đặt câu hỏi khiến người xem tự soi mình.
-- Hook thông số kỹ thuật đơn thuần ("rơi 4m/6m vẫn nguyên", "sạc 4 thiết bị") chỉ đạt Score 3, dễ chìm → tránh liệt kê thông số suông, phải gắn với cảm xúc/tình huống.
-- Sản phẩm ngách lạ (ốp giấu tinh dầu, balo ngăn ẩn hộ chiếu, bơm xe) tương tác thấp nhất → hạn chế, chỉ dùng xen kẽ, không làm chủ lực.
-- Ưu tiên chủ đề: chống nhìn trộm > bảo vệ laptop có nêu giá > sạc/pin đa thiết bị; đây là thứ tự nên phân bổ số lượng reel.
-- Công thức chuẩn: [nỗi sợ cá nhân/riêng tư] + [con số cụ thể] + [câu hỏi soi người xem] + emoji đơn → giữ dưới 15 từ.
+- Hook thắng đậm nhất: kiểu "người bên cạnh đọc lén màn hình" (Score 5, lặp lại 2 lần đều cao) → khai thác nỗi lo riêng tư/bị nhìn trộm, chạm cảm xúc tức thì.
+- Sản phẩm cho tương tác tốt nhất: dán chống nhìn trộm và balo/túi chống sốc laptop (Score 4-5); ưu tiên nhóm này.
+- Công thức hiệu quả: câu hỏi trực diện đánh vào nỗi đau cá nhân + emoji cảm xúc (👀😬🎒), nói về rủi ro "mất/hỏng đồ của CHÍNH BẠN".
+- Hook "balo giá X triệu mà vẫn hại laptop" ăn nhẹ (Score 4) vì gợi tiếc tiền + sợ hỏng máy → nên dùng mô típ "đắt tiền mà vẫn dở".
+- Kém hiệu quả nên tránh: hook khoe thông số/tính năng đơn thuần ("sạc 4 thiết bị", "rơi 6 mét", "ngăn ẩn") → chỉ đạt Score 3, thiếu chạm cảm xúc.
+- Tránh lặp mô típ "một củ sạc lo trọn..." và "ốp rơi X mét" — đã bão hòa, tương tác đáy.
+- Ưu tiên viết ở ngôi "bạn", đặt câu hỏi khiến người xem tự soi lại đồ mình đang dùng.
+- Mọi hook đều gần như 0 share → thêm yếu tố "gửi cho đứa hay làm hỏng đồ" hoặc tình huống đồng cảm nhóm để kích share.
