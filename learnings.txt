@@ -1,8 +1,8 @@
-- Hook "người bên cạnh đọc lén màn hình" (dán cường lực chống nhìn trộm) cho Score cao nhất (5) → ưu tiên góc "riêng tư/bị nhìn trộm", đánh vào nỗi sợ lộ thông tin.
-- Dùng ngôi thứ hai trực tiếp ("bạn", "màn hình của bạn") + emoji con mắt 👀 tạo cảm giác bị soi, kích reaction thật.
-- Hook chạm nỗi lo cá nhân cấp bách (bị nhìn lén, rơi vỡ máy) thắng hook khoe tính năng/thông số khô khan (đa số chỉ Score=3).
-- Thêm chi tiết cụ thể gây sốc ("rơi 4-6 mét vẫn nguyên", "SGS") giúp nhỉnh hơn chút nhưng chưa đủ tạo share → cần kết hợp cảm xúc, không chỉ số liệu.
-- Hook dạng câu hỏi "balo bạn có... chưa?" đều nhạt (Score 3-4) → tránh mở bằng câu hỏi tính năng chung chung.
-- Toàn bộ video Shares=0 → phải thêm yếu tố đáng chia sẻ: mẹo hữu ích, tình huống "ai cũng gặp", hoặc CTA "gửi cho đứa hay làm rơi máy".
-- Sản phẩm dán chống nhìn trộm hiệu quả nhất; balo/ốp/sạc/pin dự phòng cần góc kể chuyện đời thường thay vì liệt kê thông số.
-- Công thức viết: [Nỗi sợ cá nhân cụ thể] + [ngôi "bạn"] + [emoji cảm xúc] + [gợi ý chia sẻ cuối video].
+- Hook thắng lớn nhất: khơi nỗi lo bảo mật/riêng tư ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀" → Score 5), dùng ngôi thứ 2 + tình huống bị xâm phạm ngay lập tức.
+- Hook mở bằng câu hỏi "chạm đau" trực tiếp vào người xem ("Balo bạn có lót chống sốc chưa?" → Score 4) nhỉnh hơn hook khoe tính năng chung chung.
+- Toàn bộ dữ liệu gần như đồng đều Score 3 (chỉ 1 comment), tức đa số hook chưa tạo được phản ứng thật → cần đẩy mạnh yếu tố khiến người xem "giật mình" hoặc "tag bạn bè".
+- Tránh hook chỉ liệt kê thông số/tính năng khô ("Một củ sạc lo 4 thiết bị", "Sạc dự phòng có màn hình") — thông tin đúng nhưng không kích cảm xúc, tương tác thấp.
+- Tránh hook trùng lặp ý gần giống nhau (nhiều bản "ốp rơi X mét", "đọc trộm màn hình") — biến thể khoe bền/rơi bị bão hòa, không còn gây sốc.
+- Công thức nên dùng: [Nỗi sợ mất mát/quê độ] + [ngôi "bạn"] + [con số cụ thể/emoji] → ưu tiên chủ đề an ninh, riêng tư, hớ hênh nơi công cộng vì cho phản ứng mạnh nhất.
+- Ưu tiên hook gợi hậu quả xấu sắp xảy ra ("rơi hộ chiếu", "bị đọc trộm") hơn hook khoe điểm mạnh sản phẩm.
+- Mục tiêu tiếp theo: viết hook kích Comment/Share (hỏi ý kiến, gây tranh luận, kêu tag người thân) vì Share hiện = 0 trên toàn bộ mẫu.
