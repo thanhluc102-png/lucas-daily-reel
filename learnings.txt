@@ -1,6 +1,8 @@
-- Hook "đọc lén màn hình" (kính cường lực chống nhìn trộm) cho tương tác cao nhất (Score=5): khai thác nỗi sợ bị soi mói, riêng tư nơi công cộng → ưu tiên góc tâm lý này.
-- Công thức thắng: nỗi lo cá nhân + tình huống đời thường cụ thể ("người bên cạnh", "sáng dậy") thay vì thông số kỹ thuật khô khan.
-- Hook dạng câu hỏi trực tiếp chạm nỗi đau ("Balo có lót chống sốc chưa?") nhỉnh hơn (Score=4) → giữ dạng câu hỏi khơi lo lắng.
-- Tránh hook khoe thông số/chứng nhận đơn thuần ("rơi 6 mét", "chứng nhận SGS", "4 thiết bị cùng lúc"): toàn Score=3, gây khó tin, kém cảm xúc.
-- Tránh trùng lặp ý tưởng nhiều biến thể (nhiều hook sạc/balo/ốp na ná nhau) → làm loãng, không hook nào bứt lên.
-- Chốt: mở bằng nhân vật + tình huống nguy cơ chạm sự riêng tư/an toàn cá nhân, emoji 👀😰, câu ngắn, ẩn số gợi tò mò thay vì con số kỹ thuật.
+- Hook "người bên cạnh đọc lén màn hình" (dán cường lực chống nhìn trộm) cho Score cao nhất (5) → ưu tiên góc "riêng tư/bị nhìn trộm", đánh vào nỗi sợ lộ thông tin.
+- Dùng ngôi thứ hai trực tiếp ("bạn", "màn hình của bạn") + emoji con mắt 👀 tạo cảm giác bị soi, kích reaction thật.
+- Hook chạm nỗi lo cá nhân cấp bách (bị nhìn lén, rơi vỡ máy) thắng hook khoe tính năng/thông số khô khan (đa số chỉ Score=3).
+- Thêm chi tiết cụ thể gây sốc ("rơi 4-6 mét vẫn nguyên", "SGS") giúp nhỉnh hơn chút nhưng chưa đủ tạo share → cần kết hợp cảm xúc, không chỉ số liệu.
+- Hook dạng câu hỏi "balo bạn có... chưa?" đều nhạt (Score 3-4) → tránh mở bằng câu hỏi tính năng chung chung.
+- Toàn bộ video Shares=0 → phải thêm yếu tố đáng chia sẻ: mẹo hữu ích, tình huống "ai cũng gặp", hoặc CTA "gửi cho đứa hay làm rơi máy".
+- Sản phẩm dán chống nhìn trộm hiệu quả nhất; balo/ốp/sạc/pin dự phòng cần góc kể chuyện đời thường thay vì liệt kê thông số.
+- Công thức viết: [Nỗi sợ cá nhân cụ thể] + [ngôi "bạn"] + [emoji cảm xúc] + [gợi ý chia sẻ cuối video].
