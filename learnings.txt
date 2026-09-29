@@ -1,8 +1,6 @@
-- Hook thắng đậm nhất: kiểu "người bên cạnh đọc lén màn hình" (Score 5, lặp lại 2 lần đều cao) → khai thác nỗi lo riêng tư/bị nhìn trộm, chạm cảm xúc tức thì.
-- Sản phẩm cho tương tác tốt nhất: dán chống nhìn trộm và balo/túi chống sốc laptop (Score 4-5); ưu tiên nhóm này.
-- Công thức hiệu quả: câu hỏi trực diện đánh vào nỗi đau cá nhân + emoji cảm xúc (👀😬🎒), nói về rủi ro "mất/hỏng đồ của CHÍNH BẠN".
-- Hook "balo giá X triệu mà vẫn hại laptop" ăn nhẹ (Score 4) vì gợi tiếc tiền + sợ hỏng máy → nên dùng mô típ "đắt tiền mà vẫn dở".
-- Kém hiệu quả nên tránh: hook khoe thông số/tính năng đơn thuần ("sạc 4 thiết bị", "rơi 6 mét", "ngăn ẩn") → chỉ đạt Score 3, thiếu chạm cảm xúc.
-- Tránh lặp mô típ "một củ sạc lo trọn..." và "ốp rơi X mét" — đã bão hòa, tương tác đáy.
-- Ưu tiên viết ở ngôi "bạn", đặt câu hỏi khiến người xem tự soi lại đồ mình đang dùng.
-- Mọi hook đều gần như 0 share → thêm yếu tố "gửi cho đứa hay làm hỏng đồ" hoặc tình huống đồng cảm nhóm để kích share.
+- Hook "đọc lén màn hình" (kính cường lực chống nhìn trộm) cho tương tác cao nhất (Score=5): khai thác nỗi sợ bị soi mói, riêng tư nơi công cộng → ưu tiên góc tâm lý này.
+- Công thức thắng: nỗi lo cá nhân + tình huống đời thường cụ thể ("người bên cạnh", "sáng dậy") thay vì thông số kỹ thuật khô khan.
+- Hook dạng câu hỏi trực tiếp chạm nỗi đau ("Balo có lót chống sốc chưa?") nhỉnh hơn (Score=4) → giữ dạng câu hỏi khơi lo lắng.
+- Tránh hook khoe thông số/chứng nhận đơn thuần ("rơi 6 mét", "chứng nhận SGS", "4 thiết bị cùng lúc"): toàn Score=3, gây khó tin, kém cảm xúc.
+- Tránh trùng lặp ý tưởng nhiều biến thể (nhiều hook sạc/balo/ốp na ná nhau) → làm loãng, không hook nào bứt lên.
+- Chốt: mở bằng nhân vật + tình huống nguy cơ chạm sự riêng tư/an toàn cá nhân, emoji 👀😰, câu ngắn, ẩn số gợi tò mò thay vì con số kỹ thuật.
