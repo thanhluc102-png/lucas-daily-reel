@@ -1,8 +1,8 @@
-- Hook chạm nỗi lo riêng tư ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀") cho tương tác cao nhất — ưu tiên chủ đề bảo mật/lo bị nhìn trộm.
-- Hook dạng câu hỏi khơi nỗi đau cá nhân + emoji lo lắng (😬☔😰) nhỉnh hơn hook khẳng định thông số.
-- Dùng con số cụ thể gây sốc (rơi 4-6 mét, 40L, 3mm, 200K) để tăng độ tin và tò mò.
-- Sản phẩm phụ kiện chống sốc/bảo vệ (ốp, balo laptop) ổn định — nên xoáy vào cảm giác "mất mát, hư hỏng".
-- Tránh hook nặng thông số kỹ thuật khô khan (sạc 4 thiết bị, xem thông số trên màn hình) — tương tác đáy.
-- Tránh hook chung chung không tạo hình ảnh cụ thể ("cáp rối tung", "phải cắm dây phiền lắm") — dễ chìm.
-- Mọi hook nên mở bằng tình huống đời thực người đọc tự thấy mình trong đó, kết bằng emoji cảm xúc mạnh.
-- Toàn bộ mẫu gần như 0 share — cần thêm yếu tố "đáng khoe/đáng cảnh báo bạn bè" để kích share, không chỉ dừng ở tò mò.
+- Ưu tiên hook "phơi bày nỗi lo riêng tư/xã hội" (VD: "Người bên cạnh đang đọc trộm màn hình bạn 👀") — cho Score cao nhất (5), đánh trúng cảm giác bị soi mói.
+- Dùng câu hỏi trực tiếp chạm nỗi đau người xem ("Balo bạn có lót chống sốc chưa?") — kéo Reaction tốt hơn câu khẳng định.
+- Tránh hook khoe thông số/tính năng đơn thuần ("có chứng nhận SGS", "sạc hiện thông số") — tương tác đáy (Score=3), nghe như quảng cáo.
+- Tránh lạm dụng mô-típ "rơi X mét vẫn nguyên" — đã bão hòa, tất cả đều Score=3.
+- Viết theo công thức: nỗi sợ cụ thể + cảm xúc + emoji gợi tình huống, thay vì liệt kê ưu điểm sản phẩm.
+- Cá nhân hóa bằng "bạn/của bạn" và cảnh huống đời thực (sân bay, trời mưa, đọc trộm) để tăng đồng cảm.
+- Toàn bộ data gần như không có Share — cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng gặp, hoặc gây tò mò cực mạnh.
+- Emoji nên gợi cảm xúc/tình huống (👀 😰 😬) hơn là biểu tượng sản phẩm (🔋 🎒) để tăng chạm.
