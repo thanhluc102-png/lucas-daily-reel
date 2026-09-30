@@ -1,8 +1,8 @@
-- Ưu tiên hook "phơi bày nỗi lo riêng tư/xã hội" (VD: "Người bên cạnh đang đọc trộm màn hình bạn 👀") — cho Score cao nhất (5), đánh trúng cảm giác bị soi mói.
-- Dùng câu hỏi trực tiếp chạm nỗi đau người xem ("Balo bạn có lót chống sốc chưa?") — kéo Reaction tốt hơn câu khẳng định.
-- Tránh hook khoe thông số/tính năng đơn thuần ("có chứng nhận SGS", "sạc hiện thông số") — tương tác đáy (Score=3), nghe như quảng cáo.
-- Tránh lạm dụng mô-típ "rơi X mét vẫn nguyên" — đã bão hòa, tất cả đều Score=3.
-- Viết theo công thức: nỗi sợ cụ thể + cảm xúc + emoji gợi tình huống, thay vì liệt kê ưu điểm sản phẩm.
-- Cá nhân hóa bằng "bạn/của bạn" và cảnh huống đời thực (sân bay, trời mưa, đọc trộm) để tăng đồng cảm.
-- Toàn bộ data gần như không có Share — cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng gặp, hoặc gây tò mò cực mạnh.
-- Emoji nên gợi cảm xúc/tình huống (👀 😰 😬) hơn là biểu tượng sản phẩm (🔋 🎒) để tăng chạm.
+- Ưu tiên hook "cảnh báo riêng tư/nguy cơ cá nhân" (VD: "Người bên cạnh đang đọc trộm màn hình bạn") — cho tương tác cao nhất (Score 5), đánh trúng nỗi lo tức thì.
+- Dùng câu hỏi trực tiếp chạm vấn đề thực tế của người xem (VD: "Balo bạn có lót chống sốc chưa?") — kéo Reactions + Comments tốt hơn (Score 4).
+- Mở đầu bằng nỗi đau/tình huống hỏng hóc ("quăng laptop vô là hết đẹp", "rơi một phát nứt góc") tạo đồng cảm, giữ được Comment ổn định.
+- Tránh hook khoe thông số/tính năng khô khan ("có chứng nhận SGS", "sạc xem thông số trên màn hình") — tương tác đáy (Score 3), không chạm cảm xúc.
+- Tránh hook về sản phẩm ngách ít liên quan số đông (bơm xe, ngăn tinh dầu, hộ chiếu) — phạm vi hẹp, kém lan tỏa.
+- Chưa hook nào tạo được Share; cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng dính, hoặc bất ngờ gây "phải tag bạn".
+- Ưu tiên chủ đề bảo vệ đồ giá trị (laptop, iPhone) và riêng tư — phổ biến, dễ đồng cảm hơn phụ kiện lẻ.
+- Viết ngắn, 1 câu, kèm 1 emoji đúng ngữ cảnh; đặt nỗi lo/câu hỏi ngay từ chữ đầu, không dẫn dắt vòng vo.
