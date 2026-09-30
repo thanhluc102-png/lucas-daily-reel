@@ -1,8 +1,8 @@
-- Hook thắng lớn nhất: khơi nỗi lo bảo mật/riêng tư ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀" → Score 5), dùng ngôi thứ 2 + tình huống bị xâm phạm ngay lập tức.
-- Hook mở bằng câu hỏi "chạm đau" trực tiếp vào người xem ("Balo bạn có lót chống sốc chưa?" → Score 4) nhỉnh hơn hook khoe tính năng chung chung.
-- Toàn bộ dữ liệu gần như đồng đều Score 3 (chỉ 1 comment), tức đa số hook chưa tạo được phản ứng thật → cần đẩy mạnh yếu tố khiến người xem "giật mình" hoặc "tag bạn bè".
-- Tránh hook chỉ liệt kê thông số/tính năng khô ("Một củ sạc lo 4 thiết bị", "Sạc dự phòng có màn hình") — thông tin đúng nhưng không kích cảm xúc, tương tác thấp.
-- Tránh hook trùng lặp ý gần giống nhau (nhiều bản "ốp rơi X mét", "đọc trộm màn hình") — biến thể khoe bền/rơi bị bão hòa, không còn gây sốc.
-- Công thức nên dùng: [Nỗi sợ mất mát/quê độ] + [ngôi "bạn"] + [con số cụ thể/emoji] → ưu tiên chủ đề an ninh, riêng tư, hớ hênh nơi công cộng vì cho phản ứng mạnh nhất.
-- Ưu tiên hook gợi hậu quả xấu sắp xảy ra ("rơi hộ chiếu", "bị đọc trộm") hơn hook khoe điểm mạnh sản phẩm.
-- Mục tiêu tiếp theo: viết hook kích Comment/Share (hỏi ý kiến, gây tranh luận, kêu tag người thân) vì Share hiện = 0 trên toàn bộ mẫu.
+- Hook chạm nỗi lo riêng tư ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀") cho tương tác cao nhất — ưu tiên chủ đề bảo mật/lo bị nhìn trộm.
+- Hook dạng câu hỏi khơi nỗi đau cá nhân + emoji lo lắng (😬☔😰) nhỉnh hơn hook khẳng định thông số.
+- Dùng con số cụ thể gây sốc (rơi 4-6 mét, 40L, 3mm, 200K) để tăng độ tin và tò mò.
+- Sản phẩm phụ kiện chống sốc/bảo vệ (ốp, balo laptop) ổn định — nên xoáy vào cảm giác "mất mát, hư hỏng".
+- Tránh hook nặng thông số kỹ thuật khô khan (sạc 4 thiết bị, xem thông số trên màn hình) — tương tác đáy.
+- Tránh hook chung chung không tạo hình ảnh cụ thể ("cáp rối tung", "phải cắm dây phiền lắm") — dễ chìm.
+- Mọi hook nên mở bằng tình huống đời thực người đọc tự thấy mình trong đó, kết bằng emoji cảm xúc mạnh.
+- Toàn bộ mẫu gần như 0 share — cần thêm yếu tố "đáng khoe/đáng cảnh báo bạn bè" để kích share, không chỉ dừng ở tò mò.
