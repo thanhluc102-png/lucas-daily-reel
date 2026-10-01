@@ -30,5 +30,28 @@
       "bonus": 633517,
       "payout": 2633517
     }
+  },
+  {
+    "date": "2026-10-01",
+    "follower": 5095,
+    "heart": 207700,
+    "videoCount": 353,
+    "score": 113.5,
+    "payout": 3027066,
+    "note": null,
+    "detail": {
+      "growthPct": 4.02,
+      "videosThis": 27,
+      "heartsThis": 18300,
+      "baselineHearts": 5600,
+      "score1": 70.1,
+      "score2": 100,
+      "score3": 150,
+      "totalScore": 113.5,
+      "violation": false,
+      "base": 2000000,
+      "bonus": 1027066,
+      "payout": 3027066
+    }
   }
 ]
