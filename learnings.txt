@@ -1,13 +1,8 @@
-- Hook mạnh nhất: chạm nỗi sợ riêng tư/xã hội ngay lập tức ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀" — Score 5). Ưu tiên tình huống người khác xâm phạm/nhìn thấy, tạo phản xạ giật mình.
-
-- Hook dạng câu hỏi "bạn đã có... chưa?" chạm nhu cầu bảo vệ đồ (laptop, chống sốc) cho tương tác nhỉnh hơn mặt bằng (Score 4). Nên dùng "bạn" + vấn đề cá nhân cụ thể.
-
-- Tránh hook khoe thông số/tính năng kỹ thuật ("chứng nhận SGS", "rơi 6 mét", "mỏng 3mm", "40L") — toàn bộ chỉ đạt Score 3, không ai react/share. Thông số không gây cảm xúc.
-
-- Tránh lặp lại hook gần giống nhau (nhiều bản "đọc màn hình", "rơi X mét SGS") — gây loãng, tương tác tụt dần về mức sàn 3.
-
-- Công thức thắng: Nỗi đau cụ thể + hậu quả đời thường + "bạn" ở ngôi thứ 2, không nêu sản phẩm/số liệu ở hook. Để tò mò dẫn vào.
-
-- Dùng emoji biểu cảm lo lắng/cảnh giác (😬👀😰) thay vì emoji sản phẩm (🎒🔋🔒) — emoji cảm xúc kéo react tốt hơn.
-
-- Mặt bằng tương tác rất thấp (hầu hết Score 3, 1 comment mồi): cần hook tạo tranh luận/đồng cảm để kéo comment thật và share, không chỉ mô tả.
+- Hook dạng cảnh báo trực diện về người khác ("Người bên cạnh đang đọc trộm màn hình bạn 👀") cho score cao nhất (5) — ưu tiên khơi gợi nỗi lo bị xâm phạm riêng tư/an ninh.
+- Hook dạng câu hỏi trực tiếp về trải nghiệm cá nhân ("Balo bạn có lót chống sốc chưa?") cũng tạo tương tác tốt — dùng "bạn" để cá nhân hóa.
+- Mọi hook đều kéo được Comments=1, nhưng Shares=0 toàn bộ — cần thêm yếu tố đáng chia sẻ: mẹo hữu ích, con số sốc, hoặc nội dung giúp người khác.
+- Hook nêu thông số/chứng nhận khô khan ("có chứng nhận SGS", "rơi 4-6 mét") cho tương tác thấp, lặp lại nhàm — tránh liệt kê tính năng thuần túy.
+- Tránh trùng lặp hook gần giống nhau (2 phiên bản "đọc màn hình", 2 phiên bản "rơi 6 mét SGS") — làm loãng và giảm hiệu quả.
+- Ưu tiên mở đầu bằng tình huống đau/nỗi sợ cụ thể ("Trời mưa bất chợt laptop ẩm", "Đánh rơi hộ chiếu ở sân bay") hơn là khoe tính năng.
+- Thêm emoji 1 cái đúng ngữ cảnh ở cuối hook; giữ câu ngắn, 1 ý duy nhất.
+- Để tăng share: chèn yếu tố "ai cũng cần biết" hoặc kết thúc bằng lời khuyên/giải pháp bất ngờ thay vì chỉ đặt câu hỏi bỏ ngỏ.
