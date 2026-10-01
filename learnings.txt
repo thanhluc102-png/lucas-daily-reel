@@ -1,8 +1,13 @@
-- Dùng hook "mối nguy riêng tư" (người bên cạnh đọc trộm màn hình) — đạt Score cao nhất (5), kích thích cảm giác bị xâm phạm nên ưu tiên khai thác.
-- Chèn con số sợ hãi cụ thể + hệ quả tức thì (rơi 6 mét, laptop đụng đất, hết hơi giữa đường) để tạo cảm giác rủi ro thật, nhưng tránh lặp lại y hệt công thức "rơi X mét + SGS" vì càng lặp Score càng đứng yên ở 3.
-- Mở hook bằng câu hỏi "bạn đã có... chưa?" chạm nỗi lo cá nhân (balo chống sốc, chống nước) nhỉnh hơn nhẹ (Score 4) — nên giữ dạng câu hỏi trực diện về thiếu sót của người xem.
-- Tránh hook khoe tính năng phụ, lạ mà vô cảm (ngăn tinh dầu, ngăn ẩn giấu hộ chiếu) — không chạm nỗi đau nên Score chỉ 3.
-- Tránh hook "viễn cảnh hoàn hảo" nhẹ nhàng (sáng dậy pin còn đầy) — thiếu xung đột, không tạo tương tác.
-- Luôn nhắm vào 1 nỗi đau nhức nhối, cụ thể, dễ hình dung (bị nhìn trộm, laptop hỏng, kẹt xe) thay vì mô tả lợi ích chung chung.
-- Mọi hook nên kết bằng câu hỏi hoặc tình huống mở để ép người xem bình luận (Comments là nguồn Score ổn định nhất hiện tại).
-- Thử nghiệm hook gợi chia sẻ/cảnh báo bạn bè (tag người hay quên ví, hay làm rơi đồ) để phá trần Share=0 — yếu tố đang kéo toàn bộ Score xuống.
+- Hook mạnh nhất: chạm nỗi sợ riêng tư/xã hội ngay lập tức ("Người bên cạnh đang đọc trộm màn hình bạn đó 👀" — Score 5). Ưu tiên tình huống người khác xâm phạm/nhìn thấy, tạo phản xạ giật mình.
+
+- Hook dạng câu hỏi "bạn đã có... chưa?" chạm nhu cầu bảo vệ đồ (laptop, chống sốc) cho tương tác nhỉnh hơn mặt bằng (Score 4). Nên dùng "bạn" + vấn đề cá nhân cụ thể.
+
+- Tránh hook khoe thông số/tính năng kỹ thuật ("chứng nhận SGS", "rơi 6 mét", "mỏng 3mm", "40L") — toàn bộ chỉ đạt Score 3, không ai react/share. Thông số không gây cảm xúc.
+
+- Tránh lặp lại hook gần giống nhau (nhiều bản "đọc màn hình", "rơi X mét SGS") — gây loãng, tương tác tụt dần về mức sàn 3.
+
+- Công thức thắng: Nỗi đau cụ thể + hậu quả đời thường + "bạn" ở ngôi thứ 2, không nêu sản phẩm/số liệu ở hook. Để tò mò dẫn vào.
+
+- Dùng emoji biểu cảm lo lắng/cảnh giác (😬👀😰) thay vì emoji sản phẩm (🎒🔋🔒) — emoji cảm xúc kéo react tốt hơn.
+
+- Mặt bằng tương tác rất thấp (hầu hết Score 3, 1 comment mồi): cần hook tạo tranh luận/đồng cảm để kéo comment thật và share, không chỉ mô tả.
