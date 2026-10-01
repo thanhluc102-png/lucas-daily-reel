@@ -1,8 +1,8 @@
-- Ưu tiên hook "cảnh báo riêng tư/nguy cơ cá nhân" (VD: "Người bên cạnh đang đọc trộm màn hình bạn") — cho tương tác cao nhất (Score 5), đánh trúng nỗi lo tức thì.
-- Dùng câu hỏi trực tiếp chạm vấn đề thực tế của người xem (VD: "Balo bạn có lót chống sốc chưa?") — kéo Reactions + Comments tốt hơn (Score 4).
-- Mở đầu bằng nỗi đau/tình huống hỏng hóc ("quăng laptop vô là hết đẹp", "rơi một phát nứt góc") tạo đồng cảm, giữ được Comment ổn định.
-- Tránh hook khoe thông số/tính năng khô khan ("có chứng nhận SGS", "sạc xem thông số trên màn hình") — tương tác đáy (Score 3), không chạm cảm xúc.
-- Tránh hook về sản phẩm ngách ít liên quan số đông (bơm xe, ngăn tinh dầu, hộ chiếu) — phạm vi hẹp, kém lan tỏa.
-- Chưa hook nào tạo được Share; cần thêm yếu tố "đáng chia sẻ": mẹo hữu ích, tình huống ai cũng dính, hoặc bất ngờ gây "phải tag bạn".
-- Ưu tiên chủ đề bảo vệ đồ giá trị (laptop, iPhone) và riêng tư — phổ biến, dễ đồng cảm hơn phụ kiện lẻ.
-- Viết ngắn, 1 câu, kèm 1 emoji đúng ngữ cảnh; đặt nỗi lo/câu hỏi ngay từ chữ đầu, không dẫn dắt vòng vo.
+- Dùng hook "mối nguy riêng tư" (người bên cạnh đọc trộm màn hình) — đạt Score cao nhất (5), kích thích cảm giác bị xâm phạm nên ưu tiên khai thác.
+- Chèn con số sợ hãi cụ thể + hệ quả tức thì (rơi 6 mét, laptop đụng đất, hết hơi giữa đường) để tạo cảm giác rủi ro thật, nhưng tránh lặp lại y hệt công thức "rơi X mét + SGS" vì càng lặp Score càng đứng yên ở 3.
+- Mở hook bằng câu hỏi "bạn đã có... chưa?" chạm nỗi lo cá nhân (balo chống sốc, chống nước) nhỉnh hơn nhẹ (Score 4) — nên giữ dạng câu hỏi trực diện về thiếu sót của người xem.
+- Tránh hook khoe tính năng phụ, lạ mà vô cảm (ngăn tinh dầu, ngăn ẩn giấu hộ chiếu) — không chạm nỗi đau nên Score chỉ 3.
+- Tránh hook "viễn cảnh hoàn hảo" nhẹ nhàng (sáng dậy pin còn đầy) — thiếu xung đột, không tạo tương tác.
+- Luôn nhắm vào 1 nỗi đau nhức nhối, cụ thể, dễ hình dung (bị nhìn trộm, laptop hỏng, kẹt xe) thay vì mô tả lợi ích chung chung.
+- Mọi hook nên kết bằng câu hỏi hoặc tình huống mở để ép người xem bình luận (Comments là nguồn Score ổn định nhất hiện tại).
+- Thử nghiệm hook gợi chia sẻ/cảnh báo bạn bè (tag người hay quên ví, hay làm rơi đồ) để phá trần Share=0 — yếu tố đang kéo toàn bộ Score xuống.
