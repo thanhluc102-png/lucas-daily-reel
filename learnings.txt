@@ -1,8 +1,8 @@
-- Hook dạng cảnh báo trực diện về người khác ("Người bên cạnh đang đọc trộm màn hình bạn 👀") cho score cao nhất (5) — ưu tiên khơi gợi nỗi lo bị xâm phạm riêng tư/an ninh.
-- Hook dạng câu hỏi trực tiếp về trải nghiệm cá nhân ("Balo bạn có lót chống sốc chưa?") cũng tạo tương tác tốt — dùng "bạn" để cá nhân hóa.
-- Mọi hook đều kéo được Comments=1, nhưng Shares=0 toàn bộ — cần thêm yếu tố đáng chia sẻ: mẹo hữu ích, con số sốc, hoặc nội dung giúp người khác.
-- Hook nêu thông số/chứng nhận khô khan ("có chứng nhận SGS", "rơi 4-6 mét") cho tương tác thấp, lặp lại nhàm — tránh liệt kê tính năng thuần túy.
-- Tránh trùng lặp hook gần giống nhau (2 phiên bản "đọc màn hình", 2 phiên bản "rơi 6 mét SGS") — làm loãng và giảm hiệu quả.
-- Ưu tiên mở đầu bằng tình huống đau/nỗi sợ cụ thể ("Trời mưa bất chợt laptop ẩm", "Đánh rơi hộ chiếu ở sân bay") hơn là khoe tính năng.
-- Thêm emoji 1 cái đúng ngữ cảnh ở cuối hook; giữ câu ngắn, 1 ý duy nhất.
-- Để tăng share: chèn yếu tố "ai cũng cần biết" hoặc kết thúc bằng lời khuyên/giải pháp bất ngờ thay vì chỉ đặt câu hỏi bỏ ngỏ.
+- Hook "đọc trộm màn hình" (chạm nỗi lo riêng tư, có emoji 👀) đạt Score cao nhất (5) nhờ kéo được Reactions — ưu tiên khai thác tình huống đời thường gây giật mình, lo lắng tức thì.
+- Toàn bộ hook còn lại chỉ đạt Score=3 (1 comment, 0 reaction, 0 share) → mẫu chung hiện tại quá "an toàn", không ai muốn thả tim hay chia sẻ; cần thay đổi mạnh.
+- Tránh hook chỉ liệt kê thông số/tính năng ("Ốp nhám vẫn dính MagSafe", "Pin xem thông số sạc") — nghe như quảng cáo, không chạm cảm xúc.
+- Ưu tiên hook dạng câu hỏi chạm trúng tình huống đau/mất mát ("Đánh rơi hộ chiếu ở sân bay", "Xe hết hơi giữa đường") nhưng đẩy cảm xúc mạnh hơn để kích reaction, không chỉ dừng ở comment.
+- Chưa có reel nào đạt Share → thêm yếu tố "đáng khoe/đáng cảnh báo cho người thân" để kích chia sẻ (share nặng điểm nhất).
+- Dùng emoji gợi cảm xúc/ánh mắt (👀😳😰) tốt hơn emoji mô tả vật thể (🔋🎒🔌) vì tạo tương tác người-với-người.
+- Tránh lặp hook gần giống nhau ("đọc trộm màn hình" bản yếu chỉ đạt 3) — mỗi hook cần góc lạ, tránh mòn.
+- Chèn CTA gợi phản hồi cuối hook (hỏi trải nghiệm, "bạn từng bị chưa?") để biến 1 comment lẻ thành nhiều reaction + share.
