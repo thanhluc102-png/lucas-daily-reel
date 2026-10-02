@@ -1,8 +1,8 @@
-- Mở bằng tình huống "người bên cạnh đọc trộm màn hình" cho tương tác cao nhất (Score 5) — ưu tiên hook khơi gợi nỗi lo riêng tư, bị nhìn trộm.
-- Hook nêu nỗi đau cá nhân cụ thể + emoji cảm xúc (👀 😳 😰) kéo reaction tốt hơn hook liệt kê thông số kỹ thuật.
-- Chèn bằng chứng gây sốc ("rơi 6 mét vẫn nguyên", "chứng nhận SGS") tạo reaction phụ — dùng kèm, đừng để đứng một mình.
-- Chi tiết "ốp nhám vẫn dính MagSafe" nhỉnh hơn mặt bằng (Score 4) — khai thác nghịch lý "tưởng không làm được mà làm được".
-- Tránh hook thiên về tính năng tiện ích khô khan (gộp sạc, gọn cáp, mở phẳng 180°) — chỉ đạt sàn Score 3.
-- Ưu tiên sản phẩm ốp lưng & phụ kiện chống trộm/bảo vệ dữ liệu; balo thông số đơn thuần kém nổi bật.
-- Viết câu hỏi tu từ đánh trúng khoảnh khắc "mất mặt/hoảng loạn" (rơi hộ chiếu, lộ màn hình) để ép người đọc tự nhận diện.
-- Toàn bộ mẫu gần như chỉ có 1 comment, 0 share — cần thêm CTA kích share (gắn thẻ bạn, "gửi cho đứa hay quên") để phá trần tương tác.
+- **Cảnh báo dữ liệu**: Mẫu quá đồng đều (gần như Score=3 toàn bộ), chênh lệch chỉ 1 reaction → kết luận chỉ mang tính định hướng nhẹ, chưa đủ cơ sở thống kê mạnh.
+- **Hook nhỉnh hơn (Score=4)**: nhấn vào chi tiết kỹ thuật hiếm/độc quyền ("ốp nhám vẫn dính MagSafe, ít shop làm được", "balo mở phẳng 180° như vali") — gây tò mò và chạm người sành đồ.
+- **Ưu tiên công thức**: nêu một tính năng bất ngờ + ngầm so sánh "ít nơi làm được / hơn hẳn đồ thường" để kích reaction, không chỉ hỏi suông.
+- **Hook kém hiệu quả hơn**: câu hỏi về nỗi đau chung chung, quá quen ("balo ướt laptop ẩm?", "xe hết hơi?", "cáp rối tung?") — ai cũng gặp nên không đủ mới để tạo reaction.
+- **Hạn chế lặp mô-típ**: nhiều hook "rơi X mét vẫn nguyên + SGS" trùng ý → trùng lặp làm loãng, nên gộp/đổi góc thay vì nhai lại.
+- **Dùng số liệu cụ thể + hình ảnh so sánh** ("mỏng 3mm", "40L", "180° như vali") thay vì tính từ mơ hồ để tăng độ tin và tò mò.
+- **Thử nghiệm kéo Share/Comment**: tất cả video đều Share=0 → cần hook có yếu tố "gửi cho đứa hay quên đồ", "tag người cần" hoặc câu hỏi chọn A/B để ép bình luận.
+- **Sản phẩm tiềm năng để đẩy mạnh**: ốp lưng MagSafe và balo đa năng (mở phẳng, 3-trong-1) — nhóm cho reaction cao nhất; giữ chất "độc quyền + tiện lợi gọn nhẹ".
