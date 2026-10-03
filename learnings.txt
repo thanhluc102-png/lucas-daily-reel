@@ -1,8 +1,7 @@
-- **Cảnh báo dữ liệu**: Mẫu quá đồng đều (gần như Score=3 toàn bộ), chênh lệch chỉ 1 reaction → kết luận chỉ mang tính định hướng nhẹ, chưa đủ cơ sở thống kê mạnh.
-- **Hook nhỉnh hơn (Score=4)**: nhấn vào chi tiết kỹ thuật hiếm/độc quyền ("ốp nhám vẫn dính MagSafe, ít shop làm được", "balo mở phẳng 180° như vali") — gây tò mò và chạm người sành đồ.
-- **Ưu tiên công thức**: nêu một tính năng bất ngờ + ngầm so sánh "ít nơi làm được / hơn hẳn đồ thường" để kích reaction, không chỉ hỏi suông.
-- **Hook kém hiệu quả hơn**: câu hỏi về nỗi đau chung chung, quá quen ("balo ướt laptop ẩm?", "xe hết hơi?", "cáp rối tung?") — ai cũng gặp nên không đủ mới để tạo reaction.
-- **Hạn chế lặp mô-típ**: nhiều hook "rơi X mét vẫn nguyên + SGS" trùng ý → trùng lặp làm loãng, nên gộp/đổi góc thay vì nhai lại.
-- **Dùng số liệu cụ thể + hình ảnh so sánh** ("mỏng 3mm", "40L", "180° như vali") thay vì tính từ mơ hồ để tăng độ tin và tò mò.
-- **Thử nghiệm kéo Share/Comment**: tất cả video đều Share=0 → cần hook có yếu tố "gửi cho đứa hay quên đồ", "tag người cần" hoặc câu hỏi chọn A/B để ép bình luận.
-- **Sản phẩm tiềm năng để đẩy mạnh**: ốp lưng MagSafe và balo đa năng (mở phẳng, 3-trong-1) — nhóm cho reaction cao nhất; giữ chất "độc quyền + tiện lợi gọn nhẹ".
+- Dữ liệu gần như đồng đều (Score 3-4), tương tác tổng thể RẤT THẤP — hầu hết chỉ 1 comment, 0 share, 0 react: cần thay đổi cách viết căn bản, không chỉ tinh chỉnh.
+- Hook nhỉnh hơn (Score=4) đều nêu BẤT NGỜ KỸ THUẬT/tính năng "ít ai làm được": ốp nhám vẫn dính MagSafe, balo mở phẳng 180° như vali, củ sạc kiêm pin — ưu tiên kiểu "2-trong-1" hoặc "tưởng không được mà lại được".
+- Nên viết hook nêu RÕ tính năng độc đáo + hình ảnh cụ thể (số đo, so sánh vật thể quen) thay vì chỉ hỏi vu vơ nỗi đau chung chung.
+- Hook dạng câu hỏi nỗi đau đơn thuần ("Ví để đâu rồi?", "Balo chống nước không?") chỉ đạt Score=3 — nên tránh dùng một mình, phải kèm giải pháp gây tò mò.
+- Lạm dụng mô-típ "rơi X mét vẫn nguyên + chứng nhận SGS" bị lặp nhiều lần mà vẫn Score=3 — mô-típ này đã bão hòa, cần làm mới.
+- Thêm yếu tố kích share: mẹo hữu ích, "gửi cho đứa hay đi công tác", tình huống đồng cảm mạnh — vì 0 share là điểm yếu lớn nhất.
+- Chốt hook bằng chi tiết gây "wow" đo đếm được (mm, lít, số cổng, góc mở) để tăng react, thay vì để trống cảm xúc.
