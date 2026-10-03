@@ -1,7 +1,8 @@
-- Dữ liệu gần như đồng đều (Score 3-4), tương tác tổng thể RẤT THẤP — hầu hết chỉ 1 comment, 0 share, 0 react: cần thay đổi cách viết căn bản, không chỉ tinh chỉnh.
-- Hook nhỉnh hơn (Score=4) đều nêu BẤT NGỜ KỸ THUẬT/tính năng "ít ai làm được": ốp nhám vẫn dính MagSafe, balo mở phẳng 180° như vali, củ sạc kiêm pin — ưu tiên kiểu "2-trong-1" hoặc "tưởng không được mà lại được".
-- Nên viết hook nêu RÕ tính năng độc đáo + hình ảnh cụ thể (số đo, so sánh vật thể quen) thay vì chỉ hỏi vu vơ nỗi đau chung chung.
-- Hook dạng câu hỏi nỗi đau đơn thuần ("Ví để đâu rồi?", "Balo chống nước không?") chỉ đạt Score=3 — nên tránh dùng một mình, phải kèm giải pháp gây tò mò.
-- Lạm dụng mô-típ "rơi X mét vẫn nguyên + chứng nhận SGS" bị lặp nhiều lần mà vẫn Score=3 — mô-típ này đã bão hòa, cần làm mới.
-- Thêm yếu tố kích share: mẹo hữu ích, "gửi cho đứa hay đi công tác", tình huống đồng cảm mạnh — vì 0 share là điểm yếu lớn nhất.
-- Chốt hook bằng chi tiết gây "wow" đo đếm được (mm, lít, số cổng, góc mở) để tăng react, thay vì để trống cảm xúc.
+- Dữ liệu quá đồng đều (hầu hết Score=3), tín hiệu yếu — mọi kết luận chỉ là xu hướng nhẹ, cần test thêm.
+- Hook nhỉnh hơn (Score=4) đều nêu **nghịch lý/điểm độc đáo khó tin**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin dự phòng" → ưu tiên công thức "A mà vẫn B".
+- Sản phẩm công nghệ/sạc và balo đa năng tạo tương tác tốt hơn phụ kiện ví/cáp thông thường → tập trung món giải quyết đau đầu rõ ràng.
+- Hook gộp nhiều tính năng vào một sản phẩm ("gói gọn trong một") kích thích tò mò tốt hơn hook một chiều.
+- Hook dọa/cảnh báo chung chung ("Balo 200K chống nước không?", "Ví để đâu rồi?") đều Score=3 — nên tránh kiểu hù dọa mơ hồ, thiếu con số độc đáo.
+- Lạm dụng cùng một mô-típ "rơi X mét vẫn nguyên" và "giấu được ngăn ẩn" bị bão hòa, không còn gây sốc → giảm lặp, thay bằng góc mới.
+- Số liệu cụ thể + bằng chứng (SGS, 3mm, 180°) giữ độ tin, nhưng phải đi kèm yếu tố bất ngờ mới bật lên.
+- Chưa có hook nào tạo Share/Comment thật — thử thêm CTA kích bình luận (hỏi trực tiếp, "bạn thuộc team nào?") để đẩy Score.
