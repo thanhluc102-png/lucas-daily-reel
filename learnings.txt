@@ -1,8 +1,8 @@
-- Dữ liệu quá đồng đều (hầu hết Score=3), tín hiệu yếu — mọi kết luận chỉ là xu hướng nhẹ, cần test thêm.
-- Hook nhỉnh hơn (Score=4) đều nêu **nghịch lý/điểm độc đáo khó tin**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin dự phòng" → ưu tiên công thức "A mà vẫn B".
-- Sản phẩm công nghệ/sạc và balo đa năng tạo tương tác tốt hơn phụ kiện ví/cáp thông thường → tập trung món giải quyết đau đầu rõ ràng.
-- Hook gộp nhiều tính năng vào một sản phẩm ("gói gọn trong một") kích thích tò mò tốt hơn hook một chiều.
-- Hook dọa/cảnh báo chung chung ("Balo 200K chống nước không?", "Ví để đâu rồi?") đều Score=3 — nên tránh kiểu hù dọa mơ hồ, thiếu con số độc đáo.
-- Lạm dụng cùng một mô-típ "rơi X mét vẫn nguyên" và "giấu được ngăn ẩn" bị bão hòa, không còn gây sốc → giảm lặp, thay bằng góc mới.
-- Số liệu cụ thể + bằng chứng (SGS, 3mm, 180°) giữ độ tin, nhưng phải đi kèm yếu tố bất ngờ mới bật lên.
-- Chưa có hook nào tạo Share/Comment thật — thử thêm CTA kích bình luận (hỏi trực tiếp, "bạn thuộc team nào?") để đẩy Score.
+- Dữ liệu gần như đồng đều (Score 3-4), tất cả Comments=1, Shares=0 → chưa có hook nào thực sự viral; khác biệt quá nhỏ để kết luận chắc chắn.
+- Nhóm nhỉnh hơn (Score=4) đều là hook nêu **nghịch lý/tính năng độc lạ hiếm shop làm được**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin" → ưu tiên kiểu "A mà vẫn B".
+- Hook hiệu quả tập trung vào **phụ kiện công nghệ gộp chức năng** (sạc 2-trong-1, ốp đa năng, balo đa dụng) hơn là hook sợ hãi đơn thuần.
+- Kiểu hook **câu hỏi dọa/pain chung chung** ("Ví của bạn để đâu?", "Balo 200K chống nước không?", "Rơi hộ chiếu là biết mùi") đều chỉ Score=3 → kém nổi bật, nên hạn chế.
+- Hook **lặp mô-típ "rơi X mét có SGS"** bị bão hòa, không tăng tương tác → tránh dùng lại công thức đã nhàm.
+- Công thức nên theo: **nghịch lý bất ngờ + tính năng cụ thể đo được + emoji 1 cái** ("mỏng 3mm mà giấu ngăn tinh dầu").
+- Chưa hook nào tạo Share/Comment thật → cần thêm **yếu tố kích bình luận** (hỏi trực tiếp "bạn chọn màu nào?", thử thách, giá sốc) để nâng Score.
+- Tránh mở bằng tiêu cực mơ hồ; nên mở bằng **con số/chi tiết gây tò mò** ngay chữ đầu.
