@@ -1,7 +1,8 @@
-- Hook mô tả **tính năng kép/bất ngờ "2 trong 1"** cho điểm cao nhất (Score=4): "vừa củ sạc vừa pin", "balo mở phẳng 180°", "ốp nhám vẫn dính MagSafe" — nhấn mạnh điều ít shop/sản phẩm khác làm được.
-- Ưu tiên hook khơi gợi **tò mò kỹ thuật** ("ít shop làm được", "ốp nhám mà vẫn dính") hơn là chỉ nêu nỗi đau chung chung.
-- Gắn **bằng chứng cụ thể** (số đo "3mm", "180°", chứng nhận SGS, "rơi 6 mét") để tăng độ tin, nhưng đừng lặp lại motif "rơi X mét + SGS" — đã bị bão hòa, chỉ cho Score=3.
-- Hook dạng **câu hỏi nỗi đau đơn thuần** ("Ví để đâu rồi?", "Balo 200K chống nước không?", "dây sạc thiếu đúng lúc") đều kém (Score=3) — nên tránh hoặc nâng cấp bằng giải pháp độc đáo.
-- Toàn bộ dữ liệu **gần như không có Share và Reactions rất thấp** → nội dung hiện chưa đủ "đáng chia sẻ"; cần thêm yếu tố wow/hữu ích để người xem muốn gửi cho bạn bè.
-- Chèn **chi tiết gợi hình ảnh/cảm giác thật** ("cạnh cấn tay, hụt vuốt", "đụng đất là đụng máy") tạo đồng cảm — giữ lại nhưng kết hợp với giải pháp bất ngờ.
-- Công thức nên dùng: **[Nghịch lý/bất ngờ] + [số liệu cụ thể] + [điều hiếm ai làm được]**, kết bằng emoji mạnh (💥😳) thay vì emoji trung tính (🎒🔌).
+- Dữ liệu quá đồng đều (hầu hết Score=3), chênh lệch nhỏ nên kết luận chỉ mang tính tham khảo, không phải quy luật chắc chắn.
+- Hook cao điểm nhất (Score=4) đều nêu **lợi ích/tính năng độc đáo hiếm shop làm được**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin dự phòng" → ưu tiên nhấn điểm khác biệt cụ thể.
+- Hook dạng khẳng định tính năng "2-trong-1", so sánh với vật quen thuộc (như vali, duffel) nhỉnh hơn hook dọa/cảnh báo chung chung.
+- Hook chỉ "dọa sợ" hoặc hỏi phiếm ("Ví để đâu rồi?", "Balo 200K có chống nước?") đều đứng yên Score=3 → tránh câu hỏi mơ hồ, thiếu giải pháp rõ.
+- Hook lặp mô-típ "rơi X mét vẫn nguyên + SGS" bị bão hòa, không tạo đột biến → hạn chế trùng công thức cũ.
+- Nên mở hook bằng **tình huống đau cụ thể + giải pháp bất ngờ ngay trong 1 câu**, kèm chi tiết chứng thực (SGS, 180°, MagSafe).
+- Comments luôn =1 (có thể là seeding), Shares=0 toàn bộ → cần thêm CTA kích share (tag bạn, lưu lại) để phá trần Score.
+- Thử nghiệm thêm hook khơi gợi cảm xúc tích cực/tò mò thay vì chỉ "nỗi sợ", vì nhóm nêu lợi ích đang nhỉnh điểm hơn.
