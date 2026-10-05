@@ -1,8 +1,7 @@
-- Dữ liệu gần như đồng đều (Score 3-4), tất cả Comments=1, Shares=0 → chưa có hook nào thực sự viral; khác biệt quá nhỏ để kết luận chắc chắn.
-- Nhóm nhỉnh hơn (Score=4) đều là hook nêu **nghịch lý/tính năng độc lạ hiếm shop làm được**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin" → ưu tiên kiểu "A mà vẫn B".
-- Hook hiệu quả tập trung vào **phụ kiện công nghệ gộp chức năng** (sạc 2-trong-1, ốp đa năng, balo đa dụng) hơn là hook sợ hãi đơn thuần.
-- Kiểu hook **câu hỏi dọa/pain chung chung** ("Ví của bạn để đâu?", "Balo 200K chống nước không?", "Rơi hộ chiếu là biết mùi") đều chỉ Score=3 → kém nổi bật, nên hạn chế.
-- Hook **lặp mô-típ "rơi X mét có SGS"** bị bão hòa, không tăng tương tác → tránh dùng lại công thức đã nhàm.
-- Công thức nên theo: **nghịch lý bất ngờ + tính năng cụ thể đo được + emoji 1 cái** ("mỏng 3mm mà giấu ngăn tinh dầu").
-- Chưa hook nào tạo Share/Comment thật → cần thêm **yếu tố kích bình luận** (hỏi trực tiếp "bạn chọn màu nào?", thử thách, giá sốc) để nâng Score.
-- Tránh mở bằng tiêu cực mơ hồ; nên mở bằng **con số/chi tiết gây tò mò** ngay chữ đầu.
+- Hook mô tả **tính năng kép/bất ngờ "2 trong 1"** cho điểm cao nhất (Score=4): "vừa củ sạc vừa pin", "balo mở phẳng 180°", "ốp nhám vẫn dính MagSafe" — nhấn mạnh điều ít shop/sản phẩm khác làm được.
+- Ưu tiên hook khơi gợi **tò mò kỹ thuật** ("ít shop làm được", "ốp nhám mà vẫn dính") hơn là chỉ nêu nỗi đau chung chung.
+- Gắn **bằng chứng cụ thể** (số đo "3mm", "180°", chứng nhận SGS, "rơi 6 mét") để tăng độ tin, nhưng đừng lặp lại motif "rơi X mét + SGS" — đã bị bão hòa, chỉ cho Score=3.
+- Hook dạng **câu hỏi nỗi đau đơn thuần** ("Ví để đâu rồi?", "Balo 200K chống nước không?", "dây sạc thiếu đúng lúc") đều kém (Score=3) — nên tránh hoặc nâng cấp bằng giải pháp độc đáo.
+- Toàn bộ dữ liệu **gần như không có Share và Reactions rất thấp** → nội dung hiện chưa đủ "đáng chia sẻ"; cần thêm yếu tố wow/hữu ích để người xem muốn gửi cho bạn bè.
+- Chèn **chi tiết gợi hình ảnh/cảm giác thật** ("cạnh cấn tay, hụt vuốt", "đụng đất là đụng máy") tạo đồng cảm — giữ lại nhưng kết hợp với giải pháp bất ngờ.
+- Công thức nên dùng: **[Nghịch lý/bất ngờ] + [số liệu cụ thể] + [điều hiếm ai làm được]**, kết bằng emoji mạnh (💥😳) thay vì emoji trung tính (🎒🔌).
