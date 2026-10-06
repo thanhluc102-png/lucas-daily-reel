@@ -1,8 +1,8 @@
-- Dữ liệu quá đồng đều (hầu hết Score=3), chênh lệch nhỏ nên kết luận chỉ mang tính tham khảo, không phải quy luật chắc chắn.
-- Hook cao điểm nhất (Score=4) đều nêu **lợi ích/tính năng độc đáo hiếm shop làm được**: "nhám mà vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin dự phòng" → ưu tiên nhấn điểm khác biệt cụ thể.
-- Hook dạng khẳng định tính năng "2-trong-1", so sánh với vật quen thuộc (như vali, duffel) nhỉnh hơn hook dọa/cảnh báo chung chung.
-- Hook chỉ "dọa sợ" hoặc hỏi phiếm ("Ví để đâu rồi?", "Balo 200K có chống nước?") đều đứng yên Score=3 → tránh câu hỏi mơ hồ, thiếu giải pháp rõ.
-- Hook lặp mô-típ "rơi X mét vẫn nguyên + SGS" bị bão hòa, không tạo đột biến → hạn chế trùng công thức cũ.
-- Nên mở hook bằng **tình huống đau cụ thể + giải pháp bất ngờ ngay trong 1 câu**, kèm chi tiết chứng thực (SGS, 180°, MagSafe).
-- Comments luôn =1 (có thể là seeding), Shares=0 toàn bộ → cần thêm CTA kích share (tag bạn, lưu lại) để phá trần Score.
-- Thử nghiệm thêm hook khơi gợi cảm xúc tích cực/tò mò thay vì chỉ "nỗi sợ", vì nhóm nêu lợi ích đang nhỉnh điểm hơn.
+- Dữ liệu quá đồng đều (hầu hết Score=3), chênh lệch không đáng kể — chưa đủ cơ sở kết luận mạnh, cần thêm Shares để phân biệt thật sự.
+- Hook ghi điểm cao nhất (Score=4) đều nêu **lợi ích/tính năng độc đáo cụ thể**: "nhám vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin" — ưu tiên kiểu này.
+- Công thức thắng: nêu một đặc điểm khác biệt mà "ít nơi làm được" + so sánh hình ảnh dễ hình dung (như vali, một nốt nhạc).
+- Hook dạng câu hỏi nỗi đau chung chung ("Ví để đâu rồi?", "có chống nước không?") chỉ đạt Score=3 — nên tránh hoặc gắn kèm giải pháp cụ thể ngay.
+- Hook dọa/cảnh báo ("rơi hộ chiếu biết mùi", "đụng đất là đụng máy") không nổi trội — giảm liều, chuyển sang khoe giải pháp.
+- Sản phẩm sạc/pin và ốp/dán kính dễ nhồi thông số độc quyền (SGS, số cổng, MagSafe) → khai thác điểm "vô lý mà có thật" để tạo tò mò.
+- Thêm yếu tố **bằng chứng/chứng nhận** (SGS, số mét rơi) để tăng độ tin, nhưng đóng gói dưới dạng bất ngờ thay vì liệt kê khô khan.
+- Mục tiêu tối ưu là Shares: viết hook khiến người xem muốn gửi cho bạn ("đúng chóc trường hợp của mày") — hiện chưa hook nào đạt, cần thử nghiệm.
