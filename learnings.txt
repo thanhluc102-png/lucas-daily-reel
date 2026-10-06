@@ -1,8 +1,15 @@
-- Dữ liệu quá đồng đều (hầu hết Score=3), chênh lệch không đáng kể — chưa đủ cơ sở kết luận mạnh, cần thêm Shares để phân biệt thật sự.
-- Hook ghi điểm cao nhất (Score=4) đều nêu **lợi ích/tính năng độc đáo cụ thể**: "nhám vẫn dính MagSafe", "mở phẳng 180° như vali", "vừa củ sạc vừa pin" — ưu tiên kiểu này.
-- Công thức thắng: nêu một đặc điểm khác biệt mà "ít nơi làm được" + so sánh hình ảnh dễ hình dung (như vali, một nốt nhạc).
-- Hook dạng câu hỏi nỗi đau chung chung ("Ví để đâu rồi?", "có chống nước không?") chỉ đạt Score=3 — nên tránh hoặc gắn kèm giải pháp cụ thể ngay.
-- Hook dọa/cảnh báo ("rơi hộ chiếu biết mùi", "đụng đất là đụng máy") không nổi trội — giảm liều, chuyển sang khoe giải pháp.
-- Sản phẩm sạc/pin và ốp/dán kính dễ nhồi thông số độc quyền (SGS, số cổng, MagSafe) → khai thác điểm "vô lý mà có thật" để tạo tò mò.
-- Thêm yếu tố **bằng chứng/chứng nhận** (SGS, số mét rơi) để tăng độ tin, nhưng đóng gói dưới dạng bất ngờ thay vì liệt kê khô khan.
-- Mục tiêu tối ưu là Shares: viết hook khiến người xem muốn gửi cho bạn ("đúng chóc trường hợp của mày") — hiện chưa hook nào đạt, cần thử nghiệm.
+- **Cảnh báo trước hạn chế dữ liệu:** Toàn bộ score dao động cực thấp (3–6), chênh lệch gần như do nhiễu; chưa có hook nào thật sự "bùng". Mọi đúc kết dưới đây chỉ là xu hướng yếu, cần A/B test tiếp.
+
+- **Hook câu hỏi khơi "nỗi đau cụ thể" cho điểm cao nhất:** "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" (Score=6) — nghịch lý + con số + câu hỏi phản biện. Ưu tiên công thức này.
+
+- **Chủ đề sạc/pin/đa thiết bị nhỉnh hơn mặt bằng:** 3 hook được thêm 1 reaction đều về sạc đa cổng/pin tích hợp và ốp nhám MagSafe. Đẩy mạnh góc "giải quyết sự phiền phức mang nhiều phụ kiện".
+
+- **Hook nghịch lý/gây tò mò kéo thêm reaction:** "Ốp nhám mà vẫn dính MagSafe", "Vừa là củ sạc vừa là pin", "mở phẳng 180° như vali" — tạo mâu thuẫn "tưởng không được mà lại được". Nên nhân rộng.
+
+- **Kiểu kém, nên tránh:** Hook kể lể/dọa chung chung ("Đánh rơi hộ chiếu là biết mùi", "Ví của bạn để đâu rồi?") và hook lặp mô-típ chứng nhận SGS rơi X mét — bị bão hòa, chỉ còn đúng 1 comment lịch sự.
+
+- **Chèn con số cụ thể + thông số lạ** (4 thiết bị, 180°, MagSafe, SGS) tốt hơn tính từ mơ hồ ("xịn", "phiền lắm"). Nhưng số phải gắn với lợi ích bất ngờ, không chỉ số đo rơi.
+
+- **Share = 0 tuyệt đối:** Chưa hook nào đáng chia sẻ. Thử thêm yếu tố "tag đứa bạn hay làm rơi máy", mẹo hữu ích, hoặc deal giới hạn để kích share — đòn bẩy lớn nhất của công thức Score.
+
+- **Comment là kênh tương tác chính hiện tại:** Kết thúc hook bằng câu hỏi mở hoặc lời mời phản biện để tối thiểu giữ 1–2 comment; tránh hook dạng khẳng định đóng không chừa chỗ trả lời.
