@@ -1,15 +1,8 @@
-- **Cảnh báo trước hạn chế dữ liệu:** Toàn bộ score dao động cực thấp (3–6), chênh lệch gần như do nhiễu; chưa có hook nào thật sự "bùng". Mọi đúc kết dưới đây chỉ là xu hướng yếu, cần A/B test tiếp.
-
-- **Hook câu hỏi khơi "nỗi đau cụ thể" cho điểm cao nhất:** "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" (Score=6) — nghịch lý + con số + câu hỏi phản biện. Ưu tiên công thức này.
-
-- **Chủ đề sạc/pin/đa thiết bị nhỉnh hơn mặt bằng:** 3 hook được thêm 1 reaction đều về sạc đa cổng/pin tích hợp và ốp nhám MagSafe. Đẩy mạnh góc "giải quyết sự phiền phức mang nhiều phụ kiện".
-
-- **Hook nghịch lý/gây tò mò kéo thêm reaction:** "Ốp nhám mà vẫn dính MagSafe", "Vừa là củ sạc vừa là pin", "mở phẳng 180° như vali" — tạo mâu thuẫn "tưởng không được mà lại được". Nên nhân rộng.
-
-- **Kiểu kém, nên tránh:** Hook kể lể/dọa chung chung ("Đánh rơi hộ chiếu là biết mùi", "Ví của bạn để đâu rồi?") và hook lặp mô-típ chứng nhận SGS rơi X mét — bị bão hòa, chỉ còn đúng 1 comment lịch sự.
-
-- **Chèn con số cụ thể + thông số lạ** (4 thiết bị, 180°, MagSafe, SGS) tốt hơn tính từ mơ hồ ("xịn", "phiền lắm"). Nhưng số phải gắn với lợi ích bất ngờ, không chỉ số đo rơi.
-
-- **Share = 0 tuyệt đối:** Chưa hook nào đáng chia sẻ. Thử thêm yếu tố "tag đứa bạn hay làm rơi máy", mẹo hữu ích, hoặc deal giới hạn để kích share — đòn bẩy lớn nhất của công thức Score.
-
-- **Comment là kênh tương tác chính hiện tại:** Kết thúc hook bằng câu hỏi mở hoặc lời mời phản biện để tối thiểu giữ 1–2 comment; tránh hook dạng khẳng định đóng không chừa chỗ trả lời.
+- Mở hook bằng câu hỏi "vô lý nhưng có thật" (vd: "sạc 4 thiết bị cùng lúc mà vẫn nhanh?") — cho tương tác cao nhất, luôn ưu tiên.
+- Nhấn nghịch lý/điểm độc quyền ít shop làm được (vd: "nhám mà vẫn dính MagSafe") — kích comment và reaction tốt hơn hook thường.
+- Ưu tiên sản phẩm sạc/pin đa năng và phụ kiện giải quyết nỗi đau cụ thể (nhiều cổng, nhiều cục sạc) — nhóm có điểm nổi trội.
+- Dùng con số gây sốc nhưng kèm yếu tố bất ngờ, đừng chỉ nêu thông số khô (vd "rơi 6 mét có SGS" chỉ đạt điểm sàn).
+- Tránh hook mô tả tính năng balo đơn thuần (chống nước, ngăn laptop, 26L...) — lặp lại nhiều, toàn điểm thấp nhất.
+- Tránh hook than vãn nỗi đau chung chung không có cú twist (vd "dây sạc luôn thiếu lúc cần") — không tạo thảo luận.
+- Kết hook bằng câu hỏi khiến người đọc muốn phản biện ("nghe vô lý đúng không?") để đẩy comment, vì comment nhân hệ số 3.
+- Chèn 1 emoji đúng ngữ cảnh ở cuối, giữ hook 1 câu ngắn, gây tò mò thay vì liệt kê thông số.
