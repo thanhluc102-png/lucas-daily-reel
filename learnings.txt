@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "vô lý nhưng có thật" (vd: "sạc 4 thiết bị cùng lúc mà vẫn nhanh?") — cho tương tác cao nhất, luôn ưu tiên.
-- Nhấn nghịch lý/điểm độc quyền ít shop làm được (vd: "nhám mà vẫn dính MagSafe") — kích comment và reaction tốt hơn hook thường.
-- Ưu tiên sản phẩm sạc/pin đa năng và phụ kiện giải quyết nỗi đau cụ thể (nhiều cổng, nhiều cục sạc) — nhóm có điểm nổi trội.
-- Dùng con số gây sốc nhưng kèm yếu tố bất ngờ, đừng chỉ nêu thông số khô (vd "rơi 6 mét có SGS" chỉ đạt điểm sàn).
-- Tránh hook mô tả tính năng balo đơn thuần (chống nước, ngăn laptop, 26L...) — lặp lại nhiều, toàn điểm thấp nhất.
-- Tránh hook than vãn nỗi đau chung chung không có cú twist (vd "dây sạc luôn thiếu lúc cần") — không tạo thảo luận.
-- Kết hook bằng câu hỏi khiến người đọc muốn phản biện ("nghe vô lý đúng không?") để đẩy comment, vì comment nhân hệ số 3.
-- Chèn 1 emoji đúng ngữ cảnh ở cuối, giữ hook 1 câu ngắn, gây tò mò thay vì liệt kê thông số.
+- Hook nêu **con số cụ thể + nghịch lý** ("Sạc 4 thiết bị cùng lúc mà vẫn nhanh", "Rơi 4 mét vẫn lành") cho điểm cao nhất — ưu tiên kiểu này.
+- Thêm yếu tố **gây tranh luận/hoài nghi** ("nghe hơi vô lý đúng không?", "ít shop làm được") kích comment mạnh, đẩy Score lên 7.
+- Sản phẩm **phụ kiện công nghệ đa năng** (sạc/pin gộp, sạc đa cổng, ốp MagSafe) tương tác nhỉnh hơn balo và dán màn hình.
+- Hook **chỉ nêu nỗi đau chung chung** ("laptop nơm nớp lo va đập", "cáp rối tung") chỉ đạt Score=3 — tránh viết mờ nhạt, thiếu điểm nhấn.
+- Gắn **bằng chứng/thông số** (chứng nhận SGS, 180°, 26L/17 inch, 4 cổng) tạo độ tin và tăng nhẹ reaction.
+- Câu hỏi quá hiển nhiên ("Ví của bạn để đâu rồi?") không kích được phản hồi — hỏi phải **chạm đúng tình huống bực bội cụ thể**.
+- Toàn bộ dữ liệu **Shares=0** → cần thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, so sánh bất ngờ) để phá ngưỡng share.
+- Công thức ưu tiên: **[Số liệu/tính năng gây sốc] + [nghịch lý hoặc thách thức niềm tin] + emoji đúng ngành**.
