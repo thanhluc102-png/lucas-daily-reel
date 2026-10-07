@@ -1,8 +1,8 @@
-- Hook nêu **con số cụ thể + nghịch lý** ("Sạc 4 thiết bị cùng lúc mà vẫn nhanh", "Rơi 4 mét vẫn lành") cho điểm cao nhất — ưu tiên kiểu này.
-- Thêm yếu tố **gây tranh luận/hoài nghi** ("nghe hơi vô lý đúng không?", "ít shop làm được") kích comment mạnh, đẩy Score lên 7.
-- Sản phẩm **phụ kiện công nghệ đa năng** (sạc/pin gộp, sạc đa cổng, ốp MagSafe) tương tác nhỉnh hơn balo và dán màn hình.
-- Hook **chỉ nêu nỗi đau chung chung** ("laptop nơm nớp lo va đập", "cáp rối tung") chỉ đạt Score=3 — tránh viết mờ nhạt, thiếu điểm nhấn.
-- Gắn **bằng chứng/thông số** (chứng nhận SGS, 180°, 26L/17 inch, 4 cổng) tạo độ tin và tăng nhẹ reaction.
-- Câu hỏi quá hiển nhiên ("Ví của bạn để đâu rồi?") không kích được phản hồi — hỏi phải **chạm đúng tình huống bực bội cụ thể**.
-- Toàn bộ dữ liệu **Shares=0** → cần thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, so sánh bất ngờ) để phá ngưỡng share.
-- Công thức ưu tiên: **[Số liệu/tính năng gây sốc] + [nghịch lý hoặc thách thức niềm tin] + emoji đúng ngành**.
+- Hook chứa con số/thông số cụ thể (4 thiết bị, 4 mét, 180°, 17 inch, SGS) cho tương tác cao nhất — luôn nhét số đo hoặc chứng nhận vào câu mở.
+- Hook dạng câu hỏi "vô lý/phản trực giác" ("nghe hơi vô lý đúng không?", "ít shop làm được") kéo comment tốt nhất — tạo tò mò thách thức.
+- Nhóm sản phẩm sạc/pin đa năng và phụ kiện "2-trong-1" (vừa củ sạc vừa pin, sạc 4 thiết bị) có điểm trội — ưu tiên khai thác lợi ích gộp nhiều chức năng.
+- Hook nêu "nỗi đau" quen thuộc (rối dây, trầy laptop, quên ví) chỉ đạt điểm sàn — nên thêm giải pháp/con số ngay để bật khỏi mức Score=3.
+- Tránh hook than phiền chung chung về màn hình/cường lực ("ám mờ", "rít tay", "ra nắng thành gương") — nhóm này tương tác thấp nhất.
+- Mở bằng tình huống cực đại hoặc nghịch lý ("Rơi 4 mét vẫn lành", "Mỏng như không đeo gì nhưng vẫn giữ máy") thay vì câu hỏi than thở đơn thuần.
+- Dùng emoji đúng ngữ cảnh sản phẩm (🔋🎒💥) nhưng không phụ thuộc emoji để tạo tương tác — nội dung số liệu mới là đòn bẩy.
+- Chưa có reel nào đạt Share — cần thêm yếu tố "đáng khoe/đáng lưu" (mẹo, so sánh giá trị, tình huống giải cứu) để kích share.
