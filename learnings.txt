@@ -1,8 +1,7 @@
-- Hook chứa con số/thông số cụ thể (4 thiết bị, 4 mét, 180°, 17 inch, SGS) cho tương tác cao nhất — luôn nhét số đo hoặc chứng nhận vào câu mở.
-- Hook dạng câu hỏi "vô lý/phản trực giác" ("nghe hơi vô lý đúng không?", "ít shop làm được") kéo comment tốt nhất — tạo tò mò thách thức.
-- Nhóm sản phẩm sạc/pin đa năng và phụ kiện "2-trong-1" (vừa củ sạc vừa pin, sạc 4 thiết bị) có điểm trội — ưu tiên khai thác lợi ích gộp nhiều chức năng.
-- Hook nêu "nỗi đau" quen thuộc (rối dây, trầy laptop, quên ví) chỉ đạt điểm sàn — nên thêm giải pháp/con số ngay để bật khỏi mức Score=3.
-- Tránh hook than phiền chung chung về màn hình/cường lực ("ám mờ", "rít tay", "ra nắng thành gương") — nhóm này tương tác thấp nhất.
-- Mở bằng tình huống cực đại hoặc nghịch lý ("Rơi 4 mét vẫn lành", "Mỏng như không đeo gì nhưng vẫn giữ máy") thay vì câu hỏi than thở đơn thuần.
-- Dùng emoji đúng ngữ cảnh sản phẩm (🔋🎒💥) nhưng không phụ thuộc emoji để tạo tương tác — nội dung số liệu mới là đòn bẩy.
-- Chưa có reel nào đạt Share — cần thêm yếu tố "đáng khoe/đáng lưu" (mẹo, so sánh giá trị, tình huống giải cứu) để kích share.
+- Ưu tiên hook kiểu "con số vô lý + thách thức tư duy" (VD: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?") — cho Score cao nhất (7), kích thích comment.
+- Nhóm sản phẩm sạc/pin/củ sạc đa cổng tương tác tốt nhất, nên khai thác mạnh (gộp nhiều thiết bị vào một giải pháp).
+- Mở bằng câu hỏi nghịch lý hoặc "ít ai làm được" (ốp nhám vẫn dính MagSafe) tạo tò mò, nhỉnh hơn mặt bằng.
+- Nêu thông số/chứng nhận cụ thể (SGS, 4 mét, 26L, 17 inch) để tăng độ tin, nhưng cần kèm yếu tố bất ngờ mới bật tương tác.
+- Tránh hook "nêu nỗi đau chung chung" về balo đựng laptop (trầy máy, va đập) — lặp nhiều, Score đều kịch sàn 3.
+- Tránh hook than phiền dán cường lực/kính (ám mờ, vân tay, cấn tay) — đơn điệu, tương tác thấp nhất.
+- Chốt công thức mạnh: "nghịch lý + con số cụ thể + chốt bằng câu hỏi mời tranh luận" để đẩy comment và reaction.
