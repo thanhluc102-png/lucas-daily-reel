@@ -1,8 +1,8 @@
-- Hook hiệu quả nhất: đặt câu hỏi gây tò mò/phản trực giác ("nghe hơi vô lý đúng không?", "ít shop làm được") — kích comment mạnh nhất (Score 7).
-- Nhóm sạc/phụ kiện điện (sạc đa cổng, pin dự phòng, MagSafe) hút tương tác cao hơn balo và dán màn hình.
-- Nêu con số + chứng nhận cụ thể (4 thiết bị, 6 cổng, 26L, SGS, rơi 4 mét) tăng độ tin và tương tác.
-- Hook "2-trong-1" (vừa sạc vừa pin, balo kiêm cặp) hiệu quả, nhấn lợi ích kép gọn trong một câu.
-- Nên kết hook bằng dấu hỏi/thách đố thay vì câu khẳng định khô — câu hỏi kéo comment tốt hơn.
-- Tránh hook chỉ nêu nỗi đau chung chung về balo/laptop ("nơm nớp lo va đập", "trầy máy") — lặp nhiều, tương tác đáy (Score 3).
-- Tránh hook than phiền về dán kính/cường lực (ám mờ, vân tay, cấn tay) — nhóm kém nhất, gần như không reaction.
-- Tổng thể share = 0: thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, thông tin bất ngờ) để nâng điểm ngoài comment.
+- Dùng hook số liệu gây sốc kèm câu hỏi ngược ("Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" → Score cao nhất 7): nêu con số cụ thể + thách thức niềm tin người đọc.
+- Ưu tiên nhóm sản phẩm sạc/pin/hub đa cổng — giải quyết nỗi đau "mang nhiều củ sạc", "thiếu cổng" cho tương tác tốt hơn mặt bằng chung.
+- Hook nêu đặc điểm "hiếm/ít shop làm được" ("Ốp nhám mà vẫn dính MagSafe", "dán kính vân tay") đạt Score 4: khai thác nghịch lý sản phẩm tưởng không thể.
+- Chèn chi tiết chứng thực cụ thể (SGS, 180°, 26L, 17 inch, 6 cổng, 4 mét) để tăng độ tin, nhưng phải gắn vào câu hỏi/nghịch lý mới bật tương tác.
+- Tránh hook mô tả tính năng phẳng, liệt kê suông ("Balo hay cặp xách?", "Ví của bạn để đâu rồi?") — chỉ chạm Score 3, nhạt.
+- Tránh lạm dụng công thức than vãn "😤" đơn thuần (trầy máy, cạnh cấn, ám mờ) — lặp nhiều, tương tác đáy.
+- Mỗi hook nên có 1 câu hỏi hoặc 1 điểm "vô lý/bất ngờ" để kích bình luận, vì comment là nguồn score chính (reaction & share gần như bằng 0).
+- Giữ hook ngắn 1 dòng, 1 emoji chủ đề, đặt con số/nghịch lý ngay đầu câu để giữ chân người xem.
