@@ -1,15 +1,8 @@
-- **Ưu tiên hook "số cụ thể + lợi ích vô lý"**: dạng "Sạc 4 thiết bị cùng lúc mà vẫn nhanh" (Score 7) và "6 cổng USB-C một cục lo hết" cho tương tác cao nhất — nêu con số gây tò mò rồi chốt bằng nghi vấn.
-
-- **Nhóm sạc/pin/hub đa cổng** kéo tương tác tốt nhất; luôn gắn tình huống đau thực tế (mang 3 cục sạc, thiếu cổng) để tăng comment.
-
-- **Dùng câu hỏi tu từ cuối hook** ("nghe hơi vô lý đúng không?", "dán làm gì?") để kích comment — các reel điểm cao đều có yếu tố này.
-
-- **Hook "2 trong 1" / phá vỡ kỳ vọng** hiệu quả: "ốp nhám mà vẫn dính MagSafe", "vừa củ sạc vừa pin dự phòng" — nhấn nghịch lý "A mà vẫn B".
-
-- **Tránh hook mô tả tính năng phẳng** kiểu "balo mở phẳng 180°", "ngăn ôm máy 17 inch" — chỉ đạt điểm trung bình, thiếu cảm xúc.
-
-- **Hạn chế nhóm balo kể lể nỗi lo chung chung** ("laptop nơm nớp va đập", "mưa tạt ướt") — toàn Score 3, mô-típ lặp gây nhàm.
-
-- **Thêm reaction bằng chi tiết khen cụ thể** ("ít shop làm được", "mỏng như không đeo gì") — tạo điểm nhấn khiến người xem thả tim, không chỉ bình luận.
-
-- **Công thức tối ưu**: [Con số/nghịch lý bất ngờ] + [nỗi đau rất đời] + [câu hỏi chốt] + 1 emoji — ưu tiên sản phẩm sạc/hub hơn balo.
+- Hook thắng lớn (Score 5–7) đều xoáy vào **con số cụ thể + nghịch lý**: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?", "6 cổng USB-C". Ưu tiên công thức: con số lạ + câu hỏi gây tò mò.
+- Nhóm sạc/hub đa cổng (sạc đa thiết bị, pin 2-trong-1, 6 cổng) cho tương tác cao nhất — nên đẩy mạnh và viết theo góc "một món lo hết nhiều thiết bị".
+- Nêu nỗi đau trực diện + emoji 😤 vẫn kéo bình luận ổn (ố vàng, nóng ran, cấn tay) — giữ, nhưng gắn thêm đặc điểm sản phẩm lạ để bật trên mức Score 3.
+- Tránh hook mô tả chung chung, không con số, không nghịch lý (balo "mỏng như không đeo", "balo hay cặp xách") — đều chạm đáy Score 3.
+- Dòng balo là nhóm yếu nhất (đa số Score 3–4); nếu viết balo phải kèm thông số gây sốc (26L ôm máy 17 inch) thay vì cảm giác mơ hồ.
+- Mở bằng câu hỏi tu từ "đúng không?", "làm gì?" kích bình luận tốt hơn câu khẳng định phẳng.
+- Share = 0 toàn bộ: nên thử thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, tình huống "tag đứa bạn") để phá trần Score.
+- Giữ 1 emoji chủ đề cuối hook (🔋🎒🔌), đừng nhồi nhiều — các hook điểm cao đều dùng tiết chế.
