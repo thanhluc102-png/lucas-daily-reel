@@ -1,8 +1,15 @@
-- Hook dạng câu hỏi gây tò mò/nghịch lý ("nghe hơi vô lý đúng không?", "sạc 4 thiết bị cùng lúc mà vẫn nhanh?") cho score cao nhất — ưu tiên dùng.
-- Sản phẩm sạc/hub đa cổng tương tác tốt nhất; nhấn con số cụ thể (4 thiết bị, 6 cổng, 3 cục sạc) để tăng bình luận.
-- Ốp lưng chạm được điểm đau cụ thể (nhám mà vẫn MagSafe) nhỉnh hơn mặt bằng chung — nêu nghịch lý "ít shop làm được".
-- Balo hiệu quả khi nói lợi ích kép rõ ràng (26L ôm máy 17 inch, mở phẳng 180°); balo nêu nỗi lo chung chung (mưa tạt, va đập) score thấp — tránh.
-- Hook về dán kính/cường lực đa số chỉ đạt score thấp (3) — nếu dùng phải thêm chi tiết bất ngờ, đừng chỉ than vãn.
-- Công thức thắng: nghịch lý + số liệu cụ thể + emoji 1 cái → kích comment thay vì chỉ reaction.
-- Tránh hook thuần "nỗi đau" mở bằng 😤/😮‍💨 mà không có giải pháp bất ngờ — gần như luôn ra score 3.
-- Mọi hook nên cài một điểm khiến người xem muốn hỏi lại (giá, cách làm, có thật không) để đẩy comment — đòn bẩy mạnh nhất hiện tại.
+- **Ưu tiên hook "số cụ thể + lợi ích vô lý"**: dạng "Sạc 4 thiết bị cùng lúc mà vẫn nhanh" (Score 7) và "6 cổng USB-C một cục lo hết" cho tương tác cao nhất — nêu con số gây tò mò rồi chốt bằng nghi vấn.
+
+- **Nhóm sạc/pin/hub đa cổng** kéo tương tác tốt nhất; luôn gắn tình huống đau thực tế (mang 3 cục sạc, thiếu cổng) để tăng comment.
+
+- **Dùng câu hỏi tu từ cuối hook** ("nghe hơi vô lý đúng không?", "dán làm gì?") để kích comment — các reel điểm cao đều có yếu tố này.
+
+- **Hook "2 trong 1" / phá vỡ kỳ vọng** hiệu quả: "ốp nhám mà vẫn dính MagSafe", "vừa củ sạc vừa pin dự phòng" — nhấn nghịch lý "A mà vẫn B".
+
+- **Tránh hook mô tả tính năng phẳng** kiểu "balo mở phẳng 180°", "ngăn ôm máy 17 inch" — chỉ đạt điểm trung bình, thiếu cảm xúc.
+
+- **Hạn chế nhóm balo kể lể nỗi lo chung chung** ("laptop nơm nớp va đập", "mưa tạt ướt") — toàn Score 3, mô-típ lặp gây nhàm.
+
+- **Thêm reaction bằng chi tiết khen cụ thể** ("ít shop làm được", "mỏng như không đeo gì") — tạo điểm nhấn khiến người xem thả tim, không chỉ bình luận.
+
+- **Công thức tối ưu**: [Con số/nghịch lý bất ngờ] + [nỗi đau rất đời] + [câu hỏi chốt] + 1 emoji — ưu tiên sản phẩm sạc/hub hơn balo.
