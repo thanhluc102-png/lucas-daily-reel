@@ -1,8 +1,8 @@
-- Hook thắng lớn (Score 5–7) đều xoáy vào **con số cụ thể + nghịch lý**: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?", "6 cổng USB-C". Ưu tiên công thức: con số lạ + câu hỏi gây tò mò.
-- Nhóm sạc/hub đa cổng (sạc đa thiết bị, pin 2-trong-1, 6 cổng) cho tương tác cao nhất — nên đẩy mạnh và viết theo góc "một món lo hết nhiều thiết bị".
-- Nêu nỗi đau trực diện + emoji 😤 vẫn kéo bình luận ổn (ố vàng, nóng ran, cấn tay) — giữ, nhưng gắn thêm đặc điểm sản phẩm lạ để bật trên mức Score 3.
-- Tránh hook mô tả chung chung, không con số, không nghịch lý (balo "mỏng như không đeo", "balo hay cặp xách") — đều chạm đáy Score 3.
-- Dòng balo là nhóm yếu nhất (đa số Score 3–4); nếu viết balo phải kèm thông số gây sốc (26L ôm máy 17 inch) thay vì cảm giác mơ hồ.
-- Mở bằng câu hỏi tu từ "đúng không?", "làm gì?" kích bình luận tốt hơn câu khẳng định phẳng.
-- Share = 0 toàn bộ: nên thử thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, tình huống "tag đứa bạn") để phá trần Score.
-- Giữ 1 emoji chủ đề cuối hook (🔋🎒🔌), đừng nhồi nhiều — các hook điểm cao đều dùng tiết chế.
+- Mở hook bằng câu hỏi "vô lý/gây tò mò" (vd: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh?" — Score 7) cho tương tác cao nhất; ưu tiên kiểu này.
+- Nhóm sạc/pin/hub đa cổng (số cụ thể: "4 thiết bị", "6 cổng") kéo điểm tốt hơn trung bình, nên đẩy mạnh.
+- Dùng con số cụ thể gây sốc nhẹ ("26L ôm máy 17 inch", "180°", "6 cổng") tạo tò mò, điểm nhỉnh hơn.
+- Ốp lưng nêu "nỗi đau quen thuộc có thật" (ố vàng, nhám mất MagSafe) đạt điểm khá; giữ công thức "vấn đề cũ + giải pháp bất ngờ".
+- Tránh mở bằng than vãn chung chung kết thúc emoji 😤/😮‍💨 (dán cường lực cấn tay, laptop trầy mép) — loạt này toàn Score 3, kém nhất.
+- Hạn chế hook mô tả tính năng phẳng, không tò mò, không số liệu (vd "Mỏng như không đeo gì") — tương tác đáy.
+- Ưu tiên kết hook bằng dấu "?" khơi gợi thay vì khẳng định, và cài yếu tố "ít shop làm được / nghe vô lý đúng không" để tăng comment.
+- Nhóm balo đang đồng loạt điểm thấp: cần đổi sang hook số liệu/tò mò thay vì mô tả nỗi lo bảo vệ laptop lặp lại.
