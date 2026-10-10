@@ -1,8 +1,8 @@
-- Ưu tiên hook gợi tò mò/nghịch lý ("nghe hơi vô lý đúng không?", "6 cổng một cục lo hết") — cho tương tác cao nhất (Score 7).
-- Nhóm sản phẩm sạc/pin đa năng (sạc nhiều thiết bị, nhiều cổng) kéo tương tác tốt nhất — nên đẩy mạnh.
-- Hook chỉ ra nỗi đau cụ thể + hậu quả thật (ố vàng, trầy mép, màn hình thành gương) tốt hơn hook khoe tính năng khô khan.
-- Thêm con số/chi tiết gây sốc ("4 thiết bị cùng lúc", "6 cổng", "ố vàng vài tháng") giúp tăng reactions.
-- Hook than vãn chung chung, thiếu điểm nhấn ("balo hay cặp xách", "mỏng như không đeo gì") cho tương tác thấp nhất — nên tránh.
-- Dạng câu hỏi tu từ 😤🤔 kích comment đều, nhưng cần ghép nỗi đau mạnh mới bật reactions.
-- Không hook nào tạo được Share — cần thêm yếu tố đáng chia sẻ (mẹo hay, deal hời, tình huống đồng cảm) để nâng Score.
-- Mở đầu bằng tình huống "đúng lúc cần nhất/lúc nào không hay" tạo đồng cảm — giữ lại nhưng gắn giải pháp rõ ràng.
+- Hook dạng câu hỏi gây tò mò/phản trực giác ("nghe hơi vô lý đúng không?", "sạc 4 thiết bị cùng lúc mà vẫn nhanh") cho tương tác CAO NHẤT (Score 7) — ưu tiên dùng.
+- Nêu số liệu cụ thể gây sốc (6 cổng USB-C, 26L, 17 inch, sạc 4 thiết bị) tăng điểm rõ rệt — luôn chèn con số đắt giá.
+- Nhóm sạc/pin/cáp (phụ kiện sạc) và ốp lưng là 2 nhóm hiệu quả nhất; balo và dán cường lực tương tác đều đều nhưng thường chỉ chạm sàn (Score 3).
+- Hook "nỗi đau quen thuộc" cho ốp (ố vàng, đục màu che màu máy) ăn điểm tốt (Score 5) — khơi đúng bực bội thường gặp hằng ngày.
+- Tránh hook kể tính năng phẳng lặng, không câu hỏi, không số (vd "Mỏng như không đeo gì") — hầu hết rơi về Score 3.
+- Emoji 😤🔥 nhấn nỗi đau + 🔋🔌 nhấn danh mục sạc giúp tăng nhẹ; dùng 1 emoji đắt, đừng lạm dụng.
+- Hook dài, mô tả tình huống dài dòng (mưa tạt, chói mỏi mắt bên cửa sổ) không vượt trội — nên rút gọn, đánh thẳng vào 1 pain duy nhất.
+- Share = 0 ở mọi bài: cần thêm yếu tố "đáng chia sẻ" (mẹo, so sánh trước/sau, tip tiết kiệm) thay vì chỉ quảng cáo sản phẩm.
