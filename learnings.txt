@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "vô lý/gây tò mò" (vd: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh?" — Score 7) cho tương tác cao nhất; ưu tiên kiểu này.
-- Nhóm sạc/pin/hub đa cổng (số cụ thể: "4 thiết bị", "6 cổng") kéo điểm tốt hơn trung bình, nên đẩy mạnh.
-- Dùng con số cụ thể gây sốc nhẹ ("26L ôm máy 17 inch", "180°", "6 cổng") tạo tò mò, điểm nhỉnh hơn.
-- Ốp lưng nêu "nỗi đau quen thuộc có thật" (ố vàng, nhám mất MagSafe) đạt điểm khá; giữ công thức "vấn đề cũ + giải pháp bất ngờ".
-- Tránh mở bằng than vãn chung chung kết thúc emoji 😤/😮‍💨 (dán cường lực cấn tay, laptop trầy mép) — loạt này toàn Score 3, kém nhất.
-- Hạn chế hook mô tả tính năng phẳng, không tò mò, không số liệu (vd "Mỏng như không đeo gì") — tương tác đáy.
-- Ưu tiên kết hook bằng dấu "?" khơi gợi thay vì khẳng định, và cài yếu tố "ít shop làm được / nghe vô lý đúng không" để tăng comment.
-- Nhóm balo đang đồng loạt điểm thấp: cần đổi sang hook số liệu/tò mò thay vì mô tả nỗi lo bảo vệ laptop lặp lại.
+- Ưu tiên hook gợi tò mò/nghịch lý ("nghe hơi vô lý đúng không?", "6 cổng một cục lo hết") — cho tương tác cao nhất (Score 7).
+- Nhóm sản phẩm sạc/pin đa năng (sạc nhiều thiết bị, nhiều cổng) kéo tương tác tốt nhất — nên đẩy mạnh.
+- Hook chỉ ra nỗi đau cụ thể + hậu quả thật (ố vàng, trầy mép, màn hình thành gương) tốt hơn hook khoe tính năng khô khan.
+- Thêm con số/chi tiết gây sốc ("4 thiết bị cùng lúc", "6 cổng", "ố vàng vài tháng") giúp tăng reactions.
+- Hook than vãn chung chung, thiếu điểm nhấn ("balo hay cặp xách", "mỏng như không đeo gì") cho tương tác thấp nhất — nên tránh.
+- Dạng câu hỏi tu từ 😤🤔 kích comment đều, nhưng cần ghép nỗi đau mạnh mới bật reactions.
+- Không hook nào tạo được Share — cần thêm yếu tố đáng chia sẻ (mẹo hay, deal hời, tình huống đồng cảm) để nâng Score.
+- Mở đầu bằng tình huống "đúng lúc cần nhất/lúc nào không hay" tạo đồng cảm — giữ lại nhưng gắn giải pháp rõ ràng.
