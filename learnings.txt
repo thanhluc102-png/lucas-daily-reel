@@ -1,8 +1,15 @@
-- Hook dạng câu hỏi gây tò mò/phản trực giác ("nghe hơi vô lý đúng không?", "sạc 4 thiết bị cùng lúc mà vẫn nhanh") cho tương tác CAO NHẤT (Score 7) — ưu tiên dùng.
-- Nêu số liệu cụ thể gây sốc (6 cổng USB-C, 26L, 17 inch, sạc 4 thiết bị) tăng điểm rõ rệt — luôn chèn con số đắt giá.
-- Nhóm sạc/pin/cáp (phụ kiện sạc) và ốp lưng là 2 nhóm hiệu quả nhất; balo và dán cường lực tương tác đều đều nhưng thường chỉ chạm sàn (Score 3).
-- Hook "nỗi đau quen thuộc" cho ốp (ố vàng, đục màu che màu máy) ăn điểm tốt (Score 5) — khơi đúng bực bội thường gặp hằng ngày.
-- Tránh hook kể tính năng phẳng lặng, không câu hỏi, không số (vd "Mỏng như không đeo gì") — hầu hết rơi về Score 3.
-- Emoji 😤🔥 nhấn nỗi đau + 🔋🔌 nhấn danh mục sạc giúp tăng nhẹ; dùng 1 emoji đắt, đừng lạm dụng.
-- Hook dài, mô tả tình huống dài dòng (mưa tạt, chói mỏi mắt bên cửa sổ) không vượt trội — nên rút gọn, đánh thẳng vào 1 pain duy nhất.
-- Share = 0 ở mọi bài: cần thêm yếu tố "đáng chia sẻ" (mẹo, so sánh trước/sau, tip tiết kiệm) thay vì chỉ quảng cáo sản phẩm.
+- **Hook số liệu/nghịch lý gây tò mò thắng đậm**: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" (Score 7 cao nhất). Ưu tiên con số cụ thể + câu hỏi phản trực giác.
+
+- **Nhóm sản phẩm Sạc/Hub/Cáp cho tương tác tốt nhất** (Score 4-7). Khai thác mạnh: số cổng, tốc độ, chống nóng, gọn gàng.
+
+- **Hook "nỗi đau cụ thể + hệ quả thấy được" của Ốp lưng cũng hiệu quả** (ố vàng Score 5, đục màu/đổi màu). Nhấn vào lỗi dùng lâu ngày khiến người đọc đồng cảm.
+
+- **Tránh hook than vãn chung chung về Balo/laptop** — chiếm phần lớn Score 3, tương tác thấp nhất. Nếu viết Balo phải kèm số liệu (26L, 17 inch) mới nhích lên.
+
+- **Câu hỏi + emoji cảm xúc (😤🔥🤔) kéo tương tác hơn câu khẳng định phẳng**. Ưu tiên dạng nghi vấn chạm nỗi đau.
+
+- **Hook mô tả tính năng khô khan, trừu tượng ("mỏng như không đeo gì", "ra nắng thành gương") cho Score thấp**. Cần gắn với con số hoặc tình huống đời thực rõ ràng.
+
+- **Công thức vàng**: [Con số/nghịch lý bất ngờ] + [nỗi đau quen thuộc] + [emoji] → đẩy comment & reaction.
+
+- **Toàn bộ Shares = 0**: chưa có hook nào đủ "đáng chia sẻ". Thử thêm mẹo hữu ích / tip bất ngờ để kích share thay vì chỉ bán hàng.
