@@ -1,15 +1,8 @@
-- **Hook số liệu/nghịch lý gây tò mò thắng đậm**: "Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" (Score 7 cao nhất). Ưu tiên con số cụ thể + câu hỏi phản trực giác.
-
-- **Nhóm sản phẩm Sạc/Hub/Cáp cho tương tác tốt nhất** (Score 4-7). Khai thác mạnh: số cổng, tốc độ, chống nóng, gọn gàng.
-
-- **Hook "nỗi đau cụ thể + hệ quả thấy được" của Ốp lưng cũng hiệu quả** (ố vàng Score 5, đục màu/đổi màu). Nhấn vào lỗi dùng lâu ngày khiến người đọc đồng cảm.
-
-- **Tránh hook than vãn chung chung về Balo/laptop** — chiếm phần lớn Score 3, tương tác thấp nhất. Nếu viết Balo phải kèm số liệu (26L, 17 inch) mới nhích lên.
-
-- **Câu hỏi + emoji cảm xúc (😤🔥🤔) kéo tương tác hơn câu khẳng định phẳng**. Ưu tiên dạng nghi vấn chạm nỗi đau.
-
-- **Hook mô tả tính năng khô khan, trừu tượng ("mỏng như không đeo gì", "ra nắng thành gương") cho Score thấp**. Cần gắn với con số hoặc tình huống đời thực rõ ràng.
-
-- **Công thức vàng**: [Con số/nghịch lý bất ngờ] + [nỗi đau quen thuộc] + [emoji] → đẩy comment & reaction.
-
-- **Toàn bộ Shares = 0**: chưa có hook nào đủ "đáng chia sẻ". Thử thêm mẹo hữu ích / tip bất ngờ để kích share thay vì chỉ bán hàng.
+- **Hook thắng đậm nhất: gợi sự tò mò/nghịch lý số liệu** ("Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" → Score 7 cao nhất). Ưu tiên dạng "nghe vô lý nhưng có thật".
+- **Sản phẩm sạc/hub công suất cao kéo tương tác tốt**: nhấn con số cụ thể (4 thiết bị, 6 cổng USB-C) tạo wow và kích comment hỏi giá/thông số.
+- **Hook nêu "nỗi đau kéo dài theo thời gian" của ốp lưng cho điểm khá** ("Ốp trong suốt dùng vài tháng là ố vàng?" → Score 5). Dùng mốc thời gian + hậu quả nhìn thấy được.
+- **Hook có số đo/thông số cụ thể nhỉnh hơn hook chung chung** (26L, máy 17 inch, 15.6 inch, 6 cổng → Score 4). Luôn chèn ít nhất 1 con số thật.
+- **Tránh hook "nỗi đau balo laptop" chung chung lặp lại**: quá nhiều bài cùng mô-típ "laptop trầy/va đập/ướt" chỉ đạt Score 3, bị bão hòa — cần góc mới lạ.
+- **Tránh hook dài, mô tả tình huống phẳng** ("Màn MacBook đang chói đến mỏi mắt mỗi khi ngồi gần cửa sổ" → Score 3). Rút ngắn, giật mạnh đầu câu.
+- **Công thức mạnh: câu hỏi gây tò mò + số liệu + nghịch lý/phản trực giác**, kết thúc mở để kích comment. Giữ 1 emoji đúng ngữ cảnh.
+- **Toàn bộ bài gần như 0 share**: cần thêm yếu tố "đáng khoe/đáng gửi cho bạn" (mẹo hiếm, deal sốc, tip ai cũng cần) để đẩy share — chỉ tiêu score nặng nhất.
