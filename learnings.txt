@@ -1,8 +1,8 @@
-- **Hook thắng đậm nhất: gợi sự tò mò/nghịch lý số liệu** ("Sạc 4 thiết bị cùng lúc mà vẫn nhanh, nghe hơi vô lý đúng không?" → Score 7 cao nhất). Ưu tiên dạng "nghe vô lý nhưng có thật".
-- **Sản phẩm sạc/hub công suất cao kéo tương tác tốt**: nhấn con số cụ thể (4 thiết bị, 6 cổng USB-C) tạo wow và kích comment hỏi giá/thông số.
-- **Hook nêu "nỗi đau kéo dài theo thời gian" của ốp lưng cho điểm khá** ("Ốp trong suốt dùng vài tháng là ố vàng?" → Score 5). Dùng mốc thời gian + hậu quả nhìn thấy được.
-- **Hook có số đo/thông số cụ thể nhỉnh hơn hook chung chung** (26L, máy 17 inch, 15.6 inch, 6 cổng → Score 4). Luôn chèn ít nhất 1 con số thật.
-- **Tránh hook "nỗi đau balo laptop" chung chung lặp lại**: quá nhiều bài cùng mô-típ "laptop trầy/va đập/ướt" chỉ đạt Score 3, bị bão hòa — cần góc mới lạ.
-- **Tránh hook dài, mô tả tình huống phẳng** ("Màn MacBook đang chói đến mỏi mắt mỗi khi ngồi gần cửa sổ" → Score 3). Rút ngắn, giật mạnh đầu câu.
-- **Công thức mạnh: câu hỏi gây tò mò + số liệu + nghịch lý/phản trực giác**, kết thúc mở để kích comment. Giữ 1 emoji đúng ngữ cảnh.
-- **Toàn bộ bài gần như 0 share**: cần thêm yếu tố "đáng khoe/đáng gửi cho bạn" (mẹo hiếm, deal sốc, tip ai cũng cần) để đẩy share — chỉ tiêu score nặng nhất.
+- Mở hook bằng câu hỏi "vô lý/nghịch lý" gây tò mò (VD: "nghe hơi vô lý đúng không?", "nhanh mà sạc 4 máy?") — cho Score cao nhất (7).
+- Nhấn con số cụ thể gây sốc: "4 thiết bị", "6 cổng", "26L", "17 inch" — tăng tương tác rõ rệt.
+- Sản phẩm sạc đa cổng / hub / củ sạc công suất cao kéo tương tác tốt nhất; ưu tiên khai thác nhóm này.
+- Hook chỉ "than vãn nỗi đau" chung chung (dây sạc thiếu, balo lo va đập, màn chói) chỉ đạt Score đáy (3) — tránh viết một chiều kiểu than thở.
+- Nêu nỗi đau quen thuộc + ví dụ cụ thể "ố vàng sau vài tháng" (ốp trong suốt) khơi được phản ứng — chạm trải nghiệm thật thì ăn tương tác.
+- Tránh câu khẳng định tính năng khô khan ("mỏng như không đeo gì", "nhám sờ mịn tay") — thiếu kịch tính, Score thấp.
+- Công thức mạnh: [Nghịch lý/câu hỏi] + [số liệu cụ thể] + [1 emoji liên quan] đặt cuối.
+- Chưa reel nào có Share — thử thêm yếu tố "mẹo/tip đáng lưu lại" hoặc "so sánh trước-sau" để kích chia sẻ.
