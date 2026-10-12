@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "vô lý/nghịch lý" gây tò mò (VD: "nghe hơi vô lý đúng không?", "nhanh mà sạc 4 máy?") — cho Score cao nhất (7).
-- Nhấn con số cụ thể gây sốc: "4 thiết bị", "6 cổng", "26L", "17 inch" — tăng tương tác rõ rệt.
-- Sản phẩm sạc đa cổng / hub / củ sạc công suất cao kéo tương tác tốt nhất; ưu tiên khai thác nhóm này.
-- Hook chỉ "than vãn nỗi đau" chung chung (dây sạc thiếu, balo lo va đập, màn chói) chỉ đạt Score đáy (3) — tránh viết một chiều kiểu than thở.
-- Nêu nỗi đau quen thuộc + ví dụ cụ thể "ố vàng sau vài tháng" (ốp trong suốt) khơi được phản ứng — chạm trải nghiệm thật thì ăn tương tác.
-- Tránh câu khẳng định tính năng khô khan ("mỏng như không đeo gì", "nhám sờ mịn tay") — thiếu kịch tính, Score thấp.
-- Công thức mạnh: [Nghịch lý/câu hỏi] + [số liệu cụ thể] + [1 emoji liên quan] đặt cuối.
-- Chưa reel nào có Share — thử thêm yếu tố "mẹo/tip đáng lưu lại" hoặc "so sánh trước-sau" để kích chia sẻ.
+- **Hook dạng câu hỏi "vô lý/gây tò mò"** cho điểm cao nhất (Sạc 4 thiết bị Score=7); ưu tiên mở bằng nghịch lý khiến người xem muốn hỏi lại.
+- **Nhóm sản phẩm sạc/cáp/hub** (củ sạc, hub USB-C, cáp rút gọn, pin) tương tác tốt hơn trung bình; nên đẩy mạnh dòng phụ kiện điện.
+- **Nhóm ốp lưng** gây phản ứng khá (ố vàng Score=5, nhám Score=4); nhấn nỗi đau thẩm mỹ cụ thể (ố vàng, bám vân tay, che màu máy).
+- **Nhóm balo** đều lẹt đẹt Score=3-4, không có bứt phá; cần đổi góc viết, tránh mô tả thông số khô (26L, 15.6 inch).
+- **Hook nêu "nỗi đau cụ thể + hậu quả"** (ố vàng, nóng ran, phồng cháy) hiệu quả hơn hook khoe tính năng thuần (mở phẳng như vali, balo = cả hai).
+- **Kết hook bằng dấu "?" + emoji 😤🔥🤔** kéo tương tác tốt hơn hook khẳng định phẳng lặng.
+- **Tránh**: mô tả dài dòng/văn kể (Màn MacBook chói mỏi mắt khi ngồi gần cửa sổ), hook chung chung thiếu con số hoặc nghịch lý.
+- **Chưa có reel nào đạt Share**; thêm yếu tố "đáng chia sẻ" (mẹo, cảnh báo cháy nổ, tiết kiệm tiền) để phá trần Score.
