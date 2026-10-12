@@ -1,8 +1,8 @@
-- **Hook dạng câu hỏi "vô lý/gây tò mò"** cho điểm cao nhất (Sạc 4 thiết bị Score=7); ưu tiên mở bằng nghịch lý khiến người xem muốn hỏi lại.
-- **Nhóm sản phẩm sạc/cáp/hub** (củ sạc, hub USB-C, cáp rút gọn, pin) tương tác tốt hơn trung bình; nên đẩy mạnh dòng phụ kiện điện.
-- **Nhóm ốp lưng** gây phản ứng khá (ố vàng Score=5, nhám Score=4); nhấn nỗi đau thẩm mỹ cụ thể (ố vàng, bám vân tay, che màu máy).
-- **Nhóm balo** đều lẹt đẹt Score=3-4, không có bứt phá; cần đổi góc viết, tránh mô tả thông số khô (26L, 15.6 inch).
-- **Hook nêu "nỗi đau cụ thể + hậu quả"** (ố vàng, nóng ran, phồng cháy) hiệu quả hơn hook khoe tính năng thuần (mở phẳng như vali, balo = cả hai).
-- **Kết hook bằng dấu "?" + emoji 😤🔥🤔** kéo tương tác tốt hơn hook khẳng định phẳng lặng.
-- **Tránh**: mô tả dài dòng/văn kể (Màn MacBook chói mỏi mắt khi ngồi gần cửa sổ), hook chung chung thiếu con số hoặc nghịch lý.
-- **Chưa có reel nào đạt Share**; thêm yếu tố "đáng chia sẻ" (mẹo, cảnh báo cháy nổ, tiết kiệm tiền) để phá trần Score.
+- **Hook nêu "thông số cụ thể + lợi ích bất ngờ"** (6 cổng, 26L ôm máy 17 inch, sạc 4 thiết bị) cho score cao nhất → ưu tiên chèn con số gây tò mò.
+- **Hook kiểu "giải pháp gọn gàng/tiện lợi"** (rút ra dùng thu lại gọn, ốp không ố vàng) kéo reactions tốt → nhấn trải nghiệm thực tế sờ-chạm được.
+- **Nhóm sản phẩm sạc/cáp/hub** tương tác trội hơn hẳn balo và dán màn hình → tăng tỉ trọng content phụ kiện sạc.
+- **Hook "nỗi đau chung chung" về balo** (lo va đập, trầy mép, mưa tạt) bị bão hòa, score thấp → hạn chế lặp mô-típ sợ hỏng laptop.
+- **Hook dán màn hình/chống chói** (ra nắng thành gương, chói mỏi mắt) đều kém → tránh hoặc đổi sang góc lợi ích rõ ràng hơn.
+- **Câu hỏi tu từ "đúng không?/làm gì?"** gợi tò mò hiệu quả hơn câu than thở "😮‍💨😤" → dùng câu hỏi thách thức sự vô lý.
+- **Mở bằng con số/nghịch lý ("nghe hơi vô lý đúng không")** đạt score cao nhất toàn bảng → ưu tiên tạo cảm giác "khó tin nhưng có thật".
+- **Không hook nào có share** → thêm yếu tố đáng chia sẻ: mẹo hữu ích, so sánh gây bất ngờ, hoặc call-to-tag bạn bè.
