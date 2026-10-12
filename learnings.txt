@@ -1,8 +1,8 @@
-- **Hook nêu "thông số cụ thể + lợi ích bất ngờ"** (6 cổng, 26L ôm máy 17 inch, sạc 4 thiết bị) cho score cao nhất → ưu tiên chèn con số gây tò mò.
-- **Hook kiểu "giải pháp gọn gàng/tiện lợi"** (rút ra dùng thu lại gọn, ốp không ố vàng) kéo reactions tốt → nhấn trải nghiệm thực tế sờ-chạm được.
-- **Nhóm sản phẩm sạc/cáp/hub** tương tác trội hơn hẳn balo và dán màn hình → tăng tỉ trọng content phụ kiện sạc.
-- **Hook "nỗi đau chung chung" về balo** (lo va đập, trầy mép, mưa tạt) bị bão hòa, score thấp → hạn chế lặp mô-típ sợ hỏng laptop.
-- **Hook dán màn hình/chống chói** (ra nắng thành gương, chói mỏi mắt) đều kém → tránh hoặc đổi sang góc lợi ích rõ ràng hơn.
-- **Câu hỏi tu từ "đúng không?/làm gì?"** gợi tò mò hiệu quả hơn câu than thở "😮‍💨😤" → dùng câu hỏi thách thức sự vô lý.
-- **Mở bằng con số/nghịch lý ("nghe hơi vô lý đúng không")** đạt score cao nhất toàn bảng → ưu tiên tạo cảm giác "khó tin nhưng có thật".
-- **Không hook nào có share** → thêm yếu tố đáng chia sẻ: mẹo hữu ích, so sánh gây bất ngờ, hoặc call-to-tag bạn bè.
+- **Hook nêu "nỗi đau cụ thể + hậu quả" (ố vàng, cáp rối, nóng ran) cho điểm cao nhất (5)** — ưu tiên kiểu này.
+- **Chủ đề ỐP LƯNG & SẠC/CÁP tương tác tốt nhất; BALO và CƯỜNG LỰC đa số chỉ đạt 3** — giảm tần suất balo/dán màn hình chung chung.
+- **Mở đầu bằng câu hỏi "giật nghịch lý" (Sạc 4 thiết bị mà vẫn nhanh?, vô lý đúng không?) kéo comment mạnh (Score=7)** — dùng công thức nghịch lý + "đúng không?".
+- **Hook mô tả tính năng khô khan (26L, 15.6 inch, mở phẳng như vali) tương tác thấp (3)** — tránh liệt kê thông số thuần.
+- **Dùng con số + emoji chủ đề (🔋🔌🔥) trong hook giúp tăng reactions** — luôn chèn 1 emoji đúng ngành hàng.
+- **Hook chạm "tiếc tiền / sợ hỏng" (củ sạc trăm ngàn mà nóng, ướt là hỏng cả tuần) hiệu quả hơn hook khen sản phẩm** — đánh vào mất mát, không khoe ưu điểm.
+- **Share = 0 toàn bộ: nội dung chưa đủ "đáng chia sẻ"** — thêm yếu tố mẹo hữu ích hoặc so sánh gây sốc để kích share.
+- **Giữ hook 1 câu, kết bằng dấu "?" hoặc emoji cảm xúc (😤😮‍💨)** — câu hỏi tu từ tạo tranh luận, đẩy comment.
