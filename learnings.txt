@@ -1,8 +1,8 @@
-- Mở hook bằng "nỗi đau ố vàng/rối/trầy" của phụ kiện giá rẻ (ốp, cáp) cho tương tác cao nhất (Score 5); ưu tiên nhóm ốp lưng và cáp rút gọn.
-- Dùng câu hỏi phản vấn chạm trực tiếp cảm giác bực ("ố vàng?", "cáp rối?", "chói mỏi mắt?") thay vì nêu thông số khô khan.
-- Nhấn tình huống "tiền nhiều mà vẫn lỗi" (ốp trong suốt, củ sạc trăm ngàn, balo 3 triệu) để kích phản ứng — nhóm này đều đạt Reactions.
-- Hook mô tả lợi ích tức thì, hành động cụ thể ("rút ra dùng, thu lại gọn") hiệu quả hơn hook liệt kê tính năng ("6 cổng USB-C").
-- Tránh hook chỉ khoe thông số trung tính (balo 26L, sạc dày 9mm, mở phẳng như vali) — toàn Score 3, kém nhất.
-- Ưu tiên emoji cảm xúc tiêu cực (😤😮‍💨🔥) đi kèm nỗi đau; emoji mô tả vật phẩm đơn thuần (🎒🧳📱) kéo tương tác xuống.
-- Câu càng ngắn, đánh thẳng vào "cái sai bạn đang chịu" càng tốt; mở bằng vấn đề của người dùng, không mở bằng tên/đặc điểm sản phẩm.
-- Shares = 0 toàn bộ: cần thêm yếu tố đáng chia sẻ (mẹo, so sánh gây sốc, giá hời) để nâng Score thực sự.
+- **Hook dạng "nỗi đau quen thuộc" cho tương tác cao nhất** (ố vàng, cáp rối, trầy xước): các Score 5 đều rơi vào ốp ố vàng + cáp rút gọn → ưu tiên khơi đúng bực bội thường gặp.
+- **Sản phẩm ốp lưng & cáp/phụ kiện sạc gọn dễ ăn tương tác hơn** balo và dán màn hình → tăng tỉ trọng nhóm này.
+- **Dùng câu hỏi tu từ chạm đau + emoji 😤🔥** (ố vàng, nóng ran) hiệu quả hơn câu khẳng định tính năng khô khan.
+- **Hook kể tính năng thuần (6 cổng, 9mm, mở phẳng như vali)** chỉ đạt Score 3 → tránh liệt kê thông số, hãy gắn vào hậu quả/cảm xúc.
+- **Balo gần như luôn Score 3-4, kém nổi bật** → nếu viết balo phải đẩy mạnh kịch bản "laptop ướt/trầy/lăn lóc" để cứu tương tác.
+- **Hook quá dài, nhiều mệnh đề** (màn MacBook chói mỏi mắt, balo 3 triệu) kéo tương tác xuống → giữ 1 ý đau duy nhất, ngắn gọn.
+- **Công thức thắng: "Vấn đề bức xúc?" + emoji cảm xúc + ẩn ý giải pháp** → nhân rộng mẫu này cho mọi sản phẩm.
+- **Shares = 0 toàn bộ** → cần thêm yếu tố đáng chia sẻ (mẹo, tip bất ngờ, so sánh trước/sau) để phá trần Score.
