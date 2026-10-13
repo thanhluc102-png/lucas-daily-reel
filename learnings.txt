@@ -1,8 +1,8 @@
-- Tất cả hook đều có đúng 1 comment và 0 share → điểm chênh nhau chỉ do reactions; cần nâng mục tiêu quan trọng nhất là tạo share/comment thật, đừng chỉ chăm chăm vào reaction.
-- Nhóm điểm cao nhất (Score=5): "Ốp trong suốt dùng vài tháng là ố vàng?" và "Rút ra dùng, thu lại gọn — hết cảnh cáp rối" → ưu tiên hook chạm nỗi đau rất cụ thể, quen thuộc, ai cũng từng gặp (ố vàng, cáp rối).
-- Hook mô tả lợi ích hữu hình, dễ hình dung ngay (gọn, mịn tay, không bám vân tay, sạc cả bàn) đạt Score 4-5 → luôn gắn hook với một hình ảnh/kết quả cụ thể người đọc "thấy" được.
-- Hook dạng câu hỏi xoáy vào bực bội thường ngày ("dán làm gì?", "dùng vài tháng ố vàng?") kéo tương tác tốt hơn hook mô tả trung tính.
-- Sản phẩm phụ kiện nhỏ, giá rẻ, dùng hằng ngày (ốp lưng, cáp, củ sạc) tương tác nhỉnh hơn balo/sản phẩm lớn → ưu tiên món giá thấp, nỗi đau phổ biến.
-- Hook quá dài, nhiều chi tiết kỹ thuật/thông số (26L, 17 inch, 15.6 inch, iPhone 18 Pro, 6 cổng USB-C) kém nổi bật → rút ngắn, chỉ giữ 1 con số đắt giá nếu thật sự cần.
-- Hook về nỗi lo xa, hiếm gặp hoặc đặc thù (cháy nổ sạc dự phòng, xước ống kính "tịt luôn", mưa tạt ướt laptop) tương tác thấp → tránh dọa dẫm cường điệu, chọn nỗi đau thực tế thường xuyên.
-- Công thức nên dùng: [nỗi đau quen thuộc + cụ thể] dạng câu hỏi ngắn → gợi ra giải pháp hữu hình, kèm 1 emoji, giữ dưới ~12 từ.
+- Mở hook bằng "nỗi đau ố vàng/rối/trầy" của phụ kiện giá rẻ (ốp, cáp) cho tương tác cao nhất (Score 5); ưu tiên nhóm ốp lưng và cáp rút gọn.
+- Dùng câu hỏi phản vấn chạm trực tiếp cảm giác bực ("ố vàng?", "cáp rối?", "chói mỏi mắt?") thay vì nêu thông số khô khan.
+- Nhấn tình huống "tiền nhiều mà vẫn lỗi" (ốp trong suốt, củ sạc trăm ngàn, balo 3 triệu) để kích phản ứng — nhóm này đều đạt Reactions.
+- Hook mô tả lợi ích tức thì, hành động cụ thể ("rút ra dùng, thu lại gọn") hiệu quả hơn hook liệt kê tính năng ("6 cổng USB-C").
+- Tránh hook chỉ khoe thông số trung tính (balo 26L, sạc dày 9mm, mở phẳng như vali) — toàn Score 3, kém nhất.
+- Ưu tiên emoji cảm xúc tiêu cực (😤😮‍💨🔥) đi kèm nỗi đau; emoji mô tả vật phẩm đơn thuần (🎒🧳📱) kéo tương tác xuống.
+- Câu càng ngắn, đánh thẳng vào "cái sai bạn đang chịu" càng tốt; mở bằng vấn đề của người dùng, không mở bằng tên/đặc điểm sản phẩm.
+- Shares = 0 toàn bộ: cần thêm yếu tố đáng chia sẻ (mẹo, so sánh gây sốc, giá hời) để nâng Score thực sự.
