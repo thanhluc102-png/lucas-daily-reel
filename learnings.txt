@@ -1,8 +1,8 @@
-- **Hook nêu "nỗi đau cụ thể + hậu quả" (ố vàng, cáp rối, nóng ran) cho điểm cao nhất (5)** — ưu tiên kiểu này.
-- **Chủ đề ỐP LƯNG & SẠC/CÁP tương tác tốt nhất; BALO và CƯỜNG LỰC đa số chỉ đạt 3** — giảm tần suất balo/dán màn hình chung chung.
-- **Mở đầu bằng câu hỏi "giật nghịch lý" (Sạc 4 thiết bị mà vẫn nhanh?, vô lý đúng không?) kéo comment mạnh (Score=7)** — dùng công thức nghịch lý + "đúng không?".
-- **Hook mô tả tính năng khô khan (26L, 15.6 inch, mở phẳng như vali) tương tác thấp (3)** — tránh liệt kê thông số thuần.
-- **Dùng con số + emoji chủ đề (🔋🔌🔥) trong hook giúp tăng reactions** — luôn chèn 1 emoji đúng ngành hàng.
-- **Hook chạm "tiếc tiền / sợ hỏng" (củ sạc trăm ngàn mà nóng, ướt là hỏng cả tuần) hiệu quả hơn hook khen sản phẩm** — đánh vào mất mát, không khoe ưu điểm.
-- **Share = 0 toàn bộ: nội dung chưa đủ "đáng chia sẻ"** — thêm yếu tố mẹo hữu ích hoặc so sánh gây sốc để kích share.
-- **Giữ hook 1 câu, kết bằng dấu "?" hoặc emoji cảm xúc (😤😮‍💨)** — câu hỏi tu từ tạo tranh luận, đẩy comment.
+- Tất cả hook đều có đúng 1 comment và 0 share → điểm chênh nhau chỉ do reactions; cần nâng mục tiêu quan trọng nhất là tạo share/comment thật, đừng chỉ chăm chăm vào reaction.
+- Nhóm điểm cao nhất (Score=5): "Ốp trong suốt dùng vài tháng là ố vàng?" và "Rút ra dùng, thu lại gọn — hết cảnh cáp rối" → ưu tiên hook chạm nỗi đau rất cụ thể, quen thuộc, ai cũng từng gặp (ố vàng, cáp rối).
+- Hook mô tả lợi ích hữu hình, dễ hình dung ngay (gọn, mịn tay, không bám vân tay, sạc cả bàn) đạt Score 4-5 → luôn gắn hook với một hình ảnh/kết quả cụ thể người đọc "thấy" được.
+- Hook dạng câu hỏi xoáy vào bực bội thường ngày ("dán làm gì?", "dùng vài tháng ố vàng?") kéo tương tác tốt hơn hook mô tả trung tính.
+- Sản phẩm phụ kiện nhỏ, giá rẻ, dùng hằng ngày (ốp lưng, cáp, củ sạc) tương tác nhỉnh hơn balo/sản phẩm lớn → ưu tiên món giá thấp, nỗi đau phổ biến.
+- Hook quá dài, nhiều chi tiết kỹ thuật/thông số (26L, 17 inch, 15.6 inch, iPhone 18 Pro, 6 cổng USB-C) kém nổi bật → rút ngắn, chỉ giữ 1 con số đắt giá nếu thật sự cần.
+- Hook về nỗi lo xa, hiếm gặp hoặc đặc thù (cháy nổ sạc dự phòng, xước ống kính "tịt luôn", mưa tạt ướt laptop) tương tác thấp → tránh dọa dẫm cường điệu, chọn nỗi đau thực tế thường xuyên.
+- Công thức nên dùng: [nỗi đau quen thuộc + cụ thể] dạng câu hỏi ngắn → gợi ra giải pháp hữu hình, kèm 1 emoji, giữ dưới ~12 từ.
