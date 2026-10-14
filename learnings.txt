@@ -1,8 +1,8 @@
-- Hook dạng "nỗi đau cụ thể + hậu quả" (ố vàng, nóng ran, trầy xước, rối cáp) cho tương tác cao nhất — luôn nêu vấn đề người dùng sợ gặp.
-- Chủ đề ốp lưng và cáp/sạc kéo tương tác tốt nhất; ưu tiên ốp (chống ố vàng, nhám chống vân tay) và cáp rút gọn.
-- Mở bằng câu hỏi tu từ "...? 😤" chạm đúng bức xúc hiệu quả hơn câu khẳng định tính năng khô khan.
-- Thêm con số/thông số cụ thể (6 cổng, 15.6 inch, 9mm) tăng độ tin và tương tác.
-- Tránh hook thiên về mô tả tiện ích trung tính (balo mở phẳng, balo 2-trong-1, gom 3 cục sạc) — tương tác thấp nhất.
-- Dùng emoji cảm xúc tiêu cực (😤😮‍💨🔥) đánh vào pain point thắng emoji mô tả (🎒💼🧳).
-- Shares luôn = 0: thêm yếu tố đáng chia sẻ (mẹo, cảnh báo "đừng mua nếu...", so sánh bất ngờ) để phá trần tương tác.
-- Hook khơi gợi tranh luận/phản trực giác ("Ốp dày chưa chắc bảo vệ tốt hơn 😏") nên khai thác mạnh để kéo comment.
+- Hook chỉ ra NỖI ĐAU cụ thể (ố vàng, chói mắt, nóng phồng) hút tương tác hơn hook khoe tính năng; ưu tiên mở đầu bằng vấn đề người dùng gặp.
+- Chủ đề ỐP LƯNG cho điểm cao nhất (ố vàng, chống rơi, vân tay) — khai thác mạnh, nhất là góc "ố vàng" (đạt Score=6).
+- Đặt câu hỏi tu từ "...?" kích comment tốt hơn câu khẳng định; nên kết hook bằng dấu hỏi gây tranh luận.
+- Hook so sánh/phản trực giác ("ốp dày chưa chắc bảo vệ tốt", "rơi 4 mét vẫn ôm trọn") tạo tò mò, nên dùng xen kẽ.
+- Chủ đề BALO cho tương tác thấp đều — tránh hook kỹ thuật khô (mở phẳng, ngăn treo), chuyển sang nỗi đau "laptop ướt/trầy/hỏng cả tuần".
+- Hook khoe thông số thuần (6 cổng, dày 9mm, 3 cục sạc) kém hiệu quả — luôn gắn thông số với hậu quả hoặc lợi ích cảm xúc.
+- Dùng emoji cảm xúc tiêu cực (😤😮‍💨🔥) mở đầu để nhấn nỗi đau; hiệu quả hơn emoji trung tính (🔌🧳📱).
+- Giữ hook ngắn 1 câu, chạm đúng 1 nỗi đau duy nhất — không nhồi nhiều lợi ích cùng lúc.
