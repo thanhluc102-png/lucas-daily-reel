@@ -1,15 +1,8 @@
-- **Hook mô tả lợi ích/tính năng cụ thể bằng con số & cảm giác thắng hook than vãn chung chung**: "Rút ra dùng, thu lại gọn", "Ốp nhám sờ mịn không bám vân tay", "2 reactions" — ưu tiên lối viết khẳng định giải pháp thay vì chỉ nêu nỗi đau.
-
-- **Chủ đề "ố vàng ốp lưng" gây tương tác tốt nhất** (Score 5-6): đánh trúng nỗi đau phổ biến, dễ gật đầu — nên khai thác tiếp các nỗi đau "ai cũng gặp" kiểu này.
-
-- **Nhóm cáp/sạc gọn gàng (USB-C, cáp rút gọn) cho Score cao (4-5)**: nhấn vào sự tiện lợi hữu hình, con số cổng/kích thước cụ thể — tiếp tục dùng format "số liệu + lợi ích tức thì".
-
-- **Hook than vãn dài dòng về balo/laptop cho tương tác thấp nhất** (đa số Score 3): tránh câu kể lể "mưa tạt, lăn lóc, cầu trời" — rút ngắn, chuyển sang nêu giải pháp nổi bật.
-
-- **Emoji 😮‍💨😤 (than thở) kém hơn 🔥🔌📱 (giải pháp/sản phẩm)**: ưu tiên emoji gợi sự hào hứng, hạn chế emoji tiêu cực mệt mỏi.
-
-- **Câu càng ngắn, gọn, có nhịp "vế A — vế B" càng dễ ăn** (ví dụ "Rút ra dùng, thu lại gọn"): viết hook dưới 12 từ, cấu trúc đối lập/liệt kê nhanh.
-
-- **Tránh hook quá kỹ thuật/thị trường ngách** ("iPhone 18 Pro thay ống kính rời"): nội dung quá hẹp khó chạm số đông, giữ nỗi đau phổ thông.
-
-- **Mọi hook nên nhắm đồng cảm tức thì để kích comment** (comment là nguồn score ổn định nhất ở đây): đặt câu hỏi hoặc tình huống người đọc muốn phản hồi.
+- Hook dạng "nỗi đau cụ thể + hậu quả" (ố vàng, nóng ran, trầy xước, rối cáp) cho tương tác cao nhất — luôn nêu vấn đề người dùng sợ gặp.
+- Chủ đề ốp lưng và cáp/sạc kéo tương tác tốt nhất; ưu tiên ốp (chống ố vàng, nhám chống vân tay) và cáp rút gọn.
+- Mở bằng câu hỏi tu từ "...? 😤" chạm đúng bức xúc hiệu quả hơn câu khẳng định tính năng khô khan.
+- Thêm con số/thông số cụ thể (6 cổng, 15.6 inch, 9mm) tăng độ tin và tương tác.
+- Tránh hook thiên về mô tả tiện ích trung tính (balo mở phẳng, balo 2-trong-1, gom 3 cục sạc) — tương tác thấp nhất.
+- Dùng emoji cảm xúc tiêu cực (😤😮‍💨🔥) đánh vào pain point thắng emoji mô tả (🎒💼🧳).
+- Shares luôn = 0: thêm yếu tố đáng chia sẻ (mẹo, cảnh báo "đừng mua nếu...", so sánh bất ngờ) để phá trần tương tác.
+- Hook khơi gợi tranh luận/phản trực giác ("Ốp dày chưa chắc bảo vệ tốt hơn 😏") nên khai thác mạnh để kéo comment.
