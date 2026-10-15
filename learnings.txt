@@ -1,8 +1,8 @@
-- Hook "nỗi đau cụ thể + hình ảnh hậu quả" (ố vàng, laptop ướt hỏng cả tuần, trầy xước) cho score cao nhất — luôn mở bằng vấn đề người dùng sợ.
-- Chủ đề ỐP LƯNG hút tương tác tốt nhất (ố vàng, bám vân tay, chống rơi) — ưu tiên khai thác, đặc biệt góc "ố vàng" đạt score 6.
-- Dùng câu hỏi tu từ xoáy vào tiền mất tật mang ("Balo 3 triệu mà...", "Củ sạc hàng trăm ngàn mà...") để kích bình luận.
-- Comment là đòn bẩy chính (hầu hết video có 1 comment); viết hook gây tranh luận/đồng cảm mạnh để đẩy số comment lên.
-- Tránh hook thiên về mô tả tính năng khô khan ("dày 9mm", "12L", "mở phẳng như vali") — kiểu này score thấp, không tạo cảm xúc.
-- Chèn emoji cảm xúc tiêu cực (😤😮‍💨🔥) đầu/cuối để tăng tính "đau" — hiệu quả hơn emoji trung tính (🎒🔌📱).
-- Nêu con số gây sốc đi kèm nỗi sợ ("rơi 4 mét", "nóng phồng cháy nổ") để tăng độ giật tít.
-- Chưa video nào có Share; thử thêm chốt "lưu lại/gửi cho đứa bạn hay làm hỏng đồ" để kích share — đòn bẩy score nặng nhất đang bỏ trống.
+- Hook mạnh nhất: "nỗi đau ố vàng/xuống cấp theo thời gian" của ốp lưng (Score 5-6 cao nhất) — nhấn hậu quả sau vài tháng dùng, gợi tiếc tiền.
+- Ốp lưng và cáp/phụ kiện nhỏ cho tương tác nhỉnh hơn balo và sạc — ưu tiên sản phẩm giá rẻ, ai cũng mua được.
+- Câu hỏi "đau ví" (củ sạc trăm ngàn mà nóng, balo 3 triệu mà tệ) khơi phản ứng tốt hơn câu kể thông số khô khan.
+- Thêm tình huống đời thường cụ thể (mưa tạt, ngồi gần cửa sổ chói mắt, cáp rối trong túi) giúp người xem tự soi mình → tăng reactions.
+- Tránh hook chỉ liệt kê tính năng/thông số (9mm, 12L, hít nam châm, mở phẳng như vali) — toàn Score 3, nhạt, không chạm cảm xúc.
+- Tránh hook sản phẩm quá ngách/tương lai (ống kính iPhone 18, ngăn treo laptop) — khó liên hệ, tương tác đáy.
+- Công thức thắng: [Nỗi đau quen thuộc + con số/tiền bạc cụ thể] + emoji bực bội (😤😮‍💨🔥), bỏ ngỏ giải pháp để kéo comment.
+- Shares đang bằng 0 toàn bộ — cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo hỏng đồ, so sánh gây sốc) để phá trần Score.
