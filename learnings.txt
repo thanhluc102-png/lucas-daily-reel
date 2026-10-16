@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "nỗi đau" cụ thể (ố vàng, nóng ran, trầy xước) cho score cao nhất — ưu tiên kiểu này.
-- Dùng icon cảm xúc mạnh (😤🔥😮‍💨) để kích comment; chủ đề ốp lưng (ố vàng, rơi vỡ) hút tương tác tốt nhất.
-- Chạm đúng nỗi sợ phổ biến: hỏng máy, cháy nổ, mất dáng máy, lộ thông tin — gợi phản hồi mạnh.
-- Thêm con số/tình huống gây sốc (rơi 4 mét, dày 9mm, 3 cục sạc) để tăng Reactions, không chỉ Comments.
-- Tránh hook mô tả tính năng khô khan ("mở phẳng như vali", "ngăn treo", "12L") — score thấp, không chạm cảm xúc.
-- Tránh mở bằng lời khẳng định sản phẩm tốt; hãy mở bằng vấn đề của người dùng trước.
-- Ưu tiên ngôi "bạn" + câu hỏi trực diện để buộc người xem tự soi mình, đẩy comment lên.
-- Giữ hook ngắn 1 dòng, 1 nỗi đau duy nhất; nhồi nhiều ý hoặc giọng quảng cáo làm giảm tương tác.
+- Dữ liệu cảnh báo: tất cả Score đều cực thấp (3–6), không có Share nào — không hook nào thực sự "thắng", nên coi đây là bài học tránh lỗi hơn là công thức vàng.
+- Hook điểm cao nhất ("Ốp đẹp mà vài tháng ố vàng là chuyện thường", Score=6) đánh vào nỗi sợ hư hỏng theo thời gian + sản phẩm phổ thông (ốp lưng) → ưu tiên pain-point quen thuộc, ai cũng từng gặp.
+- Nhóm nhỉnh hơn (Score=4–5): cáp rút gọn, ốp chống xước/giữ dáng, balo đủ chỗ — đều cụ thể, hình dung được ngay lợi ích; nên viết hook gắn với một tình huống đời thường rõ ràng.
+- Sản phẩm ốp lưng và cáp/phụ kiện sạc gọn cho tương tác tốt hơn balo và miếng dán chống nhìn trộm → ưu tiên món giá rẻ, ai cũng mua lại.
+- Hook dọa nạt kỹ thuật cao ("iPhone 18 Pro xước là tịt", "rơi 4 mét", "dày 9mm") hiệu quả yếu — tránh thông số/viễn cảnh xa lạ, thay bằng trải nghiệm người dùng tự thấy.
+- Hook balo giá tiền ("balo 3 triệu", "ba lô rẻ tiền nứt màn") đều Score=3 → tránh công kích giá tiền chung chung, không tạo cảm xúc hành động.
+- Công thức nên dùng: [nỗi đau quen thuộc hằng ngày] + [hệ quả cụ thể dễ hình dung] + emoji nhẹ, câu ngắn, kết bằng câu hỏi khơi comment (vì comment đang kéo điểm chính).
+- Mục tiêu tiếp theo: thiết kế hook kích Share (chia sẻ mẹo/cảnh báo hữu ích cho bạn bè), vì đây là yếu tố nặng điểm nhất mà toàn bộ dữ liệu đang bằng 0.
