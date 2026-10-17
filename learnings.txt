@@ -1,15 +1,8 @@
-- **Hook gây tranh luận/giật mình thắng đậm**: câu khơi mâu thuẫn ("Ốp đẹp mà vài tháng ố vàng là chuyện thường") đạt Score cao nhất (6) nhờ kéo nhiều comment — ưu tiên kiểu "sự thật phũ phàng" khiến người xem muốn phản biện.
-
-- **Mở bằng câu hỏi "nỗi đau" trực diện + con số cụ thể** (15.6 inch, 3 triệu, rơi 4 mét, 9mm) tạo tương tác tốt hơn câu mô tả chung chung.
-
-- **Nhóm sản phẩm bảo vệ máy (ốp, balo đệm laptop) hút reaction đều đặn** (Score 4) — nên khai thác tiếp, nhấn tình huống "trầy, nứt, va đập".
-
-- **Thêm emoji cảm xúc tiêu cực/châm biếm** (😮‍💨 😏 👀 😬) đi kèm hook "cà khịa" giúp tăng comment hơn emoji trung tính (🔌 📱).
-
-- **Tránh hook thuần khoe tính năng, giọng quảng cáo phẳng** ("dày 9mm, hít nam châm chắc", "mở phẳng như vali") — chỉ đạt Score đáy (3), thiếu xung đột nên không ai bình luận.
-
-- **Chạm vào sự xấu hổ/bất tiện xã hội** ("Người bên cạnh đang đọc màn hình của bạn", "Mang theo 4 cục sạc? Thôi đi") hiệu quả hơn mô tả lợi ích kỹ thuật.
-
-- **Công thức nên dùng**: [Tình huống đau cụ thể] + [câu hỏi phản vấn hoặc khẳng định gây sốc] + [1 emoji cảm xúc], giữ 1 câu, không liệt kê thông số.
-
-- **Chưa hook nào đạt Share** — thử thêm yếu tố "đáng chia sẻ" (mẹo bất ngờ, so sánh gây bão, cảnh báo thiệt hại tiền bạc) để phá trần Score.
+- Hook "bóc trần nỗi sợ/rủi ro" (ố vàng, cháy nổ, nứt màn, rơi vỡ) cho tương tác cao nhất — luôn mở bằng vấn đề đau nhất của người dùng.
+- Dùng câu hỏi khiêu khích + chê ngầm thói quen cũ ("Mang theo 4 cục sạc? Thôi đi", "nhét laptop rồi cầu trời?") kéo comment tốt nhất.
+- Nhóm sản phẩm ốp lưng và sạc đa năng/GaN hiệu quả nhất; ưu tiên khai thác hai dòng này.
+- Chèn con số cụ thể gây sốc (rơi 4 mét, dày 9mm, 4 thiết bị) để tăng độ tin và tò mò.
+- Emoji đặt cuối câu, chọn loại cảm xúc (😮‍💨 😏 😬 👀) thay vì emoji sản phẩm trung tính (🔌 📱) — cảm xúc kéo tương tác hơn.
+- Tránh hook mô tả tính năng phẳng, tự khen ("Balo mở phẳng như vali", "Sạc dày 9mm hít nam châm") — không gợi cảm xúc, tương tác thấp nhất.
+- Tránh lặp lại hook y hệt nhau (ốp rơi 4 mét) — trùng lặp làm loãng và không tăng tương tác.
+- Hook nên đánh trực tiếp vào "bạn" (ngôi thứ hai) + tình huống đời thường cụ thể để người đọc tự nhận ra mình.
