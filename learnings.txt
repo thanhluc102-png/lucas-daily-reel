@@ -1,8 +1,8 @@
-- Score cao nhất (6) rơi vào hook chạm "nỗi sợ lãng phí tiền/nhiều thiết bị rườm rà" (ốp ố vàng, mang 4 cục sạc) → ưu tiên khai thác cảm giác phí tiền, phí công, bất tiện lặp lại.
-- Hook dạng câu hỏi gây nhói ("Thôi đi", "làm gì?", "để đáy rồi cầu trời?") kích comment tốt hơn câu kể trần thuật → mở bằng câu hỏi hoặc phản bác thẳng.
-- Nhóm ốp lưng và balo ăn tương tác ổn định nhất; sạc dự phòng và phụ kiện chống nhìn trộm/chống chói yếu hơn → đẩy mạnh ốp + balo, hạn chế spam sạc.
-- Hook nêu con số cụ thể gây sốc (rơi 4 mét, dày 9mm, 12L, 15.6 inch) tăng độ tin và nhích Reactions → luôn chèn 1 số liệu ấn tượng.
-- Hook phá vỡ định kiến ("dày chưa chắc bảo vệ tốt hơn", "balo 3 triệu vẫn dở") tạo tò mò → dùng cấu trúc "tưởng vậy mà không phải vậy".
-- Tránh hook mô tả tính năng phẳng, kể công dụng đơn thuần (ngăn treo, mở phẳng như vali) vì chỉ đạt Score đáy (3) → đừng mở bằng lời khen sản phẩm.
-- Dùng 1 emoji cuối hook đúng ngữ cảnh (😮‍💨 😏 👀) để tăng sắc thái cảm xúc; không nhồi nhiều emoji.
-- Công thức thắng: [Nỗi đau/phí tiền cụ thể] + [số liệu sốc hoặc phản định kiến] + [câu hỏi hoặc chốt cụt] → tối đa comment và share.
+- Hook mạnh nhất: nêu nỗi đau "mất thẩm mỹ theo thời gian" (ố vàng) — Score 6 cao nhất, khai thác lo ngại sản phẩm xuống cấp sau vài tháng.
+- Mở bằng câu hỏi/khẳng định chạm nỗi sợ cụ thể (xước, nứt màn, rơi vỡ, cháy nổ) cho tương tác nhỉnh hơn hook mô tả tính năng khô khan.
+- Ốp lưng là nhóm sản phẩm hút tương tác tốt nhất (nhiều Score 4-6); ưu tiên khai thác chủ đề ốp.
+- Chèn con số/chi tiết gây sốc (rơi 4m, dày 9mm, 4 cục sạc) giúp tăng reaction so với hook chung chung.
+- Gắn tên thiết bị cụ thể (iPhone 17/18 Pro, laptop 15.6 inch) tăng độ liên quan và nhỉnh hơn hook mơ hồ.
+- Tránh hook thuần liệt kê thông số (dung tích 12L, dày 9mm, ngăn treo) khi thiếu yếu tố cảm xúc — chỉ đạt Score 3.
+- Dùng emoji cảm xúc (😮‍💨 😏 👀 🔥) đúng ngữ cảnh để tăng sức nặng nỗi đau, hạn chế emoji trung tính mô tả.
+- Toàn bộ chưa có Share nào: thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo nguy hiểm thật) thay vì chỉ quảng cáo bán hàng.
