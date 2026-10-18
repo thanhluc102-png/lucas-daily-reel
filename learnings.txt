@@ -1,8 +1,8 @@
-- Ưu tiên hook chỉ thẳng nỗi đau "mất dáng/ố vàng/xấu đi" của món đồ đẹp → điểm cao nhất (Score 5-6), vì chạm cảm xúc sợ hỏng món đồ yêu thích.
-- Dùng con số/tình huống cực đoan gây sốc nhẹ ("rơi 4 mét", "dày cả centimet", "3 triệu mà...") để tăng reactions.
-- Ốp lưng là nhóm sản phẩm tương tác tốt nhất; nên khai thác nhiều, xoáy vào thẩm mỹ + độ bền đồng thời.
-- Hook kiểu "người bên cạnh đang đọc màn hình/tin nhắn" (khơi gợi quyền riêng tư) chỉ đạt mức sàn → viết lại cho cụ thể, kịch tính hơn.
-- Tránh hook mô tả thông số khô khan ("dày 9mm", "12L", "mở phẳng như vali") → toàn Score 3, thiếu cảm xúc.
-- Mỗi hook nên có 1 emoji cuối đúng ngữ cảnh; emoji cảm xúc (😮‍💨😏😮) nhỉnh hơn emoji vật phẩm (🔋🎒🔌).
-- Không lặp lại hook y hệt ("Ốp rơi 4 mét" xuất hiện 2 lần, cùng Score thấp) → luôn làm mới câu chữ.
-- Toàn bộ video gần như 0 share: cần thêm yếu tố "đáng khoe/đáng cảnh báo cho bạn bè" để kích share, đòn bẩy điểm lớn nhất.
+- Mở hook bằng nỗi đau/cảnh báo cụ thể ("ố vàng", "nứt màn", "đọc trộm tin nhắn") cho Score cao nhất — ưu tiên kiểu này.
+- Ốp lưng là nhóm sản phẩm ăn tương tác tốt nhất; tập trung khai thác (chống ố, mỏng-đẹp, chống sốc).
+- Dùng con số/chi tiết gây sốc ("rơi 4 mét", "dày cả centimet", "9mm") để tăng reactions.
+- Đặt câu hỏi phản biện thói quen ("Mang 3-4 cục sạc làm gì?") giữ được comment nhưng reactions thấp — dùng vừa phải.
+- Chèn emoji cảm xúc mạnh (😮‍💨 😏 👀 😬) đúng ngữ cảnh pain-point, tránh emoji trung tính (🎒 🧳) kém hiệu quả.
+- Tránh hook mô tả tính năng khô khan ("mở phẳng như vali", "ngăn treo") — Score thấp nhất.
+- Không lặp lại hook y hệt ("rơi 4 mét" bị trùng) — mỗi reel một góc đau mới để tránh loãng.
+- Toàn bộ reel đang 0 share: thêm yếu tố "đáng kể cho bạn bè" (mẹo, cảnh báo thiệt hại tiền bạc) để kích share.
