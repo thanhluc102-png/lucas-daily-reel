@@ -1,8 +1,8 @@
-- Mở hook bằng nỗi đau/cảnh báo cụ thể ("ố vàng", "nứt màn", "đọc trộm tin nhắn") cho Score cao nhất — ưu tiên kiểu này.
-- Ốp lưng là nhóm sản phẩm ăn tương tác tốt nhất; tập trung khai thác (chống ố, mỏng-đẹp, chống sốc).
-- Dùng con số/chi tiết gây sốc ("rơi 4 mét", "dày cả centimet", "9mm") để tăng reactions.
-- Đặt câu hỏi phản biện thói quen ("Mang 3-4 cục sạc làm gì?") giữ được comment nhưng reactions thấp — dùng vừa phải.
-- Chèn emoji cảm xúc mạnh (😮‍💨 😏 👀 😬) đúng ngữ cảnh pain-point, tránh emoji trung tính (🎒 🧳) kém hiệu quả.
-- Tránh hook mô tả tính năng khô khan ("mở phẳng như vali", "ngăn treo") — Score thấp nhất.
-- Không lặp lại hook y hệt ("rơi 4 mét" bị trùng) — mỗi reel một góc đau mới để tránh loãng.
-- Toàn bộ reel đang 0 share: thêm yếu tố "đáng kể cho bạn bè" (mẹo, cảnh báo thiệt hại tiền bạc) để kích share.
+- Điểm số toàn bộ rất thấp (3–6), khác biệt nhỏ nên chỉ dùng làm tín hiệu tham khảo, không kết luận tuyệt đối.
+- Hook thắng nhất là "nỗi đau + hậu quả cụ thể" (ố vàng, mất dáng, nứt màn, rơi 4m): ưu tiên nêu rủi ro người dùng dễ hình dung.
+- Sản phẩm ốp lưng cho tương tác nhỉnh hơn (Score 4–6); nên khai thác mạnh hook về ốp: chống ố, mỏng-đẹp, chống sốc.
+- Dùng câu hỏi gây tò mò/khịa nhẹ ("làm gì?", "thôi đi", "cầu trời?") để kích bình luận — comment là nguồn điểm chính.
+- Tránh hook mô tả tính năng khô khan, trung tính (9mm, 12L, ngăn treo, mở phẳng): chỉ đạt Score 3, kém hiệu quả.
+- Không lặp lại hook trùng ý ("ốp rơi 4 mét", "người bên cạnh đang đọc"): bản lặp không tăng tương tác.
+- Thêm yếu tố riêng tư/an toàn cá nhân (bị nhìn trộm màn hình, mất đồ) có tiềm năng nhưng cần viết sắc hơn để bật điểm.
+- Chưa có share nào: thử thêm hook "mẹo/cảnh báo hữu ích đáng lưu" để kích chia sẻ, đòn bẩy điểm mạnh nhất.
