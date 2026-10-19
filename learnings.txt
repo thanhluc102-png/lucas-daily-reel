@@ -1,8 +1,8 @@
-- Hook nêu nỗi đau/rủi ro cụ thể gây khó chịu ("ố vàng", "nứt màn", "đọc trộm màn hình") cho tương tác cao nhất — ưu tiên dạng này.
-- Score cao nhất (6) đến từ hook ngắn gọn chạm "tiếc tiền/mất mặt" kèm emoji 😮‍💨; nhân rộng công thức: vấn đề quen thuộc + hệ quả tệ.
-- Hook dạng câu hỏi khơi tò mò ("Người bên cạnh đang đọc...", "Mang 3 cục sạc làm gì?") kéo comment tốt — dùng câu hỏi mở đầu.
-- Thêm số liệu/chứng nhận gây sốc ("rơi 4-6 mét", "SGS", "9mm") giúp tăng reaction — chèn thông số ấn tượng.
-- Tránh hook trùng lặp gần như y hệt ("Ốp rơi 4 mét..." lặp 2 lần đều Score=3) — luôn làm mới câu chữ.
-- Tránh hook thiên mô tả tính năng khô khan, thiếu cảm xúc ("Ngăn laptop kiểu treo...", "Sạc dự phòng dày 9mm") — chúng cho Score thấp nhất (3).
-- Tất cả video đều 0 share: thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo nguy hiểm, con số gây choáng) để nâng Score.
-- Mỗi hook nên có đúng 1 emoji cuối câu hợp ngữ cảnh (😮‍💨 cho bực bội, 👀 cho tò mò, 💥 cho ấn tượng).
+- **Hook "nỗi đau ngầm" (ố vàng, nứt màn, lộ màn hình, ướt đồ) cho Score cao nhất** — ưu tiên khơi vấn đề người dùng chưa để ý, điển hình "Ốp đẹp mà vài tháng ố vàng" (Score 6).
+- **Mở đầu bằng câu hỏi gây lo lắng hoặc tình huống thật** ("Người bên cạnh đang đọc...", "Xe thủng lốp giữa đường...") kéo được cả Reactions lẫn Comments — dùng nhiều.
+- **Chủ đề ốp lưng và balo là nhóm tương tác ổn định nhất**; nên khai thác sâu hai dòng này, thêm biến thể hook mới thay vì lặp.
+- **Tránh hook khoe thông số/tính năng khô khan** ("Sạc dự phòng dày 9mm", "Ngăn laptop kiểu treo", "1 balo cho cả đi làm") — chỉ đạt Score 3, kém nhất.
+- **Chèn số liệu gây sốc + chứng nhận** ("rơi 4 mét", "6 mét đạt SGS") giúp nhích Reactions; kết hợp với nỗi đau sẽ mạnh hơn.
+- **Không lặp lại hook y hệt** (ví dụ "Ốp rơi 4 mét" xuất hiện 2 lần, cả hai đều Score 3) — mỗi reel cần góc tiếp cận riêng.
+- **Dùng emoji cảm xúc (😮‍💨 😏 👀 😬)** đi kèm câu khơi lo lắng, tránh emoji trung tính (📱 🔌 🎒) đứng một mình.
+- **Mục tiêu tối ưu Comments** (trọng số 3) bằng câu hỏi mở cuối hook; Shares gần như 0 nên chưa cần tối ưu, tập trung gây tranh luận/đồng cảm.
