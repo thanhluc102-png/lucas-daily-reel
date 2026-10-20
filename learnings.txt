@@ -1,8 +1,8 @@
-- Dùng hook chạm nỗi đau/rủi ro cụ thể ("balo rẻ làm nứt màn laptop", "người bên cạnh đọc tin nhắn", "thủng lốp giữa đường") — cho Score cao nhất (4-5).
-- Ưu tiên công thức phản trực giác + con số sốc ("ốp dày chưa chắc bảo vệ tốt hơn", "ốp dày cả centimet làm mất dáng iPhone 17") — kích Reactions.
-- Hook dạng câu hỏi gợi tình huống đời thường ("bàn bạn có bao nhiêu củ sạc chằng chịt?", "balo gặp mưa ướt hết?") hiệu quả hơn hook tả tính năng khô khan.
-- Tránh hook chỉ liệt kê thông số/tính năng ("sạc dày 9mm hít nam châm", "balo 12L", "ngăn laptop treo") — Score thấp nhất (3).
-- Tránh lặp lại hook trùng ý ("ốp rơi 4-6 mét vẫn ôm máy") lặp nhiều lần làm tụt tương tác dần.
-- Luôn nhắm vào cảm xúc lo sợ mất mát/hư hỏng ("để quên hộ chiếu", "đồ ướt hết") để tăng Comments.
-- Thêm yếu tố bất ngờ hoặc thách thức niềm tin ở đầu câu, đẩy lợi ích/thông số xuống sau.
-- Giữ hook ngắn, 1 câu, 1 emoji chốt cảm xúc; chèn tên sản phẩm cụ thể (iPhone 17) để tăng độ liên quan.
+- Hook ưu tiên kiểu "nỗi đau cụ thể + hậu quả" (ố vàng, nứt màn, đọc trộm tin nhắn, mất hộ chiếu) — cho điểm cao nhất, nhất là khi gợi cảnh ai cũng từng gặp.
+- Nhóm ốp lưng "nỗi sợ xuống cấp/mất dáng máy" (ố vàng Score=6, ốp dày mất dáng Score=5) hiệu quả hơn nhóm "khoe thông số rơi X mét" vốn chỉ loanh quanh Score=3-4.
+- Tránh nhồi số liệu kỹ thuật khô khan làm hook chính (rơi 4m, 6m, SGS, 12L, 15.6 inch) — gây tò mò yếu, nên để xuống phần thân.
+- Ưu tiên hook dạng câu hỏi khơi nỗi lo ("Người bên cạnh đang đọc...", "Xe thủng lốp giữa đường, bơm đâu kịp?") — kéo comment đều hơn câu khẳng định thông số.
+- Thêm yếu tố cá nhân hóa, chạm trực tiếp người xem ("của bạn", "tin nhắn của bạn", "iPhone 17 của bạn") giúp tăng reaction.
+- Không lặp lại hook gần giống nhau (ốp rơi 4m/6m trùng nhiều lần) — biến thể trùng làm loãng, điểm không nhỉnh hơn.
+- Chọn chủ đề đời thường, rủi ro dễ hình dung (mưa ướt đồ, mất đồ công tác) thay vì tính năng chung chung ("1 balo cho cả đi làm" Score=3 — quá nhạt).
+- Mọi hook nên kèm emoji cảm xúc/tình huống (😮‍💨 😰 👀 ☔) đặt cuối câu để tăng sức gợi, tránh emoji trung tính.
