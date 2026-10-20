@@ -1,8 +1,8 @@
-- **Hook "nỗi đau ngầm" (ố vàng, nứt màn, lộ màn hình, ướt đồ) cho Score cao nhất** — ưu tiên khơi vấn đề người dùng chưa để ý, điển hình "Ốp đẹp mà vài tháng ố vàng" (Score 6).
-- **Mở đầu bằng câu hỏi gây lo lắng hoặc tình huống thật** ("Người bên cạnh đang đọc...", "Xe thủng lốp giữa đường...") kéo được cả Reactions lẫn Comments — dùng nhiều.
-- **Chủ đề ốp lưng và balo là nhóm tương tác ổn định nhất**; nên khai thác sâu hai dòng này, thêm biến thể hook mới thay vì lặp.
-- **Tránh hook khoe thông số/tính năng khô khan** ("Sạc dự phòng dày 9mm", "Ngăn laptop kiểu treo", "1 balo cho cả đi làm") — chỉ đạt Score 3, kém nhất.
-- **Chèn số liệu gây sốc + chứng nhận** ("rơi 4 mét", "6 mét đạt SGS") giúp nhích Reactions; kết hợp với nỗi đau sẽ mạnh hơn.
-- **Không lặp lại hook y hệt** (ví dụ "Ốp rơi 4 mét" xuất hiện 2 lần, cả hai đều Score 3) — mỗi reel cần góc tiếp cận riêng.
-- **Dùng emoji cảm xúc (😮‍💨 😏 👀 😬)** đi kèm câu khơi lo lắng, tránh emoji trung tính (📱 🔌 🎒) đứng một mình.
-- **Mục tiêu tối ưu Comments** (trọng số 3) bằng câu hỏi mở cuối hook; Shares gần như 0 nên chưa cần tối ưu, tập trung gây tranh luận/đồng cảm.
+- Hook nêu **nỗi đau cụ thể + cà khịa nhẹ** (ốp dày mất dáng, balo rẻ nứt màn) cho score cao nhất (5); ưu tiên chạm đúng bực bội thật của người dùng.
+- Dạng **câu hỏi gợi hình huống bức xúc** ("Bàn bạn bao nhiêu củ sạc cắm chằng chịt?", "Gặp mưa ướt hết?") kéo tương tác ổn định (4); nên dùng làm khung chính.
+- Hook có **số liệu/chứng nhận gây sốc** (rơi 4-6m, SGS, dày 9mm) tạo tò mò bình luận; chèn 1 con số bất ngờ mỗi hook.
+- Ốp lưng và balo là 2 nhóm sản phẩm hút tương tác nhất; đẩy mạnh nội dung 2 nhóm này.
+- Hook **mô tả tính năng khô khan, không có xung đột** ("1 balo cho đi làm lẫn du lịch", "ngăn laptop kiểu treo") chỉ đạt score thấp (3); tránh kiểu liệt kê công dụng suông.
+- Tránh **lặp lại hook y hệt** (ốp rơi 4m xuất hiện 2 lần) vì không tạo thêm giá trị, gây loãng.
+- Mỗi hook nên có **1 emoji cuối** khớp cảm xúc/sản phẩm (😮‍💨 😏 👀 💥) để tăng sức gợi.
+- Khơi **tâm lý lo sợ mất mát/hớ hênh** (bị đọc lén màn hình, quên hộ chiếu, mất đồ công tác) để kích bình luận — nhưng cần kèm giải pháp sản phẩm rõ ràng.
