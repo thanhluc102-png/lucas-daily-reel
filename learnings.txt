@@ -1,8 +1,8 @@
-- Hook nêu **con số cụ thể + chứng nhận** (ốp rơi 4-6m, đạt SGS) đạt score cao; dùng số liệu gây sốc để tăng reactions.
-- Hook dạng **câu hỏi chạm nỗi đau** ("Balo gặp mưa ướt hết?", "Bàn có bao nhiêu củ sạc?", "Bơm đâu cho kịp?") cho tương tác ổn định 4 điểm; ưu tiên kiểu này.
-- Hook khơi **nỗi sợ mất mát/riêng tư** (quên hộ chiếu, người bên cạnh đọc màn hình, balo rẻ làm nứt máy) hiệu quả; khai thác cảm xúc lo lắng.
-- Tránh hook **mô tả tính năng khô khan, không số liệu, không nỗi đau** ("Ngăn laptop kiểu treo", "1 balo cho cả đi làm lẫn du lịch", "Một ổ cắm sạc cả bàn") — chỉ đạt score thấp nhất.
-- Tránh **lặp lại hook y hệt** (ốp rơi 4 mét xuất hiện 2 lần) và hook **so sánh mơ hồ** ("Ốp dày chưa chắc bảo vệ tốt hơn") vì tương tác kém.
-- Nên **đặt emoji phù hợp ngữ cảnh** (📱🎒🔌☔) ngay cuối hook để tăng nhận diện sản phẩm.
-- Ưu tiên nhóm sản phẩm **ốp chống sốc & balo chống nước/chống trộm** vì hook dễ gắn số liệu và nỗi đau rõ ràng.
-- Công thức mạnh nhất: **nỗi đau cụ thể hoặc con số gây sốc + lợi ích rõ ràng**, câu ngắn, kết bằng dấu hỏi hoặc emoji cảm xúc.
+- Hook nêu **nỗi đau cụ thể + chi tiết số đo** (dày cả centimet, rơi 4-6 mét, balo 12L/15.6 inch) cho Score cao nhất; tránh hook chung chung mơ hồ.
+- Mở bằng **tình huống tai họa quen thuộc** (xe thủng lốp, quên hộ chiếu, mưa ướt đồ, nứt màn laptop) hiệu quả hơn mô tả tính năng khô khan.
+- Thêm **bằng chứng/chứng nhận** (SGS, rơi 6 mét không nứt) giúp tăng Reactions so với khẳng định suông.
+- Dùng **câu hỏi khơi tò mò/phản trực giác** ("Ốp dày chưa chắc bảo vệ tốt hơn") hút comment nhưng ít reaction — nên kết hợp thêm con số gây sốc.
+- Hook **liệt kê rườm rà, nhàn nhạt** ("1 balo cho cả đi làm lẫn du lịch", "một ổ cắm sạc cả bàn") cho Score thấp nhất, nên tránh.
+- Nhóm sản phẩm **ốp lưng & balo** ăn tương tác tốt nhất; khai thác kịch bản bảo vệ thiết bị/chống sốc/chống nước.
+- Mỗi hook nên có **1 emoji gợi cảm xúc** (😮 😏 👀 ☔) đặt cuối câu, đúng tông tình huống.
+- Giữ hook **1 câu, dưới 15 từ**, đánh thẳng vào mất mát/rủi ro của người dùng thay vì khoe ưu điểm sản phẩm.
