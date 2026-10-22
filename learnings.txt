@@ -1,8 +1,7 @@
-- Hook nêu **thông số/bằng chứng cụ thể** (dày cả cm, chứng nhận SGS, rơi 4-6 mét) cho score cao nhất (5) — luôn chèn số liệu hoặc chứng nhận đáng tin.
-- Hook khơi **nỗi sợ/rủi ro thực tế** (nứt màn laptop, mất hộ chiếu, thủng lốp, bị đọc lén màn hình) đạt score 4 ổn định — ưu tiên kịch bản "mất mát/tai nạn" người đọc tự thấy mình trong đó.
-- Hook dạng **câu hỏi đặt vấn đề** ("bao nhiêu củ sạc cắm chằng chịt?", "balo gặp mưa ướt hết?") hiệu quả hơn câu khẳng định chung chung.
-- Tránh hook **mô tả tính năng khô khan, lợi ích mơ hồ** ("1 balo cho cả đi làm lẫn du lịch", "một ổ cắm sạc cả bàn", "đồ lộn xộn trong balo") — toàn rơi xuống score 3.
-- Tránh **lặp lại hook gần giống nhau** (rơi 4 mét × nhiều lần, đọc lén màn hình × nhiều lần) — bản sau không tăng tương tác, nên đổi góc tiếp cận mới.
-- Tránh nêu **giá tiền cao làm cái cớ** ("balo 4 triệu vẫn sợ ướt") — phản tác dụng, score thấp.
-- Luôn **mở đầu bằng tình huống căng/bất ngờ + emoji cảm xúc** (😮 😰 👀), cài con số gây sốc ngay câu đầu để chặn lướt.
-- Toàn bộ dữ liệu **Share=0** — thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo cho người thân, tình huống ai cũng gặp) để kéo chỉ số nặng ký nhất.
+- Dữ liệu quá đồng đều (Score 3-6, Shares=0 toàn bộ), chênh lệch nhỏ nên mọi kết luận chỉ mang tính tham khảo, cần thêm mẫu để chắc chắn.
+- Hook thắng nhất (Score=6): nêu "giá cao nhưng vẫn gặp vấn đề" ("Balo 4 triệu mà vẫn sợ nước mưa") — tạo nghịch lý đắt-tiền-vẫn-dở, kích bình luận.
+- Hook mạnh: chèn con số cụ thể + chứng nhận ("rơi 6m", "SGS", "4 mét") hoặc tình huống thiệt hại thật ("nứt màn laptop", "ác mộng quên hộ chiếu").
+- Dạng câu hỏi khơi nỗi đau cá nhân ("Người bên cạnh đang đọc tin nhắn của bạn 👀") giữ tương tác ổn, nên dùng.
+- Hook kém (Score=3): câu mô tả tính năng phẳng, không nghịch lý, không nỗi đau ("1 balo cho cả đi làm lẫn du lịch", "Một ổ cắm sạc cả bàn") — tránh kiểu liệt kê công dụng.
+- Shares=0 toàn bộ: chưa hook nào đủ "đáng chia sẻ"; nên thử thêm yếu tố bất ngờ/hữu ích để lưu-gửi (mẹo, cảnh báo an toàn).
+- Công thức nên lặp: [Nghịch lý hoặc nỗi đau cụ thể] + [con số/bằng chứng] + [emoji cảm xúc] → đẩy tỉ lệ comment.
