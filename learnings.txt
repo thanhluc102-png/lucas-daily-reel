@@ -1,8 +1,8 @@
-- Hook nêu **nỗi đau cụ thể + chi tiết số đo** (dày cả centimet, rơi 4-6 mét, balo 12L/15.6 inch) cho Score cao nhất; tránh hook chung chung mơ hồ.
-- Mở bằng **tình huống tai họa quen thuộc** (xe thủng lốp, quên hộ chiếu, mưa ướt đồ, nứt màn laptop) hiệu quả hơn mô tả tính năng khô khan.
-- Thêm **bằng chứng/chứng nhận** (SGS, rơi 6 mét không nứt) giúp tăng Reactions so với khẳng định suông.
-- Dùng **câu hỏi khơi tò mò/phản trực giác** ("Ốp dày chưa chắc bảo vệ tốt hơn") hút comment nhưng ít reaction — nên kết hợp thêm con số gây sốc.
-- Hook **liệt kê rườm rà, nhàn nhạt** ("1 balo cho cả đi làm lẫn du lịch", "một ổ cắm sạc cả bàn") cho Score thấp nhất, nên tránh.
-- Nhóm sản phẩm **ốp lưng & balo** ăn tương tác tốt nhất; khai thác kịch bản bảo vệ thiết bị/chống sốc/chống nước.
-- Mỗi hook nên có **1 emoji gợi cảm xúc** (😮 😏 👀 ☔) đặt cuối câu, đúng tông tình huống.
-- Giữ hook **1 câu, dưới 15 từ**, đánh thẳng vào mất mát/rủi ro của người dùng thay vì khoe ưu điểm sản phẩm.
+- Hook nêu **thông số/bằng chứng cụ thể** (dày cả cm, chứng nhận SGS, rơi 4-6 mét) cho score cao nhất (5) — luôn chèn số liệu hoặc chứng nhận đáng tin.
+- Hook khơi **nỗi sợ/rủi ro thực tế** (nứt màn laptop, mất hộ chiếu, thủng lốp, bị đọc lén màn hình) đạt score 4 ổn định — ưu tiên kịch bản "mất mát/tai nạn" người đọc tự thấy mình trong đó.
+- Hook dạng **câu hỏi đặt vấn đề** ("bao nhiêu củ sạc cắm chằng chịt?", "balo gặp mưa ướt hết?") hiệu quả hơn câu khẳng định chung chung.
+- Tránh hook **mô tả tính năng khô khan, lợi ích mơ hồ** ("1 balo cho cả đi làm lẫn du lịch", "một ổ cắm sạc cả bàn", "đồ lộn xộn trong balo") — toàn rơi xuống score 3.
+- Tránh **lặp lại hook gần giống nhau** (rơi 4 mét × nhiều lần, đọc lén màn hình × nhiều lần) — bản sau không tăng tương tác, nên đổi góc tiếp cận mới.
+- Tránh nêu **giá tiền cao làm cái cớ** ("balo 4 triệu vẫn sợ ướt") — phản tác dụng, score thấp.
+- Luôn **mở đầu bằng tình huống căng/bất ngờ + emoji cảm xúc** (😮 😰 👀), cài con số gây sốc ngay câu đầu để chặn lướt.
+- Toàn bộ dữ liệu **Share=0** — thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, cảnh báo cho người thân, tình huống ai cũng gặp) để kéo chỉ số nặng ký nhất.
