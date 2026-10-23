@@ -1,15 +1,8 @@
-- **Lưu ý dữ liệu nhỏ**: Score dao động 3–6, chênh lệch rất thấp (0 share, comment gần như luôn =1), nên khác biệt chủ yếu đến từ Reactions — kết luận mang tính xu hướng, không tuyệt đối.
-
-- **Hook thắng nổi bật (Score=6)**: Nêu nghịch lý "trả giá cao vẫn dính lỗi" — "Balo 4 triệu mà vẫn sợ nước mưa làm ướt laptop?". Công thức: đồ đắt tiền + vẫn gặp rủi ro → tạo tò mò + tranh luận.
-
-- **Hook tạo Reaction tốt (Score=4)**: Đánh vào nỗi sợ mất mát/sự cố cụ thể, có thật, dễ hình dung — "Để quên hộ chiếu ở sân bay", "Xe thủng lốp giữa đường", "Người bên cạnh đang đọc tin nhắn của bạn", "Ba lô rẻ làm nứt màn laptop".
-
-- **Thêm bằng chứng cụ thể tăng độ tin**: Con số + chứng nhận ("rơi 6 mét vẫn nguyên", "chứng nhận SGS") cho Score 4 cao hơn mô tả chung chung.
-
-- **Hook kém (Score=3) nên tránh**: Câu mô tả tính năng khô khan, hỏi chung chung, thiếu kịch tính — "1 balo cho đi làm lẫn du lịch", "Một ổ cắm sạc cả bàn", "Tai nghe cáp sạc lộn xộn trong balo". Thiếu nỗi đau/nghịch lý sắc bén.
-
-- **Công thức viết nên dùng**: Nỗi đau cụ thể hoặc nghịch lý → gây sốc bằng con số/tình huống → emoji cảm xúc (👀😬😮) ở cuối. Ưu tiên câu hỏi khiến người đọc giật mình về chính mình.
-
-- **Góc "quyền riêng tư / bị nhìn trộm" và "mất đồ khi đi công tác"** cho tương tác ổn định — khai thác thêm.
-
-- **Cần cải thiện lớn nhất**: Chưa reel nào có Share. Thử hook mang tính cảnh báo hữu ích ("gửi ngay cho người hay quên đồ") hoặc mẹo đáng chia sẻ để kéo Shares — đòn bẩy Score nặng nhất.
+- Dữ liệu quá đồng đều (Score 3-4, không share nào) ⇒ khác biệt nhỏ, đọc kết quả thận trọng; tín hiệu mạnh nhất là Comments vì kéo Score lên.
+- Hook gợi "mất mát/ác mộng" (mất ví, quên hộ chiếu, nứt màn laptop, ướt đồ) đạt Score cao đều 4 ⇒ ưu tiên khơi nỗi sợ hậu quả cụ thể.
+- Hook thắng tuyệt đối (Score 6): "Balo 4 triệu mà vẫn sợ nước mưa làm ướt laptop?" ⇒ công thức "đồ đắt tiền NHƯNG vẫn dính lỗi" tạo tranh luận, kéo 2 comment.
+- Đặt câu hỏi trực diện + chạm vào tiền bạc/giá trị cao (4 triệu, 4 cục sạc) khơi phản ứng tốt hơn câu khẳng định khô khan.
+- Hook khẳng định thông số đơn thuần ("Rơi 4 mét vẫn không sao, SGS", "Một ổ cắm sạc cả bàn") chỉ Score 3 ⇒ tránh liệt kê tính năng kiểu quảng cáo, thiếu cảm xúc.
+- Con số gây sốc nên gắn với nỗi sợ ("rơi 6 mét", "4 mét nứt màn") thay vì khoe thành tích; drama > chứng nhận.
+- Emoji lo lắng (😬☔😰👀) hợp hook nỗi sợ; emoji 💥 khoe thông số cho tương tác kém hơn.
+- Công thức nên nhân rộng: [Sản phẩm/giá cao] + [vẫn gặp vấn đề tệ?] + [dấu hỏi] + [emoji lo âu].
