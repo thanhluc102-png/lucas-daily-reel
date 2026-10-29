@@ -85,7 +85,12 @@ async function download(urlStr, dest) {
       'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8',
     },
   });
-  if (!res.ok) throw new Error(`tải ảnh ${res.status}: ${urlStr}`);
+  if (!res.ok) {
+    const body = await res.text();
+    const server = res.headers.get("server");
+    const cfRay = res.headers.get("cf-ray");
+    throw new Error(`tải ảnh ${res.status} [server: ${server}, cf-ray: ${cfRay}]: ${urlStr} | body: ${body.slice(0, 200).replace(/\s+/g, " ")}`);
+  }
   const buf = Buffer.from(await res.arrayBuffer());
   if (buf.length < 5000) throw new Error(`ảnh nghi hỏng (${buf.length}B): ${urlStr}`);
   fs.writeFileSync(dest, buf);
