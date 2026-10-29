@@ -1,15 +1,8 @@
-- **Hook số cụ thể + chứng nhận (giá tiền, độ bền, SGS):** "Balo 4 triệu mà vẫn sợ ướt laptop?" đạt Score cao nhất (6) — luôn gắn con số gây sốc + phản đề để kích comment.
-
-- **Hook khơi nỗi sợ mất mát/riêng tư:** "Người bên cạnh đang đọc tin nhắn của bạn 👀", "Để quên hộ chiếu ở sân bay" — cho tương tác khá (Score 4), ưu tiên cảm giác bất an cá nhân.
-
-- **Công thức thắng: Câu hỏi đặt thẳng vào tình huống đau (?) + emoji đơn** → kéo comment tốt hơn câu khẳng định.
-
-- **Mở bằng Reactions=1:** các hook có phản ứng ngay (nỗi sợ mưa, thủng lốp, rơi vỡ, riêng tư) nhỉnh hơn hook mô tả tính năng thuần.
-
-- **Nên tránh hook mô tả tính năng khô khan:** "Balo mở toang 180°", "Sạc dự phòng còn mang cáp rời", "Một ổ cắm sạc cả bàn" — chỉ Score 3, thiếu cảm xúc/xung đột.
-
-- **Tránh hook chung chung không số liệu:** "1 balo cho cả đi làm lẫn du lịch", "Một chuyến công tác cần bao nhiêu túi?" — mờ nhạt, Reactions=0.
-
-- **Luôn chèn phản đề/nghịch lý** ("4 triệu mà vẫn sợ", "6 mét không nứt") thay vì khen suông — nghịch lý kéo bình luận phản biện.
-
-- **Share = 0 toàn bộ:** cần thử hook mang tính "cứu nguy/mẹo phải lưu lại" hoặc kêu gọi tag bạn bè để phá ngưỡng share.
+- Hook dạng câu hỏi khơi nỗi sợ/thiệt hại cụ thể ("Balo 4 triệu mà vẫn sợ nước mưa làm ướt laptop?") cho tương tác cao nhất — ưu tiên kiểu này.
+- Gắn con số gây sốc + bằng chứng (chứng nhận SGS, rơi 6 mét) tạo tò mò, nhưng cần đẩy mạnh hơn để bật share.
+- Nhấn vào mất mát/an toàn cá nhân (mất ví, lộ tin nhắn, mất hộ chiếu) hiệu quả hơn mô tả tính năng khô khan.
+- Tránh hook chỉ liệt kê tiện ích chung chung ("1 balo cho cả đi làm lẫn du lịch", "mở toang 180°") — toàn Score thấp.
+- Tránh hook về sạc/ổ cắm kiểu thông báo tính năng ("Một ổ cắm sạc cả bàn") — tương tác kém đều.
+- Luôn mở bằng tình huống đau (pain point) ở câu đầu, không mở bằng đặc điểm sản phẩm.
+- Dùng emoji gợi cảm xúc (😰😮👀) thay emoji mô tả vật (🔌🎒) để tăng chạm.
+- Toàn bộ mẫu đều 0 share: cần thêm yếu tố "gửi ngay cho người thân/đồng nghiệp" hoặc info hữu ích đáng lưu để kích share.
