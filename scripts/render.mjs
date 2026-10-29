@@ -77,7 +77,14 @@ const total = Number((job.audio?.measured_duration_sec || scenes.at(-1).end + 0.
 
 // --- tải ảnh sản phẩm -------------------------------------------------------
 async function download(urlStr, dest) {
-  const res = await fetch(urlStr, { headers: { 'User-Agent': 'lucas-daily-reel/1.0' } });
+  const res = await fetch(urlStr, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      'Referer': 'https://lucas.vn/',
+      'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+      'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8',
+    },
+  });
   if (!res.ok) throw new Error(`tải ảnh ${res.status}: ${urlStr}`);
   const buf = Buffer.from(await res.arrayBuffer());
   if (buf.length < 5000) throw new Error(`ảnh nghi hỏng (${buf.length}B): ${urlStr}`);
