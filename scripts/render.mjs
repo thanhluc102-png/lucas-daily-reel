@@ -83,6 +83,7 @@ async function download(urlStr, dest) {
       'Referer': 'https://lucas.vn/',
       'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
       'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8',
+      'x-lucas-key': 'lucas-daily-reel-secret',
     },
   });
   if (!res.ok) {
