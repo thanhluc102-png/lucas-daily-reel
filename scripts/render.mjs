@@ -97,18 +97,41 @@ async function download(urlStr, dest) {
   fs.writeFileSync(dest, buf);
 }
 
-const imgMap = new Map(); // url -> local relative path
+const imgMap = new Map(); // url -> { raw, cut, mode }
+const smartCutoutPy = path.join(root, 'scripts', 'smart_cutout.py');
 for (const s of scenes) {
   const src = s.asset?.src || s.prod?.image;
   if (!src) throw new Error(`cảnh ${s.idx}: không có ảnh (asset.src hoặc product.image)`);
   if (!imgMap.has(src)) {
-    const name = `assets/img-${imgMap.size}.png`;
-    process.stdout.write(`  tải ${src.slice(0, 60)}… `);
-    await download(src, path.join(dir, name));
-    console.log('ok');
-    imgMap.set(src, name);
+    const idx = imgMap.size;
+    const name = `assets/img-${idx}.png`;
+    const cutName = `assets/img-${idx}-cut.png`;
+    const dest = path.join(dir, name);
+    const cutDest = path.join(dir, cutName);
+    if (!fs.existsSync(dest) || fs.statSync(dest).size < 5000) {
+      process.stdout.write(`  tải ${src.slice(0, 60)}… `);
+      await download(src, dest);
+      console.log('ok');
+    }
+    let mode = 'card';
+    if (fs.existsSync(smartCutoutPy)) {
+      try {
+        const out = execFileSync('python3', [smartCutoutPy, dest, cutDest], { encoding: 'utf8' }).trim();
+        const info = JSON.parse(out);
+        if (info.mode === 'cutout' && fs.existsSync(cutDest)) {
+          mode = 'cutout';
+          console.log(`  ✦ img-${idx}: tách nền 3D Studio Cutout (${info.fg_pct}%)`);
+        }
+      } catch {
+        mode = 'card';
+      }
+    }
+    imgMap.set(src, { raw: name, cut: mode === 'cutout' ? cutName : name, mode });
   }
-  s._img = imgMap.get(src);
+  const entry = imgMap.get(src);
+  s._img = entry.raw;
+  s._cutImg = entry.cut;
+  s._mode = entry.mode;
 }
 
 // --- font -------------------------------------------------------------------
@@ -117,12 +140,121 @@ fs.copyFileSync(path.join(root, 'assets', 'logo.png'), path.join(dir, 'assets', 
 
 // --- dựng HTML --------------------------------------------------------------
 const component = fs.readFileSync(path.join(root, 'templates', 'subtitle.mjs'), 'utf8');
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+// Tự động rút các thông số / điểm mạnh ngắn gọn từ câu thoại của từng cảnh để làm Floating Spec Pills
+function extractSceneSpecs(text, role) {
+  if (role === 'hook' || role === 'price' || role === 'cta') return [];
+  const specs = [];
+  const raw = String(text || '');
+  const patterns = [
+    /CRI\s*(?:trên|>|≥)?\s*\d+\+?/gi,
+    /(?:\d+|hai|ba|bốn|năm)\s+(?:nhiệt\s+độ\s+màu|chế\s+độ\s+sáng|cổng\s+sạc|mức\s+nhiệt)/gi,
+    /(?:xoay\s+(?:hơn\s+)?)?\d+(?:\s*(?:tới|đến|-|~)\s*\d+)?\s*(?:%|°|W|mAh|Wh|g|kg|mm|cm|m|inch|Hz|nit|độ|cổng|lần|giờ|tiếng)(?=$|[\s.,;!?)])/gi,
+    /\b(?:USB-C|Type-C|MagSafe|Qi2|GaN|PD\s*\d*W?|Bluetooth\s*[\d.]*|IP\d\d|YKK|SGS|360°|180°)(?=$|[\s.,;!?)])/gi,
+    /\b(?:chống\s+nước|chống\s+sốc|gắn\s+từ\s+tính|từ\s+tính|nhôm\s+CNC|sợi\s+aramid|bảo\s+hành\s+\d+\s*tháng)\b/gi,
+  ];
+  for (const re of patterns) {
+    for (const m of raw.matchAll(re)) {
+      const val = m[0].trim().replace(/[.,;!?]+$/, '');
+      if (val && !specs.some((x) => x.toLowerCase() === val.toLowerCase())) {
+        specs.push(val);
+      }
+      if (specs.length >= 3) break;
+    }
+    if (specs.length >= 3) break;
+  }
+  return specs;
+}
+
+const ROLE_META = {
+  hook: { tag: 'GÓC HỎI ĐÁP', icon: '⚡' },
+  body: { tag: 'ĐIỂM ĂN TIỀN', icon: '✦' },
+  proof: { tag: 'TRẢI NGHIỆM THẬT', icon: '✔' },
+  price: { tag: 'GIÁ TỐT TẠI LUCAS', icon: '★' },
+  cta: { tag: 'CHÍNH HÃNG 100%', icon: '🛡️' },
+};
+
+const mainProd = job.products?.[0] || {};
+const shortProdName = esc((mainProd.name || 'Phụ kiện chính hãng Lucas').replace(/\s*\([^)]*\)\s*/g, ' ').trim());
+
+// Rút từ khoá đại tự (Hero Depth Word) từ câu thoại để đặt chìm 3D sau lưng sản phẩm tách nền (theo OutlineWordFill.tsx)
+function extractHeroWord(text, idx) {
+  const raw = String(text || '');
+  const mCri = raw.match(/CRI\s*(?:trên|>|≥)?\s*(\d+)/i);
+  if (mCri) return `CRI ${mCri[1]}+`;
+  const mPct = raw.match(/(\d+\s*%)/);
+  if (mPct) return `SÁNG ${mPct[1].replace(/\s+/g, '')}`;
+  const mTemp = raw.match(/(?:\d+|ba|bốn)\s+nhiệt\s+độ\s+màu/i);
+  if (mTemp) return '3 MÀU SÁNG';
+  const mCode = (mainProd.name || '').match(/\b([A-Z]{1,4}\d{2,4}[A-Z]?)\b/);
+  if (mCode && idx === 0) return mCode[1].toUpperCase();
+  const fallbacks = ['STUDIO 3D', 'PRO LIGHT', 'MAGSAFE', 'CHÍNH HÃNG'];
+  return fallbacks[idx % fallbacks.length];
+}
+
+// Vòng thước ngắm kỹ thuật 72 vạch (từ video-shotcraft/OutlineWordFill.tsx)
+const dialTicksSvg = Array.from({ length: 72 }, (_, i) => {
+  const major = i % 6 === 0;
+  return `<line x1="0" y1="-326" x2="0" y2="-${major ? 302 : 315}" stroke="#C9A227" stroke-width="${major ? 2.4 : 1.3}" opacity="${major ? 0.72 : 0.32}" transform="rotate(${i * 5})" />`;
+}).join('');
 
 const sceneLayers = scenes
   .map((s) => {
     const focusY = s.asset?.focus === 'top' ? '18%' : s.asset?.focus === 'bottom' ? '82%' : '50%';
-    return `<div class="scene" data-i="${s.idx}" style="z-index:${s.idx + 1}">
-      <div class="card"><img src="${s._img}" style="object-position:50% ${focusY}"></div>
+    const specs = extractSceneSpecs(s.text, s.role);
+    const chipsHtml = specs.length
+      ? `<div class="spec-chips">${specs
+          .map(
+            (sp, ci) =>
+              `<div class="spec-chip" data-chip="${ci}"><span class="sc-dot"></span><span>${esc(sp)}</span></div>`
+          )
+          .join('')}</div>`
+      : '';
+    if (s._mode === 'cutout') {
+      const heroWord = esc(extractHeroWord(s.text, s.idx));
+      return `<div class="scene is-cutout" data-i="${s.idx}" data-role="${s.role}" data-mode="cutout" style="z-index:${s.idx + 1}">
+        <div class="card-stage cutout-stage">
+          <div class="studio-halo"></div>
+          <svg class="shotcraft-dial" viewBox="-400 -400 800 800">
+            <g class="dial-outer">
+              <circle r="360" fill="none" stroke="rgba(201,162,39,0.45)" stroke-width="2" stroke-dasharray="22 18" />
+              <line x1="0" y1="-380" x2="0" y2="-346" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
+              <line x1="0" y1="346" x2="0" y2="380" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
+              <line x1="-380" y1="0" x2="-346" y2="0" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
+              <line x1="346" y1="0" x2="380" y2="0" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
+            </g>
+            <g class="dial-inner">
+              <circle r="326" fill="none" stroke="rgba(201,162,39,0.28)" stroke-width="1.2" />
+              ${dialTicksSvg}
+            </g>
+          </svg>
+          <div class="depth-hero">
+            <span class="dh-outline">${heroWord}</span>
+            <span class="dh-solid">${heroWord}</span>
+          </div>
+          <div class="studio-orbit"></div>
+          <div class="studio-pedestal"></div>
+          <div class="cutout-wrap">
+            <img class="cutout-img" src="${s._cutImg}" alt="">
+            <div class="cutout-shine-mask" style="-webkit-mask-image:url('${s._cutImg}');mask-image:url('${s._cutImg}')">
+              <div class="card-sheen cutout-beam"></div>
+            </div>
+          </div>
+          ${chipsHtml}
+        </div>
+      </div>`;
+    }
+    return `<div class="scene is-card" data-i="${s.idx}" data-role="${s.role}" data-mode="card" style="z-index:${s.idx + 1}">
+      <div class="card-stage">
+        <div class="card-glow"></div>
+        <div class="card">
+          <img class="card-img" src="${s._img}" style="object-position:50% ${focusY}">
+          <div class="card-sheen"></div>
+          <div class="card-ring"></div>
+        </div>
+        ${chipsHtml}
+      </div>
     </div>`;
   })
   .join('\n');
@@ -133,21 +265,16 @@ const ambientLayers = scenes
   .join('\n');
 
 // [V2] Kinetic hook — BỘ PRESET chọn qua env HOOK_SPEC (JSON): stack | flash | slam | highlight.
-// Không đặt = stack cho hook Bơm CP10. Bản chính: ai-copy tự điền style + highlight.
 const hookEnd = scenes[1] ? scenes[1].start : 3.5;
-const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const hlWrap = (text, hls) => {
   let o = esc(text);
   (hls || []).forEach((h) => { o = o.split(esc(h)).join('<span class="hi">' + esc(h) + '</span>'); });
   return o;
 };
-// Nguồn cấu hình kinetic hook, ưu tiên: job.hook (do ai-copy điền: style + từ khoá)
-// > env HOOK_SPEC (chạy tay) > TỰ TÁCH câu hook thành ~3 từ/dòng (mặc định an toàn).
 function autoHookSpec() {
   const words = ((scenes[0] && scenes[0].text) || '').trim().split(/\s+/).filter(Boolean);
   const lines = [];
   for (let i = 0; i < words.length; i += 3) lines.push(words.slice(i, i + 3).join(' '));
-  // tránh dòng cuối trơ trọi 1 từ
   if (lines.length > 1 && lines[lines.length - 1].split(' ').length === 1)
     lines[lines.length - 2] += ' ' + lines.pop();
   return { style: 'stack', lines, hl: [] };
@@ -155,31 +282,41 @@ function autoHookSpec() {
 const HOOK_SPEC = job.hook || (process.env.HOOK_SPEC ? JSON.parse(process.env.HOOK_SPEC) : autoHookSpec());
 function buildKhook(sp) {
   const st = sp.style || 'stack';
+  const headerPill = `<div class="kh-pill" data-at="0.04"><span class="kh-dot"></span><span>CÂU HỎI NHIỀU NGƯỜI GẶP</span></div>`;
   if (st === 'flash') {
-    const words = (sp.text || '').split(/\s+/).filter(Boolean);
+    const words = (sp.text || (sp.lines || []).join(' ') || scenes[0]?.text || '').split(/\s+/).filter(Boolean);
     const hlset = new Set((sp.hl || []).join(' ').split(/\s+/).filter(Boolean));
     const inner = words.map((w, i) =>
-      `<span class="fw${hlset.has(w.replace(/[?.,!]/g, '')) ? ' hi' : ''}" data-at="${(0.15 + i * 0.16).toFixed(2)}">${esc(w)}</span>`).join(' ');
-    return `<div id="khook" class="flash"><div class="fl-wrap">${inner}</div></div>`;
+      `<span class="fw${hlset.has(w.replace(/[?.,!]/g, '')) || /\d/.test(w) ? ' hi' : ''}" data-at="${(0.12 + i * 0.14).toFixed(2)}">${esc(w)}</span>`).join(' ');
+    return `<div id="khook" class="flash"><div class="khook-card">${headerPill}<div class="fl-wrap">${inner}</div></div></div>`;
   }
   if (st === 'slam') {
-    return `<div id="khook" class="slam">
-      <div class="sub" data-at="0.18">${(sp.pre || []).map(esc).join('<br>')}</div>
-      <div class="hero" data-at="0.34">${esc(sp.hero || '')}</div>
-      <div class="sub" data-at="0.95">${(sp.post || []).map(esc).join('<br>')}</div></div>`;
+    return `<div id="khook" class="slam"><div class="khook-card">${headerPill}
+      <div class="sub" data-at="0.14">${(sp.pre || []).map(esc).join('<br>')}</div>
+      <div class="hero" data-at="0.28">${esc(sp.hero || '')}</div>
+      <div class="sub" data-at="0.72">${(sp.post || []).map(esc).join('<br>')}</div></div></div>`;
   }
   if (st === 'highlight') {
-    const lines = (sp.lines || []).map((ln, i) => {
+    const rawLines = (sp.lines && sp.lines.length) ? sp.lines : autoHookSpec().lines;
+    // Nếu AI quên truyền hlPhrase thì tự động tô sáng dòng cuối (thường là nút thắt/nỗi đau chính)
+    const fallbackPhrase = !sp.hlPhrase && rawLines.length ? rawLines[rawLines.length - 1] : sp.hlPhrase;
+    const lines = rawLines.map((ln, i) => {
       let html = esc(ln);
-      if (sp.hlPhrase && ln.includes(sp.hlPhrase))
-        html = esc(ln).split(esc(sp.hlPhrase)).join(`<mark data-at="${(0.15 + i * 0.5 + 0.3).toFixed(2)}">${esc(sp.hlPhrase)}</mark>`);
-      return `<div class="kg" data-at="${(0.15 + i * 0.5).toFixed(2)}">${html}</div>`;
+      if (fallbackPhrase && ln.includes(fallbackPhrase))
+        html = esc(ln).split(esc(fallbackPhrase)).join(`<mark data-at="${(0.14 + i * 0.36 + 0.18).toFixed(2)}">${esc(fallbackPhrase)}</mark>`);
+      return `<div class="kg" data-at="${(0.10 + i * 0.36).toFixed(2)}">${html}</div>`;
     }).join('');
-    return `<div id="khook" class="highlight">${lines}</div>`;
+    return `<div id="khook" class="highlight"><div class="khook-card">${headerPill}${lines}</div></div>`;
   }
-  const lines = (sp.lines || []).map((ln, i) =>
-    `<div class="kg" data-at="${(0.12 + i * 0.5).toFixed(2)}">${hlWrap(ln, sp.hl)}</div>`).join('');
-  return `<div id="khook" class="stack">${lines}</div>`;
+  const rawLines = (sp.lines && sp.lines.length) ? sp.lines : autoHookSpec().lines;
+  const hasHl = Array.isArray(sp.hl) && sp.hl.length > 0;
+  const lines = rawLines.map((ln, i) => {
+    const content = hasHl
+      ? hlWrap(ln, sp.hl)
+      : (i === rawLines.length - 1 ? `<mark data-at="${(0.14 + i * 0.36 + 0.18).toFixed(2)}">${esc(ln)}</mark>` : esc(ln));
+    return `<div class="kg" data-at="${(0.10 + i * 0.36).toFixed(2)}">${content}</div>`;
+  }).join('');
+  return `<div id="khook" class="stack"><div class="khook-card">${headerPill}${lines}</div></div>`;
 }
 const khookHtml = buildKhook(HOOK_SPEC);
 
@@ -187,17 +324,31 @@ const badgeScene = scenes.find((s) => s.overlay?.price_badge);
 let badgeHtml = '';
 if (badgeScene) {
   const p = badgeScene.prod || {};
-  const priceK = Math.round((p.price_vnd || 0) / 1000);
+  const priceK = String(Math.round((p.price_vnd || 0) / 1000));
   const regK = p.regular_vnd ? Math.round(p.regular_vnd / 1000) : null;
+  // DigitRoll (video-shotcraft/DigitRoll.tsx): mỗi chữ số là 1 băng cuộn dọc 0..90..9
+  const digitsStrip = '01234567890123456789'.split('').map((d) => `<b>${d}</b>`).join('');
+  const rollCols = priceK.split('').map((ch, idx) => {
+    const target = '0123456789'.indexOf(ch);
+    if (target < 0) return `<span class="d-static">${esc(ch)}</span>`;
+    return `<span class="d-col" data-target="${target}" data-idx="${idx}"><span class="d-strip">${digitsStrip}</span></span>`;
+  }).join('') + '<span class="d-static">K</span>';
   badgeHtml = `<div class="badge" data-scene="${badgeScene.idx}">
-    ${p.price_is_from ? '<span class="from">CHỈ TỪ</span>' : ''}
-    <span class="now">${priceK}K</span>
-    ${regK ? `<span class="was">${regK}K</span>` : ''}
-    ${badgeScene.overlay.label ? `<span class="tag">${badgeScene.overlay.label}</span>` : ''}
+    <div class="badge-top">
+      <span class="from">${p.price_is_from ? 'CHỈ TỪ' : 'GIÁ TỐT'}</span>
+      ${badgeScene.overlay.label ? `<span class="tag">${esc(badgeScene.overlay.label)}</span>` : ''}
+    </div>
+    <span class="now digit-roll">${rollCols}</span>
+    ${regK ? `<span class="was">Giá gốc ${regK}K</span>` : ''}
   </div>`;
 }
 
-const progSegs = scenes.map(() => '<div class="seg"><i></i></div>').join('');
+const ctaSceneIdx = scenes.findIndex((s) => s.role === 'cta');
+const ctaStripHtml = `<div id="cta-strip" data-scene="${ctaSceneIdx}">
+  <div class="cta-pill"><span>✔</span> Chính hãng 100%</div>
+  <div class="cta-pill"><span>🛡️</span> Bảo hành đầy đủ</div>
+  <div class="cta-pill gold"><span>🔗</span> Đặt tại lucas.vn</div>
+</div>`;
 
 const html = `<!doctype html>
 <html lang="vi"><head><meta charset="utf-8">
@@ -206,98 +357,241 @@ const html = `<!doctype html>
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:${W}px;height:${H}px;overflow:hidden;background:${bg};
     font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-  #frame{position:absolute;inset:0}
+  #frame{position:absolute;inset:0;perspective:1400px}
 
-  /* nền: hai vũng sáng nhẹ để đỡ phẳng */
+  /* nền: hai vũng sáng + lưới studio tinh tế */
   #bg{position:absolute;inset:0;background:
     radial-gradient(120% 60% at 50% -8%, #16244a 0%, rgba(11,27,46,0) 55%),
     radial-gradient(90% 50% at 50% 120%, #101a33 0%, rgba(11,27,46,0) 60%),
     ${bg}}
+  #bg-grid{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.07;
+    background-image:linear-gradient(rgba(159,176,196,.4) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(159,176,196,.4) 1px,transparent 1px);
+    background-size:54px 54px}
 
   /* [V2] nền động từ ảnh sản phẩm: mờ + tối + phủ vignette navy */
   #ambient{position:absolute;inset:0;z-index:0}
   #ambient .amb{position:absolute;inset:-8%;opacity:0;background-size:cover;background-position:center;
-    filter:blur(46px) saturate(1.2) brightness(.5);will-change:opacity,transform}
+    filter:blur(52px) saturate(1.3) brightness(.48);will-change:opacity,transform}
   #ambient::after{content:"";position:absolute;inset:0;pointer-events:none;background:
-    radial-gradient(115% 75% at 50% 42%, rgba(11,27,46,.22) 0%, rgba(11,27,46,.72) 62%, rgba(8,18,32,.94) 100%)}
+    radial-gradient(110% 70% at 50% 42%, rgba(11,27,46,.18) 0%, rgba(11,27,46,.76) 64%, rgba(8,18,32,.95) 100%)}
 
+  /* Header thương hiệu chuẩn vùng an toàn */
+  #topbar{position:absolute;top:76px;left:72px;right:72px;z-index:42;
+    display:flex;align-items:center;justify-content:space-between}
+  .brand-pill{display:inline-flex;align-items:center;gap:14px;
+    background:rgba(11,27,46,.82);border:1.5px solid rgba(159,176,196,.24);
+    padding:10px 22px 10px 12px;border-radius:99px;backdrop-filter:blur(12px);
+    box-shadow:0 12px 30px rgba(0,0,0,.4)}
+  .brand-logo-wrap{width:52px;height:52px;border-radius:50%;background:#FFFFFF;
+    display:flex;align-items:center;justify-content:center;padding:7px;
+    box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .brand-logo-wrap img{width:100%;height:100%;object-fit:contain;display:block}
+  .brand-meta{display:flex;flex-direction:column;gap:2px}
+  .brand-name{color:#FFFFFF;font-size:24px;font-weight:800;letter-spacing:-.3px;line-height:1.1}
+  .brand-sub{color:${accent};font-size:16px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+
+  .role-pill{display:inline-flex;align-items:center;gap:10px;
+    background:rgba(11,27,46,.82);border:1.5px solid rgba(201,162,39,.45);
+    padding:12px 24px;border-radius:99px;color:#FFFFFF;font-size:21px;font-weight:800;
+    letter-spacing:1px;backdrop-filter:blur(12px);box-shadow:0 10px 28px rgba(0,0,0,.35)}
+  .role-pill .rp-icon{color:${accent};font-size:22px}
+
+  /* Thanh tên sản phẩm phía trên khung ảnh */
+  #prod-bar{position:absolute;top:174px;left:72px;right:72px;z-index:36;
+    display:flex;justify-content:center;pointer-events:none;opacity:0}
+  .prod-title-pill{display:inline-flex;align-items:center;gap:10px;max-width:920px;
+    background:rgba(11,27,46,.68);border:1px solid rgba(159,176,196,.2);
+    padding:10px 26px;border-radius:16px;color:#9FB0C4;font-size:24px;font-weight:700;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(8px)}
+  .prod-title-pill b{color:#FFFFFF;font-weight:800}
+
+  /* Khung sản phẩm 3D Studio + Spec Chips */
   .scene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    opacity:0;padding:300px 130px 720px}
-  /* [V2] card có viền sáng mảnh + bóng sâu hơn cho nổi khối */
-  .card{width:820px;height:820px;border-radius:28px;overflow:hidden;background:#fff;
-    box-shadow:0 50px 110px -34px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.10),
-      inset 0 0 0 1px rgba(255,255,255,.28)}
+    opacity:0;padding:250px 110px 640px;perspective:1400px}
+  .card-stage{position:relative;width:820px;height:820px;display:flex;align-items:center;justify-content:center;
+    transform-style:preserve-3d;will-change:transform}
+  .card-glow{position:absolute;inset:-36px;border-radius:56px;
+    background:radial-gradient(circle at 50% 50%, rgba(201,162,39,.28) 0%, rgba(201,162,39,0) 70%);
+    opacity:.65;pointer-events:none}
+  .card{position:relative;width:820px;height:820px;border-radius:36px;overflow:hidden;background:#fff;
+    box-shadow:0 55px 120px -30px rgba(0,0,0,.85), 0 0 0 2px rgba(255,255,255,.16),
+      0 0 40px -10px rgba(201,162,39,.22);will-change:transform}
   .card img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+  .card-sheen{position:absolute;inset:-40%;pointer-events:none;
+    background:linear-gradient(115deg, transparent 38%, rgba(255,255,255,.38) 50%, transparent 62%);
+    transform:translateX(-120%) rotate(8deg);will-change:transform}
+  .card-ring{position:absolute;inset:0;border-radius:36px;pointer-events:none;
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.35), inset 0 0 28px rgba(11,27,46,.12)}
 
-  /* thanh tiến trình + thương hiệu */
-  #prog{position:absolute;top:70px;left:80px;right:80px;display:flex;gap:12px;z-index:40}
-  #prog .seg{flex:1;height:8px;border-radius:8px;background:rgba(255,255,255,.18);overflow:hidden}
-  #prog .seg i{display:block;width:0;height:100%;background:${accent};border-radius:8px}
-  #brand{position:absolute;top:96px;left:82px;z-index:40;display:flex;align-items:center}
-  #brand img{height:96px;width:auto;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.45))}
+  /* [3D CUTOUT STUDIO MODE + SHOTCRAFT OUTLINE-WORD-FILL HUD] */
+  .cutout-stage{width:860px;height:840px}
+  .studio-halo{position:absolute;width:760px;height:760px;border-radius:50%;pointer-events:none;
+    background:
+      radial-gradient(circle at 50% 46%, rgba(201,162,39,.34) 0%, rgba(22,36,74,.48) 44%, rgba(11,27,46,0) 72%)}
+  .shotcraft-dial{position:absolute;width:780px;height:780px;pointer-events:none;z-index:2;
+    overflow:visible;will-change:transform,opacity}
+  .depth-hero{position:absolute;top:-38px;left:-90px;right:-90px;z-index:3;
+    display:flex;justify-content:center;align-items:center;pointer-events:none;
+    font-family:'Helvetica Neue','Inter',sans-serif;font-size:148px;font-weight:900;
+    letter-spacing:-4px;line-height:1;white-space:nowrap;will-change:transform,opacity}
+  .depth-hero .dh-outline{color:transparent;-webkit-text-stroke:3px rgba(201,162,39,.78)}
+  .depth-hero .dh-solid{position:absolute;color:rgba(255,248,225,.92);opacity:0;
+    text-shadow:0 0 28px rgba(255,255,255,.75), 0 0 68px rgba(201,162,39,.72)}
+  .studio-orbit{position:absolute;width:720px;height:720px;border-radius:50%;pointer-events:none;
+    border:2px dashed rgba(201,162,39,.32);
+    box-shadow:0 0 40px rgba(201,162,39,.15), inset 0 0 40px rgba(201,162,39,.12);
+    transform:translateY(210px) rotateX(74deg)}
+  .studio-pedestal{position:absolute;bottom:22px;width:540px;height:96px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(closest-side, rgba(0,0,0,.82) 0%, rgba(201,162,39,.26) 55%, rgba(11,27,46,0) 100%);
+    filter:blur(4px);will-change:transform,opacity}
+  .cutout-wrap{position:relative;width:780px;height:740px;display:flex;align-items:center;justify-content:center;
+    z-index:5;will-change:transform}
+  .cutout-img{width:100%;height:100%;object-fit:contain;display:block;
+    filter:drop-shadow(0 40px 44px rgba(0,0,0,.82)) drop-shadow(0 0 30px rgba(201,162,39,.24))}
+  .cutout-shine-mask{position:absolute;inset:0;pointer-events:none;z-index:6;
+    -webkit-mask-size:contain;mask-size:contain;
+    -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+    -webkit-mask-position:center;mask-position:center}
+  .cutout-beam{background:linear-gradient(115deg, transparent 34%, rgba(255,255,255,.78) 50%, transparent 66%)}
 
-  /* badge giá — góc trên phải vùng an toàn */
-  .badge{position:absolute;top:210px;right:80px;z-index:40;display:none;
-    flex-direction:column;align-items:flex-end;gap:4px;
-    background:rgba(11,27,46,.72);border:2px solid ${accent};border-radius:20px;
-    padding:20px 28px;backdrop-filter:blur(6px)}
-  .badge .from{color:${accent};font-size:26px;font-weight:800;letter-spacing:2px}
-  .badge .now{color:#fff;font-size:78px;font-weight:800;line-height:.95}
-  .badge .was{color:#9FB0C4;font-size:34px;font-weight:600;text-decoration:line-through}
-  .badge .tag{margin-top:6px;background:${accent};color:#0B1B2E;font-weight:800;
-    font-size:28px;padding:4px 14px;border-radius:8px}
+  /* Floating Bento Spec Chips */
+  .spec-chips{position:absolute;left:-16px;right:-16px;bottom:-34px;z-index:25;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:14px;pointer-events:none}
+  .spec-chip{display:inline-flex;align-items:center;gap:12px;
+    background:rgba(11,27,46,.92);border:2px solid ${accent};
+    padding:14px 26px;border-radius:99px;color:#FFFFFF;font-size:31px;font-weight:800;
+    letter-spacing:-.3px;box-shadow:0 18px 40px rgba(0,0,0,.65), 0 0 20px rgba(201,162,39,.25);
+    backdrop-filter:blur(12px);opacity:0;transform:translateY(24px) scale(.85);will-change:transform,opacity}
+  .spec-chip .sc-dot{width:12px;height:12px;border-radius:50%;background:${accent};
+    box-shadow:0 0 10px ${accent};flex-shrink:0}
 
-  /* [V2] kinetic hook — chữ to full màn 3 giây đầu */
-  #khook{position:absolute;inset:0;z-index:38;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;gap:16px;padding:0 110px;text-align:center;opacity:0}
+  /* Badge giá — góc trên phải vùng an toàn (theo rules/visual.md) */
+  .badge{position:absolute;top:186px;right:72px;z-index:44;display:none;
+    flex-direction:column;align-items:flex-end;gap:6px;
+    background:rgba(11,27,46,.92);border:3px solid ${accent};border-radius:28px;
+    padding:22px 32px;backdrop-filter:blur(16px);
+    box-shadow:0 28px 65px rgba(0,0,0,.75), 0 0 36px rgba(201,162,39,.35)}
+  .badge-top{display:flex;align-items:center;gap:12px}
+  .badge .from{color:${accent};font-size:25px;font-weight:800;letter-spacing:2px}
+  .badge .tag{background:${accent};color:#0B1B2E;font-weight:900;
+    font-size:23px;padding:4px 14px;border-radius:10px;letter-spacing:.5px}
+  .badge .now{color:#FFFFFF;font-size:88px;font-weight:900;line-height:1;letter-spacing:-2px;
+    text-shadow:0 6px 24px rgba(201,162,39,.4)}
+  .badge .digit-roll{display:inline-flex;align-items:baseline;height:88px;overflow:hidden}
+  .badge .d-col{display:inline-block;height:88px;overflow:hidden}
+  .badge .d-strip{display:block;will-change:transform}
+  .badge .d-strip b{display:block;height:88px;line-height:88px;font-weight:900;font-variant-numeric:tabular-nums}
+  .badge .d-static{display:inline-block;height:88px;line-height:88px}
+  .badge .was{color:#9FB0C4;font-size:32px;font-weight:700;text-decoration:line-through}
+
+  /* Thanh cam kết chính hãng ở cảnh CTA */
+  #cta-strip{position:absolute;left:64px;right:64px;bottom:645px;z-index:43;
+    display:none;justify-content:center;gap:14px;flex-wrap:wrap;pointer-events:none}
+  .cta-pill{display:inline-flex;align-items:center;gap:10px;
+    background:rgba(11,27,46,.9);border:1.5px solid rgba(159,176,196,.3);
+    padding:14px 24px;border-radius:99px;color:#FFFFFF;font-size:27px;font-weight:800;
+    box-shadow:0 16px 38px rgba(0,0,0,.55);opacity:0;transform:translateY(20px) scale(.9)}
+  .cta-pill.gold{background:${accent};color:#0B1B2E;border-color:${accent};
+    box-shadow:0 16px 38px rgba(201,162,39,.45)}
+
+  /* [V2] Kinetic Hook — Card nổi bật 3 giây đầu */
+  #khook{position:absolute;inset:0;z-index:41;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;padding:60px 68px 180px;text-align:center;opacity:0}
   #khook::before{content:"";position:absolute;inset:0;z-index:-1;background:
-    radial-gradient(85% 62% at 50% 46%, rgba(8,16,30,.42) 0%, rgba(8,16,30,.88) 78%)}
-  #khook .kg{font-weight:800;font-size:108px;line-height:1.0;letter-spacing:-1.5px;color:#fff;
+    radial-gradient(88% 64% at 50% 45%, rgba(11,27,46,.62) 0%, rgba(8,18,32,.92) 80%)}
+  .khook-card{display:flex;flex-direction:column;align-items:center;gap:20px;width:100%;
+    background:rgba(11,27,46,.82);border:2px solid rgba(201,162,39,.42);
+    border-radius:38px;padding:44px 48px 50px;backdrop-filter:blur(18px);
+    box-shadow:0 36px 90px rgba(0,0,0,.78), inset 0 1px 0 rgba(255,255,255,.16)}
+  .kh-pill{display:inline-flex;align-items:center;gap:12px;
+    background:rgba(201,162,39,.16);border:1.5px solid ${accent};
+    padding:10px 24px;border-radius:99px;color:${accent};font-size:23px;font-weight:800;
+    letter-spacing:1.5px;margin-bottom:8px;opacity:0}
+  .kh-dot{width:12px;height:12px;border-radius:50%;background:${accent};box-shadow:0 0 10px ${accent}}
+  #khook .kg{font-weight:900;font-size:84px;line-height:1.1;letter-spacing:-1.5px;color:#fff;
     opacity:0;transform:translateY(28px) scale(.9);text-shadow:0 8px 34px rgba(0,0,0,.6);text-wrap:balance}
   #khook .kg .hi{color:${accent}}
-  /* highlight bar (bút dạ quang) — canh trái */
-  #khook.highlight{align-items:flex-start;text-align:left;padding:0 92px}
-  #khook.highlight .kg mark{background:${accent};color:#0B1B2E;padding:0 .1em;border-radius:8px;
-    display:inline-block;transform:scaleX(0);transform-origin:left center}
+  #khook .kg mark{background:${accent};color:#0B1B2E;padding:2px 18px 6px;border-radius:16px;
+    display:inline-block;transform:scaleX(0);transform-origin:left center;text-shadow:none;
+    box-shadow:0 12px 32px rgba(201,162,39,.45)}
+  #khook.highlight .khook-card{align-items:center;text-align:center}
   /* word flash */
-  #khook.flash .fl-wrap{font-weight:800;font-size:100px;line-height:1.06;letter-spacing:-1px;color:#fff;
+  #khook.flash .fl-wrap{font-weight:900;font-size:84px;line-height:1.12;letter-spacing:-1px;color:#fff;
     text-shadow:0 8px 34px rgba(0,0,0,.6);text-wrap:balance}
   #khook.flash .fw{display:inline-block;opacity:0;transform:scale(.6)}
-  #khook.flash .fw.hi{color:${accent}}
+  #khook.flash .fw.hi{color:#0B1B2E;background:${accent};padding:2px 14px;border-radius:14px;text-shadow:none}
   /* number slam */
-  #khook.slam .sub{font-weight:800;font-size:66px;line-height:1.1;color:#fff;opacity:0;
+  #khook.slam .sub{font-weight:800;font-size:60px;line-height:1.12;color:#fff;opacity:0;
     transform:translateY(18px);text-shadow:0 6px 26px rgba(0,0,0,.6)}
-  #khook.slam .hero{font-weight:800;font-size:280px;line-height:.86;color:${accent};opacity:0;
-    letter-spacing:-6px;text-shadow:0 12px 50px rgba(0,0,0,.5);margin:4px 0}
+  #khook.slam .hero{font-weight:900;font-size:230px;line-height:.88;color:${accent};opacity:0;
+    letter-spacing:-5px;text-shadow:0 12px 50px rgba(201,162,39,.45);margin:6px 0}
+
+  /* Hiệu ứng nháy sáng nhẹ khi cắt cảnh cao trào */
+  #cut-flash{position:absolute;inset:0;z-index:40;pointer-events:none;
+    background:radial-gradient(circle at 50% 45%, rgba(255,255,255,.35), rgba(201,162,39,.12) 60%, transparent 100%);
+    opacity:0}
 </style></head>
 <body>
   <div id="frame">
     <div id="bg"></div>
+    <div id="bg-grid"></div>
     <div id="ambient">${ambientLayers}</div>
     ${sceneLayers}
-    <div id="prog">${progSegs}</div>
-    <div id="brand"><img src="assets/logo.png" alt="Lucas"></div>
+    <div id="cut-flash"></div>
+    <div id="topbar">
+      <div class="brand-pill">
+        <div class="brand-logo-wrap"><img src="assets/logo.png" alt="Lucas"></div>
+        <div class="brand-meta">
+          <span class="brand-name">Lucas Combo</span>
+          <span class="brand-sub">Phụ kiện chính hãng</span>
+        </div>
+      </div>
+      <div class="role-pill" id="role-pill"><span class="rp-icon" id="rp-icon">⚡</span><span id="rp-text">GÓC HỎI ĐÁP</span></div>
+    </div>
+    <div id="prod-bar">
+      <div class="prod-title-pill">Sản phẩm: <b>${shortProdName}</b></div>
+    </div>
     ${badgeHtml}
+    ${ctaStripHtml}
     ${khookHtml}
   </div>
 
 <script type="module">
 ${component}
 
-const scenes = ${JSON.stringify(scenes.map((s) => ({ i: s.idx, start: s.start, end: s.end })))};
+const scenes = ${JSON.stringify(scenes.map((s) => ({ i: s.idx, role: s.role, start: s.start, end: s.end })))};
+const ROLE_META = ${JSON.stringify(ROLE_META)};
 const FADE = ${FADE};
 const TOTAL = ${total};
 const frame = document.getElementById('frame');
 const sub = mountSubtitles(frame, ${JSON.stringify(cues)}, { accent: '${accent}' });
 
 const layers = [...document.querySelectorAll('.scene')];
+const stages = layers.map((l) => l.querySelector('.card-stage'));
 const cards = layers.map((l) => l.querySelector('.card'));
+const imgs = layers.map((l) => l.querySelector('.card-img'));
+const cutoutWraps = layers.map((l) => l.querySelector('.cutout-wrap'));
+const pedestals = layers.map((l) => l.querySelector('.studio-pedestal'));
+const orbits = layers.map((l) => l.querySelector('.studio-orbit'));
+const dials = layers.map((l) => l.querySelector('.shotcraft-dial'));
+const dialOuters = layers.map((l) => l.querySelector('.dial-outer'));
+const dialInners = layers.map((l) => l.querySelector('.dial-inner'));
+const depthHeroes = layers.map((l) => l.querySelector('.depth-hero'));
+const dhOutlines = layers.map((l) => l.querySelector('.dh-outline'));
+const dhSolids = layers.map((l) => l.querySelector('.dh-solid'));
+const sheens = layers.map((l) => l.querySelector('.card-sheen'));
+const chipGroups = layers.map((l) => [...l.querySelectorAll('.spec-chip')]);
 const ambs = [...document.querySelectorAll('#ambient .amb')];
-const segs = [...document.querySelectorAll('#prog .seg i')];
 const badge = document.querySelector('.badge');
 const badgeScene = badge ? Number(badge.dataset.scene) : -1;
-const badgeNow = badge ? badge.querySelector('.now') : null;
-const priceTarget = badgeNow ? (parseInt(badgeNow.textContent, 10) || 0) : 0; // "1700K" -> 1700
+const digitCols = badge ? [...badge.querySelectorAll('.d-col')] : [];
+const ctaStrip = document.getElementById('cta-strip');
+const ctaPills = ctaStrip ? [...ctaStrip.querySelectorAll('.cta-pill')] : [];
+const prodBar = document.getElementById('prod-bar');
+const rpIcon = document.getElementById('rp-icon');
+const rpText = document.getElementById('rp-text');
+const cutFlash = document.getElementById('cut-flash');
 
 // [V2] kinetic hook refs
 const KHOOK_END = ${hookEnd};
@@ -308,22 +602,134 @@ const khStyle = khook ? khook.className : '';
 const smooth = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
 const c01 = (x) => Math.max(0, Math.min(1, x));
 
-// [V2] Ken Burns: mỗi cảnh pan + zoom một HƯỚNG khác nhau -> video "thở",
-// đỡ cảm giác ảnh dán tĩnh. Crossfade 0.25s che chỗ reset giữa các cảnh.
+// Ken Burns + góc nghiêng 3D nhẹ cho từng cảnh
 const KB = [[0,0],[-1,-1],[1,-1],[-1,1],[1,1],[0,-1],[1,0],[-1,0]];
+const TILT = [
+  [0, 0],
+  [-2.2, 2.8],
+  [2.0, -2.6],
+  [-1.8, -2.4],
+  [2.4, 2.0],
+  [0, 2.5],
+  [0, 0],
+];
 
 window.__render = (t) => {
+  // Tìm cảnh hiện tại để cập nhật Role Pill & Product Bar
+  const curScene = scenes.find((s) => t >= s.start && t < s.end) || scenes[0];
+  if (curScene && ROLE_META[curScene.role]) {
+    rpIcon.textContent = ROLE_META[curScene.role].icon;
+    rpText.textContent = ROLE_META[curScene.role].tag;
+  }
+  if (prodBar) {
+    const showProdBar = t >= KHOOK_END && curScene && curScene.role !== 'price';
+    prodBar.style.opacity = showProdBar ? '1' : '0';
+  }
+
+  // Hiệu ứng flash nhẹ ở thời điểm cắt cảnh (từ cảnh 1 trở đi)
+  let flashOp = 0;
+  for (let i = 1; i < scenes.length; i++) {
+    const dt = t - scenes[i].start;
+    if (dt >= -0.04 && dt <= 0.16) {
+      const fp = 1 - Math.abs(dt - 0.04) / 0.12;
+      flashOp = Math.max(flashOp, Math.max(0, fp) * (scenes[i].role === 'price' ? 0.65 : 0.32));
+    }
+  }
+  if (cutFlash) cutFlash.style.opacity = flashOp.toFixed(3);
+
   scenes.forEach((s, i) => {
     const fadeIn = smooth((t - (s.start - FADE)) / FADE);
     const alive = t >= s.start - FADE && t < s.end;
     layers[i].style.opacity = alive ? fadeIn : 0;
 
-    const e = smooth(c01((t - s.start) / Math.max(0.1, s.end - s.start)));
+    const dur = Math.max(0.1, s.end - s.start);
+    const localT = t - s.start;
+    const e = smooth(c01(localT / dur));
     const [dx, dy] = KB[i % KB.length];
-    const sc = 1.05 + 0.09 * e;                       // 1.05 -> 1.14
-    cards[i].style.transform =
-      'translate(' + (dx * 26 * (e - .5)).toFixed(1) + 'px,' +
-      (dy * 26 * (e - .5)).toFixed(1) + 'px) scale(' + sc.toFixed(4) + ')';
+    const [rx, ry] = TILT[i % TILT.length];
+
+    // Chuyển cảnh Zoom-Punch / Whip-Slide trong 0.28s đầu mỗi cảnh
+    const enterP = smooth(c01((localT + 0.06) / 0.28));
+    const punchBounce = Math.sin(enterP * Math.PI);
+    const enterY = (i % 2 === 1 ? 1 : -1) * (1 - enterP) * 42;
+    const stageScale = (0.90 + 0.10 * enterP) + 0.035 * punchBounce;
+    const curRx = rx * (0.4 + 0.6 * e);
+    const curRy = ry * (e - 0.5) * 1.8;
+
+    stages[i].style.transform =
+      'translateY(' + enterY.toFixed(1) + 'px) scale(' + stageScale.toFixed(3) + ') rotateX(' + curRx.toFixed(2) + 'deg) rotateY(' + curRy.toFixed(2) + 'deg)';
+
+    const imgScale = 1.02 + 0.08 * e; // tuân thủ rules/visual.md: zoom chậm 1.0 -> 1.08
+    if (imgs[i]) {
+      imgs[i].style.transform =
+        'translate(' + (dx * 22 * (e - 0.5)).toFixed(1) + 'px, ' + (dy * 22 * (e - 0.5)).toFixed(1) + 'px) scale(' + imgScale.toFixed(4) + ')';
+    }
+
+    // Chuyển động 3D Cutout: nảy spring từ dưới lên + bay lơ lửng (levitation) + bóng sàn co giãn ngược pha
+    if (cutoutWraps[i]) {
+      const popP = smooth(c01((localT + 0.04) / 0.36));
+      const popOvershoot = Math.sin(popP * Math.PI);
+      const floatWave = Math.sin(localT * 2.8);
+      const levY = (1 - popP) * 95 + floatWave * 13;
+      const cutScale = (0.76 + 0.26 * popP + 0.06 * popOvershoot) * (1 + 0.04 * e);
+      const cutRot = (dx || 1) * floatWave * 1.6;
+      cutoutWraps[i].style.transform =
+        'translateY(' + levY.toFixed(1) + 'px) scale(' + cutScale.toFixed(3) + ') rotateZ(' + cutRot.toFixed(2) + 'deg)';
+      if (pedestals[i]) {
+        const pedScale = (0.65 + 0.35 * popP) * (1 - floatWave * 0.09);
+        pedestals[i].style.transform = 'scale(' + pedScale.toFixed(3) + ')';
+        pedestals[i].style.opacity = (0.78 - floatWave * 0.14).toFixed(3);
+      }
+      if (orbits[i]) {
+        orbits[i].style.transform = 'translateY(210px) rotateX(74deg) rotateZ(' + (localT * 22).toFixed(1) + 'deg)';
+      }
+      // Shotcraft OutlineWordFill: Thước ngắm 72 vạch + Đại tự 3D sau lưng sản phẩm thu nhỏ & phát sáng
+      if (dials[i]) {
+        const dialP = smooth(c01((localT - 0.04) / 0.95));
+        const dialScale = 1.48 - 0.48 * dialP;
+        const lit = localT >= 0.54 ? 1 : 0;
+        const outRot = (Math.min(localT, 0.54) * 18 + (lit ? 4 * smooth(c01((localT - 0.54) / 0.35)) : 0));
+        const inRot = -localT * 11;
+        dials[i].style.opacity = (0.85 * smooth(c01(localT / 0.25))).toFixed(3);
+        dials[i].style.transform = 'scale(' + dialScale.toFixed(4) + ')';
+        if (dialOuters[i]) dialOuters[i].setAttribute('transform', 'rotate(' + outRot.toFixed(2) + ')');
+        if (dialInners[i]) dialInners[i].setAttribute('transform', 'rotate(' + inRot.toFixed(2) + ')');
+      }
+      if (depthHeroes[i]) {
+        const shrinkP = smooth(c01((localT - 0.02) / 0.36));
+        const ws = 2.15 - 1.15 * shrinkP;
+        const lit = localT >= 0.54 ? 1 : 0;
+        const flash = lit * (1 - smooth(c01((localT - 0.54) / 0.32)));
+        const driftX = -dx * 18 * (e - 0.5);
+        depthHeroes[i].style.opacity = smooth(c01(localT / 0.18)).toFixed(3);
+        depthHeroes[i].style.transform = 'translateX(' + driftX.toFixed(1) + 'px) scale(' + ws.toFixed(4) + ')';
+        if (dhOutlines[i]) dhOutlines[i].style.opacity = (1 - lit * 0.65).toFixed(3);
+        if (dhSolids[i]) {
+          dhSolids[i].style.opacity = (lit * (0.42 + 0.58 * flash)).toFixed(3);
+        }
+      }
+    }
+
+    // Vệt sáng ánh kim (sheen) quét ngang qua thẻ / thân sản phẩm cutout
+    if (sheens[i]) {
+      const sheenCycle = (localT - 0.1) % 2.4;
+      const sheenP = c01(sheenCycle / 0.78);
+      const sheenX = -120 + 260 * smooth(sheenP);
+      sheens[i].style.transform = 'translateX(' + sheenX.toFixed(1) + '%) rotate(12deg)';
+    }
+
+    // Floating Spec Chips nảy ra lần lượt
+    if (chipGroups[i] && chipGroups[i].length) {
+      chipGroups[i].forEach((chip, ci) => {
+        const chipStart = 0.18 + ci * 0.22;
+        const cp = smooth(c01((localT - chipStart) / 0.26));
+        const cb = Math.sin(cp * Math.PI);
+        const cScale = 0.84 + 0.16 * cp + 0.06 * cb;
+        const cY = (1 - cp) * 24;
+        chip.style.opacity = cp.toFixed(3);
+        chip.style.transform = 'translateY(' + cY.toFixed(1) + 'px) scale(' + cScale.toFixed(3) + ')';
+      });
+    }
 
     // [V2] nền động: crossfade theo cảnh + trôi NGƯỢC hướng card -> chiều sâu
     if (ambs[i]) {
@@ -331,8 +737,6 @@ window.__render = (t) => {
       ambs[i].style.transform = 'scale(' + (1.12 + 0.06 * e).toFixed(3) + ') translate(' +
         (-dx * 16 * e).toFixed(1) + 'px,' + (-dy * 16 * e).toFixed(1) + 'px)';
     }
-
-    segs[i].style.width = (t >= s.end ? 100 : t <= s.start ? 0 : (c01((t - s.start) / Math.max(0.1, s.end - s.start)) * 100)) + '%';
   });
 
   if (badge) {
@@ -340,12 +744,36 @@ window.__render = (t) => {
     const on = s && t >= s.start - FADE && t < s.end;
     badge.style.display = on ? 'flex' : 'none';
     if (on) {
-      // [V2] pop nảy vào + số giá đếm tăng dần trong 0.55s đầu
-      const bp = smooth(c01((t - s.start) / 0.55));
-      const pop = 0.80 + 0.20 * bp + 0.04 * Math.sin(bp * Math.PI);
+      const bp = smooth(c01((t - s.start) / 0.52));
+      const pop = 0.78 + 0.22 * bp + 0.06 * Math.sin(bp * Math.PI);
+      const pulse = 1 + 0.018 * Math.sin(Math.max(0, t - s.start - 0.52) * 6);
       badge.style.transformOrigin = 'top right';
-      badge.style.transform = 'scale(' + pop.toFixed(3) + ')';
-      if (badgeNow && priceTarget) badgeNow.textContent = Math.round(priceTarget * bp) + 'K';
+      badge.style.transform = 'scale(' + (pop * pulse).toFixed(3) + ')';
+      // Shotcraft DigitRoll: cuộn từng cột số 0..9 mượt mà lệch pha 0.12s mỗi cột
+      digitCols.forEach((col, ci) => {
+        const target = Number(col.dataset.target) || 0;
+        const dt = c01((t - s.start - ci * 0.11) / 0.68);
+        const rollEase = 1 - Math.pow(1 - dt, 3);
+        const offsetPx = (10 + target) * rollEase * 88;
+        const strip = col.firstElementChild;
+        if (strip) strip.style.transform = 'translateY(-' + offsetPx.toFixed(1) + 'px)';
+      });
+    }
+  }
+
+  // CTA Trust Strip ở cảnh cuối
+  const ctaSceneIdx = ${ctaSceneIdx};
+  if (ctaStrip && ctaSceneIdx >= 0) {
+    const cs = scenes[ctaSceneIdx];
+    const on = cs && t >= cs.start - 0.1 && t <= cs.end + 0.3;
+    ctaStrip.style.display = on ? 'flex' : 'none';
+    if (on) {
+      ctaPills.forEach((pill, pi) => {
+        const pp = smooth(c01((t - cs.start - pi * 0.16) / 0.26));
+        const pb = Math.sin(pp * Math.PI);
+        pill.style.opacity = pp.toFixed(3);
+        pill.style.transform = 'translateY(' + ((1 - pp) * 18).toFixed(1) + 'px) scale(' + (0.88 + 0.12 * pp + 0.05 * pb).toFixed(3) + ')';
+      });
     }
   }
 
@@ -353,29 +781,33 @@ window.__render = (t) => {
   if (khook) {
     let ov = 0;
     if (t < KHOOK_END) {
-      const fin = smooth(t / 0.28);                               // vào
-      const fout = 1 - smooth((t - (KHOOK_END - 0.3)) / 0.3);     // ra trước khi cắt
+      const fin = smooth(t / 0.24);
+      const fout = 1 - smooth((t - (KHOOK_END - 0.28)) / 0.28);
       ov = Math.max(0, Math.min(fin, fout));
     }
     khook.style.opacity = ov.toFixed(3);
     kEls.forEach((el) => {
       const at = parseFloat(el.dataset.at);
-      const p = smooth(c01((t - at) / 0.34));
-      if (el.tagName === 'MARK') { el.style.transform = 'scaleX(' + p.toFixed(3) + ')'; return; }
+      const p = smooth(c01((t - at) / 0.36));
+      if (el.tagName === 'MARK') {
+        const b = Math.sin(p * Math.PI);
+        el.style.transform = 'scaleX(' + p.toFixed(3) + ') scaleY(' + (1 + 0.06 * b).toFixed(3) + ')';
+        return;
+      }
       el.style.opacity = p.toFixed(3);
+      const blurPx = (1 - p) * 14;
+      el.style.filter = blurPx > 0.2 ? 'blur(' + blurPx.toFixed(1) + 'px)' : 'none';
       if (el.classList.contains('hero')) {
-        el.style.transform = 'scale(' + (1.32 - 0.32 * p + 0.05 * Math.sin(p * Math.PI)).toFixed(3) + ')';
+        el.style.transform = 'scale(' + (1.32 - 0.32 * p + 0.06 * Math.sin(p * Math.PI)).toFixed(3) + ')';
       } else if (el.classList.contains('fw')) {
-        el.style.transform = 'scale(' + (0.6 + 0.4 * p + 0.07 * Math.sin(p * Math.PI)).toFixed(3) + ')';
-      } else if (khStyle.indexOf('highlight') >= 0) {
-        el.style.transform = 'translateX(' + (-24 * (1 - p)).toFixed(1) + 'px)';
+        el.style.transform = 'scale(' + (0.6 + 0.4 * p + 0.08 * Math.sin(p * Math.PI)).toFixed(3) + ')';
       } else {
-        const sc = 0.9 + 0.1 * p + 0.035 * Math.sin(p * Math.PI);
-        el.style.transform = 'translateY(' + (28 * (1 - p)).toFixed(1) + 'px) scale(' + sc.toFixed(3) + ')';
+        const sc = 0.90 + 0.10 * p + 0.04 * Math.sin(p * Math.PI);
+        el.style.transform = 'translateY(' + (34 * (1 - p)).toFixed(1) + 'px) scale(' + sc.toFixed(3) + ')';
       }
     });
     // ẩn phụ đề đáy khi kinetic hook đang chạy (khỏi trùng câu)
-    if (sub.el) sub.el.style.opacity = t < KHOOK_END - 0.1 ? '0' : '1';
+    if (sub.el) sub.el.style.opacity = t < KHOOK_END - 0.08 ? '0' : '1';
   }
 
   sub.seek(t);
@@ -433,8 +865,14 @@ await browser.close();
 console.log(`  frames xong sau ${((Date.now() - t0) / 1000).toFixed(0)}s → ${path.basename(silent)}`);
 
 // --- ghép audio -------------------------------------------------------------
-const voice = job.audio?.voice_path && fs.existsSync(job.audio.voice_path) ? job.audio.voice_path : null;
-const bgm = fs.existsSync(path.join(root, 'assets', 'bgm.mp4')) ? path.join(root, 'assets', 'bgm.mp4') : null;
+const rawVoice = job.audio?.voice_path;
+const resolvedVoice = rawVoice
+  ? (fs.existsSync(rawVoice) ? rawVoice : path.join(root, rawVoice))
+  : path.join(dir, 'voice.mp3');
+const voice = fs.existsSync(resolvedVoice) ? resolvedVoice : null;
+const bgm = job.audio?.bgm !== 'none' && fs.existsSync(path.join(root, 'assets', 'bgm.mp4'))
+  ? path.join(root, 'assets', 'bgm.mp4')
+  : null;
 const finalMp4 = path.join(dir, 'final.mp4');
 
 if (voice || bgm) {
@@ -470,9 +908,7 @@ if (voice || bgm) {
   fs.renameSync(silent, finalMp4);
 }
 
-// --- [V2] SFX: whoosh mỗi lần cắt cảnh + pop khi badge giá bật ---------------
-// Tổng hợp bằng ffmpeg (không cần file rời). Muốn tiếng xịn hơn thì thay bằng
-// assets/sfx/whoosh.wav + pop.wav. Chỉ chạy khi video đã có audio.
+// --- [V2] SFX: whoosh-thud mỗi lần cắt cảnh + chime pop khi badge giá bật ---
 const cutTimes = scenes.slice(1).map((s) => s.start);
 if ((voice || bgm) && cutTimes.length) {
   const whoosh = path.join(dir, 'assets', 'whoosh.wav');
@@ -480,27 +916,43 @@ if ((voice || bgm) && cutTimes.length) {
   const userWhoosh = path.join(root, 'assets', 'sfx', 'whoosh.wav');
   const userPop = path.join(root, 'assets', 'sfx', 'pop.wav');
   if (fs.existsSync(userWhoosh)) fs.copyFileSync(userWhoosh, whoosh);
-  else execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anoisesrc=d=0.4:c=pink:r=44100:a=0.55',
-    '-af', 'highpass=f=260,lowpass=f=3600,afade=t=in:d=0.16,afade=t=out:st=0.17:d=0.22', whoosh]);
+  else execFileSync('ffmpeg', [
+    '-y', '-loglevel', 'error',
+    '-f', 'lavfi', '-i', 'anoisesrc=d=0.34:c=brown:r=44100:a=0.6',
+    '-f', 'lavfi', '-i', 'sine=frequency=95:duration=0.22:sample_rate=44100',
+    '-filter_complex',
+    '[0:a]highpass=f=140,lowpass=f=2200,afade=t=in:d=0.09,afade=t=out:st=0.11:d=0.22[air];' +
+    '[1:a]afade=t=out:st=0.01:d=0.20:curve=exp,volume=0.55[sub];' +
+    '[air][sub]amix=inputs=2:normalize=0',
+    whoosh,
+  ]);
   if (fs.existsSync(userPop)) fs.copyFileSync(userPop, pop);
-  else execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'sine=frequency=740:duration=0.16:sample_rate=44100',
-    '-af', 'afade=t=out:st=0.015:d=0.14:curve=exp', pop]);
+  else execFileSync('ffmpeg', [
+    '-y', '-loglevel', 'error',
+    '-f', 'lavfi', '-i', 'sine=frequency=880:duration=0.24:sample_rate=44100',
+    '-f', 'lavfi', '-i', 'sine=frequency=1318.5:duration=0.28:sample_rate=44100',
+    '-filter_complex',
+    '[0:a]afade=t=out:st=0.01:d=0.22:curve=exp,volume=0.45[s1];' +
+    '[1:a]adelay=28|28,afade=t=out:st=0.02:d=0.24:curve=exp,volume=0.40[s2];' +
+    '[s1][s2]amix=inputs=2:normalize=0',
+    pop,
+  ]);
 
   const badgeStart = badgeScene ? badgeScene.start : null;
   const n = cutTimes.length;
   let fc = `[1:a]asplit=${n}` + Array.from({ length: n }, (_, i) => `[w${i}s]`).join('') + ';';
   let labels = '';
   cutTimes.forEach((tt, i) => {
-    const ms = Math.max(0, Math.round((tt - 0.08) * 1000)); // vào sớm 80ms cho có đà
-    fc += `[w${i}s]adelay=${ms}|${ms},volume=0.26[w${i}];`;
+    const ms = Math.max(0, Math.round((tt - 0.06) * 1000));
+    fc += `[w${i}s]adelay=${ms}|${ms},volume=0.28[w${i}];`;
     labels += `[w${i}]`;
   });
   const inputs = ['-y', '-loglevel', 'error', '-i', finalMp4, '-i', whoosh];
-  let count = n + 1; // [0:a] + n whoosh
+  let count = n + 1;
   if (badgeStart != null) {
     inputs.push('-i', pop);
     const pms = Math.round(badgeStart * 1000);
-    fc += `[2:a]adelay=${pms}|${pms},volume=0.5[pp];`;
+    fc += `[2:a]adelay=${pms}|${pms},volume=0.55[pp];`;
     labels += '[pp]';
     count += 1;
   }
@@ -509,7 +961,7 @@ if ((voice || bgm) && cutTimes.length) {
   execFileSync('ffmpeg', [...inputs, '-filter_complex', fc, '-map', '0:v', '-map', '[mix]',
     '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', sfxOut], { stdio: 'inherit' });
   fs.renameSync(sfxOut, finalMp4);
-  console.log('  đã trộn SFX (whoosh + pop)');
+  console.log('  đã trộn SFX (whoosh-thud + chime-pop)');
 }
 
 const mb = (fs.statSync(finalMp4).size / 1024 / 1024).toFixed(1);

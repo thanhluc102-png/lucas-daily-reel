@@ -75,8 +75,8 @@ jobs:
           path: ~/.cache/huggingface
           key: whisper-large-v3-v1
 
-      - name: Cài faster-whisper
-        run: pip install faster-whisper
+      - name: Cài faster-whisper & pillow
+        run: pip install faster-whisper pillow
 
       - name: Cài dependency Node
         run: npm ci || npm install

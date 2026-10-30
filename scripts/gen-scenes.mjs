@@ -167,6 +167,9 @@ function sanitizeCreative(c) {
     if (n > c.hook.lines.length) console.warn(`[gen] hook.lines có ${n} dòng -> lọc còn ${c.hook.lines.length}`);
   }
   if (Array.isArray(c?.hook?.hl)) c.hook.hl = clean(c.hook.hl, 3);
+  if (c?.hook?.style === 'highlight' && !c.hook.hlPhrase && c.hook.lines?.length) {
+    c.hook.hlPhrase = c.hook.lines[c.hook.lines.length - 1];
+  }
   return c;
 }
 
