@@ -7,9 +7,8 @@ name: Daily reel v2 (pipeline scenes.json)
 
 on:
   schedule:
-    - cron: '15 1 * * *'    # 08:15 VN — sáng
-    - cron: '15 5 * * *'    # 12:15 VN — trưa
-    - cron: '15 13 * * *'   # 20:15 VN — tối
+    - cron: '30 1 * * *'    # 08:30 VN — ca Sáng (chính)
+    - cron: '30 4 * * *'    # 11:30 VN — nhịp dự phòng sáng (guard tự bỏ qua nếu 08:30 đã đăng)
   workflow_dispatch:
     inputs:
       product_id:
@@ -39,6 +38,8 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - id: g
+        env:
+          POST_MIN_HOURS: '18'
         run: node lib/already-posted.mjs
 
   reel:
