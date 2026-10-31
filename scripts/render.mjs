@@ -18,7 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { execFileSync, spawn } from 'node:child_process';
+import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import puppeteer from 'puppeteer-core';
 
 const FPS = 30;
@@ -923,15 +923,53 @@ await new Promise((res, rej) => { ff.on('close', (c) => (c === 0 ? res() : rej(n
 await browser.close();
 console.log(`  frames xong sau ${((Date.now() - t0) / 1000).toFixed(0)}s → ${path.basename(silent)}`);
 
-// --- ghép audio -------------------------------------------------------------
+// --- ghép audio (xoay vòng kho nhạc assets/bgm/ + chuẩn hoá -17.5 LUFS + cắt intro 15-20s) ---
+const BGM_EXTS = new Set(['.mp3', '.m4a', '.aac', '.wav', '.ogg', '.opus', '.flac', '.mp4']);
+function hashId(s) {
+  let h = 2166136261;
+  for (const ch of String(s)) {
+    h ^= ch.charCodeAt(0);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  h ^= h >>> 16;
+  h = Math.imul(h, 2246822507) >>> 0;
+  h ^= h >>> 13;
+  return h >>> 0;
+}
+function pickBgm(jobId) {
+  const bgmDir = path.join(root, 'assets', 'bgm');
+  const list = fs.existsSync(bgmDir)
+    ? fs.readdirSync(bgmDir).filter((f) => BGM_EXTS.has(path.extname(f).toLowerCase())).sort()
+        .map((f) => path.join(bgmDir, f))
+    : [];
+  if (!list.length) {
+    const legacy = path.join(root, 'assets', 'bgm.mp4');
+    return fs.existsSync(legacy) ? legacy : null;
+  }
+  return list[hashId(jobId) % list.length];
+}
+function probeDur(f) {
+  try {
+    const out = execFileSync('ffprobe',
+      ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim();
+    const d = parseFloat(out);
+    return d > 0 ? d : 0;
+  } catch { return 0; }
+}
+function probeLufs(f) {
+  const r = spawnSync('ffmpeg', ['-hide_banner', '-i', f, '-af', 'ebur128', '-f', 'null', '-'],
+    { encoding: 'utf8' });
+  const m = (r.stderr || '').match(/Integrated loudness:[\s\S]*?I:\s*(-?\d+(?:\.\d+)?)\s*LUFS/);
+  return m ? parseFloat(m[1]) : -17.5;
+}
+
 const rawVoice = job.audio?.voice_path;
 const resolvedVoice = rawVoice
   ? (fs.existsSync(rawVoice) ? rawVoice : path.join(root, rawVoice))
   : path.join(dir, 'voice.mp3');
 const voice = fs.existsSync(resolvedVoice) ? resolvedVoice : null;
-const bgm = job.audio?.bgm !== 'none' && fs.existsSync(path.join(root, 'assets', 'bgm.mp4'))
-  ? path.join(root, 'assets', 'bgm.mp4')
-  : null;
+const jobKey = job.id || path.basename(file, '.json');
+const bgm = job.audio?.bgm !== 'none' ? pickBgm(jobKey) : null;
 const finalMp4 = path.join(dir, 'final.mp4');
 
 if (voice || bgm) {
@@ -939,14 +977,29 @@ if (voice || bgm) {
   const parts = [];
   let ai = 1;
   if (voice) { args.push('-i', voice); parts.push({ role: 'voice', idx: ai++ }); }
-  if (bgm) { args.push('-stream_loop', '-1', '-i', bgm); parts.push({ role: 'bgm', idx: ai++ }); }
+  let bgmGainDb = '0';
+  if (bgm) {
+    const bgmLufs = probeLufs(bgm);
+    bgmGainDb = (-17.5 - bgmLufs).toFixed(2);
+    const bgmDur = probeDur(bgm);
+    const wantSkip = 15 + (hashId(jobKey + '#skip') % 6);
+    const bgmStart = bgmDur > total + 1 ? Math.max(0, Math.min(wantSkip, bgmDur - total - 0.3)) : 0;
+    console.log(`  ♫ Nhạc nền: ${path.basename(bgm)} (${bgmLufs} LUFS -> bù ${bgmGainDb} dB, vào từ ${bgmStart.toFixed(1)}s)`);
+    if (bgmStart > 0) args.push('-ss', bgmStart.toFixed(2));
+    args.push('-stream_loop', '-1', '-i', bgm);
+    parts.push({ role: 'bgm', idx: ai++ });
+  }
 
-  const ducked = voice ? 0.14 : 0.32; // có giọng thì hạ nhạc để nghe rõ lời
+  const ducked = voice ? 0.14 : 0.35;
+  const fadeAt = Math.max(0, total - 1.2).toFixed(2);
   const fl = [];
   const labels = [];
   for (const p of parts) {
-    const vol = p.role === 'bgm' ? ducked : 1.0;
-    fl.push(`[${p.idx}:a]volume=${vol}[a${p.idx}]`);
+    if (p.role === 'bgm') {
+      fl.push(`[${p.idx}:a]atrim=0:${total},asetpts=N/SR/TB,volume=${bgmGainDb}dB,volume=${ducked},afade=t=in:st=0:d=0.4,afade=t=out:st=${fadeAt}:d=1.2[a${p.idx}]`);
+    } else {
+      fl.push(`[${p.idx}:a]volume=1.0[a${p.idx}]`);
+    }
     labels.push(`[a${p.idx}]`);
   }
   let audioMap;
