@@ -66,12 +66,12 @@ const bySku = new Map((job.products || []).map((p) => [p.sku, p]));
 
 // timeline từng cảnh: ưu tiên start_sec/end_sec do align.mjs đo; nếu chưa có thì cộng dồn duration
 let cursor = 0;
-const scenes = job.scenes.map((s) => {
+const scenes = job.scenes.map((s, i) => {
   const start = s.start_sec ?? cursor;
   const end = s.end_sec ?? start + s.duration_sec;
   cursor = end;
   const prod = bySku.get(s.sku_ref) || job.products?.[0];
-  return { ...s, start, end, prod };
+  return { ...s, idx: s.idx ?? i, start, end, prod };
 });
 const total = Number((job.audio?.measured_duration_sec || scenes.at(-1).end + 0.2).toFixed(3));
 
@@ -138,11 +138,9 @@ for (const s of scenes) {
 fs.cpSync(path.join(root, 'assets', 'fonts'), path.join(dir, 'assets', 'fonts'), { recursive: true });
 fs.copyFileSync(path.join(root, 'assets', 'logo.png'), path.join(dir, 'assets', 'logo.png'));
 
-// --- dựng HTML --------------------------------------------------------------
-const component = fs.readFileSync(path.join(root, 'templates', 'subtitle.mjs'), 'utf8');
+
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 
-// Tự động rút các thông số / điểm mạnh ngắn gọn từ câu thoại của từng cảnh để làm Floating Spec Pills
 function extractSceneSpecs(text, role) {
   if (role === 'hook' || role === 'price' || role === 'cta') return [];
   const specs = [];
@@ -157,9 +155,7 @@ function extractSceneSpecs(text, role) {
   for (const re of patterns) {
     for (const m of raw.matchAll(re)) {
       const val = m[0].trim().replace(/[.,;!?]+$/, '');
-      if (val && !specs.some((x) => x.toLowerCase() === val.toLowerCase())) {
-        specs.push(val);
-      }
+      if (val && !specs.some((x) => x.toLowerCase() === val.toLowerCase())) specs.push(val);
       if (specs.length >= 3) break;
     }
     if (specs.length >= 3) break;
@@ -167,172 +163,192 @@ function extractSceneSpecs(text, role) {
   return specs;
 }
 
-const ROLE_META = {
-  hook: { tag: 'GÓC HỎI ĐÁP', icon: '⚡' },
-  body: { tag: 'ĐIỂM ĂN TIỀN', icon: '✦' },
-  proof: { tag: 'TRẢI NGHIỆM THẬT', icon: '✔' },
-  price: { tag: 'GIÁ TỐT TẠI LUCAS', icon: '★' },
-  cta: { tag: 'CHÍNH HÃNG 100%', icon: '🛡️' },
-};
+function extractHeroWord(text, idx, mainProd) {
+  const raw = String(text || '');
+  const mCri = raw.match(/CRI\s*(?:trên|>|≥)?\s*(\d+)/i);
+  if (mCri) return { word: `CRI ${mCri[1]}+`, sub: 'CHUẨN MÀU STUDIO CHUYÊN NGHIỆP' };
+  const mPct = raw.match(/(\d+\s*%)/);
+  if (mPct) return { word: `10–${mPct[1].replace(/\s+/g, '')}`, sub: 'ĐIỀU CHỈNH ĐỘ SÁNG MƯỢT MÀ' };
+  const mTemp = raw.match(/(?:\d+|ba|bốn)\s+nhiệt\s+độ\s+màu/i);
+  if (mTemp) return { word: '3 TONE MÀU', sub: 'ẤM · TRUNG TÍNH · TRẮNG LẠNH' };
+  const mGram = raw.match(/(\d+\s*g)(?=$|[\s.,;!?])/i);
+  if (mGram) return { word: `SIÊU NHẸ ${mGram[1].toUpperCase()}`, sub: 'GẮN NAM CHÂM KHÔNG MỎI TAY' };
+  const mCode = (mainProd?.name || '').match(/\b([A-Z]{1,4}\d{2,4}[A-Z]?)\b/);
+  if (mCode && idx === 0) return { word: mCode[1].toUpperCase(), sub: 'MAGNETIC FILL LIGHT' };
+  const fallbacks = [
+    { word: 'PRO STUDIO', sub: 'PHỤ KIỆN QUAY CHỤP CHÍNH HÃNG' },
+    { word: 'MAGSAFE', sub: 'HÍT TỪ TÍNH SIÊU CHẮC CHẮN' },
+    { word: 'LUCAS.VN', sub: 'BẢO HÀNH CHÍNH HÃNG TOÀN QUỐC' },
+  ];
+  return fallbacks[idx % fallbacks.length];
+}
 
 const mainProd = job.products?.[0] || {};
 const shortProdName = esc((mainProd.name || 'Phụ kiện chính hãng Lucas').replace(/\s*\([^)]*\)\s*/g, ' ').trim());
 
-// Rút từ khoá đại tự (Hero Depth Word) từ câu thoại để đặt chìm 3D sau lưng sản phẩm tách nền (theo OutlineWordFill.tsx)
-function extractHeroWord(text, idx) {
-  const raw = String(text || '');
-  const mCri = raw.match(/CRI\s*(?:trên|>|≥)?\s*(\d+)/i);
-  if (mCri) return `CRI ${mCri[1]}+`;
-  const mPct = raw.match(/(\d+\s*%)/);
-  if (mPct) return `SÁNG ${mPct[1].replace(/\s+/g, '')}`;
-  const mTemp = raw.match(/(?:\d+|ba|bốn)\s+nhiệt\s+độ\s+màu/i);
-  if (mTemp) return '3 MÀU SÁNG';
-  const mCode = (mainProd.name || '').match(/\b([A-Z]{1,4}\d{2,4}[A-Z]?)\b/);
-  if (mCode && idx === 0) return mCode[1].toUpperCase();
-  const fallbacks = ['STUDIO 3D', 'PRO LIGHT', 'MAGSAFE', 'CHÍNH HÃNG'];
-  return fallbacks[idx % fallbacks.length];
-}
+// Gán theme cho từng cảnh theo nhịp Katana:
+// Cảnh chẵn (0, 1, 3, 5): Dark Graphite/Obsidian
+// Cảnh điểm nhấn (2, 4): Warm Editorial Paper (#F4F0E6) để đảo thị giác cực mạnh!
+scenes.forEach((s, i) => {
+  s._theme = (i === 2 || i === 4) ? 'paper' : 'dark';
+});
 
-// Vòng thước ngắm kỹ thuật 72 vạch (từ video-shotcraft/OutlineWordFill.tsx)
-const dialTicksSvg = Array.from({ length: 72 }, (_, i) => {
-  const major = i % 6 === 0;
-  return `<line x1="0" y1="-326" x2="0" y2="-${major ? 302 : 315}" stroke="#C9A227" stroke-width="${major ? 2.4 : 1.3}" opacity="${major ? 0.72 : 0.32}" transform="rotate(${i * 5})" />`;
+// Vòng bánh đà 120 vạch + Sao chổi sáng (từ WordRelayGeometry.tsx - FasterGeo)
+const fasterTicksSvg = Array.from({ length: 120 }, (_, k) => {
+  const a = (k / 120) * Math.PI * 2;
+  const long = k % 10 === 0;
+  const r0 = 380 - (long ? 22 : 10);
+  const r1 = 380;
+  return `<line x1="${(r0 * Math.cos(a)).toFixed(1)}" y1="${(r0 * Math.sin(a)).toFixed(1)}" x2="${(r1 * Math.cos(a)).toFixed(1)}" y2="${(r1 * Math.sin(a)).toFixed(1)}" stroke="${long ? 'rgba(201,162,39,0.85)' : 'rgba(236,238,244,0.28)'}" stroke-width="${long ? 2.5 : 1.4}" />`;
 }).join('');
 
-const sceneLayers = scenes
-  .map((s) => {
-    const focusY = s.asset?.focus === 'top' ? '18%' : s.asset?.focus === 'bottom' ? '82%' : '50%';
-    const specs = extractSceneSpecs(s.text, s.role);
-    const chipsHtml = specs.length
-      ? `<div class="spec-chips">${specs
-          .map(
-            (sp, ci) =>
-              `<div class="spec-chip" data-chip="${ci}"><span class="sc-dot"></span><span>${esc(sp)}</span></div>`
-          )
-          .join('')}</div>`
-      : '';
-    if (s._mode === 'cutout') {
-      const heroWord = esc(extractHeroWord(s.text, s.idx));
-      return `<div class="scene is-cutout" data-i="${s.idx}" data-role="${s.role}" data-mode="cutout" style="z-index:${s.idx + 1}">
-        <div class="card-stage cutout-stage">
-          <div class="studio-halo"></div>
-          <svg class="shotcraft-dial" viewBox="-400 -400 800 800">
-            <g class="dial-outer">
-              <circle r="360" fill="none" stroke="rgba(201,162,39,0.45)" stroke-width="2" stroke-dasharray="22 18" />
-              <line x1="0" y1="-380" x2="0" y2="-346" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
-              <line x1="0" y1="346" x2="0" y2="380" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
-              <line x1="-380" y1="0" x2="-346" y2="0" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
-              <line x1="346" y1="0" x2="380" y2="0" stroke="#C9A227" stroke-width="3" stroke-linecap="round" />
-            </g>
-            <g class="dial-inner">
-              <circle r="326" fill="none" stroke="rgba(201,162,39,0.28)" stroke-width="1.2" />
-              ${dialTicksSvg}
+const sceneLayers = scenes.map((s) => {
+  const focusY = s.asset?.focus === 'top' ? '18%' : s.asset?.focus === 'bottom' ? '82%' : '50%';
+  const specs = extractSceneSpecs(s.text, s.role);
+  const hero = extractHeroWord(s.text, s.idx, mainProd);
+  const isPaper = s._theme === 'paper';
+  const geoKind = s.idx % 2 === 1 ? 'faster' : 'tighter';
+
+  // Bento Telemetry Grid cho thông số
+  const bentoHtml = specs.length
+    ? `<div class="katana-bento ${isPaper ? 'is-paper' : ''}">
+        ${specs.map((sp, ci) => `
+          <div class="kb-cell" data-chip="${ci}">
+            <div class="kb-idx">SPEC // 0${ci + 1}</div>
+            <div class="kb-val">${esc(sp)}</div>
+            <div class="kb-bar"><i class="kb-fill"></i></div>
+          </div>
+        `).join('')}
+      </div>`
+    : '';
+
+  // Marquee Kinetic Strip chạy chéo/ngang ở hậu cảnh
+  const marqueeText = Array.from({ length: 6 }, () => `${hero.word} ✦ LUCAS STUDIO ✦`).join(' ');
+
+  if (s._mode === 'cutout') {
+    return `<div class="scene is-cutout theme-${s._theme}" data-i="${s.idx}" data-role="${s.role}" data-mode="cutout" data-theme="${s._theme}" data-geo="${geoKind}" style="z-index:${s.idx + 1}">
+      <div class="katana-marquee"><div class="km-track">${esc(marqueeText)}</div></div>
+      <div class="card-stage cutout-stage">
+        <div class="studio-halo"></div>
+        ${geoKind === 'faster' ? `
+          <svg class="katana-geo geo-faster" viewBox="-420 -420 840 840">
+            <circle class="gf-dash" r="335" fill="none" stroke="${isPaper ? 'rgba(11,27,46,0.35)' : 'rgba(236,238,244,0.38)'}" stroke-width="2.2" stroke-dasharray="12 18" />
+            <g class="gf-ticks">${fasterTicksSvg}</g>
+            <circle r="275" fill="none" stroke="${isPaper ? 'rgba(201,162,39,0.35)' : 'rgba(201,162,39,0.22)'}" stroke-width="1.5" />
+            <circle class="gf-comet" r="335" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round" stroke-dasharray="160 2000" />
+          </svg>
+        ` : `
+          <svg class="katana-geo geo-tighter" viewBox="-420 -420 840 840">
+            <circle class="gt-c gt-c0" cx="-140" cy="0" r="195" fill="none" stroke="${isPaper ? 'rgba(11,27,46,0.32)' : 'rgba(255,255,255,0.38)'}" stroke-width="2.4" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+            <circle class="gt-c gt-c1" cx="0" cy="0" r="195" fill="none" stroke="#C9A227" stroke-width="2.8" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+            <circle class="gt-c gt-c2" cx="140" cy="0" r="195" fill="none" stroke="${isPaper ? 'rgba(11,27,46,0.32)' : 'rgba(255,255,255,0.38)'}" stroke-width="2.4" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+            <g class="gt-rivets">
+              <rect x="-76" y="-168" width="12" height="12" fill="#C9A227" transform="rotate(45 -70 -162)" />
+              <rect x="-76" y="156" width="12" height="12" fill="#C9A227" transform="rotate(45 -70 162)" />
+              <rect x="64" y="-168" width="12" height="12" fill="#C9A227" transform="rotate(45 70 -162)" />
+              <rect x="64" y="156" width="12" height="12" fill="#C9A227" transform="rotate(45 70 162)" />
             </g>
           </svg>
-          <div class="depth-hero">
-            <span class="dh-outline">${heroWord}</span>
-            <span class="dh-solid">${heroWord}</span>
+        `}
+        <div class="katana-hero-type">
+          <div class="kht-kicker">${esc(hero.sub)}</div>
+          <div class="kht-word-wrap">
+            <span class="kht-stroke">${esc(hero.word)}</span>
+            <span class="kht-fill">${esc(hero.word)}</span>
           </div>
-          <div class="studio-orbit"></div>
-          <div class="studio-pedestal"></div>
-          <div class="cutout-wrap">
-            <img class="cutout-img" src="${s._cutImg}" alt="">
-            <div class="cutout-shine-mask" style="-webkit-mask-image:url('${s._cutImg}');mask-image:url('${s._cutImg}')">
-              <div class="card-sheen cutout-beam"></div>
-            </div>
+        </div>
+        <div class="studio-pedestal"></div>
+        <div class="cutout-wrap">
+          <img class="cutout-img" src="${s._cutImg}" alt="">
+          <div class="cutout-shine-mask" style="-webkit-mask-image:url('${s._cutImg}');mask-image:url('${s._cutImg}')">
+            <div class="card-sheen cutout-beam"></div>
           </div>
-          ${chipsHtml}
         </div>
-      </div>`;
-    }
-    return `<div class="scene is-card" data-i="${s.idx}" data-role="${s.role}" data-mode="card" style="z-index:${s.idx + 1}">
-      <div class="card-stage">
-        <div class="card-glow"></div>
-        <div class="card">
-          <img class="card-img" src="${s._img}" style="object-position:50% ${focusY}">
-          <div class="card-sheen"></div>
-          <div class="card-ring"></div>
-        </div>
-        ${chipsHtml}
+        ${bentoHtml}
       </div>
     </div>`;
-  })
-  .join('\n');
+  }
 
-// [V2] Nền động: chính ảnh sản phẩm phóng to + làm mờ + tối, đổi theo từng cảnh.
+  return `<div class="scene is-card theme-${s._theme}" data-i="${s.idx}" data-role="${s.role}" data-mode="card" data-theme="${s._theme}" style="z-index:${s.idx + 1}">
+    <div class="katana-marquee"><div class="km-track">${esc(marqueeText)}</div></div>
+    <div class="card-stage">
+      ${s.overlay?.price_badge ? '' : `<div class="katana-card-header">
+        <span class="kch-sub">${esc(hero.sub)}</span>
+        <span class="kch-main">${esc(hero.word)}</span>
+      </div>`}
+      <div class="card-glow"></div>
+      <div class="card">
+        <img class="card-img" src="${s._img}" style="object-position:50% ${focusY}">
+        <div class="card-sheen"></div>
+        <div class="card-ring"></div>
+      </div>
+      ${bentoHtml}
+    </div>
+  </div>`;
+}).join('\n');
+
 const ambientLayers = scenes
   .map((s) => `<div class="amb" data-i="${s.idx}" style="background-image:url(${s._img})"></div>`)
   .join('\n');
 
-// [V2] Kinetic hook — BỘ PRESET chọn qua env HOOK_SPEC (JSON): stack | flash | slam | highlight.
+// --- Katana Editorial Hook (0 -> 3.5s) ---
 const hookEnd = scenes[1] ? scenes[1].start : 3.5;
-const hlWrap = (text, hls) => {
-  let o = esc(text);
-  (hls || []).forEach((h) => { o = o.split(esc(h)).join('<span class="hi">' + esc(h) + '</span>'); });
-  return o;
-};
 function autoHookSpec() {
   const words = ((scenes[0] && scenes[0].text) || '').trim().split(/\s+/).filter(Boolean);
   const lines = [];
   for (let i = 0; i < words.length; i += 3) lines.push(words.slice(i, i + 3).join(' '));
   if (lines.length > 1 && lines[lines.length - 1].split(' ').length === 1)
     lines[lines.length - 2] += ' ' + lines.pop();
-  return { style: 'stack', lines, hl: [] };
+  return { style: 'highlight', lines, hl: [] };
 }
-const HOOK_SPEC = job.hook || (process.env.HOOK_SPEC ? JSON.parse(process.env.HOOK_SPEC) : autoHookSpec());
-function buildKhook(sp) {
-  const st = sp.style || 'stack';
-  const headerPill = `<div class="kh-pill" data-at="0.04"><span class="kh-dot"></span><span>CÂU HỎI NHIỀU NGƯỜI GẶP</span></div>`;
-  if (st === 'flash') {
-    const words = (sp.text || (sp.lines || []).join(' ') || scenes[0]?.text || '').split(/\s+/).filter(Boolean);
-    const hlset = new Set((sp.hl || []).join(' ').split(/\s+/).filter(Boolean));
-    const inner = words.map((w, i) =>
-      `<span class="fw${hlset.has(w.replace(/[?.,!]/g, '')) || /\d/.test(w) ? ' hi' : ''}" data-at="${(0.12 + i * 0.14).toFixed(2)}">${esc(w)}</span>`).join(' ');
-    return `<div id="khook" class="flash"><div class="khook-card">${headerPill}<div class="fl-wrap">${inner}</div></div></div>`;
-  }
-  if (st === 'slam') {
-    return `<div id="khook" class="slam"><div class="khook-card">${headerPill}
-      <div class="sub" data-at="0.14">${(sp.pre || []).map(esc).join('<br>')}</div>
-      <div class="hero" data-at="0.28">${esc(sp.hero || '')}</div>
-      <div class="sub" data-at="0.72">${(sp.post || []).map(esc).join('<br>')}</div></div></div>`;
-  }
-  if (st === 'highlight') {
-    const rawLines = (sp.lines && sp.lines.length) ? sp.lines : autoHookSpec().lines;
-    // Nếu AI quên truyền hlPhrase thì tự động tô sáng dòng cuối (thường là nút thắt/nỗi đau chính)
-    const fallbackPhrase = !sp.hlPhrase && rawLines.length ? rawLines[rawLines.length - 1] : sp.hlPhrase;
-    const lines = rawLines.map((ln, i) => {
-      let html = esc(ln);
-      if (fallbackPhrase && ln.includes(fallbackPhrase))
-        html = esc(ln).split(esc(fallbackPhrase)).join(`<mark data-at="${(0.14 + i * 0.36 + 0.18).toFixed(2)}">${esc(fallbackPhrase)}</mark>`);
-      return `<div class="kg" data-at="${(0.10 + i * 0.36).toFixed(2)}">${html}</div>`;
-    }).join('');
-    return `<div id="khook" class="highlight"><div class="khook-card">${headerPill}${lines}</div></div>`;
-  }
+const HOOK_SPEC = job.hook || autoHookSpec();
+function buildKatanaHook(sp) {
   const rawLines = (sp.lines && sp.lines.length) ? sp.lines : autoHookSpec().lines;
-  const hasHl = Array.isArray(sp.hl) && sp.hl.length > 0;
-  const lines = rawLines.map((ln, i) => {
-    const content = hasHl
-      ? hlWrap(ln, sp.hl)
-      : (i === rawLines.length - 1 ? `<mark data-at="${(0.14 + i * 0.36 + 0.18).toFixed(2)}">${esc(ln)}</mark>` : esc(ln));
-    return `<div class="kg" data-at="${(0.10 + i * 0.36).toFixed(2)}">${content}</div>`;
+  const fallbackPhrase = !sp.hlPhrase && rawLines.length ? rawLines[rawLines.length - 1] : sp.hlPhrase;
+  const linesHtml = rawLines.map((ln, i) => {
+    const isLast = i === rawLines.length - 1;
+    let html = esc(ln);
+    if (fallbackPhrase && ln.includes(fallbackPhrase)) {
+      html = esc(ln).split(esc(fallbackPhrase)).join(
+        `<span class="kh-slash-box"><i class="kh-slash-bg" data-at="${(0.16 + i * 0.28 + 0.14).toFixed(2)}"></i><b>${esc(fallbackPhrase)}</b></span>`
+      );
+    } else if (isLast) {
+      html = `<span class="kh-slash-box"><i class="kh-slash-bg" data-at="${(0.16 + i * 0.28 + 0.14).toFixed(2)}"></i><b>${esc(ln)}</b></span>`;
+    }
+    return `<div class="kh-line" data-at="${(0.08 + i * 0.28).toFixed(2)}">${html}</div>`;
   }).join('');
-  return `<div id="khook" class="stack"><div class="khook-card">${headerPill}${lines}</div></div>`;
-}
-const khookHtml = buildKhook(HOOK_SPEC);
 
+  return `<div id="khook">
+    <div class="kh-editorial-frame">
+      <div class="kh-top-rule" data-at="0.02">
+        <span>LUCAS COMBO // 01</span>
+        <span>LUCAS.VN</span>
+      </div>
+      <div class="kh-kicker" data-at="0.05"><span class="kh-dot"></span>GÓC HỎI ĐÁP NHANH</div>
+      <div class="kh-lines">${linesHtml}</div>
+      <div class="kh-bot-rule" data-at="0.45">
+        <span>SWIPE FOR SPECS</span>
+        <span>${shortProdName}</span>
+      </div>
+    </div>
+  </div>`;
+}
+const khookHtml = buildKatanaHook(HOOK_SPEC);
+
+// --- Katana Chrome + DigitRoll Price Badge ---
 const badgeScene = scenes.find((s) => s.overlay?.price_badge);
 let badgeHtml = '';
 if (badgeScene) {
   const p = badgeScene.prod || {};
   const priceK = String(Math.round((p.price_vnd || 0) / 1000));
   const regK = p.regular_vnd ? Math.round(p.regular_vnd / 1000) : null;
-  // DigitRoll (video-shotcraft/DigitRoll.tsx): mỗi chữ số là 1 băng cuộn dọc 0..90..9
   const digitsStrip = '01234567890123456789'.split('').map((d) => `<b>${d}</b>`).join('');
   const rollCols = priceK.split('').map((ch, idx) => {
     const target = '0123456789'.indexOf(ch);
     if (target < 0) return `<span class="d-static">${esc(ch)}</span>`;
     return `<span class="d-col" data-target="${target}" data-idx="${idx}"><span class="d-strip">${digitsStrip}</span></span>`;
   }).join('') + '<span class="d-static">K</span>';
+
   badgeHtml = `<div class="badge" data-scene="${badgeScene.idx}">
     <div class="badge-top">
       <span class="from">${p.price_is_from ? 'CHỈ TỪ' : 'GIÁ TỐT'}</span>
@@ -350,132 +366,169 @@ const ctaStripHtml = `<div id="cta-strip" data-scene="${ctaSceneIdx}">
   <div class="cta-pill gold"><span>🔗</span> Đặt tại lucas.vn</div>
 </div>`;
 
+const component = fs.readFileSync(path.join(root, 'templates', 'subtitle.mjs'), 'utf8');
+const ROLE_META = {
+  hook: { tag: '01 // HOOK', icon: '⚡' },
+  body: { tag: '02 // SPECS', icon: '✦' },
+  proof: { tag: '03 // HANDS-ON', icon: '✔' },
+  price: { tag: '04 // PRICE DROP', icon: '★' },
+  cta: { tag: '05 // LUCAS.VN', icon: '🛡️' },
+};
+
 const html = `<!doctype html>
 <html lang="vi"><head><meta charset="utf-8">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:${W}px;height:${H}px;overflow:hidden;background:${bg};
-    font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    font-family:'Inter',-apple-system,'SF Pro Display','Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased}
   #frame{position:absolute;inset:0;perspective:1400px}
 
-  /* nền: hai vũng sáng + lưới studio tinh tế */
+  /* Nền Dark Graphite & Nền Giấy Kem Editorial (Đảo chiều theo cảnh kiểu Katana) */
   #bg{position:absolute;inset:0;background:
     radial-gradient(120% 60% at 50% -8%, #16244a 0%, rgba(11,27,46,0) 55%),
     radial-gradient(90% 50% at 50% 120%, #101a33 0%, rgba(11,27,46,0) 60%),
-    ${bg}}
-  #bg-grid{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.07;
-    background-image:linear-gradient(rgba(159,176,196,.4) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(159,176,196,.4) 1px,transparent 1px);
-    background-size:54px 54px}
+    #070F1C}
+  #paper-bg{position:absolute;inset:0;z-index:2;opacity:0;pointer-events:none;
+    background:
+      radial-gradient(90% 60% at 50% 38%, #FFFDF9 0%, #F3EFE6 68%, #E6E0D3 100%)}
 
-  /* [V2] nền động từ ảnh sản phẩm: mờ + tối + phủ vignette navy */
+  /* Khung lưới Swiss Grid 1px đặc trưng của Katana */
+  #swiss-grid{position:absolute;inset:56px;z-index:38;pointer-events:none;
+    border:1.5px solid rgba(159,176,196,.18)}
+  #swiss-grid::before{content:"";position:absolute;left:0;right:0;top:116px;height:1.5px;background:rgba(159,176,196,.16)}
+  #swiss-grid::after{content:"";position:absolute;left:0;right:0;bottom:290px;height:1.5px;background:rgba(159,176,196,.16)}
+  #frame.is-paper #swiss-grid{border-color:rgba(11,27,46,.16)}
+  #frame.is-paper #swiss-grid::before,#frame.is-paper #swiss-grid::after{background:rgba(11,27,46,.14)}
+
   #ambient{position:absolute;inset:0;z-index:0}
   #ambient .amb{position:absolute;inset:-8%;opacity:0;background-size:cover;background-position:center;
-    filter:blur(52px) saturate(1.3) brightness(.48);will-change:opacity,transform}
+    filter:blur(52px) saturate(1.3) brightness(.42);will-change:opacity,transform}
   #ambient::after{content:"";position:absolute;inset:0;pointer-events:none;background:
-    radial-gradient(110% 70% at 50% 42%, rgba(11,27,46,.18) 0%, rgba(11,27,46,.76) 64%, rgba(8,18,32,.95) 100%)}
+    radial-gradient(110% 70% at 50% 42%, rgba(11,27,46,.18) 0%, rgba(11,27,46,.76) 64%, rgba(6,13,24,.96) 100%)}
 
-  /* Header thương hiệu chuẩn vùng an toàn */
-  #topbar{position:absolute;top:76px;left:72px;right:72px;z-index:42;
+  /* Header Katana Telemetry */
+  #topbar{position:absolute;top:76px;left:82px;right:82px;z-index:42;
     display:flex;align-items:center;justify-content:space-between}
   .brand-pill{display:inline-flex;align-items:center;gap:14px;
-    background:rgba(11,27,46,.82);border:1.5px solid rgba(159,176,196,.24);
-    padding:10px 22px 10px 12px;border-radius:99px;backdrop-filter:blur(12px);
-    box-shadow:0 12px 30px rgba(0,0,0,.4)}
-  .brand-logo-wrap{width:52px;height:52px;border-radius:50%;background:#FFFFFF;
-    display:flex;align-items:center;justify-content:center;padding:7px;
-    box-shadow:0 2px 10px rgba(0,0,0,.25)}
+    background:rgba(11,27,46,.86);border:1.5px solid rgba(159,176,196,.26);
+    padding:8px 22px 8px 10px;border-radius:99px;backdrop-filter:blur(12px);
+    box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  #frame.is-paper .brand-pill{background:#0B1B2E;border-color:#0B1B2E}
+  .brand-logo-wrap{width:48px;height:48px;border-radius:50%;background:#FFFFFF;
+    display:flex;align-items:center;justify-content:center;padding:6px}
   .brand-logo-wrap img{width:100%;height:100%;object-fit:contain;display:block}
-  .brand-meta{display:flex;flex-direction:column;gap:2px}
-  .brand-name{color:#FFFFFF;font-size:24px;font-weight:800;letter-spacing:-.3px;line-height:1.1}
-  .brand-sub{color:${accent};font-size:16px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+  .brand-meta{display:flex;flex-direction:column;gap:1px}
+  .brand-name{color:#FFFFFF;font-size:23px;font-weight:800;letter-spacing:-.3px;line-height:1.1}
+  .brand-sub{color:${accent};font-size:15px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
 
   .role-pill{display:inline-flex;align-items:center;gap:10px;
-    background:rgba(11,27,46,.82);border:1.5px solid rgba(201,162,39,.45);
-    padding:12px 24px;border-radius:99px;color:#FFFFFF;font-size:21px;font-weight:800;
-    letter-spacing:1px;backdrop-filter:blur(12px);box-shadow:0 10px 28px rgba(0,0,0,.35)}
-  .role-pill .rp-icon{color:${accent};font-size:22px}
+    font-family:ui-monospace,'SF Mono',Menlo,monospace;
+    background:rgba(11,27,46,.86);border:1.5px solid ${accent};
+    padding:12px 22px;border-radius:99px;color:#FFFFFF;font-size:20px;font-weight:800;
+    letter-spacing:1.5px;backdrop-filter:blur(12px)}
+  #frame.is-paper .role-pill{background:#0B1B2E;color:#FFFFFF}
+  .role-pill .rp-icon{color:${accent};font-size:20px}
 
-  /* Thanh tên sản phẩm phía trên khung ảnh */
-  #prod-bar{position:absolute;top:174px;left:72px;right:72px;z-index:36;
-    display:flex;justify-content:center;pointer-events:none;opacity:0}
-  .prod-title-pill{display:inline-flex;align-items:center;gap:10px;max-width:920px;
-    background:rgba(11,27,46,.68);border:1px solid rgba(159,176,196,.2);
-    padding:10px 26px;border-radius:16px;color:#9FB0C4;font-size:24px;font-weight:700;
-    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(8px)}
-  .prod-title-pill b{color:#FFFFFF;font-weight:800}
+  /* Marquee chữ đại tự chạy ngang ở hậu cảnh */
+  .katana-marquee{position:absolute;left:-20%;right:-20%;top:49%;z-index:0;
+    transform:translateY(-50%) rotate(-5deg);pointer-events:none;opacity:.08;overflow:hidden}
+  .theme-paper .katana-marquee{opacity:.07}
+  .km-track{font-size:190px;font-weight:900;letter-spacing:-6px;white-space:nowrap;
+    color:#FFFFFF;text-transform:uppercase;will-change:transform}
+  .theme-paper .km-track{color:#0B1B2E}
 
-  /* Khung sản phẩm 3D Studio + Spec Chips */
+  /* Sân khấu từng cảnh */
   .scene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    opacity:0;padding:250px 110px 640px;perspective:1400px}
-  .card-stage{position:relative;width:820px;height:820px;display:flex;align-items:center;justify-content:center;
-    transform-style:preserve-3d;will-change:transform}
-  .card-glow{position:absolute;inset:-36px;border-radius:56px;
+    opacity:0;padding:220px 96px 610px;z-index:5}
+  .card-stage{position:relative;z-index:6;width:840px;height:840px;display:flex;align-items:center;justify-content:center;
+    will-change:transform}
+
+  /* Chữ đại tự Katana + Hình học WordRelayGeometry sau lưng sản phẩm */
+  .katana-geo{position:absolute;width:820px;height:820px;pointer-events:none;z-index:2;overflow:visible}
+  .katana-hero-type{position:absolute;top:-54px;left:-90px;right:-90px;z-index:3;
+    display:flex;flex-direction:column;align-items:center;text-align:center;pointer-events:none}
+  .kht-kicker{font-family:ui-monospace,'SF Mono',monospace;font-size:21px;font-weight:800;
+    letter-spacing:4px;color:${accent};margin-bottom:4px;text-transform:uppercase}
+  .theme-paper .kht-kicker{color:#955905}
+  .kht-word-wrap{position:relative;font-family:'Helvetica Neue','Inter',sans-serif;
+    font-size:152px;font-weight:900;letter-spacing:-5px;line-height:.96;white-space:nowrap;
+    padding:0 16px}
+  .kht-stroke{display:block;color:transparent;-webkit-text-stroke:3px rgba(201,162,39,.72)}
+  .theme-paper .kht-stroke{-webkit-text-stroke:3px rgba(11,27,46,.38)}
+  .kht-fill{position:absolute;inset:0;padding:0 16px;color:#FFFFFF;
+    text-shadow:0 12px 42px rgba(0,0,0,.55)}
+  .theme-paper .kht-fill{color:#0B1B2E;text-shadow:none}
+
+  /* Tiêu đề phía trên khung Card (cho ảnh Lifestyle / Infographic) */
+  .katana-card-header{position:absolute;top:-84px;left:0;right:0;z-index:20;
+    display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none}
+  .kch-sub{font-family:ui-monospace,'SF Mono',monospace;font-size:19px;font-weight:800;
+    letter-spacing:3.5px;color:${accent}}
+  .theme-paper .kch-sub{color:#955905}
+  .kch-main{font-size:66px;font-weight:900;letter-spacing:-2.2px;line-height:1.05;color:#FFFFFF}
+  .theme-paper .kch-main{color:#0B1B2E}
+
+  /* 3D Card & 3D Cutout */
+  .card-glow{position:absolute;inset:-32px;border-radius:52px;
     background:radial-gradient(circle at 50% 50%, rgba(201,162,39,.28) 0%, rgba(201,162,39,0) 70%);
     opacity:.65;pointer-events:none}
-  .card{position:relative;width:820px;height:820px;border-radius:36px;overflow:hidden;background:#fff;
-    box-shadow:0 55px 120px -30px rgba(0,0,0,.85), 0 0 0 2px rgba(255,255,255,.16),
-      0 0 40px -10px rgba(201,162,39,.22);will-change:transform}
+  .card{position:relative;width:780px;height:740px;border-radius:34px;overflow:hidden;background:#fff;
+    box-shadow:0 50px 110px -28px rgba(0,0,0,.78), 0 0 0 2px rgba(255,255,255,.22);will-change:transform}
+  .theme-paper .card{box-shadow:0 45px 95px -24px rgba(11,27,46,.32), 0 0 0 3px #0B1B2E}
   .card img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
   .card-sheen{position:absolute;inset:-40%;pointer-events:none;
-    background:linear-gradient(115deg, transparent 38%, rgba(255,255,255,.38) 50%, transparent 62%);
+    background:linear-gradient(115deg, transparent 38%, rgba(255,255,255,.42) 50%, transparent 62%);
     transform:translateX(-120%) rotate(8deg);will-change:transform}
-  .card-ring{position:absolute;inset:0;border-radius:36px;pointer-events:none;
-    box-shadow:inset 0 0 0 2px rgba(255,255,255,.35), inset 0 0 28px rgba(11,27,46,.12)}
+  .card-ring{position:absolute;inset:0;border-radius:34px;pointer-events:none;
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
 
-  /* [3D CUTOUT STUDIO MODE + SHOTCRAFT OUTLINE-WORD-FILL HUD] */
-  .cutout-stage{width:860px;height:840px}
-  .studio-halo{position:absolute;width:760px;height:760px;border-radius:50%;pointer-events:none;
-    background:
-      radial-gradient(circle at 50% 46%, rgba(201,162,39,.34) 0%, rgba(22,36,74,.48) 44%, rgba(11,27,46,0) 72%)}
-  .shotcraft-dial{position:absolute;width:780px;height:780px;pointer-events:none;z-index:2;
-    overflow:visible;will-change:transform,opacity}
-  .depth-hero{position:absolute;top:-38px;left:-90px;right:-90px;z-index:3;
-    display:flex;justify-content:center;align-items:center;pointer-events:none;
-    font-family:'Helvetica Neue','Inter',sans-serif;font-size:148px;font-weight:900;
-    letter-spacing:-4px;line-height:1;white-space:nowrap;will-change:transform,opacity}
-  .depth-hero .dh-outline{color:transparent;-webkit-text-stroke:3px rgba(201,162,39,.78)}
-  .depth-hero .dh-solid{position:absolute;color:rgba(255,248,225,.92);opacity:0;
-    text-shadow:0 0 28px rgba(255,255,255,.75), 0 0 68px rgba(201,162,39,.72)}
-  .studio-orbit{position:absolute;width:720px;height:720px;border-radius:50%;pointer-events:none;
-    border:2px dashed rgba(201,162,39,.32);
-    box-shadow:0 0 40px rgba(201,162,39,.15), inset 0 0 40px rgba(201,162,39,.12);
-    transform:translateY(210px) rotateX(74deg)}
-  .studio-pedestal{position:absolute;bottom:22px;width:540px;height:96px;border-radius:50%;pointer-events:none;
-    background:radial-gradient(closest-side, rgba(0,0,0,.82) 0%, rgba(201,162,39,.26) 55%, rgba(11,27,46,0) 100%);
+  .studio-halo{position:absolute;width:740px;height:740px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle at 50% 46%, rgba(201,162,39,.32) 0%, rgba(22,36,74,.38) 44%, rgba(11,27,46,0) 72%)}
+  .theme-paper .studio-halo{
+    background:radial-gradient(circle at 50% 46%, rgba(201,162,39,.28) 0%, rgba(201,162,39,.08) 48%, transparent 72%)}
+  .studio-pedestal{position:absolute;bottom:26px;width:540px;height:92px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(closest-side, rgba(0,0,0,.78) 0%, rgba(201,162,39,.25) 55%, transparent 100%);
     filter:blur(4px);will-change:transform,opacity}
-  .cutout-wrap{position:relative;width:780px;height:740px;display:flex;align-items:center;justify-content:center;
-    z-index:5;will-change:transform}
+  .theme-paper .studio-pedestal{
+    background:radial-gradient(closest-side, rgba(11,27,46,.36) 0%, rgba(201,162,39,.22) 55%, transparent 100%)}
+  .cutout-wrap{position:relative;width:760px;height:710px;display:flex;align-items:center;justify-content:center;
+    z-index:5;will-change:transform;margin-top:46px}
   .cutout-img{width:100%;height:100%;object-fit:contain;display:block;
-    filter:drop-shadow(0 40px 44px rgba(0,0,0,.82)) drop-shadow(0 0 30px rgba(201,162,39,.24))}
+    filter:drop-shadow(0 38px 42px rgba(0,0,0,.75)) drop-shadow(0 0 26px rgba(201,162,39,.22))}
+  .theme-paper .cutout-img{
+    filter:drop-shadow(0 34px 38px rgba(11,27,46,.38))}
   .cutout-shine-mask{position:absolute;inset:0;pointer-events:none;z-index:6;
     -webkit-mask-size:contain;mask-size:contain;
     -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
     -webkit-mask-position:center;mask-position:center}
-  .cutout-beam{background:linear-gradient(115deg, transparent 34%, rgba(255,255,255,.78) 50%, transparent 66%)}
+  .cutout-beam{background:linear-gradient(115deg, transparent 34%, rgba(255,255,255,.82) 50%, transparent 66%)}
 
-  /* Floating Bento Spec Chips */
-  .spec-chips{position:absolute;left:-16px;right:-16px;bottom:-34px;z-index:25;
-    display:flex;flex-wrap:wrap;justify-content:center;gap:14px;pointer-events:none}
-  .spec-chip{display:inline-flex;align-items:center;gap:12px;
-    background:rgba(11,27,46,.92);border:2px solid ${accent};
-    padding:14px 26px;border-radius:99px;color:#FFFFFF;font-size:31px;font-weight:800;
-    letter-spacing:-.3px;box-shadow:0 18px 40px rgba(0,0,0,.65), 0 0 20px rgba(201,162,39,.25);
-    backdrop-filter:blur(12px);opacity:0;transform:translateY(24px) scale(.85);will-change:transform,opacity}
-  .spec-chip .sc-dot{width:12px;height:12px;border-radius:50%;background:${accent};
-    box-shadow:0 0 10px ${accent};flex-shrink:0}
+  /* Katana Bento Telemetry Grid (thay cho pill tròn truyền thống) */
+  .katana-bento{position:absolute;left:-24px;right:-24px;bottom:-58px;z-index:26;
+    display:flex;justify-content:center;gap:14px;pointer-events:none}
+  .kb-cell{flex:1;max-width:290px;background:rgba(8,19,34,.94);
+    border:2px solid rgba(201,162,39,.65);border-radius:20px;padding:14px 22px 16px;
+    box-shadow:0 20px 44px rgba(0,0,0,.65);backdrop-filter:blur(14px);
+    opacity:0;transform:translateY(28px) scale(.88);will-change:transform,opacity}
+  .katana-bento.is-paper .kb-cell{background:#0B1B2E;border-color:#0B1B2E;
+    box-shadow:0 18px 36px rgba(11,27,46,.28)}
+  .kb-idx{font-family:ui-monospace,'SF Mono',monospace;font-size:15px;font-weight:800;
+    letter-spacing:2px;color:${accent};margin-bottom:4px}
+  .kb-val{color:#FFFFFF;font-size:31px;font-weight:900;letter-spacing:-.6px;line-height:1.1;white-space:nowrap}
+  .kb-bar{margin-top:10px;height:4px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden}
+  .kb-fill{display:block;height:100%;width:0%;background:${accent};border-radius:99px}
 
-  /* Badge giá — góc trên phải vùng an toàn (theo rules/visual.md) */
-  .badge{position:absolute;top:186px;right:72px;z-index:44;display:none;
+  /* Badge giá DigitRoll */
+  .badge{position:absolute;top:174px;right:82px;z-index:44;display:none;
     flex-direction:column;align-items:flex-end;gap:6px;
-    background:rgba(11,27,46,.92);border:3px solid ${accent};border-radius:28px;
-    padding:22px 32px;backdrop-filter:blur(16px);
-    box-shadow:0 28px 65px rgba(0,0,0,.75), 0 0 36px rgba(201,162,39,.35)}
+    background:rgba(8,19,34,.95);border:3px solid ${accent};border-radius:26px;
+    padding:20px 32px;backdrop-filter:blur(16px);
+    box-shadow:0 28px 65px rgba(0,0,0,.78), 0 0 36px rgba(201,162,39,.38)}
   .badge-top{display:flex;align-items:center;gap:12px}
-  .badge .from{color:${accent};font-size:25px;font-weight:800;letter-spacing:2px}
+  .badge .from{color:${accent};font-size:24px;font-weight:800;letter-spacing:2px}
   .badge .tag{background:${accent};color:#0B1B2E;font-weight:900;
-    font-size:23px;padding:4px 14px;border-radius:10px;letter-spacing:.5px}
+    font-size:22px;padding:4px 14px;border-radius:10px;letter-spacing:.5px}
   .badge .now{color:#FFFFFF;font-size:88px;font-weight:900;line-height:1;letter-spacing:-2px;
     text-shadow:0 6px 24px rgba(201,162,39,.4)}
   .badge .digit-roll{display:inline-flex;align-items:baseline;height:88px;overflow:hidden}
@@ -483,60 +536,65 @@ const html = `<!doctype html>
   .badge .d-strip{display:block;will-change:transform}
   .badge .d-strip b{display:block;height:88px;line-height:88px;font-weight:900;font-variant-numeric:tabular-nums}
   .badge .d-static{display:inline-block;height:88px;line-height:88px}
-  .badge .was{color:#9FB0C4;font-size:32px;font-weight:700;text-decoration:line-through}
+  .badge .was{color:#9FB0C4;font-size:30px;font-weight:700;text-decoration:line-through}
 
-  /* Thanh cam kết chính hãng ở cảnh CTA */
-  #cta-strip{position:absolute;left:64px;right:64px;bottom:645px;z-index:43;
+  /* CTA Strip */
+  #cta-strip{position:absolute;left:72px;right:72px;bottom:640px;z-index:43;
     display:none;justify-content:center;gap:14px;flex-wrap:wrap;pointer-events:none}
   .cta-pill{display:inline-flex;align-items:center;gap:10px;
-    background:rgba(11,27,46,.9);border:1.5px solid rgba(159,176,196,.3);
+    background:rgba(11,27,46,.92);border:1.5px solid rgba(159,176,196,.3);
     padding:14px 24px;border-radius:99px;color:#FFFFFF;font-size:27px;font-weight:800;
     box-shadow:0 16px 38px rgba(0,0,0,.55);opacity:0;transform:translateY(20px) scale(.9)}
   .cta-pill.gold{background:${accent};color:#0B1B2E;border-color:${accent};
     box-shadow:0 16px 38px rgba(201,162,39,.45)}
 
-  /* [V2] Kinetic Hook — Card nổi bật 3 giây đầu */
+  /* [KATANA EDITORIAL HOOK 3.5s ĐẦU] */
   #khook{position:absolute;inset:0;z-index:41;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;padding:60px 68px 180px;text-align:center;opacity:0}
+    align-items:center;justify-content:center;padding:80px 84px 200px;opacity:0}
   #khook::before{content:"";position:absolute;inset:0;z-index:-1;background:
-    radial-gradient(88% 64% at 50% 45%, rgba(11,27,46,.62) 0%, rgba(8,18,32,.92) 80%)}
-  .khook-card{display:flex;flex-direction:column;align-items:center;gap:20px;width:100%;
-    background:rgba(11,27,46,.82);border:2px solid rgba(201,162,39,.42);
-    border-radius:38px;padding:44px 48px 50px;backdrop-filter:blur(18px);
-    box-shadow:0 36px 90px rgba(0,0,0,.78), inset 0 1px 0 rgba(255,255,255,.16)}
-  .kh-pill{display:inline-flex;align-items:center;gap:12px;
-    background:rgba(201,162,39,.16);border:1.5px solid ${accent};
-    padding:10px 24px;border-radius:99px;color:${accent};font-size:23px;font-weight:800;
-    letter-spacing:1.5px;margin-bottom:8px;opacity:0}
-  .kh-dot{width:12px;height:12px;border-radius:50%;background:${accent};box-shadow:0 0 10px ${accent}}
-  #khook .kg{font-weight:900;font-size:84px;line-height:1.1;letter-spacing:-1.5px;color:#fff;
-    opacity:0;transform:translateY(28px) scale(.9);text-shadow:0 8px 34px rgba(0,0,0,.6);text-wrap:balance}
-  #khook .kg .hi{color:${accent}}
-  #khook .kg mark{background:${accent};color:#0B1B2E;padding:2px 18px 6px;border-radius:16px;
-    display:inline-block;transform:scaleX(0);transform-origin:left center;text-shadow:none;
-    box-shadow:0 12px 32px rgba(201,162,39,.45)}
-  #khook.highlight .khook-card{align-items:center;text-align:center}
-  /* word flash */
-  #khook.flash .fl-wrap{font-weight:900;font-size:84px;line-height:1.12;letter-spacing:-1px;color:#fff;
-    text-shadow:0 8px 34px rgba(0,0,0,.6);text-wrap:balance}
-  #khook.flash .fw{display:inline-block;opacity:0;transform:scale(.6)}
-  #khook.flash .fw.hi{color:#0B1B2E;background:${accent};padding:2px 14px;border-radius:14px;text-shadow:none}
-  /* number slam */
-  #khook.slam .sub{font-weight:800;font-size:60px;line-height:1.12;color:#fff;opacity:0;
-    transform:translateY(18px);text-shadow:0 6px 26px rgba(0,0,0,.6)}
-  #khook.slam .hero{font-weight:900;font-size:230px;line-height:.88;color:${accent};opacity:0;
-    letter-spacing:-5px;text-shadow:0 12px 50px rgba(201,162,39,.45);margin:6px 0}
+    radial-gradient(90% 65% at 50% 45%, rgba(11,27,46,.76) 0%, rgba(6,13,24,.95) 82%)}
+  .kh-editorial-frame{width:100%;display:flex;flex-direction:column;gap:24px;
+    background:rgba(11,27,46,.88);border:2px solid rgba(201,162,39,.55);
+    border-radius:32px;padding:42px 46px 46px;backdrop-filter:blur(20px);
+    box-shadow:0 40px 95px rgba(0,0,0,.82)}
+  .kh-top-rule,.kh-bot-rule{display:flex;justify-content:space-between;align-items:center;
+    font-family:ui-monospace,'SF Mono',monospace;font-size:19px;font-weight:700;
+    letter-spacing:2.5px;color:#9FB0C4;padding-bottom:16px;
+    border-bottom:1.5px solid rgba(159,176,196,.24);opacity:0}
+  .kh-bot-rule{padding-bottom:0;padding-top:18px;border-bottom:none;border-top:1.5px solid rgba(159,176,196,.24);color:${accent}}
+  .kh-kicker{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;
+    background:rgba(201,162,39,.18);border:1.5px solid ${accent};
+    padding:8px 22px;border-radius:99px;color:${accent};font-size:21px;font-weight:800;
+    letter-spacing:2px;opacity:0}
+  .kh-dot{width:11px;height:11px;border-radius:50%;background:${accent};box-shadow:0 0 10px ${accent}}
+  .kh-lines{display:flex;flex-direction:column;gap:14px;text-align:left}
+  .kh-line{font-weight:900;font-size:84px;line-height:1.08;letter-spacing:-2.2px;color:#FFFFFF;
+    opacity:0;will-change:transform,opacity,filter}
+  .kh-slash-box{position:relative;display:inline-block;padding:2px 18px 6px;color:#0B1B2E;z-index:1}
+  .kh-slash-box b{position:relative;z-index:2;font-weight:900}
+  .kh-slash-bg{position:absolute;inset:0;z-index:1;background:${accent};border-radius:14px;
+    transform:scaleX(0) skewX(-8deg);transform-origin:left center;
+    box-shadow:0 12px 34px rgba(201,162,39,.5)}
 
-  /* Hiệu ứng nháy sáng nhẹ khi cắt cảnh cao trào */
-  #cut-flash{position:absolute;inset:0;z-index:40;pointer-events:none;
-    background:radial-gradient(circle at 50% 45%, rgba(255,255,255,.35), rgba(201,162,39,.12) 60%, transparent 100%);
+  /* FlashCut (video-shotcraft/FlashCut.tsx) — Chớp sáng ấm 6 frame ngay điểm cắt cảnh */
+  #cut-flash{position:absolute;inset:0;z-index:48;pointer-events:none;
+    background:radial-gradient(circle at 50% 48%, #FFFDF8 0%, rgba(255,224,125,.65) 55%, rgba(201,162,39,0) 100%);
     opacity:0}
+
+  /* Đảo màu phụ đề khi ở cảnh Giấy Kem Editorial (Paper Theme) */
+  #frame.is-paper .lcs-cue-card::before{
+    inset:-4px -18px;
+    background:rgba(11,27,46,.95);
+    border:2px solid #C9A227;
+    border-radius:26px;
+    box-shadow:0 22px 48px rgba(11,27,46,.28)}
 </style></head>
 <body>
   <div id="frame">
     <div id="bg"></div>
-    <div id="bg-grid"></div>
+    <div id="paper-bg"></div>
     <div id="ambient">${ambientLayers}</div>
+    <div id="swiss-grid"></div>
     ${sceneLayers}
     <div id="cut-flash"></div>
     <div id="topbar">
@@ -544,13 +602,10 @@ const html = `<!doctype html>
         <div class="brand-logo-wrap"><img src="assets/logo.png" alt="Lucas"></div>
         <div class="brand-meta">
           <span class="brand-name">Lucas Combo</span>
-          <span class="brand-sub">Phụ kiện chính hãng</span>
+          <span class="brand-sub">Chính Hãng · lucas.vn</span>
         </div>
       </div>
-      <div class="role-pill" id="role-pill"><span class="rp-icon" id="rp-icon">⚡</span><span id="rp-text">GÓC HỎI ĐÁP</span></div>
-    </div>
-    <div id="prod-bar">
-      <div class="prod-title-pill">Sản phẩm: <b>${shortProdName}</b></div>
+      <div class="role-pill" id="role-pill"><span class="rp-icon" id="rp-icon">⚡</span><span id="rp-text">01 // HOOK</span></div>
     </div>
     ${badgeHtml}
     ${ctaStripHtml}
@@ -560,49 +615,47 @@ const html = `<!doctype html>
 <script type="module">
 ${component}
 
-const scenes = ${JSON.stringify(scenes.map((s) => ({ i: s.idx, role: s.role, start: s.start, end: s.end })))};
+const scenes = ${JSON.stringify(scenes.map((s) => ({ i: s.idx, role: s.role, start: s.start, end: s.end, theme: s._theme, geo: s._mode === 'cutout' ? (s.idx % 2 === 1 ? 'faster' : 'tighter') : 'none' })))};
 const ROLE_META = ${JSON.stringify(ROLE_META)};
 const FADE = ${FADE};
 const TOTAL = ${total};
 const frame = document.getElementById('frame');
+const paperBg = document.getElementById('paper-bg');
 const sub = mountSubtitles(frame, ${JSON.stringify(cues)}, { accent: '${accent}' });
 
 const layers = [...document.querySelectorAll('.scene')];
 const stages = layers.map((l) => l.querySelector('.card-stage'));
-const cards = layers.map((l) => l.querySelector('.card'));
 const imgs = layers.map((l) => l.querySelector('.card-img'));
 const cutoutWraps = layers.map((l) => l.querySelector('.cutout-wrap'));
 const pedestals = layers.map((l) => l.querySelector('.studio-pedestal'));
-const orbits = layers.map((l) => l.querySelector('.studio-orbit'));
-const dials = layers.map((l) => l.querySelector('.shotcraft-dial'));
-const dialOuters = layers.map((l) => l.querySelector('.dial-outer'));
-const dialInners = layers.map((l) => l.querySelector('.dial-inner'));
-const depthHeroes = layers.map((l) => l.querySelector('.depth-hero'));
-const dhOutlines = layers.map((l) => l.querySelector('.dh-outline'));
-const dhSolids = layers.map((l) => l.querySelector('.dh-solid'));
 const sheens = layers.map((l) => l.querySelector('.card-sheen'));
-const chipGroups = layers.map((l) => [...l.querySelectorAll('.spec-chip')]);
+const kmTracks = layers.map((l) => l.querySelector('.km-track'));
+const khtFills = layers.map((l) => l.querySelector('.kht-fill'));
+const khtWraps = layers.map((l) => l.querySelector('.kht-word-wrap'));
+const gfDashes = layers.map((l) => l.querySelector('.gf-dash'));
+const gfTicks = layers.map((l) => l.querySelector('.gf-ticks'));
+const gfComets = layers.map((l) => l.querySelector('.gf-comet'));
+const gtCircles = layers.map((l) => [...l.querySelectorAll('.gt-c')]);
+const gtRivets = layers.map((l) => l.querySelector('.gt-rivets'));
+const bentoGroups = layers.map((l) => [...l.querySelectorAll('.kb-cell')]);
 const ambs = [...document.querySelectorAll('#ambient .amb')];
 const badge = document.querySelector('.badge');
 const badgeScene = badge ? Number(badge.dataset.scene) : -1;
 const digitCols = badge ? [...badge.querySelectorAll('.d-col')] : [];
 const ctaStrip = document.getElementById('cta-strip');
 const ctaPills = ctaStrip ? [...ctaStrip.querySelectorAll('.cta-pill')] : [];
-const prodBar = document.getElementById('prod-bar');
 const rpIcon = document.getElementById('rp-icon');
 const rpText = document.getElementById('rp-text');
 const cutFlash = document.getElementById('cut-flash');
 
-// [V2] kinetic hook refs
 const KHOOK_END = ${hookEnd};
 const khook = document.getElementById('khook');
 const kEls = khook ? [...khook.querySelectorAll('[data-at]')] : [];
-const khStyle = khook ? khook.className : '';
 
 const smooth = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
+const snappy = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : 1 - Math.pow(1 - x, 3.6));
 const c01 = (x) => Math.max(0, Math.min(1, x));
 
-// Ken Burns + góc nghiêng 3D nhẹ cho từng cảnh
 const KB = [[0,0],[-1,-1],[1,-1],[-1,1],[1,1],[0,-1],[1,0],[-1,0]];
 const TILT = [
   [0, 0],
@@ -615,24 +668,37 @@ const TILT = [
 ];
 
 window.__render = (t) => {
-  // Tìm cảnh hiện tại để cập nhật Role Pill & Product Bar
   const curScene = scenes.find((s) => t >= s.start && t < s.end) || scenes[0];
   if (curScene && ROLE_META[curScene.role]) {
     rpIcon.textContent = ROLE_META[curScene.role].icon;
-    rpText.textContent = ROLE_META[curScene.role].tag;
-  }
-  if (prodBar) {
-    const showProdBar = t >= KHOOK_END && curScene && curScene.role !== 'price';
-    prodBar.style.opacity = showProdBar ? '1' : '0';
+    rpText.textContent = '0' + (curScene.i + 1) + ' // ' + curScene.role.toUpperCase();
   }
 
-  // Hiệu ứng flash nhẹ ở thời điểm cắt cảnh (từ cảnh 1 trở đi)
+  // Đảo nền Paper Editorial (#F4F0E6) theo cảnh kiểu Katana
+  const isPaperNow = curScene && curScene.theme === 'paper' && t >= KHOOK_END;
+  frame.classList.toggle('is-paper', Boolean(isPaperNow));
+  if (paperBg) {
+    let paperOp = 0;
+    scenes.forEach((s) => {
+      if (s.theme === 'paper') {
+        const fi = smooth((t - (s.start - 0.14)) / 0.18);
+        const fo = 1 - smooth((t - (s.end - 0.14)) / 0.18);
+        if (t >= s.start - 0.16 && t <= s.end + 0.16) {
+          paperOp = Math.max(paperOp, Math.min(fi, fo));
+        }
+      }
+    });
+    paperBg.style.opacity = paperOp.toFixed(3);
+  }
+
+  // FlashCut ấm ở điểm chuyển cảnh
   let flashOp = 0;
   for (let i = 1; i < scenes.length; i++) {
     const dt = t - scenes[i].start;
-    if (dt >= -0.04 && dt <= 0.16) {
-      const fp = 1 - Math.abs(dt - 0.04) / 0.12;
-      flashOp = Math.max(flashOp, Math.max(0, fp) * (scenes[i].role === 'price' ? 0.65 : 0.32));
+    if (dt >= -0.05 && dt <= 0.15) {
+      const fp = 1 - Math.abs(dt - 0.03) / 0.11;
+      const weight = (scenes[i].theme !== scenes[i - 1].theme || scenes[i].role === 'price') ? 0.72 : 0.34;
+      flashOp = Math.max(flashOp, Math.max(0, fp) * weight);
     }
   }
   if (cutFlash) cutFlash.style.opacity = flashOp.toFixed(3);
@@ -648,69 +714,86 @@ window.__render = (t) => {
     const [dx, dy] = KB[i % KB.length];
     const [rx, ry] = TILT[i % TILT.length];
 
-    // Chuyển cảnh Zoom-Punch / Whip-Slide trong 0.28s đầu mỗi cảnh
-    const enterP = smooth(c01((localT + 0.06) / 0.28));
+    // Marquee chữ khổng lồ trôi ngang ở hậu cảnh
+    if (kmTracks[i]) {
+      const mx = (i % 2 === 0 ? -1 : 1) * localT * 140;
+      kmTracks[i].style.transform = 'translateX(' + mx.toFixed(1) + 'px)';
+    }
+
+    // Chuyển cảnh Camera Crash-Zoom / Whip-Slide kiểu Katana
+    const enterP = snappy(c01((localT + 0.05) / 0.30));
     const punchBounce = Math.sin(enterP * Math.PI);
-    const enterY = (i % 2 === 1 ? 1 : -1) * (1 - enterP) * 42;
-    const stageScale = (0.90 + 0.10 * enterP) + 0.035 * punchBounce;
+    const enterY = (i % 2 === 1 ? 1 : -1) * (1 - enterP) * 48;
+    const stageScale = (0.88 + 0.12 * enterP) + 0.035 * punchBounce;
     const curRx = rx * (0.4 + 0.6 * e);
     const curRy = ry * (e - 0.5) * 1.8;
 
     stages[i].style.transform =
       'translateY(' + enterY.toFixed(1) + 'px) scale(' + stageScale.toFixed(3) + ') rotateX(' + curRx.toFixed(2) + 'deg) rotateY(' + curRy.toFixed(2) + 'deg)';
 
-    const imgScale = 1.02 + 0.08 * e; // tuân thủ rules/visual.md: zoom chậm 1.0 -> 1.08
+    const imgScale = 1.02 + 0.08 * e;
     if (imgs[i]) {
       imgs[i].style.transform =
         'translate(' + (dx * 22 * (e - 0.5)).toFixed(1) + 'px, ' + (dy * 22 * (e - 0.5)).toFixed(1) + 'px) scale(' + imgScale.toFixed(4) + ')';
     }
 
-    // Chuyển động 3D Cutout: nảy spring từ dưới lên + bay lơ lửng (levitation) + bóng sàn co giãn ngược pha
+    // 3D Cutout + WordRelayGeometry (FasterGeo & TighterGeo)
     if (cutoutWraps[i]) {
-      const popP = smooth(c01((localT + 0.04) / 0.36));
+      const popP = snappy(c01((localT + 0.04) / 0.38));
       const popOvershoot = Math.sin(popP * Math.PI);
       const floatWave = Math.sin(localT * 2.8);
-      const levY = (1 - popP) * 95 + floatWave * 13;
-      const cutScale = (0.76 + 0.26 * popP + 0.06 * popOvershoot) * (1 + 0.04 * e);
+      const levY = (1 - popP) * 90 + floatWave * 12;
+      const cutScale = (0.76 + 0.24 * popP + 0.06 * popOvershoot) * (1 + 0.04 * e);
       const cutRot = (dx || 1) * floatWave * 1.6;
       cutoutWraps[i].style.transform =
         'translateY(' + levY.toFixed(1) + 'px) scale(' + cutScale.toFixed(3) + ') rotateZ(' + cutRot.toFixed(2) + 'deg)';
+
       if (pedestals[i]) {
         const pedScale = (0.65 + 0.35 * popP) * (1 - floatWave * 0.09);
         pedestals[i].style.transform = 'scale(' + pedScale.toFixed(3) + ')';
-        pedestals[i].style.opacity = (0.78 - floatWave * 0.14).toFixed(3);
       }
-      if (orbits[i]) {
-        orbits[i].style.transform = 'translateY(210px) rotateX(74deg) rotateZ(' + (localT * 22).toFixed(1) + 'deg)';
+
+      // Chữ đại tự Katana (kht-word-wrap): thu nhỏ snappy 1.45 -> 1.0 + quét Mask ngang (WordRelayGeometry.tsx)
+      if (khtWraps[i]) {
+        const wIn = snappy(c01(localT / 0.36));
+        const wScale = 1.42 - 0.42 * wIn;
+        khtWraps[i].style.transform = 'scale(' + wScale.toFixed(3) + ')';
       }
-      // Shotcraft OutlineWordFill: Thước ngắm 72 vạch + Đại tự 3D sau lưng sản phẩm thu nhỏ & phát sáng
-      if (dials[i]) {
-        const dialP = smooth(c01((localT - 0.04) / 0.95));
-        const dialScale = 1.48 - 0.48 * dialP;
-        const lit = localT >= 0.54 ? 1 : 0;
-        const outRot = (Math.min(localT, 0.54) * 18 + (lit ? 4 * smooth(c01((localT - 0.54) / 0.35)) : 0));
-        const inRot = -localT * 11;
-        dials[i].style.opacity = (0.85 * smooth(c01(localT / 0.25))).toFixed(3);
-        dials[i].style.transform = 'scale(' + dialScale.toFixed(4) + ')';
-        if (dialOuters[i]) dialOuters[i].setAttribute('transform', 'rotate(' + outRot.toFixed(2) + ')');
-        if (dialInners[i]) dialInners[i].setAttribute('transform', 'rotate(' + inRot.toFixed(2) + ')');
+      if (khtFills[i]) {
+        const fillP = snappy(c01((localT - 0.24) / 0.52));
+        const edge = fillP * 116 - 8;
+        const mask = 'linear-gradient(90deg, #000 ' + (edge - 8).toFixed(1) + '%, transparent ' + (edge + 8).toFixed(1) + '%)';
+        khtFills[i].style.webkitMaskImage = mask;
+        khtFills[i].style.maskImage = mask;
       }
-      if (depthHeroes[i]) {
-        const shrinkP = smooth(c01((localT - 0.02) / 0.36));
-        const ws = 2.15 - 1.15 * shrinkP;
-        const lit = localT >= 0.54 ? 1 : 0;
-        const flash = lit * (1 - smooth(c01((localT - 0.54) / 0.32)));
-        const driftX = -dx * 18 * (e - 0.5);
-        depthHeroes[i].style.opacity = smooth(c01(localT / 0.18)).toFixed(3);
-        depthHeroes[i].style.transform = 'translateX(' + driftX.toFixed(1) + 'px) scale(' + ws.toFixed(4) + ')';
-        if (dhOutlines[i]) dhOutlines[i].style.opacity = (1 - lit * 0.65).toFixed(3);
-        if (dhSolids[i]) {
-          dhSolids[i].style.opacity = (lit * (0.42 + 0.58 * flash)).toFixed(3);
+
+      // Hình học 1: FasterGeo (Bánh đà 120 vạch + Sao chổi)
+      if (gfDashes[i]) {
+        const grow = snappy(c01(localT / 0.65));
+        const spin = -90 - 150 * (1 - grow) + localT * 28;
+        const spinTicks = 40 * (1 - grow) - localT * 12;
+        const cometRot = -90 + localT * 210 - 180 * (1 - grow);
+        gfDashes[i].setAttribute('transform', 'rotate(' + spin.toFixed(1) + ')');
+        if (gfTicks[i]) gfTicks[i].setAttribute('transform', 'rotate(' + spinTicks.toFixed(1) + ')');
+        if (gfComets[i]) gfComets[i].setAttribute('transform', 'rotate(' + cometRot.toFixed(1) + ')');
+      }
+
+      // Hình học 2: TighterGeo (3 vòng tròn vẽ nét rồi khóa chặt 4 đinh tán kim cương)
+      if (gtCircles[i] && gtCircles[i].length) {
+        const tightP = snappy(c01((localT - 0.65) / 0.42));
+        const gap = 165 - 35 * tightP;
+        gtCircles[i].forEach((cEl, ci) => {
+          const grow = snappy(c01((localT - ci * 0.14) / 0.58));
+          cEl.setAttribute('stroke-dashoffset', (1 - grow).toFixed(3));
+          cEl.setAttribute('cx', String((ci - 1) * gap));
+        });
+        if (gtRivets[i]) {
+          const rvP = snappy(c01((localT - 0.82) / 0.28));
+          gtRivets[i].style.opacity = rvP.toFixed(3);
         }
       }
     }
 
-    // Vệt sáng ánh kim (sheen) quét ngang qua thẻ / thân sản phẩm cutout
     if (sheens[i]) {
       const sheenCycle = (localT - 0.1) % 2.4;
       const sheenP = c01(sheenCycle / 0.78);
@@ -718,22 +801,24 @@ window.__render = (t) => {
       sheens[i].style.transform = 'translateX(' + sheenX.toFixed(1) + '%) rotate(12deg)';
     }
 
-    // Floating Spec Chips nảy ra lần lượt
-    if (chipGroups[i] && chipGroups[i].length) {
-      chipGroups[i].forEach((chip, ci) => {
-        const chipStart = 0.18 + ci * 0.22;
-        const cp = smooth(c01((localT - chipStart) / 0.26));
+    // Bento Telemetry Spec Cells + Thanh đo năng lượng
+    if (bentoGroups[i] && bentoGroups[i].length) {
+      bentoGroups[i].forEach((cell, ci) => {
+        const cStart = 0.16 + ci * 0.18;
+        const cp = snappy(c01((localT - cStart) / 0.32));
         const cb = Math.sin(cp * Math.PI);
-        const cScale = 0.84 + 0.16 * cp + 0.06 * cb;
-        const cY = (1 - cp) * 24;
-        chip.style.opacity = cp.toFixed(3);
-        chip.style.transform = 'translateY(' + cY.toFixed(1) + 'px) scale(' + cScale.toFixed(3) + ')';
+        cell.style.opacity = cp.toFixed(3);
+        cell.style.transform = 'translateY(' + ((1 - cp) * 28).toFixed(1) + 'px) scale(' + (0.86 + 0.14 * cp + 0.04 * cb).toFixed(3) + ')';
+        const barFill = cell.querySelector('.kb-fill');
+        if (barFill) {
+          const bp = snappy(c01((localT - (cStart + 0.12)) / 0.48));
+          barFill.style.width = (bp * 100).toFixed(1) + '%';
+        }
       });
     }
 
-    // [V2] nền động: crossfade theo cảnh + trôi NGƯỢC hướng card -> chiều sâu
     if (ambs[i]) {
-      ambs[i].style.opacity = alive ? (0.92 * fadeIn) : 0;
+      ambs[i].style.opacity = alive && !isPaperNow ? (0.92 * fadeIn) : 0;
       ambs[i].style.transform = 'scale(' + (1.12 + 0.06 * e).toFixed(3) + ') translate(' +
         (-dx * 16 * e).toFixed(1) + 'px,' + (-dy * 16 * e).toFixed(1) + 'px)';
     }
@@ -749,7 +834,6 @@ window.__render = (t) => {
       const pulse = 1 + 0.018 * Math.sin(Math.max(0, t - s.start - 0.52) * 6);
       badge.style.transformOrigin = 'top right';
       badge.style.transform = 'scale(' + (pop * pulse).toFixed(3) + ')';
-      // Shotcraft DigitRoll: cuộn từng cột số 0..9 mượt mà lệch pha 0.12s mỗi cột
       digitCols.forEach((col, ci) => {
         const target = Number(col.dataset.target) || 0;
         const dt = c01((t - s.start - ci * 0.11) / 0.68);
@@ -761,7 +845,6 @@ window.__render = (t) => {
     }
   }
 
-  // CTA Trust Strip ở cảnh cuối
   const ctaSceneIdx = ${ctaSceneIdx};
   if (ctaStrip && ctaSceneIdx >= 0) {
     const cs = scenes[ctaSceneIdx];
@@ -777,36 +860,27 @@ window.__render = (t) => {
     }
   }
 
-  // [V2] kinetic hook: hiện 3 giây đầu, từng cụm nảy vào, rồi mờ đi
+  // Katana Editorial Hook 3.5s đầu
   if (khook) {
     let ov = 0;
     if (t < KHOOK_END) {
-      const fin = smooth(t / 0.24);
-      const fout = 1 - smooth((t - (KHOOK_END - 0.28)) / 0.28);
+      const fin = smooth(t / 0.22);
+      const fout = 1 - smooth((t - (KHOOK_END - 0.26)) / 0.26);
       ov = Math.max(0, Math.min(fin, fout));
     }
     khook.style.opacity = ov.toFixed(3);
     kEls.forEach((el) => {
       const at = parseFloat(el.dataset.at);
-      const p = smooth(c01((t - at) / 0.36));
-      if (el.tagName === 'MARK') {
-        const b = Math.sin(p * Math.PI);
-        el.style.transform = 'scaleX(' + p.toFixed(3) + ') scaleY(' + (1 + 0.06 * b).toFixed(3) + ')';
+      const p = snappy(c01((t - at) / 0.34));
+      if (el.classList.contains('kh-slash-bg')) {
+        el.style.transform = 'scaleX(' + p.toFixed(3) + ') skewX(-8deg)';
         return;
       }
       el.style.opacity = p.toFixed(3);
-      const blurPx = (1 - p) * 14;
+      const blurPx = (1 - p) * 12;
       el.style.filter = blurPx > 0.2 ? 'blur(' + blurPx.toFixed(1) + 'px)' : 'none';
-      if (el.classList.contains('hero')) {
-        el.style.transform = 'scale(' + (1.32 - 0.32 * p + 0.06 * Math.sin(p * Math.PI)).toFixed(3) + ')';
-      } else if (el.classList.contains('fw')) {
-        el.style.transform = 'scale(' + (0.6 + 0.4 * p + 0.08 * Math.sin(p * Math.PI)).toFixed(3) + ')';
-      } else {
-        const sc = 0.90 + 0.10 * p + 0.04 * Math.sin(p * Math.PI);
-        el.style.transform = 'translateY(' + (34 * (1 - p)).toFixed(1) + 'px) scale(' + sc.toFixed(3) + ')';
-      }
+      el.style.transform = 'translateY(' + ((1 - p) * 32).toFixed(1) + 'px)';
     });
-    // ẩn phụ đề đáy khi kinetic hook đang chạy (khỏi trùng câu)
     if (sub.el) sub.el.style.opacity = t < KHOOK_END - 0.08 ? '0' : '1';
   }
 
