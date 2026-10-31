@@ -39,7 +39,7 @@ jobs:
         with: { node-version: 22 }
       - id: g
         env:
-          POST_MIN_HOURS: '18'
+          POST_MIN_HOURS: '14'
         run: node lib/already-posted.mjs
 
   reel:
