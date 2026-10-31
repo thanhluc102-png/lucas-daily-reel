@@ -1,8 +1,8 @@
-- **Hook dạng "giá tiền + nỗi lo" (VD: "Balo 4 triệu mà vẫn sợ ướt laptop?") cho tương tác cao nhất (Score 6) — kết hợp con số cụ thể với rủi ro mất mát để kích bình luận.**
-- **Hook khơi nỗi sợ riêng tư/mất mát ("Người bên cạnh đang đọc tin nhắn của bạn", "Mất ví mất vali rồi mới ước có nó") hiệu quả — chạm trực tiếp vào lo lắng cá nhân.**
-- **Hook có số liệu chứng thực ("Rơi 6 mét vẫn nguyên, chứng nhận SGS") giữ tương tác ổn — dùng bằng chứng gây sốc có tính kiểm chứng.**
-- **Mở đầu bằng câu hỏi trực diện về pain point ("Bàn làm việc có bao nhiêu củ sạc chằng chịt?") kéo được Reaction lẫn Comment.**
-- **Hook mô tả tính năng thuần túy ("Balo mở 180° như vali", "Một ổ cắm sạc cả bàn") tương tác kém (Score 3) — thiếu cảm xúc, nên gắn thêm hậu quả/nỗi đau.**
-- **Hook về ánh sáng/quay video ("mặt ám vàng ám xanh") yếu nhất — sản phẩm ngách ít gây đồng cảm, hạn chế dùng.**
-- **Ưu tiên công thức: con số/giá tiền + nỗi sợ mất mát hoặc riêng tư + emoji cảm xúc (😰😮👀) thay vì emoji tính năng (🔌🎒).**
-- **Toàn bộ video đạt 0 Share — cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tình huống ai cũng gặp) để tăng Share, đòn bẩy Score mạnh nhất.**
+- Hook nêu nỗi đau mất mát/an toàn (mất hộ chiếu, laptop không chống sốc, bị đọc trộm tin nhắn) cho tương tác tốt nhất → ưu tiên khai thác sợ hãi, rủi ro cụ thể.
+- Hook dạng câu hỏi chạm trúng tình huống bực bội quen thuộc ("bao nhiêu củ sạc chằng chịt?", "balo 4 triệu vẫn sợ ướt?") kéo comment cao → mở đầu bằng câu hỏi gây đồng cảm.
+- Chèn con số gây sốc + bằng chứng (rơi 6 mét, chứng nhận SGS) tạo tò mò → dùng số liệu cụ thể thay vì nói chung chung.
+- Nhóm sản phẩm chống sốc/chống nước và phụ kiện sạc gọn gàng hút tương tác ổn định → tập trung hai dòng này.
+- Thêm emoji đúng ngữ cảnh (😰😬😮) tăng cảm xúc → mỗi hook gắn 1 emoji biểu cảm mạnh.
+- Hook mô tả tính năng khô khan, thiếu xung đột ("mở toang 180°", "một chuyến công tác cần bao nhiêu túi?") cho điểm thấp → tránh liệt kê tính năng đơn thuần.
+- Shares = 0 toàn bộ → thêm yếu tố đáng chia sẻ (mẹo hữu ích, cảnh báo cho người thân) để nâng score.
+- Ưu tiên công thức: [Nỗi đau/câu hỏi đồng cảm] + [con số/bằng chứng gây sốc] + [emoji cảm xúc].
