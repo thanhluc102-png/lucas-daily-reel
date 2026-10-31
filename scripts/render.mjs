@@ -209,12 +209,11 @@ const sceneLayers = scenes.map((s) => {
   const isPaper = s._theme === 'paper';
   const geoKind = s.idx % 2 === 1 ? 'faster' : 'tighter';
 
-  // Bento Telemetry Grid cho thông số
+  // Bento Spec Grid cho thông số
   const bentoHtml = specs.length
     ? `<div class="katana-bento ${isPaper ? 'is-paper' : ''}">
         ${specs.map((sp, ci) => `
           <div class="kb-cell" data-chip="${ci}">
-            <div class="kb-idx">SPEC // 0${ci + 1}</div>
             <div class="kb-val">${esc(sp)}</div>
             <div class="kb-bar"><i class="kb-fill"></i></div>
           </div>
@@ -223,7 +222,7 @@ const sceneLayers = scenes.map((s) => {
     : '';
 
   // Marquee Kinetic Strip chạy chéo/ngang ở hậu cảnh
-  const marqueeText = Array.from({ length: 6 }, () => `${hero.word} ✦ LUCAS STUDIO ✦`).join(' ');
+  const marqueeText = Array.from({ length: 6 }, () => `${hero.word} ✦ LUCAS COMBO ✦`).join(' ');
 
   if (s._mode === 'cutout') {
     return `<div class="scene is-cutout theme-${s._theme}" data-i="${s.idx}" data-role="${s.role}" data-mode="cutout" data-theme="${s._theme}" data-geo="${geoKind}" style="z-index:${s.idx + 1}">
@@ -320,16 +319,7 @@ function buildKatanaHook(sp) {
 
   return `<div id="khook">
     <div class="kh-editorial-frame">
-      <div class="kh-top-rule" data-at="0.02">
-        <span>LUCAS COMBO // 01</span>
-        <span>LUCAS.VN</span>
-      </div>
-      <div class="kh-kicker" data-at="0.05"><span class="kh-dot"></span>GÓC HỎI ĐÁP NHANH</div>
       <div class="kh-lines">${linesHtml}</div>
-      <div class="kh-bot-rule" data-at="0.45">
-        <span>SWIPE FOR SPECS</span>
-        <span>${shortProdName}</span>
-      </div>
     </div>
   </div>`;
 }
@@ -605,7 +595,6 @@ const html = `<!doctype html>
           <span class="brand-sub">Chính Hãng · lucas.vn</span>
         </div>
       </div>
-      <div class="role-pill" id="role-pill"><span class="rp-icon" id="rp-icon">⚡</span><span id="rp-text">01 // HOOK</span></div>
     </div>
     ${badgeHtml}
     ${ctaStripHtml}
@@ -669,10 +658,6 @@ const TILT = [
 
 window.__render = (t) => {
   const curScene = scenes.find((s) => t >= s.start && t < s.end) || scenes[0];
-  if (curScene && ROLE_META[curScene.role]) {
-    rpIcon.textContent = ROLE_META[curScene.role].icon;
-    rpText.textContent = '0' + (curScene.i + 1) + ' // ' + curScene.role.toUpperCase();
-  }
 
   // Đảo nền Paper Editorial (#F4F0E6) theo cảnh kiểu Katana
   const isPaperNow = curScene && curScene.theme === 'paper' && t >= KHOOK_END;
