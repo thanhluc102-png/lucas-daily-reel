@@ -1,8 +1,8 @@
-- Hook nêu nỗi đau mất mát/an toàn (mất hộ chiếu, laptop không chống sốc, bị đọc trộm tin nhắn) cho tương tác tốt nhất → ưu tiên khai thác sợ hãi, rủi ro cụ thể.
-- Hook dạng câu hỏi chạm trúng tình huống bực bội quen thuộc ("bao nhiêu củ sạc chằng chịt?", "balo 4 triệu vẫn sợ ướt?") kéo comment cao → mở đầu bằng câu hỏi gây đồng cảm.
-- Chèn con số gây sốc + bằng chứng (rơi 6 mét, chứng nhận SGS) tạo tò mò → dùng số liệu cụ thể thay vì nói chung chung.
-- Nhóm sản phẩm chống sốc/chống nước và phụ kiện sạc gọn gàng hút tương tác ổn định → tập trung hai dòng này.
-- Thêm emoji đúng ngữ cảnh (😰😬😮) tăng cảm xúc → mỗi hook gắn 1 emoji biểu cảm mạnh.
-- Hook mô tả tính năng khô khan, thiếu xung đột ("mở toang 180°", "một chuyến công tác cần bao nhiêu túi?") cho điểm thấp → tránh liệt kê tính năng đơn thuần.
-- Shares = 0 toàn bộ → thêm yếu tố đáng chia sẻ (mẹo hữu ích, cảnh báo cho người thân) để nâng score.
-- Ưu tiên công thức: [Nỗi đau/câu hỏi đồng cảm] + [con số/bằng chứng gây sốc] + [emoji cảm xúc].
+- Hook "pain-point" cụ thể, chạm nỗi bực hằng ngày thắng lớn nhất: "dây sạc rối thành cục" (Score 7), "balo 4 triệu vẫn sợ ướt laptop" (Score 6) — mô tả đúng cảnh khó chịu người dùng đang gặp.
+- Dùng con số/giá tiền gây sốc để tạo tương phản ("4 triệu mà vẫn...", "6 mét không nứt") giúp tăng reactions rõ rệt.
+- Hook dạng câu hỏi trực diện đánh vào tình huống xấu hổ/lo sợ (bị đọc trộm tin nhắn, quên hộ chiếu, laptop không chống sốc) đạt Score 4 ổn định.
+- Nhóm phụ kiện gọn-gàng/tổ chức đồ (tổ chức cáp, ổ sạc đa năng, túi chống thất lạc) dễ ra tương tác cao vì chạm đúng nỗi đau phổ biến.
+- Tránh hook liệt kê tính năng khô khan, thiếu cảm xúc ("balo mở 180°", "1 balo cho cả đi làm lẫn du lịch") — chỉ đạt Score 3.
+- Tránh hook chung chung, không vẽ ra cảnh đau cụ thể ("một chuyến công tác cần bao nhiêu túi?") — mơ hồ, tương tác kém.
+- Ưu tiên mở đầu bằng cảnh "thảm họa nhỏ" + emoji cảm xúc (😤😰😩) thay vì emoji sản phẩm trung tính (🎒🔌) để kích phản ứng.
+- Shares = 0 toàn bộ: cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tình huống ai cũng dính, hoặc kết quả bất ngờ đáng khoe) vào cuối hook.
