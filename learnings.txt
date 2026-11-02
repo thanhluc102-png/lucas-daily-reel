@@ -1,8 +1,15 @@
-- Hook "pain-point" cụ thể, chạm nỗi bực hằng ngày thắng lớn nhất: "dây sạc rối thành cục" (Score 7), "balo 4 triệu vẫn sợ ướt laptop" (Score 6) — mô tả đúng cảnh khó chịu người dùng đang gặp.
-- Dùng con số/giá tiền gây sốc để tạo tương phản ("4 triệu mà vẫn...", "6 mét không nứt") giúp tăng reactions rõ rệt.
-- Hook dạng câu hỏi trực diện đánh vào tình huống xấu hổ/lo sợ (bị đọc trộm tin nhắn, quên hộ chiếu, laptop không chống sốc) đạt Score 4 ổn định.
-- Nhóm phụ kiện gọn-gàng/tổ chức đồ (tổ chức cáp, ổ sạc đa năng, túi chống thất lạc) dễ ra tương tác cao vì chạm đúng nỗi đau phổ biến.
-- Tránh hook liệt kê tính năng khô khan, thiếu cảm xúc ("balo mở 180°", "1 balo cho cả đi làm lẫn du lịch") — chỉ đạt Score 3.
-- Tránh hook chung chung, không vẽ ra cảnh đau cụ thể ("một chuyến công tác cần bao nhiêu túi?") — mơ hồ, tương tác kém.
-- Ưu tiên mở đầu bằng cảnh "thảm họa nhỏ" + emoji cảm xúc (😤😰😩) thay vì emoji sản phẩm trung tính (🎒🔌) để kích phản ứng.
-- Shares = 0 toàn bộ: cần thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tình huống ai cũng dính, hoặc kết quả bất ngờ đáng khoe) vào cuối hook.
+- **Hook pain-point đời thường thắng lớn**: "Dây sạc rối thành cục" (Score=7), "Balo 4 triệu vẫn sợ ướt laptop" (Score=6) — mô tả nỗi bực cụ thể hằng ngày + dùng câu hỏi khơi bực mình.
+
+- **Ưu tiên phụ kiện nhỏ, giá rẻ, ai cũng gặp** (tổ chức dây sạc, sạc đa cổng, chống nhìn trộm) hơn sản phẩm đắt/ít nhu cầu (ốp lưng, đèn quay video, gimbal) vốn chỉ đạt Score 3-4.
+
+- **Câu hỏi tu từ chạm trúng cái đau** ("...mà bạn vẫn sợ...?", "...rối thành cục mỗi lần lấy ra?") kéo Reactions mạnh hơn câu khẳng định tính năng.
+
+- **Tránh hook khoe thông số/chứng nhận khô khan**: "đạt chứng nhận SGS", "rơi 6 mét không nứt", "mở 180°" — nghe như quảng cáo, tương tác thấp (Score 3-4).
+
+- **Dùng con số cụ thể gây sốc hoặc đối lập giá trị** ("Balo 4 triệu mà...") để tạo nghịch lý khiến người xem phải bình luận.
+
+- **Mỗi hook chỉ đánh 1 nỗi đau duy nhất, cực đời thường**, tránh liệt kê nhiều tính năng cùng lúc gây loãng.
+
+- **Emoji nên là biểu cảm bực/khó chịu** (😤😩😬☔) thay vì emoji khoe (💥💡✈️) để cộng hưởng cảm xúc tiêu cực cần giải quyết.
+
+- **Share gần như bằng 0 toàn bộ** → đừng kỳ vọng viral lan truyền; tối ưu cho Reactions + Comments bằng hook khơi gợi đồng cảm và mời bình luận.
