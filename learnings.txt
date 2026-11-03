@@ -1,15 +1,8 @@
-- **Hook pain-point đời thường thắng lớn**: "Dây sạc rối thành cục" (Score=7), "Balo 4 triệu vẫn sợ ướt laptop" (Score=6) — mô tả nỗi bực cụ thể hằng ngày + dùng câu hỏi khơi bực mình.
-
-- **Ưu tiên phụ kiện nhỏ, giá rẻ, ai cũng gặp** (tổ chức dây sạc, sạc đa cổng, chống nhìn trộm) hơn sản phẩm đắt/ít nhu cầu (ốp lưng, đèn quay video, gimbal) vốn chỉ đạt Score 3-4.
-
-- **Câu hỏi tu từ chạm trúng cái đau** ("...mà bạn vẫn sợ...?", "...rối thành cục mỗi lần lấy ra?") kéo Reactions mạnh hơn câu khẳng định tính năng.
-
-- **Tránh hook khoe thông số/chứng nhận khô khan**: "đạt chứng nhận SGS", "rơi 6 mét không nứt", "mở 180°" — nghe như quảng cáo, tương tác thấp (Score 3-4).
-
-- **Dùng con số cụ thể gây sốc hoặc đối lập giá trị** ("Balo 4 triệu mà...") để tạo nghịch lý khiến người xem phải bình luận.
-
-- **Mỗi hook chỉ đánh 1 nỗi đau duy nhất, cực đời thường**, tránh liệt kê nhiều tính năng cùng lúc gây loãng.
-
-- **Emoji nên là biểu cảm bực/khó chịu** (😤😩😬☔) thay vì emoji khoe (💥💡✈️) để cộng hưởng cảm xúc tiêu cực cần giải quyết.
-
-- **Share gần như bằng 0 toàn bộ** → đừng kỳ vọng viral lan truyền; tối ưu cho Reactions + Comments bằng hook khơi gợi đồng cảm và mời bình luận.
+- Mở hook bằng **nỗi đau cụ thể, bực bội hằng ngày** (dây sạc rối thành cục, Score=7; laptop sợ ướt, Score=6) → cho tương tác cao nhất, luôn ưu tiên.
+- Dùng **câu hỏi tu từ chạm đúng tình huống "đang xảy ra với bạn"** ("Dây sạc cứ rối mỗi lần lấy ra?", "Laptop đang nằm trong balo không chống sốc?") → kéo reaction mạnh hơn hook kể tính năng.
+- Chủ đề **sạc / cáp / gọn gàng phụ kiện** và **bảo vệ laptop khỏi nước/sốc** đang ăn khách nhất → tập trung khai thác.
+- Chèn **con số/kịch tính + bằng chứng** ("Rơi 4 mét vẫn ổn, có chứng nhận SGS") giúp tăng nhẹ tương tác; nên kèm số liệu đáng tin.
+- Tránh hook **chỉ khoe tính năng khô khan, chung chung** ("Balo mở 180°", "1 balo cho cả đi làm lẫn du lịch") → đều Score=3, kém nhất.
+- Tránh hook **nỗi sợ xa vời, ít người gặp** ("Để quên hộ chiếu", "Mất ví mất vali") → tương tác thấp.
+- Viết **ngắn, 1 câu đánh trúng cảm xúc + 1 emoji liên quan**; đặt vấn đề trước, giải pháp sau.
+- Ưu tiên từ gợi **khó chịu/mệt mỏi** ("rối", "nặng", "mỏi rã rời", "sợ ướt") thay vì mô tả thông số → dễ gây đồng cảm và bình luận.
