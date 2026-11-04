@@ -1,8 +1,8 @@
-- Mở hook bằng **nỗi đau cụ thể, bực bội hằng ngày** (dây sạc rối thành cục, Score=7; laptop sợ ướt, Score=6) → cho tương tác cao nhất, luôn ưu tiên.
-- Dùng **câu hỏi tu từ chạm đúng tình huống "đang xảy ra với bạn"** ("Dây sạc cứ rối mỗi lần lấy ra?", "Laptop đang nằm trong balo không chống sốc?") → kéo reaction mạnh hơn hook kể tính năng.
-- Chủ đề **sạc / cáp / gọn gàng phụ kiện** và **bảo vệ laptop khỏi nước/sốc** đang ăn khách nhất → tập trung khai thác.
-- Chèn **con số/kịch tính + bằng chứng** ("Rơi 4 mét vẫn ổn, có chứng nhận SGS") giúp tăng nhẹ tương tác; nên kèm số liệu đáng tin.
-- Tránh hook **chỉ khoe tính năng khô khan, chung chung** ("Balo mở 180°", "1 balo cho cả đi làm lẫn du lịch") → đều Score=3, kém nhất.
-- Tránh hook **nỗi sợ xa vời, ít người gặp** ("Để quên hộ chiếu", "Mất ví mất vali") → tương tác thấp.
-- Viết **ngắn, 1 câu đánh trúng cảm xúc + 1 emoji liên quan**; đặt vấn đề trước, giải pháp sau.
-- Ưu tiên từ gợi **khó chịu/mệt mỏi** ("rối", "nặng", "mỏi rã rời", "sợ ướt") thay vì mô tả thông số → dễ gây đồng cảm và bình luận.
+- Hook mô tả "nỗi đau vật lý lặp lại hằng ngày" (dây sạc rối thành cục, sạc rời lộn xộn) cho Score cao nhất (7) — ưu tiên pain-point nhỏ nhặt mà ai cũng gặp mỗi ngày.
+- Chốt bằng câu hỏi tu từ "...làm gì cho nặng?", "...mỗi lần lấy ra?" kéo comment tốt hơn câu khẳng định.
+- Đặt con số gây sốc + bằng chứng (4 triệu, rơi 6 mét, chứng nhận SGS) tạo tò mò, Score khá (4-6).
+- Sản phẩm sạc gọn / tổ chức dây cáp / chống rối cho phản ứng tốt nhất; khai thác mạnh nhóm này.
+- Tránh hook "ác mộng du lịch" trừu tượng (quên hộ chiếu, mất ví vali) — cảm xúc xa, Score thấp.
+- Tránh hook thiên tính năng kỹ thuật khô khan (mở 180°, MacBook một cổng, ám màu video) — khó chạm, Score 3.
+- Mở đầu bằng tình huống bực mình cụ thể "đang..." + emoji cảm xúc (😤😩) mạnh hơn emoji đồ vật (🎒🔌).
+- Chưa hook nào tạo Share: thử thêm yếu tố "mẹo hữu ích đáng gửi cho bạn bè" để kích share.
