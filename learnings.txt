@@ -1,8 +1,8 @@
-- Hook mô tả "nỗi đau vật lý lặp lại hằng ngày" (dây sạc rối thành cục, sạc rời lộn xộn) cho Score cao nhất (7) — ưu tiên pain-point nhỏ nhặt mà ai cũng gặp mỗi ngày.
-- Chốt bằng câu hỏi tu từ "...làm gì cho nặng?", "...mỗi lần lấy ra?" kéo comment tốt hơn câu khẳng định.
-- Đặt con số gây sốc + bằng chứng (4 triệu, rơi 6 mét, chứng nhận SGS) tạo tò mò, Score khá (4-6).
-- Sản phẩm sạc gọn / tổ chức dây cáp / chống rối cho phản ứng tốt nhất; khai thác mạnh nhóm này.
-- Tránh hook "ác mộng du lịch" trừu tượng (quên hộ chiếu, mất ví vali) — cảm xúc xa, Score thấp.
-- Tránh hook thiên tính năng kỹ thuật khô khan (mở 180°, MacBook một cổng, ám màu video) — khó chạm, Score 3.
-- Mở đầu bằng tình huống bực mình cụ thể "đang..." + emoji cảm xúc (😤😩) mạnh hơn emoji đồ vật (🎒🔌).
-- Chưa hook nào tạo Share: thử thêm yếu tố "mẹo hữu ích đáng gửi cho bạn bè" để kích share.
+- Hook nêu "nỗi đau vật lý cụ thể" (dây sạc rối thành cục, laptop không chống sốc) ăn điểm cao nhất — ưu tiên mô tả tình huống bực bội quen thuộc hằng ngày.
+- Nhóm phụ kiện sạc/cáp/tổ chức dây (túi cáp, sạc đa cổng) cho tương tác tốt nhất; khai thác mạnh chủ đề gọn gàng – hết rối.
+- Dùng câu hỏi tu từ chạm trúng tình huống người đọc đang gặp ("...mà bạn vẫn phải...?") hiệu quả hơn câu khẳng định thông số.
+- Hook "đập giá tiền vào mặt" (Balo 4 triệu / 5 triệu mà vẫn...) tạo tò mò nghịch lý, kéo comment — nên tận dụng.
+- Emoji cảm xúc bực bội/bất ngờ (😤😩😬😮) hợp hơn emoji vật thể trung tính (🔌🎒) khi muốn khơi phản ứng.
+- Tránh hook nặng thông số kỹ thuật khô ("chứng nhận SGS", "rơi 4 mét") — gây điểm thấp vì thiếu cảm xúc gần gũi.
+- Tránh hook mơ hồ, chung chung ("cần bao nhiêu túi?", "mất ví mới ước") — không chạm đau cụ thể, tương tác đáy.
+- Mọi hook đều kéo được 1 comment nhưng gần như không có share; muốn bứt phá phải tăng "tính hữu ích đáng lưu/đáng gửi cho bạn bè" chứ không chỉ gây tò mò.
