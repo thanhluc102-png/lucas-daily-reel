@@ -1,0 +1,92 @@
+name: Drip post web product reels
+
+# Đăng rải video sản phẩm web (dựng bằng bộ edit Lucas) trong post-queue/web/.
+# Mỗi lần chạy xét video ĐẦU TIÊN chưa có .posted (theo thứ tự tên thư mục):
+#   - có post_after.txt mà chưa tới giờ thì bỏ qua lượt này, không nhảy cóc;
+#   - tới giờ thì đăng, đánh dấu .posted rồi commit.
+# Hết hàng thì không làm gì.
+# Chỉ đưa vào đây video Admin đã xem và nói rõ đồng ý (CLAUDE.md: không tự đăng).
+# 1 bài/ngày lúc 18:15 VN, lệch giờ với daily-reel v2 (8:15 / 12:15 / 20:15).
+
+on:
+  schedule:
+    - cron: '15 11 * * *'    # 18:15 VN
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true = chỉ in caption, KHÔNG đăng'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drip-web
+  cancel-in-progress: false
+
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tìm video kế tiếp trong hàng đợi
+        id: pick
+        run: |
+          NEXT=""
+          for d in post-queue/web/*/; do
+            [ -d "$d" ] || continue
+            [ -f "${d}.posted" ] && continue
+            NEXT="${d%/}"
+            break
+          done
+          if [ -n "$NEXT" ] && [ -f "$NEXT/post_after.txt" ]; then
+            AFTER=$(tr -d '[:space:]' < "$NEXT/post_after.txt")
+            if [ "$(date -u +%s)" -lt "$(date -u -d "$AFTER" +%s)" ]; then
+              echo "::notice::Chưa tới giờ đăng $NEXT (sau $AFTER)."
+              NEXT=""
+            fi
+          fi
+          if [ -z "$NEXT" ]; then
+            echo "::notice::Không có video nào tới lượt đăng."
+            echo "dir=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Sẽ đăng: $NEXT"
+            echo "dir=$NEXT" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Kiểm tra đủ file
+        if: steps.pick.outputs.dir != ''
+        run: |
+          for f in final.mp4 caption.txt comment.txt; do
+            test -f "${{ steps.pick.outputs.dir }}/$f" || { echo "Thiếu ${{ steps.pick.outputs.dir }}/$f"; exit 1; }
+          done
+          ls -la "${{ steps.pick.outputs.dir }}"
+
+      - name: Đăng reel + comment link mua
+        if: steps.pick.outputs.dir != ''
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          CAPTION_FILE: ${{ steps.pick.outputs.dir }}/caption.txt
+          COMMENT_FILE: ${{ steps.pick.outputs.dir }}/comment.txt
+        run: node lib/post-reel.mjs "${{ steps.pick.outputs.dir }}/final.mp4"
+
+      - name: Đánh dấu đã đăng
+        if: steps.pick.outputs.dir != '' && (inputs.dry_run || 'false') != 'true'
+        run: |
+          touch "${{ steps.pick.outputs.dir }}/.posted"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.pick.outputs.dir }}/.posted"
+          [ -f reels_history.json ] && git add reels_history.json
+          git commit -m "chore: đã đăng $(basename '${{ steps.pick.outputs.dir }}') [skip ci]"
+          git pull --rebase
+          git push
