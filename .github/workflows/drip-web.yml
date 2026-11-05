@@ -3,14 +3,22 @@ name: Drip post web product reels
 # Đăng rải video sản phẩm web (dựng bằng bộ edit Lucas) trong post-queue/web/.
 # Mỗi lần chạy xét video ĐẦU TIÊN chưa có .posted (theo thứ tự tên thư mục):
 #   - có post_after.txt mà chưa tới giờ thì bỏ qua lượt này, không nhảy cóc;
-#   - tới giờ thì đăng, đánh dấu .posted rồi commit.
-# Hết hàng thì không làm gì.
+#   - tới giờ thì đăng, ghi giờ VN vào .posted rồi commit.
+# Khóa an toàn khi đăng thật: chỉ đăng trong khung 17:45–21:30 giờ VN, tối đa 1 bài/ngày.
+#
+# Lịch của GitHub ở repo này hay trễ 6–8 tiếng (11/2026: cron 08:30 VN thường chạy khoảng 14–15h).
+# Vì vậy cron rải nhiều mốc: chạy đúng giờ thì chỉ mốc 18:15 rơi vào khung; trễ như thường lệ
+# thì các mốc trưa rơi vào khung tối. Lượt nào ngoài khung hoặc hôm đó đã đăng thì tự bỏ qua.
+# Muốn đăng ngay trong khung giờ: Actions → Run workflow, dry_run = false.
 # Chỉ đưa vào đây video Admin đã xem và nói rõ đồng ý (CLAUDE.md: không tự đăng).
-# 1 bài/ngày lúc 18:15 VN, lệch giờ với daily-reel v2 (8:15 / 12:15 / 20:15).
 
 on:
   schedule:
-    - cron: '15 11 * * *'    # 18:15 VN
+    - cron: '15 11 * * *'    # 18:15 VN, khi GitHub chạy đúng giờ
+    - cron: '45 3 * * *'     # 10:45 VN, trễ 6–8 tiếng thì rơi vào khoảng 17–19h
+    - cron: '30 4 * * *'     # 11:30 VN, trễ 6–8 tiếng thì rơi vào khoảng 17h30–19h30
+    - cron: '15 5 * * *'     # 12:15 VN, trễ 6–8 tiếng thì rơi vào khoảng 18–20h
+    - cron: '0 6 * * *'      # 13:00 VN, trễ 6–8 tiếng thì rơi vào khoảng 19–21h
   workflow_dispatch:
     inputs:
       dry_run:
@@ -25,12 +33,20 @@ concurrency:
   group: drip-web
   cancel-in-progress: false
 
+env:
+  TZ: Asia/Ho_Chi_Minh
+  WINDOW_START: '17:45'
+  WINDOW_END: '21:30'
+
 jobs:
   drip:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      # ref: main để lượt chạy xếp hàng sau vẫn thấy .posted mới nhất, không đăng trùng.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -38,7 +54,23 @@ jobs:
 
       - name: Tìm video kế tiếp trong hàng đợi
         id: pick
+        env:
+          DRY: ${{ inputs.dry_run || 'false' }}
         run: |
+          NOW_HM=$(date +%H:%M)
+          TODAY=$(date +%F)
+          echo "Giờ VN: $(date '+%F %H:%M')  dry_run=$DRY"
+          out() { echo "dir=$1" >> "$GITHUB_OUTPUT"; }
+          if [ "$DRY" != "true" ]; then
+            if [[ "$NOW_HM" < "$WINDOW_START" || "$NOW_HM" > "$WINDOW_END" ]]; then
+              echo "::notice::Ngoài khung giờ đăng $WINDOW_START–$WINDOW_END (giờ VN), bỏ qua."
+              out ""; exit 0
+            fi
+            if grep -qs "^$TODAY" post-queue/web/*/.posted; then
+              echo "::notice::Hôm nay đã đăng 1 bài, bỏ qua."
+              out ""; exit 0
+            fi
+          fi
           NEXT=""
           for d in post-queue/web/*/; do
             [ -d "$d" ] || continue
@@ -48,17 +80,17 @@ jobs:
           done
           if [ -n "$NEXT" ] && [ -f "$NEXT/post_after.txt" ]; then
             AFTER=$(tr -d '[:space:]' < "$NEXT/post_after.txt")
-            if [ "$(date -u +%s)" -lt "$(date -u -d "$AFTER" +%s)" ]; then
+            if [ "$(date +%s)" -lt "$(date -d "$AFTER" +%s)" ]; then
               echo "::notice::Chưa tới giờ đăng $NEXT (sau $AFTER)."
               NEXT=""
             fi
           fi
           if [ -z "$NEXT" ]; then
             echo "::notice::Không có video nào tới lượt đăng."
-            echo "dir=" >> "$GITHUB_OUTPUT"
+            out ""
           else
             echo "Sẽ đăng: $NEXT"
-            echo "dir=$NEXT" >> "$GITHUB_OUTPUT"
+            out "$NEXT"
           fi
 
       - name: Kiểm tra đủ file
@@ -82,7 +114,7 @@ jobs:
       - name: Đánh dấu đã đăng
         if: steps.pick.outputs.dir != '' && (inputs.dry_run || 'false') != 'true'
         run: |
-          touch "${{ steps.pick.outputs.dir }}/.posted"
+          date '+%F %H:%M %z' > "${{ steps.pick.outputs.dir }}/.posted"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "${{ steps.pick.outputs.dir }}/.posted"
