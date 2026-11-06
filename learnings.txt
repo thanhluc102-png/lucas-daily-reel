@@ -1,8 +1,15 @@
-- Hook nêu "nỗi đau vật lý cụ thể" (dây sạc rối thành cục, laptop không chống sốc) ăn điểm cao nhất — ưu tiên mô tả tình huống bực bội quen thuộc hằng ngày.
-- Nhóm phụ kiện sạc/cáp/tổ chức dây (túi cáp, sạc đa cổng) cho tương tác tốt nhất; khai thác mạnh chủ đề gọn gàng – hết rối.
-- Dùng câu hỏi tu từ chạm trúng tình huống người đọc đang gặp ("...mà bạn vẫn phải...?") hiệu quả hơn câu khẳng định thông số.
-- Hook "đập giá tiền vào mặt" (Balo 4 triệu / 5 triệu mà vẫn...) tạo tò mò nghịch lý, kéo comment — nên tận dụng.
-- Emoji cảm xúc bực bội/bất ngờ (😤😩😬😮) hợp hơn emoji vật thể trung tính (🔌🎒) khi muốn khơi phản ứng.
-- Tránh hook nặng thông số kỹ thuật khô ("chứng nhận SGS", "rơi 4 mét") — gây điểm thấp vì thiếu cảm xúc gần gũi.
-- Tránh hook mơ hồ, chung chung ("cần bao nhiêu túi?", "mất ví mới ước") — không chạm đau cụ thể, tương tác đáy.
-- Mọi hook đều kéo được 1 comment nhưng gần như không có share; muốn bứt phá phải tăng "tính hữu ích đáng lưu/đáng gửi cho bạn bè" chứ không chỉ gây tò mò.
+- Hook mô tả nỗi đau vật lý cụ thể hằng ngày ("dây sạc rối thành cục", "quay tay mỏi rã rời") cho điểm cao nhất — ưu tiên khắc họa khó chịu đời thường, trực quan.
+
+- Sản phẩm phụ kiện sạc/cáp/tổ chức dây (cáp gọn, sạc đa cổng, hub) tương tác tốt hơn; nhóm balo bị lặp quá nhiều mà điểm thấp, nên giảm tần suất và đổi góc tiếp cận.
+
+- Mở đầu bằng câu hỏi "đá đúng nỗi đau" + emoji sát chủ đề (😤😩🔌) kéo reaction tốt hơn câu kể chung chung ("ước có nó", "thời đó qua rồi").
+
+- Tránh hook mơ hồ, trừu tượng, không gọi tên tình huống cụ thể — loại này chỉ đạt điểm sàn (Score=3).
+
+- Dùng con số/mức giá gây sốc để tạo tương phản ("Balo 4 triệu vẫn sợ ướt laptop", "MacBook một cổng") giúp nhích điểm, nên kết hợp giá cao + điểm yếu bất ngờ.
+
+- Nhắm đúng dân văn phòng/sáng tạo nội dung (laptop, quay video, đi làm) — tệp này phản ứng mạnh nhất với pain point công việc.
+
+- Hook nên ngắn, một vấn đề duy nhất, kết bằng dấu hỏi tạo đồng cảm; tránh gộp nhiều ý trong một câu.
+
+- Hầu hết video chưa có Share — cần thêm yếu tố "đáng khoe/đáng lưu" (mẹo hay, thủ thuật, so sánh gây bất ngờ) để kích shares, đòn bẩy điểm lớn nhất.
