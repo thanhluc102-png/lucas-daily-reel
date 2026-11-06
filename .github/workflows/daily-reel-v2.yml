@@ -4,6 +4,9 @@ name: Daily reel v2 (pipeline scenes.json)
 # -> whisper -> align -> render.mjs (nền động, Ken Burns, badge, kinetic hook, SFX)
 # -> qc -> post -> học. 3 khung giờ vàng/ngày, có guard chống double-post.
 # Chạy tay: dry_run mặc định true (không đăng). Lịch cron: đăng thật.
+# Lịch cron của GitHub ở repo này hay trễ 6–8 tiếng. Vì vậy Worker Cloudflare `lucas-reel-cron`
+# (thư mục cron-worker/) bấm chạy đúng 08:30 VN với dry_run=false, guard=true.
+# Hai mốc cron dưới đây giữ làm dự phòng; guard tự bỏ qua nếu hôm đó đã đăng.
 
 on:
   schedule:
@@ -19,6 +22,10 @@ on:
         description: 'true = render + xem trước, KHÔNG đăng'
         required: false
         default: 'true'
+      guard:
+        description: 'true = giữ giãn cách 14 tiếng như lịch cron (Cloudflare dùng); false = bấm tay luôn chạy'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -34,7 +41,10 @@ jobs:
     outputs:
       skip: ${{ steps.g.outputs.skip }}
     steps:
+      # ref: main để lượt chạy xếp hàng sau (concurrency) thấy history.json mới nhất, không đăng trùng.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - id: g
@@ -44,8 +54,8 @@ jobs:
 
   reel:
     needs: guard
-    # Lịch cron: chỉ chạy khi đủ giãn cách. Bấm tay: luôn chạy.
-    if: needs.guard.outputs.skip != 'true' || github.event_name == 'workflow_dispatch'
+    # Lịch cron và lượt Cloudflare (guard=true): chỉ chạy khi đủ giãn cách. Bấm tay: luôn chạy.
+    if: needs.guard.outputs.skip != 'true' || (github.event_name == 'workflow_dispatch' && inputs.guard != 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

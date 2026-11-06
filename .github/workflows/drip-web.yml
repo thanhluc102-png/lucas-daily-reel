@@ -9,6 +9,8 @@ name: Drip post web product reels
 # Lịch của GitHub ở repo này hay trễ 6–8 tiếng (11/2026: cron 08:30 VN thường chạy khoảng 14–15h).
 # Vì vậy cron rải nhiều mốc: chạy đúng giờ thì chỉ mốc 18:15 rơi vào khung; trễ như thường lệ
 # thì các mốc trưa rơi vào khung tối. Lượt nào ngoài khung hoặc hôm đó đã đăng thì tự bỏ qua.
+# Từ 6/11/2026, Worker Cloudflare `lucas-reel-cron` (thư mục cron-worker/) bấm chạy đúng 18:15 VN
+# với dry_run=false. Các mốc cron trên giữ làm dự phòng; lượt trùng tự bỏ qua nhờ khóa 1 bài/ngày.
 # Muốn đăng ngay trong khung giờ: Actions → Run workflow, dry_run = false.
 # Chỉ đưa vào đây video Admin đã xem và nói rõ đồng ý (CLAUDE.md: không tự đăng).
 
