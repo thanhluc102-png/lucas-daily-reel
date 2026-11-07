@@ -1,15 +1,8 @@
-- Hook mô tả nỗi đau vật lý cụ thể hằng ngày ("dây sạc rối thành cục", "quay tay mỏi rã rời") cho điểm cao nhất — ưu tiên khắc họa khó chịu đời thường, trực quan.
-
-- Sản phẩm phụ kiện sạc/cáp/tổ chức dây (cáp gọn, sạc đa cổng, hub) tương tác tốt hơn; nhóm balo bị lặp quá nhiều mà điểm thấp, nên giảm tần suất và đổi góc tiếp cận.
-
-- Mở đầu bằng câu hỏi "đá đúng nỗi đau" + emoji sát chủ đề (😤😩🔌) kéo reaction tốt hơn câu kể chung chung ("ước có nó", "thời đó qua rồi").
-
-- Tránh hook mơ hồ, trừu tượng, không gọi tên tình huống cụ thể — loại này chỉ đạt điểm sàn (Score=3).
-
-- Dùng con số/mức giá gây sốc để tạo tương phản ("Balo 4 triệu vẫn sợ ướt laptop", "MacBook một cổng") giúp nhích điểm, nên kết hợp giá cao + điểm yếu bất ngờ.
-
-- Nhắm đúng dân văn phòng/sáng tạo nội dung (laptop, quay video, đi làm) — tệp này phản ứng mạnh nhất với pain point công việc.
-
-- Hook nên ngắn, một vấn đề duy nhất, kết bằng dấu hỏi tạo đồng cảm; tránh gộp nhiều ý trong một câu.
-
-- Hầu hết video chưa có Share — cần thêm yếu tố "đáng khoe/đáng lưu" (mẹo hay, thủ thuật, so sánh gây bất ngờ) để kích shares, đòn bẩy điểm lớn nhất.
+- Hook nêu "nỗi đau vật lý lặp đi lặp lại hằng ngày" cho tương tác cao nhất (dây sạc rối thành cục: Score=7); ưu tiên vấn đề nhỏ nhưng ai cũng gặp, hình ảnh cụ thể gây bực mình.
+- Sản phẩm phụ kiện giải quyết sự bất tiện kết nối/gọn gàng (cáp, hub, sạc đa cổng) kéo reaction tốt hơn; nhấn "gộp nhiều món thành một" (MacBook một cổng: Score=5; mang 3 cục sạc: Score=4).
+- Mở bằng câu hỏi tu từ "mà vẫn/mà còn phải..." đánh vào sự vô lý người dùng đang chịu đựng cho tương tác ổn định hơn kể chuyện.
+- Tránh hook mơ hồ, cảm xúc hối tiếc chung chung ("Mất ví mới ước có nó": Score=3) và hook kể trải nghiệm giả định thiếu con số (rơi 4 mét, công tác ngắn ngày).
+- Chèn con số/mốc gây sốc cụ thể (4 triệu, 180°, 15% pin, 6 thiết bị) tăng độ thuyết phục; nhưng dùng giá tiền để "mỉa" nghịch lý thì mạnh hơn khoe thông số kỹ thuật khô (SGS: Score=3).
+- Dùng emoji đúng ngữ cảnh nỗi đau (😤😩😬) thay vì emoji trung tính (🎒🔌) để khuếch đại cảm xúc bực bội.
+- Không reel nào đạt comment/share cao → cần thêm CTA kích bình luận (hỏi "bạn bị chưa?") và yếu tố đáng-chia-sẻ; hiện toàn bộ Score đến từ reaction lẻ.
+- Tập trung ngành hàng mạnh: phụ kiện sạc/cáp gọn gàng và balo-laptop chống sốc; giảm hook về ánh sáng/màn hình và chống rung (toàn Score=3).
