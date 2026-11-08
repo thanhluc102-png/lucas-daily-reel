@@ -1,8 +1,8 @@
-- Hook nêu "nỗi đau vật lý lặp đi lặp lại hằng ngày" cho tương tác cao nhất (dây sạc rối thành cục: Score=7); ưu tiên vấn đề nhỏ nhưng ai cũng gặp, hình ảnh cụ thể gây bực mình.
-- Sản phẩm phụ kiện giải quyết sự bất tiện kết nối/gọn gàng (cáp, hub, sạc đa cổng) kéo reaction tốt hơn; nhấn "gộp nhiều món thành một" (MacBook một cổng: Score=5; mang 3 cục sạc: Score=4).
-- Mở bằng câu hỏi tu từ "mà vẫn/mà còn phải..." đánh vào sự vô lý người dùng đang chịu đựng cho tương tác ổn định hơn kể chuyện.
-- Tránh hook mơ hồ, cảm xúc hối tiếc chung chung ("Mất ví mới ước có nó": Score=3) và hook kể trải nghiệm giả định thiếu con số (rơi 4 mét, công tác ngắn ngày).
-- Chèn con số/mốc gây sốc cụ thể (4 triệu, 180°, 15% pin, 6 thiết bị) tăng độ thuyết phục; nhưng dùng giá tiền để "mỉa" nghịch lý thì mạnh hơn khoe thông số kỹ thuật khô (SGS: Score=3).
-- Dùng emoji đúng ngữ cảnh nỗi đau (😤😩😬) thay vì emoji trung tính (🎒🔌) để khuếch đại cảm xúc bực bội.
-- Không reel nào đạt comment/share cao → cần thêm CTA kích bình luận (hỏi "bạn bị chưa?") và yếu tố đáng-chia-sẻ; hiện toàn bộ Score đến từ reaction lẻ.
-- Tập trung ngành hàng mạnh: phụ kiện sạc/cáp gọn gàng và balo-laptop chống sốc; giảm hook về ánh sáng/màn hình và chống rung (toàn Score=3).
+- Hook mô tả nỗi đau cụ thể, hằng ngày, ai cũng gặp (dây sạc rối thành cục, mang 3 cục sạc) cho tương tác cao nhất — ưu tiên kiểu này.
+- Dùng con số/sự bất tiện gây bực mình ("3 cục sạc", "MacBook một cổng", "balo 5 triệu") tạo đồng cảm và kéo reaction tốt hơn.
+- Hook dạng câu hỏi "có đang... không?" chạm thẳng vào tình huống người dùng (laptop không chống sốc, người cạnh đọc tin nhắn) đạt mức khá.
+- Tránh hook thiên về thông số/chứng nhận khô khan (rơi 4 mét, chứng nhận SGS) — tương tác thấp nhất.
+- Tránh hook chung chung, hỏi mơ hồ (cần bao nhiêu túi, mở toang 180°) vì không chạm nỗi đau rõ ràng.
+- Sản phẩm phụ kiện sạc/cáp gọn nhẹ và túi/balo chống sốc cho laptop là chủ đề dễ tạo đồng cảm — khai thác nhiều.
+- Mở đầu bằng cảm xúc bực bội/mệt mỏi kèm emoji 😤😩 giúp tăng reaction so với emoji trung tính 🎒🔌.
+- Toàn bộ hook gần như không có share — cần thêm yếu tố "đáng chia sẻ": mẹo hay, giá sốc, hoặc tình huống hài để kích share.
