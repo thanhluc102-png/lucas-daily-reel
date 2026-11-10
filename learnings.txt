@@ -1,13 +1,8 @@
-- **Hook thắng đậm nhất**: mô tả nỗi đau vật lý quen thuộc, cụ thể, lặp đi lặp lại hằng ngày ("dây sạc rối thành cục", "mỏi tay quay video") — cho Reactions cao nhất (Score 7). Ưu tiên kiểu này.
-
-- **Chọn sản phẩm nhỏ – giá thấp – ai cũng gặp** (tổ chức cáp, pin GaN đa cổng, phụ kiện gọn nhẹ) thắng hơn sản phẩm đắt/kén người (balo 5 triệu, MacBook một cổng).
-
-- **Công thức mạnh**: "Tình huống bực mình + con số cụ thể + emoji cảm xúc (😤😩)" — số liệu thật ("3 cục sạc", "15% pin", "6 thiết bị") làm hook sống động.
-
-- **Nên tránh**: hook trừu tượng/sang chảnh, hỏi lý trí khô khan ("cần bao nhiêu túi?", "màn chói phải né nắng?") — chỉ chạm nhóm hẹp, Score đáy (3).
-
-- **Tránh hook phụ thuộc bối cảnh hiếm** (đi công tác, trời mưa giữa đường): ít người thấy mình trong đó nên tương tác thấp.
-
-- **Dạng câu hỏi "đổ lỗi nhẹ" vào thói quen sai của người xem** ("còn phải mang cáp rời?", "sạc chung 1 cục được không?") kéo comment/reaction tốt hơn câu khẳng định.
-
-- **Shares gần như = 0 toàn bộ**: hook hiện chưa tạo giá trị "đáng chia sẻ". Thử thêm tip hữu ích/mẹo bất ngờ để kích share — đòn bẩy Score lớn nhất đang bỏ trống.
+- Hook mô tả nỗi đau vật lý lặp đi lặp lại hằng ngày (dây rối thành cục mỗi lần lấy ra) cho điểm cao nhất — ưu tiên khắc hoạ cảnh bực mình cụ thể, quen thuộc.
+- Chủ đề phụ kiện giải quyết sự lộn xộn/bất tiện gọn nhẹ (tổ chức dây sạc, hub đa cổng, sạc gộp nhiều thiết bị) ăn tương tác hơn balo/ốp lưng.
+- Thêm con số tương phản gây sốc (5 triệu mà…, 100K hay ố vàng, 6 thiết bị cùng lúc) kích thích phản ứng tốt hơn hook chung chung.
+- Hook khơi tò mò/bị xâm phạm riêng tư (người cạnh đọc tin nhắn của bạn) kéo được reaction, nên khai thác góc "bí mật bạn chưa biết".
+- Tránh hook than vãn mơ hồ không có hình ảnh cụ thể (màn chói, mặt ám vàng, cầm quay mỏi tay) — nhóm này điểm thấp nhất.
+- Tránh mở bằng câu khẳng định sản phẩm (Balo mở 180°, sạc nhỏ bằng bao diêm) thiếu nỗi đau dẫn dắt — đổi sang câu hỏi "đụng trúng" người xem.
+- Dùng câu hỏi tu từ kết emoji cảm xúc (😤😩👀) đúng ngữ cảnh, đặt nỗi đau ngay chữ đầu để giữ người xem.
+- Chưa hook nào tạo Share — cần thêm yếu tố "đáng gửi cho bạn bè" (mẹo hay, deal hời, vật dụng ai cũng cần) để nâng Score.

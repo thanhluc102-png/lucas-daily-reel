@@ -2825,16 +2825,34 @@
     "hook": "Ốp trong 100K hay ố vàng sau 2 tháng? 😮‍💨",
     "publish_time": "2026-11-09T08:30:39.264Z",
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 1,
       "shares": 0,
-      "score": 3
+      "score": 4
     }
   },
   {
     "post_id": "29591656980525361",
     "product_name": "",
     "hook": "Dây cáp rối nùi, sạc MacBook với con chuột nằm lung tung?",
-    "publish_time": "2026-11-09T11:31:14.924Z"
+    "publish_time": "2026-11-09T11:31:14.924Z",
+    "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
+  },
+  {
+    "post_id": "1844652236846539",
+    "product_name": "",
+    "hook": "Sạc 2 thiết bị cùng lúc mà cục sạc nhỏ bằng bao diêm? 🔌",
+    "publish_time": "2026-11-10T08:48:15.327Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]
