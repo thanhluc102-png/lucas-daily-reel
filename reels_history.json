@@ -2849,16 +2849,34 @@
     "hook": "Sạc 2 thiết bị cùng lúc mà cục sạc nhỏ bằng bao diêm? 🔌",
     "publish_time": "2026-11-10T08:48:15.327Z",
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 1,
       "shares": 0,
-      "score": 3
+      "score": 4
     }
   },
   {
     "post_id": "2673506713123445",
     "product_name": "",
     "hook": "Ra đường phải mang cả cục sạc lẫn pin dự phòng?",
-    "publish_time": "2026-11-10T11:22:26.674Z"
+    "publish_time": "2026-11-10T11:22:26.674Z",
+    "performance": {
+      "reactions": 2,
+      "comments": 1,
+      "shares": 0,
+      "score": 5
+    }
+  },
+  {
+    "post_id": "1190898233359335",
+    "product_name": "",
+    "hook": "Mang laptop 16 inch đi công tác mà vẫn lo bị trộm móc đồ? 🎒",
+    "publish_time": "2026-11-11T08:07:36.452Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]

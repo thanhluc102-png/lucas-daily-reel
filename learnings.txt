@@ -1,8 +1,8 @@
-- Hook mô tả nỗi đau vật lý lặp đi lặp lại hằng ngày (dây rối thành cục mỗi lần lấy ra) cho điểm cao nhất — ưu tiên khắc hoạ cảnh bực mình cụ thể, quen thuộc.
-- Chủ đề phụ kiện giải quyết sự lộn xộn/bất tiện gọn nhẹ (tổ chức dây sạc, hub đa cổng, sạc gộp nhiều thiết bị) ăn tương tác hơn balo/ốp lưng.
-- Thêm con số tương phản gây sốc (5 triệu mà…, 100K hay ố vàng, 6 thiết bị cùng lúc) kích thích phản ứng tốt hơn hook chung chung.
-- Hook khơi tò mò/bị xâm phạm riêng tư (người cạnh đọc tin nhắn của bạn) kéo được reaction, nên khai thác góc "bí mật bạn chưa biết".
-- Tránh hook than vãn mơ hồ không có hình ảnh cụ thể (màn chói, mặt ám vàng, cầm quay mỏi tay) — nhóm này điểm thấp nhất.
-- Tránh mở bằng câu khẳng định sản phẩm (Balo mở 180°, sạc nhỏ bằng bao diêm) thiếu nỗi đau dẫn dắt — đổi sang câu hỏi "đụng trúng" người xem.
-- Dùng câu hỏi tu từ kết emoji cảm xúc (😤😩👀) đúng ngữ cảnh, đặt nỗi đau ngay chữ đầu để giữ người xem.
-- Chưa hook nào tạo Share — cần thêm yếu tố "đáng gửi cho bạn bè" (mẹo hay, deal hời, vật dụng ai cũng cần) để nâng Score.
+- Hook thắng đậm nhất: tả nỗi đau vật lý quen thuộc, cụ thể, lặp lại hằng ngày ("dây sạc rối thành cục", "mang cả cục sạc lẫn pin") → Score cao nhất (7, 5).
+- Nhóm phụ kiện sạc/cáp/pin (sạc dự phòng, cáp gọn, hub đa cổng) hút reaction tốt hơn nhóm balo laptop và phụ kiện quay phim.
+- Ưu tiên hook dạng câu hỏi khơi đúng tình huống bực mình + 1 emoji biểu cảm (😤😩) — tăng đồng cảm, dễ react.
+- Con số cụ thể gây tò mò ("6 thiết bị", "nhỏ bằng bao diêm", "2 laptop 1 điện thoại") giúp giữ Score ổn định ở mức 4-5.
+- Hook kém: nhóm quay video/ánh sáng/màn chói và balo chống trộm → gần như chỉ còn 1 comment, Reactions=0 (Score=3), nên hạn chế hoặc viết lại sắc hơn.
+- Tránh hook trừu tượng, lợi ích mơ hồ, nỗi đau hiếm gặp; thay bằng cảnh "ai cũng từng dính" mỗi ngày.
+- Mọi hook nên ngắn 1 câu, mở bằng tình huống đau → chốt bằng câu hỏi nhói, đặt emoji cuối câu.
+- Chưa video nào đạt Share: cần thêm yếu tố "đáng khoe/đáng tag bạn" (mẹo bất ngờ, giá hời sốc) để kéo Shares — đòn bẩy Score mạnh nhất.
