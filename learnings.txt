@@ -1,8 +1,8 @@
-- Hook thắng đậm nhất: tả nỗi đau vật lý quen thuộc, cụ thể, lặp lại hằng ngày ("dây sạc rối thành cục", "mang cả cục sạc lẫn pin") → Score cao nhất (7, 5).
-- Nhóm phụ kiện sạc/cáp/pin (sạc dự phòng, cáp gọn, hub đa cổng) hút reaction tốt hơn nhóm balo laptop và phụ kiện quay phim.
-- Ưu tiên hook dạng câu hỏi khơi đúng tình huống bực mình + 1 emoji biểu cảm (😤😩) — tăng đồng cảm, dễ react.
-- Con số cụ thể gây tò mò ("6 thiết bị", "nhỏ bằng bao diêm", "2 laptop 1 điện thoại") giúp giữ Score ổn định ở mức 4-5.
-- Hook kém: nhóm quay video/ánh sáng/màn chói và balo chống trộm → gần như chỉ còn 1 comment, Reactions=0 (Score=3), nên hạn chế hoặc viết lại sắc hơn.
-- Tránh hook trừu tượng, lợi ích mơ hồ, nỗi đau hiếm gặp; thay bằng cảnh "ai cũng từng dính" mỗi ngày.
-- Mọi hook nên ngắn 1 câu, mở bằng tình huống đau → chốt bằng câu hỏi nhói, đặt emoji cuối câu.
-- Chưa video nào đạt Share: cần thêm yếu tố "đáng khoe/đáng tag bạn" (mẹo bất ngờ, giá hời sốc) để kéo Shares — đòn bẩy Score mạnh nhất.
+- Hook nêu rắc rối cụ thể, đời thường ("dây sạc rối thành cục", "sạc dự phòng dày cục túi quần") cho Score cao nhất (7); ưu tiên nỗi đau ai cũng gặp hằng ngày.
+- Sản phẩm phụ kiện sạc đa năng (sạc 6 thiết bị, sạc nhỏ bằng bao diêm, 2 laptop 1 cục pin) hút tương tác tốt hơn — khai thác mạnh nhóm này.
+- Hook dạng "nhiều thiết bị gọn 1 món" / con số cụ thể ("3 cục sạc", "6 thiết bị", "16 inch") tạo tò mò tốt, nên dùng số liệu rõ ràng.
+- Hook chạm cảm giác tiếc tiền/lo mất mát ("balo 5 triệu", "ố vàng sau 2 tháng", "lo bị trộm") giữ tương tác ổn định — dùng vừa phải.
+- Tránh hook than vãn chung chung, thiếu hình ảnh ("màn chói phải né nắng", "pin nóng ran tay", "quay tay mỏi rã rời") — toàn Score thấp (3).
+- Tránh mở đầu bằng câu hỏi trừu tượng không gợi hành động tức thì; thay bằng tình huống kịch tính có ngữ cảnh ("trời đổ mưa giữa đường").
+- Dùng emoji đúng chỗ nhấn cảm xúc (😤😩🔋), nhưng nội dung nỗi đau mới quyết định, emoji chỉ phụ trợ.
+- Toàn bộ video Shares=0: cần thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, "tag đứa bạn hay làm rối dây") để đẩy Score nhờ hệ số Share x5.
