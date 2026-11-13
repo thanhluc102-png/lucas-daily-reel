@@ -1,8 +1,13 @@
-- Hook nêu rắc rối cụ thể, đời thường ("dây sạc rối thành cục", "sạc dự phòng dày cục túi quần") cho Score cao nhất (7); ưu tiên nỗi đau ai cũng gặp hằng ngày.
-- Sản phẩm phụ kiện sạc đa năng (sạc 6 thiết bị, sạc nhỏ bằng bao diêm, 2 laptop 1 cục pin) hút tương tác tốt hơn — khai thác mạnh nhóm này.
-- Hook dạng "nhiều thiết bị gọn 1 món" / con số cụ thể ("3 cục sạc", "6 thiết bị", "16 inch") tạo tò mò tốt, nên dùng số liệu rõ ràng.
-- Hook chạm cảm giác tiếc tiền/lo mất mát ("balo 5 triệu", "ố vàng sau 2 tháng", "lo bị trộm") giữ tương tác ổn định — dùng vừa phải.
-- Tránh hook than vãn chung chung, thiếu hình ảnh ("màn chói phải né nắng", "pin nóng ran tay", "quay tay mỏi rã rời") — toàn Score thấp (3).
-- Tránh mở đầu bằng câu hỏi trừu tượng không gợi hành động tức thì; thay bằng tình huống kịch tính có ngữ cảnh ("trời đổ mưa giữa đường").
-- Dùng emoji đúng chỗ nhấn cảm xúc (😤😩🔋), nhưng nội dung nỗi đau mới quyết định, emoji chỉ phụ trợ.
-- Toàn bộ video Shares=0: cần thêm yếu tố đáng chia sẻ (mẹo hay, deal sốc, "tag đứa bạn hay làm rối dây") để đẩy Score nhờ hệ số Share x5.
+- **Cảnh báo:** dữ liệu quá đồng đều (Score 3-5, Shares=0, Comments=1), khác biệt chỉ ở Reactions 0-2 → tín hiệu yếu, mọi kết luận chỉ mang tính tham khảo.
+
+- **Hook điểm cao nhất (Score 5):** mô tả nỗi đau *mang vác dư thừa* cụ thể, số đếm rõ — "Ra đường phải mang cả cục sạc lẫn pin dự phòng?", "MacBook một cổng, màn ngoài một đằng, ổ cứng một nẻo?" → ưu tiên sản phẩm sạc đa năng / hub / pin dự phòng.
+
+- **Nên dùng công thức:** liệt kê số lượng thiết bị + nghịch lý ("2 laptop 1 điện thoại sạc chung 1 cục?", "cỡ cái điện thoại mà cắm 6 thiết bị?") — tạo tò mò bằng con số trái ngược.
+
+- **Hook điểm thấp (Score 3) nên tránh:** nỗi đau mơ hồ hoặc quá quen thuộc — ốp ố vàng, pin nóng tay, lục ví rút thẻ, màn chói, balo bẩn sàn → thiếu kịch tính, dễ lướt qua.
+
+- **Ưu tiên nhóm sản phẩm:** sạc/hub/pin đa thiết bị > balo chống trộm/chống nước > phụ kiện lặt vặt (ốp, ví thẻ) kém tương tác nhất.
+
+- **Giữ emoji 1 cái + dấu hỏi cuối** để kích bình luận — toàn bộ data đều có Comment=1, format câu hỏi đang nuôi comment đều.
+
+- **Thêm yếu tố chưa test: Share=0 toàn bộ** → thử hook có giá trị "khoe/lưu lại" (mẹo, so sánh giá, deal sốc) để kích Share, biến số nặng nhất đang bỏ trống.
