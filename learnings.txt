@@ -1,13 +1,8 @@
-- **Cảnh báo:** dữ liệu quá đồng đều (Score 3-5, Shares=0, Comments=1), khác biệt chỉ ở Reactions 0-2 → tín hiệu yếu, mọi kết luận chỉ mang tính tham khảo.
-
-- **Hook điểm cao nhất (Score 5):** mô tả nỗi đau *mang vác dư thừa* cụ thể, số đếm rõ — "Ra đường phải mang cả cục sạc lẫn pin dự phòng?", "MacBook một cổng, màn ngoài một đằng, ổ cứng một nẻo?" → ưu tiên sản phẩm sạc đa năng / hub / pin dự phòng.
-
-- **Nên dùng công thức:** liệt kê số lượng thiết bị + nghịch lý ("2 laptop 1 điện thoại sạc chung 1 cục?", "cỡ cái điện thoại mà cắm 6 thiết bị?") — tạo tò mò bằng con số trái ngược.
-
-- **Hook điểm thấp (Score 3) nên tránh:** nỗi đau mơ hồ hoặc quá quen thuộc — ốp ố vàng, pin nóng tay, lục ví rút thẻ, màn chói, balo bẩn sàn → thiếu kịch tính, dễ lướt qua.
-
-- **Ưu tiên nhóm sản phẩm:** sạc/hub/pin đa thiết bị > balo chống trộm/chống nước > phụ kiện lặt vặt (ốp, ví thẻ) kém tương tác nhất.
-
-- **Giữ emoji 1 cái + dấu hỏi cuối** để kích bình luận — toàn bộ data đều có Comment=1, format câu hỏi đang nuôi comment đều.
-
-- **Thêm yếu tố chưa test: Share=0 toàn bộ** → thử hook có giá trị "khoe/lưu lại" (mẹo, so sánh giá, deal sốc) để kích Share, biến số nặng nhất đang bỏ trống.
+- Hook mạnh nhất (Score 5): nêu nỗi đau "mang nhiều đồ cồng kềnh" — sạc dự phòng + cục sạc, 3 cục sạc riêng, MacBook thiếu cổng. Nhấn vào sự bất tiện số nhiều, cụ thể, có emoji 😤🔋.
+- Sản phẩm sạc đa năng / hub / phụ kiện gộp-nhiều-thành-một cho tương tác tốt nhất — tập trung khai thác nhóm này.
+- Công thức hiệu quả: "Mang/dùng [nhiều món rời rạc] làm gì cho [bất tiện]?" — gợi đúng cảnh khổ hàng ngày rồi bỏ lửng.
+- Dùng con số cụ thể gây sốc (3 cục sạc, 6 thiết bị, 5 triệu, 15% pin) để tăng độ tin và giật mình.
+- Tránh hook chung chung, lợi ích mơ hồ (Score 3): "máy tính xách đi đâu cũng được", "một balo cho cả đi làm lẫn du lịch" — thiếu nỗi đau sắc bén.
+- Tránh hook về tình huống hiếm/ngách (ố vàng ốp, màn chói, thẻ từ thang máy) — ít người thấy mình trong đó.
+- Mọi hook nên kết bằng dấu hỏi tạo tò mò + 1 emoji đúng cảm xúc; giữ 1 câu, dưới 20 từ.
+- Ưu tiên nỗi đau "nặng túi/rối/cồng kềnh/lo mất-hỏng đồ" vì chạm số đông dân văn phòng & di chuyển.
