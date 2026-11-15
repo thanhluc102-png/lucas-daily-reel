@@ -1,8 +1,13 @@
-- Hook mạnh nhất (Score 5): nêu nỗi đau "mang nhiều đồ cồng kềnh" — sạc dự phòng + cục sạc, 3 cục sạc riêng, MacBook thiếu cổng. Nhấn vào sự bất tiện số nhiều, cụ thể, có emoji 😤🔋.
-- Sản phẩm sạc đa năng / hub / phụ kiện gộp-nhiều-thành-một cho tương tác tốt nhất — tập trung khai thác nhóm này.
-- Công thức hiệu quả: "Mang/dùng [nhiều món rời rạc] làm gì cho [bất tiện]?" — gợi đúng cảnh khổ hàng ngày rồi bỏ lửng.
-- Dùng con số cụ thể gây sốc (3 cục sạc, 6 thiết bị, 5 triệu, 15% pin) để tăng độ tin và giật mình.
-- Tránh hook chung chung, lợi ích mơ hồ (Score 3): "máy tính xách đi đâu cũng được", "một balo cho cả đi làm lẫn du lịch" — thiếu nỗi đau sắc bén.
-- Tránh hook về tình huống hiếm/ngách (ố vàng ốp, màn chói, thẻ từ thang máy) — ít người thấy mình trong đó.
-- Mọi hook nên kết bằng dấu hỏi tạo tò mò + 1 emoji đúng cảm xúc; giữ 1 câu, dưới 20 từ.
-- Ưu tiên nỗi đau "nặng túi/rối/cồng kềnh/lo mất-hỏng đồ" vì chạm số đông dân văn phòng & di chuyển.
+- **Cảnh báo trước**: dữ liệu quá đồng đều (Score 3-5), Share=0 toàn bộ, Comment=1 gần như mặc định → khác biệt nhỏ, kết luận chỉ mang tính tham khảo, chưa có hook nào thực sự "viral".
+
+- **Hook đạt điểm nhỉnh nhất (Score 5)**: nhấn nỗi đau "mang vác lỉnh kỉnh" ("Ra đường phải mang cả cục sạc lẫn pin dự phòng?") → ưu tiên pain-point đời thường, ai cũng từng gặp, dễ tự nhận ra mình.
+
+- **Nhóm Score 4 ổn định**: hook mô tả tình huống bực bội cụ thể + emoji 😮‍💨🌧️🔌 (balo hở laptop, mưa ướt đồ, cáp rối, ố vàng ốp) → giữ công thức "tình huống khó chịu + con số/chi tiết cụ thể".
+
+- **Nhóm Score 3 nên tránh**: hook thiên về khoe tính năng kỹ thuật, thiếu cảm xúc ("Sạc hai MacBook từ một viên pin?", "Máy tính để bàn xách đi đâu cũng được") → tránh khoe thông số khô khan, thiếu nỗi đau người dùng.
+
+- **Công thức viết nên dùng**: mở bằng câu hỏi tu từ chạm nỗi đau + chi tiết đời thực (số tiền, thời gian, tình huống) + 1 emoji cuối → format thắng ổn định nhất.
+
+- **Yếu tố kéo điểm xuống**: hook hỏi về khả năng/tính năng ("có được không?", "được không?") thường về Score 3 → hạn chế câu hỏi mang tính nghi vấn kỹ thuật.
+
+- **Việc cần làm tiếp**: hiện chưa hook nào tạo Share/Comment thật → thử thêm yếu tố gây tranh luận, giá sốc, hoặc CTA "tag đứa bạn hay quên sạc" để kích Comment & Share, thứ đang bằng 0.
