@@ -1,13 +1,8 @@
-- **Cảnh báo trước**: dữ liệu quá đồng đều (Score 3-5), Share=0 toàn bộ, Comment=1 gần như mặc định → khác biệt nhỏ, kết luận chỉ mang tính tham khảo, chưa có hook nào thực sự "viral".
-
-- **Hook đạt điểm nhỉnh nhất (Score 5)**: nhấn nỗi đau "mang vác lỉnh kỉnh" ("Ra đường phải mang cả cục sạc lẫn pin dự phòng?") → ưu tiên pain-point đời thường, ai cũng từng gặp, dễ tự nhận ra mình.
-
-- **Nhóm Score 4 ổn định**: hook mô tả tình huống bực bội cụ thể + emoji 😮‍💨🌧️🔌 (balo hở laptop, mưa ướt đồ, cáp rối, ố vàng ốp) → giữ công thức "tình huống khó chịu + con số/chi tiết cụ thể".
-
-- **Nhóm Score 3 nên tránh**: hook thiên về khoe tính năng kỹ thuật, thiếu cảm xúc ("Sạc hai MacBook từ một viên pin?", "Máy tính để bàn xách đi đâu cũng được") → tránh khoe thông số khô khan, thiếu nỗi đau người dùng.
-
-- **Công thức viết nên dùng**: mở bằng câu hỏi tu từ chạm nỗi đau + chi tiết đời thực (số tiền, thời gian, tình huống) + 1 emoji cuối → format thắng ổn định nhất.
-
-- **Yếu tố kéo điểm xuống**: hook hỏi về khả năng/tính năng ("có được không?", "được không?") thường về Score 3 → hạn chế câu hỏi mang tính nghi vấn kỹ thuật.
-
-- **Việc cần làm tiếp**: hiện chưa hook nào tạo Share/Comment thật → thử thêm yếu tố gây tranh luận, giá sốc, hoặc CTA "tag đứa bạn hay quên sạc" để kích Comment & Share, thứ đang bằng 0.
+- Dữ liệu thực tế rất yếu: Share=0 toàn bộ, Comments=1 cố định, chênh lệch chỉ đến từ Reactions (0–2) → mọi "insight" chỉ mang tính tương đối, không đủ mẫu để kết luận chắc.
+- Hook cho điểm cao nhất (Score=5): "Ra đường phải mang cả cục sạc lẫn pin dự phòng?" — nêu nỗi đau cồng kềnh đồ sạc hằng ngày, chạm số đông người dùng di động.
+- Nhóm nhỉnh hơn (Score=4): hook nêu vấn đề cụ thể + con số/so sánh ("sạc 2 thiết bị nhỏ bằng bao diêm", "ốp 100K ố vàng sau 2 tháng", "cáp rối nùi") → ưu tiên tình huống bực bội quen thuộc, có chi tiết hình ảnh rõ.
+- Nhóm kém (Score=3): hook mô tả tính năng khoe khoang hoặc tình huống hiếm gặp ("sạc 2 MacBook cùng lúc", "máy bàn xách đi đâu cũng được", "túi gắn lên tay kéo vali") → trừu tượng, ít người gặp, nên tránh.
+- Viết hook dạng câu hỏi "nỗi đau hằng ngày" + emoji 1 cái → hiệu quả hơn hook khoe thông số kỹ thuật.
+- Ưu tiên sản phẩm giải quyết đau phổ thông (sạc/pin gọn nhẹ, chống rối cáp, bảo vệ đồ) hơn sản phẩm ngách hẹp (túi gắn vali, PC xách tay).
+- Mỗi hook nên có chi tiết đo lường được (giá, kích thước, thời gian hỏng) để tăng độ thuyết phục và tương tác.
+- Cần thêm CTA/câu gợi share vì Shares=0 toàn bộ đang kéo Score thấp — thử hook gợi "tag đứa bạn hay làm rơi đồ" để kích comment/share.
