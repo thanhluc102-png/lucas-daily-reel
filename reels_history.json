@@ -2993,6 +2993,18 @@
     "hook": "Mang 3 món trong túi chỉ để sạc? 🔌",
     "publish_time": "2026-11-16T08:27:39.925Z",
     "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
+  },
+  {
+    "post_id": "1667773568144411",
+    "product_name": "",
+    "hook": "Cuộn lại thì gọn, trải ra là cả góc làm việc!",
+    "publish_time": "2026-11-16T12:03:06.826Z",
+    "performance": {
       "reactions": 0,
       "comments": 1,
       "shares": 0,
@@ -3000,9 +3012,15 @@
     }
   },
   {
-    "post_id": "1667773568144411",
+    "post_id": "2389707905158362",
     "product_name": "",
-    "hook": "Cuộn lại thì gọn, trải ra là cả góc làm việc!",
-    "publish_time": "2026-11-16T12:03:06.826Z"
+    "hook": "Một chiếc balo, hai cách mang. 🧳",
+    "publish_time": "2026-11-17T09:39:53.334Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]
