@@ -1,8 +1,8 @@
-- Dữ liệu quá sát nhau (Score 3-5), 0 shares toàn bộ → khác biệt không đáng tin, cần đọc như xu hướng nhẹ, không phải quy luật chắc.
-- Hook thắng nhất: nêu "gánh nặng mang vác nhiều món" (pin + sạc, 3 món để sạc) → chạm nỗi đau cụ thể, dễ gom reaction, ưu tiên khai thác.
-- Hook dạng câu hỏi nỗi đau có emoji 😮‍💨🔌🌧️ (chói màn, cáp rối, mưa ướt laptop) nhỉnh hơn câu khẳng định tính năng.
-- Hook kém: câu khẳng định khơi gợi chung chung ("Một balo, hai cách mang", "Cuộn lại thì gọn", "Máy để bàn xách đi đâu cũng được") → thiếu nỗi đau rõ, Score thấp nhất, nên tránh.
-- Công thức nên dùng: [Tình huống đời thực khó chịu] + [con số/chi tiết cụ thể] + [dấu hỏi] + 1 emoji → ví dụ "Mang 3 món chỉ để sạc?".
-- Chèn số cụ thể (2 laptop, 16 inch, 100K, 2 tháng) làm hook sắc hơn chung chung.
-- Mọi hook đều ra comment nhưng không share → thử thêm yếu tố "đáng khoe/mẹo hay" để kích share, đừng chỉ dừng ở nỗi đau.
-- Tránh lạm dụng câu khẳng định tiện ích; luôn mở bằng vấn đề người dùng đang gặp để giữ tương tác.
+- Dữ liệu quá đồng đều (Score 3-5, 0 shares), khác biệt rất nhỏ nên chỉ rút xu hướng tương đối, không tuyệt đối hóa.
+- Hook mạnh nhất là kiểu "nỗi đau cụ thể + hình ảnh đời thường": sạc cồng kềnh, cáp rối, ố vàng, mưa ướt laptop — gợi tình huống người đọc tự thấy mình trong đó (Score 4-5).
+- Mở bằng câu hỏi chạm trúng bất tiện hằng ngày ("Ra đường phải mang cả cục sạc lẫn pin?") kéo tương tác tốt hơn câu khẳng định tính năng ("Một balo, hai cách mang").
+- Nên tránh hook chỉ khoe công năng/đa dụng chung chung, thiếu nỗi đau rõ: các câu "khỏi mang hai cái", "cuộn lại thì gọn", "hai cách mang" đều rơi về Score 3.
+- Thêm emoji gợi cảm xúc tiêu cực/vấn đề (🌧️🔥😮‍💨) hiệu quả hơn emoji trung tính (🧳🔋) vì khuếch đại nỗi đau.
+- Chủ đề sạc/pin/cáp và bảo vệ thiết bị (ố vàng, hằn phím, bẩn, trộm) là nhóm an toàn cho tương tác đều — ưu tiên sản phẩm giải quyết phiền toái vặt tần suất cao.
+- Công thức viết nên theo: [tình huống đau cụ thể] + [chi tiết cường điệu nhẹ] + [dấu hỏi], ví dụ "...nóng ran tay khi sạc nhanh?".
+- Vì shares=0 toàn bộ, nên thử hook tạo giá trị chia sẻ (mẹo, "ai cũng nên biết", so sánh tiền mất) để phá trần Score thay vì chỉ gợi nỗi đau cá nhân.
