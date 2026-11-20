@@ -1,8 +1,8 @@
-- Mở hook bằng **câu hỏi nêu nỗi đau cụ thể** ("nóng ran tay?", "bẩn vừa vướng chân?") cho tương tác nhỉnh hơn câu khẳng định tính năng.
-- Chủ đề **sạc/pin/cáp** (gọn nhẹ, 2 thiết bị, hết dây) đạt Score cao nhất (4-5) → ưu tiên khai thác.
-- **Thêm emoji liên quan** (🔌🔋🔥🎒) vào cuối hook giúp nhỉnh điểm; hook không emoji thường kém hơn.
-- Nhấn **con số & so sánh hình ảnh** ("nhỏ bằng bao diêm", "laptop 16 inch", "3 món chỉ để sạc") để tăng reaction.
-- Tránh hook kiểu **khoe tính năng chung chung** ("một balo hai cách mang", "cuộn lại thì gọn") → điểm thấp (3), không chạm nỗi đau.
-- Đánh vào **tình huống đời thực đau rõ** (quên dây sạc, bánh vụn rơi phím, lục ví rút thẻ) hiệu quả hơn mô tả trừu tượng.
-- Toàn bộ **Shares=0** → cần thêm yếu tố đáng chia sẻ: mẹo hữu ích, tình huống "ai cũng dính", hoặc kết thúc kêu gọi tag bạn.
-- Giữ hook **ngắn 1 câu, giật ngay từ đầu**, ưu tiên nỗi đau + giải pháp bất ngờ thay vì liệt kê công dụng.
+- Hook dạng "nỗi đau cụ thể, hình ảnh hóa" (sạc nóng ran tay, hằn phím, xước MacBook, cục sạc + pin) cho Score cao nhất (4-5); ưu tiên mở bằng vấn đề nhức nhối hằng ngày.
+- Sản phẩm pin/sạc/phụ kiện gọn nhẹ (pin dự phòng, củ sạc kèm cáp, cáp đa năng) kéo tương tác tốt nhất; tập trung nhóm sạc - năng lượng.
+- Hook kết thúc bằng dấu "?" chạm đúng tình huống bực mình cho điểm cao hơn hook khẳng định tính năng chung chung.
+- Thêm 1 emoji liên quan (🔥🔌⌨️🎒) giúp tăng Reactions; dùng tiết chế, đúng chủ đề.
+- Tránh hook "khoe tính năng/đa năng mơ hồ" (một balo hai cách mang, cuộn lại gọn, máy để bàn xách đi) — chỉ Score=3, kém hút.
+- Tránh hook về balo/túi chung chung không gắn nỗi đau rõ; nếu làm balo phải nêu rủi ro cụ thể (trộm móc, xước máy, bẩn sàn).
+- Công thức thắng: [Nỗi đau cụ thể + chi tiết đời thường] + [emoji] + dấu hỏi, ngắn dưới 15 chữ.
+- Toàn bộ mẫu đều thiếu Share (=0): cần thêm yếu tố "đáng chia sẻ" như mẹo bất ngờ, con số sốc, hoặc lợi ích giúp người khác.
