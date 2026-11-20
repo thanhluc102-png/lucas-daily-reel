@@ -13,9 +13,9 @@ export default defineConfig({
 		previewUrls: false,
 		observability: { enabled: true },
 		triggers: [
-			triggers.scheduled({ schedule: "30 1 * * *" }), // 08:30 VN: Daily reel v2
+			// Thứ tự giữ giống bản trên Cloudflare, nếu khác thì `cf deploy` báo lệch và dừng.
 			triggers.scheduled({ schedule: "15 11 * * *" }), // 18:15 VN: video sản phẩm web
-			triggers.scheduled({ schedule: "*/5 * * * *" }), // TẠM: thử token bằng lượt dry-run, gỡ sau khi thử xong
+			triggers.scheduled({ schedule: "30 1 * * *" }), // 08:30 VN: Daily reel v2
 		],
 	},
 });

@@ -29,12 +29,6 @@ const JOBS: Record<string, Job> = {
 		workflow: "drip-web.yml",
 		inputs: { dry_run: "false" },
 	},
-	// TẠM: thử token. dry_run=true chỉ in caption, không đăng. Gỡ sau khi thử xong.
-	"*/5 * * * *": {
-		label: "THỬ · drip-web dry-run",
-		workflow: "drip-web.yml",
-		inputs: { dry_run: "true" },
-	},
 };
 
 export default {
