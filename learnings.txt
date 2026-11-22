@@ -1,8 +1,8 @@
-- Hook dạng "nỗi đau cụ thể" (bẩn, nóng, xước, hết pin, vướng) đạt Score=4 — luôn mở đầu bằng vấn đề khó chịu người dùng gặp hằng ngày.
-- Chủ đề MacBook/laptop (túi chống xước, bàn phím bẩn, kê gập máy) hút reaction tốt nhất — ưu tiên nhóm sản phẩm bảo vệ/phụ kiện laptop.
-- Hook có emoji cảm xúc tiêu cực (😬🔥🙄) nhỉnh hơn emoji trung tính (🎒🧳🔌) — chèn emoji gợi sự bực bội thay vì chỉ minh họa.
-- Hook kết bằng dấu hỏi (chất vấn nỗi đau) thắng hook khẳng định tính năng (Score 4 vs 3) — viết dạng câu hỏi "Bạn có đang...?".
-- Tránh hook khoe tính năng khô khan ("hai cách mang", "cuộn lại thì gọn", "cùng màu") — chỉ đạt Score 3, thiếu cảm xúc.
-- Share = 0 toàn bộ: nội dung chưa đủ "đáng chia sẻ" — thêm yếu tố bất ngờ, mẹo hữu ích hoặc tag bạn bè để kích share.
-- Comment ổn định (=1) nhưng thấp — kết hook bằng câu kêu gọi trả lời/đố vui để đẩy comment lên.
-- Công thức chuẩn: [Nỗi đau cụ thể hằng ngày] + [dấu hỏi] + [emoji bực bội], ưu tiên sản phẩm laptop/MacBook.
+- Mở hook bằng câu hỏi nêu nỗi đau cụ thể ("Pin hết sau 2 ngày?", "Bánh vụn rơi đầy phím?") cho tương tác cao nhất (Score 4); ưu tiên format này.
+- Sản phẩm bảo vệ/giải quyết sự cố MacBook (lót balo chống xước, phủ bàn phím, túi phụ kiện) hút reaction tốt hơn nhóm balo đa năng.
+- Chủ đề sạc/cáp/pin ("Quên mang dây sạc", "3 món chỉ để sạc") ổn định Score 4; nên khai thác tiếp dòng phụ kiện sạc.
+- Thêm emoji đúng ngữ cảnh (🔌⌨️🔋) đi kèm câu hỏi giúp nhỉnh hơn; dùng 1 emoji, tránh lạm dụng.
+- Hook kiểu khẳng định tính năng chung chung ("Một balo hai cách mang", "Mua củ sạc có luôn cáp") đều chỉ Score 3 — tránh mô tả phẳng, thiếu nỗi đau.
+- Hook mời gọi xem ("Mở ra xem chứa được gì", "Cuộn lại thì gọn") yếu, không tạo cảm xúc — hạn chế.
+- Tất cả video đều 0 share: cần thêm yếu tố đáng chia sẻ (mẹo bất ngờ, giá hời, "tag đứa hay quên sạc") để kéo Score bứt phá.
+- Công thức nên dùng: [Nỗi đau quen thuộc dạng câu hỏi] + [1 emoji] → ưu tiên sản phẩm chống hỏng/sạc cho MacBook.
