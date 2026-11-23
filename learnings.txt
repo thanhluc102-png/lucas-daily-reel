@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi nêu nỗi đau cụ thể ("Pin hết sau 2 ngày?", "Bánh vụn rơi đầy phím?") cho tương tác cao nhất (Score 4); ưu tiên format này.
-- Sản phẩm bảo vệ/giải quyết sự cố MacBook (lót balo chống xước, phủ bàn phím, túi phụ kiện) hút reaction tốt hơn nhóm balo đa năng.
-- Chủ đề sạc/cáp/pin ("Quên mang dây sạc", "3 món chỉ để sạc") ổn định Score 4; nên khai thác tiếp dòng phụ kiện sạc.
-- Thêm emoji đúng ngữ cảnh (🔌⌨️🔋) đi kèm câu hỏi giúp nhỉnh hơn; dùng 1 emoji, tránh lạm dụng.
-- Hook kiểu khẳng định tính năng chung chung ("Một balo hai cách mang", "Mua củ sạc có luôn cáp") đều chỉ Score 3 — tránh mô tả phẳng, thiếu nỗi đau.
-- Hook mời gọi xem ("Mở ra xem chứa được gì", "Cuộn lại thì gọn") yếu, không tạo cảm xúc — hạn chế.
-- Tất cả video đều 0 share: cần thêm yếu tố đáng chia sẻ (mẹo bất ngờ, giá hời, "tag đứa hay quên sạc") để kéo Score bứt phá.
-- Công thức nên dùng: [Nỗi đau quen thuộc dạng câu hỏi] + [1 emoji] → ưu tiên sản phẩm chống hỏng/sạc cho MacBook.
+- Mở hook bằng câu hỏi "nỗi đau" (phím hằn, pin hết, xước máy, mỏi tay) → Score cao nhất (4), ưu tiên dùng.
+- Nhấn mạnh sản phẩm giải quyết vấn đề thường gặp hằng ngày (bàn phím, pin, bảo vệ MacBook) kéo thêm Reaction.
+- Dùng dấu "?" tạo tò mò, giật đúng tình huống bực mình của người dùng.
+- Tránh hook kiểu "khoe tính năng/mô tả sản phẩm" phẳng lặng (gập 180°, túi khí 4 góc, hai cách mang) → chỉ đạt Score 3.
+- Tránh hook mời gọi chung chung "Mở ra xem...", "chứa được gì" → yếu, không kích phản ứng.
+- Ưu tiên sản phẩm: bàn phím, pin/sạc dự phòng, ốp/túi chống xước hơn là balo (balo luôn Score thấp).
+- Thêm emoji gợi đúng vật dụng (⌨️🔋🔌😬) nhưng đặt ở hook nỗi đau, không rải vô nghĩa.
+- Viết ngắn, 1 câu, chạm thẳng trải nghiệm tiêu cực rồi hứa hẹn giải pháp ngầm.
