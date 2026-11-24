@@ -1,33 +1,42 @@
-// lucas-reel-cron: đến giờ thì nhờ GitHub chạy ngay workflow đăng bài của repo lucas-daily-reel.
+// lucas-reel-cron: đến giờ thì nhờ GitHub chạy ngay workflow đăng bài của repo lucas-daily-reel và lucas-cutout-reel.
 //
 // Giờ hẹn (cron) của GitHub ở repo này hay trễ 6–8 tiếng, có lượt còn bị bỏ.
 // Lệnh "chạy ngay" (workflow_dispatch) thì GitHub chạy liền, nên Cloudflare canh giờ thay.
 // Worker không tự đăng gì. Khóa an toàn nằm trong chính các workflow:
 //   - daily-reel-v2.yml: guard=true -> các bài cách nhau ít nhất 14 tiếng, như lượt cron;
 //   - drip-web.yml: chỉ đăng trong khung 17:45–21:30, tối đa 1 bài/ngày, theo post_after.
+//   - daily-cutout-reel.yml (repo lucas-cutout-reel): guard=true -> cách bài trước ít nhất 14 tiếng.
 // Lịch cron cũ của GitHub vẫn giữ làm dự phòng. Gọi trùng thì workflow tự bỏ qua.
 
 interface Env {
-	// Fine-grained token: chỉ repo lucas-daily-reel, quyền "Actions: Read and write".
+	// Fine-grained token: repo lucas-daily-reel + lucas-cutout-reel, quyền "Actions: Read and write".
 	// Thầy Lực tự dán trong Cloudflare (Settings → Variables and Secrets), không lưu ở đây.
 	GITHUB_TOKEN?: string;
 }
 
-const REPO = "thanhluc102-png/lucas-daily-reel";
+const OWNER = "thanhluc102-png";
 
-type Job = { label: string; workflow: string; inputs: Record<string, string> };
+type Job = { label: string; repo: string; workflow: string; inputs: Record<string, string> };
 
 // Khóa là biểu thức cron (giờ UTC) khai trong cloudflare.config.ts. Giờ VN = UTC + 7.
 const JOBS: Record<string, Job> = {
 	"30 1 * * *": {
 		label: "08:30 VN · Daily reel v2",
+		repo: "lucas-daily-reel",
 		workflow: "daily-reel-v2.yml",
 		inputs: { dry_run: "false", guard: "true" },
 	},
 	"15 11 * * *": {
 		label: "18:15 VN · video sản phẩm web",
+		repo: "lucas-daily-reel",
 		workflow: "drip-web.yml",
 		inputs: { dry_run: "false" },
+	},
+	"0 13 * * *": {
+		label: "20:00 VN · reel cắt nền",
+		repo: "lucas-cutout-reel",
+		workflow: "daily-cutout-reel.yml",
+		inputs: { dry_run: "false", guard: "true" },
 	},
 };
 
@@ -41,7 +50,7 @@ export default {
 } satisfies ExportedHandler<Env>;
 
 async function dispatch(token: string, job: Job): Promise<void> {
-	const url = `https://api.github.com/repos/${REPO}/actions/workflows/${job.workflow}/dispatches`;
+	const url = `https://api.github.com/repos/${OWNER}/${job.repo}/actions/workflows/${job.workflow}/dispatches`;
 	const init: RequestInit = {
 		method: "POST",
 		headers: {
