@@ -100,7 +100,7 @@ jobs:
         id: gen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-5-5' }}
           ELEVEN_VOICE_ID: ${{ vars.ELEVEN_VOICE_ID }}
         run: node scripts/gen-scenes.mjs ${{ steps.pick.outputs.id }}
 

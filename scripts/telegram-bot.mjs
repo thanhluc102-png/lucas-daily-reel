@@ -76,14 +76,21 @@ async function askClaude(chatId, userPrompt, systemPrompt = '') {
   let history = historyMap.get(chatId) || [];
   history.push({ role: 'user', content: userPrompt });
   if (history.length > 20) history = history.slice(-20);
+  // API bắt buộc tin đầu tiên là của user: cắt 20 tin có thể để lại tin assistant ở đầu.
+  while (history.length && history[0].role !== 'user') history.shift();
 
   const brandContext = `Bạn là trợ lý AI quản lý sản phẩm & sản xuất Reel cho Lucas Combo (lucas.vn) - shop phụ kiện Apple / TP.HCM từ 2017.
 Giọng thương hiệu: Thẳng, hiểu chuyện, không nổ. Tuyệt đối không dùng từ cấm: cực kỳ, siêu phẩm, đỉnh cao, xịn xò, nhanh tay kẻo hết.
 Khi người dùng yêu cầu viết kịch bản, caption hoặc tư vấn sản phẩm, hãy tuân thủ quy tắc trên. ${systemPrompt}`;
 
+  // claude-3-5-sonnet-20241022 đã ngừng phục vụ -> Sonnet 5.5. Thinking bật mặc định và tính vào
+  // max_tokens (tokenizer mới cũng đếm nhiều token hơn) -> nâng trần; effort low cho chat.
+  // fallbacks "default": bộ lọc an toàn từ chối nhầm thì API tự chạy lại trên model dự phòng.
   const body = {
-    model: 'claude-3-5-sonnet-20241022',
-    max_tokens: 1500,
+    model: 'claude-sonnet-5-5',
+    max_tokens: 8000,
+    output_config: { effort: 'low' },
+    fallbacks: 'default',
     system: brandContext,
     messages: history,
   };
@@ -94,11 +101,14 @@ Khi người dùng yêu cầu viết kịch bản, caption hoặc tư vấn sả
       headers: {
         'x-api-key': ANTHROPIC_KEY,
         'anthropic-version': '2023-06-01',
+        'anthropic-beta': 'server-side-fallback-2026-07-01',
         'content-type': 'application/json',
       },
       body: JSON.stringify(body),
     });
     const data = await r.json();
+    if (!r.ok) return `❌ Lỗi gọi Claude AI: HTTP ${r.status} ${data.error?.message || ''}`.trim();
+    if (data.stop_reason === 'refusal') return '⚠️ Claude từ chối yêu cầu này, thử diễn đạt lại nhé.';
     const reply = data.content?.find((b) => b.type === 'text')?.text || 'Không có phản hồi từ AI.';
     history.push({ role: 'assistant', content: reply });
     historyMap.set(chatId, history);

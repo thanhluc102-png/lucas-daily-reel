@@ -22,7 +22,7 @@ const CS = process.env.WC_CONSUMER_SECRET;
 const WP_USER = process.env.WP_USERNAME || 'luucat';
 const WP_PASS = process.env.WP_APP_PASSWORD || 'FVLL lVs8 c21w 8RO5 kbzf OYk4';
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.AI_MODEL || 'claude-opus-4-8';
+const MODEL = process.env.AI_MODEL || 'claude-opus-5-5';
 
 // Parse CLI Args
 const args = process.argv.slice(2);
@@ -238,9 +238,13 @@ VUI LÒNG TRẢ VỀ ĐÚNG CÁC THẺ SAU ĐỂ HỆ THỐNG TRÍCH XUẤT (KH�
 Viết toàn bộ nội dung HTML tại đây
 </content_html>`;
 
+  // Opus 5.5: thinking luôn bật và tính vào max_tokens -> nâng trần 8000 -> 16000 để bài không bị cắt.
+  // effort "low" giữ phần nghĩ ngắn; fallbacks "default" chạy lại trên model dự phòng nếu bị từ chối nhầm.
   const body = {
     model: MODEL,
-    max_tokens: 8000,
+    max_tokens: 16000,
+    output_config: { effort: 'low' },
+    fallbacks: 'default',
     messages: [{ role: 'user', content: prompt }]
   };
 
@@ -249,6 +253,7 @@ Viết toàn bộ nội dung HTML tại đây
     headers: {
       'x-api-key': ANTHROPIC_KEY,
       'anthropic-version': '2023-06-01',
+      'anthropic-beta': 'server-side-fallback-2026-07-01',
       'content-type': 'application/json'
     },
     body: JSON.stringify(body)
@@ -262,6 +267,9 @@ Viết toàn bộ nội dung HTML tại đây
   const jsonRes = await response.json();
   if (jsonRes.stop_reason === 'max_tokens') {
     throw new Error('Cảnh báo: Phản hồi từ Claude bị cắt do vượt giới hạn max_tokens');
+  }
+  if (jsonRes.stop_reason === 'refusal') {
+    throw new Error(`Claude từ chối viết bài (${jsonRes.stop_details?.category || 'không rõ lý do'})`);
   }
 
   const rawText = jsonRes.content?.find(b => b.type === 'text')?.text || '';
