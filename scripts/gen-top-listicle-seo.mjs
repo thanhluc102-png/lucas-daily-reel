@@ -20,7 +20,7 @@ const STORE_URL = process.env.WP_SITE_URL || 'https://lucas.vn';
 const CK = process.env.WC_CONSUMER_KEY;
 const CS = process.env.WC_CONSUMER_SECRET;
 const WP_USER = process.env.WP_USERNAME || 'luucat';
-const WP_PASS = process.env.WP_APP_PASSWORD || 'FVLL lVs8 c21w 8RO5 kbzf OYk4';
+const WP_PASS = process.env.WP_APP_PASSWORD;
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.AI_MODEL || 'claude-opus-5-5';
 
