@@ -13,7 +13,7 @@ if (fs.existsSync(envPath)) {
 
 const WP_SITE = process.env.WP_SITE_URL || 'https://lucas.vn';
 const WP_USER = process.env.WP_USERNAME || 'luucat';
-const WP_PASS = process.env.WP_APP_PASSWORD || 'FVLL lVs8 c21w 8RO5 kbzf OYk4';
+const WP_PASS = process.env.WP_APP_PASSWORD;
 const authHeader = 'Basic ' + Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
 const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36';
 
