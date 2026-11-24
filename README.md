@@ -36,7 +36,7 @@ Nhờ vậy mỗi reel một giọng, một màu — nhưng bộ khung render v�
 - **Điều khiển bằng repo variables/secrets (Settings → Secrets and variables → Actions):**
   - Secret `ANTHROPIC_API_KEY` — bắt buộc để bật AI.
   - Variable `AI_COPY=false` — tắt AI, quay về logic mặc định.
-  - Variable `AI_MODEL` — đổi model (mặc định `claude-opus-4-8`; đặt `claude-haiku-4-5` cho rẻ hơn).
+  - Variable `AI_MODEL` — đổi model (mặc định `claude-opus-5-5`; đặt `claude-haiku-5-5` cho rẻ hơn). Code gửi kèm `output_config.effort`, nên chỉ dùng model đời 4.6 trở lên (Haiku 4.5 sẽ báo lỗi 400).
 - **Đổi màu thủ công khi test:** `FORCE_ACCENT=#22C55E node lib/build.mjs build`.
 
 Màu accent áp qua biến CSS `--accent` trong template (kể cả viền/glow nhờ relative-color);

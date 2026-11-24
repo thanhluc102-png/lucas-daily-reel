@@ -7,7 +7,7 @@
 import { readFile, writeFile, access } from 'node:fs/promises';
 
 const KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.AI_MODEL || 'claude-opus-4-8';
+const MODEL = process.env.AI_MODEL || 'claude-opus-5-5';
 const API = 'https://api.anthropic.com/v1/messages';
 const HIST = 'reels_history.json';
 const LEARN = 'learnings.txt';
@@ -48,14 +48,17 @@ Nhiệm vụ: phân tích và đúc kết thành bộ hướng dẫn viết lờ
 - Chỉ in gạch đầu dòng, không mở đầu/kết luận thừa.`;
 
   try {
+    // Opus 5.5: thinking luôn bật và tính vào max_tokens -> để dư chỗ; effort low giữ phần nghĩ ngắn.
     const res = await fetch(API, {
       method: 'POST',
-      headers: { 'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 1000, messages: [{ role: 'user', content: prompt }] }),
+      headers: { 'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 4000, output_config: { effort: 'low' }, fallbacks: 'default', messages: [{ role: 'user', content: prompt }] }),
     });
     if (!res.ok) { console.error(`Claude HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`); return; }
     const j = await res.json();
-    const learnings = (j.content?.[0]?.text || '').trim();
+    if (j.stop_reason === 'refusal' || j.stop_reason === 'max_tokens') { console.error(`Claude dừng (${j.stop_reason}) — giữ nguyên learnings.txt.`); return; }
+    // Phản hồi có thể mở đầu bằng block thinking -> lấy block text theo type, không theo vị trí.
+    const learnings = (j.content?.find((b) => b.type === 'text')?.text || '').trim();
     if (!learnings) { console.error('Claude trả rỗng — giữ nguyên learnings.txt.'); return; }
     await writeFile(LEARN, learnings, 'utf8');
     console.log('Đã cập nhật learnings.txt:\n' + learnings);

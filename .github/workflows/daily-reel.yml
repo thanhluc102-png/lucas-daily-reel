@@ -83,7 +83,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AI_COPY: ${{ vars.AI_COPY || 'true' }}
-          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-5-5' }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVEN_VOICE_ID: ${{ vars.ELEVEN_VOICE_ID }}   # để trống = random trong pool config.json; đặt để ghim 1 giọng
           ELEVEN_MODEL: ${{ vars.ELEVEN_MODEL || 'eleven_v3' }}
@@ -154,7 +154,7 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-4-8' }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'claude-opus-5-5' }}
         run: |
           node scripts/sync-insights.mjs
           node scripts/optimize.mjs

@@ -16,7 +16,7 @@ import { execFileSync } from 'node:child_process';
 
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.AI_MODEL || 'claude-opus-4-8';
+const MODEL = process.env.AI_MODEL || 'claude-opus-5-5';
 const API = 'https://api.anthropic.com/v1/messages';
 const STORE = 'https://lucas.vn/wp-json/wc/store/v1';
 
@@ -174,14 +174,18 @@ function sanitizeCreative(c) {
 }
 
 async function askClaude(extraFix) {
+  // Opus 5.5: thinking luôn bật và tính vào max_tokens -> nâng trần 8000 -> 16000.
+  // effort "low" giữ phần nghĩ ngắn (gần cách chạy cũ trên Opus 4.8, rẻ hơn).
+  // fallbacks "default": bộ lọc an toàn từ chối nhầm thì API tự chạy lại trên model dự phòng.
   const body = {
-    model: MODEL, max_tokens: 8000,
-    output_config: { format: { type: 'json_schema', schema: SCHEMA } },
+    model: MODEL, max_tokens: 16000,
+    output_config: { effort: 'low', format: { type: 'json_schema', schema: SCHEMA } },
+    fallbacks: 'default',
     messages: [{ role: 'user', content: buildPrompt(extraFix) }],
   };
   const r = await fetch(API, {
     method: 'POST',
-    headers: { 'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+    headers: { 'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01', 'content-type': 'application/json' },
     body: JSON.stringify(body),
   });
   if (!r.ok) throw new Error(`Anthropic HTTP ${r.status}: ${(await r.text()).slice(0, 300)}`);
