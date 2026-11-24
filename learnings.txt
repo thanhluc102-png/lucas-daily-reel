@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "nỗi đau" (phím hằn, pin hết, xước máy, mỏi tay) → Score cao nhất (4), ưu tiên dùng.
-- Nhấn mạnh sản phẩm giải quyết vấn đề thường gặp hằng ngày (bàn phím, pin, bảo vệ MacBook) kéo thêm Reaction.
-- Dùng dấu "?" tạo tò mò, giật đúng tình huống bực mình của người dùng.
-- Tránh hook kiểu "khoe tính năng/mô tả sản phẩm" phẳng lặng (gập 180°, túi khí 4 góc, hai cách mang) → chỉ đạt Score 3.
-- Tránh hook mời gọi chung chung "Mở ra xem...", "chứa được gì" → yếu, không kích phản ứng.
-- Ưu tiên sản phẩm: bàn phím, pin/sạc dự phòng, ốp/túi chống xước hơn là balo (balo luôn Score thấp).
-- Thêm emoji gợi đúng vật dụng (⌨️🔋🔌😬) nhưng đặt ở hook nỗi đau, không rải vô nghĩa.
-- Viết ngắn, 1 câu, chạm thẳng trải nghiệm tiêu cực rồi hứa hẹn giải pháp ngầm.
+- Mở hook bằng câu hỏi "nỗi đau" cụ thể (hằn phím, bẩn màn hình, pin hết sau 2 ngày, balo làm xước máy) cho Score cao nhất (4) — ưu tiên kiểu này.
+- Nhấn chi tiết tính năng gây bất ngờ ("túi khí 4 góc", "giấu sẵn chân cắm", "sạc 2 MacBook cùng lúc") kéo thêm reaction — nên dùng.
+- Gắn hook vào sản phẩm phổ biến, dễ đồng cảm: ốp/kê/bàn phím MacBook, pin dự phòng tích hợp cáp — nhóm tương tác tốt hơn.
+- Dùng emoji đúng ngữ cảnh (⌨️🔋😬😤) tăng cảm xúc; đừng lạm dụng.
+- Tránh hook kiểu "khoe tính năng chung chung" không đau điểm ("mở ra xem chứa gì", "hai cách mang", "cùng màu") — toàn Score 3, kém nổi bật.
+- Tránh lặp mô-típ "quên mang cáp/dây sạc rối" quá nhiều lần — đã bão hòa, tương tác thấp.
+- Viết 1 câu ngắn, cấu trúc "vấn đề quen thuộc → gợi mở giải pháp", kết bằng dấu hỏi hoặc chi tiết sốc để kích comment.
+- Chưa reel nào đạt Share — thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tiết kiệm tiền, bảo vệ máy đắt tiền) để phá trần Score.
