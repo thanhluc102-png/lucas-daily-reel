@@ -1,8 +1,8 @@
-- Mở hook bằng câu hỏi "nỗi đau" cụ thể (hằn phím, bẩn màn hình, pin hết sau 2 ngày, balo làm xước máy) cho Score cao nhất (4) — ưu tiên kiểu này.
-- Nhấn chi tiết tính năng gây bất ngờ ("túi khí 4 góc", "giấu sẵn chân cắm", "sạc 2 MacBook cùng lúc") kéo thêm reaction — nên dùng.
-- Gắn hook vào sản phẩm phổ biến, dễ đồng cảm: ốp/kê/bàn phím MacBook, pin dự phòng tích hợp cáp — nhóm tương tác tốt hơn.
-- Dùng emoji đúng ngữ cảnh (⌨️🔋😬😤) tăng cảm xúc; đừng lạm dụng.
-- Tránh hook kiểu "khoe tính năng chung chung" không đau điểm ("mở ra xem chứa gì", "hai cách mang", "cùng màu") — toàn Score 3, kém nổi bật.
-- Tránh lặp mô-típ "quên mang cáp/dây sạc rối" quá nhiều lần — đã bão hòa, tương tác thấp.
-- Viết 1 câu ngắn, cấu trúc "vấn đề quen thuộc → gợi mở giải pháp", kết bằng dấu hỏi hoặc chi tiết sốc để kích comment.
-- Chưa reel nào đạt Share — thêm yếu tố "đáng chia sẻ" (mẹo hữu ích, tiết kiệm tiền, bảo vệ máy đắt tiền) để phá trần Score.
+- Dữ liệu gần như đồng đều (Score 3–4, Shares = 0, Comments luôn = 1, nhiều khả năng là comment của chính page), nên chênh lệch chủ yếu là nhiễu. Chỉ coi các xu hướng dưới đây là giả thuyết để A/B test, chưa phải quy luật.
+- Ưu tiên hook có **con số cụ thể** gắn với nỗi đau hoặc tính năng ("3 món", "2 ngày", "4 góc", "360 độ"). Đây là điểm chung rõ nhất của nhóm Score 4.
+- Ưu tiên hook chạm **nỗi sợ hư hỏng hoặc phiền toái có thật** (xước MacBook, pin nhanh hết, mang lỉnh kỉnh đồ sạc), kèm 1 emoji cảm xúc (😬 🔌 ⌨️).
+- Nhóm sạc/cáp, ốp bảo vệ, bàn phím và sạc ô tô nhỉnh hơn một chút. Balo, kê laptop, chuột, bút ghi âm đang ở mức đáy, nên đổi góc tiếp cận cho nhóm này thay vì bỏ hẳn.
+- Tránh hook mô tả tính năng chung chung kiểu "mở ra là…, gập lại là…", "một món, hai cách dùng", "xem bên trong chứa gì". Kiểu này không tạo lý do để bấm hay bình luận.
+- Không lặp một nỗi đau với nhiều phiên bản ("Quên mang cáp sạc hoài?" chỉ đạt 3, trong khi biến thể khác đạt 4). Mỗi reel chọn 1 góc riêng, rõ ràng.
+- Chưa reel nào có share, nên thử thêm CTA kích hoạt chia sẻ hoặc bình luận: "Tag đứa bạn hay quên sạc", "Bạn chọn màu nào? Comment 1 hoặc 2".
+- Hook ngắn hơn 12 từ, mở bằng câu hỏi nỗi đau hoặc một sự thật gây giật mình, nêu sản phẩm ngay trong 2 giây đầu.
