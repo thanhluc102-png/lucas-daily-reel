@@ -20,6 +20,7 @@ import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import puppeteer from 'puppeteer-core';
+import { appendOutro } from './outro.mjs';
 
 const FPS = 30;
 const W = 1080;
@@ -1076,6 +1077,9 @@ if ((voice || bgm) && cutTimes.length) {
   console.log('  đã trộn SFX (whoosh-thud + chime-pop)');
 }
 
+// --- Outro logo Lucas (mặt Lucy → logo, có tiếng) nối vào cuối. Tắt cho một reel: "outro": false trong job ---
+const outroAdded = job.outro !== false ? appendOutro(finalMp4, { fps: FPS }) : 0;
+
 const mb = (fs.statSync(finalMp4).size / 1024 / 1024).toFixed(1);
-console.log(`\n\x1b[32m✔\x1b[0m ${finalMp4} (${mb} MB, ${total}s)`);
+console.log(`\n\x1b[32m✔\x1b[0m ${finalMp4} (${mb} MB, ${(total + outroAdded).toFixed(1)}s${outroAdded ? ' kèm outro' : ''})`);
 if (job.audio?.draft) console.log('\x1b[33m▲ Giọng đọc là bản NHÁP (macOS). Thêm ELEVENLABS_API_KEY rồi chạy lại voice→align→render cho bản đăng.\x1b[0m');
