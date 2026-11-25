@@ -10,6 +10,7 @@
 
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { outroSec } from './outro.mjs';
 
 const mp4 = process.argv[2];
 const jobFile = process.argv[3];
@@ -59,8 +60,9 @@ if (mb < 0.3) fails.push(`file chỉ ${mb.toFixed(1)}MB — nghi render hỏng`)
 if (jobFile && fs.existsSync(jobFile)) {
   const job = JSON.parse(fs.readFileSync(jobFile, 'utf8'));
   const want = job.audio?.measured_duration_sec;
-  if (want && Math.abs(want - dur) > 1.5)
-    warns.push(`video ${dur.toFixed(1)}s lệch >1.5s so với kịch bản ${want}s`);
+  const outro = outroSec(job); // render.mjs nối outro logo Lucas vào cuối, nên cộng vào thời lượng mong đợi
+  if (want && Math.abs(want + outro - dur) > 1.5)
+    warns.push(`video ${dur.toFixed(1)}s lệch >1.5s so với kịch bản ${want}s${outro ? ` + outro ${outro.toFixed(1)}s` : ''}`);
   if (job.audio?.draft)
     warns.push('giọng đọc là bản NHÁP (macOS say) — thêm ELEVENLABS_API_KEY cho bản đăng');
 }
