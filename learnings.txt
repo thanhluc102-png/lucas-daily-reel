@@ -1,8 +1,8 @@
-- Dữ liệu gần như đồng đều (Score 3–4, Shares = 0, Comments luôn = 1, nhiều khả năng là comment của chính page), nên chênh lệch chủ yếu là nhiễu. Chỉ coi các xu hướng dưới đây là giả thuyết để A/B test, chưa phải quy luật.
-- Ưu tiên hook có **con số cụ thể** gắn với nỗi đau hoặc tính năng ("3 món", "2 ngày", "4 góc", "360 độ"). Đây là điểm chung rõ nhất của nhóm Score 4.
-- Ưu tiên hook chạm **nỗi sợ hư hỏng hoặc phiền toái có thật** (xước MacBook, pin nhanh hết, mang lỉnh kỉnh đồ sạc), kèm 1 emoji cảm xúc (😬 🔌 ⌨️).
-- Nhóm sạc/cáp, ốp bảo vệ, bàn phím và sạc ô tô nhỉnh hơn một chút. Balo, kê laptop, chuột, bút ghi âm đang ở mức đáy, nên đổi góc tiếp cận cho nhóm này thay vì bỏ hẳn.
-- Tránh hook mô tả tính năng chung chung kiểu "mở ra là…, gập lại là…", "một món, hai cách dùng", "xem bên trong chứa gì". Kiểu này không tạo lý do để bấm hay bình luận.
-- Không lặp một nỗi đau với nhiều phiên bản ("Quên mang cáp sạc hoài?" chỉ đạt 3, trong khi biến thể khác đạt 4). Mỗi reel chọn 1 góc riêng, rõ ràng.
-- Chưa reel nào có share, nên thử thêm CTA kích hoạt chia sẻ hoặc bình luận: "Tag đứa bạn hay quên sạc", "Bạn chọn màu nào? Comment 1 hoặc 2".
-- Hook ngắn hơn 12 từ, mở bằng câu hỏi nỗi đau hoặc một sự thật gây giật mình, nêu sản phẩm ngay trong 2 giây đầu.
+- **Cảnh báo dữ liệu:** Chênh lệch giữa các video gần như bằng 0 (Score 3–4, chỉ hơn nhau 1 reaction), Shares = 0 ở mọi video, và mỗi video đều đúng 1 comment (có thể là comment ghim link của page). Mọi kết luận dưới đây chỉ là xu hướng yếu, cần thử thêm để kiểm chứng.
+- **Ưu tiên hook có chi tiết cụ thể, nhất là con số** như "2 ngày", "4 góc", "360 độ". Ví dụ: "Pin bàn phím cơ hết sau 2 ngày?", "Túi khí ở cả 4 góc!".
+- **Đánh vào nỗi sợ mất tiền hoặc hỏng đồ đắt tiền và gọi tên thiết bị cụ thể** (MacBook, iPad). Ví dụ: "Balo rẻ làm xước MacBook của bạn mỗi ngày mà bạn không để ý 😬".
+- **Nói thẳng lợi ích cuối cùng** thay vì mô tả chung chung. Ví dụ: "…là chuyện quá khứ".
+- **Hạn chế hook mô tả tính năng kiểu liệt kê, quảng cáo chung chung** như "Mở ra là…, gập lại là…", "Một chiếc balo, hai cách mang", "Mở ra xem chứa được gì". Nhóm này đều chỉ đạt điểm thấp nhất.
+- **Tránh lặp lại chủ đề cũ** như quên cáp sạc hay dây rối. Đã có 3 video chủ đề này và không tạo khác biệt.
+- **Bắt buộc có lời kêu gọi tương tác** vì đây là điểm yếu lớn nhất: cuối reel hỏi một câu dễ trả lời ("Bạn dùng laptop mấy inch?") và gợi ý chia sẻ ("Tag đứa hay quên sạc").
+- **Viết reel kiểu A/B test có chủ đích:** mỗi đợt thử 2 kiểu hook đối lập cho cùng một sản phẩm, để thu được dữ liệu đủ khác biệt cho lần tối ưu sau.
