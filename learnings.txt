@@ -1,8 +1,7 @@
-- **Cảnh báo dữ liệu:** Chênh lệch giữa các video gần như bằng 0 (Score 3–4, chỉ hơn nhau 1 reaction), Shares = 0 ở mọi video, và mỗi video đều đúng 1 comment (có thể là comment ghim link của page). Mọi kết luận dưới đây chỉ là xu hướng yếu, cần thử thêm để kiểm chứng.
-- **Ưu tiên hook có chi tiết cụ thể, nhất là con số** như "2 ngày", "4 góc", "360 độ". Ví dụ: "Pin bàn phím cơ hết sau 2 ngày?", "Túi khí ở cả 4 góc!".
-- **Đánh vào nỗi sợ mất tiền hoặc hỏng đồ đắt tiền và gọi tên thiết bị cụ thể** (MacBook, iPad). Ví dụ: "Balo rẻ làm xước MacBook của bạn mỗi ngày mà bạn không để ý 😬".
-- **Nói thẳng lợi ích cuối cùng** thay vì mô tả chung chung. Ví dụ: "…là chuyện quá khứ".
-- **Hạn chế hook mô tả tính năng kiểu liệt kê, quảng cáo chung chung** như "Mở ra là…, gập lại là…", "Một chiếc balo, hai cách mang", "Mở ra xem chứa được gì". Nhóm này đều chỉ đạt điểm thấp nhất.
-- **Tránh lặp lại chủ đề cũ** như quên cáp sạc hay dây rối. Đã có 3 video chủ đề này và không tạo khác biệt.
-- **Bắt buộc có lời kêu gọi tương tác** vì đây là điểm yếu lớn nhất: cuối reel hỏi một câu dễ trả lời ("Bạn dùng laptop mấy inch?") và gợi ý chia sẻ ("Tag đứa hay quên sạc").
-- **Viết reel kiểu A/B test có chủ đích:** mỗi đợt thử 2 kiểu hook đối lập cho cùng một sản phẩm, để thu được dữ liệu đủ khác biệt cho lần tối ưu sau.
+- **Dữ liệu chưa đủ để kết luận:** 20/20 video đều 0 share và đúng 1 comment (nghi tự comment hoặc seeding). Chênh lệch chỉ là 1 reaction (score 4 so với 3), nên mọi quy luật dưới đây chỉ là giả thuyết để thử tiếp.
+- **Ưu tiên con số cụ thể, dễ hình dung:** các hook score 4 thường có chi tiết đo được như "2 ngày", "4 góc", "360 độ". Lưu ý một số hook score 3 cũng có số ("180°", "30 giây"), nên con số chỉ là điểm cộng, chưa phải yếu tố quyết định.
+- **Thử hook "nỗi đau ngầm / tổn thất không ngờ":** ví dụ "Balo rẻ làm xước MacBook mỗi ngày mà bạn không để ý 😬". Kiểu này đánh vào nỗi sợ mất tiền và mất đồ đắt giá.
+- **Câu hỏi nỗi đau chung chung ít hiệu quả:** "Quên mang cáp sạc hoài?", "Dây sạc rối như tổ chim?" chỉ đạt 3. Nếu dùng câu hỏi, hãy gắn với thiết bị hoặc tình huống rất cụ thể.
+- **Hạn chế hook mô tả tính năng trung tính:** "Dock có quạt", "áp lưng là hít", "mở ra là kê laptop" mang giọng catalog, khó kích người xem phản ứng.
+- **Chủ động kéo comment và share:** cuối reel nên có câu hỏi chọn A/B, "tag đứa hay quên sạc", hoặc "lưu lại khi cần". Hiện chưa video nào có lời kêu gọi chia sẻ.
+- **Mỗi lần chỉ đổi một biến:** kiểu hook, sản phẩm hoặc CTA. Nên ghi rõ tên sản phẩm và theo dõi thêm lượt xem, tỷ lệ xem hết để có dữ liệu đủ lớn rồi mới chốt công thức.
