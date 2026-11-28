@@ -1,7 +1,8 @@
-- **Dữ liệu chưa đủ để kết luận:** 20/20 video đều 0 share và đúng 1 comment (nghi tự comment hoặc seeding). Chênh lệch chỉ là 1 reaction (score 4 so với 3), nên mọi quy luật dưới đây chỉ là giả thuyết để thử tiếp.
-- **Ưu tiên con số cụ thể, dễ hình dung:** các hook score 4 thường có chi tiết đo được như "2 ngày", "4 góc", "360 độ". Lưu ý một số hook score 3 cũng có số ("180°", "30 giây"), nên con số chỉ là điểm cộng, chưa phải yếu tố quyết định.
-- **Thử hook "nỗi đau ngầm / tổn thất không ngờ":** ví dụ "Balo rẻ làm xước MacBook mỗi ngày mà bạn không để ý 😬". Kiểu này đánh vào nỗi sợ mất tiền và mất đồ đắt giá.
-- **Câu hỏi nỗi đau chung chung ít hiệu quả:** "Quên mang cáp sạc hoài?", "Dây sạc rối như tổ chim?" chỉ đạt 3. Nếu dùng câu hỏi, hãy gắn với thiết bị hoặc tình huống rất cụ thể.
-- **Hạn chế hook mô tả tính năng trung tính:** "Dock có quạt", "áp lưng là hít", "mở ra là kê laptop" mang giọng catalog, khó kích người xem phản ứng.
-- **Chủ động kéo comment và share:** cuối reel nên có câu hỏi chọn A/B, "tag đứa hay quên sạc", hoặc "lưu lại khi cần". Hiện chưa video nào có lời kêu gọi chia sẻ.
-- **Mỗi lần chỉ đổi một biến:** kiểu hook, sản phẩm hoặc CTA. Nên ghi rõ tên sản phẩm và theo dõi thêm lượt xem, tỷ lệ xem hết để có dữ liệu đủ lớn rồi mới chốt công thức.
+- Dữ liệu gần như chưa phân hóa: mọi video đều 1 comment (có thể là comment seed), 0–1 reaction, 0 share. Chênh lệch 3 và 4 điểm chỉ do 1 reaction nên chưa đủ để kết luận chắc chắn. Coi các gợi ý dưới đây là giả thuyết cần A/B test, đừng xem là luật.
+- Ưu tiên hook nêu nỗi đau cụ thể, có hậu quả rõ ràng, ví dụ "Balo rẻ làm xước MacBook mỗi ngày mà bạn không để ý 😬" hay "Ra đường mà phải mang ba cục sạc? 😮‍💨". Nhóm này nhỉnh hơn hook liệt kê tính năng chung chung.
+- Nếu hook theo tính năng thì chọn tính năng nhìn thấy được, có con số hoặc hành động: "túi khí 4 góc", "xoay 360 độ", "áp vào là hít ngay". Tránh thông số khô khan như "64,9g" hay "chứa được những gì".
+- Câu hỏi chạm thói quen xấu (pin hết sau 2 ngày, phải mang 3 cục sạc) nên đi kèm emoji cảm xúc như 😬 hoặc 😮‍💨, thay vì emoji minh họa đồ vật như 🔌 hoặc 🖱️.
+- Tránh hook mở đầu bằng "Mua… là có luôn…", "Mở ra xem…", "Đi học, đi họp…" vì nghe như quảng cáo, thiếu xung đột.
+- Chưa có video nào được share, nên cần thêm yếu tố đáng chia sẻ: mẹo hữu ích, so sánh trước/sau, hoặc "tag đứa bạn hay quên cáp sạc".
+- Cuối caption luôn có CTA kéo comment thật, ví dụ một câu hỏi lựa chọn "Bạn chọn màu nào?" hay "Bạn đang mang mấy cục sạc?", để có tín hiệu thật thay vì chỉ 1 comment.
+- Mỗi hook chỉ một ý, dưới 12 từ, đặt vấn đề trước rồi mới nói sản phẩm. Thử 2 biến thể hook cho cùng một sản phẩm để có dữ liệu so sánh.

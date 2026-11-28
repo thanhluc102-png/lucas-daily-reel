@@ -3245,10 +3245,10 @@
     "hook": "Áp lưng iPad vào là hít ngay, không cần kẹp!",
     "publish_time": "2026-11-26T11:17:01.982Z",
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 1,
       "shares": 0,
-      "score": 3
+      "score": 4
     }
   },
   {
@@ -3257,6 +3257,18 @@
     "hook": "Ra đường mà phải mang ba cục sạc? 😮‍💨",
     "publish_time": "2026-11-27T01:39:30.726Z",
     "performance": {
+      "reactions": 1,
+      "comments": 1,
+      "shares": 0,
+      "score": 4
+    }
+  },
+  {
+    "post_id": "3051407891874451",
+    "product_name": "",
+    "hook": "Biến CarPlay có dây trên xe thành không dây!",
+    "publish_time": "2026-11-27T11:17:03.551Z",
+    "performance": {
       "reactions": 0,
       "comments": 1,
       "shares": 0,
@@ -3264,9 +3276,15 @@
     }
   },
   {
-    "post_id": "3051407891874451",
+    "post_id": "1719045199871516",
     "product_name": "",
-    "hook": "Biến CarPlay có dây trên xe thành không dây!",
-    "publish_time": "2026-11-27T11:17:03.551Z"
+    "hook": "Củ sạc 64,9g mà sạc nổi MacBook ⚡",
+    "publish_time": "2026-11-28T01:40:25.530Z",
+    "performance": {
+      "reactions": 0,
+      "comments": 1,
+      "shares": 0,
+      "score": 3
+    }
   }
 ]
